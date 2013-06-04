@@ -1,0 +1,14 @@
+{% include 'includes/header' %}
+<section class="layer gallery">
+  <section>
+    {% for post in posts %}
+    <section class="half gallery-item">
+      <figure>
+        <a href="{{post.meta['url'].value}}"><img src="{{post.assets[0].url}}" alt="{{post.title}}" /></a>
+      </figure>
+      <h2><a href="{{post.meta['url'].value}}">{{post.title}}</a></h2>
+    </section>
+    {% endfor %}
+  </section>
+</section>
+{% include 'includes/footer' %}

@@ -1,0 +1,37 @@
+{% include 'includes/header' %}
+<section class="layer features-main">
+  <section>
+    {% for post in posts %}
+    {% if post.meta['featured'].value == "true" %}
+    <figure class="two-thirds screenshot">
+      <img src="{{post.assets[1].url}}" alt="{{post.title}}" />
+    </figure>
+    <section class="third feature-item">
+      <h3>{{post.title}}</h3>
+      <p>{{post.body}}</p>
+    </section>
+    {% endif %}
+    {% endfor %}
+  </section>
+</section>
+<section class="layer features-secondary">
+  <section>
+    {% for post in posts %}
+    {% if post.meta['featured'].value == "false" %}
+    <section class="third">
+      <h4>{{post.title}}</h4>
+      <p>{{post.body}}</p>
+    </section>
+    {% endif %}
+    {% endfor %}
+  </section>
+</section>
+<section class="layer get-started">
+  <section>
+    <h3>Create your website now!</h3>
+    <div>
+      <button class="green-button large-button" onclick="location.href='/plans';">Get started</button>
+    </div>
+  </section>
+</section>
+{% include 'includes/footer' %}

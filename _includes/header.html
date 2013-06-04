@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon shortcut" href="/images/favicon.ico">
+  <script type="text/javascript" src="//use.typekit.net/tti2qoh.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <title>{{site.title}} | {{title}}</title>
+</head>
+<body>
+
+<section class="layer main">
+  <section>
+    <header>
+      <h1 class="logo">
+        <a href="../">Siteleaf</a>
+      </h1>
+      <nav>
+        <ul class="main-nav hide">
+          <li class="main-nav-item"><a href="/features"{% if slug == "features" %} class="selected"{% endif %}>Features</a>
+          <li class="main-nav-item"><a href="/plans"{% if slug == "plans" %} class="selected"{% endif %}>Plans</a>
+          <li class="main-nav-item"><a href="/blog"{% if slug == "blog" %} class="selected"{% endif %}>Blog</a>
+          <li class="main-nav-item"><a href="/gallery"{% if slug == "gallery" %} class="selected"{% endif %}>Gallery</a>
+          <li class="main-nav-item"><a href="https://manage.siteleaf.com"{% if slug == "login" %} class="selected"{% endif %}>Log in</a>
+        </ul>
+      </nav>
+    </header>
+  </section>
+</section>

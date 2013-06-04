@@ -1,0 +1,9 @@
+{% include 'includes/header' %}
+<section class="layer text-block">
+  <section>
+    <h2>{{title}}</h2>
+    <p>{{body}}</p>
+    {% if slug == "terms" || slug == "privacy" %}<small>Last edited: {{site.date | date: "%b %d, %Y"}}</small>{% endif %}
+  </section>
+</section>
+{% include 'includes/footer' %}
