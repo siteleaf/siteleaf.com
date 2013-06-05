@@ -15,7 +15,7 @@
   <section>
     <header>
       <h1 class="logo">
-        <a href="../">Siteleaf</a>
+        <a href="/">Siteleaf</a>
       </h1>
       <nav>
         <ul class="main-nav hide">
@@ -27,5 +27,16 @@
         </ul>
       </nav>
     </header>
+    
+    {% if slug == 'home' %}
+    <h2>A<span class="hide"> smart,</span> lightweight<span class="hide">, considered</span> platform <br>for<span class="hide"> creating and maintaining</span> websites.</h2>
+    <figure class="image-wrapper lift screenshot">
+      <ul class="image-carousel">
+      {% for asset in assets %}
+        <li{% if forloop.first %} class="active fadein"{% endif %}><img src="{{asset.url}}" alt="Siteleaf"/></li>
+      {% endfor %}
+      </ul>
+    </figure>
+    {% endif %}
   </section>
 </section>

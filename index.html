@@ -1,89 +1,64 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon shortcut" href="images/favicon.ico">
-  <script type="text/javascript" src="//use.typekit.net/tti2qoh.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <title>{{site.title}} | {{title}}</title>
-</head>
-<body>
-  <section class="layer main">
-    <section>
-      {% include 'includes/header' %}
-      <h2>A<span class="hide"> smart,</span> lightweight<span class="hide">, considered</span> platform <br>for<span class="hide"> creating and maintaining</span> websites.</h2>
-      <figure class="image-wrapper lift screenshot">
-        <ul class="image-carousel">
-        {% for asset in assets %}
-          <li{% if forloop.first %} class="active fadein"{% endif %}><img src="{{asset.url}}" alt="Siteleaf"/></li>
-        {% endfor %}
-        </ul>
+{% include 'includes/header' %}
+<section class="layer features">
+  <section>
+    <h3>Features</h3>
+    {% for post in site.pages['features'].posts %}
+    {% if post.meta['featured'].value == "true" %}
+    <section class="third">
+      <figure class="feature-image">
+        <img src="{{post.assets[0].url}}" alt="{{post.title}}" />
       </figure>
-    </section>
-  </section>
-  <section class="layer features">
-    <section>
-      <h3>Features</h3>
-      {% for post in site.pages['features'].posts %}
-      {% if post.meta['featured'].value == "true" %}
-      <section class="third">
-        <figure class="feature-image">
-          <img src="{{post.assets[0].url}}" alt="{{post.title}}" />
-        </figure>
-        <section class="feature-item">
-          <h4>{{post.title}}</h4>
-          <p>{{post.body}}</p>
-        </section>
+      <section class="feature-item">
+        <h4>{{post.title}}</h4>
+        <p>{{post.body}}</p>
       </section>
-      {% endif %}
-      {% endfor %}
-      <div>
-        <p><a href="/features">Brilliant! Tell me more</a></p>
-      </div>
     </section>
+    {% endif %}
+    {% endfor %}
+    <div>
+      <p><a href="/features">Brilliant! Tell me more</a></p>
+    </div>
   </section>
-  <section class="layer get-started">
-    <section>
-      <h3>Create your website now!</h3>
-      <div>
-        <button class="green-button large-button" onclick="location.href='/plans';">Get started</button>
-      </div>
-    </section>
+</section>
+<section class="layer get-started">
+  <section>
+    <h3>Create your website now!</h3>
+    <div>
+      <button class="green-button large-button" onclick="location.href='/plans';">Get started</button>
+    </div>
   </section>
-  {% include 'includes/footer' %}
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script>
-    $(function () {      
-      var features = []
-      $('.image-carousel li').each(function(){
-        features.push($(this))
-      })
+</section>
 
-      var i = 1
-      setInterval(function(){
-        if (i === features.length) i = 0
-        $feature = features[i]
-
-        $('#features .item.active').removeClass('active')
-        $('#features .item').eq(i).addClass('active')
-
-        setTimeout(function(){
-          $feature.addClass('fadein')
-        }, 0)
-
-        $('.image-carousel .active').removeClass('fadein').addClass('old')
-
-        $feature.addClass('active')
-
-        setTimeout(function(){
-          $('.image-carousel .active.old').removeClass('active old')
-        }, 500)
-
-        i++
-      }, 3500)
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+  $(function () {      
+    var features = []
+    $('.image-carousel li').each(function(){
+      features.push($(this))
     })
-  </script>
-</body>
-</html>
+
+    var i = 1
+    setInterval(function(){
+      if (i === features.length) i = 0
+      $feature = features[i]
+
+      $('#features .item.active').removeClass('active')
+      $('#features .item').eq(i).addClass('active')
+
+      setTimeout(function(){
+        $feature.addClass('fadein')
+      }, 0)
+
+      $('.image-carousel .active').removeClass('fadein').addClass('old')
+
+      $feature.addClass('active')
+
+      setTimeout(function(){
+        $('.image-carousel .active.old').removeClass('active old')
+      }, 500)
+
+      i++
+    }, 3500)
+  })
+</script>
+{% include 'includes/footer' %}
