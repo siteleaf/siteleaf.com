@@ -29,7 +29,7 @@
     </header>
     
     {% if slug == 'home' %}
-    <h2>A<span class="hide"> smart,</span> lightweight<span class="hide">, considered</span> platform <br>for<span class="hide"> creating and maintaining</span> websites.</h2>
+    <h2>{{meta['header']}}</h2>
     <figure class="image-wrapper lift screenshot">
       <ul class="image-carousel">
       {% for asset in assets %}
