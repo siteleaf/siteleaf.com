@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in site.pages %}
+  <url>
+    <loc>{{page.permalink}}</loc>
+    <lastmod>{{page.updated_at}}</lastmod>
+    <priority>1.0</priority>
+  </url>
+  {% if page.slug == 'blog' %}
+    {% for post in page.posts %}
+    <url>
+      <loc>{{post.permalink}}</loc>
+      <lastmod>{{post.updated_at}}</lastmod>
+      <priority>0.5</priority>
+    </url>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+</urlset>
