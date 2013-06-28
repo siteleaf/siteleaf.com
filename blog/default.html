@@ -2,7 +2,7 @@
 <section class="layer blog">
   {% if type == "post" %}
   <article>
-    {% if assets %}
+    {% if assets.size > 0 %}
     <figure>
       <img src="{{assets[0].url}}" alt="{{post.title}}" />
     </figure>

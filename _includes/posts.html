@@ -1,6 +1,6 @@
 {% for post in posts %}
 <article>
-  {% if assets %}
+  {% if post.assets.size > 0 %}
   <figure>
     <a href="{{post.url}}"><img src="{{post.assets[0].url}}" alt="{{post.title}}" /></a>
   </figure>
