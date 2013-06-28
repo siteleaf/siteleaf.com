@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="//cdn.symbolset.com/534b9174c035efe2c1928ac3ec622d95cd76118d/symbolset.css" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon shortcut" href="/images/favicon.ico">
   <script type="text/javascript" src="//use.typekit.net/tti2qoh.js"></script>
@@ -29,14 +30,21 @@
     </header>
     
     {% if slug == 'home' %}
-    <h2>{{meta['header']}}</h2>
-    <figure class="image-wrapper lift screenshot">
+    <h2 class="intro-header">{{meta['header']}}</h2>
+    <figure class="image-wrapper lift screenshot" id="show-intro-video">
+      <span class="play-ic ss-icon">play</span>
       <ul class="image-carousel">
       {% for asset in assets %}
         <li{% if forloop.first %} class="active fadein"{% endif %}><img src="{{asset.url}}" alt="Siteleaf"/></li>
       {% endfor %}
       </ul>
     </figure>
+
+    <div class="intro-video-wrap is-hidden" id="video">
+      <div class="intro-video">
+        <iframe src="http://player.vimeo.com/video/69301083?title=0&amp;byline=0&amp;portrait=0&amp;color=00a1ff&api=1&player_id=intro" width="500" height="281" id="video-iframe" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+    </div>
     {% endif %}
   </section>
 </section>

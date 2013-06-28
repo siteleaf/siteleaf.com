@@ -207,6 +207,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     border:2px solid #00a1ff;
 }
 
+.is-hidden{
+    display: none;
+}
+
 
 /*========================================
 
@@ -277,7 +281,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .main {
-    max-height:700px;
     padding-top:0;
     padding-bottom:0;
     overflow:hidden;
@@ -368,22 +371,22 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 ========================================*/
 
 .image-wrapper {
-    margin:0 auto -180px;
+    margin:0 auto;
     overflow:visible;
+    cursor: pointer;
+    position: relative;
 }
 
 .image-carousel {
     margin:0 auto 0;
-    padding-top:67.455%;
+    padding-top: 56.2%;
     position:relative;
-    overflow:visible;
+    overflow: hidden;
     background:rgba(39,65,90,.15);
 }
 
 .image-carousel li {
     width:100%;
-    padding:0;
-    padding-top:67.35%;
     position:absolute;
     top:0;
     display:none;
@@ -405,7 +408,27 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     top:0;
     left:0;
     width:100%;
-    height:100%;
+}
+
+.play-ic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90px;
+    width: 90px;
+    margin: -45px 0 0 -45px;
+    z-index: 10;
+    font-size: 60px;
+    display: inline-block;
+    background: rgba(0, 145, 229, 0.8);
+    color: #FFF;
+    line-height: 1;
+    padding: 22px 0 0;
+    border-radius: 50%;
+}
+
+.image-wrapper:hover .play-ic{
+    background: rgba(0, 145, 229, 1);
 }
 
 
@@ -414,6 +437,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
                  HOME
               
 ========================================*/
+
+.intro-header{
+    margin-bottom: 60px;
+}
 
 .features {
     background:#00a1ff;
@@ -441,6 +468,27 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     display:none;
 }
 
+.show-features-link{
+    text-decoration: underline;
+}
+
+.intro-video-wrap{
+    max-width: 756px;
+    margin: auto;
+}
+
+.intro-video{
+    position: relative;
+    padding-top: 56.2%;
+}
+
+.intro-video iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*========================================
 
