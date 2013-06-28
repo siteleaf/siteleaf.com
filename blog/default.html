@@ -1,24 +1,19 @@
 {% include 'includes/header' %}
 <section class="layer blog">
-  {% if type == "post" %}
-  <article>
-    {% if assets.size > 0 %}
-    <figure>
-      <img src="{{assets[0].url}}" alt="{{post.title}}" />
-    </figure>
-    {% endif %}
-    <h2 class="title">{{title}}</h2>
-    <section class="blog-byline">
-    {% for tag in taxonomy.first.values %}
-      <h6 class="blog-tag"><a href="{{tag.url}}">{{tag.value}}</a></h6>
+  {% if type == 'post' %}
+    {% assign post = current %}
+    {% include 'includes/post' %}
+  {% else %}
+    {% for post in posts %}
+      {% include 'includes/post' %}
     {% endfor %}
-      <time datetime="2013-05-27">{{date | date: "%b %d, %Y"}}</time>
-    </section>
-    <p>{{body}}</p>
-    {% if parent %}
-      <p><a href="{{parent.url}}">&larr; Back to {{parent.title}}</a></p>
-    {% endif %}
-  </article>
   {% endif %}
 </section>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="/js/jquery.fitvids.js"></script>
+<script>
+  $(document).ready(function(){
+    $("section.blog").fitVids();
+  });
+</script>
 {% include 'includes/footer' %}
