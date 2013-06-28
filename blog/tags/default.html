@@ -1,5 +1,7 @@
 {% include 'includes/header' %}
 <section class="layer blog tag">
-  {% include 'includes/posts' %}
+  {% for post in posts %}
+    {% include 'includes/post' %}
+  {% endfor %}
 </section>
 {% include 'includes/footer' %}
