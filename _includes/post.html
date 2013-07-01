@@ -1,5 +1,9 @@
 <article>
-  {% if post.assets.size > 0 %}
+  {% if post.meta.vimeo.value %}
+  <figure>
+    <iframe src="http://player.vimeo.com/video/{{post.meta.vimeo.value}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </figure>
+  {% elsif post.assets.size > 0 %}
   <figure>
     <a href="{{post.url}}"><img src="{{post.assets[0].url}}" alt="{{post.title}}" /></a>
   </figure>
@@ -11,19 +15,20 @@
       <a href="{{post.url}}">{{post.title}}</a>
     {% endif %}
   </h2>
-  <section class="blog-byline">
+  <header class="blog-byline">
   {% for tag in post.taxonomy.first.values %}
     <h6 class="blog-tag"><a href="{{tag.url}}">{{tag.value}}</a></h6>
   {% endfor %}
     <time datetime="2013-05-27">{{post.date | date: "%b %d, %Y"}}</time>
-  </section>
+    {% if post.author.firstname %} by {{post.author.firstname}} {{post.author.lastname}}{% endif %}
+  </header>
   {% if type == 'post' %}
     {{post.body}}
     <p><a href="{{parent.url}}">&larr; Back to {{parent.title}}</a></p>
   {% else %}
     {{post.excerpt}}
     {% if post.excerpt != post.body %}
-    <p><a href="{{post.url}}">Read more</a></p>
+    <p><a href="{{post.url}}">Read more &rarr;</a></p>
     {% endif %}
   {% endif %}
 </article>

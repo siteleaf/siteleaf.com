@@ -75,6 +75,7 @@ h6 {
 
 p {
     margin-top:1em;
+    margin-bottom:1em;
     color:rgba(39,65,90,.9);
     font-size:1.25em;
     line-height:1.625em;
@@ -420,7 +421,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     z-index: 10;
     font-size: 60px;
     display: inline-block;
-    background: rgba(0, 145, 229, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     color: #FFF;
     line-height: 1;
     padding: 22px 0 0;
@@ -429,7 +430,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .image-wrapper:hover .play-ic{
-    background: rgba(0, 145, 229, 1);
+    background: #7abf26;
 }
 
 
@@ -800,7 +801,11 @@ label.signup-plan-select {
     text-align:left;
 }
 
-.blog h3, .blog h4, .blog p, .blog ol, .blog ul {
+.blog h3 {
+  margin-top: 1em;
+}
+
+.blog h3, .blog h4, .blog p, .blog ol, .blog ul, .blog pre {
     width:100%;
     max-width:504px;
     margin-right:auto;
@@ -817,7 +822,8 @@ label.signup-plan-select {
 }
 
 .blog blockquote p {
-    margin-top:.675em;
+    margin-top:1em;
+    margin-bottom:1em;
     color:#7abf26;
     font-size:2.125em;
     font-weight:300;
@@ -835,6 +841,7 @@ label.signup-plan-select {
 
 .blog ol {
     margin-top:1em;
+    margin-bottom:1em;
     color:rgba(39,65,90,.9);
     font-size:1.25em;
     line-height:1.625em;
@@ -843,16 +850,30 @@ label.signup-plan-select {
 
 .blog ul {
     margin-top:1em;
+    margin-bottom:1em;
     color:rgba(39,65,90,.9);
     font-size:1.25em;
     line-height:1.625em;
     list-style:disc;
 }
 
-.blog code {
+.blog pre {
+    margin-top:1em;
+    margin-bottom:1em;
+    overflow: auto;
+    text-align: left;
+    background:#e7f2f0;
+    padding:5px 4px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    font-size:1em;
+    line-height:1.625em;
+}
+
+.blog p code {
+    background:#e7f2f0;
     padding:5px 4px;
     margin:-5px 0;
-    background:#e7f2f0;
     border-radius:3px;
     -moz-border-radius:3px;
 }
@@ -860,6 +881,9 @@ label.signup-plan-select {
 .blog-byline {
     vertical-align:baseline;
     width:100%;
+    width:100%;
+    padding:0;
+    float:none;
     max-width:504px;
     margin:2em auto;
     text-align:left;
