@@ -625,6 +625,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     display: block;
 }
 
+.try-for-free-note:hover{
+    text-decoration: underline;
+}
+
 
 /*========================================
 
