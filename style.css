@@ -152,7 +152,7 @@ label {
     color:rgba(39,65,90,.25);
 }
 
-:-moz-placeholder {  
+:-moz-placeholder {
     color:rgba(39,65,90,.25);
 }
 
@@ -161,19 +161,19 @@ form input {
     float:left;
 }
 
-button, input[type="button"], input[type="submit"] {
+button, input[type="button"], input[type="submit"], .button {
     padding:18px 48px;
     border:0;
     border-bottom:2px solid rgba(39,65,90,.3);
     color:white;
     text-align:center;
     border-radius:3px;
-    -moz-border-radius:3px;
     cursor:pointer;
     -webkit-transition:all .05s ease-out;
     -moz-transition:all .05s ease-out;
     -o-transition:all .05s ease-out;
     transition:all .05s ease-out;
+    text-decoration: none;
 }
 
 input {
@@ -216,7 +216,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /*========================================
 
 
-              
+
 ========================================*/
 
 .uppercase {
@@ -309,8 +309,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     color:rgba(39,65,90,.5);
 }
 
-.main-nav li {
-    padding:15px 0 15px 30px;
+.main-nav-item {
+    padding:15px 0 0 30px;
     display:inline-block;
     font-size:1.25em;
     text-align:right;
@@ -330,6 +330,24 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .main-nav a.selected:hover {
     color:rgba(39,65,90,.5);
+}
+
+.get-started-nav-item{
+    padding-top: 5px;
+}
+
+.main-nav .get-started-btn{
+    border-radius:3px;
+    background: #7abf26;
+    display: inline-block;
+    padding: 10px 10px 8px;
+    color: #fff;
+    box-shadow: 0 1px 0 #6aa621;
+}
+
+.main-nav .get-started-btn:hover{
+    background-color: #6aa621;
+    color: #fff;
 }
 
 .lift {
@@ -368,7 +386,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /*========================================
 
                  CAROUSEL
-              
+
 ========================================*/
 
 .image-wrapper {
@@ -437,7 +455,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /*========================================
 
                  HOME
-              
+
 ========================================*/
 
 .intro-header{
@@ -495,7 +513,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /*========================================
 
               FEATURES
-              
+
 ========================================*/
 
 .features-main {
@@ -515,7 +533,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 /*========================================
 
                 PLANS
-              
+
 ========================================*/
 
 .plans {
@@ -601,11 +619,17 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     border-bottom:2px solid #e7f2f0;
 }
 
+.try-for-free-note{
+    color: rgba(39, 65, 90, 0.5);
+    padding: 30px 0;
+    display: block;
+}
+
 
 /*========================================
 
                SIGNUP
-              
+
 ========================================*/
 
 .signup {
@@ -708,7 +732,7 @@ label.signup-plan-select {
 /*========================================
 
                LOGIN
-              
+
 ========================================*/
 
 .login {

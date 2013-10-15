@@ -20,15 +20,28 @@
       </h1>
       <nav>
         <ul class="main-nav hide">
-          <li class="main-nav-item"><a href="/features"{% if slug == "features" %} class="selected"{% endif %}>Features</a>
-          <li class="main-nav-item"><a href="/plans"{% if slug == "plans" %} class="selected"{% endif %}>Plans</a>
-          <li class="main-nav-item"><a href="/blog"{% if slug == "blog" %} class="selected"{% endif %}>Blog</a>
-          <li class="main-nav-item"><a href="/gallery"{% if slug == "gallery" %} class="selected"{% endif %}>Gallery</a>
-          <li class="main-nav-item"><a href="https://manage.siteleaf.com"{% if slug == "login" %} class="selected"{% endif %}>Log in</a>
+          <li class="main-nav-item">
+            <a href="/features"{% if slug == "features" %} class="selected"{% endif %}>Features</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="/plans"{% if slug == "plans" %} class="selected"{% endif %}>Plans</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="/blog"{% if slug == "blog" %} class="selected"{% endif %}>Blog</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="/gallery"{% if slug == "gallery" %} class="selected"{% endif %}>Gallery</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="https://manage.siteleaf.com"{% if slug == "login" %} class="selected"{% endif %}>Log in</a>
+          </li>
+          <li class="main-nav-item get-started-nav-item">
+            <a href="https://manage.siteleaf.com/signup" class="get-started-btn">Get started</a>
+          </li>
         </ul>
       </nav>
     </header>
-    
+
     {% if slug == 'home' %}
     <h2 class="intro-header">{{meta['header']}}</h2>
     <figure class="image-wrapper lift screenshot" id="show-intro-video">

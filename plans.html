@@ -1,26 +1,28 @@
 {% include 'includes/header' %}
 <section class="layer plans">
   <section>
-  
+
     {% for post in posts %}
     <section class="third lift plan-tier{% if post.meta['callout'].value %} callout{% endif %}" onclick="location.href='https://manage.siteleaf.com/signup?plan={{post.slug}}';">
-      
+
       {% if post.meta['callout'].value %}<h6>{{post.meta['callout']}}</h6>{% endif %}
       <h4>{{post.title}}</h4>
       <h5><sup class="superscript">$</sup><span class="plan-price">{% if post.meta['discount'].value %}{{post.meta['discount']}}{% else %}{{post.meta['price']}}{% endif %}</span><sub> /mo</sub></h5>
-      
+
       {% if post.meta['discount'].value %}
       <p class="early-adopter-price">Early adopter price</p><br/>
       <del>${{post.meta['price']}}/mo</del>
       {% endif %}
 
       {{post.body}}
-      <div class="plan-tier-select">
-        <button class="blue-button small-button">Select</button>
-      </div>
     </section>
     {% endfor %}
-    
+
   </section>
+
+  <p class="try-for-free-note">Or try for free.</p>
+
+  <a href="https://manage.siteleaf.com/signup" class="button blue-button small-button plans-create-account-btn">Create an account</a>
+
 </section>
 {% include 'includes/footer' %}
