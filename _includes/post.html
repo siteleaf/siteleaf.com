@@ -1,11 +1,11 @@
 <article>
-  {% if post.meta.vimeo.value %}
+  {% if post.meta.vimeo %}
   <figure>
     <iframe src="http://player.vimeo.com/video/{{post.meta.vimeo.value}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
   </figure>
-  {% elsif post.assets.size > 0 %}
+  {% elsif post.meta.hero %}
   <figure>
-    <a href="{{post.url}}"><img src="{{post.assets[0].url}}" alt="{{post.title}}" /></a>
+    <a href="{{post.url}}"><img src="{{post.meta.hero}}" alt="{{post.title}}" /></a>
   </figure>
   {% endif %}
   <h2 class="title">
@@ -19,7 +19,7 @@
   {% for tag in post.taxonomy.first.values %}
     <h6 class="blog-tag"><a href="{{tag.url}}">{{tag.value}}</a></h6>
   {% endfor %}
-    <time datetime="2013-05-27">{{post.date | date: "%b %d, %Y"}}</time>
+    <time datetime="{{post.date | date: '%Y-%m-%d'}}">{{post.date | date: "%b %d, %Y"}}</time>
     {% if post.author.firstname %} by {{post.author.firstname}} {{post.author.lastname}}{% endif %}
   </header>
   {% if type == 'post' %}
