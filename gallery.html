@@ -5,7 +5,7 @@
     {% if post.assets.size > 0 %}
     {% assign image_url = post.assets.first.url %}
     {% else %}
-    {% capture image_query %}viewport=1200x707&format=png&thumbnail_max_width=1008&url={{post.meta['link'] | cgi_escape}}{% endcapture %}
+    {% capture image_query %}viewport=1200x707&thumbnail_max_width=756&url={{post.meta['link'] | cgi_escape}}{% endcapture %}
     {% capture image_url %}http://beta.url2png.com/v6/{{site.meta['url2png_key']}}/{{image_query | append:site.meta['url2png_secret'] | md5}}/png/?{{image_query}}{% endcapture %}
     {% endif %}
     <section class="half gallery-item">
