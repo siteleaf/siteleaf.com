@@ -2,9 +2,9 @@
 <section class="layer features-main">
   <section>
     {% for post in posts %}
-    {% if post.meta['featured'].value == "true" %}
+    {% if post.assets.size > 0 %}
     <figure class="two-thirds screenshot">
-      <img src="{{post.assets[1].url}}" alt="{{post.title}}" />
+      <img src="{{post.assets.last.url}}" alt="{{post.title}}" />
     </figure>
     <section class="third feature-item">
       <h3>{{post.title}}</h3>
@@ -17,7 +17,7 @@
 <section class="layer features-secondary">
   <section>
     {% for post in posts %}
-    {% if post.meta['featured'].value == "false" %}
+    {% if post.assets.size == 0 %}
     <section class="third">
       <h4>{{post.title}}</h4>
       <p>{{post.body}}</p>
