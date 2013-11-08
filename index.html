@@ -1,23 +1,30 @@
 {% include 'includes/header' %}
-<section class="layer features">
+<section class="layer features-main">
   <section>
-    <h3>Features</h3>
-    {% for post in site.pages['features'].posts %}
-    {% if post.meta['featured'].value == "true" %}
-    <section class="third">
-      <figure class="feature-image">
-        <img src="{{post.assets[0].url}}" alt="{{post.title}}" />
+    {% for post in site.pages.features.posts %}
+    {% if post.assets.size > 0 %}
+      <figure class="two-thirds screenshot">
+        <img src="{{post.assets.last.url}}" alt="{{post.title}}" />
       </figure>
-      <section class="feature-item">
-        <h4>{{post.title}}</h4>
+      <section class="third feature-item">
+        <h3>{{post.title}}</h3>
         <p>{{post.body}}</p>
       </section>
+    {% endif %}
+    {% endfor %}
+    <div style="clear: both"></div>
+  </section>
+</section>
+<section class="layer features-secondary">
+  <section>
+    {% for post in site.pages.features.posts %}
+    {% if post.assets.size == 0 %}
+    <section class="third">
+      <h4>{{post.title}}</h4>
+      <p>{{post.body}}</p>
     </section>
     {% endif %}
     {% endfor %}
-    <div>
-      <p><a href="/features" class="show-features-link">Brilliant! Tell me more</a></p>
-    </div>
   </section>
 </section>
 <section class="layer get-started">
@@ -31,7 +38,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>
-  $(function () {      
+  $(function () {
     var features = []
     $('.image-carousel li').each(function(){
       features.push($(this))

@@ -23,7 +23,7 @@
     ga('send', 'pageview');
   </script>
 
-  <section class="layer main">
+  <section class="layer main{% if home? %} dark{% endif %}">
     <section>
       <header>
         <h1 class="logo">
@@ -31,9 +31,6 @@
         </h1>
         <nav>
           <ul class="main-nav hide">
-            <li class="main-nav-item">
-              <a href="/features"{% if slug == "features" %} class="selected"{% endif %}>Features</a>
-            </li>
             <li class="main-nav-item">
               <a href="/plans"{% if slug == "plans" %} class="selected"{% endif %}>Plans</a>
             </li>
@@ -53,9 +50,9 @@
         </nav>
       </header>
 
-      {% if slug == 'home' %}
+      {% if home? %}
       <h2 class="intro-header">{{meta['header']}}</h2>
-      <figure class="image-wrapper lift screenshot" id="show-intro-video">
+      <figure class="image-wrapper screenshot" id="show-intro-video">
         <span class="play-ic ss-icon">play</span>
         <ul class="image-carousel">
         {% for asset in assets %}
