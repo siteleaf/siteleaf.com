@@ -800,6 +800,10 @@ label.signup-plan-select {
     margin-bottom:120px;
 }
 
+.blog article p.back {
+    margin-top:4em;
+}
+
 .blog figure {
     width:100%;
     max-width:756px;
@@ -838,7 +842,8 @@ label.signup-plan-select {
 }
 
 .blog h3 {
-  margin-top: 1em;
+  margin-top: 1.2em;
+  font-size: 36px;
 }
 
 .blog h3, .blog h4, .blog p, .blog ol, .blog ul, .blog pre {
@@ -860,11 +865,19 @@ label.signup-plan-select {
 .blog blockquote p {
     margin-top:1em;
     margin-bottom:1em;
+    padding-left:1.2em;
+    border-left:2px solid #eee;
+    color:#999d9e;
+    line-height:1.25em;
+    text-indent:-.35em;
+}
+
+.blog blockquote.pullquote p {
+    border-left: none;
+    padding-left: 0;
     color:#7abf26;
     font-size:2.125em;
     font-weight:300;
-    line-height:1.25em;
-    text-indent:-.35em;
 }
 
 .blog blockquote p:before {

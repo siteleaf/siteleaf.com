@@ -24,11 +24,11 @@
   </header>
   {% if type == 'post' %}
     {{post.body}}
-    <p><a href="{{parent.url}}">&larr; Back to {{parent.title}}</a></p>
+    <p class="back"><a href="{{parent.url}}">&larr; Back to {{parent.title}}</a></p>
   {% else %}
     {{post.excerpt}}
     {% if post.excerpt != post.body %}
-    <p><a href="{{post.url}}">Read more &rarr;</a></p>
+    <p class="more"><a href="{{post.url}}">Read more &rarr;</a></p>
     {% endif %}
   {% endif %}
 </article>
