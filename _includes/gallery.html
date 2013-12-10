@@ -1,0 +1,21 @@
+{% include 'includes/header' %}
+<section class="layer gallery">
+  <section>
+  {% for post in posts %}
+    {% if post.assets.size > 0 %}
+    {% assign image_url = post.assets.first.url %}
+    {% else %}
+    {% capture image_query %}viewport=1200x707&thumbnail_max_width=756&url={{post.meta['link'] | cgi_escape}}{% endcapture %}
+    {% capture image_url %}http://beta.url2png.com/v6/{{site.meta['url2png_key']}}/{{image_query | append:site.meta['url2png_secret'] | md5}}/png/?{{image_query}}{% endcapture %}
+    {% endif %}
+    <section class="half gallery-item">
+      <figure>
+        <a href="{{post.meta['link']}}"><img src="{{image_url}}" alt="{{post.title}}" /></a>
+      </figure>
+      <h2><a href="{{post.meta['link']}}">{{post.title}}</a></h2>
+    </section>
+  {% endfor %}
+  <div style="clear: both"></div>
+  </section>
+</section>
+{% include 'includes/footer' %}
