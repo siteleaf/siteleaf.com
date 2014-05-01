@@ -1,9 +1,10 @@
-{% include 'includes/header' %}
-<section class="layer text-block">
-  <section>
-    <h2>{{title}}</h2>
-    <p>{{body}}</p>
-    {% if slug == "terms" or slug == "privacy" %}<small>Last edited: {{site.date | date: "%b %d, %Y"}}</small>{% endif %}
+{% capture content %}
+  <section class="layer text-block">
+    <section>
+      <h2>{{title}}</h2>
+      <p>{{body}}</p>
+      {% if slug == "terms" or slug == "privacy" %}<small>Last edited: {{site.date | date: "%b %d, %Y"}}</small>{% endif %}
+    </section>
   </section>
-</section>
-{% include 'includes/footer' %}
+{% endcapture %}
+{% include 'layouts/default' %}

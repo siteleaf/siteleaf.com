@@ -1,0 +1,17 @@
+{% comment %}
+  Posts listing
+  ------------------------
+  Lists posts of the current page, sorted by publish date.
+{% endcomment %}
+
+{% if posts.size > 0 %}
+  <ul class="help-posts help-topics">
+    {% for post in posts %}
+      <li class="help-post help-topic">
+        <a href="{{ post.url }}" class="help-post-link">
+          <span class="help-post-date">{{post.date | date: "%b %d, %Y"}}</span>{{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

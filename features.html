@@ -1,38 +1,40 @@
-{% include 'includes/header' %}
-<section class="layer features-main">
-  <section>
-    {% for post in posts %}
-    {% if post.assets.size > 0 %}
-      <figure class="two-thirds screenshot">
-        <img src="{{post.assets.last.url}}" alt="{{post.title}}" />
-      </figure>
-      <section class="third feature-item">
-        <h3>{{post.title}}</h3>
+{% capture content %}
+  <section class="layer features-main">
+    <section>
+      {% for post in posts %}
+      {% if post.assets.size > 0 %}
+        <figure class="two-thirds screenshot">
+          <img src="{{post.assets.last.url}}" alt="{{post.title}}" />
+        </figure>
+        <section class="third feature-item">
+          <h3>{{post.title}}</h3>
+          <p>{{post.body}}</p>
+        </section>
+      {% endif %}
+      {% endfor %}
+      <div style="clear: both"></div>
+    </section>
+  </section>
+  <section class="layer features-secondary">
+    <section>
+      {% for post in posts %}
+      {% if post.assets.size == 0 %}
+      <section class="third">
+        <h4>{{post.title}}</h4>
         <p>{{post.body}}</p>
       </section>
-    {% endif %}
-    {% endfor %}
-    <div style="clear: both"></div>
-  </section>
-</section>
-<section class="layer features-secondary">
-  <section>
-    {% for post in posts %}
-    {% if post.assets.size == 0 %}
-    <section class="third">
-      <h4>{{post.title}}</h4>
-      <p>{{post.body}}</p>
+      {% endif %}
+      {% endfor %}
     </section>
-    {% endif %}
-    {% endfor %}
   </section>
-</section>
-<section class="layer get-started">
-  <section>
-    <h3>Create your website now!</h3>
-    <div>
-      <button class="green-button large-button" onclick="location.href='/plans';">Get started</button>
-    </div>
+  <section class="layer get-started">
+    <section>
+      <h3>Create your website now!</h3>
+      <div>
+        <button class="green-button large-button" onclick="location.href='/plans';">Get started</button>
+      </div>
+    </section>
   </section>
-</section>
-{% include 'includes/footer' %}
+{% endcapture %}
+
+{% include 'layouts/default' %}

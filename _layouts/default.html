@@ -54,21 +54,51 @@
       </header>
 
       {% if home? %}
-      <h2 class="intro-header">{{meta['header']}}</h2>
-      <figure class="image-wrapper screenshot" id="show-intro-video">
-        <span class="play-ic ss-icon">play</span>
-        <ul class="image-carousel">
-        {% for asset in assets %}
-          <li{% if forloop.first %} class="active fadein"{% endif %}><img src="{{asset.url}}" alt="Siteleaf"/></li>
-        {% endfor %}
-        </ul>
-      </figure>
+        <h2 class="intro-header">{{meta['header']}}</h2>
+        <figure class="image-wrapper screenshot" id="show-intro-video">
+          <span class="play-ic ss-icon">play</span>
+          <ul class="image-carousel">
+          {% for asset in assets %}
+            <li{% if forloop.first %} class="active fadein"{% endif %}><img src="{{asset.url}}" alt="Siteleaf"/></li>
+          {% endfor %}
+          </ul>
+        </figure>
 
-      <div class="intro-video-wrap is-hidden" id="video">
-        <div class="intro-video">
-          <iframe src="http://player.vimeo.com/video/69301083?color=00a1ff&api=1&player_id=intro" width="500" height="281" id="video-iframe" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <div class="intro-video-wrap is-hidden" id="video">
+          <div class="intro-video">
+            <iframe src="http://player.vimeo.com/video/69301083?color=00a1ff&api=1&player_id=intro" width="500" height="281" id="video-iframe" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div>
         </div>
-      </div>
       {% endif %}
     </section>
   </section>
+
+  {{ content }}
+
+  <footer class="layer">
+    <section>
+      <nav>
+        <ul class="footer-nav">
+          <li class="footer-nav-item login"><a href="https://manage.siteleaf.com">Log in</a>
+          <li class="footer-nav-item show"><a href="/features">Features</a>
+          <li class="footer-nav-item show"><a href="/plans">Plans</a>
+          <li class="footer-nav-item show"><a href="/blog">Blog</a>
+          <li class="footer-nav-item show"><a href="/gallery">Gallery</a>
+          <li class="footer-nav-item show"><a href="/themes">Themes</a>
+          <li class="footer-nav-item"><a href="/help">Help</a>
+          <li class="footer-nav-item"><a href="https://github.com/siteleaf/siteleaf-themes">Documentation</a>
+          <li class="footer-nav-item"><a href="https://github.com/siteleaf/siteleaf-api">API</a>
+          <li class="footer-nav-item"><a href="/purpose">Purpose</a>
+          <li class="footer-nav-item"><a href="/privacy">Privacy</a>
+          <li class="footer-nav-item"><a href="/terms">Terms</a>
+        </ul>
+      </nav>
+      <small>&copy; 2013 Siteleaf&reg; is a registered trademark of Oak Studios, LLC. Made in Brooklyn.</small>
+    </section>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  {{ footer_scripts }}
+  <script src="//cdn.symbolset.com/534b9174c035efe2c1928ac3ec622d95cd76118d/symbolset.js"></script>
+</body>
+</html>

@@ -1,71 +1,73 @@
-{% include 'includes/header' %}
-<section class="layer features-main">
-  <section>
-    {% for post in site.pages.features.posts %}
-    {% if post.assets.size > 0 %}
-      <figure class="two-thirds screenshot">
-        <img src="{{post.assets.last.url}}" alt="{{post.title}}" />
-      </figure>
-      <section class="third feature-item">
-        <h3>{{post.title}}</h3>
+{% capture content %}
+  <section class="layer features-main">
+    <section>
+      {% for post in site.pages.features.posts %}
+      {% if post.assets.size > 0 %}
+        <figure class="two-thirds screenshot">
+          <img src="{{post.assets.last.url}}" alt="{{post.title}}" />
+        </figure>
+        <section class="third feature-item">
+          <h3>{{post.title}}</h3>
+          <p>{{post.body}}</p>
+        </section>
+      {% endif %}
+      {% endfor %}
+      <div style="clear: both"></div>
+    </section>
+  </section>
+  <section class="layer features-secondary">
+    <section>
+      {% for post in site.pages.features.posts %}
+      {% if post.assets.size == 0 %}
+      <section class="third">
+        <h4>{{post.title}}</h4>
         <p>{{post.body}}</p>
       </section>
-    {% endif %}
-    {% endfor %}
-    <div style="clear: both"></div>
-  </section>
-</section>
-<section class="layer features-secondary">
-  <section>
-    {% for post in site.pages.features.posts %}
-    {% if post.assets.size == 0 %}
-    <section class="third">
-      <h4>{{post.title}}</h4>
-      <p>{{post.body}}</p>
+      {% endif %}
+      {% endfor %}
     </section>
-    {% endif %}
-    {% endfor %}
   </section>
-</section>
-<section class="layer get-started">
-  <section>
-    <h3>Create your website now!</h3>
-    <div>
-      <button class="green-button large-button" onclick="location.href='/plans';">Get started</button>
-    </div>
+  <section class="layer get-started">
+    <section>
+      <h3>Create your website now!</h3>
+      <div>
+        <button class="green-button large-button" onclick="location.href='/plans';">Get started</button>
+      </div>
+    </section>
   </section>
-</section>
+{% endcapture %}
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>
-  $(function () {
-    var features = []
-    $('.image-carousel li').each(function(){
-      features.push($(this))
+{% capture footer_scripts %}
+  <script>
+    $(function () {
+      var features = []
+      $('.image-carousel li').each(function(){
+        features.push($(this))
+      })
+
+      var i = 1
+      setInterval(function(){
+        if (i === features.length) i = 0
+        $feature = features[i]
+
+        $('#features .item.active').removeClass('active')
+        $('#features .item').eq(i).addClass('active')
+
+        setTimeout(function(){
+          $feature.addClass('fadein')
+        }, 0)
+
+        $('.image-carousel .active').removeClass('fadein').addClass('old')
+
+        $feature.addClass('active')
+
+        setTimeout(function(){
+          $('.image-carousel .active.old').removeClass('active old')
+        }, 500)
+
+        i++
+      }, 3500)
     })
-
-    var i = 1
-    setInterval(function(){
-      if (i === features.length) i = 0
-      $feature = features[i]
-
-      $('#features .item.active').removeClass('active')
-      $('#features .item').eq(i).addClass('active')
-
-      setTimeout(function(){
-        $feature.addClass('fadein')
-      }, 0)
-
-      $('.image-carousel .active').removeClass('fadein').addClass('old')
-
-      $feature.addClass('active')
-
-      setTimeout(function(){
-        $('.image-carousel .active.old').removeClass('active old')
-      }, 500)
-
-      i++
-    }, 3500)
-  })
-</script>
-{% include 'includes/footer' %}
+  </script>
+{% endcapture %}
+{% include 'layouts/default' %}

@@ -1,0 +1,28 @@
+{% comment %}
+  Table of contents
+  ------------------------
+  Lists children and grandchildren of the current page.
+{% endcomment %}
+
+{% if pages.size > 0 %}
+
+  <ul class="help-topics">
+    {% for topic in pages %}
+      <li class="help-topic">
+        <a href="{{ topic.url }}" class="help-topic-link">{{ topic.title }}</a>
+
+        {% if topic.pages.size > 0 %}
+          <ul class="help-subtopics">
+            {% for subtopic in topic.pages  %}
+              <li class="help-subtopic">
+                <a href="{{ subtopic.url }}" class="help-subtopic-link">{{ subtopic.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+
+    {% endfor %}
+  </ul>
+
+{% endif %}

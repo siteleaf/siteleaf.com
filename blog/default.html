@@ -1,19 +1,23 @@
-{% include 'includes/header' %}
-<section class="layer blog">
-  {% if type == 'post' %}
-    {% assign post = current %}
-    {% include 'includes/post' %}
-  {% else %}
-    {% for post in posts %}
+{% capture content %}
+  <section class="layer blog">
+    {% if type == 'post' %}
+      {% assign post = current %}
       {% include 'includes/post' %}
-    {% endfor %}
-  {% endif %}
-</section>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-<script src="/js/jquery.fitvids.js"></script>
-<script>
-  $(document).ready(function(){
-    $("section.blog").fitVids();
-  });
-</script>
-{% include 'includes/footer' %}
+    {% else %}
+      {% for post in posts %}
+        {% include 'includes/post' %}
+      {% endfor %}
+    {% endif %}
+  </section>
+{% endcapture %}
+
+{% capture footer_scripts %}
+  <script src="/js/jquery.fitvids.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("section.blog").fitVids();
+    });
+  </script>
+{% endcapture %}
+
+{% include 'layouts/default' %}

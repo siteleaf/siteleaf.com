@@ -437,9 +437,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     top:0;
     display:none;
     opacity:0;
-    -webkit-transition:opacity .5s ease-out;
-    -moz-transition:opacity .5s ease-out;
-    -ms-transition:opacity .5s ease-out;
     transition:opacity .5s ease-out;
 }
 .image-carousel .fadein {
@@ -472,9 +469,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     padding: 22px 0 0;
     border-radius: 50%;
     text-indent: 6px;
-    -webkit-transition:background .5s ease-out;
-    -moz-transition:background .5s ease-out;
-    -ms-transition:background .5s ease-out;
     transition:background .5s ease-out;
 }
 
