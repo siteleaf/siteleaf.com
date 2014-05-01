@@ -106,27 +106,28 @@ document.addEventListener("DOMContentLoaded", function() {
     features.push($(this))
   })
 
-  var i = 1
-  setInterval(function(){
-    if (i === features.length) i = 0
-    $feature = features[i]
+  if(features.length){
+    var i = 1
+    setInterval(function(){
+      if (i === features.length) i = 0
+      $feature = features[i]
 
-    $('#features .item.active').removeClass('active')
-    $('#features .item').eq(i).addClass('active')
+      $('#features .item.active').removeClass('active')
+      $('#features .item').eq(i).addClass('active')
 
-    setTimeout(function(){
-      $feature.addClass('fadein')
-    }, 0)
+      setTimeout(function(){
+        $feature.addClass('fadein')
+      }, 0)
 
-    $('.image-carousel .active').removeClass('fadein').addClass('old')
+      $('.image-carousel .active').removeClass('fadein').addClass('old')
 
-    $feature.addClass('active')
+      $feature.addClass('active')
 
-    setTimeout(function(){
-      $('.image-carousel .active.old').removeClass('active old')
-    }, 500)
+      setTimeout(function(){
+        $('.image-carousel .active.old').removeClass('active old')
+      }, 500)
 
-    i++
-  }, 3500)
-
+      i++
+    }, 3500)
+  }
 });
