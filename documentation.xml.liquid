@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in site.pages['help'].pages %}
+  <url>
+    <loc>{{page.permalink}}</loc>
+    <lastmod>{{page.updated_at}}</lastmod>
+    <priority>1.0</priority>
+  </url>
+{% endfor %}
+</urlset>
