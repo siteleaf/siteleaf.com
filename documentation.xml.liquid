@@ -6,5 +6,21 @@
     <lastmod>{{page.updated_at}}</lastmod>
     <priority>1.0</priority>
   </url>
+
+  {% for subpage in page.pages %}
+    <url>
+      <loc>{{subpage.permalink}}</loc>
+      <lastmod>{{subpage.updated_at}}</lastmod>
+      <priority>1.0</priority>
+    </url>
+
+    {% for subsubpage in subpage.pages %}
+      <url>
+        <loc>{{subsubpage.permalink}}</loc>
+        <lastmod>{{subsubpage.updated_at}}</lastmod>
+        <priority>1.0</priority>
+      </url>
+    {% endfor %}
+  {% endfor %}
 {% endfor %}
 </urlset>

@@ -3,13 +3,21 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="description" content="{{excerpt | fallback:site.meta.description | strip_html | truncate: 300 | escape}}">
+  <meta property='st:title' content='{{ title }}' />
+
+  {% if url == '/' %}
+    <title>{{site.meta.title | fallback:title}}</title>
+  {% else %}
+    <title>{{title}}</title>
+  {% endif %}
+
   <link href="//cdn.symbolset.com/534b9174c035efe2c1928ac3ec622d95cd76118d/symbolset.css" rel="stylesheet">
   <link rel="stylesheet" href="/styles/css/style.css">
   <link rel="icon shortcut" href="/images/favicon.ico">
   {{ header_scripts }}
   <script type="text/javascript" src="//use.typekit.net/tti2qoh.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <title>{{site.title}} | {{title}}</title>
 </head>
 <body>
   <script type="text/javascript">

@@ -69,7 +69,11 @@
 // Search
 // ================================================
 .help-search-form
-  margin-bottom: $gutter
+  margin: 0 auto
+  text-align: center
+  float: none
+  max-width: $w_content_wide_column
+  overflow: visible
 
 .help-search-field
   display: block
@@ -79,10 +83,40 @@
   border-radius: 3px
   padding: 10px
   font-size: em($fs_small)
+  text-align: left
 
 .st-snippet
   em
     background: rgba($yellow, 0.3)
+
+.st-modal-scrollable
+  form
+    overflow: visible
+    float: none
+
+div.swiftype div.st-result-listing
+  margin-left: auto
+
+div.swiftype div.st-result-listing .st-results div.st-result .st-result-text h3
+  text-align: left
+
+  a
+    color: $blue
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+div.swiftype div.st-result-listing,
+div.swiftype div.st-result-listing div.st-search-summary,
+div.swiftype div.st-result-listing .st-results,
+div.swiftype div.st-result-listing .st-results div.st-result .st-result-text
+  max-width: none !important
+  margin-left: 0 !important
+
+div.swiftype div.st-result-listing .st-results div.st-result
+  padding-left: 20px
+  padding-right: 20px
 
 body .swiftype-widget
   .autocomplete
