@@ -1,0 +1,6 @@
+gzip_assets: off
+# compress_assets: off
+
+javascripts:
+  application:
+    - scripts/js/scripts.js

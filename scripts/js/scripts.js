@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
     clearGA();
   }
 
-  // Homepage video
+  // Homepage
   // ==================================================================
   var introSlider = document.getElementById('show-intro-video');
 
@@ -100,5 +100,33 @@ document.addEventListener("DOMContentLoaded", function() {
       f.contentWindow.postMessage(JSON.stringify(data), url);
     });
   }
+
+  var features = []
+  $('.image-carousel li').each(function(){
+    features.push($(this))
+  })
+
+  var i = 1
+  setInterval(function(){
+    if (i === features.length) i = 0
+    $feature = features[i]
+
+    $('#features .item.active').removeClass('active')
+    $('#features .item').eq(i).addClass('active')
+
+    setTimeout(function(){
+      $feature.addClass('fadein')
+    }, 0)
+
+    $('.image-carousel .active').removeClass('fadein').addClass('old')
+
+    $feature.addClass('active')
+
+    setTimeout(function(){
+      $('.image-carousel .active.old').removeClass('active old')
+    }, 500)
+
+    i++
+  }, 3500)
 
 });

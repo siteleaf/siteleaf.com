@@ -304,7 +304,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     height:94px;
     display:inline-block;
     text-indent:-9999px;
-    background:url('images/logo.svg') no-repeat center;
+    background:url('/images/logo.svg') no-repeat center;
     background-size:100%;
 }
 
@@ -737,7 +737,7 @@ label.signup-plan-select {
 }
 
 .signup-plan label:before {
-    content:url('images/radio-unchecked.svg');
+    content:url('/images/radio-unchecked.svg');
     width:30px;
     height:30px;
     margin-right:-46px;
@@ -753,7 +753,7 @@ label.signup-plan-select {
 }
 
 .signup-plan input[type="radio"]:checked + label:before {
-    content:url('images/radio-checked.svg');
+    content:url('/images/radio-checked.svg');
 }
 
 .signup-plan label:hover {
@@ -763,7 +763,7 @@ label.signup-plan-select {
 }
 
 .signup-plan label:hover:before {
-    content:url('images/radio-hover.svg');
+    content:url('/images/radio-hover.svg');
 }
 
 .signup-info label {
