@@ -843,30 +843,26 @@ label.signup-plan-select {
     width:100%;
     max-width:756px;
     margin:0 auto 48px;
-    display:block;
-    border-radius:3px;
-    -moz-border-radius:3px;
-}
-
-.blog figure {
-    width:100%;
-    max-width:756px;
-    margin:0 auto 48px;
-    display:block;
-    background:#00a1ff;
-    border-radius:3px;
-    -moz-border-radius:3px;
-}
-
-.blog figure img {
+    > figcaption {
+      margin:1em 0;
+    }
+    > a {
+      display:block;
+      background:#00a1ff;
+      border-radius:3px;
+      -moz-border-radius:3px;
+      &:hover img {
+          opacity:.5;
+      }
+    }
+    img {
     -webkit-transition:all .05s ease-out;
     -moz-transition:all .05s ease-out;
     -o-transition:all .05s ease-out;
     transition:all .05s ease-out;
-}
-
-.blog figure:hover img {
-    opacity:.5;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    }
 }
 
 .blog h2.title {
