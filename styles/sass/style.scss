@@ -836,7 +836,7 @@ label.signup-plan-select {
             margin-top:4em;
         }
     }
-    
+
     figure {
         width:100%;
         max-width:756px;
@@ -862,19 +862,19 @@ label.signup-plan-select {
         -moz-border-radius:3px;
         }
     }
-    
+
     h2.title {
         width:100%;
         max-width:756px;
         margin:0 auto 36px;
         text-align:left;
     }
-    
+
     h3 {
       margin-top: 1.2em;
       font-size: 36px;
     }
-    
+
     h3, h4, p, ol, ul, pre {
         width:100%;
         max-width:504px;
@@ -882,12 +882,15 @@ label.signup-plan-select {
         margin-left:auto;
         text-align:left;
     }
-    
+
     p img {
         border-radius:3px;
         -moz-border-radius:3px;
+        width: auto;
+        max-width: 100%;
+        display: inline-block;
     }
-    
+
     blockquote {
         p {
             margin-top:1em;
@@ -905,7 +908,7 @@ label.signup-plan-select {
             font-weight:300;
         }
     }
-    
+
     ol, ul {
         margin-top:1em;
         margin-bottom:1em;
@@ -936,7 +939,7 @@ label.signup-plan-select {
         font-size: 80%;
         font-style: italic;
     }
-    
+
     pre {
         margin-top:1em;
         margin-bottom:1em;
@@ -949,7 +952,7 @@ label.signup-plan-select {
         font-size:1em;
         line-height:1.625em;
     }
-    
+
     p code {
         background:#e7f2f0;
         padding:5px 4px;
@@ -957,7 +960,7 @@ label.signup-plan-select {
         border-radius:3px;
         -moz-border-radius:3px;
     }
-    
+
     p mark {
         background: rgba(245,245,0,.25);
         padding:1px 4px 0;
@@ -965,7 +968,7 @@ label.signup-plan-select {
         border-radius:3px;
         -moz-border-radius:3px;
     }
-    
+
     hr {
         border: none;
         background:#e7f2f0;
@@ -973,7 +976,7 @@ label.signup-plan-select {
         margin:2em auto;
         height: 2px;
     }
-    
+
     time {
         vertical-align:inherit;
         font-weight:600;
