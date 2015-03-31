@@ -7,7 +7,7 @@ while(i<arr.length){bits=arr[i].split("=");obj[bits[0]]=bits[1];i++;}
 return obj;};updatedQueryString=function(data){var key,newQS,oldQS;oldQS=getQueryStringObject();newQS='?';key=void 0;for(key in data){if(data[key]!=='clear'){newQS+=key+'='+data[key]+'&';}}
 if(oldQS){key=void 0;for(key in oldQS){if(!data[key]){newQS+=key+'='+oldQS[key]+'&';}}}
 return newQS.slice(0,-1);};updateURL=function(url,appendQS){if(window.history&&window.history.pushState){if(appendQS){url="http://"+window.location.host+window.location.pathname+url;}
-return window.history.replaceState({},document.title,url);}};document.addEventListener("DOMContentLoaded",function(){var queryString=getQueryStringObject();if(queryString.ga&&queryString.ga=="deleted_account"){trackGA("user","deleted account");clearGA();}
+return window.history.replaceState({},document.title,url);}};document.addEventListener("DOMContentLoaded",function(){$('.main-nav-toggle').on('click',function(){document.body.classList.toggle('is-showing-nav');});var queryString=getQueryStringObject();if(queryString.ga&&queryString.ga=="deleted_account"){trackGA("user","deleted account");clearGA();}
 var introSlider=document.getElementById('show-intro-video');if(introSlider){var video=document.getElementById('video');var f=document.getElementById('video-iframe');var url=f.getAttribute('src').split('?')[0];introSlider.addEventListener('click',function(){var data={method:'play'};video.classList.remove('is-hidden');introSlider.classList.add('is-hidden');f.contentWindow.postMessage(JSON.stringify(data),url);});}
 var features=[]
 $('.image-carousel li').each(function(){features.push($(this))})

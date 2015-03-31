@@ -76,6 +76,11 @@ updateURL = function(url, appendQS) {
 
 document.addEventListener("DOMContentLoaded", function() {
 
+  // Nav
+  $('.main-nav-toggle').on('click', function(){
+    document.body.classList.toggle('is-showing-nav');
+  });
+
   // Check for GA param in query string
   // ==================================================================
   var queryString = getQueryStringObject();

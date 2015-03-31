@@ -37,22 +37,18 @@
         <h1 class="logo">
           <a href="/">Siteleaf</a>
         </h1>
+        <span class="ss-rows main-nav-toggle right">Menu</span>
         <nav>
-          <ul class="main-nav hide">
+          <ul class="main-nav">
+            {% for page in site.pages %}
+              {% if page.meta.main_nav == 'true' %}
+                <li class="main-nav-item">
+                  <a href="/{{page.slug}}"{% if slug == page.slug %} class="selected"{% endif %}>{{ page.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
             <li class="main-nav-item">
-              <a href="/plans"{% if slug == "plans" %} class="selected"{% endif %}>Plans</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="/blog"{% if slug == "blog" %} class="selected"{% endif %}>Blog</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="/gallery"{% if slug == "gallery" %} class="selected"{% endif %}>Gallery</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="/themes"{% if slug == "themes" %} class="selected"{% endif %}>Themes</a>
-            </li>
-            <li class="main-nav-item">
-              <a href="https://manage.siteleaf.com"{% if slug == "login" %} class="selected"{% endif %}>Log in</a>
+              <a href="https://manage.siteleaf.com">Log in</a>
             </li>
             <li class="main-nav-item get-started-nav-item">
               <a href="https://manage.siteleaf.com/signup" class="get-started-btn">Sign up</a>

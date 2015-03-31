@@ -1,3 +1,5 @@
+@import 'sass-toolbox';
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:top;box-sizing:border-box;-moz-box-sizing:border-box;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 body{line-height:1}
@@ -306,6 +308,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     text-indent:-9999px;
     background:url('/images/logo.svg') no-repeat center;
     background-size:100%;
+
+    @include min-width($bp_nav_hides + 1){
+        float: left;
+    }
 }
 
 .logo a {
@@ -315,10 +321,62 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     float:left;
 }
 
+.main-nav-toggle{
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 15px 15px;
+    color: rgba(#fff, 0.75);
+    display: none;
+    z-index: 9999;
+
+    @include max-width($bp_nav_hides){
+        display: inline-block;
+    }
+
+    &:after{
+        margin-left: 7px;
+        font-size: 32px;
+        color: #fff;
+        top: -3px;
+        position: relative;
+    }
+
+    .is-showing-nav &{
+        color: transparent;
+
+        &:after{
+            content: '␡';
+        }
+    }
+}
+
 .main-nav {
     margin:21px 0;
     float:right;
     color:rgba(39,65,90,.5);
+
+    @include max-width($bp_nav_hides){
+        float: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($dark_blue, 0.9);
+        margin: 0;
+        padding: 20px;
+        z-index: 9998;
+        overflow: auto;
+        display: none;
+
+        .is-showing-nav &{
+            display: block;
+        }
+    }
 }
 
 .main-nav-item {
@@ -326,6 +384,18 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     display:inline-block;
     font-size:1.25em;
     text-align:right;
+
+    @include max-width($bp_nav_hides){
+        display: block;
+        text-align: left;
+        font-size: 24px;
+        padding: 0;
+
+        a{
+            padding: 15px 20px;
+            display: block;
+        }
+    }
 }
 
 .main-nav a {
@@ -356,14 +426,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     padding-top: 5px;
 }
 
-.main-nav .get-started-btn{
-    border-radius:3px;
-    background: #7abf26;
-    display: inline-block;
-    padding: 10px 10px 8px;
-    color: #fff;
-}
-
 .main-nav .get-started-btn:hover{
     background-color: #6aa621;
     color: #fff;
@@ -375,6 +437,20 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .main.dark .main-nav .get-started-btn:hover{
     background-color: rgba(0, 0, 0, 0.25);
+}
+
+.main-nav .get-started-btn{
+    border-radius:3px;
+    background: #7abf26;
+    display: inline-block;
+    padding: 10px 10px 8px;
+    color: #fff;
+
+    @include max-width($bp_nav_hides){
+        padding: 15px 20px;
+        display: block;
+        background: none !important;
+    }
 }
 
 .lift {
@@ -486,6 +562,22 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .intro-header{
     margin-bottom: 60px;
     color: #FFF;
+    line-height: 1.4;
+
+    @include max-width(780px){
+        font-size: 36px;
+    }
+
+    @include max-width(600px){
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    @include max-width(420px){
+        br{
+            display: none;
+        }
+    }
 }
 
 .main .screenshot {
@@ -1193,9 +1285,6 @@ footer.layer {
     }
 }
 
-@media screen and (min-width: 481px) {
-}
-
 @media screen and (max-width: 768px) {
     .hide {
         display:none;
@@ -1213,9 +1302,6 @@ footer.layer {
     .layer {
         padding-top:96px;
         padding-bottom:96px;
-    }
-    .logo {
-        float:left;
     }
     /*=== HOME ===*/
     .main h2 {
