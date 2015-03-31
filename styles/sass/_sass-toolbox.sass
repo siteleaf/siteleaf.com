@@ -7,6 +7,7 @@ $bp_nav_hides: 730px
 $gutter: 50px
 $w_content_wide_column: 756px
 $w_content_text_column: 504px
+$w_base: 1092px
 
 // Backgrounds
 // +++++++++++++++++++++++++++++++++++++
@@ -37,15 +38,25 @@ $text_normal: $graphite
 $text_light: #999d9e
 
 
+// Backgrounds
+// +++++++++++++++++++++++++++++++++++++
+$bg_smoke: #ebf0f2
+$bg_smoke_shadow: rgba(39,65,90,0.075)
+$bg_disabled: #bcbebf
+$bg_navy_overlay: rgba(#303739, 0.96)
+$bg_dark_navy_overlay: darken($bg_navy_overlay, 5%)
+
+
 // Borders
 // +++++++++++++++++++++++++++++++++++++
 $border_grey: #d4d7d9
 $border_light_grey: #eee
+$border_radius: 3px
 
 
 //  Functions
 //============================================================
-@function perc($inner, $container: $base_width)
+@function perc($inner, $container: $w_base)
   @return percentage($inner/$container)
   // perc(50px, 100px) = 50%
 

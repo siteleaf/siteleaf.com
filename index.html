@@ -1,32 +1,28 @@
 {% capture content %}
-  <section class="layer features-main">
-    <section>
-      {% for post in site.pages.features.posts %}
-      {% if post.assets.size > 0 %}
-        <figure class="two-thirds screenshot">
-          <img src="{{post.assets.last.url}}" alt="{{post.title}}" />
-        </figure>
-        <section class="third feature-item">
-          <h3>{{post.title}}</h3>
-          <p>{{post.body}}</p>
-        </section>
-      {% endif %}
+  {% for section in site.pages['features-v2'].pages %}
+    <section class="features-section features-{{ section.slug }}">
+
+      <div class="wrap">
+        <h1 class="feature-sections--title">{{ section.title }}</h1>
+        <div class="feature-sections--body">{{ section.body }}</div>
+      </div>
+
+      {% for feature in section.pages %}
+        <article class="feature feature-{{ feature.slug }}">
+          <div class="wrap">
+            <div class="feature--info">
+              <h2 class="feature--title">{{ feature.title }}</h2>
+              {{ feature.body }}
+            </div>
+            {% if feature.meta.graphic_html %}
+              <div class="feature--graphic">{{ feature.meta.graphic_html }}</div>
+            {% endif %}
+          </div>
+        </article>
       {% endfor %}
-      <div style="clear: both"></div>
-    </section>
-  </section>
-  <section class="layer features-secondary">
-    <section>
-      {% for post in site.pages.features.posts %}
-      {% if post.assets.size == 0 %}
-      <section class="third">
-        <h4>{{post.title}}</h4>
-        <p>{{post.body}}</p>
       </section>
-      {% endif %}
-      {% endfor %}
-    </section>
-  </section>
+  {% endfor %}
+
   <section class="layer get-started">
     <section>
       <h3>Create your website now!</h3>

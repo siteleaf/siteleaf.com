@@ -231,6 +231,12 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     float:right;
 }
 
+.wrap{
+    max-width: $w_base;
+    width: 95%;
+    margin: auto;
+}
+
 .layer {
     clear:both;
     width:100%;
@@ -243,7 +249,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     clear:both;
     width:100%;
     height:auto;
-    max-width:1092px;
+    max-width: $w_base;
     margin:0 auto;
     display:block;
 }
@@ -322,6 +328,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 .main-nav-toggle{
+    @include user-select(none);
     font-size: 18px;
     color: #fff;
     cursor: pointer;
@@ -597,34 +604,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     box-shadow:0px 20px 80px rgba(39,65,90,.5);
 }
 
-.features {
-    background:#00a1ff;
-}
-
-.features h3, .features h4 {
-    color:white;
-}
-
-.features p {
-    color:rgba(39,65,90,.85);
-}
-
-.features a {
-    color:white;
-}
-
-.features a:hover {
-    color:rgba(255,255,255,.75);
-}
-
 .feature-image {
     width:80%;
     margin-bottom:36px;
     display:none;
-}
-
-.show-features-link{
-    text-decoration: underline;
 }
 
 .intro-video-wrap{
@@ -650,20 +633,125 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
               FEATURES
 
 ========================================*/
-
-.features-main {
-    background:#e7f2f0;
+.features-section {
+    padding: 90px 0;
 }
 
-.features-main .third {
-    margin-top:30px;
-    margin-bottom:60px;
+.feature-sections--title{
+    margin-bottom: 60px;
 }
 
-.features-secondary {
-    padding-bottom:0;
+.feature{
+    overflow: hidden;
+    margin-bottom: 60px;
+    display: block;
 }
 
+.feature--title{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: $dark_blue;
+}
+
+.feature--info{
+    width: 50%;
+    float: left;
+    text-align: left;
+
+    a{
+        text-decoration: underline;
+    }
+}
+
+.feature--graphic{
+    width: 50%;
+    float: left;
+    padding-left: 40px;
+}
+
+.features-publish{
+    background: $bg_smoke;
+}
+
+// PUBLISH
+// ++++++++++++++++++++++++++++++
+
+.feature-pages-posts-and-assets .feature--graphic{
+    @include clearfix;
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        display: inline-block;
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        float: left;
+        background: $bg_smoke;
+        text-align: left;
+        padding: 15px 10px;
+        color: $text_light;
+        border-radius: 3px;
+
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+
+        &:before{
+            color: $green;
+            vertical-align: middle;
+            margin-right: 5px;
+            font-size: 18px;
+        }
+    }
+}
+
+.collab-user{
+    width: 33%;
+    text-align: center;
+    float: left;
+    padding: 10px;
+
+    img{
+        width: auto;
+        border-radius: 50%;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    strong{
+        background: $bg_smoke;
+        color: $text_light;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 14px;
+        position: relative;
+        top: -30px;
+        font-weight: normal;
+    }
+}
+
+
+// DEVELOP
+// ++++++++++++++++++++++++++++++
+.features-develop{
+    background: $bg_dark_navy_overlay;
+
+    h1{
+        color: #fff;
+    }
+
+    h2{
+        color: lighten($blue, 10%);
+    }
+
+    p{
+        color: lighten($text_light, 10%);
+    }
+}
 
 /*========================================
 
