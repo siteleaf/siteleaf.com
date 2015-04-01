@@ -1,4 +1,6 @@
 @import 'sass-toolbox';
+// @import '/styles/sass/foundation.css';
+@import 'solarized_light';
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:top;box-sizing:border-box;-moz-box-sizing:border-box;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
@@ -111,10 +113,11 @@ em {
 }
 
 code {
-    font-family:"anonymous-pro", Monaco, "Courier New", monospace;
+    font-family: $monospace;
 }
 
-blockquote {
+.hljs{
+    background: $bg_smoke;
 }
 
 small, del {
@@ -138,10 +141,6 @@ form {
     float:left;
     display:block;
     overflow:hidden;
-}
-
-fieldset {
-    // overflow:visible;
 }
 
 label {
@@ -634,15 +633,70 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 ========================================*/
 .features-section {
+    @include clearfix;
     padding: 90px 0;
+
+    p{
+        @include antialias;
+        color: $text_normal;
+    }
+
+    p a{
+        color: $text_normal;
+        text-decoration: underline;
+    }
+
+    p a:hover{
+        color: $blue;
+    }
+
+    pre{
+        text-align: left;
+    }
+}
+
+.features-section--inner{
+    max-width: $w_base;
+    margin: auto;
 }
 
 .feature-sections--title{
-    margin-bottom: 60px;
+    font-size: 50px;
+    margin: 0 auto 60px;
+    max-width: 800px;
+}
+
+.feature-sections--body p{
+    max-width: 900px;
+    margin: 0 auto 30px;
+    font-size: 24px;
+    color: $text_normal;
+
+    &:first-child{
+        margin-top: -30px;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    a{
+        color: $text_normal;
+        text-decoration: none;
+        background: #fff;
+        display: inline-block;
+        padding: 1px 8px 0;
+        border-radius: 3px;
+
+        &:hover{
+            color: #fff;
+            background: $blue;
+        }
+    }
 }
 
 .feature{
-    overflow: hidden;
+    @include clearfix;
     margin-bottom: 60px;
     display: block;
 }
@@ -650,17 +704,27 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .feature--title{
     font-size: 36px;
     margin-bottom: 10px;
-    color: $dark_blue;
+    color: $blue;
+
+    &:before{
+        margin-right: 10px;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        line-height: 56px;
+        color: #fff;
+        display: inline-block;
+        font-size: 26px;
+        text-align: center;
+        position: relative;
+        top: -6px;
+    }
 }
 
 .feature--info{
     width: 50%;
     float: left;
     text-align: left;
-
-    a{
-        text-decoration: underline;
-    }
 }
 
 .feature--graphic{
@@ -669,43 +733,64 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     padding-left: 40px;
 }
 
-.features-publish{
-    background: $bg_smoke;
+.subfeature{
+    padding: 20px;
+    width: 23%;
+    float: left;
+
+    p{
+        font-size: 15px;
+        text-align: left;
+    }
 }
 
-// PUBLISH
-// ++++++++++++++++++++++++++++++
+.subfeature--title{
+    @include antialias;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $blue;
+    color: $text_normal;
 
-.feature-pages-posts-and-assets .feature--graphic{
-    @include clearfix;
-
-    ul{
-        margin: 0;
-        padding: 0;
+    &:before{
+        font-size: 80%;
+        margin-right: 7px;
+        vertical-align: middle;
+        position: relative;
+        top: 2px;
     }
 
-    li{
-        display: inline-block;
-        width: 48%;
-        margin-right: 4%;
-        margin-bottom: 4%;
-        float: left;
-        background: $bg_smoke;
-        text-align: left;
-        padding: 15px 10px;
-        color: $text_light;
-        border-radius: 3px;
+    .subfeature:nth-of-type(2) &{
+        border-color: $purple;
+    }
 
-        &:nth-child(2n){
-            margin-right: 0;
-        }
+    .subfeature:nth-of-type(3) &{
+        border-color: $yellow;
+    }
 
-        &:before{
-            color: $green;
-            vertical-align: middle;
-            margin-right: 5px;
-            font-size: 18px;
-        }
+    .subfeature:nth-of-type(4) &{
+        border-color: $mint;
+    }
+}
+
+// WRITE
+// ++++++++++++++++++++++++++++++
+.features-manage{
+    .feature-sections--body{
+        margin-bottom: 60px;
+    }
+}
+
+
+.feature-content-types{
+    .feature--title{
+        display: none;
+    }
+
+    .feature--info{
+        width: 100%;
     }
 }
 
@@ -734,22 +819,138 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     }
 }
 
+// PUBLISH
+// ++++++++++++++++++++++++++++++
+.features-publish{
+    background: $bg_smoke;
+
+    .feature-sections--body img{
+        height: 90px;
+        width: auto;
+        display: block;
+        margin: 40px auto 0;
+        position: relative;
+        left: 20px;
+    }
+
+    .features{
+        margin: 60px auto 0;
+        padding-top: 60px;
+        border-top: 1px solid $border_grey;
+    }
+
+    .feature{
+        width: 50%;
+        float: left;
+
+        &:first-child{
+            padding-right: 20px;
+        }
+
+        &:last-child{
+            padding-left: 20px;
+        }
+
+        .wrap{
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+    .feature--title{
+        color: $text_dark;
+    }
+
+    .feature--info{
+        width: 100%;
+        position: relative;
+        z-index: 2;
+
+        p{
+            color: lighten($text_normal, 20%);
+        }
+    }
+}
+
+.feature-static-files .feature--title:before{
+    background: $yellow;
+}
+
+.feature-api .feature--title:before{
+    background: $mint;
+}
+
 
 // DEVELOP
 // ++++++++++++++++++++++++++++++
 .features-develop{
-    background: $bg_dark_navy_overlay;
+    background: $bg_solarized_dark;
+
+    .feature-sections--body:first-child{
+        margin-top: auto;
+    }
 
     h1{
         color: #fff;
     }
 
     h2{
-        color: lighten($blue, 10%);
+        color: $light_blue;
     }
 
-    p{
-        color: lighten($text_light, 10%);
+    p, p a{
+        color: rgba(#fff, 0.8);
+    }
+
+    p a:hover{
+        color: $blue;
+    }
+
+    code{
+        padding: 15px;
+        border-radius: 3px;
+        margin-bottom: 30px;
+    }
+
+    .features{
+        float: right;
+        width: 50%;
+    }
+
+    .feature--info{
+        width: 100%;
+    }
+
+    .features-develop--graphic{
+        float: left;
+        width: 46%;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+}
+
+
+// TWEETS
+// ++++++++++++++++++++++++++++++
+.features-kind-words{
+    padding: 0;
+    margin-top: -40px;
+
+    .feature-sections--title{
+        display: none;
+    }
+
+    .twitter-tweet, iframe{
+        width: 31% !important;
+        margin: 0 1% 1% !important;
+        float: left;
+        font-size: 18px;
+        border: 1px solid rgba(#000, 0.1) !important;
+        box-shadow: none !important;
+
+        &:nth-child(4){
+            clear: left;
+        }
     }
 }
 

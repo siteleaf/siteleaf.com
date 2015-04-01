@@ -3,4 +3,5 @@ gzip_assets: off
 
 javascripts:
   application:
+    - scripts/js/highlight.pack.js
     - scripts/js/scripts.js

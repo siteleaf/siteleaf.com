@@ -75,6 +75,11 @@ updateURL = function(url, appendQS) {
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  hljs.configure({
+    languages: [] // Disable auto-detection
+  });
+
+  hljs.initHighlightingOnLoad();
 
   // Nav
   $('.main-nav-toggle').on('click', function(){

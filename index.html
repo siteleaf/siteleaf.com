@@ -1,26 +1,46 @@
+{% capture footer_scripts %}
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% endcapture %}
+
 {% capture content %}
   {% for section in site.pages['features-v2'].pages %}
     <section class="features-section features-{{ section.slug }}">
-
-      <div class="wrap">
+      <div class="features-section--inner">
         <h1 class="feature-sections--title">{{ section.title }}</h1>
         <div class="feature-sections--body">{{ section.body }}</div>
-      </div>
 
-      {% for feature in section.pages %}
-        <article class="feature feature-{{ feature.slug }}">
-          <div class="wrap">
-            <div class="feature--info">
-              <h2 class="feature--title">{{ feature.title }}</h2>
-              {{ feature.body }}
-            </div>
-            {% if feature.meta.graphic_html %}
-              <div class="feature--graphic">{{ feature.meta.graphic_html }}</div>
-            {% endif %}
+        <div class="features">
+          {% for feature in section.pages %}
+            <article class="feature feature-{{ feature.slug }}">
+              <div class="feature--info">
+                <h2 class="feature--title{% if feature.meta.heading_icon %} ss-{{ feature.meta.heading_icon }}{% endif %}">{{ feature.title }}</h2>
+                {{ feature.body }}
+              </div>
+              {% if feature.meta.graphic_html %}
+                <div class="feature--graphic">{{ feature.meta.graphic_html }}</div>
+              {% endif %}
+
+              {% if feature.pages.size > 0 %}
+                <div class="subfeatures">
+                  {% for subfeature in feature.pages %}
+                    <article class="subfeature subfeature-{{ feature.slug }}">
+                      <h2 class="subfeature--title{% if subfeature.meta.heading_icon %} ss-{{ subfeature.meta.heading_icon }}{% endif %}">{{ subfeature.title }}</h2>
+                      <div class="subfeature--body">{{ subfeature.body }}</div>
+                    </article>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+
+        {% if section.slug == 'develop' %}
+          <div class="features-develop--graphic">
+            {{ section.meta.graphic_html | markdown:true }}
           </div>
-        </article>
-      {% endfor %}
-      </section>
+        {% endif %}
+      </div>
+    </section>
   {% endfor %}
 
   <section class="layer get-started">
