@@ -1,6 +1,6 @@
 @import 'sass-toolbox';
 // @import '/styles/sass/foundation.css';
-@import 'solarized_light';
+@import 'solarized_siteleaf';
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:top;box-sizing:border-box;-moz-box-sizing:border-box;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
@@ -121,10 +121,6 @@ em {
 
 code {
     font-family: $monospace;
-}
-
-.hljs{
-    background: $bg_smoke;
 }
 
 small, del {
@@ -975,15 +971,18 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         img{
             border-top: 20px solid $bg_smoke;
             border-radius: 6px 6px 0 0;
+            vertical-align: bottom;
+            max-width: 100%;
+            width: auto;
         }
 
         &:after{
             content: '';
-            @include linear-gradient("top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 90%");
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
             position: absolute;
             left: 0;
             bottom: 0;
-            height: 50%;
+            height: 90px;
             width: 100%;
 
             @include max-width($bp_feature_stacked){
@@ -999,7 +998,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     background: $bg_smoke;
 
     .feature-sections--body img{
-        height: 90px;
+        height: 65px;
         width: auto;
         max-width: 100%;
         display: block;
@@ -1070,8 +1069,12 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         position: relative;
         z-index: 2;
 
-        p{
+        p, p a{
             color: lighten($text_normal, 20%);
+        }
+
+        p a:hover{
+            color: $blue;
         }
     }
 }
@@ -1153,6 +1156,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     margin-top: -40px;
 
     .feature-sections--title{
+        display: none;
+    }
+
+    .twitter-tweet{
         display: none;
     }
 
@@ -1756,6 +1763,13 @@ footer.layer {
     margin:0 18px;
     display:inline-block;
     font-size:1.25em;
+}
+
+.footer-copy{
+    a{
+        color: $text_light;
+        text-decoration: underline;
+    }
 }
 
 
