@@ -64,6 +64,13 @@ h3 {
     font-weight:300;
 }
 
+.get-started--title{
+    @include max-width($bp_nav_hides){
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+}
+
 h4 {
     margin-bottom:12px;
     font-size:1.25em;
@@ -277,6 +284,11 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     float:center;
     display:block;
     font:300 2.75em "source-sans-pro", "helvetica", sans-serif;
+
+    @include max-width($bp_nav_hides){
+        font-size: 1.5em;
+        margin-top: 18px;
+    }
 }
 
 .small-button {
@@ -349,6 +361,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         color: #fff;
         top: -3px;
         position: relative;
+        vertical-align: middle;
     }
 
     .is-showing-nav &{
@@ -636,6 +649,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     @include clearfix;
     padding: $padding_features_section 0;
 
+    @include max-width($bp_feature_section_downsized){
+        padding: $padding_features_section_downsized 0;
+    }
+
     p{
         @include antialias;
         color: $text_normal;
@@ -657,6 +674,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .features-section--inner{
     max-width: $w_base;
+    width: 90%;
     margin: auto;
 }
 
@@ -664,6 +682,11 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     font-size: 50px;
     margin: 0 auto 60px;
     max-width: 800px;
+
+    @include max-width($bp_feature_section_downsized){
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
 }
 
 .feature-sections--body p{
@@ -680,6 +703,14 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         margin-bottom: 0;
     }
 
+    @include max-width($bp_feature_section_downsized){
+        font-size: 18px;
+
+        &:first-child{
+            margin-top: -15px;
+        }
+    }
+
     a{
         color: $text_normal;
         text-decoration: none;
@@ -687,6 +718,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         display: inline-block;
         padding: 1px 8px 0;
         border-radius: 3px;
+        margin: 1px 0;
 
         &:hover{
             color: #fff;
@@ -699,12 +731,28 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     @include clearfix;
     margin-bottom: $margin_feature;
     display: block;
+
+    @include max-width($bp_feature_downsized){
+        margin-bottom: $margin_feature_downsized;
+    }
 }
 
 .feature--title{
     font-size: 36px;
     margin-bottom: 10px;
     color: $blue;
+
+    @include max-width($bp_feature_downsized){
+        font-size: 24px;
+    }
+
+    @include max-width($bp_feature_stacked){
+        text-align: center;
+    }
+
+    @include max-width($bp_feature_left_aligned){
+        text-align: left;
+    }
 
     &:before{
         margin-right: 10px;
@@ -719,6 +767,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         position: relative;
         top: -4px;
         vertical-align: middle;
+
+        @include max-width($bp_feature_downsized){
+            height: 35px;
+            width: 35px;
+            font-size: 18px;
+            line-height: 40px;
+        }
     }
 }
 
@@ -726,25 +781,67 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     width: 50%;
     float: left;
     text-align: left;
+
+    @include max-width($bp_feature_downsized){
+        p{
+            font-size: 18px;
+        }
+    }
+
+    @include max-width($bp_feature_stacked){
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    @include max-width($bp_feature_left_aligned){
+        text-align: left
+    }
 }
 
 .feature--graphic{
     width: 50%;
     float: left;
     padding-left: 40px;
+
+    @include max-width($bp_feature_stacked){
+        float: none;
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .subfeatures{
     @include clearfix;
+    margin: 0 0 $margin_feature;
     padding-bottom: $margin_feature;
-    margin-bottom: $margin_feature;
     border-bottom: 1px solid $border_grey;
+
+    @include max-width($bp_subfeatures_halved){
+        margin-bottom: 0;
+        padding-bottom: $margin_feature_downsized;
+    }
 }
 
 .subfeature{
     padding: 20px;
-    width: 23%;
+    width: 25%;
     float: left;
+
+    @include max-width($bp_subfeatures_halved){
+        width: 50%;
+
+        &:nth-child(3n){
+            clear: left;
+        }
+    }
+
+    @include max-width($bp_subfeatures_stacked){
+        padding: 20px 0 0;
+        width: 100%;
+        float: none;
+    }
 
     p{
         font-size: 15px;
@@ -761,6 +858,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     padding-bottom: 10px;
     border-bottom: 3px solid $blue;
     color: $text_normal;
+
+    @include max-width($bp_subfeatures_halved){
+        font-size: 20px;
+    }
 
     &:before{
         font-size: 80%;
@@ -790,6 +891,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
     .feature-sections--body{
         margin-bottom: $margin_feature;
+
+        @include max-width($bp_feature_section_downsized){
+            margin-bottom: $margin_feature_downsized;
+        }
     }
 }
 
@@ -810,6 +915,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     float: left;
     padding: 10px;
     margin-top: 32px;
+
+    @include max-width($bp_feature_stacked){
+        margin-top: 0;
+    }
 
     img{
         width: auto;
@@ -836,19 +945,37 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     margin-top: $margin_feature + 30;
     position: relative;
 
+    @include max-width($bp_feature_downsized){
+        padding-bottom: $padding_features_section_downsized;
+        margin-top: $margin_feature;
+    }
+
     .feature--info{
         float: right;
     }
 
     .feature--graphic{
-        border-top: 20px solid $bg_smoke;
-        border-radius: 6px 6px 0 0;
         width: 46% + 15%;
         float: left;
         padding: 0;
         margin-left: 15% * -1;
         margin-bottom: $padding_features_section * -1;
         position: relative;
+
+        @include max-width($bp_feature_downsized){
+            margin-bottom: $padding_features_section_downsized * -1;
+        }
+
+        @include max-width($bp_feature_stacked){
+            width: auto;
+            float: none;
+            margin-left: 0;
+        }
+
+        img{
+            border-top: 20px solid $bg_smoke;
+            border-radius: 6px 6px 0 0;
+        }
 
         &:after{
             content: '';
@@ -858,6 +985,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
             bottom: 0;
             height: 50%;
             width: 100%;
+
+            @include max-width($bp_feature_stacked){
+                height: 40px;
+            }
         }
     }
 }
@@ -870,16 +1001,23 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     .feature-sections--body img{
         height: 90px;
         width: auto;
+        max-width: 100%;
         display: block;
         margin: 40px auto 0;
-        position: relative;
-        left: 20px;
+
+        @include max-width($bp_feature_section_downsized){
+            margin-top: 0;
+        }
     }
 
     .features{
         margin: $margin_feature auto 0;
         padding-top: $margin_feature;
         border-top: 1px solid $border_grey;
+
+        @include max-width($bp_feature_section_downsized){
+            margin-top: $margin_feature_downsized;
+        }
     }
 
     .feature{
@@ -892,6 +1030,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
         &:nth-child(2n){
             padding-left: 20px;
+        }
+
+        @include max-width($bp_feature_stacked){
+            width: 100%;
+            float: none;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
         }
 
         .wrap{
@@ -938,6 +1083,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     background: $bg_solarized_dark;
     padding-bottom: $padding_features_section + $margin_feature;
 
+    @include max-width($bp_feature_downsized){
+        padding-bottom: $padding_features_section_downsized + $margin_feature_downsized;
+    }
+
     .feature-sections--body:first-child{
         margin-top: auto;
     }
@@ -962,6 +1111,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         padding: 15px;
         border-radius: 3px;
         margin-bottom: 30px;
+
+        @include max-width($bp_feature_downsized){
+            font-size: 12px;
+        }
     }
 
     .features{
@@ -982,6 +1135,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         width: 46%;
         font-size: 15px;
         line-height: 1.2;
+    }
+
+    @include max-width($bp_feature_stacked){
+        .features, .features-develop--graphic{
+            width: 100%;
+            float: none;
+        }
     }
 }
 
@@ -1006,6 +1166,28 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
         &:nth-child(4){
             clear: left;
+        }
+
+        @include max-width($bp_feature_downsized){
+            width: 48% !important;
+
+            &:nth-child(3), &:nth-child(5){
+                clear: left;
+            }
+
+            &:nth-child(4){
+                clear: none;
+            }
+        }
+
+        @include max-width(550px){
+            width: 100% !important;
+            margin: 0 0 15px !important;
+            float: none;
+
+            &:nth-child(2n){
+                display: none !important;
+            }
         }
     }
 }
