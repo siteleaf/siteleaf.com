@@ -717,7 +717,8 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         font-size: 26px;
         text-align: center;
         position: relative;
-        top: -6px;
+        top: -4px;
+        vertical-align: middle;
     }
 }
 
@@ -885,11 +886,11 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         width: 50%;
         float: left;
 
-        &:first-child{
+        &:nth-child(2n - 1){
             padding-right: 20px;
         }
 
-        &:last-child{
+        &:nth-child(2n){
             padding-left: 20px;
         }
 
@@ -903,6 +904,22 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         color: $text_dark;
     }
 
+    .feature--title:before{
+        background: $blue;
+    }
+
+    .feature:nth-child(2) .feature--title:before{
+        background: $purple;
+    }
+
+    .feature:nth-child(3) .feature--title:before{
+        background: $yellow;
+    }
+
+    .feature:nth-child(4) .feature--title:before{
+        background: $mint;
+    }
+
     .feature--info{
         width: 100%;
         position: relative;
@@ -914,19 +931,12 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     }
 }
 
-.feature-static-files .feature--title:before{
-    background: $yellow;
-}
-
-.feature-api .feature--title:before{
-    background: $mint;
-}
-
 
 // DEVELOP
 // ++++++++++++++++++++++++++++++
 .features-develop{
     background: $bg_solarized_dark;
+    padding-bottom: $padding_features_section + $margin_feature;
 
     .feature-sections--body:first-child{
         margin-top: auto;
@@ -957,6 +967,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     .features{
         float: right;
         width: 50%;
+    }
+
+    .feature{
+        margin-bottom: 30px;
     }
 
     .feature--info{
