@@ -1912,38 +1912,6 @@ footer.layer {
     .screenshot {
         border-top:18px solid rgba(39,65,90,.15);
     }
-    /*=== HOME ===*/
-    .feature-image {
-        display:inline-block;
-    }
-    .features .feature-item {
-        margin-bottom:60px;
-    }
-    /*=== FEATURES ===*/
-    .features-main .third {
-        margin-top:20px;
-        margin-bottom:140px;
-    }
-    .features-main .third:nth-of-type(even) {
-        float:right;
-        margin-right:7.6923077%!important;
-    }
-    .features-main .two-thirds:nth-of-type(even) {
-        float:right;
-        margin-right:0!important;
-    }
-    .features-main .third:last-of-type {
-        margin-bottom:0;
-    }
-    .features-main .third:first-of-type, .features-main .third:last-of-type, .features-main .two-thirds:nth-of-type(even) {
-        margin-right:0;
-    }
-    .features-main .feature-item {
-        text-align:left;
-    }
-    .features-secondary {
-        padding-bottom:0;
-    }
     /*=== SIGNUP ===*/
     .signup-form {
         margin-top:60px;
