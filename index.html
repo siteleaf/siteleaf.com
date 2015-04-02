@@ -3,7 +3,7 @@
 {% endcapture %}
 
 {% capture content %}
-  {% for section in site.pages['features-v2'].pages %}
+  {% for section in pages %}
     <section class="features-section features-{{ section.slug }}">
       <div class="features-section--inner">
         <h1 class="feature-sections--title">{{ section.title }}</h1>
