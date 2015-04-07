@@ -337,15 +337,14 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 .main-nav-toggle{
     @include user-select(none);
     font-size: 18px;
-    color: #fff;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
     padding: 20px 15px 15px;
-    color: rgba(#fff, 0.75);
     display: none;
     z-index: 9999;
+    color: $blue;
 
     @include max-width($bp_nav_hides){
         display: inline-block;
@@ -354,7 +353,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     &:after{
         margin-left: 7px;
         font-size: 32px;
-        color: #fff;
         top: -3px;
         position: relative;
         vertical-align: middle;
@@ -364,8 +362,17 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         color: transparent;
 
         &:after{
+            color: #fff;
             content: '␡';
         }
+    }
+}
+
+.dark .main-nav-toggle{
+    color: rgba(#fff, 0.75);
+
+    &:after{
+        color: #fff;
     }
 }
 
@@ -415,6 +422,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 .main-nav a {
     color:#7abf26;
+
+    @include max-width($bp_nav_hides){
+        color: #fff;
+    }
 }
 
 .main.dark .main-nav a {
@@ -1503,7 +1514,7 @@ label.signup-plan-select {
 
     h3, h4, p, ol, ul, pre {
         width:100%;
-        max-width:504px;
+        max-width:756px;
         margin-right:auto;
         margin-left:auto;
         text-align:left;
@@ -1598,7 +1609,7 @@ label.signup-plan-select {
     hr {
         border: none;
         background:#e7f2f0;
-        max-width:504px;
+        max-width:756px;
         margin:2em auto;
         height: 2px;
     }
@@ -1616,7 +1627,7 @@ label.signup-plan-select {
     width:100%;
     padding:0;
     float:none;
-    max-width:504px;
+    max-width:756px;
     margin:2em auto;
     text-align:left;
 }
@@ -1624,6 +1635,7 @@ label.signup-plan-select {
 .blog-tag {
     vertical-align:inherit;
     margin-right:18px;
+    margin-bottom: 5px;
     background:#8dcf3f;
     text-transform:uppercase;
     border-radius:3px;
@@ -1709,7 +1721,7 @@ label.signup-plan-select {
 .text-block h4, .text-block p, .text-block ol, .text-block ul {
     margin-top:1em;
     width:100%;
-    max-width:504px;
+    max-width:756px;
     margin-right:auto;
     margin-left:auto;
     text-align:left;
