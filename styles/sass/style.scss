@@ -1210,6 +1210,24 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     }
 }
 
+// V2
+// ++++++++++++++++++++++++++++++
+.v2Preview {
+    background: $bg_smoke;
+    margin-bottom: 60px; // same as layer padding
+}
+
+.v2Preview__text {
+    margin-bottom: 0;
+    @include max-width($bp_feature_downsized){
+        font-size: 18px;
+    }
+}
+
+.v2Preview__link {
+    display: inline-block;
+}
+
 /*========================================
 
                 PLANS
@@ -1772,7 +1790,7 @@ footer.layer {
 }
 
 .footer-nav li {
-    margin:0 18px;
+    margin:0 18px 9px;
     display:inline-block;
     font-size:1.25em;
 }
@@ -1842,9 +1860,6 @@ footer.layer {
     .hide {
         display:none;
     }
-    .footer-nav li {
-        margin-bottom:9px;
-    }
 }
 
 @media screen and (min-width: 769px) {
@@ -1876,6 +1891,10 @@ footer.layer {
     }
     .login {
         padding-top:0;
+    }
+    /*=== V2 ===*/
+    .v2Preview {
+        margin-bottom:96px;
     }
     /*=== FOOTER ===*/
     footer small {
