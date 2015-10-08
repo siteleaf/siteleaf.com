@@ -1176,10 +1176,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
     .twitter-tweet, iframe{
         width: 31% !important;
-        margin: 0 1% 1% !important;
+        margin: 0 1% 2% !important;
         float: left;
         font-size: 18px;
-        border: 1px solid rgba(#000, 0.1) !important;
+        border: none !important;
         box-shadow: none !important;
 
         &:nth-child(4){
@@ -1235,7 +1235,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 ========================================*/
 
 .plans {
-    background:#e7f2f0;
+    background:$bg_smoke;
     margin-bottom: 60px;
 }
 
