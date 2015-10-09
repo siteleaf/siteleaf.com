@@ -1,27 +1,31 @@
 {% capture content %}
-  <section class="layer plans">
-    <section>
-
-      {% for post in posts %}
-      <section class="third lift plan-tier{% if post.meta['callout'].value %} callout{% endif %}" onclick="location.href='https://manage.siteleaf.com/signup?plan={{post.slug}}';">
-
-        {% if post.meta['callout'].value %}<h6>{{post.meta['callout']}}</h6>{% endif %}
+  <header class="layer v2Header">
+    <h1 class="v2Header__title">{{body_raw}}</h1>
+  </header>
+  <div style="clear: both"></div>
+  {% for post in posts reversed %}
+    {% if post.assets.size > 0 %}
+    {% assign image_url = post.assets.first.url %}
+    {% else %}
+    {% capture image_query %}viewport=1200x707&thumbnail_max_width=756&url={{post.meta['link'] | cgi_escape}}{% endcapture %}
+    {% capture image_url %}http://beta.url2png.com/v6/{{site.meta['url2png_key']}}/{{image_query | append:site.meta['url2png_secret'] | md5}}/png/?{{image_query}}{% endcapture %}
+    {% endif %}
+    <section class="features-section">
+      <div class="features-section--inner">
+        <span class="ss-{{post.meta['icon']}}"></span>
+        <!-- <figure>
+          <a href="{{post.meta['link']}}"><img src="{{image_url}}" alt="{{post.title}}" /></a>
+        </figure> -->
         <h4>{{post.title}}</h4>
-        <h5><sup class="superscript">$</sup><span class="plan-price">{% if post.meta['discount'].value %}{{post.meta['discount']}}{% else %}{{post.meta['price']}}{% endif %}</span><sub> /mo</sub></h5>
-
-        {% if post.meta['discount'].value %}
-        <p class="early-adopter-price">Early adopter price</p><br/>
-        <del>${{post.meta['price']}}/mo</del>
-        {% endif %}
-
-        {{post.body}}
-      </section>
-      {% endfor %}
-      <div style="clear: both"></div>
+        <p>{{post.body}}</p>
+      </div>
     </section>
-
+  {% endfor %}
+  <!-- <section class="features-section">
+    test section
+  </section> -->
+  <section class="layer v2 v2--full">
     <a href="https://siteleaf.typeform.com/to/EoFRli" class="button blue-button small-button">Sign up for Siteleaf v2 Beta</a>
-
   </section>
 {% endcapture %}
 {% include 'layouts/default' %}

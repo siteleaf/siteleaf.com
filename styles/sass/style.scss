@@ -1212,20 +1212,45 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 // V2
 // ++++++++++++++++++++++++++++++
-.v2Preview {
-    background: $bg_smoke;
+.v2 {
     margin-bottom: 60px; // same as layer padding
 }
 
-.v2Preview__text {
+.v2--preview {
+    background: $bg_smoke;
+}
+
+.v2--preview__text {
     margin-bottom: 0;
     @include max-width($bp_feature_downsized){
         font-size: 18px;
     }
 }
 
-.v2Preview__link {
+.v2--preview__link {
     display: inline-block;
+}
+
+.v2--full {
+    background-color: $bg_smoke;
+}
+
+.v2Header {
+    @extend .blog;
+    @include clearfix;
+}
+
+.v2Header__title {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__link--v2 {
+    color: $mint;
+    &:hover {
+        color: darken($mint, 10%);
+    }
 }
 
 /*========================================
@@ -1891,10 +1916,6 @@ footer.layer {
     }
     .login {
         padding-top:0;
-    }
-    /*=== V2 ===*/
-    .v2Preview {
-        margin-bottom:96px;
     }
     /*=== FOOTER ===*/
     footer small {
