@@ -1212,38 +1212,109 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 // V2
 // ++++++++++++++++++++++++++++++
-.v2 {
+.layer--v2 {
     margin-bottom: 60px; // same as layer padding
-}
-
-.v2--preview {
     background: $bg_smoke;
 }
 
-.v2--preview__text {
+.layer--v2__text {
     margin-bottom: 0;
-    @include max-width($bp_feature_downsized){
+    @include max-width($bp_feature_downsized) {
         font-size: 18px;
     }
 }
 
-.v2--preview__link {
+.layer--v2__link {
     display: inline-block;
 }
 
-.v2--full {
-    background-color: $bg_smoke;
+.v2__title {
+    @extend .feature-sections--title;
+    @extend .features-section--inner;
+    max-width: $w_content_wide_column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.v2Header {
-    @extend .blog;
+$v2_gutter: 16px;
+
+.v2__sections {
+    @extend .features-section--inner;
     @include clearfix;
 }
 
-.v2Header__title {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+$icon_size: 48px;
+$bp_icon_stacked: 400px;
+
+.v2__section__icon {
+    color: #fff;
+    background-color: $graphite;
+    font-size: 1.5em;
+    height: $icon_size;
+    width: $icon_size;
+    border-radius: $icon_size;
+    margin-bottom: -$icon_size;
+    display: block;
+    &:before {
+        position: relative;
+        top: 0.64em;
+    }
+    @include max-width($bp_icon_stacked) {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.v2__section__details {
+    padding-left: $icon_size + 20px;
+    @include max-width($bp_icon_stacked) {
+        padding-left: 0;
+    }
+}
+
+.v2__section { // needs multi-selector specificity due to other styles set
+    display: inline-block;
+    width: 50%;
+    float: left;
+    max-width: $w_content_wide_column ($v2_gutter * 2);
+    padding-left: $v2_gutter;
+    padding-right: $v2_gutter;
+    min-height: 160px;
+    margin-bottom: 60px;
+    @include max-width($bp_nav_hides) {
+        width: 100%;
+        min-height: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .v2__section__title,
+    .v2__section__body {
+        text-align: left;
+    }
+
+    .v2__section__title {
+        color: $text_normal;
+        @include max-width($bp_feature_section_downsized) {
+            font-size: 18px;
+        }
+        @include max-width($bp_icon_stacked) {
+            text-align: center;
+        }
+    }
+
+    .v2__section__body {
+        color: $text_light;
+        margin-bottom: 0;
+        text-align: left;
+        @include max-width($bp_feature_downsized){
+            font-size: 18px;
+        }
+    }
+}
+.v2__section:last-of-type {
+    margin-bottom: 90px;
 }
 
 .footer__link--v2 {

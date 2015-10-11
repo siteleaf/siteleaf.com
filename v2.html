@@ -1,31 +1,25 @@
 {% capture content %}
-  <header class="layer v2Header">
-    <h1 class="v2Header__title">{{body_raw}}</h1>
-  </header>
-  <div style="clear: both"></div>
-  {% for post in posts reversed %}
-    {% if post.assets.size > 0 %}
-    {% assign image_url = post.assets.first.url %}
-    {% else %}
-    {% capture image_query %}viewport=1200x707&thumbnail_max_width=756&url={{post.meta['link'] | cgi_escape}}{% endcapture %}
-    {% capture image_url %}http://beta.url2png.com/v6/{{site.meta['url2png_key']}}/{{image_query | append:site.meta['url2png_secret'] | md5}}/png/?{{image_query}}{% endcapture %}
-    {% endif %}
-    <section class="features-section">
-      <div class="features-section--inner">
-        <span class="ss-{{post.meta['icon']}}"></span>
-        <!-- <figure>
-          <a href="{{post.meta['link']}}"><img src="{{image_url}}" alt="{{post.title}}" /></a>
-        </figure> -->
-        <h4>{{post.title}}</h4>
-        <p>{{post.body}}</p>
-      </div>
+  <section class="v2">
+    <header class="v2__header">
+      <h2 class="v2__title">{{body_raw}}</h2>
+    </header>
+    <section class="v2__sections">
+      {% for post in posts reversed %}
+        <section class="v2__section">
+          <!-- <div class="features-section--inner v2__section__inner"> -->
+            <div class="v2__section__icon ss-{{post.meta['icon']}}" style="background-color: {{post.meta['color']}}"></div>
+            <div class="v2__section__details">
+              <h4 class="v2__section__title">{{post.title}}</h4>
+              <p class="v2__section__body">{{post.body_raw}}</p>
+            </div>
+          <!-- </div> -->
+        </section>
+      {% endfor %}
     </section>
-  {% endfor %}
-  <!-- <section class="features-section">
-    test section
-  </section> -->
-  <section class="layer v2 v2--full">
-    <a href="https://siteleaf.typeform.com/to/EoFRli" class="button blue-button small-button">Sign up for Siteleaf v2 Beta</a>
+    <section class="layer layer--v2">
+      <a href="https://siteleaf.typeform.com/to/EoFRli" class="button blue-button small-button">Try Siteleaf v2 Beta</a>
+      <!-- <a href="https://siteleaf.typeform.com/to/EoFRli" class="button green-button large-button">Sign up for Siteleaf v2 Beta</a> -->
+    </section>
   </section>
 {% endcapture %}
 {% include 'layouts/default' %}
