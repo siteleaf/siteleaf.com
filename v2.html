@@ -6,19 +6,16 @@
     <section class="v2__sections">
       {% for post in posts reversed %}
         <section class="v2__section">
-          <!-- <div class="features-section--inner v2__section__inner"> -->
-            <div class="v2__section__icon ss-{{post.meta['icon']}}" style="background-color: {{post.meta['color']}}"></div>
-            <div class="v2__section__details">
-              <h4 class="v2__section__title">{{post.title}}</h4>
-              <p class="v2__section__body">{{post.body_raw}}</p>
-            </div>
-          <!-- </div> -->
+          <div class="v2__section__icon ss-{{post.meta['icon']}}" style="background-color: {{post.meta['color']}}"></div>
+          <div class="v2__section__details">
+            <h4 class="v2__section__title">{{post.title}}</h4>
+            <p class="v2__section__body">{{post.body_raw}}</p>
+          </div>
         </section>
       {% endfor %}
     </section>
     <section class="layer layer--v2">
       <a href="https://siteleaf.typeform.com/to/EoFRli" class="button blue-button small-button">Try Siteleaf v2 Beta</a>
-      <!-- <a href="https://siteleaf.typeform.com/to/EoFRli" class="button green-button large-button">Sign up for Siteleaf v2 Beta</a> -->
     </section>
   </section>
 {% endcapture %}

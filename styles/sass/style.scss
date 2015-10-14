@@ -308,6 +308,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     padding-top:0;
     padding-bottom:0;
     overflow:hidden;
+    @include max-width($bp_nav_hides){ // v2
+        padding-top: $height_teaser;
+    }
 }
 
 .main.dark {
@@ -339,7 +342,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     font-size: 18px;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: $height_teaser;
     right: 0;
     padding: 20px 15px 15px;
     display: none;
@@ -360,6 +363,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
     .is-showing-nav &{
         color: transparent;
+        top: 0;
 
         &:after{
             color: #fff;
@@ -1212,6 +1216,17 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 // V2
 // ++++++++++++++++++++++++++++++
+.v2Teaser {
+    display: block;
+    background-color: $blue;
+    color: #fff;
+    line-height: 22px;
+    padding: (($height_teaser - 22px) / 2) 5%;
+    &:hover {
+        background-color: $dark_blue;
+    }
+}
+
 .layer--v2 {
     margin-bottom: 60px; // same as layer padding
     background: $bg_smoke;
@@ -1237,14 +1252,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 $v2_gutter: 16px;
+$icon_size: 48px;
+$bp_icon_stacked: 400px;
 
 .v2__sections {
     @extend .features-section--inner;
     @include clearfix;
 }
-
-$icon_size: 48px;
-$bp_icon_stacked: 400px;
 
 .v2__section__icon {
     color: #fff;
@@ -1280,7 +1294,7 @@ $bp_icon_stacked: 400px;
     max-width: $w_content_wide_column ($v2_gutter * 2);
     padding-left: $v2_gutter;
     padding-right: $v2_gutter;
-    min-height: 160px;
+    min-height: 200px;
     margin-bottom: 60px;
     @include max-width($bp_nav_hides) {
         width: 100%;
@@ -1315,13 +1329,6 @@ $bp_icon_stacked: 400px;
 }
 .v2__section:last-of-type {
     margin-bottom: 90px;
-}
-
-.footer__link--v2 {
-    color: $mint;
-    &:hover {
-        color: darken($mint, 10%);
-    }
 }
 
 /*========================================
