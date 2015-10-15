@@ -32,7 +32,9 @@
     ga('send', 'pageview');
   </script>
 
-  <a class="v2Teaser{% if (url == '/v2') %} v2Teaser--v2{% endif %}" href="/v2">We’re working on a new Siteleaf &rarr;</a>
+  {% if (url != '/v2') %}
+    <a class="v2Teaser" href="/v2">We’re working on a new Siteleaf &rarr;</a>
+  {% endif %}
   <section class="layer main{% if home? %} dark{% endif %}{% if (url == '/v2') %} main--v2{% endif %}">
       <header>
         <h1 class="logo">

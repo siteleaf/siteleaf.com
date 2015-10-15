@@ -1259,12 +1259,6 @@ $bp_icon_stacked: 400px;
         background-color: $dark_blue;
     }
 }
-.v2Teaser--v2 {
-    background-color: $bg_dark_navy;
-    &:hover {
-        background-color: $bg_dark_navy;
-    }
-}
 
 .main.main--v2 {
     @extend .dark;
