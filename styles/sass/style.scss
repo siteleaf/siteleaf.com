@@ -568,7 +568,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     background: rgba(0, 0, 0, 0.7);
     color: #FFF;
     line-height: 1;
-    padding: 22px 0 0;
+    padding: 16px 0 0;
     border-radius: 50%;
     text-indent: 6px;
     transition:background .5s ease-out;
@@ -766,13 +766,13 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         border-radius: 50px;
         width: 50px;
         height: 50px;
-        line-height: 56px;
+        line-height: 50px;
         color: #fff;
         display: inline-block;
         font-size: 26px;
         text-align: center;
         position: relative;
-        top: -4px;
+        top: -3px;
         vertical-align: middle;
 
         @include max-width($bp_feature_downsized){
@@ -875,7 +875,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         margin-right: 7px;
         vertical-align: middle;
         position: relative;
-        top: 2px;
+        top: -2px;
     }
 
     .subfeature:nth-of-type(2) &{
