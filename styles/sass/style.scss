@@ -1260,6 +1260,10 @@ $bp_icon_stacked: 400px;
     }
 }
 
+.main--v2 .main-nav-toggle{
+    top: 0;
+}
+
 .main.main--v2 {
     @extend .dark;
     background-color: $bg_navy;
