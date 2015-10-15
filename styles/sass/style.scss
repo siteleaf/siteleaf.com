@@ -1319,7 +1319,7 @@ $bp_icon_stacked: 400px;
     display: block;
     &:before {
         position: relative;
-        top: -2px;
+        top: -4px;
     }
     @include max-width($bp_icon_stacked) {
         margin-bottom: 20px;
