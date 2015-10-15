@@ -1216,6 +1216,39 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 // V2
 // ++++++++++++++++++++++++++++++
+$v2_gutter: 16px;
+$icon_size: 30px;
+$bp_one_col: 900px;
+$bp_icon_stacked: 400px;
+
+.v2ExtraLargeText {
+    font-size: 50px;
+    @include max-width($bp_one_col) {
+        font-size: 40px;
+    }
+    @include max-width($bp_nav_hides) {
+        font-size: 30px;
+    }
+}
+.v2LargeText {
+    font-size: 40px;
+    @include max-width($bp_nav_hides) {
+        font-size: 24px;
+    }
+}
+.v2MediumText {
+    font-size: 22px;
+    @include max-width($bp_nav_hides) {
+        font-size: 20px;
+    }
+}
+.v2SmallText {
+    font-size: 18px;
+    @include max-width($bp_nav_hides) {
+        font-size: 16px;
+    }
+}
+
 .v2Teaser {
     display: block;
     background-color: $blue;
@@ -1226,52 +1259,67 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
         background-color: $dark_blue;
     }
 }
-
-.layer--v2 {
-    margin-bottom: 60px; // same as layer padding
-    background: $bg_smoke;
-}
-
-.layer--v2__text {
-    margin-bottom: 0;
-    @include max-width($bp_feature_downsized) {
-        font-size: 18px;
+.v2Teaser--v2 {
+    background-color: $bg_dark_navy;
+    &:hover {
+        background-color: $bg_dark_navy;
     }
 }
 
-.layer--v2__link {
+.main.main--v2 {
+    @extend .dark;
+    background-color: $bg_navy;
+}
+
+.v2__header {
+    clear: both;
+    @include clearfix;
+    padding-top: 18px;
+    padding-bottom: 96px;
+}
+.v2__title {
+    color: #fff;
+    @extend .feature-sections--title;
+    @extend .features-section--inner;
+    max-width: $w_content_wide_column + 4px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend .v2ExtraLargeText;
+}
+
+.v2__header__button {
+    @extend .v2MediumText;
     display: inline-block;
 }
 
-.v2__title {
-    @extend .feature-sections--title;
-    @extend .features-section--inner;
-    max-width: $w_content_wide_column;
-    margin-left: auto;
-    margin-right: auto;
+.v2__import__text {
+    color: $text_light;
+    border-bottom: 1px solid $border_light_grey;
+    padding: 20px 5%;
+    @extend .v2SmallText;
 }
 
-$v2_gutter: 16px;
-$icon_size: 48px;
-$bp_icon_stacked: 400px;
-
 .v2__sections {
-    @extend .features-section--inner;
+    margin: 120px auto 40px;
+    width: 85%;
+    max-width: 1200px;
     @include clearfix;
+    @include max-width($bp_one_col) {
+        margin-top: 90px;
+    }
 }
 
 .v2__section__icon {
-    color: #fff;
-    background-color: $graphite;
-    font-size: 1.5em;
+    color: $blue;
+    font-size: 24px;
     height: $icon_size;
     width: $icon_size;
-    border-radius: $icon_size;
     margin-bottom: -$icon_size;
+    line-height: $icon_size;
     display: block;
     &:before {
         position: relative;
-        top: 0.64em;
+        top: -2px;
     }
     @include max-width($bp_icon_stacked) {
         margin-bottom: 20px;
@@ -1294,9 +1342,9 @@ $bp_icon_stacked: 400px;
     max-width: $w_content_wide_column ($v2_gutter * 2);
     padding-left: $v2_gutter;
     padding-right: $v2_gutter;
-    min-height: 200px;
+    min-height: 160px;
     margin-bottom: 60px;
-    @include max-width($bp_nav_hides) {
+    @include max-width($bp_one_col) {
         width: 100%;
         min-height: 0;
         padding-left: 0;
@@ -1306,29 +1354,31 @@ $bp_icon_stacked: 400px;
     .v2__section__title,
     .v2__section__body {
         text-align: left;
+        color: $text_normal;
     }
 
     .v2__section__title {
-        color: $text_normal;
-        @include max-width($bp_feature_section_downsized) {
-            font-size: 18px;
-        }
+        @extend .v2MediumText;
+        text-transform: none;
         @include max-width($bp_icon_stacked) {
             text-align: center;
         }
     }
 
     .v2__section__body {
-        color: $text_light;
-        margin-bottom: 0;
+        @extend .v2SmallText;
         text-align: left;
-        @include max-width($bp_feature_downsized){
-            font-size: 18px;
-        }
     }
 }
-.v2__section:last-of-type {
-    margin-bottom: 90px;
+
+.layer--v2 {
+    margin-bottom: 60px; // same as layer padding
+    background: $bg_smoke;
+}
+
+.v2__large-button {
+    margin-top: 0;
+    @extend .v2LargeText;
 }
 
 /*========================================

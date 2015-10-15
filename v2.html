@@ -1,12 +1,10 @@
 {% capture content %}
   <section class="v2">
-    <header class="v2__header">
-      <h2 class="v2__title">{{body_raw}}</h2>
-    </header>
+    <section class="v2__import"><p class="v2__import__text">Import your existing site from Jekyll, WordPress, Tumblr, Drupal, Ghost, more.</p></section>
     <section class="v2__sections">
       {% for post in posts reversed %}
         <section class="v2__section">
-          <div class="v2__section__icon ss-{{post.meta['icon']}}" style="background-color: {{post.meta['color']}}"></div>
+          <div class="v2__section__icon ss-{{post.meta['icon']}}"></div>
           <div class="v2__section__details">
             <h4 class="v2__section__title">{{post.title}}</h4>
             <p class="v2__section__body">{{post.body_raw}}</p>
@@ -15,7 +13,7 @@
       {% endfor %}
     </section>
     <section class="layer layer--v2">
-      <a href="https://siteleaf.typeform.com/to/EoFRli" class="button blue-button small-button">Try Siteleaf v2 Beta</a>
+      <a href="https://siteleaf.typeform.com/to/EoFRli" class="button green-button large-button v2__large-button">Sign up for Siteleaf beta</a>
     </section>
   </section>
 {% endcapture %}
