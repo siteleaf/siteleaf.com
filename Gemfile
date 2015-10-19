@@ -1,10 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'guard'
-gem 'guard-sass'
-gem 'guard-coffeescript'
-gem 'guard-copy'
-gem 'guard-jammit'
-gem 'guard-livereload'
-gem 'terminal-notifier-guard'
-gem 'siteleaf', '2.0.0.pre.beta7'
+gem 'jekyll', '3.0.0.pre.beta8'
+gem 'siteleaf', :git => 'git://github.com/siteleaf/siteleaf-gem.git', :branch => '2.0.0.pre'
