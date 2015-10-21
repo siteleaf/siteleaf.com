@@ -1,0 +1,4 @@
+@function computed-line-height($font-size, $line-height) {
+  // input font-size in ems and return computed line-height in rems
+  @return ($font-size / 1em) * $line-height * 1rem;
+}

@@ -3,18 +3,17 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="page">
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    <main class="page__main">
+      {{ content }}
+    </main>
 
     {% include footer.html %}
 
+    <script src="//cdn.symbolset.com/fe53f0eec3a73760941acb609672ebdd0840fda7/symbolset.js"></script>
   </body>
 
 </html>

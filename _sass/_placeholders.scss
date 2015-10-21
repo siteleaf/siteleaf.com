@@ -1,0 +1,60 @@
+// Containers
+// ----------
+
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  width: $width-container;
+}
+
+%container--narrow {
+  @extend %container;
+  max-width: $max-width-narrow;
+}
+
+%container--wide {
+  @extend %container;
+  max-width: $max-width-wide;
+}
+
+// Typography
+// ----------
+
+%text--larger {
+  font-size: $font-size-2;
+  line-height: $line-height-tight;
+}
+
+%text--large {
+  font-size: $font-size-1;
+  line-height: $line-height-tight;
+}
+
+%text--small {
+  font-size: $font-size-n1;
+}
+
+%text--smaller {
+  font-size: $font-size-n2;
+}
+
+%text--caps {
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-loose;
+}
+
+%text--italic {
+  font-style: italic;
+}
+
+%text--bold {
+  font-weight: $font-weight-semibold;
+}
+
+%text--semibold {
+  font-weight: $font-weight-semibold;
+}
+
+%text--light {
+  font-weight: $font-weight-light;
+}

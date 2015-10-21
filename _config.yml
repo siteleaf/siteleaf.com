@@ -1,14 +1,12 @@
 ---
 permalinks: pretty
+twitter_username: siteleaf
 title: Siteleaf v2
 url: http://v2.siteleaf.com
 timezone: UTC
 collections:
   uploads:
     title: Uploads
-    output: true
-  people:
-    title: People
     output: true
 defaults:
 - scope:
