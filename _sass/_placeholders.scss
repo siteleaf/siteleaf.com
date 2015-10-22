@@ -40,12 +40,10 @@
   font-weight: $font-weight-light;
 }
 
-%text--title {
+// Code
 
-}
-
-%text--body {
-
+%pre {
+  background-color: $color-gray-lightest;
 }
 
 // Sections
@@ -53,7 +51,8 @@
 
 %background--dark {
   color: $color-white;
-  %text--title {
+  %text--title,
+  %text--subtitle {
     color: $color-white;
   }
   %text--body {
@@ -64,6 +63,14 @@
 %background--smoke {
   background-color: $color-gray-lightest;
 }
+
+%background--dark,
+%background--smoke {
+  %pre {
+    background-color: $color-black-alpha-light;
+  }
+}
+
 
 %background--blue {
   background-color: $color-blue;

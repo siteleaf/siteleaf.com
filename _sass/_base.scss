@@ -32,7 +32,7 @@ h1 {
   letter-spacing: $letter-spacing-tighter;
   line-height: $line-height-tighter;
   margin-top: 0;
-  margin-bottom: ($v * 3) - computed-line-height($font-size-6, $line-height-tighter);
+  margin-bottom: ($v * 2.5) - computed-line-height($font-size-6, $line-height-tighter);
   @include max-width($bp-xs) {
     font-size: $font-size-6;
   }
@@ -49,7 +49,7 @@ h2 {
 h3 {
   font-size: $font-size-4;
   letter-spacing: $letter-spacing-tight;
-  color: $color-gray;
+  // color: $color-gray;
   line-height: $line-height-tighter;
   margin-top: $v * 1.5;
   margin-bottom: ($v * 2) - computed-line-height($font-size-4, $line-height-tighter);
@@ -59,9 +59,9 @@ h4,
 h5,
 h6 {
   font-size: $font-size-1;
-  font-weight: $font-weight-semibold;
+  // font-weight: $font-weight-semibold;
   @extend %text--caps;
-  color: $color-gray;
+  // color: $color-gray;
   line-height: $line-height-tight;
   margin-top: $v * 1.5;
   margin-bottom: ($v * 1.5) - computed-line-height($font-size-1, $line-height-tight);
@@ -107,7 +107,7 @@ code,
 kbd,
 pre,
 samp {
-  background-color: $color-gray-lightest;
+  @extend %pre;
   font-family: $font-family-monospace;
   overflow: auto;
   white-space: pre-wrap;
