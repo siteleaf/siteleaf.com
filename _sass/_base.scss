@@ -27,23 +27,24 @@ a {
 // ----------
 
 h1 {
-  font-size: $font-size-7;
+  font-size: $font-size-6;
   font-weight: $font-weight-light;
   letter-spacing: $letter-spacing-tighter;
   line-height: $line-height-tighter;
   margin-top: 0;
   margin-bottom: ($v * 2.5) - computed-line-height($font-size-6, $line-height-tighter);
   @include max-width($bp-xs) {
-    font-size: $font-size-6;
+    font-size: $font-size-5;
   }
 }
 
 h2 {
   font-size: $font-size-5;
-  letter-spacing: $letter-spacing-tight;
+  font-weight: $font-weight-light;
+  letter-spacing: $letter-spacing-tighter;
   line-height: $line-height-tighter;
   margin-top: $v * 1.5;
-  margin-bottom: ($v * 2) - computed-line-height($font-size-5, $line-height-tighter);
+  margin-bottom: ($v * 2.5) - computed-line-height($font-size-5, $line-height-tighter);
 }
 
 h3 {
@@ -58,7 +59,7 @@ h3 {
 h4,
 h5,
 h6 {
-  font-size: $font-size-1;
+  font-size: $font-size-0;
   // font-weight: $font-weight-semibold;
   @extend %text--caps;
   // color: $color-gray;

@@ -1,11 +1,8 @@
-.page__footer {
-  text-align: center;
-  @extend %background--navy;
-  padding-top: $v * 1.5;
-  padding-bottom: $v * 1.5;
-}
+// Features sections
+// -----------------
 
-.page__main {
+.logo {
+  height: 94px;
 }
 
 .section {
@@ -28,10 +25,10 @@
 
 }
 .section--right {
-  // margin-left: 50%;
+  // margin-left: 50%; // TO DO: make using columns
 }
 .section--center {
-  // text-align: center;
+  // text-align: center; // TO DO
 }
 
 .section__title {
@@ -44,6 +41,18 @@
   @extend %text--body;
 }
 
-.logo {
-  height: 94px;
+// Footer
+// ------
+
+.page__footer {
+  // text-align: center;
+  @extend %background--navy;
+  padding-top: $v * 1.5;
+  padding-bottom: $v * 1.5;
+}
+
+.loveIcon {
+  color: $color-magenta;
+  display: inline-block;
+  @include transform(translateY(0.2em));
 }

@@ -49,6 +49,10 @@
 // Sections
 // --------
 
+%text--title {
+  margin-top: 0;
+}
+
 %background--dark {
   color: $color-white;
   %text--title,
