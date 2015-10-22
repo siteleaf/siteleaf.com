@@ -18,7 +18,12 @@ $color-red:              #D14040;
 $color-yellow:           #F1C40F;
 $color-white:            #FFF;
 $color-mint:             #24C7A6;
-$color-black-alpha-1:    rgba(#000, 0.1);
+
+$color-black-alpha-lightest: rgba(#000, 0.06);
+$color-black-alpha-lighter:  rgba(#000, 0.1);
+$color-black-alpha-light:    rgba(#000, 0.12);
+$color-black-alpha:          rgba(#000, 0.2);
+$color-black-alpha-dark:     rgba(#000, 0.6);
 
 // Typography
 // ----------
@@ -36,16 +41,17 @@ $font-weight-bold:     700;
 // font-size
 $font-size-html:    20px;
 $font-size-html-sm: 18px;
-$font-size-6:        3em;
-$font-size-5:        2em;
-$font-size-4:        1.75em;
-$font-size-3:        1.5em;
-$font-size-2:        1.3333em;
-$font-size-1:        1.1667em;
-$font-size-0:        1em;
-$font-size-n1:       0.9167em;
-$font-size-n2:       0.8333em;
-$font-size-n3:       0.75em;
+$font-size-7:       3em;
+$font-size-6:       2.5em;
+$font-size-5:       2em;
+$font-size-4:       1.75em;
+$font-size-3:       1.5em;
+$font-size-2:       1.3333em;
+$font-size-1:       1.1667em;
+$font-size-0:       1em;
+$font-size-n1:      0.9167em;
+$font-size-n2:      0.8333em;
+$font-size-n3:      0.75em;
 
 // line-height
 $line-height-tighter: 1.125;
@@ -70,14 +76,17 @@ $tab: 2em;
 $gutter: 20px;
 $width-container:  88.888889%;
 $max-width-narrow: 37rem;
-$max-width-wide:   1080px;
+$max-width-wide:   1400px;
 
 // breakpoints
 
-$bp-sm: 768px;
+$bp-sm: 800px;
+$bp-xs: 600px;
 
 // Miscellaneous
 // -------------
 
 $border-radius: 3px;
+$button-thickness: 2px;
 $button-hover-darken: 7%;
+$duration: 150ms;

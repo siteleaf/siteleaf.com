@@ -1,22 +1,3 @@
-// Containers
-// ----------
-
-%container {
-  margin-left: auto;
-  margin-right: auto;
-  width: $width-container;
-}
-
-%container--narrow {
-  @extend %container;
-  max-width: $max-width-narrow;
-}
-
-%container--wide {
-  @extend %container;
-  max-width: $max-width-wide;
-}
-
 // Typography
 // ----------
 
@@ -57,4 +38,44 @@
 
 %text--light {
   font-weight: $font-weight-light;
+}
+
+%text--title {
+
+}
+
+%text--body {
+
+}
+
+// Sections
+// --------
+
+%background--dark {
+  color: $color-white;
+  %text--title {
+    color: $color-white;
+  }
+  %text--body {
+    color: $color-black-alpha-dark;
+  }
+}
+
+%background--smoke {
+  background-color: $color-gray-lightest;
+}
+
+%background--blue {
+  background-color: $color-blue;
+  @extend %background--dark;
+}
+
+%background--green {
+  background-color: $color-green;
+  @extend %background--dark;
+}
+
+%background--navy {
+  background-color: $color-navy;
+  @extend %background--dark;
 }
