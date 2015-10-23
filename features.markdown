@@ -5,7 +5,7 @@ button_text: Sign up for v2 beta
 features:
 - title: Open source superpowers.
   body: We’ve reimagined Siteleaf’s templating system to be 100% compatible with Jekyll. We’re keeping all the best parts of the Liquid syntax you already love, and making it compatible with a larger ecosystem. Now you can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
-- title: Skip the gem.
+- title: Sync with GitHub.
   body: No more manually pushing and pulling your theme changes using the command line. Siteleaf will automatically sync theme changes directly with GitHub, with no need to install a Siteleaf gem.
   background: smoke
 - title: Time machine for your content.
@@ -28,7 +28,7 @@ features:
     body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript, thanks to the power of Jekyll.
   is_nested: true
   background: smoke
-- title: Complete portability.
+- title: Data portability.
   body: We’ve always felt strongly that your data belongs to you, with the freedom publish to any web host you want, including FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files. Now with Jekyll, your entire site’s source code and content is portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
 - title: Free for developers.
   body: While we’ve always had free accounts for developers, publishing was reserved for paid accounts only. We’re now making it possible to publish to GitHub Pages, totally free for developers and open source projects.
