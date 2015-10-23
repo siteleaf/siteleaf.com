@@ -64,8 +64,8 @@ h6 {
   @extend %text--caps;
   // color: $color-gray;
   line-height: $line-height-tight;
-  margin-top: $v * 1.5;
-  margin-bottom: ($v * 1.5) - computed-line-height($font-size-1, $line-height-tight);
+  margin-top: $v * 1.666667;
+  margin-bottom: ($v * 1.333333) - computed-line-height($font-size-1, $line-height-tight);
 }
 
 strong {
