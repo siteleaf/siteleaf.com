@@ -165,8 +165,9 @@ hr {
   border-bottom: $button-thickness solid $color-black-alpha-lighter;
   padding: 0.5em 2em;
   display: inline-block;
-  @include transition('#{$duration} background-color');
   font-weight: $font-weight-semibold;
+  margin-top: $v * 0.5;
+  @include transition('#{$duration} background-color');
   &:hover {
     color: $color-white;
   }

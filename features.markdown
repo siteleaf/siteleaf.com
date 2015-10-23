@@ -23,8 +23,8 @@ features:
 - title: More developer-friendly.
   body:
   - title: Offline development
-    body: Sync your Siteleaf content to local <code>.markdown</code> files and develop your site completely offline. Work faster, even without an internet connection.
-  - title: Built-in preprocessors
+    body: Sync your Siteleaf content to local Markdown files and develop your site completely offline. Work faster, even without an internet connection.
+  - title: Preprocessors built-in
     body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript, thanks to the power of Jekyll.
   is_nested: true
   background: smoke
@@ -39,7 +39,7 @@ features:
   body:
   - title: A smart text editor
     body: Whether you prefer writing in Markdown, HTML, or plaintext, we’ve got you covered. Drag and drop an image and we’ll insert its code, too.
-  - title: Easy collaboration
+  - title: Collaboration
     body: Invite your client or team and let them tinker all they want, without touching a line of code. Siteleaf supports different user roles, like Admin, Publisher, or Writer.
   - title: Fast and secure
     body: Siteleaf generates static files when you publish, which means your site loads faster, is more secure, and doesn’t rely on a database or complicated server setup.

@@ -49,6 +49,11 @@
   @extend %background--navy;
   padding-top: $v * 1.5;
   padding-bottom: $v * 1.5;
+  color: $color-white-alpha;
+}
+
+.page__footer__link {
+  color: $color-white;
 }
 
 .loveIcon {

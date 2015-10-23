@@ -65,13 +65,14 @@
 }
 
 %background--smoke {
+  color: blend-multiply($color-gray-dark, $color-gray-lightest);
   background-color: $color-gray-lightest;
 }
 
 %background--dark,
 %background--smoke {
   %pre {
-    background-color: $color-black-alpha-light;
+    background-color: $color-black-alpha-lightest;
   }
 }
 
