@@ -77,7 +77,7 @@
 %background--dark,
 %background--smoke {
   %pre {
-    background-color: blend-multiply($color-gray-lightest, $color-gray-lightest);
+    background-color: desaturate(blend-multiply($color-gray-lightest, $color-gray-lightest), 6%);
   }
 }
 

@@ -6,14 +6,14 @@ features:
 - title: Open source superpowers.
   is_nested: true
   body:
-  - title: Jekyll-compatible
+  - title: Compatible with Jekyll
     body: We’ve reimagined Siteleaf’s templating system to be 100% compatible with Jekyll. We’re keeping all the best parts of the Liquid syntax you already love, and making it work with a larger ecosystem. Now you can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
-  - title: Completely portable
+  - title: Data portability
     body: We believe your data belongs to you. With Jekyll, your entire site’s source code and content are now portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
 - title: Sync with GitHub.
   is_nested: true
   body:
-  - title: Automatic theme syncing
+  - title: Theme syncing
     body: No more manually pushing and pulling your theme changes using the command line. Siteleaf will automatically sync theme changes directly with GitHub, with no need to install a Siteleaf gem.
   - title: Time machine for your content
     body: No more accidental overwrites or deletes. Every edit you (or other authors) make in Siteleaf is synced and backed up to GitHub, including content and theme changes. See a log of all edits, who made them, and revert back to any state
@@ -37,6 +37,7 @@ features:
   - title: Preprocessors built-in
     body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript, thanks to the power of Jekyll.
   background: smoke
+  graphic: g-develop
 - title: Free for developers.
   body: While we’ve always had free accounts for developers, publishing was reserved for paid accounts only. We’re now making it possible to publish to GitHub Pages, totally free for developers and open source projects.
 - title: Import from v1, WordPress, and more.
@@ -51,8 +52,6 @@ features:
     body: Invite your client or team and let them tinker all they want, without touching a line of code. Siteleaf supports different user roles, like Admin, Publisher, or Writer.
   - title: Publish anywhere
     body: Have the freedom to publish to any web host you want, including FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files.
-  - title: Fast and secure
-    body: Siteleaf generates static files when you publish, which means your site loads faster, is more secure, and doesn’t rely on a database or complicated server setup.
   - title: An API for your content
     body: Siteleaf provides a JSON API for interacting with all of your Jekyll content. Integrate it into other sites, apps, or anything you want. It’s your data.
   graphic: g-editor
@@ -110,7 +109,49 @@ title: Features
             </div>
             <div class="g-editor__textarea">Last week, [I ran through](/blog/overview) a number of [Siteleaf's](http://siteleaf.com) most compelling features and provided a general overview of the service.
 
-### Creating your site</div>
+### Creating your site
+
+![site-settings](/assets/site-settings.png)</div>
+          </div>
+        {% elsif feature.graphic == "g-develop" %}
+          <div class="section__graphic g-develop">
+            <div class="g-develop__window g-develop__site">
+              <div class="g-develop__topBar">
+                <span class="g-develop__topButtons">
+                  <span class="g-develop__windowButton"></span>
+                  <span class="g-develop__windowButton"></span>
+                  <span class="g-develop__windowButton"></span>
+                  <span class="g-develop__navButton ss-icon">navigateleft</span>
+                  <span class="g-develop__navButton ss-icon">navigateright</span>
+                </span>
+                <span class="g-develop__site__navInput">localhost:4000</span>
+              </div>
+              <div class="g-develop__site__content">
+                <h1>My Website</h1>
+                <p>Puff Daddy Ghost pottery scene cupidatat end of the road exercitation Meg Ryan, Jurassic Park extreme sports ut Sublime Chronic. Keds the Truman Show Cory Matthews Real World Furby, Independence Day Topanga Sony Playstation DJ Jazzy Jeff. Dolor officia glow in the dark stickers bubble tape Steve Urkel, Discman sint Mariah Carey Kazaa Members Only jackets personalized mixtapes.</p>
+              </div>
+            </div>
+            <div class="g-develop__window g-develop__editor">
+              <div class="g-develop__topBar">
+                <span class="g-develop__topButtons">
+                  <span class="g-develop__windowButton"></span>
+                  <span class="g-develop__windowButton"></span>
+                  <span class="g-develop__windowButton"></span>
+                </span>
+                default.html
+              </div>
+              <div class="g-develop__editor__text">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &#123;% include head.html %}
+  &lt;body class=&quot;page&quot;&gt;
+    &#123;% include header.html %}
+    &lt;main class=&quot;page__main&quot;&gt;
+      &#123;&#123; content }}
+    &lt;/main&gt;
+    &#123;% include footer.html %}
+  &lt;/body&gt;
+&lt;/html&gt;</div>
+            </div>
           </div>
         {% else %}
           <img class="section__graphic" src="/uploads/{{ feature.graphic }}" />
