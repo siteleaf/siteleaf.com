@@ -2,7 +2,7 @@
 // -----------------
 
 .logo {
-  height: 94px;
+  height: 94px; // natural height of asset
 }
 
 .section {
@@ -11,6 +11,9 @@
 }
 .section--smoke {
   @extend %background--smoke;
+}
+.section--gray {
+  @extend %background--gray;
 }
 .section--blue {
   @extend %background--blue;
@@ -30,6 +33,9 @@
 .section--center {
   // text-align: center; // TO DO
 }
+.section--graphic {
+
+}
 
 .section__title {
   @extend %text--title;
@@ -39,6 +45,148 @@
 }
 .section__body {
   @extend %text--body;
+}
+
+.section__graphic {
+  @include responsive-image;
+  pointer-events: none;
+  margin-top: $v * 1.5;
+}
+
+// GitHub graphic
+$avatar-height:        72px;
+$avatar-height-sm:     60px;
+$github__item-padding: 1.5rem;
+
+.g-github {
+  font-family: sans-serif;
+  font-size: $font-size-n1;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  border: 1px solid $color-gray-lightest;
+}
+.g-github__item {
+  background-color: $color-white;
+  padding: 1em;
+  position: relative;
+  height: calc(#{$avatar-height} + #{$github__item-padding});
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $color-gray-lightest;
+  }
+  &:first-of-type {
+    border-radius: $border-radius $border-radius 0 0;
+  }
+  &:last-of-type {
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+  @include max-width($bp-sm) {
+    height: calc(#{$avatar-height-sm} + #{$github__item-padding});
+  }
+}
+.g-github__text {
+  padding-left: calc(#{$avatar-height} + #{$github__item-padding / 2});
+  @include max-width($bp-sm) {
+    padding-left: calc(#{$avatar-height-sm} + #{$github__item-padding / 2});
+  }
+}
+.g-github__commitTitle,
+.g-github__commitMeta {
+  @include ellipsis;
+}
+.g-github__commitTitle {
+  color: $color-gray;
+  margin-bottom: 0;
+}
+.g-github__commitMeta {
+  font-size: $font-size-n1;
+  color: $color-gray-light;
+}
+.g-github__commitTitle,
+.g-github__user {
+  font-weight: bold;
+}
+.g-github__avatar {
+  background-color: $color-gray-lightest;
+  border-radius: $border-radius;
+  width: $avatar-height;
+  height: $avatar-height;
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  @include max-width($bp-sm) {
+    width: $avatar-height-sm;
+    height: $avatar-height-sm;
+  }
+}
+.g-github__avatar__identicon {
+  width: 100%;
+  height: 100%;
+  .g-github__item:nth-of-type(1) & {
+    fill: $color-magenta; 
+  }
+  .g-github__item:nth-of-type(2) & {
+    fill: $color-orange; 
+  }
+  .g-github__item:nth-of-type(3) & {
+    fill: $color-mint; 
+  }
+}
+.g-github__avatarChild {
+  border-radius: $border-radius;
+  height: 33px;
+  width: 33px;
+  position: absolute;
+  background: $color-white;
+  padding: 3px;
+  border: 1px solid $color-gray-lightest;
+  top: 60px;
+  left: 60px;
+  @include max-width($bp-sm) {
+    height: 30px;
+    width: 30px;
+    top: 48px;
+    left: 48px;
+  }
+}
+
+// editor graphic
+.g-editor {
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+}
+.g-editor__bar,
+.g-editor__textarea {
+  border: 1px solid $color-gray-lightest;
+}
+.g-editor__bar {
+  background-color: $color-white;
+  border-radius: $border-radius $border-radius 0 0;
+  border-bottom: 0;
+  padding: 0.5em;
+}
+.g-editor__button {
+  color: $color-gray;
+  border-radius: $border-radius;
+  background-color: $color-gray-lightest;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 0.2em;
+}
+.g-editor__bold {
+  font-weight: bold;
+}
+.g-editor__textarea {
+  @extend %pre;
+  @extend %input;
+  border-top: 0;
+  color: blend-multiply($color-gray, $color-gray-lightest);
+  font-family: $font-family-monospace;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 1em;
+  border-radius: 0 0 $border-radius $border-radius;
 }
 
 // Footer

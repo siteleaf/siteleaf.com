@@ -69,10 +69,15 @@
   background-color: $color-gray-lightest;
 }
 
+%background--gray {
+  color: blend-multiply($color-gray-dark, $color-gray-lighter);
+  background-color: $color-gray-lighter;
+}
+
 %background--dark,
 %background--smoke {
   %pre {
-    background-color: $color-black-alpha-lightest;
+    background-color: blend-multiply($color-gray-lightest, $color-gray-lightest);
   }
 }
 
@@ -90,4 +95,11 @@
 %background--navy {
   background-color: $color-navy;
   @extend %background--dark;
+}
+
+// Inputs
+// ------
+
+%input {
+  box-shadow: inset 0 $button-thickness $button-thickness $color-black-alpha-lightest;
 }
