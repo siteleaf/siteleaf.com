@@ -62,7 +62,7 @@ $sync-height:          50px;
   position: absolute;
   right: $sync-height / 3 * -1;
   bottom: $sync-height / 3 * -1;
-  background-color: $color-mint;
+  background-color: $color-green;
   color: $color-white;
   height: $sync-height;
   width: $sync-height;
@@ -256,12 +256,9 @@ $window-offset: 2.4em;
 .g-editor {
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
 }
-.g-editor__bar,
-.g-editor__textarea {
-  border: 1px solid $color-gray-lightest;
-}
 .g-editor__bar {
   background-color: $color-white;
+  border: 1px solid $color-gray-lighter;
   border-radius: $border-radius $border-radius 0 0;
   border-bottom: 0;
   padding: 0.75em;
