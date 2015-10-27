@@ -43,10 +43,12 @@
 .section__graphic {
   @include responsive-image;
   pointer-events: none;
-  margin-top: $v * 2;
-  margin-bottom: $v * 2;
+  margin-top: $v * 1.5;
+  margin-bottom: $v * 1.5;
 }
-
+.section__title + .section__text {
+  margin-top: $v * 1.5;
+}
 
 // graphic: develop
 $height-window: 21em;
@@ -146,10 +148,14 @@ $window-offset: 2.4em;
 }
 
 // graphic: GitHub
-$avatar-height:        72px;
-$avatar-height-sm:     60px;
-$github__item-padding: 1.5rem;
-$sync-height:          50px;
+$avatar-height:         64px;
+$avatar-height-sm:      56px;
+$avatarChild-height:    30px;
+$avatarChild-height-sm: 27px;
+$avatarChild-offset:    54px;
+$avatarChild-offset-sm: 45px;
+$github__item-padding:  1.6rem;
+$sync-height:           50px;
 
 .g-github {
   font-family: sans-serif;
@@ -200,7 +206,7 @@ $sync-height:          50px;
   }
 }
 .g-github__text {
-  padding-left: calc(#{$avatar-height} + #{$github__item-padding / 2});
+  padding-left: calc(#{$avatar-height} + #{$github__item-padding / 2} + 0.5em);
   @include max-width($bp-sm) {
     padding-left: calc(#{$avatar-height-sm} + #{$github__item-padding / 2});
   }
@@ -215,7 +221,7 @@ $sync-height:          50px;
 }
 .g-github__commitMeta {
   font-size: $font-size-n1;
-  color: $color-gray-light;
+  color: $color-gray;
 }
 .g-github__commitTitle,
 .g-github__user {
@@ -236,20 +242,94 @@ $sync-height:          50px;
 }
 .g-github__avatarChild {
   border-radius: $border-radius;
-  height: 33px;
-  width: 33px;
+  height: $avatarChild-height;
+  width: $avatarChild-height;
   position: absolute;
   background: $color-white;
   padding: 3px;
   border: 1px solid $color-gray-lightest;
-  top: 60px;
-  left: 60px;
+  top: $avatarChild-offset;
+  left: $avatarChild-offset;
   @include max-width($bp-sm) {
-    height: 30px;
-    width: 30px;
-    top: 48px;
-    left: 48px;
+    height: $avatarChild-height-sm;
+    width: $avatarChild-height-sm;
+    top: $avatarChild-offset-sm;
+    left: $avatarChild-offset-sm;
   }
+}
+
+// graphic: metadata
+$fieldList__item__key-width: 25%;
+
+.g-metadata {
+  padding: 1em;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  border: 1px solid $color-gray-lighter;
+  border-radius: $border-radius;
+  font-size: $font-size-n1;
+  color: $color-gray-dark;
+}
+.g-metadata__move {
+  color: $color-gray-light;
+  font-size: $font-size-n2;
+  position: absolute;
+  right: 0;
+}
+.g-metadata__fieldKey {
+  font-weight: $font-weight-semibold;
+  margin-bottom: $v * 0.25;
+  position: relative;
+  &:not(:first-of-type) {
+    margin-top: $v * 0.75;
+  }
+}
+.g-metadata__fieldValue {
+  @extend %pre;
+  @extend %input;
+  font-family: $font-family-monospace;
+  padding: 0.25em 0.5em;
+}
+.g-metadata__fieldList {
+  padding: 0.5em 1em 1em;
+  border: 1px solid $color-gray-lightest;
+  border-radius: $border-radius;
+}
+.g-metadata__fieldList__item {
+  position: relative;
+  &:not(:last-of-type) {
+    margin-bottom: $v * 1;
+  }
+}
+.g-metadata__fieldList__number {
+  color: $color-gray-light;
+  font-size: $font-size-n1;
+  margin-bottom: $v * 0.25;
+}
+.g-metadata__fieldList__keyValue {
+  padding-left: calc(#{$fieldList__item__key-width} + 0.75em);
+  &:not(:last-of-type) {
+    margin-bottom: 0.75em;
+  }
+}
+.g-metadata__fieldList__item__key,
+.g-metadata__fieldList__item__value {
+  padding: 0.25em 0.5em;
+  display: inline-block;
+  @include ellipsis;
+}
+.g-metadata__fieldList__item__key {
+  border: 1px solid $color-gray-lightest;
+  border-radius: $border-radius;
+  width: $fieldList__item__key-width;
+  position: absolute;
+  left: 0;
+}
+.g-metadata__fieldList__item__value {
+  @extend %pre;
+  @extend %input;
+  font-family: $font-family-monospace;
+  width: 100%;
+  display: block;
 }
 
 // graphic: editor
@@ -302,13 +382,13 @@ $sync-height:          50px;
 }
 .g-editor__hover {
   position: absolute;
-  left: 40%;
+  left: 45%;
   bottom: 0.5em;
   color: $color-white;
   text-align: center;
 }
 .g-editor__fileIcon {
-  font-size: $font-size-1;
+  font-size: $font-size-0;
   vertical-align: middle;
 }
 .g-editor__fileIcon,

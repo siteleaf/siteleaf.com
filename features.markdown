@@ -29,11 +29,11 @@ features:
   is_nested: true
   body:
   - title: Advanced metadata
-    body: Metadata now supports nested arrays and objects, plus a shiny new interface that supports drag and drop ordering. It’s the metadata editor of your dreams. Lots more coming soon, including magic fields for images, dates, and more.
+    body: Metadata now supports nested lists and objects, plus a shiny new interface that supports drag and drop ordering. It’s the metadata editor of your dreams. Lots more coming soon, including magic fields for images, dates, and more.
   - title: Custom permalinks
     body: Customize the way your site is generated. Choose date-based permalinks (<code>/2015/10/20/hello-world</code>), pretty permalinks (<code>/posts/hello-world</code>), or whatever suits your needs.
   - title: More than just pages and posts
-    body: Content can sometimes be complicated. Now in addition to pages and posts, you can create custom sets of content (called Collections), each with their own entries (called Documents). Choose to output your documents just like posts, or simply use them as super-metadata within your theme.
+    body: Now in addition to pages and posts, you can create custom sets of content (called Collections), each with their own entries (called Documents). Choose to output your documents just like posts, or simply use them as super-metadata within your theme.
   graphic: g-metadata
 - title: GitHub integration.
   is_nested: true
@@ -59,7 +59,7 @@ features:
   - title: An API for your content
     body: Siteleaf provides a JSON API for interacting with all of your Jekyll content. Integrate it into other sites, apps, or anything you want. It’s your data.
   link:
-    title: Learn more about Siteleaf v1 &rarr;
+    title: Learn more about the old Siteleaf &rarr;
     url: http://siteleaf.com
   graphic: g-editor
 permalink: "/"
