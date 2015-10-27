@@ -40,6 +40,15 @@
   font-weight: $font-weight-light;
 }
 
+// Link
+
+%link--default {
+  color: $color-blue;
+  &:hover {
+    color: $color-blue-dark;
+  }
+}
+
 // Code
 
 %pre {

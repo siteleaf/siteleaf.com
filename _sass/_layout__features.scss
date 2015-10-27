@@ -38,7 +38,9 @@
 .section__body {
   @extend %text--body;
 }
-
+.section__link {
+  @extend %link--default;
+}
 .section__graphic {
   @include responsive-image;
   pointer-events: none;
