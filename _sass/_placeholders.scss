@@ -68,18 +68,15 @@
   %text--subtitle {
     color: $color-white;
   }
-  %text--body {
-    color: $color-black-alpha-dark;
-  }
 }
 
 %background--smoke {
-  color: blend-multiply($color-gray-dark, $color-gray-lightest);
+  color: blend-multiply($color-gray-darker, $color-gray-lightest);
   background-color: $color-gray-lightest;
 }
 
 %background--gray {
-  color: blend-multiply($color-gray-dark, $color-gray-lighter);
+  color: blend-multiply($color-gray-darker, $color-gray-lighter);
   background-color: $color-gray-lighter;
 }
 

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  color: $color-gray-dark;
+  color: $color-gray-darker;
   font-family: $font-family-sans-serif;
   font-size: $font-size-0;
   line-height: $line-height-base;
@@ -32,7 +32,7 @@ h1 {
   letter-spacing: $letter-spacing-tighter;
   line-height: $line-height-tighter;
   margin-top: 0;
-  margin-bottom: ($v * 2.5) - computed-line-height($font-size-6, $line-height-tighter);
+  margin-bottom: ($v * 3) - computed-line-height($font-size-6, $line-height-tighter);
   @include max-width($bp-xs) {
     font-size: $font-size-5;
   }
@@ -60,12 +60,10 @@ h4,
 h5,
 h6 {
   font-size: $font-size-0;
-  // font-weight: $font-weight-semibold;
-  @extend %text--caps;
-  // color: $color-gray;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-tight;
-  margin-top: $v * 1.1666667;
-  margin-bottom: ($v * 1.333333) - computed-line-height($font-size-1, $line-height-tight);
+  margin-top: $v * 1.25;
+  margin-bottom: ($v * 1.25) - computed-line-height($font-size-1, $line-height-tight);
 }
 
 strong {
@@ -166,7 +164,7 @@ hr {
   padding: 0.5em 2em;
   display: inline-block;
   font-weight: $font-weight-semibold;
-  margin-top: $v * 0.5;
+  font-size: $font-size-1;
   @include transition('#{$duration} background-color');
   &:hover {
     color: $color-white;

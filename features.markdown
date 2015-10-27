@@ -1,13 +1,15 @@
 ---
 date: 2015-10-21 14:09:00 Z
 headline: A new Siteleaf.
-button_text: Sign up for v2 beta
+button:
+  title: Sign up for v2 beta
+  url: https://siteleaf.typeform.com/to/EoFRli
 features:
 - title: Open source superpowers.
   is_nested: true
   body:
   - title: Jekyll compatibility
-    body: We’ve reimagined Siteleaf’s templating system to be 100% compatible with Jekyll. We’re keeping all the best parts of the Liquid syntax you already love, and making it work with a larger ecosystem. Now you can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
+    body: We’ve reimagined Siteleaf’s templating system to be 100% compatible with Jekyll. We’re keeping the best parts of the Liquid syntax you already love, and making it work with a larger ecosystem. Use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
   - title: Portable source code
     body: Now with Jekyll, your entire site’s source code and content are portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
@@ -32,6 +34,7 @@ features:
     body: Customize the way your site is generated. Choose date-based permalinks (<code>/2015/10/20/hello-world</code>), pretty permalinks (<code>/posts/hello-world</code>), or whatever suits your needs.
   - title: More than just pages and posts
     body: Content can sometimes be complicated. Now in addition to pages and posts, you can create custom sets of content (called Collections), each with their own entries (called Documents). Choose to output your documents just like posts, or simply use them as super-metadata within your theme.
+  graphic: g-metadata
 - title: GitHub integration.
   is_nested: true
   body:
@@ -46,7 +49,7 @@ features:
   is_nested: true
   body:
   - title: A smart text editor
-    body: Whether you prefer writing in Markdown, HTML, or plaintext, we’ve got you covered.
+    body: Whether you prefer writing in Markdown, HTML, or plaintext, we’ve got you covered. You can even drag and drop a file into the text editor.
   - title: Collaboration
     body: Invite your client or team and let them tinker all they want, without touching a line of code. Siteleaf supports different user roles, like Admin, Publisher, or Writer.
   - title: Publish anywhere
@@ -68,109 +71,23 @@ title: Features
   <div class="wrap wrap--narrow">
     <a href="{{ site.baseurl }}/"><img class="logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
     <h1 class="section__title section__title--headline">{{ page.headline }}</h1>
-    <a class="button button--onDark" href="https://siteleaf.typeform.com/to/EoFRli">{{ page.button_text }}</a>
+    <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
   </div>
 </section>
 
 {% for feature in page.features %}
-  <section class="section section--feature{% if feature.background %} section--{{ feature.background }}{% endif %}{% if feature.align %} section--{{ feature.align }}{% endif %}{% if feature.graphic %} section--graphic{% endif %}">
+  <section class="section section--feature{% if feature.background %} section--{{ feature.background }}{% endif %}{% if feature.graphic %} section--graphic{% endif %}">
     <div class="wrap wrap--narrow">
-      <h2 class="section__title">{{ feature.title }}</h2>
+      <h1 class="section__title">{{ feature.title }}</h1>
       {% if feature.graphic %}
-        {% if feature.graphic == "g-github" %}
-          <div class="section__graphic g-github">
-            <div class="g-github__topBar"><span class="ss-icon g-github__logo">GitHub</span></div>
-            <div class="g-github__item">
-              <img class="g-github__avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/liang/73.jpg" />
-              <img class="g-github__avatarChild" src="/uploads/logo.svg" />
-              <div class="g-github__text">
-                <p class="g-github__commitTitle">Updated News and 2 other files</p>
-                <div class="g-github__commitMeta"><span class="g-github__user">liang</span> committed with Siteleaf 10 minutes ago</div>
-              </div>
-            </div>
-            <div class="g-github__item">
-              <img class="g-github__avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jcoleman/73.jpg" />
-              <img class="g-github__avatarChild" src="/uploads/logo.svg" />
-              <div class="g-github__text">
-                <p class="g-github__commitTitle">Updated Contact</p>
-                <div class="g-github__commitMeta"><span class="g-github__user">jcoleman</span> committed with Siteleaf 6 hours ago</div>
-              </div>
-            </div>
-            <div class="g-github__item">
-              <img class="g-github__avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/amarkdalen/73.jpg" />
-              <img class="g-github__avatarChild" src="/uploads/logo.svg" />
-              <div class="g-github__text">
-                <p class="g-github__commitTitle">Updated About and 3 other files</p>
-                <div class="g-github__commitMeta"><span class="g-github__user">amarkdalen</span> committed with Siteleaf 3 days ago</div>
-              </div>
-            </div>
-            <span class="ss-icon g-github__sync">check</span>
-          </div>
+        {% if feature.graphic == "g-develop" %}
+          {% include_relative _graphics/g-develop.html %}
+        {% elsif feature.graphic == "g-metadata" %}
+          {% include_relative _graphics/g-metadata.html %}
+        {% elsif feature.graphic == "g-github" %}
+          {% include_relative _graphics/g-github.html %}
         {% elsif feature.graphic == "g-editor" %}
-          <div class="section__graphic g-editor">
-            <div class="g-editor__bar">
-              <span class="g-editor__bold g-editor__button">B</span>
-              <span class="ss-icon g-editor__button">link</span>
-              <span class="ss-icon g-editor__button">image</span>
-            </div>
-            <div class="g-editor__textarea">Last week, [I ran through](/blog/overview) a number of [Siteleaf's](http://siteleaf.com) most compelling features and provided a general overview of the service.
-
-### Creating your site
-
-![site-settings](/assets/site-settings.png)</div>
-          </div>
-        {% elsif feature.graphic == "g-develop" %}
-          <div class="section__graphic g-develop">
-            <div class="g-develop__window g-develop__site">
-              <div class="g-develop__topBar">
-                <span class="g-develop__topButtons">
-                  <span class="g-develop__windowButton"></span>
-                  <span class="g-develop__windowButton"></span>
-                  <span class="g-develop__windowButton"></span>
-                  <span class="g-develop__navButton ss-icon">navigateleft</span>
-                  <span class="g-develop__navButton ss-icon">navigateright</span>
-                </span>
-                <span class="g-develop__site__navInput">localhost:4000</span>
-              </div>
-              <div class="g-develop__site__content">
-                <h1>My Website</h1>
-                <p>Puff Daddy Ghost pottery scene cupidatat end of the road exercitation Meg Ryan, Jurassic Park extreme sports ut Sublime Chronic. Keds the Truman Show Cory Matthews Real World Furby, Independence Day Topanga Sony Playstation DJ Jazzy Jeff. Dolor officia glow in the dark stickers bubble tape Steve Urkel, Discman sint Mariah Carey Kazaa Members Only jackets personalized mixtapes.</p>
-              </div>
-            </div>
-            <div class="g-develop__window g-develop__editor">
-              <div class="g-develop__topBar g-develop__topBar--active">
-                <span class="g-develop__topButtons">
-                  <span class="g-develop__windowButton"></span>
-                  <span class="g-develop__windowButton"></span>
-                  <span class="g-develop__windowButton"></span>
-                </span>
-                main.scss
-              </div>
-              <div class="g-develop__editor__text">
-                {% highlight scss %}* {
-  @include box-sizing(border-box);
-}
-
-html {
-  font-size: $font-size-html;
-  @include max-width($bp-sm) {
-    font-size: $font-size-html-sm;
-  }
-}
-
-body {
-  color: $color-gray-dark;
-  font-family: $font-family-sans-serif;
-  font-size: $font-size-0;
-  line-height: $line-height-base;
-  letter-spacing: $letter-spacing-base;
-  @include antialias;
-}{% endhighlight %}
-              </div>
-            </div>
-          </div>
-        {% else %}
-          <img class="section__graphic" src="/uploads/{{ feature.graphic }}" />
+          {% include_relative _graphics/g-editor.html %}
         {% endif %}
       {% endif %}
       <section class="section__text">
@@ -192,7 +109,7 @@ body {
 
 <section class="section section--blue">
   <div class="wrap wrap--narrow">
-    <h2 class="section__title">Ready to try the new Siteleaf?</h2>
-    <a class="button button--onDark" href="https://siteleaf.typeform.com/to/EoFRli">{{ page.button_text }}</a>
+    <h1 class="section__title">Ready to try the new Siteleaf?</h1>
+    <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
   </div>
 </section>

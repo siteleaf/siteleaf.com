@@ -1,0 +1,49 @@
+<div class="section__graphic g-develop">
+  <div class="g-develop__window g-develop__site">
+    <div class="g-develop__topBar">
+      <span class="g-develop__topButtons">
+        <span class="g-develop__windowButton"></span>
+        <span class="g-develop__windowButton"></span>
+        <span class="g-develop__windowButton"></span>
+        <span class="g-develop__navButton ss-icon">navigateleft</span>
+        <span class="g-develop__navButton ss-icon">navigateright</span>
+      </span>
+      <span class="g-develop__site__navInput">localhost:4000</span>
+    </div>
+    <div class="g-develop__site__content">
+      <h1>My Website</h1>
+      <p>Puff Daddy Ghost pottery scene cupidatat end of the road exercitation Meg Ryan, Jurassic Park extreme sports ut Sublime Chronic. Keds the Truman Show Cory Matthews Real World Furby, Independence Day Topanga Sony Playstation DJ Jazzy Jeff. Dolor officia glow in the dark stickers bubble tape Steve Urkel, Discman sint Mariah Carey Kazaa Members Only jackets personalized mixtapes.</p>
+    </div>
+  </div>
+  <div class="g-develop__window g-develop__editor">
+    <div class="g-develop__topBar g-develop__topBar--active">
+      <span class="g-develop__topButtons">
+        <span class="g-develop__windowButton"></span>
+        <span class="g-develop__windowButton"></span>
+        <span class="g-develop__windowButton"></span>
+      </span>
+      main.scss
+    </div>
+    <div class="g-develop__editor__text">
+      {% highlight scss %}* {
+@include box-sizing(border-box);
+}
+
+html {
+font-size: $font-size-html;
+@include max-width($bp-sm) {
+font-size: $font-size-html-sm;
+}
+}
+
+body {
+color: $color-gray-dark;
+font-family: $font-family-sans-serif;
+font-size: $font-size-0;
+line-height: $line-height-base;
+letter-spacing: $letter-spacing-base;
+@include antialias;
+}{% endhighlight %}
+    </div>
+  </div>
+</div>

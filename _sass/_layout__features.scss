@@ -33,7 +33,7 @@
   margin-top: $v * 0.5;
 }
 .section__body {
-  @extend %text--body;
+  color: $color-gray-dark;
 }
 .section__link {
   @extend %link--default;
@@ -43,7 +43,7 @@
 .section__graphic {
   @include responsive-image;
   pointer-events: none;
-  margin-top: $v * 1.5;
+  margin-top: $v * 2;
   margin-bottom: $v * 2;
 }
 
@@ -55,7 +55,6 @@ $window-offset: 2.4em;
 .g-develop {
   position: relative;
   padding-bottom: $window-offset;
-
 }
 .g-develop__window {
   border: 1px solid $color-gray-lighter;
@@ -83,7 +82,7 @@ $window-offset: 2.4em;
   }
 }
 .g-develop__topBar--active {
-  color: $color-gray-dark;
+  color: $color-gray-darker;
   @include linear-gradient("#{lighten($color-gray-lighter, 10%)}, #{$color-gray-lighter}");
 }
 .g-develop__topButtons {
@@ -177,7 +176,7 @@ $sync-height:          50px;
   background-color: lighten($color-gray-lighter, 10%);
   border: 1px solid $color-gray-lighter;
   border-radius: $border-radius $border-radius 0 0;
-  padding: 0.25rem 0.75rem;
+  padding: 0.15rem 0.75rem;
 }
 .g-github__logo {
   font-size: $font-size-4;
@@ -282,7 +281,7 @@ $sync-height:          50px;
 .g-editor__textarea {
   background-color: $color-white;
   border: 2px solid $color-blue;
-  color: lighten($color-gray-dark, 12.5%);
+  color: lighten($color-gray-darker, 12.5%);
   font-family: $font-family-monospace;
   overflow: auto;
   white-space: pre-wrap;
