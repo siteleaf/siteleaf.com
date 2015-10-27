@@ -75,6 +75,7 @@ title: Features
       {% if feature.graphic %}
         {% if feature.graphic == "g-github" %}
           <div class="section__graphic g-github">
+            <div class="g-github__topBar"><span class="ss-icon g-github__logo">GitHub</span></div>
             <div class="g-github__item">
               <img class="g-github__avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/liang/73.jpg" />
               <img class="g-github__avatarChild" src="/uploads/logo.svg" />
@@ -99,6 +100,7 @@ title: Features
                 <div class="g-github__commitMeta"><span class="g-github__user">amarkdalen</span> committed with Siteleaf 3 days ago</div>
               </div>
             </div>
+            <span class="ss-icon g-github__sync">check</span>
           </div>
         {% elsif feature.graphic == "g-editor" %}
           <div class="section__graphic g-editor">
@@ -132,25 +134,35 @@ title: Features
               </div>
             </div>
             <div class="g-develop__window g-develop__editor">
-              <div class="g-develop__topBar">
+              <div class="g-develop__topBar g-develop__topBar--active">
                 <span class="g-develop__topButtons">
                   <span class="g-develop__windowButton"></span>
                   <span class="g-develop__windowButton"></span>
                   <span class="g-develop__windowButton"></span>
                 </span>
-                default.html
+                main.scss
               </div>
-              <div class="g-develop__editor__text">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &#123;% include head.html %}
-  &lt;body class=&quot;page&quot;&gt;
-    &#123;% include header.html %}
-    &lt;main class=&quot;page__main&quot;&gt;
-      &#123;&#123; content }}
-    &lt;/main&gt;
-    &#123;% include footer.html %}
-  &lt;/body&gt;
-&lt;/html&gt;</div>
+              <div class="g-develop__editor__text">
+                {% highlight scss %}* {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-size: $font-size-html;
+  @include max-width($bp-sm) {
+    font-size: $font-size-html-sm;
+  }
+}
+
+body {
+  color: $color-gray-dark;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-0;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  @include antialias;
+}{% endhighlight %}
+              </div>
             </div>
           </div>
         {% else %}

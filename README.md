@@ -2,6 +2,5 @@ Siteleaf template for `v2.siteleaf.com`, built on Siteleaf v2, which will eventu
 
 ## To dos
 
-- graphics for some of the sections
-- section types for visual variety: left, right, center, with graphics
+- add some graphics
 - edit copywriting

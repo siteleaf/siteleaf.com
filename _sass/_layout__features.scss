@@ -49,25 +49,51 @@
 $avatar-height:        72px;
 $avatar-height-sm:     60px;
 $github__item-padding: 1.5rem;
+$sync-height:          50px;
 
 .g-github {
   font-family: sans-serif;
   font-size: $font-size-n1;
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
-  border: 1px solid $color-gray-lightest;
+  position: relative;
+  width: calc(100% - #{$sync-height / 3});
+}
+.g-github__sync {
+  position: absolute;
+  right: $sync-height / 3 * -1;
+  bottom: $sync-height / 3 * -1;
+  background-color: $color-mint;
+  color: $color-white;
+  height: $sync-height;
+  width: $sync-height;
+  border-radius: $sync-height;
+  text-align: center;
+  font-size: $font-size-4 / 1em * $font-size-html;
+  line-height: 1.5;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+}
+.g-github__topBar {
+  background-color: #f5f5f5;
+  border: 1px solid $color-gray-lighter;
+  border-bottom: 1px solid #e5e5e5; // same as GitHub
+  border-radius: $border-radius $border-radius 0 0;
+  padding: 0.25rem 0.75rem;
+}
+.g-github__logo {
+  font-size: $font-size-4;
 }
 .g-github__item {
   background-color: $color-white;
   padding: 1em;
   position: relative;
   height: calc(#{$avatar-height} + #{$github__item-padding});
+  border-left: 1px solid $color-gray-lighter;
+  border-right: 1px solid $color-gray-lighter;
   &:not(:last-of-type) {
     border-bottom: 1px solid $color-gray-lightest;
   }
-  &:first-of-type {
-    border-radius: $border-radius $border-radius 0 0;
-  }
   &:last-of-type {
+    border-bottom: 1px solid $color-gray-lighter;
     border-radius: 0 0 $border-radius $border-radius;
   }
   @include max-width($bp-sm) {
@@ -107,19 +133,6 @@ $github__item-padding: 1.5rem;
   @include max-width($bp-sm) {
     width: $avatar-height-sm;
     height: $avatar-height-sm;
-  }
-}
-.g-github__avatar__identicon {
-  width: 100%;
-  height: 100%;
-  .g-github__item:nth-of-type(1) & {
-    fill: $color-magenta; 
-  }
-  .g-github__item:nth-of-type(2) & {
-    fill: $color-orange; 
-  }
-  .g-github__item:nth-of-type(3) & {
-    fill: $color-mint; 
   }
 }
 .g-github__avatarChild {
@@ -207,13 +220,17 @@ $window-offset: 2.4em;
 .g-develop__topBar {
   font-family: sans-serif;
   text-align: center;
-  background-color: lighten($color-gray-lighter, 7.5%);
+  background-color: lighten($color-gray-lighter, 10%);
   color: $color-gray;
   padding: 0.1em;
   font-size: $font-size-n3;
   & > * {
     display: inline-block;
   }
+}
+.g-develop__topBar--active {
+  color: $color-gray-dark;
+  @include linear-gradient("#{lighten($color-gray-lighter, 10%)}, #{$color-gray-lighter}");
 }
 .g-develop__topButtons {
   position: absolute;
@@ -222,18 +239,30 @@ $window-offset: 2.4em;
 .g-develop__windowButton {
   background-color: $color-gray-lighter;
   display: inline-block;
-  width: 0.75em;
-  height: 0.75em;
-  border-radius: 0.75em;
+  width: 11px;
+  height: 11px;
+  border-radius: 11px;
   margin-right: 0.15em;
   &:nth-child(3) {
     margin-right: 0.5em;
+  }
+  @include max-width($bp-sm) {
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+  }
+  .g-develop__topBar--active & {
+    background-color: $color-gray;
   }
 }
 .g-develop__navButton {
   color: $color-gray-light;
   position: relative;
   top: 0.1em;
+  line-height: 0;
+  @include max-width($bp-xs) {
+    display: none;
+  }
 }
 .g-develop__site__navInput {
   background-color: $color-white;
@@ -252,12 +281,13 @@ $window-offset: 2.4em;
     font-size: $font-size-3;
   }
 }
-.g-develop__editor {
-  background-color: $color-navy;
-}
 .g-develop__editor__text {
   color: $color-white;
-  font-family: $font-family-monospace;
-  white-space: pre-wrap;
-  padding: 1em 1em 0;
+  pre {
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+  pre,
+  code {
+    background-color: $color-navy;
+  }
 }
