@@ -25,9 +25,6 @@
 .section--navy {
   @extend %background--navy;
 }
-.section--graphic {
-
-}
 
 .section__title {
   @extend %text--title;
@@ -40,120 +37,16 @@
 }
 .section__link {
   @extend %link--default;
+  display: inline-block;
+  margin-top: $v * 0.5;
 }
 .section__graphic {
   @include responsive-image;
   pointer-events: none;
   margin-top: $v * 1.5;
+  margin-bottom: $v * 2;
 }
 
-// graphic: GitHub
-$avatar-height:        72px;
-$avatar-height-sm:     60px;
-$github__item-padding: 1.5rem;
-$sync-height:          50px;
-
-.g-github {
-  font-family: sans-serif;
-  font-size: $font-size-n1;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
-  position: relative;
-  width: calc(100% - #{$sync-height / 3});
-}
-.g-github__sync {
-  position: absolute;
-  right: $sync-height / 3 * -1;
-  bottom: $sync-height / 3 * -1;
-  background-color: $color-green;
-  color: $color-white;
-  height: $sync-height;
-  width: $sync-height;
-  border-radius: $sync-height;
-  text-align: center;
-  font-size: $font-size-4 / 1em * $font-size-html;
-  line-height: 1.5;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
-}
-.g-github__topBar {
-  background-color: #f5f5f5;
-  border: 1px solid $color-gray-lighter;
-  border-bottom: 1px solid #e5e5e5; // same as GitHub
-  border-radius: $border-radius $border-radius 0 0;
-  padding: 0.25rem 0.75rem;
-}
-.g-github__logo {
-  font-size: $font-size-4;
-}
-.g-github__item {
-  background-color: $color-white;
-  padding: 1em;
-  position: relative;
-  height: calc(#{$avatar-height} + #{$github__item-padding});
-  border-left: 1px solid $color-gray-lighter;
-  border-right: 1px solid $color-gray-lighter;
-  &:not(:last-of-type) {
-    border-bottom: 1px solid $color-gray-lightest;
-  }
-  &:last-of-type {
-    border-bottom: 1px solid $color-gray-lighter;
-    border-radius: 0 0 $border-radius $border-radius;
-  }
-  @include max-width($bp-sm) {
-    height: calc(#{$avatar-height-sm} + #{$github__item-padding});
-  }
-}
-.g-github__text {
-  padding-left: calc(#{$avatar-height} + #{$github__item-padding / 2});
-  @include max-width($bp-sm) {
-    padding-left: calc(#{$avatar-height-sm} + #{$github__item-padding / 2});
-  }
-}
-.g-github__commitTitle,
-.g-github__commitMeta {
-  @include ellipsis;
-}
-.g-github__commitTitle {
-  color: $color-gray;
-  margin-bottom: 0;
-}
-.g-github__commitMeta {
-  font-size: $font-size-n1;
-  color: $color-gray-light;
-}
-.g-github__commitTitle,
-.g-github__user {
-  font-weight: bold;
-}
-.g-github__avatar {
-  background-color: $color-gray-lightest;
-  border-radius: $border-radius;
-  width: $avatar-height;
-  height: $avatar-height;
-  position: absolute;
-  left: 0.75rem;
-  top: 0.75rem;
-  @include max-width($bp-sm) {
-    width: $avatar-height-sm;
-    height: $avatar-height-sm;
-  }
-}
-.g-github__avatarChild {
-  border-radius: $border-radius;
-  height: 33px;
-  width: 33px;
-  position: absolute;
-  background: $color-white;
-  padding: 3px;
-  border: 1px solid $color-gray-lightest;
-  top: 60px;
-  left: 60px;
-  @include max-width($bp-sm) {
-    height: 30px;
-    width: 30px;
-    top: 48px;
-    left: 48px;
-  }
-}
 
 // graphic: develop
 $height-window: 21em;
@@ -253,6 +146,112 @@ $window-offset: 2.4em;
   }
 }
 
+// graphic: GitHub
+$avatar-height:        72px;
+$avatar-height-sm:     60px;
+$github__item-padding: 1.5rem;
+$sync-height:          50px;
+
+.g-github {
+  font-family: sans-serif;
+  font-size: $font-size-n1;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  position: relative;
+  width: calc(100% - #{$sync-height / 3});
+}
+.g-github__sync {
+  position: absolute;
+  right: $sync-height / 3 * -1;
+  bottom: $sync-height / 3 * -1;
+  background-color: $color-green;
+  color: $color-white;
+  height: $sync-height;
+  width: $sync-height;
+  border-radius: $sync-height;
+  text-align: center;
+  font-size: $font-size-4 / 1em * $font-size-html;
+  line-height: 1.5;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+}
+.g-github__topBar {
+  background-color: lighten($color-gray-lighter, 10%);
+  border: 1px solid $color-gray-lighter;
+  border-radius: $border-radius $border-radius 0 0;
+  padding: 0.25rem 0.75rem;
+}
+.g-github__logo {
+  font-size: $font-size-4;
+}
+.g-github__item {
+  background-color: $color-white;
+  padding: 1em;
+  position: relative;
+  height: calc(#{$avatar-height} + #{$github__item-padding});
+  border-left: 1px solid $color-gray-lighter;
+  border-right: 1px solid $color-gray-lighter;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $color-gray-lightest;
+  }
+  &:last-of-type {
+    border-bottom: 1px solid $color-gray-lighter;
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+  @include max-width($bp-sm) {
+    height: calc(#{$avatar-height-sm} + #{$github__item-padding});
+  }
+}
+.g-github__text {
+  padding-left: calc(#{$avatar-height} + #{$github__item-padding / 2});
+  @include max-width($bp-sm) {
+    padding-left: calc(#{$avatar-height-sm} + #{$github__item-padding / 2});
+  }
+}
+.g-github__commitTitle,
+.g-github__commitMeta {
+  @include ellipsis;
+}
+.g-github__commitTitle {
+  color: $color-gray;
+  margin-bottom: 0;
+}
+.g-github__commitMeta {
+  font-size: $font-size-n1;
+  color: $color-gray-light;
+}
+.g-github__commitTitle,
+.g-github__user {
+  font-weight: bold;
+}
+.g-github__avatar {
+  background-color: $color-gray-lightest;
+  border-radius: $border-radius;
+  width: $avatar-height;
+  height: $avatar-height;
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  @include max-width($bp-sm) {
+    width: $avatar-height-sm;
+    height: $avatar-height-sm;
+  }
+}
+.g-github__avatarChild {
+  border-radius: $border-radius;
+  height: 33px;
+  width: 33px;
+  position: absolute;
+  background: $color-white;
+  padding: 3px;
+  border: 1px solid $color-gray-lightest;
+  top: 60px;
+  left: 60px;
+  @include max-width($bp-sm) {
+    height: 30px;
+    width: 30px;
+    top: 48px;
+    left: 48px;
+  }
+}
 
 // graphic: editor
 .g-editor {
@@ -283,7 +282,7 @@ $window-offset: 2.4em;
 .g-editor__textarea {
   background-color: $color-white;
   border: 2px solid $color-blue;
-  color: lighten($color-gray-dark, 10%);
+  color: lighten($color-gray-dark, 12.5%);
   font-family: $font-family-monospace;
   overflow: auto;
   white-space: pre-wrap;
