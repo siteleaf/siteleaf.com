@@ -4,12 +4,7 @@ headline: A new Siteleaf.
 button_text: Sign up for v2 beta
 features:
 - title: Open source superpowers.
-  is_nested: true
-  body:
-  - title: Compatible with Jekyll
-    body: We’ve reimagined Siteleaf’s templating system to be 100% compatible with Jekyll. We’re keeping all the best parts of the Liquid syntax you already love, and making it work with a larger ecosystem. Now you can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
-  - title: Data portability
-    body: We believe your data belongs to you. With Jekyll, your entire site’s source code and content are now portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
+  body: We’ve reimagined Siteleaf’s templating system to be 100% compatible with Jekyll. We’re keeping all the best parts of the Liquid syntax you already love, and making it work with a larger ecosystem. Now you can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
 - title: Sync with GitHub.
   is_nested: true
   body:
@@ -38,11 +33,13 @@ features:
     body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript, thanks to the power of Jekyll.
   background: smoke
   graphic: g-develop
+- title: More portable.
+  body: We believe that your data belongs to you, with the freedom publish to any web host you want, including FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files. Now with Jekyll, your entire site’s source code and content are portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
 - title: Free for developers.
   body: While we’ve always had free accounts for developers, publishing was reserved for paid accounts only. We’re now making it possible to publish to GitHub Pages, totally free for developers and open source projects.
+  background: smoke
 - title: Import from v1, WordPress, and more.
   body: Export your existing v1 site content to v2-ready Jekyll format using the existing Siteleaf gem (<code>siteleaf export</code>). Also import your content from WordPress, Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
-  background: smoke
 - title: Plus, all that you already love about Siteleaf.
   is_nested: true
   body:
@@ -50,11 +47,12 @@ features:
     body: Whether you prefer writing in Markdown, HTML, or plaintext, we’ve got you covered. Drag and drop an image and we’ll insert its code, too.
   - title: Collaboration
     body: Invite your client or team and let them tinker all they want, without touching a line of code. Siteleaf supports different user roles, like Admin, Publisher, or Writer.
-  - title: Publish anywhere
-    body: Have the freedom to publish to any web host you want, including FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files.
+  - title: Fast and secure
+    body: Siteleaf generates static files when you publish, which means your site loads faster, is more secure, and doesn’t rely on a database or complicated server setup.
   - title: An API for your content
     body: Siteleaf provides a JSON API for interacting with all of your Jekyll content. Integrate it into other sites, apps, or anything you want. It’s your data.
   graphic: g-editor
+  background: smoke
 permalink: "/"
 layout: default
 title: Features

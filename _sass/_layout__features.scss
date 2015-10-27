@@ -153,47 +153,6 @@ $sync-height:          50px;
   }
 }
 
-// graphic: editor
-.g-editor {
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
-}
-.g-editor__bar,
-.g-editor__textarea {
-  border: 1px solid $color-gray-lightest;
-}
-.g-editor__bar {
-  background-color: $color-white;
-  border-radius: $border-radius $border-radius 0 0;
-  border-bottom: 0;
-  padding: 0.5em;
-}
-.g-editor__button {
-  color: $color-gray;
-  border-radius: $border-radius;
-  background-color: $color-gray-lightest;
-  display: inline-block;
-  vertical-align: middle;
-  width: 1.75em;
-  height: 1.75em;
-  line-height: 1.75em;
-  text-align: center;
-  margin-right: 0.25em;
-}
-.g-editor__bold {
-  font-weight: bold;
-}
-.g-editor__textarea {
-  @extend %pre;
-  @extend %input;
-  border-top: 0;
-  color: lighten($color-gray-dark, 12.5%);
-  font-family: $font-family-monospace;
-  overflow: auto;
-  white-space: pre-wrap;
-  padding: 1em;
-  border-radius: 0 0 $border-radius $border-radius;
-}
-
 // graphic: develop
 $height-window: 21em;
 $window-offset: 2.4em;
@@ -290,4 +249,45 @@ $window-offset: 2.4em;
   code {
     background-color: $color-navy;
   }
+}
+
+
+// graphic: editor
+.g-editor {
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+}
+.g-editor__bar,
+.g-editor__textarea {
+  border: 1px solid $color-gray-lightest;
+}
+.g-editor__bar {
+  background-color: $color-white;
+  border-radius: $border-radius $border-radius 0 0;
+  border-bottom: 0;
+  padding: 0.75em;
+}
+.g-editor__button {
+  color: $color-gray;
+  border-radius: $border-radius;
+  background-color: $color-gray-lightest;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.75em;
+  height: 1.75em;
+  line-height: 1.75em;
+  text-align: center;
+  margin-right: 0.25em;
+}
+.g-editor__bold {
+  font-weight: bold;
+}
+.g-editor__textarea {
+  background-color: $color-white;
+  border: 2px solid $color-blue;
+  color: lighten($color-gray-dark, 10%);
+  font-family: $font-family-monospace;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 1em;
+  border-radius: 0 0 $border-radius $border-radius;
 }
