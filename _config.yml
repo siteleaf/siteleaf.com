@@ -14,4 +14,3 @@ defaults:
     type: posts
   values:
     permalink: "/posts/:title/"
-highligher: pygments
