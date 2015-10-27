@@ -255,6 +255,7 @@ $sync-height:          50px;
 // graphic: editor
 .g-editor {
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  position: relative;
 }
 .g-editor__bar {
   background-color: $color-white;
@@ -280,11 +281,67 @@ $sync-height:          50px;
 }
 .g-editor__textarea {
   background-color: $color-white;
-  border: 2px solid $color-blue;
-  color: lighten($color-gray-darker, 12.5%);
+  border: 1px solid $color-gray-lighter;
+  color: $color-gray-darker;
   font-family: $font-family-monospace;
   overflow: auto;
   white-space: pre-wrap;
   padding: 1em;
   border-radius: 0 0 $border-radius $border-radius;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-blue, 0.8);
+  }
+}
+.g-editor__hover {
+  position: absolute;
+  left: 40%;
+  bottom: 0.5em;
+  color: $color-white;
+  text-align: center;
+}
+.g-editor__fileIcon {
+  font-size: $font-size-1;
+  vertical-align: middle;
+}
+.g-editor__fileIcon,
+.g-editor__fileName {
+  display: inline-block;
+}
+.g-editor__fileName {
+  font-size: $font-size-n3;
+  font-family: sans-serif;
+  background-color: $color-blue-dark;
+  border-radius: 1em;
+  padding: 0 0.75em;
+}
+.g-editor__cursorGroup {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -1.1em;
+}
+.g-editor__cursor {
+  display: inline-block;
+  @include rotate(24deg);
+}
+.g-editor__cursorPlus {
+  display: inline-block;
+  font-size: $font-size-n1;
+  text-align: center;
+  background-color: $color-green;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  line-height: 20px;
+  position: relative;
+  top: 0.75em;
+  left: -1.05em;
 }
