@@ -62,55 +62,6 @@ features:
     url: http://siteleaf.com
   graphic: g-editor
 permalink: "/"
-layout: default
+layout: features
 title: Features
 ---
-
-<section class="section section--blue">
-  <div class="wrap wrap--narrow">
-    <a href="{{ site.baseurl }}/"><img class="logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
-    <h1 class="section__title section__title--headline">{{ page.headline }}</h1>
-    <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
-  </div>
-</section>
-
-{% for feature in page.features %}
-  <section class="section section--feature{% if feature.background %} section--{{ feature.background }}{% endif %}{% if feature.graphic %} section--graphic{% endif %}">
-    <div class="wrap wrap--narrow">
-      <h1 class="section__title">{{ feature.title }}</h1>
-      {% if feature.graphic %}
-        {% if feature.graphic == "g-jekyll" %}
-          {% include_relative _graphics/g-jekyll.html %}
-        {% elsif feature.graphic == "g-develop" %}
-          {% include_relative _graphics/g-develop.html %}
-        {% elsif feature.graphic == "g-metadata" %}
-          {% include_relative _graphics/g-metadata.html %}
-        {% elsif feature.graphic == "g-github" %}
-          {% include_relative _graphics/g-github.html %}
-        {% elsif feature.graphic == "g-editor" %}
-          {% include_relative _graphics/g-editor.html %}
-        {% endif %}
-      {% endif %}
-      <section class="section__text">
-        {% if feature.is_nested %}
-          {% for subfeature in feature.body %}
-            <h4 class="section__subtitle">{{ subfeature.title }}</h4>
-            {{ subfeature.body | markdownify }}
-          {% endfor %}
-        {% else %}
-          {{ feature.body | markdownify }}
-        {% endif %}
-        {% if feature.link %}
-          <a class="section__link" href="{{ feature.link.url }}">{{ feature.link.title }}</a>
-        {% endif %}
-      </section>
-    </div>
-  </section>
-{% endfor %}
-
-<section class="section section--blue">
-  <div class="wrap wrap--narrow">
-    <h1 class="section__title">Ready to try the new Siteleaf?</h1>
-    <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
-  </div>
-</section>
