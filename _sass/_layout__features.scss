@@ -43,8 +43,8 @@
 .section__graphic {
   @include responsive-image;
   pointer-events: none;
-  margin-top: $v * 1.5;
-  margin-bottom: $v * 1.5;
+  margin-top: $v * 2;
+  margin-bottom: $v * 2;
 }
 .section__title + .section__text {
   margin-top: $v * 1.5;
