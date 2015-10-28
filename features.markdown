@@ -14,7 +14,7 @@ features:
     body: Now with Jekyll, your entire site’s source code and content are portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
     body: Export your existing v1 site content to v2-ready Jekyll format using the existing Siteleaf gem (`siteleaf export`). Also import your content from WordPress, Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
-  graphic: g-openSource
+  graphic: g-jekyll
 - title: More developer-friendly.
   is_nested: true
   body:
@@ -54,7 +54,7 @@ features:
   - title: Collaboration
     body: Invite your client or team and let them tinker all they want, without touching a single line of code. Siteleaf supports different user roles, like Admin, Publisher, or Writer.
   - title: Publish fast, secure sites anywhere
-    body: When you publish, Siteleaf generates static files, which means your site loads faster, is more secure, and doesn’t rely on a database or complicated server setup. You're free to publish to any web host you want, including FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files.
+    body: When you publish, Siteleaf generates static files, which means your site loads faster, is more secure, and doesn’t rely on a database or complicated server setup. You're free to publish to FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files.
   - title: An API for your content
     body: Siteleaf provides a JSON API for interacting with all of your Jekyll content. Integrate it into other sites, apps, or anything you want. It’s your data.
   link:
@@ -79,8 +79,8 @@ title: Features
     <div class="wrap wrap--narrow">
       <h1 class="section__title">{{ feature.title }}</h1>
       {% if feature.graphic %}
-        {% if feature.graphic == "g-openSource" %}
-          {% include_relative _graphics/g-openSource.html %}
+        {% if feature.graphic == "g-jekyll" %}
+          {% include_relative _graphics/g-jekyll.html %}
         {% elsif feature.graphic == "g-develop" %}
           {% include_relative _graphics/g-develop.html %}
         {% elsif feature.graphic == "g-metadata" %}

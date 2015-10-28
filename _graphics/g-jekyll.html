@@ -1,0 +1,44 @@
+<div class="section__graphic g-jekyll">
+  <div class="g__window g__window--full g__window--editor">
+    <div class="g__window__topBar">
+      <span class="g__windowButtons">
+        <span class="g__windowButton"></span>
+        <span class="g__windowButton"></span>
+        <span class="g__windowButton"></span>
+      </span>
+      index.html
+    </div>
+    <div class="g__window__code">
+      {% highlight html %}---
+layout: default
+---
+<div class="home">
+  <h1 class="page-heading">Posts</h1>
+  <ul class="post-list">
+    {{ "{% for post in site.posts " }} %}
+      <li>
+        <span class="post-meta">{{ '{{ post.date | date: "%b %-d, %Y" ' }}}}</span>
+        <h2>
+          <a class="post-link" href="{{ "{{ post.url | prepend: site.baseurl " }}}}">{{ "{{ post.title " }}}}</a>
+        </h2>
+      </li>
+    {{ "{% endfor " }}%}
+  </ul>
+</div>{% endhighlight %}
+    </div>
+  </div>
+    <div class="g__window g__window--terminal">
+      <div class="g__window__topBar g__window__topBar--active">
+        <span class="g__windowButtons">
+          <span class="g__windowButton"></span>
+          <span class="g__windowButton"></span>
+          <span class="g__windowButton"></span>
+        </span>
+        Terminal
+      </div>
+      <div class="g__window__code">
+        {% highlight bash %}$ jekyll build
+#=> The current folder will be generated into ./_site{% endhighlight %}
+      </div>
+    </div>
+</div>

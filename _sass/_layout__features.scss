@@ -47,48 +47,48 @@
   margin-top: $v * 1.5;
 }
 
-// graphic: develop
-$height-window: 21em;
-$window-offset: 2.4em;
+// Graphics
+// --------
 
-.g-develop {
-  position: relative;
-  padding-bottom: $window-offset;
-}
-.g-develop__window {
+// general
+.g__window {
+  font-size: $font-size-n1;
   border: 1px solid $color-gray-lighter;
   border-radius: $border-radius;
-  background-color: $color-white;
+  background-color: transparent;
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
-  height: $height-window;
   overflow: hidden;
-  width: 92%;
-  &:nth-child(2) {
-    position: absolute;
-    top: $window-offset;
-    left: 8%;
-  }
+  position: relative;
 }
-.g-develop__topBar {
+.g__window--site {
+  background-color: $color-white;
+}
+.g__window--editor {
+  @include linear-gradient("top, rgba(0, 0, 0, 0) #{$border-radius + 1px},  #{$color-navy} #{$border-radius + 1px}"); // offset background border radiuses at top aren't weird
+}
+.g__window--terminal {
+  @include linear-gradient("top, rgba(0, 0, 0, 0) #{$border-radius + 1px},  #{$color-gray-darker} #{$border-radius + 1px}"); // offset background border radiuses at top aren't weird
+}
+.g__window__topBar {
   font-family: sans-serif;
   text-align: center;
   background-color: lighten($color-gray-lighter, 10%);
   color: $color-gray;
   padding: 0.1em;
-  font-size: $font-size-n3;
+  font-size: $font-size-n2;
   & > * {
     display: inline-block;
   }
 }
-.g-develop__topBar--active {
-  color: $color-gray-darker;
+.g__window__topBar--active {
+  color: $color-gray-dark;
   @include linear-gradient("#{lighten($color-gray-lighter, 10%)}, #{$color-gray-lighter}");
 }
-.g-develop__topButtons {
+.g__windowButtons {
   position: absolute;
   left: 0.5em;
 }
-.g-develop__windowButton {
+.g__windowButton {
   background-color: $color-gray-lighter;
   display: inline-block;
   width: 11px;
@@ -103,8 +103,59 @@ $window-offset: 2.4em;
     height: 9px;
     border-radius: 9px;
   }
-  .g-develop__topBar--active & {
+  .g__window__topBar--active & {
     background-color: $color-gray;
+  }
+}
+.g__window__code {
+  pre {
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+  pre,
+  code {
+    background-color: transparent;
+    color: $color-white;
+  }
+}
+
+// g-jekyll
+$height-window--jekyll: 25em;
+$v-offset-window--jekyll: 2em;
+
+.g-jekyll {
+  position: relative;
+  padding-bottom: $v-offset-window--jekyll;
+  .g__window {
+    height: $height-window--jekyll;
+    width: 92%;
+    &:nth-child(2) {
+      width: 60%;
+      height: 15em;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+// g-develop
+$height-window--develop: 25em;
+$v-offset-window--develop: 2.2em;
+
+.g-develop {
+  position: relative;
+  padding-bottom: $v-offset-window--develop;
+  .g__window {
+    height: $height-window--develop;
+    width: 95%;
+    &:nth-child(1) {
+      position: relative;
+      left: 5%;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      bottom: 0;
+    }
   }
 }
 .g-develop__navButton {
@@ -116,35 +167,16 @@ $window-offset: 2.4em;
     display: none;
   }
 }
-.g-develop__site__navInput {
+.g-develop__navInput {
   background-color: $color-white;
   display: inline-block;
   width: 50%;
   border-radius: $border-radius;
   line-height: 1.3;
 }
-.g-develop__site__content {
-  font-family: sans-serif;
-  padding: 1em;
-  color: $color-gray;
-  h1 {
-    font-weight: bold;
-    color: $color-blue;
-    font-size: $font-size-3;
-  }
-}
-.g-develop__editor__text {
-  color: $color-white;
-  pre {
-    border-radius: 0 0 $border-radius $border-radius;
-  }
-  pre,
-  code {
-    background-color: $color-navy;
-  }
-}
 
-// graphic: GitHub
+
+// g-GitHub
 $avatar-height:         64px;
 $avatar-height-sm:      56px;
 $avatarChild-height:    30px;
@@ -182,6 +214,7 @@ $sync-height:           50px;
   padding: 0.15rem 0.75rem;
 }
 .g-github__logo {
+  color: $color-gray-darker;
   font-size: $font-size-4;
 }
 .g-github__item {
@@ -255,7 +288,7 @@ $sync-height:           50px;
   }
 }
 
-// graphic: metadata
+// g-metadata
 $fieldList__item__key-width: 25%;
 
 .g-metadata {
@@ -330,7 +363,7 @@ $fieldList__item__key-width: 25%;
   display: block;
 }
 
-// graphic: editor
+// g-editor
 .g-editor {
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
   position: relative;
