@@ -8,9 +8,9 @@ features:
 - title: Built on open source.
   is_nested: true
   body:
-  - title: Jekyll compatibility
-    body: We’ve reimagined Siteleaf’s templating system to be 100% compatible with Jekyll. We’re keeping the best parts of the Liquid syntax you already love, and making it work with a larger ecosystem. Use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
-  - title: Portable source code
+  - title: Jekyll-compatible
+    body: We’ve reimagined Siteleaf to be compatible with Jekyll’s templating system. Enjoy the benefits of an open source community, along with the simplicity of the Siteleaf interface you’ve come to love. You can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
+  - title: Portable code
     body: Now with Jekyll, your entire site’s source code and content are portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
     body: Export your existing v1 site content to v2-ready Jekyll format using the existing Siteleaf gem (`siteleaf export`). Also import your content from WordPress, Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
