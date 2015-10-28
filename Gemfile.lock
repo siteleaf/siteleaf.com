@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/siteleaf/siteleaf-gem.git
-  revision: 6bf9b449e93cad1cb1a37d767d90b5a8654c45b1
+  revision: c74d5ab0fffa5124ea4dc69c6575824f6a0d011e
   branch: 2.0.0.pre
   specs:
-    siteleaf (2.0.0.pre.beta7)
+    siteleaf (2.0.0.pre.beta8)
       httmultiparty (>= 0.3.13)
       httparty (>= 0.13.3)
       psych (= 2.0.8)

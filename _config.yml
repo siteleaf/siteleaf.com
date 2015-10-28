@@ -1,6 +1,4 @@
 ---
-permalinks: pretty
-twitter_username: siteleaf
 title: Siteleaf v2
 url: http://v2.siteleaf.net
 timezone: UTC
@@ -14,3 +12,5 @@ defaults:
     type: posts
   values:
     permalink: "/posts/:title/"
+permalinks: pretty
+twitter_username: siteleaf
