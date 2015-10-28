@@ -25,7 +25,7 @@ features:
       existing Siteleaf gem (`siteleaf export`). Also import your content from WordPress,
       Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
   graphic: g-jekyll
-- title: Improved workflow.
+- title: A better workflow.
   is_nested: true
   body:
   - title: Offline development
