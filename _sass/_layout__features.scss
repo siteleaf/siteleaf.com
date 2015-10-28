@@ -268,6 +268,7 @@ $fieldList__item__key-width: 25%;
   border-radius: $border-radius;
   font-size: $font-size-n1;
   color: $color-gray-dark;
+  background-color: $color-white;
 }
 .g-metadata__move {
   color: $color-gray-light;
@@ -377,7 +378,7 @@ $fieldList__item__key-width: 25%;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba($color-blue, 0.8);
+    background-color: rgba($color-gray-lighter, 0.8);
   }
 }
 .g-editor__hover {

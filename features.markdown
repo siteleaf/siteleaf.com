@@ -5,7 +5,7 @@ button:
   title: Sign up for v2 beta
   url: https://siteleaf.typeform.com/to/EoFRli
 features:
-- title: Open source superpowers.
+- title: Built on open source.
   is_nested: true
   body:
   - title: Jekyll compatibility
@@ -14,6 +14,7 @@ features:
     body: Now with Jekyll, your entire site’s source code and content are portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
     body: Export your existing v1 site content to v2-ready Jekyll format using the existing Siteleaf gem (<code>siteleaf export</code>). Also import your content from WordPress, Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
+  graphic: g-openSource
 - title: More developer-friendly.
   is_nested: true
   body:
@@ -80,7 +81,9 @@ title: Features
     <div class="wrap wrap--narrow">
       <h1 class="section__title">{{ feature.title }}</h1>
       {% if feature.graphic %}
-        {% if feature.graphic == "g-develop" %}
+        {% if feature.graphic == "g-openSource" %}
+          {% include_relative _graphics/g-openSource.html %}
+        {% elsif feature.graphic == "g-develop" %}
           {% include_relative _graphics/g-develop.html %}
         {% elsif feature.graphic == "g-metadata" %}
           {% include_relative _graphics/g-metadata.html %}

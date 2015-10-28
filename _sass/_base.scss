@@ -164,7 +164,6 @@ hr {
   padding: 0.5em 2em;
   display: inline-block;
   font-weight: $font-weight-semibold;
-  font-size: $font-size-1;
   @include transition('#{$duration} background-color');
   &:hover {
     color: $color-white;
