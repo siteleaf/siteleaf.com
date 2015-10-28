@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  color: $color-gray-darker;
+  color: $color-gray-dark;
   font-family: $font-family-sans-serif;
   font-size: $font-size-0;
   line-height: $line-height-base;
@@ -25,6 +25,15 @@ a {
 
 // Typography
 // ----------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %text--headings;
+}
 
 h1 {
   font-size: $font-size-6;

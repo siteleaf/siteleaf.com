@@ -13,7 +13,7 @@ features:
   - title: Portable source code
     body: Now with Jekyll, your entire site’s source code and content are portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
-    body: Export your existing v1 site content to v2-ready Jekyll format using the existing Siteleaf gem (<code>siteleaf export</code>). Also import your content from WordPress, Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
+    body: Export your existing v1 site content to v2-ready Jekyll format using the existing Siteleaf gem (`siteleaf export`). Also import your content from WordPress, Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
   graphic: g-openSource
 - title: More developer-friendly.
   is_nested: true
@@ -32,7 +32,7 @@ features:
   - title: Advanced metadata
     body: Metadata now supports nested lists and objects, plus a shiny new interface that supports drag and drop ordering. It’s the metadata editor of your dreams. Lots more coming soon, including magic fields for images, dates, and more.
   - title: Custom permalinks
-    body: Customize the way your site is generated. Choose date-based permalinks (<code>/2015/10/20/hello-world</code>), pretty permalinks (<code>/posts/hello-world</code>), or whatever suits your needs.
+    body: Customize the way your site is generated. Choose date-based permalinks (`/2015/10/20/hello-world`), pretty permalinks (`/posts/hello-world`), or whatever suits your needs.
   - title: More than just pages and posts
     body: Now in addition to pages and posts, you can create custom sets of content (called Collections), each with their own entries (called Documents). Choose to output your documents just like posts, or simply use them as super-metadata within your theme.
   graphic: g-metadata
@@ -52,11 +52,9 @@ features:
   - title: A smart text editor
     body: Whether you prefer writing in Markdown, HTML, or plaintext, we’ve got you covered. You can even drag and drop a file into the text editor.
   - title: Collaboration
-    body: Invite your client or team and let them tinker all they want, without touching a line of code. Siteleaf supports different user roles, like Admin, Publisher, or Writer.
-  - title: Publish anywhere
-    body: We believe that your data belongs to you, with the freedom publish to any web host you want, including FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files.
-  - title: Fast and secure
-    body: Siteleaf generates static files when you publish, which means your site loads faster, is more secure, and doesn’t rely on a database or complicated server setup.
+    body: Invite your client or team and let them tinker all they want, without touching a single line of code. Siteleaf supports different user roles, like Admin, Publisher, or Writer.
+  - title: Publish fast, secure sites anywhere
+    body: When you publish, Siteleaf generates static files, which means your site loads faster, is more secure, and doesn’t rely on a database or complicated server setup. You're free to publish to any web host you want, including FTP, SFTP, Amazon S3, GitHub Pages, and Rackspace Cloud Files.
   - title: An API for your content
     body: Siteleaf provides a JSON API for interacting with all of your Jekyll content. Integrate it into other sites, apps, or anything you want. It’s your data.
   link:
@@ -97,10 +95,10 @@ title: Features
         {% if feature.is_nested %}
           {% for subfeature in feature.body %}
             <h4 class="section__subtitle">{{ subfeature.title }}</h4>
-            <p class="section__body">{{ subfeature.body }}</p>
+            {{ subfeature.body | markdownify }}
           {% endfor %}
         {% else %}
-          <p class="section__body">{{ feature.body }}</p>
+          {{ feature.body | markdownify }}
         {% endif %}
         {% if feature.link %}
           <a class="section__link" href="{{ feature.link.url }}">{{ feature.link.title }}</a>

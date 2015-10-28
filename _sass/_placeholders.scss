@@ -40,6 +40,10 @@
   font-weight: $font-weight-light;
 }
 
+%text--headings {
+  color: $color-gray-darker;
+}
+
 // Link
 
 %link--default {
@@ -71,13 +75,7 @@
 }
 
 %background--smoke {
-  color: blend-multiply($color-gray-darker, $color-gray-lightest);
   background-color: $color-gray-lightest;
-}
-
-%background--gray {
-  color: blend-multiply($color-gray-darker, $color-gray-lighter);
-  background-color: $color-gray-lighter;
 }
 
 %background--dark,
