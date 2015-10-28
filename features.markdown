@@ -9,13 +9,13 @@ features:
   is_nested: true
   body:
   - title: Jekyll-compatible
-    body: We’ve reimagined Siteleaf to be compatible with Jekyll’s templating system. Enjoy the benefits of an open source community, along with the simplicity of the Siteleaf interface you’ve come to love. You can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
+    body: We’ve reimagined Siteleaf to be compatible with Jekyll’s templating system. Enjoy the benefits of a large open source community, along with the simplicity of the Siteleaf interface you’ve come to love. You can use any off-the-shelf Jekyll theme, or even take your Siteleaf theme with you.
   - title: Portable code
     body: Now with Jekyll, your entire site’s source code and content are portable, not just the compiled HTML. Move sites into and out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
     body: Export your existing v1 site content to v2-ready Jekyll format using the existing Siteleaf gem (`siteleaf export`). Also import your content from WordPress, Tumblr, Ghost, Drupal, and more using the community-supported Jekyll Import.
   graphic: g-jekyll
-- title: More developer-friendly.
+- title: Improved workflow.
   is_nested: true
   body:
   - title: Offline development
@@ -36,7 +36,7 @@ features:
   - title: More than just pages and posts
     body: Now in addition to pages and posts, you can create custom sets of content (called Collections), each with their own entries (called Documents). Choose to output your documents just like posts, or simply use them as super-metadata within your theme.
   graphic: g-metadata
-- title: GitHub integration.
+- title: Synced with GitHub.
   is_nested: true
   body:
   - title: Theme syncing
