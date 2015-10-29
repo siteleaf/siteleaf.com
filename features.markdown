@@ -25,21 +25,20 @@ features:
       existing Siteleaf gem (`siteleaf export`). You can also import from WordPress,
       Tumblr, Ghost, Drupal, and more using the community-supported Jekyll importers.
   graphic: g-jekyll
-- title: An optimized workflow.
+- title: GitHub integration.
   is_nested: true
   body:
-  - title: Offline development
-    body: Sync your Siteleaf content to local Markdown files and develop your site
-      completely offline. Work faster, even without an internet connection.
-  - title: Built-in preprocessors
-    body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript,
-      thanks to the power of Jekyll. The future is now.
-  - title: Free publishing
-    body: While we’ve always had free accounts for developers, publishing was reserved
-      for paid accounts only. We’re now making it possible to publish to GitHub Pages,
-      totally free for developers and open source projects.
+  - title: Theme syncing
+    body: No more manually pushing and pulling your theme changes using the command
+      line. Siteleaf will automatically sync theme changes directly with GitHub, with
+      no need to install a Siteleaf gem.
+  - title: Time machine for your content
+    body: No more accidental overwrites or deletes. Every edit you (or other authors)
+      make in Siteleaf is synced to GitHub, including content and theme changes. See
+      a log of edits, who made them, and revert back to any state with the Git tools
+      you already use.
   background: smoke
-  graphic: g-develop
+  graphic: g-github
 - title: Better suited for your needs.
   is_nested: true
   body:
@@ -56,20 +55,21 @@ features:
       to output your documents just like posts, or simply use them as super-metadata
       within your theme.
   graphic: g-metadata
-- title: GitHub integration.
+- title: An optimized workflow.
   is_nested: true
   body:
-  - title: Theme syncing
-    body: No more manually pushing and pulling your theme changes using the command
-      line. Siteleaf will automatically sync theme changes directly with GitHub, with
-      no need to install a Siteleaf gem.
-  - title: Time machine for your content
-    body: No more accidental overwrites or deletes. Every edit you (or other authors)
-      make in Siteleaf is synced to GitHub, including content and theme changes. See
-      a log of edits, who made them, and revert back to any state with the Git tools
-      you already use.
+  - title: Offline development
+    body: Sync your Siteleaf content to local Markdown files and develop your site
+      completely offline. Work faster, even without an internet connection.
+  - title: Built-in preprocessors
+    body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript,
+      thanks to the power of Jekyll. The future is now.
+  - title: Free publishing
+    body: While we’ve always had free accounts for developers, publishing was reserved
+      for paid accounts only. We’re now making it possible to publish to GitHub Pages,
+      totally free for developers and open source projects.
   background: smoke
-  graphic: g-github
+  graphic: g-develop
 - title: Plus, all that you already love about Siteleaf.
   is_nested: true
   body:

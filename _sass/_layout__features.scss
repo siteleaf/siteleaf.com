@@ -193,12 +193,9 @@ $v-offset-window--develop: 2.5em;
   .g__window {
     height: $height-window--develop;
     width: 95%;
-    &:nth-child(1) {
-      position: relative;
-      left: 5%;
-    }
     &:nth-child(2) {
       position: absolute;
+      left: 5%;
       bottom: 0;
     }
   }
