@@ -7,7 +7,7 @@ button:
   title: Sign up for v2 beta
   url: https://siteleaf.typeform.com/to/EoFRli
 features:
-- title: Built on open source.
+- title: Superpowered by open source.
   is_nested: true
   body:
   - title: Jekyll-compatible
