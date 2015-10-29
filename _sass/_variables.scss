@@ -6,10 +6,10 @@ $color-gray-dark:        #60676B;
 $color-gray:             #969C9E;
 $color-gray-light:       #BCC0C2;
 $color-gray-lighter:     #D5D9DB;
-$color-gray-lightest:    #EDF3F5;
+$color-gray-lightest:    #F2F6F7;
 $color-gray-lighterest:  lighten($color-gray-lightest, 4%);
 $color-blue:             #0091E5;
-$color-blue-dark:        darken($color-blue, 7%);
+$color-blue-dark:        darken($color-blue, 6%);
 $color-green:            #8DCF3F;
 $color-navy:             #27415A;
 $color-magenta:          #D6457F;
@@ -19,12 +19,11 @@ $color-yellow:           #F1C40F;
 $color-white:            #FFF;
 $color-mint:             #24C7A6;
 
-$color-black-alpha-lightest: rgba(#000, 0.075);
-$color-black-alpha-lighter:  rgba(#000, 0.1);
-$color-black-alpha-light:    rgba(#000, 0.1);
-$color-black-alpha:          rgba(#000, 0.2);
-$color-black-alpha-dark:     rgba(#000, 0.6);
-$color-white-alpha:          rgba(#fff, 0.6);
+$color-black-alpha-lighter: rgba(#000, 0.075);
+$color-black-alpha-light:   rgba(#000, 0.1);
+$color-black-alpha:         rgba(#000, 0.2);
+$color-black-alpha-dark:    rgba(#000, 0.6);
+$color-white-alpha:         rgba(#fff, 0.6);
 
 // Typography
 // ----------

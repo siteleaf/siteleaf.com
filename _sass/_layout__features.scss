@@ -56,7 +56,7 @@
   border: 1px solid $color-gray-lighter;
   border-radius: $border-radius;
   background-color: transparent;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   overflow: hidden;
   position: relative;
 }
@@ -234,7 +234,7 @@ $sync-height:           50px;
 .g-github {
   font-family: sans-serif;
   font-size: $font-size-n1;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   position: relative;
   width: calc(100% - #{$sync-height / 3});
 }
@@ -250,7 +250,7 @@ $sync-height:           50px;
   text-align: center;
   font-size: $font-size-4 / 1em * $font-size-html;
   line-height: 1.5;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
 }
 .g-github__topBar {
   background-color: lighten($color-gray-lighter, 10%);
@@ -340,7 +340,7 @@ $x-padding-input: 0.5em;
 
 .g-metadata {
   padding: 1.2em;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   border: 1px solid $color-gray-lighter;
   border-radius: $border-radius;
   font-size: $font-size-n1;
@@ -420,7 +420,7 @@ $x-padding-input: 0.5em;
 
 // g-editor
 .g-editor {
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lightest;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   position: relative;
 }
 .g-editor__bar {
