@@ -367,7 +367,6 @@ $x-padding-input: 0.5em;
 .g-metadata__fieldValue {
   @extend %pre;
   @extend %input;
-  font-family: $font-family-monospace;
   padding: $y-padding-input $x-padding-input;
   margin-left: $indent;
 }
@@ -403,7 +402,6 @@ $x-padding-input: 0.5em;
 .g-metadata__fieldList__item__value {
   @extend %pre;
   @extend %input;
-  font-family: $font-family-monospace;
   width: 75%;
 }
 .g-metadata__input {
