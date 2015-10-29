@@ -10,7 +10,7 @@ features:
 - title: Open source superpowers.
   is_nested: true
   body:
-  - title: Built on Jekyll
+  - title: Compatible in a larger ecosystem
     body: We’ve reimagined Siteleaf to be built on Jekyll. Enjoy the benefits of a
       large open source community, along with the accessibility of the Siteleaf interface
       you’ve come to love. Use any off-the-shelf Jekyll theme, or take your Siteleaf
