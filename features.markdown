@@ -30,8 +30,8 @@ features:
   body:
   - title: Offline development
     body: Sync your Siteleaf content to local Markdown files and develop your site
-      completely offline. Develop faster, even without an internet connection.
-  - title: Preprocessors
+      completely offline. Work faster, even without an internet connection.
+  - title: Built-in preprocessors
     body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript,
       thanks to the power of Jekyll. The future is now.
   - title: Free publishing
