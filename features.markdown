@@ -10,7 +10,7 @@ features:
 - title: Open source superpowers.
   is_nested: true
   body:
-  - title: Compatible in a larger ecosystem
+  - title: Compatible with a larger ecosystem
     body: We’ve reimagined Siteleaf to be built on Jekyll. Enjoy the benefits of a
       large open source community, along with the accessibility of the Siteleaf interface
       you’ve come to love. Use any off-the-shelf Jekyll theme, or take your Siteleaf
@@ -74,9 +74,7 @@ features:
   is_nested: true
   body:
   - title: A smart Markdown editor
-    body: Siteleaf’s Markdown editor lets you focus on writing, with simple controls
-      to help out only if you need it. Drag and drop an image and we’ll insert its
-      code. Even drop an entire text file. We’ll take care of the details.
+    body: Siteleaf’s Markdown editor lets you focus on writing, with simple controls to help out only if you need it. Drag and drop an image and we’ll insert its code. Even drop an entire text file. We’ll take care of the details.
   - title: Collaboration
     body: Invite your client or team and let them tinker all they want, without touching
       a single line of code. Siteleaf supports different user roles—Admin, Publisher,
