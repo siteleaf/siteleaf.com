@@ -60,7 +60,8 @@
   overflow: hidden;
   position: relative;
 }
-.g__window--site {
+.g__window--site,
+.g__window--finder {
   background-color: $color-white;
 }
 .g__window--editor {
@@ -83,6 +84,12 @@
 .g__window__topBar--active {
   color: $color-gray-dark;
   @include linear-gradient("#{lighten($color-gray-lighter, 10%)}, #{$color-gray-lighter}");
+}
+.g__window__topBar__icon {
+  line-height: 0;
+  position: relative;
+  margin-right: 0.3em;
+  top: 0.1em;
 }
 .g__windowButtons {
   position: absolute;
@@ -116,6 +123,45 @@
     background-color: transparent;
     color: $color-white;
   }
+}
+.g__finderPane {
+  font-family: sans-serif;
+  font-size: $font-size-n2;
+  width: 50%;
+  max-width: 220px;
+  height: 100%;
+  border-right: 1px solid $color-gray-lighter;
+  float: left;
+  position: relative;
+}
+.g__finderItem {
+  padding: 0.05em 0 0.05em 1.75em;
+  @include ellipsis;
+  position: relative;
+  width: 100%;
+  &:first-child {
+    margin-top: 0.1em;
+  }
+}
+.g__finderItem--highlighted {
+  background-color: $color-blue-dark;
+  color: $color-white;
+}
+.g__finderItem__icon {
+  position: absolute;
+  color: $color-gray;
+  .g__finderItem--highlighted & {
+    color: $color-white;
+  }
+}
+.g__finderItem__icon--folder {
+  color: $color-blue;
+}
+.g__finderItem__icon--left {
+  left: 0.4em;
+}
+.g__finderItem__icon--right {
+  right: 0.2em;
 }
 
 // g-jekyll
@@ -290,8 +336,8 @@ $sync-height:           50px;
 
 // g-metadata
 $indent: 2em;
-$y-padding-input: 5px;
-$x-padding-input: 10px;
+$y-padding-input: 0.25em;
+$x-padding-input: 0.5em;
 
 .g-metadata {
   padding: 1.2em;

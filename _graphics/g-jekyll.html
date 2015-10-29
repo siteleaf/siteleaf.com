@@ -1,30 +1,34 @@
 <div class="section__graphic g-jekyll">
-  <div class="g__window g__window--full g__window--editor">
+  <div class="g__window g__window--full g__window--finder">
     <div class="g__window__topBar">
       <span class="g__windowButtons">
         <span class="g__windowButton"></span>
         <span class="g__windowButton"></span>
         <span class="g__windowButton"></span>
       </span>
-      index.html
+      <span class="g__window__topBar__icon ss-icon">folder</span>/_site/posts/
     </div>
-    <div class="g__window__code">
-      {% highlight html %}---
-layout: default
----
-<div class="home">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {{ "{% for post in site.posts " }} %}
-      <li>
-        <span class="post-meta">{{ '{{ post.date | date: "%b %-d, %Y" ' }}}}</span>
-        <h2>
-          <a class="post-link" href="{{ "{{ post.url | prepend: site.baseurl " }}}}">{{ "{{ post.title " }}}}</a>
-        </h2>
-      </li>
-    {{ "{% endfor " }}%}
-  </ul>
-</div>{% endhighlight %}
+    <div class="g__finderPane">
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>_config.yaml</div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>_includes<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>_layouts<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>_posts<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>_sass<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem g__finderItem--highlighted"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>_site<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>about.md</div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>css<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>feed.xml</div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>index.html</div>
+    </div>
+    <div class="g__finderPane">
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>about<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>css<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>feed.xml</div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>index.html</div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left g__finderItem__icon--folder ss-icon">folder</span>posts<span class="g__finderItem__icon g__finderItem__icon--right ss-icon">navigateright</span></div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>a-new-siteleaf.md</div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>hello-world.md</div>
+      <div class="g__finderItem"><span class="g__finderItem__icon g__finderItem__icon--left ss-icon">file</span>music-for-coding.md</div>
     </div>
   </div>
     <div class="g__window g__window--terminal">
@@ -38,7 +42,8 @@ layout: default
       </div>
       <div class="g__window__code">
         {% highlight bash %}$ jekyll build
-#=> The current folder will be generated into ./_site{% endhighlight %}
+#=> Generated into ./_site
+$ {% endhighlight %}
       </div>
     </div>
 </div>
