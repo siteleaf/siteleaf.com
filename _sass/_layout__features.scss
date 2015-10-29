@@ -127,25 +127,24 @@
 .g__finderPane {
   font-family: sans-serif;
   font-size: $font-size-n2;
-  width: 50%;
-  max-width: 220px;
+  width: 14em;
   height: 100%;
   border-right: 1px solid $color-gray-lighter;
   float: left;
   position: relative;
 }
 .g__finderItem {
-  padding: 0.05em 0 0.05em 1.75em;
+  padding: 0.02em 0 0.02em 1.75em;
   @include ellipsis;
   position: relative;
   width: 100%;
-  &:first-child {
-    margin-top: 0.1em;
-  }
 }
 .g__finderItem--highlighted {
   background-color: $color-blue-dark;
   color: $color-white;
+}
+.g__finderItem--highlighted--parent {
+  background-color: $color-gray-lighter;
 }
 .g__finderItem__icon {
   position: absolute;
