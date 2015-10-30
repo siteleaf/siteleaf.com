@@ -2,6 +2,5 @@ Siteleaf template for `v2.siteleaf.com`, built on Siteleaf v2, which will eventu
 
 ## To dos
 
-- edit copywriting
 - make simple animations for graphics as you scroll down
 - make graphics interactive
