@@ -179,7 +179,7 @@ hr {
     color: $color-white;
   }
   &:active {
-    @extend %input;
+    @extend %inverted;
     border-bottom-color: transparent;
     @include transform(translateY(2px));
   }

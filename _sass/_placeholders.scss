@@ -85,7 +85,6 @@
   }
 }
 
-
 %background--blue {
   background-color: $color-blue;
   @extend %background--dark;
@@ -104,9 +103,13 @@
 // Inputs
 // ------
 
-%input {
+%inverted {
   box-shadow: inset 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   border-radius: $border-radius;
+}
+
+%input {
+  @extend %inverted;
   background-color: $color-gray-lightest;
   outline: 0;
   &:focus {
