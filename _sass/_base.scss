@@ -42,9 +42,6 @@ h1 {
   line-height: $line-height-tighter;
   margin-top: 0;
   margin-bottom: ($v * 3) - computed-line-height($font-size-6, $line-height-tighter);
-  @include max-width($bp-xs) {
-    font-size: $font-size-5;
-  }
 }
 
 h2 {
