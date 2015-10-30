@@ -2,7 +2,7 @@
 title: Siteleaf v2
 date: '2015-10-21 10:09:00 -0400'
 permalink: "/"
-headline: A new Siteleaf, test.
+headline: A new Siteleaf.
 button:
   title: Sign up for v2 beta
   url: https://siteleaf.typeform.com/to/EoFRli
