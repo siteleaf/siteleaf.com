@@ -55,10 +55,9 @@ $fadeDuration: 250ms;
 
 .g__window {
   font-size: $font-size-n1;
-  border: 1px solid $color-gray-lighter;
   border-radius: $border-radius;
   background-color: transparent;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter, inset 0 0 1px $color-black-alpha-dark;
   overflow: hidden;
   position: relative;
 }
@@ -67,17 +66,18 @@ $fadeDuration: 250ms;
   background-color: $color-white;
 }
 .g__window--editor {
-  @include linear-gradient("top, rgba(0, 0, 0, 0) #{$border-radius + 1px},  #{$color-navy} #{$border-radius + 1px}"); // offset background border radiuses at top aren't weird
+  background-color: $color-navy;
 }
 .g__window--terminal {
-  @include linear-gradient("top, rgba(0, 0, 0, 0) #{$border-radius + 1px},  #{$color-gray-darker} #{$border-radius + 1px}"); // offset background border radiuses at top aren't weird
+  background-color: $color-gray-darker;
 }
 .g__window__topBar {
   font-family: sans-serif;
   text-align: center;
   background-color: lighten($color-gray-lighter, 10%);
+  border: 1px solid $color-black-alpha-light;
   color: $color-gray;
-  padding: 0.1em;
+  padding: 2px;
   font-size: $font-size-n2;
   & > * {
     display: inline-block;
@@ -202,7 +202,7 @@ $v-offset-window--jekyll: 2em;
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation('genDir #{$fadeDuration} 300ms forwards');
+    @include animation("genDir #{$fadeDuration} 400ms forwards");
   }
 }
 
@@ -211,7 +211,7 @@ $v-offset-window--jekyll: 2em;
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation('fadeIn #{$fadeDuration} 350ms forwards');
+    @include animation("fadeIn #{$fadeDuration} 450ms forwards");
   }
 }
 
@@ -220,7 +220,7 @@ $v-offset-window--jekyll: 2em;
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation('fadeIn #{$fadeDuration} 400ms forwards');
+    @include animation("fadeIn #{$fadeDuration} 500ms forwards");
   }
 }
 
@@ -336,7 +336,7 @@ $sync-height:           50px;
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation('fadeIn #{$fadeDuration} 500ms forwards');
+    @include animation("fadeIn #{$fadeDuration} 500ms forwards");
   }
 }
 
@@ -423,6 +423,27 @@ $x-padding-input: 0.5em;
   }
 }
 
+// @include keyframes(genDir) {
+//   0% {
+//     opacity: 0;
+//     height: auto;
+//   }
+//   100% {
+//     opacity: 1;
+//     height: auto;
+//   }
+// }
+
+// .a-genDir {
+//   .is-js & {
+//     height: 0;
+//     opacity: 0;
+//   }
+//   .is-js .is-visible & {
+//     @include animation("genDir #{$fadeDuration} 300ms forwards");
+//   }
+// }
+
 // g-develop
 $height-window--develop: 25em;
 $v-offset-window--develop: 2.5em;
@@ -494,6 +515,8 @@ $v-offset-window--develop: 2.5em;
   padding: 1em;
   border-radius: 0 0 $border-radius $border-radius;
   position: relative;
+  max-height: 18em;
+  overflow: hidden;
   &:before {
     content: "";
     display: block;
@@ -507,8 +530,8 @@ $v-offset-window--develop: 2.5em;
 }
 .g-editor__hover {
   position: absolute;
-  left: 45%;
-  bottom: 0.5em;
+  left: 40%;
+  bottom: 1.5em;
   color: $color-white;
   text-align: center;
 }
@@ -549,4 +572,52 @@ $v-offset-window--develop: 2.5em;
   position: relative;
   top: 0.75em;
   left: -1.05em;
+}
+
+$hover-translate: "1em, 4em";
+
+@include keyframes(editorTextArea) {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba($color-gray-lighter, 0.8);
+  }
+}
+
+@include keyframes(editorHover) {
+  0% {
+    @include translate($hover-translate);
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  100% {
+    @include translate("0, 0");
+    opacity: 1;
+  }
+}
+
+.a-editorTextarea {
+  .is-js & {
+    &:before {
+      background-color: transparent;
+    }
+  }
+  .is-js .is-visible & {
+    &:before {
+      @include animation("editorTextArea 50ms 500ms forwards");
+    }
+  }
+}
+
+.a-editorHover {
+  .is-js & {
+    @include translate($hover-translate);
+    opacity: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("editorHover #{$fadeDuration} #{$easeInSine} 500ms forwards");
+  }
 }
