@@ -129,14 +129,11 @@ $fadeDuration: 250ms;
 .g__finderPane {
   font-family: sans-serif;
   font-size: $font-size-n2;
-  width: 50%;
-  max-width: 14em;
+  width: 14em;
   height: 100%;
   border-right: 1px solid $color-gray-lighter;
   float: left;
   position: relative;
-  @include max-width($bp-sm) {
-  }
 }
 .g__finderItem {
   padding: 0.02em 0 0.02em 1.75em;
@@ -148,7 +145,7 @@ $fadeDuration: 250ms;
   background-color: $color-blue-dark;
   color: $color-white;
 }
-.g__finderItem--highlighted--parent {
+.g__finderItem--highlightedParent {
   background-color: $color-gray-lighter;
 }
 .g__finderItem__icon {
@@ -188,27 +185,24 @@ $v-offset-window--jekyll: 2em;
   }
 }
 
+@include keyframes(genDir) {
+  0% {
+    opacity: 0;
+    height: auto;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
+
 .a-genDir {
   .is-js & {
     height: 0;
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation('genDir #{$fadeDuration} 250ms forwards');
-  }
-}
-
-@include keyframes(genDir) {
-  0% {
-    opacity: 0;
-    color: $color-white;
-    background-color: $color-blue-dark;
-    height: auto;
-  }
-  100% {
-    opacity: 1;
-    background-color: $color-blue-dark;
-    height: auto;
+    @include animation('genDir #{$fadeDuration} 300ms forwards');
   }
 }
 
@@ -217,7 +211,16 @@ $v-offset-window--jekyll: 2em;
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation('fadeIn #{$fadeDuration} 300ms forwards');
+    @include animation('fadeIn #{$fadeDuration} 350ms forwards');
+  }
+}
+
+.a-finderPane--third {
+  .is-js & {
+    opacity: 0;
+  }
+  .is-js .is-visible & {
+    @include animation('fadeIn #{$fadeDuration} 400ms forwards');
   }
 }
 
@@ -236,8 +239,10 @@ $sync-height:           50px;
   font-size: $font-size-n1;
   position: relative;
   width: calc(100% - #{$sync-height / 3});
-}
-.g-github__inner {
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
+  background-color: $color-white;
+  border: 1px solid $color-gray-lighter;
+  border-radius: $border-radius;
 }
 .g-github__sync {
   position: absolute;
@@ -255,29 +260,19 @@ $sync-height:           50px;
 }
 .g-github__topBar {
   background-color: lighten($color-gray-lighter, 10%);
-  border: 1px solid $color-gray-lighter;
-  border-radius: $border-radius $border-radius 0 0;
+  border-bottom: 1px solid $color-gray-lighter;
   padding: 0.15rem 0.75rem;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
 }
 .g-github__logo {
   color: $color-gray-darker;
   font-size: $font-size-4;
 }
 .g-github__item {
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
-  background-color: $color-white;
   padding: 1em;
   position: relative;
   height: calc(#{$avatar-height} + #{$github__item-padding});
-  border-left: 1px solid $color-gray-lighter;
-  border-right: 1px solid $color-gray-lighter;
   &:not(:last-of-type) {
     border-bottom: 1px solid $color-gray-lightest;
-  }
-  &:last-of-type {
-    border-bottom: 1px solid $color-gray-lighter;
-    border-radius: 0 0 $border-radius $border-radius;
   }
   @include max-width($bp-sm) {
     height: calc(#{$avatar-height-sm} + #{$github__item-padding});
@@ -336,20 +331,12 @@ $sync-height:           50px;
   }
 }
 
-.a-githubItem {
-  .is-js & {
-    opacity: 0;
-  }
-  .is-js .is-visible & {
-    @include animation('fadeIn #{$fadeDuration} 150ms forwards');
-  }
-}
 .a-githubCheck {
   .is-js & {
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation('fadeIn #{$fadeDuration} 300ms forwards');
+    @include animation('fadeIn #{$fadeDuration} 500ms forwards');
   }
 }
 
