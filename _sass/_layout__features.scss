@@ -530,8 +530,10 @@ $v-offset-window--develop: 2.5em;
 }
 .g-editor__hover {
   position: absolute;
-  left: 40%;
-  bottom: 1.5em;
+  bottom: 1em;
+  left: 50%;
+  width: 8em;
+  margin-left: -4em;
   color: $color-white;
   text-align: center;
 }
@@ -574,7 +576,7 @@ $v-offset-window--develop: 2.5em;
   left: -1.05em;
 }
 
-$hover-translate: "1em, 4em";
+$hover-translate: "0.25em, 1em";
 
 @include keyframes(editorTextArea) {
   0% {
@@ -590,9 +592,6 @@ $hover-translate: "1em, 4em";
     @include translate($hover-translate);
     opacity: 0;
   }
-  67% {
-    opacity: 1;
-  }
   100% {
     @include translate("0, 0");
     opacity: 1;
@@ -607,7 +606,7 @@ $hover-translate: "1em, 4em";
   }
   .is-js .is-visible & {
     &:before {
-      @include animation("editorTextArea 50ms 500ms forwards");
+      @include animation("editorTextArea #{$fadeDuration / 3} 500ms forwards");
     }
   }
 }
@@ -618,6 +617,6 @@ $hover-translate: "1em, 4em";
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation("editorHover #{$fadeDuration} #{$easeInSine} 500ms forwards");
+    @include animation("editorHover #{$fadeDuration / 3} ease-in 500ms forwards");
   }
 }
