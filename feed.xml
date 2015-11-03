@@ -2,15 +2,15 @@
 <rss version="2.0">
   <channel>
     <title>Siteleaf</title>
-    <link>http://sl.siteleaf.net</link>
-    <pubDate>Tue, 03 Nov 2015 12:32:59 -0500</pubDate>
+    <link>http://www.siteleaf.com</link>
+    <pubDate>Tue, 03 Nov 2015 13:24:06 -0500</pubDate>
     
     <item>
       <title>Publishing via the API</title>
-      <link>http://sl.siteleaf.net/blog/publishing-via-the-api</link>
+      <link>http://www.siteleaf.com/blog/publishing-via-the-api</link>
       <pubDate>Wed, 24 Jun 2015 11:10:00 -0400</pubDate>
       <author>Larry Fox</author>
-      <guid>http://sl.siteleaf.net/blog/publishing-via-the-api</guid>
+      <guid>http://www.siteleaf.com/blog/publishing-via-the-api</guid>
       <description>&lt;p&gt;For the last week publishing in the Siteleaf interface has been powered by our API. This has been a requested feature by some of our users and ourselves. Its behavior is bit different than some of our other API endpoints, so let&amp;rsquo;s go over it.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Just want to use the Siteleaf gem? &lt;a href=&quot;#jump-gem&quot;&gt;Skip to the bottom!&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -78,10 +78,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Advanced Liquid: Group By</title>
-      <link>http://sl.siteleaf.net/blog/advanced-liquid-group-by</link>
+      <link>http://www.siteleaf.com/blog/advanced-liquid-group-by</link>
       <pubDate>Thu, 09 Apr 2015 16:30:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/advanced-liquid-group-by</guid>
+      <guid>http://www.siteleaf.com/blog/advanced-liquid-group-by</guid>
       <description>&lt;p&gt;Following &lt;a href=&quot;/blog/advanced-liquid-sort/&quot;&gt;&lt;code&gt;sort&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;/blog/advanced-liquid-where/&quot;&gt;&lt;code&gt;where&lt;/code&gt;&lt;/a&gt;, this &lt;a href=&quot;/blog/tags/liquid&quot;&gt;Advanced Liquid&lt;/a&gt; post introduces another handy new filter to Siteleaf: &lt;code&gt;group_by&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;As the name suggests, this filter allows you to group your content by a certain property. &lt;/p&gt;
@@ -191,10 +191,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Advanced Liquid: Where</title>
-      <link>http://sl.siteleaf.net/blog/advanced-liquid-where</link>
+      <link>http://www.siteleaf.com/blog/advanced-liquid-where</link>
       <pubDate>Wed, 08 Apr 2015 15:25:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/advanced-liquid-where</guid>
+      <guid>http://www.siteleaf.com/blog/advanced-liquid-where</guid>
       <description>&lt;p&gt;Now that you are &lt;a href=&quot;/blog/advanced-liquid-sort/&quot;&gt;sorting&lt;/a&gt; like a pro, we’ll move on to another new and exciting Liquid filter: &lt;code&gt;where&lt;/code&gt;. &lt;/p&gt;
 
 &lt;p&gt;Where allows us to find content based on a parameter. If you are coming from Jekyll, you’ll be happy to know it follows the same syntax.&lt;/p&gt;
@@ -280,10 +280,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Advanced Liquid: Sort</title>
-      <link>http://sl.siteleaf.net/blog/advanced-liquid-sort</link>
+      <link>http://www.siteleaf.com/blog/advanced-liquid-sort</link>
       <pubDate>Tue, 07 Apr 2015 10:00:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/advanced-liquid-sort</guid>
+      <guid>http://www.siteleaf.com/blog/advanced-liquid-sort</guid>
       <description>&lt;p&gt;&lt;a href=&quot;http://www.siteleaf.com/help/themes/getting-started/&quot;&gt;Liquid&lt;/a&gt; is the flexible templating language that powers themes on Siteleaf. While simple at first glance, there’s a lot of power under the hood for those wanting a greater level of control. In this new blog series, we’ll dive deeper and take a look at some advanced Liquid code and examples.&lt;/p&gt;
 
 &lt;p&gt;First up in this post, we’ll take a look at the &lt;code&gt;sort&lt;/code&gt; &lt;a href=&quot;/help/themes/filters-and-tags&quot;&gt;filter&lt;/a&gt;.&lt;/p&gt;
@@ -363,10 +363,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Using AWS S3 and Route 53</title>
-      <link>http://sl.siteleaf.net/blog/using-aws-s3-and-route-53</link>
+      <link>http://www.siteleaf.com/blog/using-aws-s3-and-route-53</link>
       <pubDate>Wed, 25 Mar 2015 15:55:00 -0400</pubDate>
       <author>Larry Fox</author>
-      <guid>http://sl.siteleaf.net/blog/using-aws-s3-and-route-53</guid>
+      <guid>http://www.siteleaf.com/blog/using-aws-s3-and-route-53</guid>
       <description>&lt;p&gt;After building Siteleaf we took it upon ourselves to each rebuild our site using the service. I had previously used S3 with Jeykll and wanted to continue using it, but getting set up can be a bit of a mystery.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;I’m assuming that you’re using Route 53 for DNS, and want to serve content from the root domain while having www redirect to it.&lt;/em&gt;&lt;/p&gt;
@@ -421,10 +421,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Improvements to page and post management</title>
-      <link>http://sl.siteleaf.net/blog/improvements-to-page-and-post-management</link>
+      <link>http://www.siteleaf.com/blog/improvements-to-page-and-post-management</link>
       <pubDate>Thu, 10 Jul 2014 11:05:00 -0400</pubDate>
       <author>Sawyer Hollenshead</author>
-      <guid>http://sl.siteleaf.net/blog/improvements-to-page-and-post-management</guid>
+      <guid>http://www.siteleaf.com/blog/improvements-to-page-and-post-management</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re a heavy Siteleaf user, you might notice a few tweaks here and there that we recently introduced. &lt;/p&gt;
 
 &lt;h3&gt;Improved page menu&lt;/h3&gt;
@@ -441,10 +441,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Footnotes &amp; Highlights</title>
-      <link>http://sl.siteleaf.net/blog/footnotes-and-highlights</link>
+      <link>http://www.siteleaf.com/blog/footnotes-and-highlights</link>
       <pubDate>Tue, 08 Jul 2014 10:00:00 -0400</pubDate>
       <author>Larry Fox</author>
-      <guid>http://sl.siteleaf.net/blog/footnotes-and-highlights</guid>
+      <guid>http://www.siteleaf.com/blog/footnotes-and-highlights</guid>
       <description>&lt;p&gt;In addition to the &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown basics&lt;/a&gt;, Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a &lt;mark&gt;highlight&lt;/mark&gt; and also a footnote&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
 
 &lt;p&gt;Footnotes are great for citing and referencing sources, or for expanding on ideas. They are created like this:&lt;/p&gt;
@@ -488,10 +488,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Stickers now available</title>
-      <link>http://sl.siteleaf.net/blog/stickers</link>
+      <link>http://www.siteleaf.com/blog/stickers</link>
       <pubDate>Wed, 18 Jun 2014 15:51:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/stickers</guid>
+      <guid>http://www.siteleaf.com/blog/stickers</guid>
       <description>&lt;p&gt;Siteleaf stickers are now available from Sticker Mule!&lt;/p&gt;
 
 &lt;p&gt;Make your laptop happy and &lt;a href=&quot;http://www.stickermule.com/marketplace/855-siteleaf-stickers&quot;&gt;pick one up today&lt;/a&gt;. Available at cost with free shipping in quantities of 1-1000 (in case you have a lot of friends).&lt;/p&gt;
@@ -504,10 +504,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Now publishing to SFTP</title>
-      <link>http://sl.siteleaf.net/blog/publish-to-sftp</link>
+      <link>http://www.siteleaf.com/blog/publish-to-sftp</link>
       <pubDate>Fri, 13 Jun 2014 10:35:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/publish-to-sftp</guid>
+      <guid>http://www.siteleaf.com/blog/publish-to-sftp</guid>
       <description>&lt;p&gt;Siteleaf now supports publishing to SFTP! &lt;/p&gt;
 
 &lt;p&gt;Also known as Secure or &lt;a href=&quot;http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol&quot;&gt;SSH File Transfer Protocol&lt;/a&gt;, SFTP joins our extensive publishing options including FTP, Amazon S3, Rackspace Cloud Files, &lt;a href=&quot;/blog/github-pages&quot;&gt;GitHub Pages&lt;/a&gt; and our free Siteleaf Hosting.&lt;/p&gt;
@@ -522,10 +522,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Quick tip: Assets in meta fields</title>
-      <link>http://sl.siteleaf.net/blog/assets-in-meta-fields</link>
+      <link>http://www.siteleaf.com/blog/assets-in-meta-fields</link>
       <pubDate>Fri, 13 Jun 2014 10:22:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/assets-in-meta-fields</guid>
+      <guid>http://www.siteleaf.com/blog/assets-in-meta-fields</guid>
       <description>&lt;p&gt;&lt;img src=&quot;/assets/pdf.gif&quot; alt=&quot;&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;Siteleaf makes it easy to assign assets in your metadata fields, just drag and drop (as shown above).&lt;/p&gt;
@@ -545,10 +545,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Siteleaf turns one</title>
-      <link>http://sl.siteleaf.net/blog/siteleaf-turns-one</link>
+      <link>http://www.siteleaf.com/blog/siteleaf-turns-one</link>
       <pubDate>Fri, 06 Jun 2014 13:59:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/siteleaf-turns-one</guid>
+      <guid>http://www.siteleaf.com/blog/siteleaf-turns-one</guid>
       <description>&lt;p&gt;It&amp;rsquo;s time to &lt;a href=&quot;http://giphy.com/gifs/YTbZzCkRQCEJa&quot; target=&quot;_blank&quot;&gt;celebrate&lt;/a&gt;, today is Siteleaf&amp;rsquo;s first birthday!&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s what we&amp;rsquo;ve been up to lately:&lt;/p&gt;
@@ -570,10 +570,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Now publishing to GitHub Pages</title>
-      <link>http://sl.siteleaf.net/blog/github-pages</link>
+      <link>http://www.siteleaf.com/blog/github-pages</link>
       <pubDate>Wed, 04 Jun 2014 09:00:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/github-pages</guid>
+      <guid>http://www.siteleaf.com/blog/github-pages</guid>
       <description>&lt;p&gt;Exciting news! Starting today you can now publish your sites from Siteleaf to &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub&amp;nbsp;Pages&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;GitHub Pages is a solid choice for static web hosting, especially if you already use &lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; to manage your theme code—and it&amp;rsquo;s clear a lot of our users &lt;a href=&quot;https://github.com/siteleaf/siteleaf-themes/wiki/Siteleaf-themes-on-Github&quot;&gt;already do&lt;/a&gt;.&lt;/p&gt;
@@ -602,10 +602,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Introducing user roles</title>
-      <link>http://sl.siteleaf.net/blog/introducing-user-roles</link>
+      <link>http://www.siteleaf.com/blog/introducing-user-roles</link>
       <pubDate>Mon, 05 May 2014 09:00:00 -0400</pubDate>
       <author>Sawyer Hollenshead</author>
-      <guid>http://sl.siteleaf.net/blog/introducing-user-roles</guid>
+      <guid>http://www.siteleaf.com/blog/introducing-user-roles</guid>
       <description>&lt;p&gt;Today we&amp;rsquo;re happy to introduce a highly requested feature: user roles. Since day one you&amp;rsquo;ve been able to invite collaborators to your site. With the introduction of user roles, you can now set the level of control each collaborator has over your site content. You can now set a collaborator&amp;rsquo;s role to one of the following:&lt;/p&gt;
 
 &lt;h3&gt;Admin&lt;/h3&gt;
@@ -624,10 +624,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Built on Siteleaf: Made by Eno</title>
-      <link>http://sl.siteleaf.net/blog/built-on-siteleaf-made-by-eno</link>
+      <link>http://www.siteleaf.com/blog/built-on-siteleaf-made-by-eno</link>
       <pubDate>Tue, 28 Jan 2014 14:31:00 -0500</pubDate>
       <author>Sawyer Hollenshead</author>
-      <guid>http://sl.siteleaf.net/blog/built-on-siteleaf-made-by-eno</guid>
+      <guid>http://www.siteleaf.com/blog/built-on-siteleaf-made-by-eno</guid>
       <description>&lt;p&gt;We always love hearing the experiences of others who have built their site with Siteleaf. &lt;a href=&quot;http://jessicaharllee.com/&quot;&gt;Jessica Harllee&lt;/a&gt;, Siteleaf Hackday MVP and all around cool person, was nice enough to write about how she used Siteleaf to rebuild &lt;a href=&quot;http://www.madebyeno.com/&quot;&gt;Erin Nolan&amp;rsquo;s personal site&lt;/a&gt;. Some great takeaways from her post include how she used Siteleaf &lt;a href=&quot;http://www.siteleaf.com/blog/metadata-in-siteleaf/&quot;&gt;metadata&lt;/a&gt; fields on posts and assets to achieve a unique color palette for each page and to control how images were displayed throughout the layout. &lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -640,10 +640,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>New: Asset Metadata and Quick Post Edit</title>
-      <link>http://sl.siteleaf.net/blog/new-asset-meta-and-quick-post-edit</link>
+      <link>http://www.siteleaf.com/blog/new-asset-meta-and-quick-post-edit</link>
       <pubDate>Tue, 03 Dec 2013 14:53:00 -0500</pubDate>
       <author>Sawyer Hollenshead</author>
-      <guid>http://sl.siteleaf.net/blog/new-asset-meta-and-quick-post-edit</guid>
+      <guid>http://www.siteleaf.com/blog/new-asset-meta-and-quick-post-edit</guid>
       <description>&lt;p&gt;We&amp;rsquo;re constantly working on improving the Siteleaf experience and making it as flexible as possible. Today we&amp;rsquo;re happy to introduce two new features:&lt;/p&gt;
 
 &lt;h3&gt;Asset metadata&lt;/h3&gt;
@@ -665,10 +665,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Moving to Siteleaf</title>
-      <link>http://sl.siteleaf.net/blog/moving-to-siteleaf</link>
+      <link>http://www.siteleaf.com/blog/moving-to-siteleaf</link>
       <pubDate>Thu, 21 Nov 2013 01:22:00 -0500</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/moving-to-siteleaf</guid>
+      <guid>http://www.siteleaf.com/blog/moving-to-siteleaf</guid>
       <description>&lt;p&gt;Forget the CMS headaches of yesteryear, moving your website to Siteleaf is surprisingly easy. Since Siteleaf publishes to static files, it&amp;rsquo;s also a great way to speed up your site, reduce server costs, and have a permanent archive of your site. Bring your content with you using a simple &lt;a href=&quot;https://gist.github.com/sskylar/5824224&quot;&gt;JSON import script&lt;/a&gt; powered by the &lt;a href=&quot;https://github.com/siteleaf/siteleaf-api&quot;&gt;Siteleaf API&lt;/a&gt; (also available for &lt;a href=&quot;https://gist.github.com/sskylar/5834451&quot;&gt;Jekyll&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;Here are four people who&amp;rsquo;ve recently made the move, and how they got here:&lt;/p&gt;
@@ -725,10 +725,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Sites we love</title>
-      <link>http://sl.siteleaf.net/blog/sites-we-love</link>
+      <link>http://www.siteleaf.com/blog/sites-we-love</link>
       <pubDate>Thu, 31 Oct 2013 15:24:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/sites-we-love</guid>
+      <guid>http://www.siteleaf.com/blog/sites-we-love</guid>
       <description>&lt;p&gt;At Siteleaf, nothing makes us happier than seeing our customers build amazing websites. We proudly showcase these in our ever-growing &lt;a href=&quot;http://www.siteleaf.com/gallery&quot;&gt;Gallery&lt;/a&gt; for inspiration.&lt;/p&gt;
 
 &lt;p&gt;Some of our recent favorites include:&lt;/p&gt;
@@ -747,10 +747,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Using Markdown in metadata</title>
-      <link>http://sl.siteleaf.net/blog/markdown-metadata</link>
+      <link>http://www.siteleaf.com/blog/markdown-metadata</link>
       <pubDate>Tue, 29 Oct 2013 11:55:00 -0400</pubDate>
       <author>Skylar Challand</author>
-      <guid>http://sl.siteleaf.net/blog/markdown-metadata</guid>
+      <guid>http://www.siteleaf.com/blog/markdown-metadata</guid>
       <description>&lt;p&gt;In previous posts, we talked about using &lt;a href=&quot;http://www.siteleaf.com/blog/markdown-in-siteleaf/&quot;&gt;Markdown&lt;/a&gt; for text formatting and &lt;a href=&quot;http://www.siteleaf.com/blog/metadata-in-siteleaf/&quot;&gt;Metadata&lt;/a&gt; for extending your content in Siteleaf.&lt;/p&gt;
 
 &lt;p&gt;Markdown makes it easy to add links and &lt;code&gt;*emphasis*&lt;/code&gt; to your content without having to write HTML. While your &lt;code&gt;body&lt;/code&gt; content uses Markdown by default, you can also apply this easy-to-use formatting to your metadata.&lt;/p&gt;
@@ -772,10 +772,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Tutorial: Layouts in Siteleaf</title>
-      <link>http://sl.siteleaf.net/blog/layouts-in-siteleaf</link>
+      <link>http://www.siteleaf.com/blog/layouts-in-siteleaf</link>
       <pubDate>Tue, 29 Oct 2013 10:42:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://sl.siteleaf.net/blog/layouts-in-siteleaf</guid>
+      <guid>http://www.siteleaf.com/blog/layouts-in-siteleaf</guid>
       <description>&lt;p&gt;In my last article about &lt;a href=&quot;http://siteleaf.com&quot;&gt;Siteleaf&lt;/a&gt;, I wrote about what goes into &lt;a href=&quot;/blog/porting-a-theme-to-siteleaf/&quot;&gt;porting a theme&lt;/a&gt; to Siteleaf from another CMS. This time around, I’ll show you how to write cleaner, less redundant templates through the use of layouts.&lt;/p&gt;
 
 &lt;h3&gt;What is a layout?&lt;/h3&gt;
@@ -873,10 +873,10 @@ $ siteleaf publish --quiet
     
     <item>
       <title>Developer accounts</title>
-      <link>http://sl.siteleaf.net/blog/developer-accounts</link>
+      <link>http://www.siteleaf.com/blog/developer-accounts</link>
       <pubDate>Tue, 22 Oct 2013 10:32:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://sl.siteleaf.net/blog/developer-accounts</guid>
+      <guid>http://www.siteleaf.com/blog/developer-accounts</guid>
       <description>&lt;p&gt;Today, we’re announcing developer accounts. At launch, we required a subscription in order to use Siteleaf, unless you were invited to a site. Now, you can sign up for free, test the waters, and get a feel for the service before subscribing. If you want to publish your site, simply upgrade to one of our &lt;a href=&quot;/plans&quot;&gt;plans&lt;/a&gt; and publish away.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/developer-accounts-transfer-ownership.jpg&quot; alt=&quot;transfer-ownership&quot;&gt; &lt;/p&gt;

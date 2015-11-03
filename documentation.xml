@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>http://sl.siteleaf.net/help/faq</loc>
+    <loc>http://www.siteleaf.com/help/faq</loc>
     <lastmod>2014-05-01 21:50:28 +0000</lastmod>
     <priority>1.0</priority>
   </url>
@@ -10,14 +10,14 @@
   
 
   <url>
-    <loc>http://sl.siteleaf.net/help/themes</loc>
+    <loc>http://www.siteleaf.com/help/themes</loc>
     <lastmod>2014-05-01 23:17:48 +0000</lastmod>
     <priority>1.0</priority>
   </url>
 
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/getting-started</loc>
+      <loc>http://www.siteleaf.com/help/themes/getting-started</loc>
       <lastmod>2015-04-08 20:39:30 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -25,153 +25,153 @@
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/filters-and-tags</loc>
+      <loc>http://www.siteleaf.com/help/themes/filters-and-tags</loc>
       <lastmod>2015-04-08 20:42:10 +0000</lastmod>
       <priority>1.0</priority>
     </url>
 
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/filters-and-tags/date-formating</loc>
+        <loc>http://www.siteleaf.com/help/themes/filters-and-tags/date-formating</loc>
         <lastmod>2015-04-10 00:46:26 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/variables</loc>
+      <loc>http://www.siteleaf.com/help/themes/variables</loc>
       <lastmod>2014-05-01 23:17:48 +0000</lastmod>
       <priority>1.0</priority>
     </url>
 
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/variables/site</loc>
+        <loc>http://www.siteleaf.com/help/themes/variables/site</loc>
         <lastmod>2015-04-02 21:13:36 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/variables/content</loc>
+        <loc>http://www.siteleaf.com/help/themes/variables/content</loc>
         <lastmod>2015-04-09 22:48:44 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/variables/posts</loc>
+        <loc>http://www.siteleaf.com/help/themes/variables/posts</loc>
         <lastmod>2015-04-08 20:21:03 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/variables/subpages</loc>
+        <loc>http://www.siteleaf.com/help/themes/variables/subpages</loc>
         <lastmod>2015-04-02 21:15:40 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/variables/assets</loc>
+        <loc>http://www.siteleaf.com/help/themes/variables/assets</loc>
         <lastmod>2015-04-08 20:45:50 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/variables/metadata</loc>
+        <loc>http://www.siteleaf.com/help/themes/variables/metadata</loc>
         <lastmod>2015-04-08 20:31:18 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/variables/taxonomy-and-tags</loc>
+        <loc>http://www.siteleaf.com/help/themes/variables/taxonomy-and-tags</loc>
         <lastmod>2015-04-08 20:48:41 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/naming-your-files</loc>
+      <loc>http://www.siteleaf.com/help/themes/naming-your-files</loc>
       <lastmod>2015-04-08 20:44:32 +0000</lastmod>
       <priority>1.0</priority>
     </url>
 
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/naming-your-files/includes</loc>
+        <loc>http://www.siteleaf.com/help/themes/naming-your-files/includes</loc>
         <lastmod>2015-04-08 20:47:05 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/naming-your-files/ignoring-files</loc>
+        <loc>http://www.siteleaf.com/help/themes/naming-your-files/ignoring-files</loc>
         <lastmod>2014-05-15 16:18:20 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/naming-your-files/standalone-templates</loc>
+        <loc>http://www.siteleaf.com/help/themes/naming-your-files/standalone-templates</loc>
         <lastmod>2015-03-11 20:40:11 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks</loc>
+      <loc>http://www.siteleaf.com/help/themes/tips-and-tricks</loc>
       <lastmod>2014-06-27 14:38:55 +0000</lastmod>
       <priority>1.0</priority>
     </url>
 
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/nested-menu</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/nested-menu</loc>
         <lastmod>2015-04-02 21:18:07 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/sort-page-post-assets-by-filename</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/sort-page-post-assets-by-filename</loc>
         <lastmod>2015-04-09 23:02:20 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/sort-and-loop-through-tags</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/sort-and-loop-through-tags</loc>
         <lastmod>2015-04-09 23:03:17 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/strip-linebreaks-from-html</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/strip-linebreaks-from-html</loc>
         <lastmod>2015-04-02 21:18:30 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/group-and-exclude-posts</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/group-and-exclude-posts</loc>
         <lastmod>2015-04-09 23:03:34 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/related-posts</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/related-posts</loc>
         <lastmod>2015-04-09 23:03:43 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/redirects</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/redirects</loc>
         <lastmod>2015-04-02 21:18:53 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/themes/tips-and-tricks/content-from-other-pages</loc>
+        <loc>http://www.siteleaf.com/help/themes/tips-and-tricks/content-from-other-pages</loc>
         <lastmod>2015-04-16 23:17:46 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/local-development</loc>
+      <loc>http://www.siteleaf.com/help/themes/local-development</loc>
       <lastmod>2015-04-08 20:44:00 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -179,7 +179,7 @@
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/sample-themes</loc>
+      <loc>http://www.siteleaf.com/help/themes/sample-themes</loc>
       <lastmod>2014-06-27 14:38:55 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -187,7 +187,7 @@
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/themes/additional-resources</loc>
+      <loc>http://www.siteleaf.com/help/themes/additional-resources</loc>
       <lastmod>2014-06-27 14:38:55 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -196,14 +196,14 @@
   
 
   <url>
-    <loc>http://sl.siteleaf.net/help/managing-your-site</loc>
+    <loc>http://www.siteleaf.com/help/managing-your-site</loc>
     <lastmod>2014-05-12 14:23:57 +0000</lastmod>
     <priority>1.0</priority>
   </url>
 
   
     <url>
-      <loc>http://sl.siteleaf.net/help/managing-your-site/user-roles</loc>
+      <loc>http://www.siteleaf.com/help/managing-your-site/user-roles</loc>
       <lastmod>2014-06-04 01:45:03 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -212,14 +212,14 @@
   
 
   <url>
-    <loc>http://sl.siteleaf.net/help/hosting</loc>
+    <loc>http://www.siteleaf.com/help/hosting</loc>
     <lastmod>2014-06-03 19:56:04 +0000</lastmod>
     <priority>1.0</priority>
   </url>
 
   
     <url>
-      <loc>http://sl.siteleaf.net/help/hosting/ftp</loc>
+      <loc>http://www.siteleaf.com/help/hosting/ftp</loc>
       <lastmod>2014-06-13 16:19:32 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -227,7 +227,7 @@
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/hosting/amazon-s3</loc>
+      <loc>http://www.siteleaf.com/help/hosting/amazon-s3</loc>
       <lastmod>2014-06-04 03:07:49 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -235,7 +235,7 @@
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/hosting/rackspace-cloud-files</loc>
+      <loc>http://www.siteleaf.com/help/hosting/rackspace-cloud-files</loc>
       <lastmod>2014-06-04 02:54:58 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -243,7 +243,7 @@
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/hosting/github</loc>
+      <loc>http://www.siteleaf.com/help/hosting/github</loc>
       <lastmod>2014-06-04 02:54:58 +0000</lastmod>
       <priority>1.0</priority>
     </url>
@@ -251,20 +251,20 @@
     
   
     <url>
-      <loc>http://sl.siteleaf.net/help/hosting/siteleaf</loc>
+      <loc>http://www.siteleaf.com/help/hosting/siteleaf</loc>
       <lastmod>2014-06-04 02:54:58 +0000</lastmod>
       <priority>1.0</priority>
     </url>
 
     
       <url>
-        <loc>http://sl.siteleaf.net/help/hosting/siteleaf/custom-domains</loc>
+        <loc>http://www.siteleaf.com/help/hosting/siteleaf/custom-domains</loc>
         <lastmod>2014-06-04 03:06:16 +0000</lastmod>
         <priority>1.0</priority>
       </url>
     
       <url>
-        <loc>http://sl.siteleaf.net/help/hosting/siteleaf/godaddy</loc>
+        <loc>http://www.siteleaf.com/help/hosting/siteleaf/godaddy</loc>
         <lastmod>2014-06-04 01:47:52 +0000</lastmod>
         <priority>1.0</priority>
       </url>
