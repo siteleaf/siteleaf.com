@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Siteleaf</title>
+    <link>http://www.siteleaf.com</link>
+    <pubDate>Tue, 03 Nov 2015 12:23:28 -0500</pubDate>
+    
+    <item>
+      <title>Publishing via the API</title>
+      <link>http://www.siteleaf.com/blog/publishing-via-the-api</link>
+      <pubDate>Wed, 24 Jun 2015 11:10:00 -0400</pubDate>
+      <author>Larry Fox</author>
+      <guid>http://www.siteleaf.com/blog/publishing-via-the-api</guid>
+      <description>&lt;p&gt;For the last week publishing in the Siteleaf interface has been powered by our API. This has been a requested feature by some of our users and ourselves. Its behavior is bit different than some of our other API endpoints, so let&amp;rsquo;s go over it.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Just want to use the Siteleaf gem? &lt;a href=&quot;#jump-gem&quot;&gt;Skip to the bottom!&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;To initiate a publish, make an authenticated &lt;code&gt;POST&lt;/code&gt; request to the &lt;code&gt;/sites/:id/publish&lt;/code&gt; endpoint.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ curl -u &amp;quot;$API_KEY:$API_SECRET&amp;quot; -X POST \
+  http://api.siteleaf.com/v1/sites/$SITE_ID/publish
+
+{&amp;quot;job_id&amp;quot;:&amp;quot;e79af12c79ccd8866902d3dd&amp;quot;} 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This triggers a publish and immediately returns a job ID (or returns an already running job ID if one exists). You can stop here if you&amp;rsquo;d like and Siteleaf will happily chug away in the background. &lt;/p&gt;
+
+&lt;p&gt;But the fun doesn&amp;rsquo;t stop there. You can optionally check in on publish progress using your &lt;code&gt;job_id&lt;/code&gt; from above by making an authenticated &lt;code&gt;GET&lt;/code&gt; request to the new &lt;code&gt;/jobs/:id&lt;/code&gt; endpoint.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ curl -u &amp;quot;$API_KEY:$API_SECRET&amp;quot; \
+  http://api.siteleaf.com/api/v1/jobs/e79af12c79ccd8866902d3dd
+
+event:publish
+data:{&amp;quot;status&amp;quot;:&amp;quot;working&amp;quot;,&amp;quot;message&amp;quot;:&amp;quot;Checking... /home&amp;quot;,&amp;quot;updated_at&amp;quot;:&amp;quot;1435159120&amp;quot;}
+
+[etc…]
+
+event:publish
+data:{&amp;quot;status&amp;quot;:&amp;quot;complete&amp;quot;,&amp;quot;message&amp;quot;:&amp;quot;Published&amp;quot;,&amp;quot;updated_at&amp;quot;:&amp;quot;1435159121&amp;quot;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This endpoint, unlike our others, consistently returns &lt;a href=&quot;https://en.wikipedia.org/wiki/Server-sent_events&quot;&gt;Server Sent Events&lt;/a&gt; (SSE) instead of JSON documents (including  errors). The &lt;code&gt;data&lt;/code&gt; field is JSON encoded however. SSE is supported in all modern browsers and there are client libraries in a number of programming languages. &lt;/p&gt;
+
+&lt;p&gt;Additionally, job ID&amp;rsquo;s are kept for at least 30 minutes after completion so you can check in on a publish immediately or wait a bit.&lt;/p&gt;
+
+&lt;p&gt;Can&amp;rsquo;t wait to see what uses you come up with!&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;jump-gem&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Publishing from the gem&lt;/h3&gt;
+
+&lt;p&gt;First install the latest gem (&lt;a href=&quot;https://rubygems.org/gems/siteleaf&quot;&gt;&lt;code&gt;0.9.23&lt;/code&gt;&lt;/a&gt; as of writing)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ gem install siteleaf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then…&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ siteleaf publish
+Fetching inventory...
+Compiling...
+[etc…]
+Published
+=&amp;gt; Publish completed.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or if you don&amp;rsquo;t care about progress, you can use either of the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ siteleaf publish -q
+$ siteleaf publish --quiet
+
+=&amp;gt; Publish queued.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;🎉🎉&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced Liquid: Group By</title>
+      <link>http://www.siteleaf.com/blog/advanced-liquid-group-by</link>
+      <pubDate>Thu, 09 Apr 2015 16:30:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/advanced-liquid-group-by</guid>
+      <description>&lt;p&gt;Following &lt;a href=&quot;/blog/advanced-liquid-sort/&quot;&gt;&lt;code&gt;sort&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;/blog/advanced-liquid-where/&quot;&gt;&lt;code&gt;where&lt;/code&gt;&lt;/a&gt;, this &lt;a href=&quot;/blog/tags/liquid&quot;&gt;Advanced Liquid&lt;/a&gt; post introduces another handy new filter to Siteleaf: &lt;code&gt;group_by&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;As the name suggests, this filter allows you to group your content by a certain property. &lt;/p&gt;
+
+&lt;p&gt;For example, here’s how we could group all posts by year published:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign posts_by_year = site.posts | group_by:&amp;quot;year&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can group by &lt;a href=&quot;/help/themes/variables/content/&quot;&gt;any property&lt;/a&gt; like date, title, slug, even metadata and taxonomy. Here are a few real-world examples you may want to apply to your theme.&lt;/p&gt;
+
+&lt;h3&gt;Group posts by author&lt;/h3&gt;
+
+&lt;p&gt;With multiple authors on our blog, it may be a good idea to group together posts by each author. So let&amp;rsquo;s do that.&lt;/p&gt;
+
+&lt;p&gt;Starting with &lt;code&gt;site.posts&lt;/code&gt; (all posts within our site), we can apply the &lt;code&gt;group_by&lt;/code&gt; filter with &lt;code&gt;author&lt;/code&gt; as the parameter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign posts_by_author = site.posts | group_by:&amp;quot;author&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Behind the scenes, posts are collected into an array which looks something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;json&quot;&gt;[
+  {&amp;quot;name&amp;quot;: &amp;quot;Skylar Challand&amp;quot;, &amp;quot;items&amp;quot;: [...]},
+  {&amp;quot;name&amp;quot;: &amp;quot;Larry Fox&amp;quot;, &amp;quot;items&amp;quot;: [...]},
+  ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The property (in this case &lt;code&gt;author&lt;/code&gt;) can be accessed by &lt;code&gt;name&lt;/code&gt; and matching posts are grouped under &lt;code&gt;items&lt;/code&gt;. Knowing that, we can display our grouped posts like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% for author in posts_by_author %}
+  &amp;lt;dt&amp;gt;{{author.name}}&amp;lt;/dt&amp;gt;
+  {% for posts in author.items %}
+  &amp;lt;dd&amp;gt;&amp;lt;a href=&amp;quot;{{post.url}}&amp;quot;&amp;gt;{{post.title}}&amp;lt;/a&amp;gt;&amp;lt;/dd&amp;gt;
+  {% endfor %}
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; To sort our authors alphabetically we could also apply &lt;code&gt;sort&lt;/code&gt; to our group:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign posts_by_author = site.posts | group_by:&amp;quot;author&amp;quot; | sort:&amp;quot;name&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Group posts by metadata&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;group_by&lt;/code&gt; also works on metadata and taxonomy. For example, here’s how we could group posts by color:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign posts_by_color = site.pages | group_by:&amp;quot;meta.color&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our grouped array will look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;json&quot;&gt;[
+  {&amp;quot;name&amp;quot;: &amp;quot;red&amp;quot;, &amp;quot;items&amp;quot;: [...]},
+  {&amp;quot;name&amp;quot;: &amp;quot;blue&amp;quot;, &amp;quot;items&amp;quot;: [...]},
+  ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Archive page&lt;/h3&gt;
+
+&lt;p&gt;Grouping posts by year is a common pattern on archive pages. Since Siteleaf already &lt;a href=&quot;/help/themes/naming-your-files/&quot;&gt;generates archive pages&lt;/a&gt; for us, we can easily sprinkle in &lt;code&gt;group_by&lt;/code&gt; and have a beautiful blog archive in minutes.&lt;/p&gt;
+
+&lt;p&gt;First, let’s group our posts by year:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign posts_by_year = posts | group_by:&amp;quot;year&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;small&gt;Note: We are using &lt;code&gt;posts&lt;/code&gt; in this case rather than &lt;code&gt;site.posts&lt;/code&gt; because we only want posts relative to this page (but either could work).&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we can display our grouped posts:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% for year in posts_by_year %}
+  &amp;lt;h2&amp;gt;{{year.name}}&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+  {% for post in year.items %}
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{post.url}}&amp;quot;&amp;gt;{{post.title}}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  {% endfor %}
+  &amp;lt;/ul&amp;gt;
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Extra credit:&lt;/strong&gt; We could take this a step further and do a multi-level group, showing posts by year AND month:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% for year in posts_by_year %}
+  &amp;lt;h2&amp;gt;{{year.name}}&amp;lt;/h2&amp;gt;
+  {% assign posts_by_month = year.items | group_by:&amp;quot;month&amp;quot; %}
+  {% for month in posts_by_month %}
+    &amp;lt;h3&amp;gt;{{month.items.first.date | date:&amp;quot;%B&amp;quot;}}&amp;lt;/h3&amp;gt;
+    &amp;lt;ul&amp;gt;
+    {% for post in month.items %}
+      &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{post.url}}&amp;quot;&amp;gt;{{post.title}}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    {% endfor %}
+    &amp;lt;/ul&amp;gt;
+  {% endfor %}
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In case you&amp;rsquo;re wondering, &lt;code&gt;%B&lt;/code&gt; gives us the month name (e.g. “April”) from a date. For full documentation see our &lt;a href=&quot;/help/themes/filters-and-tags/date-formating&quot;&gt;date formatting&lt;/a&gt; guide.&lt;/p&gt;
+
+&lt;p&gt;Until next time, happy coding!&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Follow &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;@siteleaf&lt;/a&gt; and stay tuned for more &lt;a href=&quot;/blog/tags/liquid&quot;&gt;Advanced Liquid&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced Liquid: Where</title>
+      <link>http://www.siteleaf.com/blog/advanced-liquid-where</link>
+      <pubDate>Wed, 08 Apr 2015 15:25:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/advanced-liquid-where</guid>
+      <description>&lt;p&gt;Now that you are &lt;a href=&quot;/blog/advanced-liquid-sort/&quot;&gt;sorting&lt;/a&gt; like a pro, we’ll move on to another new and exciting Liquid filter: &lt;code&gt;where&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;Where allows us to find content based on a parameter. If you are coming from Jekyll, you’ll be happy to know it follows the same syntax.&lt;/p&gt;
+
+&lt;p&gt;For example, here’s how we could find all pages titled “Foo”:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign foo_pages = site.pages | where:&amp;quot;title&amp;quot;,&amp;quot;Foo&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As with &lt;code&gt;sort&lt;/code&gt;, you can use &lt;a href=&quot;/help/themes/variables/content/&quot;&gt;any property&lt;/a&gt; like date, title, slug, even metadata and taxonomy. Below are few real-world examples you might find useful.&lt;/p&gt;
+
+&lt;h3&gt;Show posts by author&lt;/h3&gt;
+
+&lt;p&gt;So I just created a fancy new bio page for myself, and now I want to display posts I’ve written alongside my bio. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fancy-bio.png&quot; alt=&quot;fancy bio page&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;To locate posts written by a specific author across the entire site, we can start with &lt;code&gt;site.posts&lt;/code&gt;. Then we can apply the &lt;code&gt;where&lt;/code&gt; filter with &lt;code&gt;author&lt;/code&gt; as a parameter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign my_posts = site.posts | where:&amp;quot;author&amp;quot;,&amp;quot;Skylar Challand&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can also use nested properties such as &lt;code&gt;author.email&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign my_posts = site.posts | where:&amp;quot;author.email&amp;quot;,&amp;quot;skylar@siteleaf.com&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we can display our matching posts using the &lt;code&gt;my_posts&lt;/code&gt; variable we just created:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;&amp;lt;ul&amp;gt;
+  {% for post in my_posts %}
+  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{post.url}}&amp;quot;&amp;gt;{{post.title}}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  {% endfor %}
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t repeat yourself:&lt;/strong&gt; Since the title on my bio page matches the author name (“Skylar Challand”), we could use &lt;code&gt;title&lt;/code&gt; as a variable and make our theme code reusable:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign my_posts = site.posts | where:&amp;quot;author&amp;quot;,title %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Show featured posts&lt;/h3&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/blog/advanced-liquid-sort/&quot;&gt;previous tutorial&lt;/a&gt; we showed you how to use &lt;a href=&quot;/blog/metadata-in-siteleaf/&quot;&gt;metadata&lt;/a&gt; to create “sticky” posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/meta-sticky.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the same metadata, we could grab all posts with this flag:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign sticky_posts = site.posts | where:&amp;quot;meta.sticky&amp;quot;,&amp;quot;yes&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The same could be applied to any metadata. For example, we could find all posts with a color of “Red”:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign red_posts = site.pages | where:&amp;quot;meta.color&amp;quot;,&amp;quot;Red&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or posts with a particular tag:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign tagged_posts = site.posts | where:&amp;quot;taxonomy.tags&amp;quot;,&amp;quot;whiskey&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Mm whiskey.&lt;/p&gt;
+
+&lt;h3&gt;Filter by year&lt;/h3&gt;
+
+&lt;p&gt;You can also filter content by date parts including &lt;code&gt;year&lt;/code&gt;, &lt;code&gt;month&lt;/code&gt;, and &lt;code&gt;day&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here’s how we could get all posts published this year:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign latest_posts = site.posts | where:&amp;quot;year&amp;quot;,&amp;quot;2015&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Again we could take this a step further and use a variable in place of year:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign this_year = site.date | date:&amp;quot;%Y&amp;quot; %}
+{% assign new_posts = site.posts | where:&amp;quot;year&amp;quot;,this_year %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;small&gt;Follow &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;@siteleaf&lt;/a&gt; and stay tuned for more &lt;a href=&quot;/blog/tags/liquid&quot;&gt;Advanced Liquid&lt;/a&gt;!&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced Liquid: Sort</title>
+      <link>http://www.siteleaf.com/blog/advanced-liquid-sort</link>
+      <pubDate>Tue, 07 Apr 2015 10:00:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/advanced-liquid-sort</guid>
+      <description>&lt;p&gt;&lt;a href=&quot;http://www.siteleaf.com/help/themes/getting-started/&quot;&gt;Liquid&lt;/a&gt; is the flexible templating language that powers themes on Siteleaf. While simple at first glance, there’s a lot of power under the hood for those wanting a greater level of control. In this new blog series, we’ll dive deeper and take a look at some advanced Liquid code and examples.&lt;/p&gt;
+
+&lt;p&gt;First up in this post, we’ll take a look at the &lt;code&gt;sort&lt;/code&gt; &lt;a href=&quot;/help/themes/filters-and-tags&quot;&gt;filter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;With any site, Siteleaf makes some general assumptions about your content. For example, posts are sorted by date (newest post shows first) and pages are sorted manually. In cases where this doesn’t fit your design, you can utilize the &lt;code&gt;sort&lt;/code&gt; filter to order content any way you wish.&lt;/p&gt;
+
+&lt;p&gt;For example, here’s how we might sort pages by date:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign sorted = pages | sort:&amp;quot;date&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will sort in ascending order, but we could also choose descending order by adding &lt;code&gt;reverse&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign sorted = pages | sort:&amp;quot;date&amp;quot; | reverse %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can sort on &lt;a href=&quot;http://www.siteleaf.com/help/themes/variables/content/&quot;&gt;any property&lt;/a&gt; like date, title, slug, even metadata and taxonomy. Below are few real-world examples you might find useful.&lt;/p&gt;
+
+&lt;h3&gt;Sort tags alphabetically&lt;/h3&gt;
+
+&lt;p&gt;Tags by default are shown in the order in which they were added. If you’d like to display your tags ordered alphabetically, you can achieve this using the &lt;code&gt;sort&lt;/code&gt; filter. &lt;/p&gt;
+
+&lt;p&gt;In this example, we’ll create a variable called &lt;code&gt;sorted_tags&lt;/code&gt; to hold our sorted tags using the &lt;a href=&quot;https://github.com/Shopify/liquid/wiki/Liquid-for-Designers#variable-assignment&quot;&gt;&lt;code&gt;assign&lt;/code&gt;&lt;/a&gt; Liquid tag (feel free to use any variable name you wish):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign sorted_tags = tags | sort:&amp;quot;value&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once sorted, we can display the tags using the &lt;code&gt;sorted_tags&lt;/code&gt; variable we just created:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% for tag in sorted_tags %}
+  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{tag.url}}&amp;quot;&amp;gt;{{tag.value}}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Sort posts by metadata&lt;/h3&gt;
+
+&lt;p&gt;Posts are generally shown in date order, but you can use the &lt;code&gt;sort&lt;/code&gt; filter to order on any property. With the &lt;a href=&quot;http://www.siteleaf.com/blog/metadata-in-siteleaf/&quot;&gt;power of metadata&lt;/a&gt;, that can be pretty much anything you want. &lt;/p&gt;
+
+&lt;p&gt;In this example, we’ll set up a meta field on our posts called &lt;code&gt;num&lt;/code&gt; to manually sort with numeric values from 01 to 10:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/meta-num.png&quot; alt=&quot;meta-num&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Using the &lt;code&gt;sort&lt;/code&gt; filter, we can now order posts by &lt;code&gt;meta.num&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign sorted_posts = posts | sort:&amp;quot;meta.num&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And of course, we can display these posts as we normally would:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;&amp;lt;ul&amp;gt;
+  {% for post in sorted_posts %}
+  &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{post.url}}&amp;quot;&amp;gt;{{post.title}}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+  {% endfor %}
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Sticky posts&lt;/h3&gt;
+
+&lt;p&gt;Perhaps you’d like to have an important or “sticky” post show up first, and retain the default order for the rest of your posts. In this case we could use metadata again. &lt;/p&gt;
+
+&lt;p&gt;For this example, we’ll add a meta field to our sticky post called &lt;code&gt;sticky&lt;/code&gt; and set a value of &amp;ldquo;yes&amp;rdquo;. We only need to add this to the sticky post, regular posts will have a blank value.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/meta-sticky.png&quot; alt=&quot;meta-sticky&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Now we can sort our posts by &lt;code&gt;meta.sticky&lt;/code&gt;, but we’ll also add a second parameter (&lt;code&gt;last&lt;/code&gt;) to make sure our non-sticky posts are pushed below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;liquid&quot;&gt;{% assign sorted_posts = site.posts | sort:&amp;quot;meta.sticky&amp;quot;,&amp;quot;last&amp;quot; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;By adding &lt;code&gt;last&lt;/code&gt; you are telling Siteleaf to sort blank or null values last (the default is first).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bonus tip:&lt;/strong&gt; &lt;code&gt;meta.sticky&lt;/code&gt; is equivalent to &lt;code&gt;meta[&amp;quot;sticky&amp;quot;]&lt;/code&gt;. Liquid supports both square bracket and dot notation, so if you have a preference feel free to stick with it.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Stay tuned for more Advanced Liquid, up next we&amp;rsquo;ll be looking at the filters &lt;code&gt;where&lt;/code&gt; and &lt;code&gt;group_by&lt;/code&gt;.&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using AWS S3 and Route 53</title>
+      <link>http://www.siteleaf.com/blog/using-aws-s3-and-route-53</link>
+      <pubDate>Wed, 25 Mar 2015 15:55:00 -0400</pubDate>
+      <author>Larry Fox</author>
+      <guid>http://www.siteleaf.com/blog/using-aws-s3-and-route-53</guid>
+      <description>&lt;p&gt;After building Siteleaf we took it upon ourselves to each rebuild our site using the service. I had previously used S3 with Jeykll and wanted to continue using it, but getting set up can be a bit of a mystery.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I’m assuming that you’re using Route 53 for DNS, and want to serve content from the root domain while having www redirect to it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;Amazon S3&lt;/h3&gt;
+
+&lt;p&gt;Head to your &lt;a href=&quot;https://console.aws.amazon.com/s3&quot;&gt;S3 Console&lt;/a&gt; where you’ll make one bucket named after your root domain, and another with the www subdomain (e.g. example.com and &lt;a href=&quot;http://www.example.com&quot;&gt;www.example.com&lt;/a&gt;). Take note of the region you choose.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/s3-1.gif&quot; alt=&quot;s3-1&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;In the root domain (e.g. example.com) bucket, go to Properties » Static Website Hosting and check “Enable website hosting”, setting your Index document to &lt;code&gt;index.html&lt;/code&gt;. Head to the Permisions tab, click “Add bucket policy”, and add the following. Be sure to replace &lt;code&gt;DOMAIN&lt;/code&gt; with your root domain.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;JSON&quot;&gt;{
+    &amp;quot;Version&amp;quot;: &amp;quot;2008-10-17&amp;quot;,
+    &amp;quot;Statement&amp;quot;: [
+        {
+            &amp;quot;Sid&amp;quot;: &amp;quot;AddPerm&amp;quot;,
+            &amp;quot;Effect&amp;quot;: &amp;quot;Allow&amp;quot;,
+            &amp;quot;Principal&amp;quot;: {
+                &amp;quot;AWS&amp;quot;: &amp;quot;*&amp;quot;
+            },
+            &amp;quot;Action&amp;quot;: &amp;quot;s3:GetObject&amp;quot;,
+            &amp;quot;Resource&amp;quot;: &amp;quot;arn:aws:s3:::DOMAIN/*&amp;quot;
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/s3-2.gif&quot; alt=&quot;s3-2&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Now in the subdomain bucket, go to Properties » Static Website Hosting and check “Redirect all requests to another host name”, filling it in the name of your root domain. Easy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/s3-3.gif&quot; alt=&quot;s3-3&quot;&gt; &lt;/p&gt;
+
+&lt;h3&gt;Route 53 and DNS&lt;/h3&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://console.aws.amazon.com/route53&quot;&gt;Route 53 Console&lt;/a&gt; create a new hosted zone for your domain if you haven’t already, and go to its Record Sets. Similarlly to the S3 buckets, you’ll want to create two new records, one for the root domain, and one for the www subdomain.&lt;/p&gt;
+
+&lt;p&gt;For both choose an A record, check alias, and set the alias target to the respective bucket (root to root bucket, www to www bucket). Save it, and in a few moments your domain and subdomain should point to your bucket.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/route53-1.gif&quot; alt=&quot;route53-1&quot;&gt; &lt;/p&gt;
+
+&lt;h3&gt;Publishing with Siteleaf&lt;/h3&gt;
+
+&lt;p&gt;Back on your Siteleaf settings page select “Amazon S3” for publishing and enter your root domain name, Access Key/Secret Key (found under &lt;a href=&quot;https://portal.aws.amazon.com/gp/aws/securityCredentials&quot;&gt;Security Credentials&lt;/a&gt; in your AWS account), and bucket region. After saving you should be ready to publish.&lt;/p&gt;
+
+&lt;p&gt;Happy blogging.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This post was originally posted at larryfox.us.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improvements to page and post management</title>
+      <link>http://www.siteleaf.com/blog/improvements-to-page-and-post-management</link>
+      <pubDate>Thu, 10 Jul 2014 11:05:00 -0400</pubDate>
+      <author>Sawyer Hollenshead</author>
+      <guid>http://www.siteleaf.com/blog/improvements-to-page-and-post-management</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re a heavy Siteleaf user, you might notice a few tweaks here and there that we recently introduced. &lt;/p&gt;
+
+&lt;h3&gt;Improved page menu&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/new-menu.jpg&quot; alt=&quot;new-menu&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing you might notice is a redesigned page menu in the sidebar. After building large sites with Siteleaf, we realized the original design didn&amp;rsquo;t accommodate subpages and posts as well as it could. Now, it&amp;rsquo;s a lot easier to dive into and sort multiple levels of subpages while still keeping things looking clean. &lt;/p&gt;
+
+&lt;h3&gt;Quickly search and browse posts&lt;/h3&gt;
+
+&lt;p&gt;Another new thing we&amp;rsquo;ve introduced is the posts sidebar. Now you can dive straight into a page&amp;rsquo;s posts by clicking the posts icon &lt;img src=&quot;/assets/posts-icon.png&quot; alt=&quot;posts-icon&quot;&gt; next to the page link in the sidebar, or by clicking the &amp;ldquo;other posts&amp;rdquo; link on the post itself. From the posts sidebar you can now search and filter the posts list by title.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Footnotes &amp; Highlights</title>
+      <link>http://www.siteleaf.com/blog/footnotes-and-highlights</link>
+      <pubDate>Tue, 08 Jul 2014 10:00:00 -0400</pubDate>
+      <author>Larry Fox</author>
+      <guid>http://www.siteleaf.com/blog/footnotes-and-highlights</guid>
+      <description>&lt;p&gt;In addition to the &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown basics&lt;/a&gt;, Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a &lt;mark&gt;highlight&lt;/mark&gt; and also a footnote&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+
+&lt;p&gt;Footnotes are great for citing and referencing sources, or for expanding on ideas. They are created like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A cool sentence[^1].
+
+[﻿^1]: A cool footnote.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And rendered like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;A cool sentence&amp;lt;sup id=&amp;quot;fnref1&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;#fn1&amp;quot; rel=&amp;quot;footnote&amp;quot;&amp;gt;1&amp;lt;/a&amp;gt;
+&amp;lt;/sup&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;footnotes&amp;quot;&amp;gt;
+    &amp;lt;hr&amp;gt;
+    &amp;lt;ol&amp;gt;
+        &amp;lt;li id=&amp;quot;fn1&amp;quot;&amp;gt;
+            &amp;lt;p&amp;gt;A cool footnote. &amp;lt;a href=&amp;quot;#fnref1&amp;quot; rev=&amp;quot;footnote&amp;quot;&amp;gt;↩&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+        &amp;lt;/li&amp;gt;
+    &amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Highlighting is useful when you&amp;rsquo;d like to direct the readers attention somewhere specific. To use it, wrap a phrase in &lt;code&gt;==double equal signs==&lt;/code&gt;. Highlights simply get wrapped in &lt;code&gt;&amp;lt;mark&amp;gt;&lt;/code&gt; tags. And remember, “with great power comes great responsibility.”&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;A version of this article was originally posted on larryfox.us.&lt;/small&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;This is a footnote in Siteleaf!&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stickers now available</title>
+      <link>http://www.siteleaf.com/blog/stickers</link>
+      <pubDate>Wed, 18 Jun 2014 15:51:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/stickers</guid>
+      <description>&lt;p&gt;Siteleaf stickers are now available from Sticker Mule!&lt;/p&gt;
+
+&lt;p&gt;Make your laptop happy and &lt;a href=&quot;http://www.stickermule.com/marketplace/855-siteleaf-stickers&quot;&gt;pick one up today&lt;/a&gt;. Available at cost with free shipping in quantities of 1-1000 (in case you have a lot of friends).&lt;/p&gt;
+
+&lt;p&gt;We also have a number of stickers available for FREE, &lt;a href=&quot;http://goo.gl/forms/zxdm18o8T1&quot;&gt;let us know&lt;/a&gt; if you want one!&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;https://twitter.com/neilrenicker/statuses/456866456638988288&quot;&gt;Neil Renicker&lt;/a&gt; for the photo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Now publishing to SFTP</title>
+      <link>http://www.siteleaf.com/blog/publish-to-sftp</link>
+      <pubDate>Fri, 13 Jun 2014 10:35:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/publish-to-sftp</guid>
+      <description>&lt;p&gt;Siteleaf now supports publishing to SFTP! &lt;/p&gt;
+
+&lt;p&gt;Also known as Secure or &lt;a href=&quot;http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol&quot;&gt;SSH File Transfer Protocol&lt;/a&gt;, SFTP joins our extensive publishing options including FTP, Amazon S3, Rackspace Cloud Files, &lt;a href=&quot;/blog/github-pages&quot;&gt;GitHub Pages&lt;/a&gt; and our free Siteleaf Hosting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/sftp-clip.png&quot; alt=&quot;SFTP settings&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;When publishing to SFTP your files are encrypted and transferred over a secure channel to your server.&lt;/p&gt;
+
+&lt;p&gt;In addition to regular FTP, this protocol is supported on most popular hosts including &lt;a href=&quot;http://mediatemple.net&quot;&gt;Media Temple&lt;/a&gt;, &lt;a href=&quot;http://www.dreamhost.com&quot;&gt;DreamHost&lt;/a&gt;, &lt;a href=&quot;http://www.1and1.com&quot;&gt;1&amp;amp;1&lt;/a&gt;, and &lt;a href=&quot;http://www.godaddy.com&quot;&gt;GoDaddy&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quick tip: Assets in meta fields</title>
+      <link>http://www.siteleaf.com/blog/assets-in-meta-fields</link>
+      <pubDate>Fri, 13 Jun 2014 10:22:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/assets-in-meta-fields</guid>
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/pdf.gif&quot; alt=&quot;&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Siteleaf makes it easy to assign assets in your metadata fields, just drag and drop (as shown above).&lt;/p&gt;
+
+&lt;p&gt;Now in your theme, you can easily link to your asset:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;{{ meta[&amp;#39;project_link&amp;#39;] }}&amp;quot;&amp;gt;
+  {{ meta[&amp;#39;project_link_title&amp;#39;] }}
+&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a great way to reference special assets like featured images or PDF downloads.&lt;/p&gt;
+
+&lt;p&gt;To learn more about metadata see our tutorial &lt;a href=&quot;/blog/metadata-in-siteleaf&quot;&gt;Metadata in Siteleaf&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Siteleaf turns one</title>
+      <link>http://www.siteleaf.com/blog/siteleaf-turns-one</link>
+      <pubDate>Fri, 06 Jun 2014 13:59:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/siteleaf-turns-one</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s time to &lt;a href=&quot;http://giphy.com/gifs/YTbZzCkRQCEJa&quot; target=&quot;_blank&quot;&gt;celebrate&lt;/a&gt;, today is Siteleaf&amp;rsquo;s first birthday!&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s what we&amp;rsquo;ve been up to lately:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/github-pages/&quot;&gt;GitHub Pages integration&lt;/a&gt;: now you can publish your site with version control, see revisions and revert back to any publish state.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/help/&quot;&gt;New help site&lt;/a&gt;: we have a new site for theme documentation, tips, and FAQs (built on Siteleaf of course).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/introducing-user-roles/&quot;&gt;User roles&lt;/a&gt;: control site access for your collaborators and&amp;nbsp;clients.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/new-asset-meta-and-quick-post-edit&quot;&gt;Asset metadata&lt;/a&gt;: add captions, alt text, and information to your images.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://zapier.com/zapbook/siteleaf/&quot;&gt;Zapier integration&lt;/a&gt;: create new Siteleaf posts via e-mail or third party services.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/gallery&quot;&gt;Siteleaf Gallery&lt;/a&gt;: see how others are using Siteleaf and get inspiration.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you&amp;rsquo;re just joining us, we now have free &lt;a href=&quot;/blog/developer-accounts/&quot;&gt;Developer accounts&lt;/a&gt; available. You can sign up for free, try out our &lt;a href=&quot;/blog/tags/tutorial/&quot;&gt;tutorials&lt;/a&gt;, and get a feel for the service before going live.&lt;/p&gt;
+
+&lt;p&gt;Follow &lt;a href=&quot;https://twitter.com/siteleaf&quot;&gt;@siteleaf&lt;/a&gt; on Twitter for more updates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Now publishing to GitHub Pages</title>
+      <link>http://www.siteleaf.com/blog/github-pages</link>
+      <pubDate>Wed, 04 Jun 2014 09:00:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/github-pages</guid>
+      <description>&lt;p&gt;Exciting news! Starting today you can now publish your sites from Siteleaf to &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub&amp;nbsp;Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;GitHub Pages is a solid choice for static web hosting, especially if you already use &lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; to manage your theme code—and it&amp;rsquo;s clear a lot of our users &lt;a href=&quot;https://github.com/siteleaf/siteleaf-themes/wiki/Siteleaf-themes-on-Github&quot;&gt;already do&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Why GitHub Pages?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;It&amp;rsquo;s fast!&lt;/strong&gt; Check out this comparison by &lt;a href=&quot;http://www.jeremymorgan.com/blog/programming/how-fast-are-github-pages/&quot;&gt;Jeremy Morgan&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It&amp;rsquo;s powered by a global CDN&lt;/strong&gt;, from the folks at &lt;a href=&quot;http://www.fastly.com/customers/github/&quot;&gt;Fastly&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It&amp;rsquo;s version controlled!&lt;/strong&gt; Every publish is a commit, so you can see revisions and revert back to any publish state.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;And there&amp;rsquo;s no extra cost&lt;/strong&gt;, GitHub Pages is included with your GitHub account.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/github-commit.png&quot;&gt;
+&lt;figcaption&gt;Every publish from Siteleaf shows as a commit on GitHub.com&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Siteleaf will publish your site to the &lt;code&gt;gh-pages&lt;/code&gt; branch of your repository (private or public), and even create the required &lt;code&gt;CNAME&lt;/code&gt; file for GitHub. For full details, visit our &lt;a href=&quot;/help/hosting/github&quot;&gt;GitHub Pages help page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve been quietly testing this feature out over the past couple weeks, and we&amp;rsquo;re excited to make it available to all users right now. &lt;/p&gt;
+
+&lt;p&gt;GitHub Pages joins our existing publishing options—FTP, Amazon S3, Rackspace Cloud Files, and our free Siteleaf Hosting—giving you more flexibility and reaffirming our committment that your data belongs to you. Enjoy!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing user roles</title>
+      <link>http://www.siteleaf.com/blog/introducing-user-roles</link>
+      <pubDate>Mon, 05 May 2014 09:00:00 -0400</pubDate>
+      <author>Sawyer Hollenshead</author>
+      <guid>http://www.siteleaf.com/blog/introducing-user-roles</guid>
+      <description>&lt;p&gt;Today we&amp;rsquo;re happy to introduce a highly requested feature: user roles. Since day one you&amp;rsquo;ve been able to invite collaborators to your site. With the introduction of user roles, you can now set the level of control each collaborator has over your site content. You can now set a collaborator&amp;rsquo;s role to one of the following:&lt;/p&gt;
+
+&lt;h3&gt;Admin&lt;/h3&gt;
+
+&lt;p&gt;The admin role gives full privileges to the collaborator, allowing them to manage and publish all content. This role is great for people who are helping build the site, like a developer or designer, since it allows them to upload theme files, change the site&amp;rsquo;s settings, and invite other collaborators.&lt;/p&gt;
+
+&lt;h3&gt;Publisher&lt;/h3&gt;
+
+&lt;p&gt;The publisher role is similar to the admin role, however publishers aren&amp;rsquo;t able to access theme files or the site&amp;rsquo;s settings. This is a great role to grant to a client. It allows a person to manage and publish pages, posts and assets, while protecting them from accidentally breaking the site&amp;rsquo;s theme.&lt;/p&gt;
+
+&lt;h3&gt;Writer&lt;/h3&gt;
+
+&lt;p&gt;The writer role is the most limited role available. A writer can only manage their own content, and any content they create will default to &amp;ldquo;Draft&amp;rdquo; status. This means that a Publisher or Admin must approve a writer&amp;rsquo;s content first before publishing it. This role is great for sites with many collaborators who only need access in order to add content (like a blog post).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Built on Siteleaf: Made by Eno</title>
+      <link>http://www.siteleaf.com/blog/built-on-siteleaf-made-by-eno</link>
+      <pubDate>Tue, 28 Jan 2014 14:31:00 -0500</pubDate>
+      <author>Sawyer Hollenshead</author>
+      <guid>http://www.siteleaf.com/blog/built-on-siteleaf-made-by-eno</guid>
+      <description>&lt;p&gt;We always love hearing the experiences of others who have built their site with Siteleaf. &lt;a href=&quot;http://jessicaharllee.com/&quot;&gt;Jessica Harllee&lt;/a&gt;, Siteleaf Hackday MVP and all around cool person, was nice enough to write about how she used Siteleaf to rebuild &lt;a href=&quot;http://www.madebyeno.com/&quot;&gt;Erin Nolan&amp;rsquo;s personal site&lt;/a&gt;. Some great takeaways from her post include how she used Siteleaf &lt;a href=&quot;http://www.siteleaf.com/blog/metadata-in-siteleaf/&quot;&gt;metadata&lt;/a&gt; fields on posts and assets to achieve a unique color palette for each page and to control how images were displayed throughout the layout. &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;On the blog, some posts are more text-heavy whereas sometimes Erin wants a glorious image header. To make it flexible, we look for an asset with the [meta field] &lt;code&gt;type&lt;/code&gt; of &lt;code&gt;hero&lt;/code&gt; and display that image above the post excerpt. If there’s no hero image, then the post text displays as normal.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jessicaharllee.com/notes/building-erin-nolans-website/&quot;&gt;Read Jessica&amp;rsquo;s post over on her site.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New: Asset Metadata and Quick Post Edit</title>
+      <link>http://www.siteleaf.com/blog/new-asset-meta-and-quick-post-edit</link>
+      <pubDate>Tue, 03 Dec 2013 14:53:00 -0500</pubDate>
+      <author>Sawyer Hollenshead</author>
+      <guid>http://www.siteleaf.com/blog/new-asset-meta-and-quick-post-edit</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re constantly working on improving the Siteleaf experience and making it as flexible as possible. Today we&amp;rsquo;re happy to introduce two new features:&lt;/p&gt;
+
+&lt;h3&gt;Asset metadata&lt;/h3&gt;
+
+&lt;p&gt;Just like &lt;a href=&quot;http://www.siteleaf.com/blog/metadata-in-siteleaf/&quot;&gt;metadata&lt;/a&gt; on your Siteleaf posts, pages, and sites, asset metadata is a flexible way to add additional information to the assets uploaded to your site. This is perfect for things like captions, alt text, adding location info, and more. In your Siteleaf theme, you can access asset metadata through the asset&amp;rsquo;s &lt;a href=&quot;https://github.com/siteleaf/siteleaf-themes#metadata&quot;&gt;meta variable&lt;/a&gt;. For example, if you had an asset meta field with a name of &amp;ldquo;caption&amp;rdquo;, you would access its value like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;asset.meta.caption
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For a more advanced example of how you could use asset metadata, &lt;a href=&quot;http://labs.siteleaf.net/responsive-images/&quot;&gt;check out our latest Siteleaf lab&lt;/a&gt; where we use asset metadata and a JS library to swap out images based on the window width.&lt;/p&gt;
+
+&lt;h3&gt;Quick post edit&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/quick-post-edit.jpg&quot; alt=&quot;quick-post-edit&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Another new feature we&amp;rsquo;ve added to the Siteleaf management area is the ability to quickly edit a post without leaving the list of posts. This is perfect if you just need to make a small change to a post&amp;rsquo;s title, toggle its visibility, or to reorder your posts by their publish date.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Moving to Siteleaf</title>
+      <link>http://www.siteleaf.com/blog/moving-to-siteleaf</link>
+      <pubDate>Thu, 21 Nov 2013 01:22:00 -0500</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/moving-to-siteleaf</guid>
+      <description>&lt;p&gt;Forget the CMS headaches of yesteryear, moving your website to Siteleaf is surprisingly easy. Since Siteleaf publishes to static files, it&amp;rsquo;s also a great way to speed up your site, reduce server costs, and have a permanent archive of your site. Bring your content with you using a simple &lt;a href=&quot;https://gist.github.com/sskylar/5824224&quot;&gt;JSON import script&lt;/a&gt; powered by the &lt;a href=&quot;https://github.com/siteleaf/siteleaf-api&quot;&gt;Siteleaf API&lt;/a&gt; (also available for &lt;a href=&quot;https://gist.github.com/sskylar/5834451&quot;&gt;Jekyll&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Here are four people who&amp;rsquo;ve recently made the move, and how they got here:&lt;/p&gt;
+
+&lt;h3&gt;Kilian McMahon&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://kilmc.com&quot;&gt;&lt;img src=&quot;/assets/killian.jpg&quot; alt=&quot;kilian&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kilian is a designer from Dublin, Ireland who works on &lt;a href=&quot;http://tito.io&quot;&gt;Tito&lt;/a&gt;, &lt;a href=&quot;http://ull.ie&quot;&gt;Úll&lt;/a&gt;, among other fun things. He recently redesigned his personal site on Siteleaf after trying just about everything else:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I’ve been through a lot of setups for my personal site; static files, blogging services, folder based installations. All of them having their merits, but equally having pitfalls which really frustrated me to the point where I just wouldn’t publish to it&amp;hellip;&lt;br&gt;&lt;br&gt;It took me roughly a day to re-design and port my old site to Siteleaf, with learning time and some design decisions taking up a lot of that time.&lt;br&gt;&lt;br&gt;What Siteleaf has given me over all is a confidence that I can be flexible without having to tear it all down and start again. My content is in the CMS, easy to restructure and iterate on as I refine my approach to documenting and publishing the various aspects of my life that I want online.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Read more at &lt;a href=&quot;http://kilmc.com/writing/site-redesign/&quot;&gt;kilmc.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Erica Heinz&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ericaheinz.com&quot;&gt;&lt;img src=&quot;/assets/erica.jpg&quot; alt=&quot;erica&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Erica is a freelance web designer and developer, and interaction design teacher at Parsons. She recently redesigned her portfolio on Siteleaf:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is my first site on Siteleaf, and it will not be the last. I’m really happy with how clear and smart the system is. Portfolios and blogs obviously need to be really simple and enjoyable to maintain, otherwise they’ll be avoided&amp;hellip;&lt;br&gt;&lt;br&gt;Content that you enter in Siteleaf is synced to your local environment, so you’re not constantly reinstalling plugins locally or downloading your database like with Wordpress.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Read more at &lt;a href=&quot;http://www.ericaheinz.com/notes/new-site-new-work&quot;&gt;ericaheinz.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Kyle Roderick&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://kyleroderick.com&quot;&gt;&lt;img src=&quot;/assets/kyle.jpg&quot; alt=&quot;kyle&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kyle is a California-based interaction and visual designer for mobile hardware and software products, he recently moved his Wordpress site to Siteleaf:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;It follows the same style I had previously while using Wordpress, so I was able to really compare apples to apples. I could compare things like ease of implementation, page load times, and deployment.&lt;br&gt;&lt;br&gt;One of the major concerns of running the [site] on Wordpress under the Pagelines DMS system was page load times. For a text-only site, it was incredible that I was averaging ~5 seconds for each load. There had to be a better solution. After implementing this site with Siteleaf, I’ve brought the load time down to 400-500ms.&lt;br&gt;&lt;br&gt;The more I work with the service, the more it moulds to how I’d expect a CMS to work. It’s been about 4 weeks now and I’ve already begun planning the move of some of my other sites to Siteleaf.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Read more at &lt;a href=&quot;http://kyleroderick.com/blog/the-move-to-siteleaf/&quot;&gt;kyleroderick.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Jessica Harllee&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jessicaharllee.com&quot;&gt;&lt;img src=&quot;/assets/jessica.jpg&quot; alt=&quot;jessica&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Jessica is a Brooklyn-based designer who works at Kickstarter, and recently redesigned her portfolio on Siteleaf (she also is a two time &lt;a href=&quot;/blog/hackday&quot;&gt;Hackday&lt;/a&gt; attendee!):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;I write Sass every day, manage my work with Git, and can do prototypes in Rails. Terminal no longer scares me and I can’t imagine a life without partials. My personal site, on the other hand, was growing staler by the day and the thought of trying to hardcode more pieces in the portfolio was stressing me out&amp;hellip;&lt;br&gt;&lt;br&gt;Using Wordpress for a portfolio site like this has always felt hacky and Rails was probably a bit more intense than I needed. Siteleaf seemed like it fit my needs by being both flexibile and simple.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Read more at &lt;a href=&quot;http://jessicaharllee.com/notes/a-redesign-with-siteleaf/&quot;&gt;jessicaharllee.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sites we love</title>
+      <link>http://www.siteleaf.com/blog/sites-we-love</link>
+      <pubDate>Thu, 31 Oct 2013 15:24:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/sites-we-love</guid>
+      <description>&lt;p&gt;At Siteleaf, nothing makes us happier than seeing our customers build amazing websites. We proudly showcase these in our ever-growing &lt;a href=&quot;http://www.siteleaf.com/gallery&quot;&gt;Gallery&lt;/a&gt; for inspiration.&lt;/p&gt;
+
+&lt;p&gt;Some of our recent favorites include:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://stet.editorially.com/&quot;&gt;STET&lt;/a&gt;&lt;/strong&gt; - a writers’ journal on culture and technology featuring multiple authors and beautifully art directed posts, from the folks at &lt;a href=&quot;http://editorially.com/&quot;&gt;Editorially&lt;/a&gt;. While you&amp;rsquo;re there, make sure to read &lt;a href=&quot;http://stet.editorially.com/articles/why-markup-and-markdown-matter/&quot;&gt;Why markup (and Markdown) matter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://nearlyimpossible.org/&quot;&gt;Nearly Impossible&lt;/a&gt;&lt;/strong&gt; - a conference for people who &amp;ldquo;make and sell physical products&amp;rdquo;, hosted in New York City this November. This very possible website pairs nicely with &lt;a href=&quot;https://tito.io&quot;&gt;Tito&lt;/a&gt; for ticket sales.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://jessicaharllee.com/&quot;&gt;Jessica Harllee&lt;/a&gt;&lt;/strong&gt; - this Brooklyn-based designer showcases her work at &lt;a href=&quot;http://www.kickstarter.com/&quot;&gt;Kickstarter&lt;/a&gt; and beyond with a portfolio and blog powered by Siteleaf. Make sure to check out the excellent blog post about her &lt;a href=&quot;http://jessicaharllee.com/notes/a-redesign-with-siteleaf/&quot;&gt;redesign with Siteleaf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://studioyoume.com.au/&quot;&gt;Studio You and Me&lt;/a&gt;&lt;/strong&gt; - this clean and minimal website makes use of Siteleaf&amp;rsquo;s post assets to create simple photo galleries, beautifully showcasing the work of this Australian duo.&lt;/p&gt;
+
+&lt;p&gt;Check out our &lt;a href=&quot;http://www.siteleaf.com/gallery&quot;&gt;Gallery&lt;/a&gt; for more inspiration, and make sure to tweet &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;@siteleaf&lt;/a&gt; with your submissions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Markdown in metadata</title>
+      <link>http://www.siteleaf.com/blog/markdown-metadata</link>
+      <pubDate>Tue, 29 Oct 2013 11:55:00 -0400</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/markdown-metadata</guid>
+      <description>&lt;p&gt;In previous posts, we talked about using &lt;a href=&quot;http://www.siteleaf.com/blog/markdown-in-siteleaf/&quot;&gt;Markdown&lt;/a&gt; for text formatting and &lt;a href=&quot;http://www.siteleaf.com/blog/metadata-in-siteleaf/&quot;&gt;Metadata&lt;/a&gt; for extending your content in Siteleaf.&lt;/p&gt;
+
+&lt;p&gt;Markdown makes it easy to add links and &lt;code&gt;*emphasis*&lt;/code&gt; to your content without having to write HTML. While your &lt;code&gt;body&lt;/code&gt; content uses Markdown by default, you can also apply this easy-to-use formatting to your metadata.&lt;/p&gt;
+
+&lt;p&gt;Just add Markdown right in your metadata field:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/meta-markdown.png&quot; alt=&quot;meta-markdown&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Then in your template, apply the &lt;a href=&quot;https://github.com/siteleaf/siteleaf-themes#filters-and-tags&quot;&gt;markdown&lt;/a&gt; Liquid filter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{site.meta[&amp;#39;sidebar&amp;#39;] | markdown}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;
+
+&lt;p&gt;You can use this to add links and simple markup to sidebar text, footers, post summaries, and anywhere else you use metadata.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: Layouts in Siteleaf</title>
+      <link>http://www.siteleaf.com/blog/layouts-in-siteleaf</link>
+      <pubDate>Tue, 29 Oct 2013 10:42:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://www.siteleaf.com/blog/layouts-in-siteleaf</guid>
+      <description>&lt;p&gt;In my last article about &lt;a href=&quot;http://siteleaf.com&quot;&gt;Siteleaf&lt;/a&gt;, I wrote about what goes into &lt;a href=&quot;/blog/porting-a-theme-to-siteleaf/&quot;&gt;porting a theme&lt;/a&gt; to Siteleaf from another CMS. This time around, I’ll show you how to write cleaner, less redundant templates through the use of layouts.&lt;/p&gt;
+
+&lt;h3&gt;What is a layout?&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        ...
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;header&amp;gt;...&amp;lt;/header&amp;gt;
+        {{ content }}
+        &amp;lt;footer&amp;gt;...&amp;lt;/footer&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In Siteleaf, a layout is a base template that can be used and reused as a foundation for your website. For example, the &lt;a href=&quot;https://github.com/destroytoday/destroytoday.com/blob/master/_layouts/default.html&quot;&gt;default layout&lt;/a&gt; for my &lt;a href=&quot;http://destroytoday.com&quot;&gt;personal website&lt;/a&gt; consists of the HTML head content, the header, and the footer. In between the header and footer, I use a &lt;code&gt;{{ content }}&lt;/code&gt; tag to insert the rest of my website’s content. This way, I don’t need to copy and paste the surrounding code into every template. I can assign a block of HTML to the &lt;code&gt;content&lt;/code&gt; variable and &lt;a href=&quot;https://github.com/Shopify/liquid/&quot;&gt;Liquid&lt;/a&gt;, our templating engine, will place the variable’s value wherever referenced.&lt;/p&gt;
+
+&lt;h3&gt;Creating a layout&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/layouts-in-siteleaf-structure-0.jpg&quot; alt=&quot;file structure&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Let’s get our hands dirty by building our own layout. Start by creating a &lt;code&gt;_layouts&lt;/code&gt; folder in your website’s root directory. In this folder, create a &lt;code&gt;default.html&lt;/code&gt; file. This file will be used as the base layout. Below is some basic code you can use to get started with your layout:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;title&amp;gt;{{ title }}&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        {{ content }}
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code simply sets the browser window title and shows any HTML assigned to the &lt;code&gt;content&lt;/code&gt; variable.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/layouts-in-siteleaf-structure-1.jpg&quot; alt=&quot;file structure&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Now, in your website’s default template (&lt;code&gt;default.html&lt;/code&gt; in your root directory), write the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;{% capture content %}
+    &amp;lt;article&amp;gt;
+        &amp;lt;h1&amp;gt;{{ title }}&amp;lt;/h1&amp;gt;
+        {{ body }}
+    &amp;lt;/article&amp;gt;
+{% endcapture %}
+
+{% include &amp;#39;layouts/default&amp;#39; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With Liquid, we can use the &lt;code&gt;capture&lt;/code&gt; tag to assign a block of content to a given variable. In our example above, we assign the title and body of the current page to the variable, &lt;code&gt;content&lt;/code&gt;. We then use the &lt;code&gt;include&lt;/code&gt; tag to take an HTML file—our default layout—and insert it on that line. The included layout will use the &lt;code&gt;content&lt;/code&gt; variable we assigned and Liquid will render this template as a complete HTML page.&lt;/p&gt;
+
+&lt;h3&gt;Using multiple layouts&lt;/h3&gt;
+
+&lt;p&gt;Now that we have a single layout, let’s take a look at adding another one. Imagine we have a blog page that shows a post with next and previous links. Since we don’t want these links on all of our pages, we’ll create a new layout on top of the default layout.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/layouts-in-siteleaf-structure-2.jpg&quot; alt=&quot;file structure&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Start by creating a &lt;code&gt;blog.html&lt;/code&gt; file in your &lt;code&gt;_layouts&lt;/code&gt; directory and write the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;{% capture content %}
+    &amp;lt;article&amp;gt;
+        &amp;lt;h1&amp;gt;{{ title }}&amp;lt;/h1&amp;gt;
+        {{ body }}
+    &amp;lt;/article&amp;gt;
+    &amp;lt;nav&amp;gt;
+        {% if previous %}&amp;lt;a href=&amp;quot;{{ previous }}&amp;quot;&amp;gt;previous&amp;lt;/a&amp;gt;{% endif %}
+        {% if next %}&amp;lt;a href=&amp;quot;{{ next }}&amp;quot;&amp;gt;next&amp;lt;/a&amp;gt;{% endif %}
+    &amp;lt;/nav&amp;gt;
+{% endcapture %}
+
+{% include &amp;#39;layouts/default&amp;#39; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Like before, we assign our title and body to the variable &lt;code&gt;content&lt;/code&gt;, but this time, we also add links to the previous and next posts if they exist. Then, we include the default layout.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/layouts-in-siteleaf-structure-3.jpg&quot; alt=&quot;file structure&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Next, we need to write a blog template that uses this layout. Create a &lt;code&gt;blog&lt;/code&gt; directory in your website’s folder and a &lt;code&gt;default.html&lt;/code&gt; file inside of it. This HTML file will now be used by all pages and posts that start with &lt;code&gt;/blog&lt;/code&gt; in their URL. Inside the &lt;code&gt;blog/default.html&lt;/code&gt; file, write the following line of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;{% include &amp;#39;layouts/blog&amp;#39; %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, all of our blog posts will use the blog layout, displaying the post with next and previous links, but also inheriting the default layout, so we keep all of our HTML head content. We use an include rather than just putting its code in this template because it allows us to reuse the layout elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Let’s say we started a new section on our website, like “Library,” which uses posts for books we’ve read. We could change the name of our blog layout to something more reusable, like &lt;code&gt;paginated.html&lt;/code&gt;, which tells us that the layout supports pagination through the next and previous links. Then, we can use it for both our blog and our library.&lt;/p&gt;
+
+&lt;h3&gt;Wrapping up&lt;/h3&gt;
+
+&lt;p&gt;Layouts can be incredibly useful for websites that vary from section to section. They can also help keep code to a minimum, resulting in cleaner code base. Try applying layouts to your current website and see if you can reduce the copy pasta. And, as always, don’t hesitate to &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;reach out&lt;/a&gt; if you have any questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;This article was originally posted on destroytoday.com.&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Developer accounts</title>
+      <link>http://www.siteleaf.com/blog/developer-accounts</link>
+      <pubDate>Tue, 22 Oct 2013 10:32:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://www.siteleaf.com/blog/developer-accounts</guid>
+      <description>&lt;p&gt;Today, we’re announcing developer accounts. At launch, we required a subscription in order to use Siteleaf, unless you were invited to a site. Now, you can sign up for free, test the waters, and get a feel for the service before subscribing. If you want to publish your site, simply upgrade to one of our &lt;a href=&quot;/plans&quot;&gt;plans&lt;/a&gt; and publish away.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/developer-accounts-transfer-ownership.jpg&quot; alt=&quot;transfer-ownership&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Alongside developer accounts, we’re introducing the ability to transfer ownership of sites. Instead of using up your site limit with client websites, transfer ownership of the sites to their account. This way, your clients can pay for their account directly and you can make space for that side project you actually want to work on.&lt;/p&gt;
+
+&lt;p&gt;If you’re new to Siteleaf, &lt;a href=&quot;https://manage.siteleaf.com/signup?plan=developer&quot;&gt;try out a developer account&lt;/a&gt; today and, as always, feel free to reach out to us on &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;Twitter&lt;/a&gt; or by &lt;a href=&quot;mailto:team@siteleaf.com&quot;&gt;email&lt;/a&gt; if you need a hand.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

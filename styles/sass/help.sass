@@ -1,0 +1,186 @@
+// Version: 1.0
+@import 'sass-toolbox'
+
+// Base styles
+// ================================================
+.help-wrap
+  line-height: 1.4
+  margin-bottom: 100px
+
+  +max-width(600px)
+    margin: 50px auto
+
+  a
+    color: $blue
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  code
+    background: $bg_grey
+    padding: 4px
+    font-size: 85%
+
+  pre
+    padding: 10px
+    background: $bg_grey
+    overflow: auto
+    line-height: 1.4
+
+    code
+      padding: 0
+      margin: 0
+      background: none
+
+  table
+    margin: 0 auto 30px
+    width: 100%
+
+  th
+    font-weight: bold
+
+  th, td
+    padding: 10px 15px 10px 0
+    margin: 0
+    text-align: left
+    font-size: 85%
+    border-bottom: 1px solid $border_light_grey
+
+    &:last-child
+      padding-right: 0
+
+  tr:last-child
+    th, td
+      border-bottom: 0 none
+
+  .body
+    line-height: 1.5
+
+  h3, h4, p, ol, ul, pre, table
+    max-width: $w_content_wide_column
+    text-align: left
+
+  img, embed, object, video, audio
+    max-width: 100%
+
+// Search
+// ================================================
+.help-search-form
+  margin: 0 auto
+  text-align: center
+  float: none
+  max-width: $w_content_wide_column
+  overflow: visible
+
+.help-search-field
+  display: block
+  width: 100%
+  border: 0 none
+  background: $bg_grey
+  border-radius: 3px
+  padding: 10px
+  font-size: em($fs_small)
+  text-align: left
+
+.st-snippet
+  em
+    background: rgba($yellow, 0.3)
+
+.st-modal-scrollable
+  form
+    overflow: visible
+    float: none
+
+div.swiftype div.st-result-listing
+  margin-left: auto
+
+div.swiftype div.st-result-listing .st-results div.st-result .st-result-text h3
+  text-align: left
+
+  a
+    color: $blue
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+div.swiftype div.st-result-listing,
+div.swiftype div.st-result-listing div.st-search-summary,
+div.swiftype div.st-result-listing .st-results,
+div.swiftype div.st-result-listing .st-results div.st-result .st-result-text
+  max-width: none !important
+  margin-left: 0 !important
+
+div.swiftype div.st-result-listing .st-results div.st-result
+  padding-left: 20px
+  padding-right: 20px
+
+body .swiftype-widget
+  .autocomplete
+    +box-shadow(none)
+    border: 1px solid $border_light_grey
+    margin: 5px 0 0
+
+    li:first-child
+      border-top-left-radius: 3px
+      border-top-right-radius: 3px
+
+    li:last-child
+      border-bottom-left-radius: 3px
+      border-bottom-right-radius: 3px
+
+
+
+// Breadcrumbs
+// ================================================
+.help-breadcrumbs
+  margin: -15px auto $gutter
+  text-align: left
+  max-width: $w_content_wide_column
+  font-size: 85%
+
+.help-current-breadcrumb
+  color: $text_light
+
+
+// Table of contents
+// ================================================
+.help-wrap
+  .help-topics, .help-subtopics
+    padding: 0
+    list-style: none
+
+  .help-topics
+    margin: 0 auto ($gutter / 2)
+    line-height: 1.5
+
+  .help-topic
+    margin: 0
+    padding: 10px 0
+    border-bottom: 1px solid $border_light_grey
+
+    &:last-child
+      border-bottom: 0 none
+
+  .help-subtopics
+    margin: 5px 0 0
+    line-height: 1.5
+
+  .help-subtopic
+    font-size: em($fs_small)
+    margin: 2px 0
+
+    &:before
+      content: '-'
+      margin-right: 5px
+      color: $text_light
+
+
+// Posts
+// ================================================
+.help-post-date
+  color: $text_light
+  font-size: em($fs_small)
+  display: inline-block
+  width: 120px
