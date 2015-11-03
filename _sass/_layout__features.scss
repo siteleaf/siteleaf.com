@@ -51,12 +51,13 @@
 // --------
 
 // general
+$fadeDuration: 250ms;
+
 .g__window {
   font-size: $font-size-n1;
-  border: 1px solid $color-gray-lighter;
   border-radius: $border-radius;
   background-color: transparent;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter, inset 0 0 1px $color-black-alpha-dark;
   overflow: hidden;
   position: relative;
 }
@@ -65,17 +66,18 @@
   background-color: $color-white;
 }
 .g__window--editor {
-  @include linear-gradient("top, rgba(0, 0, 0, 0) #{$border-radius + 1px},  #{$color-navy} #{$border-radius + 1px}"); // offset background border radiuses at top aren't weird
+  background-color: $color-navy;
 }
 .g__window--terminal {
-  @include linear-gradient("top, rgba(0, 0, 0, 0) #{$border-radius + 1px},  #{$color-gray-darker} #{$border-radius + 1px}"); // offset background border radiuses at top aren't weird
+  background-color: $color-gray-darker;
 }
 .g__window__topBar {
   font-family: sans-serif;
   text-align: center;
   background-color: lighten($color-gray-lighter, 10%);
+  border: 1px solid $color-black-alpha-light;
   color: $color-gray;
-  padding: 0.1em;
+  padding: 2px;
   font-size: $font-size-n2;
   & > * {
     display: inline-block;
@@ -143,7 +145,7 @@
   background-color: $color-blue-dark;
   color: $color-white;
 }
-.g__finderItem--highlighted--parent {
+.g__finderItem--highlightedParent {
   background-color: $color-gray-lighter;
 }
 .g__finderItem__icon {
@@ -183,40 +185,44 @@ $v-offset-window--jekyll: 2em;
   }
 }
 
-// g-develop
-$height-window--develop: 25em;
-$v-offset-window--develop: 2.5em;
-
-.g-develop {
-  position: relative;
-  padding-bottom: $v-offset-window--develop;
-  .g__window {
-    height: $height-window--develop;
-    width: 95%;
-    &:nth-child(2) {
-      position: absolute;
-      left: 5%;
-      bottom: 0;
-    }
+@include keyframes(genDir) {
+  0% {
+    opacity: 0;
+    height: auto;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
   }
 }
-.g-develop__navButton {
-  color: $color-gray-light;
-  position: relative;
-  top: 0.1em;
-  line-height: 0;
-  @include max-width($bp-xs) {
-    display: none;
+
+.a-genDir {
+  .is-js & {
+    height: 0;
+    opacity: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("genDir #{$fadeDuration} 400ms forwards");
   }
 }
-.g-develop__navInput {
-  background-color: $color-white;
-  display: inline-block;
-  width: 50%;
-  border-radius: $border-radius;
-  line-height: 1.3;
+
+.a-finderPane--second {
+  .is-js & {
+    opacity: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("fadeIn #{$fadeDuration} 450ms forwards");
+  }
 }
 
+.a-finderPane--third {
+  .is-js & {
+    opacity: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("fadeIn #{$fadeDuration} 500ms forwards");
+  }
+}
 
 // g-github
 $avatar-height:         64px;
@@ -231,9 +237,12 @@ $sync-height:           50px;
 .g-github {
   font-family: sans-serif;
   font-size: $font-size-n1;
-  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   position: relative;
   width: calc(100% - #{$sync-height / 3});
+  box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
+  background-color: $color-white;
+  border: 1px solid $color-gray-lighter;
+  border-radius: $border-radius;
 }
 .g-github__sync {
   position: absolute;
@@ -251,8 +260,7 @@ $sync-height:           50px;
 }
 .g-github__topBar {
   background-color: lighten($color-gray-lighter, 10%);
-  border: 1px solid $color-gray-lighter;
-  border-radius: $border-radius $border-radius 0 0;
+  border-bottom: 1px solid $color-gray-lighter;
   padding: 0.15rem 0.75rem;
 }
 .g-github__logo {
@@ -260,18 +268,11 @@ $sync-height:           50px;
   font-size: $font-size-4;
 }
 .g-github__item {
-  background-color: $color-white;
   padding: 1em;
   position: relative;
   height: calc(#{$avatar-height} + #{$github__item-padding});
-  border-left: 1px solid $color-gray-lighter;
-  border-right: 1px solid $color-gray-lighter;
   &:not(:last-of-type) {
     border-bottom: 1px solid $color-gray-lightest;
-  }
-  &:last-of-type {
-    border-bottom: 1px solid $color-gray-lighter;
-    border-radius: 0 0 $border-radius $border-radius;
   }
   @include max-width($bp-sm) {
     height: calc(#{$avatar-height-sm} + #{$github__item-padding});
@@ -327,6 +328,15 @@ $sync-height:           50px;
     width: $avatarChild-height-sm;
     top: $avatarChild-offset-sm;
     left: $avatarChild-offset-sm;
+  }
+}
+
+.a-githubCheck {
+  .is-js & {
+    opacity: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("fadeIn #{$fadeDuration} 500ms forwards");
   }
 }
 
@@ -413,6 +423,100 @@ $x-padding-input: 0.5em;
   }
 }
 
+$field-start-width: 10em;
+$field-end-width:   22.5em;
+@include keyframes(metadataField) {
+  0% {
+    width: $field-start-width;
+  }
+  100% {
+    width: $field-end-width;
+  }
+}
+
+.a-metadataField {
+  .is-js & {
+    width: $field-start-width;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .is-js .is-visible & {
+    @include animation("metadataField 2s steps(40, end) forwards");
+  }
+}
+
+// g-develop
+$height-window--develop: 25em;
+$v-offset-window--develop: 2.5em;
+
+.g-develop {
+  position: relative;
+  padding-bottom: $v-offset-window--develop;
+  .g__window {
+    height: $height-window--develop;
+    width: 95%;
+    &:nth-child(2) {
+      position: absolute;
+      left: 5%;
+      bottom: 0;
+    }
+  }
+}
+.g-develop__navButton {
+  color: $color-gray-light;
+  position: relative;
+  top: 0.1em;
+  line-height: 0;
+  @include max-width($bp-xs) {
+    display: none;
+  }
+}
+.g-develop__navInput {
+  background-color: $color-white;
+  display: inline-block;
+  width: 50%;
+  border-radius: $border-radius;
+  line-height: 1.3;
+  position: relative;
+}
+.g-develop__navInputLoader {
+  background-color: $color-blue;
+  height: 2px;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
+@include keyframes(urlLoader) {
+  0% {
+    width: 0;
+  }
+  8% {
+    width: 10%;
+  }
+  17% {
+    width: 15%;
+  }
+  66% {
+    width: 100%;
+    opacity: 1
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.a-urlLoader {
+  .is-js & {
+    width: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("urlLoader #{$fadeDuration * 3} 500ms forwards");
+  }
+}
+
 // g-editor
 .g-editor {
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
@@ -450,6 +554,8 @@ $x-padding-input: 0.5em;
   padding: 1em;
   border-radius: 0 0 $border-radius $border-radius;
   position: relative;
+  max-height: 18em;
+  overflow: hidden;
   &:before {
     content: "";
     display: block;
@@ -463,8 +569,10 @@ $x-padding-input: 0.5em;
 }
 .g-editor__hover {
   position: absolute;
-  left: 45%;
-  bottom: 0.5em;
+  bottom: 1em;
+  left: 50%;
+  width: 8em;
+  margin-left: -4em;
   color: $color-white;
   text-align: center;
 }
@@ -505,4 +613,35 @@ $x-padding-input: 0.5em;
   position: relative;
   top: 0.75em;
   left: -1.05em;
+}
+
+@include keyframes(editorTextArea) {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba($color-gray-lighter, 0.8);
+  }
+}
+
+.a-editorTextarea {
+  .is-js & {
+    &:before {
+      background-color: transparent;
+    }
+  }
+  .is-js .is-visible & {
+    &:before {
+      @include animation("editorTextArea #{$fadeDuration} 500ms forwards");
+    }
+  }
+}
+
+.a-editorHover {
+  .is-js & {
+    opacity: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("fadeIn #{$fadeDuration} ease-in 500ms forwards");
+  }
 }
