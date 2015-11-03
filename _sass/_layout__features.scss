@@ -480,13 +480,6 @@ $v-offset-window--develop: 2.5em;
   line-height: 1.3;
   position: relative;
 }
-.g-develop__navInputLoader {
-  background-color: $color-blue;
-  height: 2px;
-  width: 100%;
-  display: block;
-  position: absolute;
-}
 
 @include keyframes(urlLoader) {
   0% {
@@ -510,6 +503,10 @@ $v-offset-window--develop: 2.5em;
 
 .a-urlLoader {
   .is-js & {
+    background-color: $color-blue;
+    height: 2px;
+    display: block;
+    position: absolute;
     width: 0;
   }
   .is-js .is-visible & {
