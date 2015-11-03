@@ -2,214 +2,214 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>http://www.siteleaf.com/</loc>
+    <loc>http://sl.siteleaf.net/</loc>
     <lastmod>2015-03-31 19:48:11 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
-    <loc>http://www.siteleaf.com/plans</loc>
+    <loc>http://sl.siteleaf.net/plans</loc>
     <lastmod>2015-03-31 19:48:19 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
-    <loc>http://www.siteleaf.com/blog</loc>
+    <loc>http://sl.siteleaf.net/blog</loc>
     <lastmod>2015-03-31 19:48:25 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
     
     <url>
-      <loc>http://www.siteleaf.com/blog/publishing-via-the-api</loc>
+      <loc>http://sl.siteleaf.net/blog/publishing-via-the-api</loc>
       <lastmod>2015-06-24 21:20:43 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/advanced-liquid-group-by</loc>
+      <loc>http://sl.siteleaf.net/blog/advanced-liquid-group-by</loc>
       <lastmod>2015-04-09 23:01:26 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/advanced-liquid-where</loc>
+      <loc>http://sl.siteleaf.net/blog/advanced-liquid-where</loc>
       <lastmod>2015-04-09 23:01:42 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/advanced-liquid-sort</loc>
+      <loc>http://sl.siteleaf.net/blog/advanced-liquid-sort</loc>
       <lastmod>2015-04-09 23:01:31 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/using-aws-s3-and-route-53</loc>
+      <loc>http://sl.siteleaf.net/blog/using-aws-s3-and-route-53</loc>
       <lastmod>2015-04-07 04:45:17 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/improvements-to-page-and-post-management</loc>
+      <loc>http://sl.siteleaf.net/blog/improvements-to-page-and-post-management</loc>
       <lastmod>2014-07-10 15:59:07 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/footnotes-and-highlights</loc>
+      <loc>http://sl.siteleaf.net/blog/footnotes-and-highlights</loc>
       <lastmod>2015-04-07 04:50:48 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/stickers</loc>
+      <loc>http://sl.siteleaf.net/blog/stickers</loc>
       <lastmod>2015-04-06 22:22:39 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/publish-to-sftp</loc>
+      <loc>http://sl.siteleaf.net/blog/publish-to-sftp</loc>
       <lastmod>2014-06-13 15:28:44 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/assets-in-meta-fields</loc>
+      <loc>http://sl.siteleaf.net/blog/assets-in-meta-fields</loc>
       <lastmod>2015-04-07 04:50:38 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/siteleaf-turns-one</loc>
+      <loc>http://sl.siteleaf.net/blog/siteleaf-turns-one</loc>
       <lastmod>2014-06-07 01:32:25 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/github-pages</loc>
+      <loc>http://sl.siteleaf.net/blog/github-pages</loc>
       <lastmod>2014-06-13 15:20:32 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/introducing-user-roles</loc>
+      <loc>http://sl.siteleaf.net/blog/introducing-user-roles</loc>
       <lastmod>2014-05-05 14:36:37 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/built-on-siteleaf-made-by-eno</loc>
+      <loc>http://sl.siteleaf.net/blog/built-on-siteleaf-made-by-eno</loc>
       <lastmod>2014-01-28 19:51:37 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/new-asset-meta-and-quick-post-edit</loc>
+      <loc>http://sl.siteleaf.net/blog/new-asset-meta-and-quick-post-edit</loc>
       <lastmod>2015-04-08 20:32:16 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/moving-to-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/moving-to-siteleaf</loc>
       <lastmod>2013-11-21 19:28:06 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/sites-we-love</loc>
+      <loc>http://sl.siteleaf.net/blog/sites-we-love</loc>
       <lastmod>2013-11-21 08:41:54 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/markdown-metadata</loc>
+      <loc>http://sl.siteleaf.net/blog/markdown-metadata</loc>
       <lastmod>2015-04-08 20:35:36 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/layouts-in-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/layouts-in-siteleaf</loc>
       <lastmod>2015-04-08 20:46:51 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/developer-accounts</loc>
+      <loc>http://sl.siteleaf.net/blog/developer-accounts</loc>
       <lastmod>2013-10-22 15:33:46 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/brooklyn-beta</loc>
+      <loc>http://sl.siteleaf.net/blog/brooklyn-beta</loc>
       <lastmod>2014-02-06 21:36:08 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/porting-a-theme-to-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/porting-a-theme-to-siteleaf</loc>
       <lastmod>2015-04-08 20:47:52 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/hackday</loc>
+      <loc>http://sl.siteleaf.net/blog/hackday</loc>
       <lastmod>2013-11-21 08:41:24 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/markdown-in-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/markdown-in-siteleaf</loc>
       <lastmod>2015-04-07 04:49:43 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/taxonomy-in-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/taxonomy-in-siteleaf</loc>
       <lastmod>2015-04-08 20:48:49 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/developing-sites</loc>
+      <loc>http://sl.siteleaf.net/blog/developing-sites</loc>
       <lastmod>2015-04-08 20:44:38 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/metadata-in-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/metadata-in-siteleaf</loc>
       <lastmod>2015-04-08 20:36:01 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/getting-started</loc>
+      <loc>http://sl.siteleaf.net/blog/getting-started</loc>
       <lastmod>2015-04-08 20:40:48 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/hello-world-im-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/hello-world-im-siteleaf</loc>
       <lastmod>2015-04-08 20:40:39 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/video</loc>
+      <loc>http://sl.siteleaf.net/blog/video</loc>
       <lastmod>2013-07-01 02:31:07 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/overview</loc>
+      <loc>http://sl.siteleaf.net/blog/overview</loc>
       <lastmod>2015-04-08 20:41:27 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://www.siteleaf.com/blog/introducing-siteleaf</loc>
+      <loc>http://sl.siteleaf.net/blog/introducing-siteleaf</loc>
       <lastmod>2013-10-22 15:19:18 +0000</lastmod>
       <priority>0.5</priority>
     </url>
@@ -217,42 +217,42 @@
   
 
   <url>
-    <loc>http://www.siteleaf.com/gallery</loc>
+    <loc>http://sl.siteleaf.net/gallery</loc>
     <lastmod>2015-03-31 19:48:32 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
-    <loc>http://www.siteleaf.com/themes</loc>
+    <loc>http://sl.siteleaf.net/themes</loc>
     <lastmod>2015-03-31 19:51:43 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
-    <loc>http://www.siteleaf.com/purpose</loc>
+    <loc>http://sl.siteleaf.net/purpose</loc>
     <lastmod>2014-07-10 15:56:55 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
-    <loc>http://www.siteleaf.com/privacy</loc>
+    <loc>http://sl.siteleaf.net/privacy</loc>
     <lastmod>2014-07-10 15:56:55 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
-    <loc>http://www.siteleaf.com/terms</loc>
+    <loc>http://sl.siteleaf.net/terms</loc>
     <lastmod>2014-07-10 15:56:55 +0000</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
-    <loc>http://www.siteleaf.com/help</loc>
+    <loc>http://sl.siteleaf.net/help</loc>
     <lastmod>2014-07-10 15:56:55 +0000</lastmod>
     <priority>1.0</priority>
   </url>
