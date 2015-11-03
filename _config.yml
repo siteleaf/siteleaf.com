@@ -14,4 +14,10 @@ defaults:
     permalink: "/posts/:title/"
 permalinks: pretty
 twitter_username: siteleaf
-exclude: [README.markdown, package.json, Gruntfile.js, node_modules, config.ru, Gemfile*]
+exclude:
+- README.markdown
+- package.json
+- Gruntfile.js
+- node_modules
+- config.ru
+- Gemfile*
