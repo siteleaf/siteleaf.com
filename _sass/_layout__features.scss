@@ -476,6 +476,43 @@ $v-offset-window--develop: 2.5em;
   width: 50%;
   border-radius: $border-radius;
   line-height: 1.3;
+  position: relative;
+}
+.g-develop__navInputLoader {
+  background-color: $color-blue;
+  height: 2px;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
+@include keyframes(urlLoader) {
+  0% {
+    width: 0;
+  }
+  8% {
+    width: 10%;
+  }
+  17% {
+    width: 15%;
+  }
+  66% {
+    width: 100%;
+    opacity: 1
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.a-urlLoader {
+  .is-js & {
+    width: 0;
+  }
+  .is-js .is-visible & {
+    @include animation("urlLoader #{$fadeDuration * 3} 500ms forwards");
+  }
 }
 
 // g-editor
@@ -606,7 +643,7 @@ $hover-translate: "0.25em, 1em";
   }
   .is-js .is-visible & {
     &:before {
-      @include animation("editorTextArea #{$fadeDuration / 3} 500ms forwards");
+      @include animation("editorTextArea #{$fadeDuration / 2} 500ms forwards");
     }
   }
 }
@@ -617,6 +654,6 @@ $hover-translate: "0.25em, 1em";
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation("editorHover #{$fadeDuration / 3} ease-in 500ms forwards");
+    @include animation("editorHover #{$fadeDuration / 2} ease-in 500ms forwards");
   }
 }
