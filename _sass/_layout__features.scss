@@ -39,7 +39,7 @@
 }
 .section__graphic {
   @include responsive-image;
-  // pointer-events: none; // TO DO: uncomment
+  pointer-events: none;
   margin-top: $v * 2;
   margin-bottom: $v * 2;
 }
@@ -423,26 +423,26 @@ $x-padding-input: 0.5em;
   }
 }
 
-// @include keyframes(genDir) {
-//   0% {
-//     opacity: 0;
-//     height: auto;
-//   }
-//   100% {
-//     opacity: 1;
-//     height: auto;
-//   }
-// }
+@include keyframes(metadataField) {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 22.5em;
+  }
+}
 
-// .a-genDir {
-//   .is-js & {
-//     height: 0;
-//     opacity: 0;
-//   }
-//   .is-js .is-visible & {
-//     @include animation("genDir #{$fadeDuration} 300ms forwards");
-//   }
-// }
+.a-metadataField {
+  .is-js & {
+    width: 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .is-js .is-visible & {
+    @include animation("metadataField 3s steps(60, end) forwards");
+  }
+}
 
 // g-develop
 $height-window--develop: 25em;
@@ -637,7 +637,6 @@ $v-offset-window--develop: 2.5em;
 
 .a-editorHover {
   .is-js & {
-    @include translate($hover-translate);
     opacity: 0;
   }
   .is-js .is-visible & {
