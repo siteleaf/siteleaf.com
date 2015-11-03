@@ -423,24 +423,26 @@ $x-padding-input: 0.5em;
   }
 }
 
+$field-start-width: 10em;
+$field-end-width:   22.5em;
 @include keyframes(metadataField) {
   0% {
-    width: 0;
+    width: $field-start-width;
   }
   100% {
-    width: 22.5em;
+    width: $field-end-width;
   }
 }
 
 .a-metadataField {
   .is-js & {
-    width: 0;
+    width: $field-start-width;
     display: block;
     white-space: nowrap;
     overflow: hidden;
   }
   .is-js .is-visible & {
-    @include animation("metadataField 3s steps(60, end) forwards");
+    @include animation("metadataField 2s steps(40, end) forwards");
   }
 }
 

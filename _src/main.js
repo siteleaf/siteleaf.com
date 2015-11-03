@@ -12,6 +12,7 @@ $(function(){
     scrollTop = 0,
     relativeScrollTop = 0,
     scrollBottom = 0,
+    visibleBuffer = 200,
     $graphics = $('.js-graphic');
 
   // Functions
@@ -54,14 +55,14 @@ $(function(){
       var $graphic = $(this),
         graphicTop = $graphic.offset().top,
         graphicBottom = graphicTop + $graphic.height(),
-        isVisible = ((scrollBottom >= graphicTop) && (scrollTop <= graphicBottom));
+        isVisible = ((scrollBottom >= graphicTop + visibleBuffer) && (scrollTop <= graphicBottom));
 
       if (isVisible) {
         $graphic.addClass('is-visible');
       } else {
         $graphic.removeClass('is-visible');
       }
-      
+
     });
   };
 
