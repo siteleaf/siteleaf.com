@@ -613,25 +613,12 @@ $v-offset-window--develop: 2.5em;
   left: -1.05em;
 }
 
-$hover-translate: "0.25em, 1em";
-
 @include keyframes(editorTextArea) {
   0% {
     background-color: transparent;
   }
   100% {
     background-color: rgba($color-gray-lighter, 0.8);
-  }
-}
-
-@include keyframes(editorHover) {
-  0% {
-    @include translate($hover-translate);
-    opacity: 0;
-  }
-  100% {
-    @include translate("0, 0");
-    opacity: 1;
   }
 }
 
@@ -643,7 +630,7 @@ $hover-translate: "0.25em, 1em";
   }
   .is-js .is-visible & {
     &:before {
-      @include animation("editorTextArea #{$fadeDuration / 2} 500ms forwards");
+      @include animation("editorTextArea #{$fadeDuration} 500ms forwards");
     }
   }
 }
@@ -654,6 +641,6 @@ $hover-translate: "0.25em, 1em";
     opacity: 0;
   }
   .is-js .is-visible & {
-    @include animation("editorHover #{$fadeDuration / 2} ease-in 500ms forwards");
+    @include animation("fadeIn #{$fadeDuration} ease-in 500ms forwards");
   }
 }
