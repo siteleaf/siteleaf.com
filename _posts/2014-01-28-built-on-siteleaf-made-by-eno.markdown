@@ -4,7 +4,6 @@ date: 2014-01-28 19:31:00 Z
 permalink: "/blog/:title/"
 tags:
 - community
-layout: post
 hero: "/uploads/erin-nolan.jpg"
 ---
 

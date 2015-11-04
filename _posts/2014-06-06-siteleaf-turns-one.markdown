@@ -4,7 +4,6 @@ date: 2014-06-06 17:59:00 Z
 permalink: "/blog/:title/"
 tags:
 - announcement
-layout: post
 hero: 
 ---
 

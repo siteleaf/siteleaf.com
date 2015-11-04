@@ -5,7 +5,6 @@ permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
-layout: post
 hero: "/uploads/layouts-in-siteleaf.svg"
 docs:
 - naming your files

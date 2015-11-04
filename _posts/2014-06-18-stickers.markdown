@@ -4,7 +4,6 @@ date: 2014-06-18 19:51:00 Z
 permalink: "/blog/:title/"
 tags:
 - community
-layout: post
 hero: "/uploads/sticker.jpg"
 ---
 

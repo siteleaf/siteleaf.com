@@ -4,7 +4,6 @@ date: 2013-10-08 19:34:00 Z
 permalink: "/blog/:title/"
 tags:
 - event
-layout: post
 hero: "/uploads/beta.jpg"
 ---
 

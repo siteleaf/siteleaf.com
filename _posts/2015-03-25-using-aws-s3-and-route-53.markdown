@@ -5,7 +5,6 @@ permalink: "/blog/:title/"
 tags:
 - tutorial
 - aws
-layout: post
 hero: 
 ---
 

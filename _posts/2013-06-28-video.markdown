@@ -4,7 +4,6 @@ date: 2013-06-28 21:50:00 Z
 permalink: "/blog/:title/"
 tags:
 - video
-layout: post
 vimeo: '69301083'
 ---
 

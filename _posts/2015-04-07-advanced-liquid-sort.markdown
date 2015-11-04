@@ -5,7 +5,6 @@ permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
-layout: post
 hero: "/uploads/sort.svg"
 docs:
 - filters and tags

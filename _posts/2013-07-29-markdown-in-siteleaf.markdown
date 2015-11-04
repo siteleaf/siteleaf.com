@@ -5,7 +5,6 @@ permalink: "/blog/:title/"
 tags:
 - tutorial
 - markdown
-layout: post
 hero: "/uploads/markdown-in-siteleaf-ui.png"
 ---
 

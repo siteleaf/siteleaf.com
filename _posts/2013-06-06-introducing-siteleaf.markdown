@@ -4,7 +4,6 @@ date: 2013-06-06 02:47:00 Z
 permalink: "/blog/:title/"
 tags:
 - announcement
-layout: post
 hero: "/uploads/introducing-siteleaf.jpg"
 ---
 

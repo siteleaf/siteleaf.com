@@ -4,7 +4,6 @@ date: 2013-08-09 19:05:00 Z
 permalink: "/blog/:title/"
 tags:
 - event
-layout: post
 ---
 
 Introducing the very first [Siteleaf Hackday](http://siteleaf.eventbrite.com), August 24 in Brooklyn, NY. If you are new to Siteleaf, have questions, or just need some motivation to finally make that new blog, here's your chance to sit down with the Siteleaf team and talk one-on-one.

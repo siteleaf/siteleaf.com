@@ -5,7 +5,6 @@ permalink: "/blog/:title/"
 tags:
 - video
 - tutorial
-layout: post
 vimeo: '69294068'
 docs:
 - getting started

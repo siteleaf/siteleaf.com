@@ -6,7 +6,6 @@ tags:
 - tip
 - markdown
 - liquid
-layout: post
 docs:
 - metadata
 ---

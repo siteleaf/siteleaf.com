@@ -5,7 +5,6 @@ permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
-layout: post
 hero: "/uploads/an-introduction-to-siteleaf-collaboration.png"
 docs:
 - getting started

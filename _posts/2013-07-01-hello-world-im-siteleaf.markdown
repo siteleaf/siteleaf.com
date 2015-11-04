@@ -4,7 +4,6 @@ date: 2013-07-01 14:43:00 Z
 permalink: "/blog/:title/"
 tags:
 - tutorial
-layout: post
 hero: "/uploads/hello-world-im-siteleaf-create-site.png"
 ---
 

@@ -6,7 +6,6 @@ tags:
 - tutorial
 - video
 - liquid
-layout: post
 vimeo: '70121781'
 docs:
 - getting started

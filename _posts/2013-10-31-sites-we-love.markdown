@@ -4,7 +4,6 @@ date: 2013-10-31 19:24:00 Z
 permalink: "/blog/:title/"
 tags:
 - inspiration
-layout: post
 hero: "/uploads/gallery.jpg"
 ---
 

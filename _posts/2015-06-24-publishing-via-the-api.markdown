@@ -5,7 +5,6 @@ permalink: "/blog/:title/"
 tags:
 - announcement
 - tutorial
-layout: post
 hero: 
 ---
 
