@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Brooklyn Beta
 date: 2013-10-08 19:34:00 Z
+layout: post
 hero: "/uploads/beta.jpg"
 tags:
 - event

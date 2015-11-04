@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Advanced Liquid: Where'
 date: 2015-04-08 19:25:00 Z
+layout: post
 hero: "/uploads/where.svg"
 tags:
 - tutorial

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Moving to Siteleaf
 date: 2013-11-21 06:22:00 Z
+layout: post
 hero: 
 tags:
 - community

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'New: Asset Metadata and Quick Post Edit'
 date: 2013-12-03 19:53:00 Z
+layout: post
 hero: "/uploads/asset-metadata.png"
 tags:
 - announcement

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Siteleaf turns one
 date: 2014-06-06 17:59:00 Z
+layout: post
 hero: 
 tags:
 - announcement

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Introducing Siteleaf
 date: 2013-06-06 02:47:00 Z
+layout: post
 hero: "/uploads/introducing-siteleaf.jpg"
 tags:
 - announcement

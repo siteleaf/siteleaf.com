@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Tutorial: Taxonomy in Siteleaf'
 date: 2013-07-13 14:57:00 Z
+layout: post
 hero: "/uploads/taxonomy-in-siteleaf-ui.png"
 tags:
 - tutorial

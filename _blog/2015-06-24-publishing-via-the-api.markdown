@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Publishing via the API
 date: 2015-06-24 15:10:00 Z
+layout: post
 hero: 
 tags:
 - announcement

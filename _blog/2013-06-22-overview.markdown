@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Siteleaf overview
 date: 2013-06-22 17:00:00 Z
+layout: post
 hero: "/uploads/an-introduction-to-siteleaf-collaboration.png"
 tags:
 - tutorial

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Video: Introducing Siteleaf'
 date: 2013-06-28 21:50:00 Z
+layout: post
 vimeo: '69301083'
 tags:
 - video

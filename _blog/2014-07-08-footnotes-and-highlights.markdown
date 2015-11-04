@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Footnotes & Highlights
 date: 2014-07-08 14:00:00 Z
+layout: post
 hero: 
 tags:
 - tip

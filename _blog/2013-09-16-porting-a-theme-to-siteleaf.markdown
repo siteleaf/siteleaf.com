@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Tutorial: Porting a theme to Siteleaf'
 date: 2013-09-16 15:05:00 Z
+layout: post
 hero: "/uploads/porting-a-theme-to-siteleaf-martin.png"
 tags:
 - tutorial

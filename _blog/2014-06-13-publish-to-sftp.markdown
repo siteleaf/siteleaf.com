@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Now publishing to SFTP
 date: 2014-06-13 14:35:00 Z
+layout: post
 hero: 
 tags:
 - announcement

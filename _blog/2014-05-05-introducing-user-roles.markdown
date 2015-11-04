@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Introducing user roles
 date: 2014-05-05 13:00:00 Z
+layout: post
 hero: "/uploads/user-roles-post.jpg"
 tags:
 - announcement

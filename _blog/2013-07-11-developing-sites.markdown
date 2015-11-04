@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Video: Developing sites and themes'
 date: 2013-07-11 19:34:00 Z
+layout: post
 vimeo: '70121781'
 tags:
 - tutorial

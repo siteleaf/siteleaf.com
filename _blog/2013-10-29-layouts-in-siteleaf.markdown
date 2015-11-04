@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Tutorial: Layouts in Siteleaf'
 date: 2013-10-29 14:42:00 Z
+layout: post
 hero: "/uploads/layouts-in-siteleaf.svg"
 tags:
 - tutorial

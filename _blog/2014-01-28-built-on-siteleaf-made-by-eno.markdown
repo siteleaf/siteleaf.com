@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Built on Siteleaf: Made by Eno'
 date: 2014-01-28 19:31:00 Z
+layout: post
 hero: "/uploads/erin-nolan.jpg"
 tags:
 - community

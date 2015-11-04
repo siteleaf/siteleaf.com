@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Tutorial: Hello World, I’m Siteleaf'
 date: 2013-07-01 14:43:00 Z
+layout: post
 hero: "/uploads/hello-world-im-siteleaf-create-site.png"
 tags:
 - tutorial

@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Video: Getting started'
 date: 2013-07-01 22:00:00 Z
+layout: post
 vimeo: '69294068'
 tags:
 - video
