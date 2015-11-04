@@ -3,9 +3,6 @@ title: Siteleaf v2
 url: http://v2.siteleaf.com
 timezone: UTC
 collections:
-  blog:
-    title: Blog
-    output: true
   uploads:
     title: Uploads
     output: true
@@ -14,7 +11,7 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: "/posts/:title/"
+    permalink: "/blog/:title/"
 permalinks: pretty
 twitter_username: siteleaf
 exclude:
