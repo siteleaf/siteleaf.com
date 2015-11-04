@@ -1,0 +1,18 @@
+---
+layout: post
+title: Stickers now available
+date: 2014-06-18 19:51:00 Z
+hero: "/uploads/sticker.jpg"
+tags:
+- community
+---
+
+Siteleaf stickers are now available from Sticker Mule!
+
+Make your laptop happy and [pick one up today](http://www.stickermule.com/marketplace/855-siteleaf-stickers). Available at cost with free shipping in quantities of 1-1000 (in case you have a lot of friends).
+
+We also have a number of stickers available for FREE, [let us know](http://goo.gl/forms/zxdm18o8T1) if you want one!
+
+
+
+Thanks to <a href="https://twitter.com/neilrenicker/statuses/456866456638988288">Neil Renicker</a> for the photo.

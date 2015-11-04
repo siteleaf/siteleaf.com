@@ -1,0 +1,31 @@
+---
+layout: post
+title: Siteleaf Hackday in Brooklyn
+date: 2013-08-09 19:05:00 Z
+tags:
+- event
+---
+
+Introducing the very first [Siteleaf Hackday](http://siteleaf.eventbrite.com), August 24 in Brooklyn, NY. If you are new to Siteleaf, have questions, or just need some motivation to finally make that new blog, here's your chance to sit down with the Siteleaf team and talk one-on-one.
+
+This event will be hosted at our studio in DUMBO. Drop in for a visit or hang out for the day and we'll help you get your first site up and running before you leave. Bring your laptop, sample code, and questions.
+
+
+
+#### Potential topics:
+
+- Where do I get started?
+- Should I use Siteleaf for this particular project?
+- Setting up a local dev environment.
+- Turning a static HTML prototype into a live site.
+- Migrating from Jekyll, WordPress, etc.
+- Setting up a custom domain name.
+- Organizing content with taxonomy and tags.
+- Advanced Liquid tips and tricks.
+- Using Sass, CoffeeScript, or with Siteleaf themes.
+- Getting nerdy with the [Siteleaf API](https://github.com/siteleaf/siteleaf-api).
+- Or ask us anything!
+
+This event is limited to 12 guests. No programming experience other than HTML needed.
+
+Visit <http://siteleaf.eventbrite.com> to RSVP.
