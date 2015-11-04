@@ -14,28 +14,24 @@ layout: default
   <section class="section section--feature{% if feature.background %} section--{{ feature.background }}{% endif %}{% if feature.graphic %} section--graphic{% endif %}">
     <div class="wrap wrap--narrow">
       <h1 class="section__title">{{ feature.title }}</h1>
-      {% if feature.graphic %}
-        {% if feature.graphic == "g-jekyll" %}
+      {% assign graphic = feature.graphic %}
+      {% case graphic %}
+        {% when 'g-jekyll' %}
           {% include_relative _graphics/g-jekyll.html %}
-        {% elsif feature.graphic == "g-develop" %}
+        {% when 'g-develop' %}
           {% include_relative _graphics/g-develop.html %}
-        {% elsif feature.graphic == "g-metadata" %}
+        {% when 'g-metadata' %}
           {% include_relative _graphics/g-metadata.html %}
-        {% elsif feature.graphic == "g-github" %}
+        {% when 'g-github' %}
           {% include_relative _graphics/g-github.html %}
-        {% elsif feature.graphic == "g-editor" %}
+        {% when 'g-editor' %}
           {% include_relative _graphics/g-editor.html %}
-        {% endif %}
-      {% endif %}
+      {% endcase %}
       <section class="section__text">
-        {% if feature.is_nested %}
-          {% for subfeature in feature.body %}
-            <h4 class="section__subtitle">{{ subfeature.title }}</h4>
-            {{ subfeature.body | markdownify }}
-          {% endfor %}
-        {% else %}
-          {{ feature.body | markdownify }}
-        {% endif %}
+        {% for subfeature in feature.body %}
+          <h4 class="section__subtitle">{{ subfeature.title }}</h4>
+          {{ subfeature.body | markdownify }}
+        {% endfor %}
         {% if feature.link %}
           <a class="section__link" href="{{ feature.link.url }}">{{ feature.link.title }}</a>
         {% endif %}

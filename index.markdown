@@ -8,7 +8,6 @@ button:
   url: https://siteleaf.typeform.com/to/EoFRli
 features:
 - title: Open source superpowers
-  is_nested: true
   body:
   - title: Compatible with a larger ecosystem
     body: We’ve reimagined Siteleaf to be built on Jekyll. Enjoy the benefits of a
@@ -26,7 +25,6 @@ features:
       more using the community-supported Jekyll importers.
   graphic: g-jekyll
 - title: GitHub integration
-  is_nested: true
   body:
   - title: Theme syncing
     body: No more manually pushing and pulling your theme changes using the command
@@ -40,7 +38,6 @@ features:
   background: smoke
   graphic: g-github
 - title: Customized content
-  is_nested: true
   body:
   - title: Advanced metadata
     body: Metadata now supports nested lists and objects, plus a shiny new interface
@@ -56,7 +53,6 @@ features:
       within your theme.
   graphic: g-metadata
 - title: Optimized workflow
-  is_nested: true
   body:
   - title: Offline development
     body: Sync your Siteleaf content to local Markdown files and develop your site
@@ -71,7 +67,6 @@ features:
   background: smoke
   graphic: g-develop
 - title: And everything you already love
-  is_nested: true
   body:
   - title: A smart Markdown editor
     body: Siteleaf’s Markdown editor lets you focus on writing, with simple controls
@@ -93,6 +88,6 @@ features:
     title: Learn more about Siteleaf v1 &rarr;
     url: http://siteleaf.com
   graphic: g-editor
-layout: features
+layout: index
 ---
 
