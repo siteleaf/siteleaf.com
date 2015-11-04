@@ -18,4 +18,3 @@ exclude:
 - node_modules
 - config.ru
 - Gemfile*
-hide_nav: 1
