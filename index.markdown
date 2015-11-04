@@ -1,13 +1,13 @@
 ---
 title: Siteleaf v2
-date: 2015-10-21 14:09:00 Z
+date: 2015-10-21 13:09:00 Z
 permalink: "/"
 headline: A new Siteleaf.
 button:
   title: Sign up for v2 beta
   url: https://siteleaf.typeform.com/to/EoFRli
 features:
-- title: Open source superpowers.
+- title: Open source superpowers
   is_nested: true
   body:
   - title: Compatible with a larger ecosystem
@@ -22,10 +22,10 @@ features:
       again.
   - title: Import from v1, WordPress, and more
     body: Export your existing v1 site content to v2-ready Jekyll format using the
-      existing Siteleaf gem (`siteleaf export`). You can also import from WordPress,
-      Tumblr, Ghost, Drupal, and more using the community-supported Jekyll importers.
+      Siteleaf gem. You can also import from WordPress, Tumblr, Ghost, Drupal, and
+      more using the community-supported Jekyll importers.
   graphic: g-jekyll
-- title: GitHub integration.
+- title: GitHub integration
   is_nested: true
   body:
   - title: Theme syncing
@@ -39,13 +39,13 @@ features:
       you already use.
   background: smoke
   graphic: g-github
-- title: Better suited for your needs.
+- title: Customized content
   is_nested: true
   body:
   - title: Advanced metadata
     body: Metadata now supports nested lists and objects, plus a shiny new interface
-      that supports drag and drop ordering. It’s the metadata editor of your dreams.
-      Lots more coming soon, including magic fields for images, dates, and more.
+      that supports drag and drop ordering. Lots more coming soon, including magic
+      fields for images, dates, and more. It’s the metadata editor of your dreams!
   - title: Custom permalinks
     body: Customize the way your site is generated. Choose date-based permalinks (`/2015/10/20/hello-world`),
       pretty permalinks (`/posts/hello-world`), or whatever suits your needs.
@@ -55,7 +55,7 @@ features:
       to output your documents just like posts, or simply use them as super-metadata
       within your theme.
   graphic: g-metadata
-- title: An optimized workflow.
+- title: Optimized workflow
   is_nested: true
   body:
   - title: Offline development
@@ -70,7 +70,7 @@ features:
       totally free for developers and open source projects.
   background: smoke
   graphic: g-develop
-- title: Plus, all that you already love about Siteleaf.
+- title: And everything you already love
   is_nested: true
   body:
   - title: A smart Markdown editor
@@ -90,7 +90,7 @@ features:
     body: Siteleaf provides a JSON API for interacting with all of your Jekyll content.
       Integrate it into other sites, apps, or anything you want. It’s your data.
   link:
-    title: Learn more about the old Siteleaf &rarr;
+    title: Learn more about Siteleaf v1 &rarr;
     url: http://siteleaf.com
   graphic: g-editor
 layout: features
