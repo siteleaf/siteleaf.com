@@ -33,7 +33,7 @@
   </script>
 
   {% if (url != '/v2') %}
-    <a class="v2Teaser" href="/v2">We’re working on a new Siteleaf &rarr;</a>
+    <a class="v2Teaser" href="http://v2.siteleaf.net/">We’re working on a new Siteleaf &rarr;</a>
   {% endif %}
   <section class="layer main{% if home? %} dark{% endif %}{% if (url == '/v2') %} main--v2{% endif %}">
       <header>
@@ -76,13 +76,6 @@
             <iframe src="http://player.vimeo.com/video/69301083?color=00a1ff&api=1&player_id=intro" width="500" height="281" id="video-iframe" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
         </div>
-      {% endif %}
-
-      {% if (url == '/v2') %}
-        <section class="v2__header">
-          <h2 class="v2__title">{{ current.body_raw }}</h2>
-          <a href="https://siteleaf.typeform.com/to/EoFRli" class="button green-button v2__header__button">Sign up for beta</a>
-        </section>
       {% endif %}
   </section>
 
