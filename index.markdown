@@ -1,6 +1,6 @@
 ---
-title:
-date: 2015-10-21 10:09:00 -04:00
+title: Index
+date: 2015-10-21 14:09:00 Z
 permalink: "/"
 headline: A new Siteleaf.
 button:
