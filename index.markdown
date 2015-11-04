@@ -1,5 +1,5 @@
 ---
-title: Index
+title: Siteleaf v2
 date: 2015-10-21 14:09:00 Z
 permalink: "/"
 headline: A new Siteleaf.
