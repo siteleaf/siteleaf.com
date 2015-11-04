@@ -1,10 +1,11 @@
 ---
 title: Improvements to page and post management
 date: 2014-07-10 15:05:00 Z
-layout: post
-hero: "/uploads/header-post.jpg"
+permalink: "/blog/:title/"
 tags:
 - announcement
+layout: post
+hero: "/uploads/header-post.jpg"
 ---
 
 If you're a heavy Siteleaf user, you might notice a few tweaks here and there that we recently introduced. 

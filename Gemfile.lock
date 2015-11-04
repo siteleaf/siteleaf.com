@@ -59,3 +59,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.0.0.pre.beta8)
   siteleaf!
+
+BUNDLED WITH
+   1.10.6

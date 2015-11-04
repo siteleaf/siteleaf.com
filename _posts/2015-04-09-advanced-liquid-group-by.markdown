@@ -1,11 +1,12 @@
 ---
 title: 'Advanced Liquid: Group By'
 date: 2015-04-09 20:30:00 Z
-layout: post
-hero: "/uploads/group_by.svg"
+permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
+layout: post
+hero: "/uploads/group_by.svg"
 docs:
 - filters and tags
 - group

@@ -1,10 +1,11 @@
 ---
 title: Siteleaf turns one
 date: 2014-06-06 17:59:00 Z
-layout: post
-hero: 
+permalink: "/blog/:title/"
 tags:
 - announcement
+layout: post
+hero: 
 ---
 
 It's time to <a href="http://giphy.com/gifs/YTbZzCkRQCEJa" target="_blank">celebrate</a>, today is Siteleaf's first birthday!

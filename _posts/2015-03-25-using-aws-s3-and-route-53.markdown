@@ -1,11 +1,12 @@
 ---
 title: Using AWS S3 and Route 53
 date: 2015-03-25 19:55:00 Z
-layout: post
-hero: 
+permalink: "/blog/:title/"
 tags:
 - tutorial
 - aws
+layout: post
+hero: 
 ---
 
 After building Siteleaf we took it upon ourselves to each rebuild our site using the service. I had previously used S3 with Jeykll and wanted to continue using it, but getting set up can be a bit of a mystery.

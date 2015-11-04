@@ -1,10 +1,11 @@
 ---
 title: Sites we love
 date: 2013-10-31 19:24:00 Z
-layout: post
-hero: "/uploads/gallery.jpg"
+permalink: "/blog/:title/"
 tags:
 - inspiration
+layout: post
+hero: "/uploads/gallery.jpg"
 ---
 
 At Siteleaf, nothing makes us happier than seeing our customers build amazing websites. We proudly showcase these in our ever-growing [Gallery](http://www.siteleaf.com/gallery) for inspiration.

@@ -1,10 +1,11 @@
 ---
 title: Introducing Siteleaf
 date: 2013-06-06 02:47:00 Z
-layout: post
-hero: "/uploads/introducing-siteleaf.jpg"
+permalink: "/blog/:title/"
 tags:
 - announcement
+layout: post
+hero: "/uploads/introducing-siteleaf.jpg"
 ---
 
 **Approach** --- Managing content on sites can be a precarious task. We wanted to build a lean tool that would integrate easily into your workflow, yet provide everything necessary to maintain your content.

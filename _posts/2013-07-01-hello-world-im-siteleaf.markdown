@@ -1,10 +1,11 @@
 ---
 title: 'Tutorial: Hello World, I’m Siteleaf'
 date: 2013-07-01 14:43:00 Z
-layout: post
-hero: "/uploads/hello-world-im-siteleaf-create-site.png"
+permalink: "/blog/:title/"
 tags:
 - tutorial
+layout: post
+hero: "/uploads/hello-world-im-siteleaf-create-site.png"
 ---
 
 Last week, [I ran through](/blog/overview) a number of [Siteleaf’s](http://siteleaf.com) most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf.

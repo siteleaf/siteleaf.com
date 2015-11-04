@@ -1,12 +1,13 @@
 ---
 title: 'Video: Developing sites and themes'
 date: 2013-07-11 19:34:00 Z
-layout: post
-vimeo: '70121781'
+permalink: "/blog/:title/"
 tags:
 - tutorial
 - video
 - liquid
+layout: post
+vimeo: '70121781'
 docs:
 - getting started
 - local development

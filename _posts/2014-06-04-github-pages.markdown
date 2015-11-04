@@ -1,10 +1,11 @@
 ---
 title: Now publishing to GitHub Pages
 date: 2014-06-04 13:00:00 Z
-layout: post
-hero: "/uploads/github.svg"
+permalink: "/blog/:title/"
 tags:
 - announcement
+layout: post
+hero: "/uploads/github.svg"
 ---
 
 Exciting news! Starting today you can now publish your sites from Siteleaf to [GitHub&nbsp;Pages](https://pages.github.com).
