@@ -5,7 +5,7 @@ timezone: UTC
 collections:
   blog:
     title: Blog
-    output: false
+    output: true
   uploads:
     title: Uploads
     output: true
