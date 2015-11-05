@@ -1,12 +1,11 @@
 ---
 title: 'Advanced Liquid: Where'
 date: 2015-04-08 19:25:00 Z
-permalink: "/blog/:title/"
-tags:
+hero: "/uploads/where.svg"
+Tags:
 - tutorial
 - liquid
-hero: "/uploads/where.svg"
-docs:
+Docs:
 - filters and tags
 - where
 ---

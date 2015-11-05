@@ -1,12 +1,11 @@
 ---
 title: 'Tutorial: Metadata in Siteleaf'
 date: 2013-07-07 14:51:00 Z
-permalink: "/blog/:title/"
-tags:
+hero: "/uploads/metadata-in-siteleaf-ui.png"
+Tags:
 - tutorial
 - liquid
-hero: "/uploads/metadata-in-siteleaf-ui.png"
-docs:
+Docs:
 - metadata
 ---
 

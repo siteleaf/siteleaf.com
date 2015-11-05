@@ -1,11 +1,10 @@
 ---
 title: Footnotes & Highlights
 date: 2014-07-08 14:00:00 Z
-permalink: "/blog/:title/"
-tags:
+hero: 
+Tags:
 - tip
 - markdown
-hero: 
 ---
 
 In addition to the [Markdown basics](http://daringfireball.net/projects/markdown/syntax), Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a ==highlight== and also a footnote[^1]. 

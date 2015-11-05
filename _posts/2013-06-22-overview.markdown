@@ -1,12 +1,11 @@
 ---
 title: Siteleaf overview
 date: 2013-06-22 17:00:00 Z
-permalink: "/blog/:title/"
-tags:
+hero: "/uploads/an-introduction-to-siteleaf-collaboration.png"
+Tags:
 - tutorial
 - liquid
-hero: "/uploads/an-introduction-to-siteleaf-collaboration.png"
-docs:
+Docs:
 - getting started
 ---
 

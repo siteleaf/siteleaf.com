@@ -1,11 +1,10 @@
 ---
 title: Publishing via the API
 date: 2015-06-24 15:10:00 Z
-permalink: "/blog/:title/"
-tags:
+hero: 
+Tags:
 - announcement
 - tutorial
-hero: 
 ---
 
 For the last week publishing in the Siteleaf interface has been powered by our API. This has been a requested feature by some of our users and ourselves. Its behavior is bit different than some of our other API endpoints, so let's go over it.

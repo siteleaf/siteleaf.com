@@ -1,10 +1,9 @@
 ---
 title: Stickers now available
 date: 2014-06-18 19:51:00 Z
-permalink: "/blog/:title/"
-tags:
-- community
 hero: "/uploads/sticker.jpg"
+Tags:
+- community
 ---
 
 Siteleaf stickers are now available from Sticker Mule!

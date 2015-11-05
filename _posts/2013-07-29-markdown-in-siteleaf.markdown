@@ -1,11 +1,10 @@
 ---
 title: 'Tutorial: Markdown in Siteleaf'
 date: 2013-07-29 15:01:00 Z
-permalink: "/blog/:title/"
-tags:
+hero: "/uploads/markdown-in-siteleaf-ui.png"
+Tags:
 - tutorial
 - markdown
-hero: "/uploads/markdown-in-siteleaf-ui.png"
 ---
 
 In the last [Siteleaf](http://siteleaf.com) post, we explored [taxonomy](/blog/taxonomy-in-siteleaf) and the many ways you could use it to extend your website. This time, we’ll break from templating and take a closer look at content—specifically, Markdown’s role in Siteleaf.
