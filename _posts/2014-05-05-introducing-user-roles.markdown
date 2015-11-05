@@ -1,9 +1,10 @@
 ---
 title: Introducing user roles
 date: 2014-05-05 13:00:00 Z
-hero: /uploads/user-roles-post.jpg
+permalink: "/blog/:title/"
 tags:
 - announcement
+hero: "/uploads/user-roles-post.jpg"
 ---
 
 Today we're happy to introduce a highly requested feature: user roles. Since day one you've been able to invite collaborators to your site. With the introduction of user roles, you can now set the level of control each collaborator has over your site content. You can now set a collaborator's role to one of the following:

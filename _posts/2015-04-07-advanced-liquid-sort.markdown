@@ -1,10 +1,11 @@
 ---
 title: 'Advanced Liquid: Sort'
 date: 2015-04-07 14:00:00 Z
-hero: /uploads/sort.svg
+permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
+hero: "/uploads/sort.svg"
 Docs:
 - filters and tags
 - sort

@@ -1,9 +1,10 @@
 ---
 title: 'New: Asset Metadata and Quick Post Edit'
 date: 2013-12-03 19:53:00 Z
-hero: /uploads/asset-metadata.png
+permalink: "/blog/:title/"
 tags:
 - announcement
+hero: "/uploads/asset-metadata.png"
 Docs:
 - metadata
 - assets

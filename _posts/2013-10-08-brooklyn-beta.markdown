@@ -1,9 +1,10 @@
 ---
 title: Brooklyn Beta
 date: 2013-10-08 19:34:00 Z
-hero: /uploads/beta.jpg
+permalink: "/blog/:title/"
 tags:
 - event
+hero: "/uploads/beta.jpg"
 ---
 
 Hello Brooklyn! This week the Siteleaf team will be at our favorite web conference, [Brooklyn Beta](http://brooklynbeta.org).

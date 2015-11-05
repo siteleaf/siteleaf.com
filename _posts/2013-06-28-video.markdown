@@ -1,9 +1,10 @@
 ---
 title: 'Video: Introducing Siteleaf'
 date: 2013-06-28 21:50:00 Z
-vimeo: '69301083'
+permalink: "/blog/:title/"
 tags:
 - video
+vimeo: '69301083'
 ---
 
 Watch <a href="http://vimeo.com/69301083">Introducing Siteleaf</a> on <a href="http://vimeo.com">Vimeo</a>.

@@ -1,6 +1,7 @@
 ---
 title: Using Markdown in metadata
 date: 2013-10-29 15:55:00 Z
+permalink: "/blog/:title/"
 tags:
 - tip
 - markdown

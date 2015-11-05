@@ -1,10 +1,11 @@
 ---
 title: 'Tutorial: Layouts in Siteleaf'
 date: 2013-10-29 14:42:00 Z
-hero: /uploads/layouts-in-siteleaf.svg
+permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
+hero: "/uploads/layouts-in-siteleaf.svg"
 Docs:
 - naming your files
 - includes

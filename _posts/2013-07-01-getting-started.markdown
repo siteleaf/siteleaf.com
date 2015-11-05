@@ -1,10 +1,11 @@
 ---
 title: 'Video: Getting started'
 date: 2013-07-01 22:00:00 Z
-vimeo: '69294068'
+permalink: "/blog/:title/"
 tags:
 - video
 - tutorial
+vimeo: '69294068'
 Docs:
 - getting started
 ---
