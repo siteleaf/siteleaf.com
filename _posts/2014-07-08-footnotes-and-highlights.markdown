@@ -1,9 +1,8 @@
 ---
 title: Footnotes & Highlights
 date: 2014-07-08 14:00:00 Z
-permalink: "/blog/:title/"
 hero: 
-Tags:
+tags:
 - tip
 - markdown
 ---

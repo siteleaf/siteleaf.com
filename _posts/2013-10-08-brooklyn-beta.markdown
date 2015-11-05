@@ -1,9 +1,8 @@
 ---
 title: Brooklyn Beta
 date: 2013-10-08 19:34:00 Z
-permalink: "/blog/:title/"
-hero: "/uploads/beta.jpg"
-Tags:
+hero: /uploads/beta.jpg
+tags:
 - event
 ---
 

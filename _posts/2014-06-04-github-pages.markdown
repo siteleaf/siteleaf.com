@@ -1,9 +1,8 @@
 ---
 title: Now publishing to GitHub Pages
 date: 2014-06-04 13:00:00 Z
-permalink: "/blog/:title/"
-hero: "/uploads/github.svg"
-Tags:
+hero: /uploads/github.svg
+tags:
 - announcement
 ---
 

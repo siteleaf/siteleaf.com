@@ -1,9 +1,8 @@
 ---
 title: 'Tutorial: Taxonomy in Siteleaf'
 date: 2013-07-13 14:57:00 Z
-permalink: "/blog/:title/"
-hero: "/uploads/taxonomy-in-siteleaf-ui.png"
-Tags:
+hero: /uploads/taxonomy-in-siteleaf-ui.png
+tags:
 - tutorial
 - liquid
 Docs:
