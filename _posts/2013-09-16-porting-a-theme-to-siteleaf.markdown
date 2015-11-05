@@ -1,6 +1,7 @@
 ---
 title: 'Tutorial: Porting a theme to Siteleaf'
 date: 2013-09-16 15:05:00 Z
+permalink: "/blog/:title/"
 hero: "/uploads/porting-a-theme-to-siteleaf-martin.png"
 Tags:
 - tutorial

@@ -1,6 +1,7 @@
 ---
 title: 'Tutorial: Hello World, I’m Siteleaf'
 date: 2013-07-01 14:43:00 Z
+permalink: "/blog/:title/"
 hero: "/uploads/hello-world-im-siteleaf-create-site.png"
 Tags:
 - tutorial

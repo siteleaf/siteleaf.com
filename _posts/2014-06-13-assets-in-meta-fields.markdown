@@ -1,6 +1,7 @@
 ---
 title: 'Quick tip: Assets in meta fields'
 date: 2014-06-13 14:22:00 Z
+permalink: "/blog/:title/"
 hero: 
 Tags:
 - tip

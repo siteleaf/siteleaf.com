@@ -1,6 +1,7 @@
 ---
 title: Siteleaf overview
 date: 2013-06-22 17:00:00 Z
+permalink: "/blog/:title/"
 hero: "/uploads/an-introduction-to-siteleaf-collaboration.png"
 Tags:
 - tutorial

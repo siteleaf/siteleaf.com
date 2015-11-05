@@ -1,6 +1,7 @@
 ---
 title: 'Advanced Liquid: Group By'
 date: 2015-04-09 20:30:00 Z
+permalink: "/blog/:title/"
 hero: "/uploads/group_by.svg"
 Tags:
 - tutorial

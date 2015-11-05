@@ -1,6 +1,7 @@
 ---
 title: Stickers now available
 date: 2014-06-18 19:51:00 Z
+permalink: "/blog/:title/"
 hero: "/uploads/sticker.jpg"
 Tags:
 - community
