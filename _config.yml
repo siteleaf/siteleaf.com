@@ -2,7 +2,6 @@
 title: Siteleaf v2
 url: http://v2.siteleaf.com
 timezone: UTC
-description: Content management simplified. Edit in the cloud, publish anywhere. Supports static file output, any host, markdown, and multiple collaborators.
 collections:
   uploads:
     title: Uploads
@@ -13,22 +12,9 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
-    layout: post
 permalinks: pretty
 twitter_username: siteleaf
 exclude:
 - node_modules
 - config.ru
 - Gemfile*
-excerpt_separator: "\n\n\n"
-markdown: redcarpet
-redcarpet:
-  extensions:
-  - autolink
-  - fenced_code_blocks
-  - lax_spacing
-  - strikethrough
-  - superscript
-  - tables
-  - footnotes
-  - highlight
