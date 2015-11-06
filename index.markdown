@@ -14,7 +14,7 @@ features:
       large open source community, along with the accessibility of the Siteleaf interface
       you’ve come to love. Use any off-the-shelf Jekyll theme, or take your Siteleaf
       theme with you.
-  - title: Portable code
+  - title: Portable source code
     body: Now with Jekyll, your entire site’s source code and content are portable,
       not just the compiled HTML. Move sites into and out of Siteleaf easily. Even
       compile it yourself without using Siteleaf. You’ll never be locked into a CMS
