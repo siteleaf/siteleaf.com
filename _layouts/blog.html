@@ -2,25 +2,10 @@
 layout: default
 ---
 
-<article class="post">
-
-  <header class="post__header">
-    <h1 class="post__title">{{ page.title }}</h1>
-  </header>
-
-  <section class="post__content">
-    {{ content }}
-  </section>
-
-  {% for post in site.posts %}
-    {% include post.html %}
-    <!-- <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li> -->
-  {% endfor %}
-
-</article>
+<section class="posts">
+  <div class="wrap wrap--narrow">
+    {% for post in site.posts %}
+      {% include post.html %}
+    {% endfor %}
+  </div>
+</section>
