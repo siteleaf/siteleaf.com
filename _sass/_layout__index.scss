@@ -30,12 +30,11 @@
   margin-top: $v * 0.5;
 }
 .section__body {
-  color: $color-gray-dark;
 }
 .section__link {
   @extend %link--default;
   display: inline-block;
-  margin-top: $v * 0.5;
+  margin-top: $v * 1.5;
 }
 .section__graphic {
   @include responsive-image;
@@ -67,16 +66,22 @@ $fadeDuration: 250ms;
 }
 .g__window--editor {
   background-color: $color-navy;
+  pre {
+    border: 0;
+  }
 }
 .g__window--terminal {
-  background-color: $color-gray-darker;
+  background-color: $color-gray-2;
+  pre {
+    border: 0;
+  }
 }
 .g__window__topBar {
   font-family: sans-serif;
   text-align: center;
-  background-color: lighten($color-gray-lighter, 10%);
+  background-color: lighten($color-gray-n2, 10%);
   border: 1px solid $color-black-alpha-light;
-  color: $color-gray;
+  color: $color-gray-0;
   padding: 2px;
   font-size: $font-size-n2;
   & > * {
@@ -84,8 +89,8 @@ $fadeDuration: 250ms;
   }
 }
 .g__window__topBar--active {
-  color: $color-gray-dark;
-  @include linear-gradient("#{lighten($color-gray-lighter, 10%)}, #{$color-gray-lighter}");
+  color: $color-gray-1;
+  @include linear-gradient("#{lighten($color-gray-n2, 10%)}, #{$color-gray-n2}");
 }
 .g__window__topBar__icon {
   line-height: 0;
@@ -98,7 +103,7 @@ $fadeDuration: 250ms;
   left: 0.5em;
 }
 .g__windowButton {
-  background-color: $color-gray-lighter;
+  background-color: $color-gray-n2;
   display: inline-block;
   width: 11px;
   height: 11px;
@@ -113,7 +118,7 @@ $fadeDuration: 250ms;
     border-radius: 9px;
   }
   .g__window__topBar--active & {
-    background-color: $color-gray;
+    background-color: $color-gray-0;
   }
 }
 .g__window__code {
@@ -131,7 +136,7 @@ $fadeDuration: 250ms;
   font-size: $font-size-n2;
   width: 14em;
   height: 100%;
-  border-right: 1px solid $color-gray-lighter;
+  border-right: 1px solid $color-gray-n2;
   float: left;
   position: relative;
 }
@@ -146,11 +151,11 @@ $fadeDuration: 250ms;
   color: $color-white;
 }
 .g__finderItem--highlightedParent {
-  background-color: $color-gray-lighter;
+  background-color: $color-gray-n2;
 }
 .g__finderItem__icon {
   position: absolute;
-  color: $color-gray;
+  color: $color-gray-0;
   .g__finderItem--highlighted & {
     color: $color-white;
   }
@@ -241,7 +246,7 @@ $sync-height:           50px;
   width: calc(100% - #{$sync-height / 3});
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   background-color: $color-white;
-  border: 1px solid $color-gray-lighter;
+  border: 1px solid $color-gray-n2;
   border-radius: $border-radius;
 }
 .g-github__sync {
@@ -259,12 +264,12 @@ $sync-height:           50px;
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
 }
 .g-github__topBar {
-  background-color: lighten($color-gray-lighter, 10%);
-  border-bottom: 1px solid $color-gray-lighter;
+  background-color: lighten($color-gray-n2, 10%);
+  border-bottom: 1px solid $color-gray-n2;
   padding: 0.15rem 0.75rem;
 }
 .g-github__logo {
-  color: $color-gray-darker;
+  color: $color-gray-2;
   font-size: $font-size-4;
 }
 .g-github__item {
@@ -272,7 +277,7 @@ $sync-height:           50px;
   position: relative;
   height: calc(#{$avatar-height} + #{$github__item-padding});
   &:not(:last-of-type) {
-    border-bottom: 1px solid $color-gray-lightest;
+    border-bottom: 1px solid $color-gray-n4;
   }
   @include max-width($bp-sm) {
     height: calc(#{$avatar-height-sm} + #{$github__item-padding});
@@ -289,19 +294,19 @@ $sync-height:           50px;
   @include ellipsis;
 }
 .g-github__commitTitle {
-  color: $color-gray;
+  color: $color-gray-0;
   margin-bottom: 0;
 }
 .g-github__commitMeta {
   font-size: $font-size-n1;
-  color: $color-gray;
+  color: $color-gray-0;
 }
 .g-github__commitTitle,
 .g-github__user {
   font-weight: bold;
 }
 .g-github__avatar {
-  background-color: $color-gray-lightest;
+  background-color: $color-gray-n4;
   border-radius: $border-radius;
   width: $avatar-height;
   height: $avatar-height;
@@ -320,7 +325,7 @@ $sync-height:           50px;
   position: absolute;
   background: $color-white;
   padding: 3px;
-  border: 1px solid $color-gray-lightest;
+  border: 1px solid $color-gray-n4;
   top: $avatarChild-offset;
   left: $avatarChild-offset;
   @include max-width($bp-sm) {
@@ -348,10 +353,10 @@ $x-padding-input: 0.5em;
 .g-metadata {
   padding: 1.2em;
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
-  border: 1px solid $color-gray-lighter;
+  border: 1px solid $color-gray-n2;
   border-radius: $border-radius;
   font-size: $font-size-n1;
-  color: $color-gray-dark;
+  color: $color-gray-1;
   background-color: $color-white;
 }
 .g-metadata__icon {
@@ -382,7 +387,7 @@ $x-padding-input: 0.5em;
 }
 .g-metadata__fieldList {
   margin-left: 0.2em;
-  border-left: 3px solid $color-gray-lightest;
+  border-left: 3px solid $color-gray-n4;
   padding-left: calc(#{$indent} + 1em - 0.2em);
 }
 .g-metadata__fieldList__item {
@@ -404,7 +409,7 @@ $x-padding-input: 0.5em;
   float: left;
 }
 .g-metadata__fieldList__item__key {
-  border: 1px solid $color-gray-lighter;
+  border: 1px solid $color-gray-n2;
   border-radius: $border-radius;
   width: calc(25% - 0.75em);
   margin-right: 0.75em;
@@ -464,7 +469,7 @@ $v-offset-window--develop: 2.5em;
   }
 }
 .g-develop__navButton {
-  color: $color-gray-light;
+  color: $color-gray-n1;
   position: relative;
   top: 0.1em;
   line-height: 0;
@@ -521,15 +526,15 @@ $v-offset-window--develop: 2.5em;
 }
 .g-editor__bar {
   background-color: $color-white;
-  border: 1px solid $color-gray-lighter;
+  border: 1px solid $color-gray-n2;
   border-radius: $border-radius $border-radius 0 0;
   border-bottom: 0;
   padding: 0.75em;
 }
 .g-editor__button {
-  color: $color-gray;
+  color: $color-gray-0;
   border-radius: $border-radius;
-  background-color: $color-gray-lightest;
+  background-color: $color-gray-n4;
   display: inline-block;
   vertical-align: middle;
   width: 1.75em;
@@ -542,10 +547,10 @@ $v-offset-window--develop: 2.5em;
   font-weight: bold;
 }
 .g-editor__textarea {
-  background-color: $color-white;
-  border: 1px solid $color-gray-lighter;
-  color: $color-gray-darker;
-  font-family: $font-family-monospace;
+  background-color: $color-gray-n4;
+  border: 1px solid $color-gray-n2;
+  color: $color-gray-1;
+  @extend %text--code;
   overflow: auto;
   white-space: pre-wrap;
   padding: 1em;
@@ -561,7 +566,7 @@ $v-offset-window--develop: 2.5em;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba($color-gray-lighter, 0.8);
+    background-color: rgba($color-gray-n2, 0.8);
   }
 }
 .g-editor__hover {
@@ -617,7 +622,7 @@ $v-offset-window--develop: 2.5em;
     background-color: transparent;
   }
   100% {
-    background-color: rgba($color-gray-lighter, 0.8);
+    background-color: rgba($color-gray-n2, 0.8);
   }
 }
 

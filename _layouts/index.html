@@ -30,7 +30,9 @@ layout: default
       <section class="section__text">
         {% for subfeature in feature.body %}
           <h4 class="section__subtitle">{{ subfeature.title }}</h4>
-          {{ subfeature.body | markdownify }}
+          <div class="section__body">
+            {{ subfeature.body | markdownify }}
+          </div>
         {% endfor %}
         {% if feature.link %}
           <a class="section__link" href="{{ feature.link.url }}">{{ feature.link.title }}</a>

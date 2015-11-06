@@ -1,25 +1,26 @@
 // Colors
 // ------
 
-$color-gray-darker:      #32383B;
-$color-gray-dark:        #5D6569;
-$color-gray:             #969C9E;
-$color-gray-light:       #BCC0C2;
-$color-gray-lighter:     #D5D9DB;
-$color-gray-lightest:    #F2F6F7;
-$color-gray-lighterest:  lighten($color-gray-lightest, 4%);
-$color-blue:             #0091E5;
-$color-blue-dark:        darken($color-blue, 6%);
-$color-green:            #8DCF3F;
-$color-navy:             #27415A;
-$color-magenta:          #D6457F;
-$color-orange:           #FF9233;
-$color-red:              #D14040;
-$color-yellow:           #F1C40F;
-$color-white:            #FFF;
-$color-mint:             #24C7A6;
+$color-gray-2:    #2D3336;
+$color-gray-1:    #555D61;
+$color-gray-0:    #989FA3;
+$color-gray-n1:   #B6BCBF;
+$color-gray-n2:   #D3D8DB;
+$color-gray-n3:   #EBF0F2;
+$color-gray-n4:   #F2F6F7;
+$color-gray-n5:   #FAFCFC;
+$color-blue:      #0091E5;
+$color-blue-dark: darken($color-blue, 6%);
+$color-green:     #8DCF3F;
+$color-navy:      #27415A;
+$color-magenta:   #D6457F;
+$color-orange:    #FF9233;
+$color-red:       #D14040;
+$color-yellow:    #F1C40F;
+$color-white:     #FFF;
+$color-mint:      #24C7A6;
 
-$color-black-alpha-lighter: rgba(#000, 0.075);
+$color-black-alpha-lighter: rgba(#000, 0.05);
 $color-black-alpha-light:   rgba(#000, 0.1);
 $color-black-alpha:         rgba(#000, 0.2);
 $color-black-alpha-dark:    rgba(#000, 0.6);
@@ -49,6 +50,7 @@ $font-size-2:       1.3333em;
 $font-size-1:       1.1667em;
 $font-size-05:      1.0833em;
 $font-size-0:       1em;
+$font-size-n05:     0.9583em;
 $font-size-n1:      0.9167em;
 $font-size-n2:      0.8333em;
 $font-size-n3:      0.75em;
