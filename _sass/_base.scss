@@ -31,16 +31,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  @extend %text--headings;
+h6,
+strong {
+  color: $color-gray-darker;
 }
 
 h1 {
   font-size: $font-size-6;
   font-weight: $font-weight-light;
-  letter-spacing: $letter-spacing-tighter;
+  letter-spacing: $letter-spacing-tightest;
   line-height: $line-height-tighter;
-  margin-top: 0;
+  margin-top: $v * 1.5;
   margin-bottom: ($v * 3) - computed-line-height($font-size-6, $line-height-tighter);
 }
 
@@ -56,19 +57,18 @@ h2 {
 h3 {
   font-size: $font-size-4;
   letter-spacing: $letter-spacing-tight;
-  // color: $color-gray;
+  color: $color-gray;
   line-height: $line-height-tighter;
-  margin-top: $v * 1.5;
-  margin-bottom: ($v * 2) - computed-line-height($font-size-4, $line-height-tighter);
+  margin-top: $v * 1.75;
+  margin-bottom: ($v * 1.75) - computed-line-height($font-size-4, $line-height-tighter);
 }
 
 h4,
 h5,
 h6 {
   font-size: $font-size-1;
-  // font-weight: $font-weight-semibold;
   line-height: $line-height-tight;
-  margin-top: $v * 1.5;
+  margin-top: $v * 1.25;
   margin-bottom: ($v * 1.5) - computed-line-height($font-size-1, $line-height-tight);
 }
 
@@ -93,7 +93,7 @@ ol,
 ul,
 blockquote,
 pre {
-  margin-bottom: $v * 1;
+  margin-bottom: $v * 0.75;
 }
 
 ol,
@@ -103,8 +103,8 @@ ul {
 
 blockquote {
   margin-left: 0.8em;
-  border-left: 0.2em solid $color-gray-lighter;
-  padding-left: $tab - 0.8em - 0.2em;
+  border-left: 0.15em solid $color-gray-lighter;
+  padding-left: $tab - 0.8em - 0.15em;
   @extend %text--italic;
 }
 
@@ -155,6 +155,9 @@ hr {
 }
 .wrap--narrow {
   max-width: $max-width-narrow;
+}
+.wrap--medium {
+  max-width: $max-width-medium;
 }
 .wrap--wide {
   max-width: $max-width-wide;

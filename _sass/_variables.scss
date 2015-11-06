@@ -1,8 +1,8 @@
 // Colors
 // ------
 
-$color-gray-darker:      #2E3336;
-$color-gray-dark:        #60676B;
+$color-gray-darker:      #32383B;
+$color-gray-dark:        #5D6569;
 $color-gray:             #969C9E;
 $color-gray-light:       #BCC0C2;
 $color-gray-lighter:     #D5D9DB;
@@ -47,6 +47,7 @@ $font-size-4:       1.75em;
 $font-size-3:       1.5em;
 $font-size-2:       1.3333em;
 $font-size-1:       1.1667em;
+$font-size-05:      1.0833em;
 $font-size-0:       1em;
 $font-size-n1:      0.9167em;
 $font-size-n2:      0.8333em;
@@ -60,10 +61,11 @@ $line-height-tight:   1.375;
 $line-height-base:    1.625;
 
 // letter-spacing
-$letter-spacing-tighter: -0.02em;
-$letter-spacing-tight:   -0.01em;
-$letter-spacing-base:    0;
-$letter-spacing-loose:   0.04em;
+$letter-spacing-tightest: -0.02em;
+$letter-spacing-tighter:  -0.015em;
+$letter-spacing-tight:    -0.015em;
+$letter-spacing-base:     0;
+$letter-spacing-loose:    0.04em;
 
 // vertical spacing
 $v: ($font-size-0 / 1em) * $line-height-base * 1rem;
@@ -76,7 +78,8 @@ $tab: 2em;
 
 $gutter: 20px;
 $width-container:  88.888889%;
-$max-width-narrow: 37.5rem;
+$max-width-narrow: 37rem;
+$max-width-medium: 880px;
 $max-width-wide:   1400px;
 
 // breakpoints

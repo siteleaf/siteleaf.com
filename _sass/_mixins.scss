@@ -59,10 +59,8 @@
   top: $y;
 }
 
-@mixin responsive-image($display: block) {
-  display: $display;
+@mixin responsive-image {
   max-width: 100%;
-  width: 100%;
   height: auto;
 }
 
