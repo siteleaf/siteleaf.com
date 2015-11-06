@@ -23,8 +23,8 @@ Just add Markdown right in your metadata field:
 
 Then in your template, apply the [markdown](https://github.com/siteleaf/siteleaf-themes#filters-and-tags) Liquid filter:
 
-```
-{{site.meta['sidebar'] | markdown}}
+```liquid
+{% raw %}{{site.meta['sidebar'] | markdown}}{% endraw %}
 ```
 
 That's it!

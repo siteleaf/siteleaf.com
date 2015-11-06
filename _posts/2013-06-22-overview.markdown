@@ -50,35 +50,35 @@ This provides the ability to easily customize your website down to a page-by-pag
 
 If you use [Shopify](http://shopify.com) or Jekyll, you are certainly familiar with [Liquid](https://github.com/Shopify/liquid/). For those who aren’t, it’s an incredibly simple and versatile templating language built by the fine folks at Shopify. With Siteleaf and Liquid, you can make a single-page website as easy as:
 
-```html
-<html>
+```liquid
+{% raw %}<html>
     <head>
         <title>{{ site.title }} - {{ title }}</title>
     </head>
     <body>
         {{ body }}
     </body>
-</html>
+</html>{% endraw %}
 ```
 
 The language is clear, yet powerful. It supports loops, conditionals, partials—you name it. Combined with Siteleaf’s flexible data structure, you can really push the boundaries. On this website, I use custom metadata to specify the colors on each page by inserting variables in the CSS, like:
 
-```html
-<style>
+```liquid
+{% raw %}<style>
     body {
         background-color: {{ meta.background_color }};
     }
-</style>
+</style>{% endraw %}
 ```
 
 Taking it a step further, I can assign a fallback color, in case a page doesn’t specify the metadata:
 
-```html
-<style>
+```liquid
+{% raw %}<style>
     body {
         background-color: {{ meta.background_color | fallback: '#fff' }};
     }
-</style>
+</style>{% endraw %}
 ```
 
 A complete overview of Liquid’s syntax can be found [here](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).

@@ -15,8 +15,8 @@ Last week, I wrote about [metadata](/blog/metadata-in-siteleaf) in [Siteleaf](ht
 
 The word ‘taxonomy’ isn’t used very often on the web, but almost every website uses some form of taxonomy—the most common being ‘tags’. Siteleaf supports the use of tags on posts, but in a way that is more flexible than most systems. Instead of posts having only one set of tags, they are capable of having as many tag sets as you’d like—each with its own name. In the UI, Siteleaf automatically creates ‘Tags’ to get you started, but don’t let that hold you back from being creative.
 
-```html
-<h2>{{ title }}</h2>
+```liquid
+{% raw %}<h2>{{ title }}</h2>
 {{ body }}
 <ul>
 {% for tag in taxonomy.tags %}
@@ -24,7 +24,7 @@ The word ‘taxonomy’ isn’t used very often on the web, but almost every web
         <a href="{{ tag.url }}">{{ tag.value }}</a>
     </li>
 {% endfor %}
-</ul>
+</ul>{% endraw %}
 ```
 
 Let’s start by looking at the code involved for listing a set of tags. In the code above, we’re creating a template for our individual blog posts. Because the object tied to our template is a post, we can access the `taxonomy` keyword and loop through the `tags` set. If our set were named ‘Colors’, we would use `taxonomy.colors`.
@@ -33,14 +33,14 @@ In each listing, we link the name of the tag to its page, using `value` for the 
 
 Now that we have a list of the post’s tags, where does each one link? Upon publishing, Siteleaf auto-generates a page for every tag, using a taxonomy template. This allows you to list all the posts that pertain to a given tag.
 
-```html
-<h2>{{ value }}</h2>
+```liquid
+{% raw %}<h2>{{ value }}</h2>
 {% for post in posts %}
     <article>
         <h3>{{ post.title }}</h3>
         {{ post.body }}
     </article>
-{% endfor %}
+{% endfor %}{% endraw %}
 ```
 
 This is a basic taxonomy template. It displays the name of the tag with a list of the tag’s posts. If the URL to our tag is `/blog/tags/design`, we would create this template at the path `/blog/tags/default.html`. 
@@ -69,8 +69,8 @@ When you click an ingredient link, it takes you to a list of previously served d
 
 Bar Lawrence also has a full list of ingredients that serves as an index for navigating the drinks. With only a dozen lines of code, Larry has added another way to browse and explore the website. Let’s take a look at how we could create an index of our own.
 
-```html
-{% assign sorted_ingredients = ingredients | sort: 'value' %}
+```liquid
+{% raw %}{% assign sorted_ingredients = ingredients | sort: 'value' %}
     
 <dl class="ingredients">
 {% for ingredient in sorted_ingredients %}
@@ -86,7 +86,7 @@ Bar Lawrence also has a full list of ingredients that serves as an index for nav
     
     {% assign previous_letter = letter %}
 {% endfor %}
-</dl>
+</dl>{% endraw %}
 ```
 
 First, we sort the ingredients, using the Liquid filter, `sort`. This provides us with a new array that runs alphabetically, from A-Z. Next, we loop through the sorted ingredients and extract the first letter of each ingredient, using the `truncate` filter.

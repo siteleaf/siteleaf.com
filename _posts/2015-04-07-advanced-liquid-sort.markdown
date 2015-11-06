@@ -61,7 +61,7 @@ In this example, we’ll set up a meta field on our posts called `num` to manual
 Using the `sort` filter, we can now order posts by `meta.num`:
 
 ```liquid
-{% assign sorted_posts = posts | sort:"meta.num" %}
+{% raw %}{% assign sorted_posts = posts | sort:"meta.num" %}{% endraw %}
 ```
 
 And of course, we can display these posts as we normally would:

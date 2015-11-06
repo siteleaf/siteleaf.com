@@ -22,7 +22,7 @@ Head to your [S3 Console](https://console.aws.amazon.com/s3) where you’ll make
 
 In the root domain (e.g. example.com) bucket, go to Properties » Static Website Hosting and check “Enable website hosting”, setting your Index document to `index.html`. Head to the Permisions tab, click “Add bucket policy”, and add the following. Be sure to replace `DOMAIN` with your root domain.
 
-```JSON
+```json
 {
     "Version": "2008-10-17",
     "Statement": [

@@ -14,10 +14,10 @@ Siteleaf makes it easy to assign assets in your metadata fields, just drag and d
 
 Now in your theme, you can easily link to your asset:
 
-```
-<a href="{{ meta['project_link'] }}">
+```liquid
+{% raw %}<a href="{{ meta['project_link'] }}">
   {{ meta['project_link_title'] }}
-</a>
+</a>{% endraw %}
 ```
 
 This is a great way to reference special assets like featured images or PDF downloads.

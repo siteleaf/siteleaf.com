@@ -17,7 +17,7 @@ If you first take a look at the [diff](https://github.com/destroytoday/martin-fo
 
 ![porting-a-theme-to-siteleaf-sections](/uploads/porting-a-theme-to-siteleaf-sections.png) 
 
-Looking at the previous code, we can separate the entire page into three sections—header, body (represented as a `<section>`), and footer. If we take a closer look at the body, the bulk of it is simple HTML that can easily be rendered from Markdown. Because of this, we can replace the entire block of code inside the `<section>` tag with the liquid tag `{{ body }}` and move the previous content into a Siteleaf page body, rewritten in Markdown. Siteleaf will render that Markdown to HTML, inject it into our template, and allow us to modify it easily in the CMS, without touching the template code. Previously, the snippet of code to produce a table looked like this:
+Looking at the previous code, we can separate the entire page into three sections—header, body (represented as a `<section>`), and footer. If we take a closer look at the body, the bulk of it is simple HTML that can easily be rendered from Markdown. Because of this, we can replace the entire block of code inside the `<section>` tag with the liquid tag `{% raw %}{{ body }}{% endraw %}` and move the previous content into a Siteleaf page body, rewritten in Markdown. Siteleaf will render that Markdown to HTML, inject it into our template, and allow us to modify it easily in the CMS, without touching the template code. Previously, the snippet of code to produce a table looked like this:
 
 ```html
 <h2>Table</h2>
@@ -69,7 +69,7 @@ The body content is typically the easiest to extract because Siteleaf does most 
 
 If this theme were meant for multiple pages, the links at the top would appear on every page, so it's safe to consider these global values. As such, we can extract them into site meta fields. Starting with the byline in the top-left, we *could* simply replace it with the full URL to the GitHub profile page, but instead, let's write the template in a way that saves us from repeating the URI with every occurrance. I take this approach because we use several GitHub links on the top bar, including one for the repo and another for a zip of the master branch. Here's a look at the previous code:
 
-```html
+```liquid
 <div class="byline">
   <a href="https://github.com/house">github.com/house</a>
 </div>
@@ -82,43 +82,43 @@ If this theme were meant for multiple pages, the links at the top would appear o
 
 The base GitHub URL appears three times (and once without the protocol), the GitHub username four times, and the GitHub repo name twice. If we take a stance and agree to use GitHub to host our source code when using this theme, we can extract both the GitHub username and repo name into site meta fields:
 
-```html
-<div class="byline">
+```liquid
+{% raw %}<div class="byline">
   <a href="https://github.com/{{ site.meta.github_user }}">github.com/{{ site.meta.github_user }}</a>
 </div>
 <div class="downloads">
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}">Fork on GitHub</a>
   &bull; 
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}/archive/master.zip">Download ZIP</a>
-</div>
+</div>{% endraw %}
 ```
 
 With this setup, if we ever decide to change our username or repo name, we only need to do it once, without touching the template code. I try to extract as much content as possible, so anyone could upload the theme and have full control over the copy. We can achieve this with a couple more site meta fields, but let's also specify fallbacks, so these are optional to the user:
 
-```html
-<div class="byline"><a href="https://github.com/{{ site.meta.github_user }}">github.com/{{ site.meta.github_user }}</a></div>
+```liquid
+{% raw %}<div class="byline"><a href="https://github.com/{{ site.meta.github_user }}">github.com/{{ site.meta.github_user }}</a></div>
 <div class="downloads">
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}">{{ site.meta.fork_text | fallback: 'Fork on GitHub' }}</a>
   &bull; 
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}/archive/master.zip">{{ site.meta.download_text | fallback: 'Download ZIP' }}</a>
-</div>
+</div>{% endraw %}
 ```
 
 The second half the header consists of the page's title and tagline. Since this theme is intended to be a single, standalone page, I could've used the site title and a site meta field for the tagline, but I wanted to keep it open to multiple pages, so I went with the page title and a page meta field:
 
-```html
-<hgroup>
+```liquid
+{% raw %}<hgroup>
   <h1>{{ title }}</h1>
   <h2 class="tagline">{{ meta.tagline }}</h2>
-</hgroup>
+</hgroup>{% endraw %}
 ```
 
 Now, if we ever add a 'Team' page, we can adapt the header to the new page without needing to touch the template.
 
 The last remaining piece of the puzzle is the window title. Typically, I set this to `{{ site.title }} / {{ title }}`, but this theme's title includes both the title and a credit to the creator, Allison. Rather than set the site title to such a length, once again, I used a site meta field with a fallback to the site title:
 
-```html
-<title>{{ site.meta.window_title | fallback: site.title }}</title>
+```liquid
+{% raw %}<title>{{ site.meta.window_title | fallback: site.title }}</title>{% endraw %}
 ```
 
 Again, the user can upload the theme without specifying the `window_title`, but it's also there if they need it.

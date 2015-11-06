@@ -23,7 +23,7 @@ A cool sentence[^1].
 
 And rendered like this:
 
-~~~
+~~~html
 <p>A cool sentence<sup id="fnref1">
     <a href="#fn1" rel="footnote">1</a>
 </sup>.</p>
