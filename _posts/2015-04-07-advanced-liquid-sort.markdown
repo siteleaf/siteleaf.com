@@ -20,13 +20,13 @@ With any site, Siteleaf makes some general assumptions about your content. For e
 For example, here’s how we might sort pages by date:
 
 ```liquid
-{% assign sorted = pages | sort:"date" %}
+{% raw %}{% assign sorted = pages | sort:"date" %}{% endraw %}
 ```
 
 This will sort in ascending order, but we could also choose descending order by adding `reverse`:
 
 ```liquid
-{% assign sorted = pages | sort:"date" | reverse %}
+{% raw %}{% assign sorted = pages | sort:"date" | reverse %}{% endraw %}
 ```
 
 You can sort on [any property](http://www.siteleaf.com/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Below are few real-world examples you might find useful.
@@ -39,15 +39,15 @@ Tags by default are shown in the order in which they were added. If you’d like
 In this example, we’ll create a variable called `sorted_tags` to hold our sorted tags using the [`assign`](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers#variable-assignment) Liquid tag (feel free to use any variable name you wish):
 
 ```liquid
-{% assign sorted_tags = tags | sort:"value" %}
+{% raw %}{% assign sorted_tags = tags | sort:"value" %}{% endraw %}
 ```
 
 Once sorted, we can display the tags using the `sorted_tags` variable we just created:
 
 ```liquid
-{% for tag in sorted_tags %}
+{% raw %}{% for tag in sorted_tags %}
   <li><a href="{{tag.url}}">{{tag.value}}</a></li>
-{% endfor %}
+{% endfor %}{% endraw %}
 ```
 
 ### Sort posts by metadata
@@ -67,11 +67,11 @@ Using the `sort` filter, we can now order posts by `meta.num`:
 And of course, we can display these posts as we normally would:
 
 ```liquid
-<ul>
+{% raw %}<ul>
   {% for post in sorted_posts %}
   <li><a href="{{post.url}}">{{post.title}}</a></li>
   {% endfor %}
-</ul>
+</ul>{% endraw %}
 ```
 
 ### Sticky posts
@@ -85,7 +85,7 @@ For this example, we’ll add a meta field to our sticky post called `sticky` an
 Now we can sort our posts by `meta.sticky`, but we’ll also add a second parameter (`last`) to make sure our non-sticky posts are pushed below.
 
 ```liquid
-{% assign sorted_posts = site.posts | sort:"meta.sticky","last" %}
+{% raw %}{% assign sorted_posts = site.posts | sort:"meta.sticky","last" %}{% endraw %}
 ```
 
 By adding `last` you are telling Siteleaf to sort blank or null values last (the default is first).

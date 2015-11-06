@@ -18,7 +18,7 @@ As the name suggests, this filter allows you to group your content by a certain 
 For example, here’s how we could group all posts by year published:
 
 ```liquid
-{% assign posts_by_year = site.posts | group_by:"year" %}
+{% raw %}{% assign posts_by_year = site.posts | group_by:"year" %}{% endraw %}
 ```
 
 You can group by [any property](/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Here are a few real-world examples you may want to apply to your theme.
@@ -31,7 +31,7 @@ With multiple authors on our blog, it may be a good idea to group together posts
 Starting with `site.posts` (all posts within our site), we can apply the `group_by` filter with `author` as the parameter:
 
 ```liquid
-{% assign posts_by_author = site.posts | group_by:"author" %}
+{% raw %}{% assign posts_by_author = site.posts | group_by:"author" %}{% endraw %}
 ```
 
 Behind the scenes, posts are collected into an array which looks something like this:
@@ -47,18 +47,18 @@ Behind the scenes, posts are collected into an array which looks something like 
 The property (in this case `author`) can be accessed by `name` and matching posts are grouped under `items`. Knowing that, we can display our grouped posts like this:
 
 ```liquid
-{% for author in posts_by_author %}
+{% raw %}{% for author in posts_by_author %}
   <dt>{{author.name}}</dt>
   {% for posts in author.items %}
   <dd><a href="{{post.url}}">{{post.title}}</a></dd>
   {% endfor %}
-{% endfor %}
+{% endfor %}{% endraw %}
 ```
 
 **Tip:** To sort our authors alphabetically we could also apply `sort` to our group:
 
 ```liquid
-{% assign posts_by_author = site.posts | group_by:"author" | sort:"name" %}
+{% raw %}{% assign posts_by_author = site.posts | group_by:"author" | sort:"name" %}{% endraw %}
 ```
 
 ### Group posts by metadata
@@ -66,7 +66,7 @@ The property (in this case `author`) can be accessed by `name` and matching post
 `group_by` also works on metadata and taxonomy. For example, here’s how we could group posts by color:
 
 ```liquid
-{% assign posts_by_color = site.pages | group_by:"meta.color" %}
+{% raw %}{% assign posts_by_color = site.pages | group_by:"meta.color" %}{% endraw %}
 ```
 
 Our grouped array will look something like this:
@@ -86,7 +86,7 @@ Grouping posts by year is a common pattern on archive pages. Since Siteleaf alre
 First, let’s group our posts by year:
 
 ```liquid
-{% assign posts_by_year = posts | group_by:"year" %}
+{% raw %}{% assign posts_by_year = posts | group_by:"year" %}{% endraw %}
 ```
 
 <small>Note: We are using `posts` in this case rather than `site.posts` because we only want posts relative to this page (but either could work).</small>
@@ -94,20 +94,20 @@ First, let’s group our posts by year:
 Now we can display our grouped posts:
 
 ```liquid
-{% for year in posts_by_year %}
+{% raw %}{% for year in posts_by_year %}
   <h2>{{year.name}}</h2>
   <ul>
   {% for post in year.items %}
     <li><a href="{{post.url}}">{{post.title}}</a></li>
   {% endfor %}
   </ul>
-{% endfor %}
+{% endfor %}{% endraw %}
 ```
 
 **Extra credit:** We could take this a step further and do a multi-level group, showing posts by year AND month:
 
 ```liquid
-{% for year in posts_by_year %}
+{% raw %}{% for year in posts_by_year %}
   <h2>{{year.name}}</h2>
   {% assign posts_by_month = year.items | group_by:"month" %}
   {% for month in posts_by_month %}
@@ -118,7 +118,7 @@ Now we can display our grouped posts:
     {% endfor %}
     </ul>
   {% endfor %}
-{% endfor %}
+{% endfor %}{% endraw %}
 ```
 
 In case you're wondering, `%B` gives us the month name (e.g. “April”) from a date. For full documentation see our [date formatting](/help/themes/filters-and-tags/date-formating) guide.
