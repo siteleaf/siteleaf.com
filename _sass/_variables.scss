@@ -5,7 +5,7 @@ $color-gray-2:    #2D3336;
 $color-gray-1:    #60686B;
 $color-gray-0:    #989FA3;
 $color-gray-n1:   #B6BCBF;
-$color-gray-n2:   #D3D8DB;
+$color-gray-n2:   #DDE2E5;
 $color-gray-n3:   #EBF0F2;
 $color-gray-n4:   #F2F6F7;
 $color-gray-n5:   #FAFCFC;
@@ -20,10 +20,11 @@ $color-yellow:    #F1C40F;
 $color-white:     #FFF;
 $color-mint:      #24C7A6;
 
-$color-black-alpha-lighter: rgba(#000, 0.05);
+$color-black-alpha-lighter: rgba(#000, 0.075);
 $color-black-alpha-light:   rgba(#000, 0.1);
 $color-black-alpha:         rgba(#000, 0.2);
-$color-black-alpha-dark:    rgba(#000, 0.6);
+$color-black-alpha-dark:    rgba(#000, 0.4);
+$color-black-alpha-darker:  rgba(#000, 0.6);
 $color-white-alpha:         rgba(#fff, 0.6);
 
 // Typography

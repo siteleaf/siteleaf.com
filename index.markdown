@@ -75,8 +75,8 @@ features:
   - title: Collaboration
     body: 'Collaboration is still easy, using the same Siteleaf interface your client
       or team is familiar with. Let them tinker all they want, without touching a
-      single line of code. Siteleaf supports different user roles: Admin, Publisher,
-      or Writer.'
+      single line of code. Siteleaf supports different user roles, like Admin, Publisher,
+      and Writer.'
   - title: Publish fast, secure sites anywhere
     body: Siteleaf generates static files when you publish, which means your site
       is fast, secure, and doesn’t rely on a database or complicated server setup.
