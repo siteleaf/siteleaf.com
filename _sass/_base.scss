@@ -46,30 +46,40 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-5;
-  font-weight: $font-weight-light;
-  letter-spacing: $letter-spacing-tighter;
+  font-size: $font-size-4;
+  letter-spacing: $letter-spacing-tight;
   line-height: $line-height-tighter;
   margin-top: $v * 1.5;
-  margin-bottom: ($v * 2.5) - computed-line-height($font-size-5, $line-height-tighter);
+  margin-bottom: ($v * 2.25) - computed-line-height($font-size-5, $line-height-tighter);
 }
 
 h3 {
-  font-size: $font-size-4;
+  font-size: $font-size-3;
   letter-spacing: $letter-spacing-tight;
   color: $color-gray-0;
   line-height: $line-height-tighter;
   margin-top: $v * 1.75;
-  margin-bottom: ($v * 1.75) - computed-line-height($font-size-4, $line-height-tighter);
+  margin-bottom: ($v * 1.5) - computed-line-height($font-size-3, $line-height-tighter);
 }
 
-h4,
+h4 {
+  font-size: $font-size-0;
+  line-height: $line-height-tight;
+  @extend %text--caps;
+  color: $color-gray-0;
+  font-weight: $font-weight-semibold;
+  margin-top: $v * 1.75;
+  margin-bottom: ($v * 1.25) - computed-line-height($font-size-0, $line-height-tight);
+}
+
 h5,
 h6 {
-  font-size: $font-size-1;
+  font-size: $font-size-0;
   line-height: $line-height-tight;
+  font-weight: $font-weight-semibold;
+  color: $color-gray-0;
   margin-top: $v * 1.25;
-  margin-bottom: ($v * 1.5) - computed-line-height($font-size-1, $line-height-tight);
+  margin-bottom: ($v * 1.25) - computed-line-height($font-size-0, $line-height-tight);
 }
 
 strong {

@@ -2,10 +2,14 @@
 layout: default
 ---
 
-<section class="posts">
+<main class="page__main page__main--posts">
   <div class="wrap wrap--narrow">
     {% for post in site.posts %}
-      {% include post.html %}
+      <article class="post">
+        <a href="{{ post.url }}"><h2 class="post__title">{{ post.title }}</h2></a>
+        {{ post.excerpt | markdownify }}
+        <!-- {{ post.content | markdownify }} -->
+      </article>
     {% endfor %}
   </div>
-</section>
+</main>

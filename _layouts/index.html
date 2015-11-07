@@ -2,49 +2,51 @@
 layout: default
 ---
 
-<section class="section section--blue">
-  <div class="wrap wrap--narrow">
-    <a href="{{ site.baseurl }}/"><img class="logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
-    <h1 class="section__title section__title--headline">{{ page.headline }}</h1>
-    <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
-  </div>
-</section>
-
-{% for feature in page.features %}
-  <section class="section section--feature{% if feature.background %} section--{{ feature.background }}{% endif %}{% if feature.graphic %} section--graphic{% endif %}">
+<main class="page__main page__main--index">
+  <section class="section section--blue">
     <div class="wrap wrap--narrow">
-      <h1 class="section__title">{{ feature.title }}</h1>
-      {% assign graphic = feature.graphic %}
-      {% case graphic %}
-        {% when 'g-jekyll' %}
-          {% include_relative _graphics/g-jekyll.html %}
-        {% when 'g-develop' %}
-          {% include_relative _graphics/g-develop.html %}
-        {% when 'g-metadata' %}
-          {% include_relative _graphics/g-metadata.html %}
-        {% when 'g-github' %}
-          {% include_relative _graphics/g-github.html %}
-        {% when 'g-editor' %}
-          {% include_relative _graphics/g-editor.html %}
-      {% endcase %}
-      <section class="section__text">
-        {% for subfeature in feature.body %}
-          <h4 class="section__subtitle">{{ subfeature.title }}</h4>
-          <div class="section__body">
-            {{ subfeature.body | markdownify }}
-          </div>
-        {% endfor %}
-        {% if feature.link %}
-          <a class="section__link" href="{{ feature.link.url }}">{{ feature.link.title }}</a>
-        {% endif %}
-      </section>
+      <a href="{{ site.baseurl }}/"><img class="logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
+      <h1 class="section__title section__title--headline">{{ page.headline }}</h1>
+      <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
     </div>
   </section>
-{% endfor %}
 
-<section class="section section--blue">
-  <div class="wrap wrap--narrow">
-    <h1 class="section__title">Ready to try the new Siteleaf?</h1>
-    <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
-  </div>
-</section>
+  {% for feature in page.features %}
+    <section class="section section--feature{% if feature.background %} section--{{ feature.background }}{% endif %}{% if feature.graphic %} section--graphic{% endif %}">
+      <div class="wrap wrap--narrow">
+        <h1 class="section__title">{{ feature.title }}</h1>
+        {% assign graphic = feature.graphic %}
+        {% case graphic %}
+          {% when 'g-jekyll' %}
+            {% include_relative _graphics/g-jekyll.html %}
+          {% when 'g-develop' %}
+            {% include_relative _graphics/g-develop.html %}
+          {% when 'g-metadata' %}
+            {% include_relative _graphics/g-metadata.html %}
+          {% when 'g-github' %}
+            {% include_relative _graphics/g-github.html %}
+          {% when 'g-editor' %}
+            {% include_relative _graphics/g-editor.html %}
+        {% endcase %}
+        <section class="section__text">
+          {% for subfeature in feature.body %}
+            <h3 class="section__subtitle">{{ subfeature.title }}</h3>
+            <div class="section__body">
+              {{ subfeature.body | markdownify }}
+            </div>
+          {% endfor %}
+          {% if feature.link %}
+            <a class="section__link" href="{{ feature.link.url }}">{{ feature.link.title }}</a>
+          {% endif %}
+        </section>
+      </div>
+    </section>
+  {% endfor %}
+
+  <section class="section section--blue">
+    <div class="wrap wrap--narrow">
+      <h1 class="section__title">Ready to try the new Siteleaf?</h1>
+      <a class="button button--onDark" href="{{ page.button.url }}">{{ page.button.title }}</a>
+    </div>
+  </section>
+</main>
