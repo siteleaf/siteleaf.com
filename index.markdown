@@ -73,10 +73,10 @@ features:
       to help out only if you need it. Drag and drop an image and we’ll insert its
       code. Even drop an entire text file. We’ll take care of the details.
   - title: Collaboration
-    body: 'Collaboration is still easy, using the same Siteleaf interface your client
+    body: Collaboration is still easy, using the same Siteleaf interface your client
       or team is familiar with. Let them tinker all they want, without touching a
       single line of code. Siteleaf supports different user roles, like Admin, Publisher,
-      and Writer.'
+      and Writer.
   - title: Publish fast, secure sites anywhere
     body: Siteleaf generates static files when you publish, which means your site
       is fast, secure, and doesn’t rely on a database or complicated server setup.
