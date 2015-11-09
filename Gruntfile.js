@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         separator: ';',
       },
       dist: {
-        src: ['_src/*.js'],
+        src: ['js/_source/*.js'],
         dest: 'js/main.js',
       },
     },
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['_src/*.js'],
+        files: ['js/_source/*.js'],
         tasks: ['concat'],
         options: {
           livereload: true,

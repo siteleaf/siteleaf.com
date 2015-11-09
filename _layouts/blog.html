@@ -3,11 +3,18 @@ layout: default
 ---
 
 <main class="page__main page__main--posts">
-  <div class="wrap wrap--narrow">
-    {% for post in site.posts %}
-      <article class="post post--excerpt">
-        {% if post.hero %}
-          <a href="{{ post.url }}"><img class="post__hero" src="{{ post.hero }}" /></a>
+  {% for post in site.posts %}
+    <article class="post post--excerpt">
+      <div class="wrap wrap--narrow">
+        {% if post.vimeo %}
+          <figure class="post__hero post__hero--video">
+            <iframe class="post__video" src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </figure>
+        {% elsif post.hero %}
+          <a href="{{ post.url }}">
+            <figure class="post__hero">
+              <img src="{{ post.hero }}" /></a>
+            </figure>
         {% endif %}
         <a href="{{ post.url }}"><h1 class="post__title">{{ post.title }}</h1></a>
         <section class="post__meta">
@@ -28,7 +35,10 @@ layout: default
         <section class="post__content">
           {{ post.excerpt | markdownify }}
         </section>
-      </article>
-    {% endfor %}
-  </div>
+        {% if post.excerpt != post.content %}
+          <a class="post__moreLink" href="{{ post.url }}">Read more &rarr;</a>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
 </main>

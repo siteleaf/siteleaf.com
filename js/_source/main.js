@@ -20,6 +20,7 @@ $(function(){
 
   var init = function() {
     $('body').addClass('is-js');
+    $('.post__hero--video').fitVids();
     setInitialValues();
     bindWindowResize();
 
