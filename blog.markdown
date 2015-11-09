@@ -5,4 +5,3 @@ permalink: "/blog/"
 layout: blog
 ---
 
-Hello world!

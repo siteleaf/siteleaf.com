@@ -41,16 +41,24 @@ h1 {
   font-weight: $font-weight-light;
   letter-spacing: $letter-spacing-tightest;
   line-height: $line-height-tighter;
-  margin-top: $v * 1.5;
-  margin-bottom: ($v * 3) - computed-line-height($font-size-6, $line-height-tighter);
+  margin-top: $v * 0;
+  margin-bottom: ($v * 2.5) - computed-line-height($font-size-6, $line-height-tighter);
 }
+
+// h1 {
+//   font-size: $font-size-5;
+//   letter-spacing: $letter-spacing-tight;
+//   line-height: $line-height-tighter;
+//   margin-top: $v * 1.75;
+//   margin-bottom: ($v * 2) - computed-line-height($font-size-5, $line-height-tighter);
+// }
 
 h2 {
   font-size: $font-size-4;
   letter-spacing: $letter-spacing-tight;
   line-height: $line-height-tighter;
-  margin-top: $v * 1.5;
-  margin-bottom: ($v * 2.25) - computed-line-height($font-size-5, $line-height-tighter);
+  margin-top: $v * 1.75;
+  margin-bottom: ($v * 2) - computed-line-height($font-size-4, $line-height-tighter);
 }
 
 h3 {
