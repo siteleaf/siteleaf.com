@@ -1,0 +1,47 @@
+{% if include.post %}
+  {% assign post = include.post %}
+  <article class="post post--excerpt">
+    <div class="wrap wrap--wide">
+      {% if post.vimeo %}
+        <figure class="post__hero post__hero--video">
+          <iframe class="post__video" src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </figure>
+      {% elsif post.hero %}
+        <a href="{{ post.url }}">
+          <figure class="post__hero">
+            <img src="{{ post.hero }}" /></a>
+          </figure>
+      {% endif %}
+    </div>
+    <div class="wrap wrap--narrow">
+      <a href="{{ post.url }}"><h1 class="post__title">{{ post.title }}</h1></a>
+      <section class="post__meta">
+        {% if post.date %}
+          <span class="post__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% endif %}
+        {% if post.author %}
+          <a class="post__author">{{ post.author }}</a>
+        {% endif %}
+        {% if post.tags %}
+          <ul class="post__tags">
+            {% for tag in post.tags %}
+              <li class="post__tag"><a class="post__tagLink">{{ tag }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </section>
+      <section class="post__content">
+        {% if include.excerpt %}
+          {{ post.excerpt | markdownify }}
+        {% else %}
+          {{ post.content | markdownify }}
+        {% endif %}
+      </section>
+      {% if include.excerpt %}
+        {% if post.excerpt != post.content %}
+          <a class="post__moreLink" href="{{ post.url }}">Read more &rarr;</a>
+        {% endif %}
+      {% endif %}
+    </div>
+  </article>
+{% endif %}
