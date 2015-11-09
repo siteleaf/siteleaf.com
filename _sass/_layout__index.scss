@@ -25,6 +25,7 @@
 
 .section__title {
   @extend %text--title;
+  margin-bottom: ($v * 3) - computed-line-height($font-size-6, $line-height-tighter);
 }
 .section__title--headline {
   margin-top: $v * 0.5;
