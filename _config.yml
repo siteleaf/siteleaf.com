@@ -21,6 +21,9 @@ exclude:
 - node_modules
 - config.ru
 - Gemfile*
+- Gruntfile.js
+- package.json
+- README.markdown
 excerpt_separator: |2+
 
 
