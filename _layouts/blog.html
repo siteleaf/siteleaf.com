@@ -5,10 +5,11 @@ layout: default
 <main class="page__main page__main--posts">
   <div class="wrap wrap--narrow">
     {% for post in site.posts %}
-      <article class="post">
+      <article class="post post--excerpt">
         <a href="{{ post.url }}"><h2 class="post__title">{{ post.title }}</h2></a>
-        {{ post.excerpt | markdownify }}
-        <!-- {{ post.content | markdownify }} -->
+        <section class="post__content">
+          {{ post.excerpt | markdownify }}
+        </section>
       </article>
     {% endfor %}
   </div>

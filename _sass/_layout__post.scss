@@ -31,3 +31,8 @@ $width--bullet: 1em;
     }
   }
 }
+
+.post--excerpt {
+  margin-top: $v * 6;
+  margin-bottom: $v * 6;
+}

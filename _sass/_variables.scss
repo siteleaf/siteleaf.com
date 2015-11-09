@@ -1,16 +1,17 @@
 // Colors
 // ------
 
-$color-gray-2:    #2F3538;
-$color-gray-1:    #60686B;
-$color-gray-0:    #989FA3;
+$color-gray-base: #131719;
+$color-gray-2:    rgba($color-gray-base, 0.84);
+$color-gray-1:    rgba($color-gray-base, 0.76);
+$color-gray-0:    rgba($color-gray-base, 0.4);
 $color-gray-n1:   #B6BCBF;
 $color-gray-n2:   #DDE2E5;
 $color-gray-n3:   #EBF0F2;
 $color-gray-n4:   #F2F6F7;
 $color-gray-n5:   #FAFCFC;
 $color-blue:      #0091E5;
-$color-blue-dark: darken($color-blue, 6%);
+$color-blue-dark: darken($color-blue, 7.5%);
 $color-green:     #8DCF3F;
 $color-navy:      #27415A;
 $color-magenta:   #D6457F;

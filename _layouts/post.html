@@ -4,7 +4,11 @@ layout: default
 
 <main class="page__main">
   <div class="wrap wrap--narrow">
-    <h1 class="post__title">{{ page.title }}</h1>
-    {{ content | markdownify }}
+    <artcle class="post">
+      <h1 class="post__title">{{ page.title }}</h1>
+      <section class="post__content">
+        {{ content | markdownify }}
+      </section>
+    </article>
   </div>
 </main>

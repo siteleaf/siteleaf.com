@@ -66,9 +66,8 @@ h4 {
   font-size: $font-size-0;
   line-height: $line-height-tight;
   @extend %text--caps;
-  color: $color-gray-0;
   font-weight: $font-weight-semibold;
-  margin-top: $v * 1.75;
+  margin-top: $v * 1.25;
   margin-bottom: ($v * 1.25) - computed-line-height($font-size-0, $line-height-tight);
 }
 
@@ -77,7 +76,6 @@ h6 {
   font-size: $font-size-0;
   line-height: $line-height-tight;
   font-weight: $font-weight-semibold;
-  color: $color-gray-0;
   margin-top: $v * 1.25;
   margin-bottom: ($v * 1.25) - computed-line-height($font-size-0, $line-height-tight);
 }
@@ -156,6 +154,7 @@ hr {
 
 mark {
   color: $color-gray-2;
+  background-color: #FFFF99;
 }
 
 // Wrap
