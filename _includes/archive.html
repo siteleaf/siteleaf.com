@@ -1,0 +1,21 @@
+{% assign posts = include.posts %}
+{% assign title = include.title %}
+<article class="archive">
+  <div class="wrap wrap--narrow">
+    <h1 class="page__title">{{ title }}</h1>
+    <ul class="archive__list">
+      {% for post in posts %}
+        {% assign month = post.date | date: '%B %Y' %}
+        {% unless post.next %}
+          <h3 class="archive__month">{{ month }}</h3>
+        {% else %}
+          {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
+          {% if month != next_month %}
+            <h3 class="archive__month">{{ month }}</h3>
+          {% endif %}
+        {% endunless %}
+        <li class="archive__item"><time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time><a class="archive__title" href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+</div>
+</article>

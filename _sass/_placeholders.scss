@@ -54,6 +54,13 @@
   }
 }
 
+%link--alt {
+  text-decoration: underline;
+  &:hover {
+    color: $color-blue;
+  }
+}
+
 // Code
 
 %pre {

@@ -1,3 +1,12 @@
+// General layout
+// --------------
+
+.page__main {
+  margin-top: $v * 4.5;
+  margin-bottom: $v * 6;
+}
+
 @import 'layout__footer';
 @import 'layout__index';
 @import 'layout__post';
+@import 'layout__archive';

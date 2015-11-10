@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<main class="page__main page__main--archive">
+  {% assign tag = page.title | downcase %}
+  {% assign tag_posts = site.tags[tag] %}
+  {% include archive.html title=page.title posts=tag_posts %}
+</main>

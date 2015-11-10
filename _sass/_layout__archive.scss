@@ -1,0 +1,21 @@
+// Archive
+// -------
+
+.archive__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+// .archive__item {
+//   font-size: $font-size-05;
+// }
+
+.archive__day {
+  display: inline-block;
+  width: 1.6em;
+  color: $color-gray-0;
+}
+
+.archive__title {
+  @extend %link--default;
+}

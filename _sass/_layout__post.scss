@@ -2,15 +2,13 @@
 // ----
 
 .post {
+  margin-top: $v * 4.5;
+  margin-bottom: $v * 4.5;
+  &:last-of-type {
+    margin-bottom: $v * 6;
+  }
   img {
     @include responsive-image;
-  }
-}
-.post--excerpt {
-  padding-top: $v * 4.5;
-  padding-bottom: $v * 4.5;
-  &:last-of-type {
-    padding-bottom: $v * 6;
   }
 }
 
@@ -30,6 +28,7 @@
     content: "by"
   }
 }
+
 .post__tags {
   display: inline-block;
   padding-left: 0;
@@ -38,22 +37,19 @@
     content: "in";
   }
 }
+
 .post__tag {
   display: inline-block;
   &:not(:last-child):after {
     content: ",";
   }
 }
+
 .post__tagLink {
-  text-decoration: underline;
-  &:hover {
-    color: $color-blue;
-  }
+  @extend %link--alt;
 }
 
 .post__moreLink {
-  @extend %text--caps;
-  @extend %text--small;
   @extend %link--default;
 }
 
