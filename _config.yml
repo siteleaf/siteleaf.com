@@ -3,6 +3,9 @@ title: Siteleaf v2
 url: http://v2.siteleaf.com
 timezone: UTC
 collections:
+  tags:
+    title: Tags
+    output: true
   uploads:
     title: Uploads
     output: true
