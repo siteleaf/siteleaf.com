@@ -45,8 +45,7 @@
   font-size: $font-size-n1;
 }
 
-// Link
-
+// links
 %link--default {
   color: $color-blue;
   &:hover {
@@ -61,8 +60,7 @@
   }
 }
 
-// Code
-
+// code
 %pre {
   background-color: $color-gray-n5;
 }

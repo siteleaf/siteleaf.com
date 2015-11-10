@@ -12,6 +12,10 @@
   }
 }
 
+.post__header {
+  margin-bottom: $v * 1.5;
+}
+
 .post__hero {
   margin-bottom: $v * 1.5;
   text-align: center;
@@ -20,8 +24,8 @@
 .post__meta {
   @extend %text--small;
   color: $color-gray-0;
-  margin-bottom: $v * 0.5;
 }
+
 
 .post__author {
   &:before {
@@ -32,6 +36,7 @@
 .post__tags {
   display: inline-block;
   @extend %list--unformatted;
+  margin-bottom: 0;
   &:before {
     content: "in";
   }

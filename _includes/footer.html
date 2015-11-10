@@ -1,5 +1,12 @@
 <footer class="page__footer">
   <div class="wrap wrap--wide">
-    <span class="copyright">Made with love by <a class="page__footer__link" href="http://oak.is">Oak</a>.</span>
+    <ul class="nav__list nav__list--footer">
+      {% for page in site.pages %}
+        {% if page.title %}
+        <li class="nav__item"><a class="nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <section class="copyright">Made with love by <a class="page__footer__link" href="http://oak.is">Oak</a>.</section>
   </div>
 </footer>

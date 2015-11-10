@@ -5,6 +5,9 @@
   // position: absolute;
   // top: 0;
   text-align: right;
+  background-color: $color-gray-n4; // TEMP
+  padding-top: $v * 1.5;
+  padding-bottom: $v * 1.5;
 }
 
 .nav__logo {
@@ -14,6 +17,7 @@
 .nav__list {
   display: inline-block;
   @extend %list--unformatted;
+  margin-bottom: 0;
 }
 
 .nav__item {
@@ -21,5 +25,7 @@
 }
 
 .nav__link {
-  color: $color-green-dark;
+  .nav__list--header & {
+    color: $color-green-dark;
+  }
 }
