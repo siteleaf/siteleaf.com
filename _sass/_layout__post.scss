@@ -31,8 +31,7 @@
 
 .post__tags {
   display: inline-block;
-  padding-left: 0;
-  list-style-type: none;
+  @extend %list--unformatted;
   &:before {
     content: "in";
   }

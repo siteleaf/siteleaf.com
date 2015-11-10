@@ -1,0 +1,25 @@
+// Header
+// ------
+
+.page__header {
+  // position: absolute;
+  // top: 0;
+  text-align: right;
+}
+
+.nav__logo {
+  float: left;
+}
+
+.nav__list {
+  display: inline-block;
+  @extend %list--unformatted;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  color: $color-green-dark;
+}

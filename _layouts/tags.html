@@ -13,7 +13,7 @@ layout: default
         {% assign tag = title | downcase %}
         <h3 class="archive__month">{{ title }}</h3>
         {% for post in site.tags[tag] %}
-          <li class="archive__item"><a class="archive__title" href="{{ post.url }}">{{ post.title }}</a></li>
+          <li class="archive__item"><a class="archive__title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
         {% endfor %}
       {% endfor %}
     </ul>

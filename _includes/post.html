@@ -1,5 +1,6 @@
 {% if include.post %}
   {% assign post = include.post %}
+  {% assign isExcerpt = include.excerpt %}
   <article class="post post--excerpt">
     <div class="wrap wrap--wide">
       {% if post.vimeo %}
@@ -14,10 +15,10 @@
       {% endif %}
     </div>
     <div class="wrap wrap--narrow">
-      <a href="{{ post.url }}"><h1 class="post__title">{{ post.title }}</h1></a>
+      {% if isExcerpt %}<a href="{{ post.url }}">{% endif %}<h1 class="post__title">{{ post.title }}</h1>{% if isExcerpt %}</a>{% endif %}
       <section class="post__meta">
         {% if post.date %}
-          <time class="post__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <time class="post__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
         {% endif %}
         {% if post.author %}
           <a class="post__author">{{ post.author }}</a>
@@ -31,13 +32,13 @@
         {% endif %}
       </section>
       <section class="post__content">
-        {% if include.excerpt %}
+        {% if isExcerpt %}
           {{ post.excerpt | markdownify }}
         {% else %}
           {{ post.content | markdownify }}
         {% endif %}
       </section>
-      {% if include.excerpt %}
+      {% if isExcerpt %}
         {% if post.excerpt != post.content %}
           <a class="post__moreLink" href="{{ post.url }}">Read more &rarr;</a>
         {% endif %}

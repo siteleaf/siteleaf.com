@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main class="page__main page__main--posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:12 %}
     {% include post.html post=post excerpt=true %}
   {% endfor %}
 </main>

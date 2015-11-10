@@ -6,7 +6,13 @@
   margin-bottom: $v * 6;
 }
 
+.page__main--teaser {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@import 'layout__header';
 @import 'layout__footer';
-@import 'layout__index';
+@import 'layout__teaser';
 @import 'layout__post';
 @import 'layout__archive';

@@ -20,6 +20,7 @@ description: Content management simplified. Edit in the cloud, publish anywhere.
   static file output, any host, markdown, and multiple collaborators.
 permalinks: pretty
 twitter_username: siteleaf
+date_format: '%b %-d, %Y'
 exclude:
 - node_modules
 - config.ru

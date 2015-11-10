@@ -2,13 +2,16 @@
 // -------
 
 .archive__list {
-  list-style-type: none;
-  padding-left: 0;
+  @extend %list--unformatted;
+}
+
+.archive__item {
+  display: table;
 }
 
 .archive__day {
-  display: inline-block;
-  width: 1.6em;
+  display: table-cell;
+  width: 1.5em;
 }
 
 .archive__title {

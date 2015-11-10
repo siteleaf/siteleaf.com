@@ -1,7 +1,14 @@
-<!-- <header class="page__header">
-  <div class="wrap wrap--narrow">
-    <a href="{{ site.baseurl }}/"><img class="logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
-  </div>
+<header class="page__header">
+  <nav class="nav">
+    <div class="wrap wrap--wide">
+      <a href="{{ site.baseurl }}/"><img class="logo nav__logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
+      <ul class="nav__list">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <li class="nav__item"><a class="nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
 </header>
- -->
- 

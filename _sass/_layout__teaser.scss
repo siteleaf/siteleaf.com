@@ -1,5 +1,5 @@
-// Index
-// -----
+// Teaser
+// ------
 
 .logo {
   height: 94px; // natural height of asset
@@ -15,9 +15,6 @@
 }
 .section--blue {
   @extend %background--blue;
-}
-.section--green {
-  @extend %background--green;
 }
 .section--navy {
   @extend %background--navy;

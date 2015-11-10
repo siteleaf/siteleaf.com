@@ -98,19 +98,21 @@
   @extend %background--dark;
 }
 
-%background--green {
-  background-color: $color-green;
-  @extend %background--dark;
-}
-
 %background--navy {
   background-color: $color-navy;
   @extend %background--dark;
 }
 
-// Inputs
-// ------
+// Components
+// ----------
 
+// list
+%list--unformatted {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+// inputs
 %inverted {
   box-shadow: inset 0 $button-thickness $button-thickness $color-black-alpha-lighter;
   border-radius: $border-radius;
