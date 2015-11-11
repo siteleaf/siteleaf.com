@@ -43,15 +43,9 @@ h1 {
   line-height: $line-height-tighter;
   margin-top: $v * 0;
   margin-bottom: ($v * 2.5) - computed-line-height($font-size-6, $line-height-tighter);
+  text-align: center;
+  color: $color-blue;
 }
-
-// h1 {
-//   font-size: $font-size-5;
-//   letter-spacing: $letter-spacing-tight;
-//   line-height: $line-height-tighter;
-//   margin-top: $v * 1.75;
-//   margin-bottom: ($v * 2) - computed-line-height($font-size-5, $line-height-tighter);
-// }
 
 h2 {
   font-size: $font-size-4;
@@ -172,6 +166,7 @@ mark {
   margin-left: auto;
   margin-right: auto;
   width: $width-container;
+  position: relative;
 }
 .wrap--narrow {
   max-width: $max-width-narrow;
@@ -199,6 +194,13 @@ mark {
     @extend %inverted;
     border-bottom-color: transparent;
     @include transform(translateY(2px));
+  }
+}
+.button--small {
+  padding: 0.05em 0.5em;
+  font-weight: $font-weight-normal;
+  &:active {
+    @include transform(translateY(1px));
   }
 }
 .button--large {

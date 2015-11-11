@@ -1,0 +1,57 @@
+// Nav
+// ---
+
+.nav {
+  position: relative;
+  // font-size: $font-size-05;
+}
+
+.nav__logoLink {
+  @include vert-align;
+  left: 0;
+}
+
+.nav__list {
+  display: inline-block;
+  @extend %list--unformatted;
+}
+.nav__list--header {
+  margin-bottom: 0;
+  padding-top: $v * 2;
+  padding-bottom: $v * 2;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  .nav__list--header .nav__item:last-child & {
+    margin-right: 0;
+  }
+  .page__header &:not(.button) {
+    color: $color-green-dark;
+    &:hover {
+      color: darken($color-green-dark, 7.5%);
+    }
+  }
+  .page__header--dark &:not(.button) {
+    color: $color-white;
+    &:hover {
+      color: rgba($color-white, 0.6);
+    } // TO DO: make this more modular
+  }
+  .page__footer & {
+    @extend %link--default;
+  }
+}
+.nav__link--active {
+  .page__header &:not(.button) {
+    color: $color-gray-0;
+  }
+  .page__header--dark & {
+    color: $color-white;
+  }
+}

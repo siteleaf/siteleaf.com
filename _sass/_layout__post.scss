@@ -2,10 +2,10 @@
 // ----
 
 .post {
-  margin-top: $v * 4.5;
-  margin-bottom: $v * 4.5;
+  margin-top: $margin-top--page;
+  margin-bottom: $margin-bottom--page * 2;
   &:last-of-type {
-    margin-bottom: $v * 6;
+    margin-bottom: $margin-bottom--page;
   }
   img {
     @include responsive-image;
@@ -14,6 +14,7 @@
 
 .post__header {
   margin-bottom: $v * 1.5;
+  text-align: center;
 }
 
 .post__hero {
@@ -21,11 +22,14 @@
   text-align: center;
 }
 
+.post__title__link {
+  @extend %link--default;
+}
+
 .post__meta {
   @extend %text--small;
   color: $color-gray-0;
 }
-
 
 .post__author {
   &:before {
@@ -53,10 +57,6 @@
   @extend %link--alt;
 }
 
-.post__moreLink {
-  @extend %link--default;
-}
-
 $width--bullet: 1em;
 
 .post__content {
@@ -80,4 +80,8 @@ $width--bullet: 1em;
       font-size: $font-size-1;
     }
   }
+}
+
+.post__moreLink {
+  @extend %link--default;
 }

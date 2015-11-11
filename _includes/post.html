@@ -16,7 +16,7 @@
     </div>
     <div class="wrap wrap--narrow">
       <header class="post__header">
-        {% if isExcerpt %}<a href="{{ post.url }}">{% endif %}<h1 class="post__title">{{ post.title }}</h1>{% if isExcerpt %}</a>{% endif %}
+        <h1 class="post__title">{% if isExcerpt %}<a href="{{ post.url }}" class="post__title__link">{% endif %}{{ post.title }}{% if isExcerpt %}</a>{% endif %}</h1>
         <section class="post__meta">
           {% if post.date and post.footer_date != true %}
             <time class="post__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>

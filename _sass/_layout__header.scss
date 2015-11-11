@@ -2,35 +2,9 @@
 // ------
 
 .page__header {
-  // position: absolute;
-  // top: 0;
   text-align: right;
-  // background-color: $color-gray-n4; // TEMP
-  // background-color: $color-blue; // TEMP
-  padding-top: $v * 1.5;
-  padding-bottom: $v * 1.5;
 }
 
 .page__header--dark {
   @extend %background--blue;
-}
-
-.nav__logo {
-  float: left;
-}
-
-.nav__list {
-  display: inline-block;
-  @extend %list--unformatted;
-  margin-bottom: 0;
-}
-
-.nav__item {
-  display: inline-block;
-}
-
-.nav__link {
-  .nav__list--header & {
-    color: $color-green-dark;
-  }
 }

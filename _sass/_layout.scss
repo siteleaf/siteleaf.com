@@ -1,9 +1,12 @@
 // General layout
 // --------------
 
+$margin-top--page:    $v * 2;
+$margin-bottom--page: $v * 4;
+
 .page__main {
-  margin-top: $v * 4.5;
-  margin-bottom: $v * 6;
+  margin-top: $margin-top--page;
+  margin-bottom: $margin-bottom--page;
 }
 
 .page__main--teaser {
@@ -13,6 +16,7 @@
 
 @import 'layout__header';
 @import 'layout__footer';
+@import 'layout__nav';
 @import 'layout__teaser';
 @import 'layout__post';
 @import 'layout__archive';
