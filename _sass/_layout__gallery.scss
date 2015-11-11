@@ -1,6 +1,28 @@
 // Gallery
 // -------
 
+.gallery {
+  @include clearfix;
+}
+
+.gallery__items {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.gallery__item {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  @include max-width($bp-header-collapses) {
+    width: 100%;
+  }
+}
+
 .gallery__image {
   @include responsive-image;
+}
+
+.gallery__title__link {
+  @extend %link--default;
 }
