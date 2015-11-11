@@ -9,6 +9,6 @@ items:
 - title: Otlet's Shelf
   image: 
   url: http://otletsshelf.siteleaf.net
-layout: page
+layout: gallery
 ---
 

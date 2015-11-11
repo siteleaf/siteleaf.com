@@ -1,6 +1,6 @@
 ---
 title: Gallery
 permalink: "/gallery/"
-layout: page
+layout: gallery
 ---
 
