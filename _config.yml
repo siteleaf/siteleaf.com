@@ -28,8 +28,8 @@ exclude:
 - Gruntfile.js
 - package.json
 - README.markdown
-- .gitignore
-- .siteleaf.yml
+- ".gitignore"
+- ".siteleaf.yml"
 excerpt_separator: |2+
 
 
