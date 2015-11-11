@@ -1,8 +1,8 @@
 ---
 title: Privacy
+date: 2015-11-11 00:00:00 Z
 permalink: "/privacy/"
 layout: page
-date: 2015-11-11
 footer_date: true
 ---
 
