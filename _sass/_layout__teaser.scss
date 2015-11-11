@@ -258,7 +258,7 @@ $sync-height:           50px;
   width: $sync-height;
   border-radius: $sync-height;
   text-align: center;
-  font-size: $font-size-4 / 1em * $font-size-html;
+  font-size: 1.75 * $font-size-html;
   line-height: 1.5;
   box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter;
 }
