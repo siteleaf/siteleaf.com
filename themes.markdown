@@ -7,7 +7,7 @@ items:
   image: "/uploads/martin.png"
   url: http://martin.siteleaf.net
 - title: Otlet's Shelf
-  image: 
+  image: "/uploads/otletsshelf.jpg"
   url: http://otletsshelf.siteleaf.net
 layout: gallery
 ---
