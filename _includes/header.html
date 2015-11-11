@@ -3,11 +3,12 @@
     <div class="wrap wrap--wide">
       <a href="{{ site.baseurl }}/"><img class="logo nav__logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
       <ul class="nav__list nav__list--header">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <li class="nav__item"><a class="nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+        <li class="nav__item"><a class="nav__link" href="/plans/">Plans</a>
+        <li class="nav__item"><a class="nav__link" href="/blog/">Blog</a>
+        <li class="nav__item"><a class="nav__link" href="/gallery/">Gallery</a>
+        <li class="nav__item"><a class="nav__link" href="/themes/">Themes</a>
+        <li class="nav__item"><a class="nav__link" href="https://manage.siteleaf.com">Log in</a>
+        <li class="nav__item"><a class="nav__link nav__link--button" href="https://manage.siteleaf.com/signup/">Sign up</a>
       </ul>
     </div>
   </nav>

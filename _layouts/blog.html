@@ -3,7 +3,12 @@ layout: default
 ---
 
 <main class="page__main page__main--posts">
-  {% for post in site.posts limit:12 %}
+  {% for post in site.posts limit:10 %}
     {% include post.html post=post excerpt=true %}
   {% endfor %}
+  <footer class="page__main__footer">
+    <div class="wrap wrap--narrow">
+      <a class="button button--green" href="archive/">Read more</a>
+    </div>
+  </footer>
 </main>

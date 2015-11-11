@@ -2,6 +2,8 @@
 title: Privacy
 permalink: "/privacy/"
 layout: page
+date: 2015-11-11
+footer_date: true
 ---
 
 #### General Information

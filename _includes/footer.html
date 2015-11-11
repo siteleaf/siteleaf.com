@@ -1,11 +1,14 @@
 <footer class="page__footer">
   <div class="wrap wrap--wide">
     <ul class="nav__list nav__list--footer">
-      {% for page in site.pages %}
-        {% if page.title %}
-        <li class="nav__item"><a class="nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+      <li class="nav__item"><a class="nav__link" href="http://learn.siteleaf.com" target="_blank">Learn</a></li>
+      <li class="nav__item"><a class="nav__link" href="/purpose/">Purpose</a></li>
+      <li class="nav__item"><a class="nav__link" href="/privacy/">Privacy</a></li>
+      <li class="nav__item"><a class="nav__link" href="/terms/">Terms</a></li>
+      <li class="nav__item"><a class="nav__link" href="https://github.com/siteleaf/siteleaf-api" target="_blank">API</a></li>
+      <li class="nav__item"><a class="nav__link" href="http://status.siteleaf.com" target="_blank">Status</a></li>
+      <li class="nav__item"><a class="nav__link" href="https://twitter.com/siteleaf" target="_blank">Twitter</a></li>
+      <li class="nav__item"><a class="nav__link" href="https://twitter.com/siteleaf" target="_blank">GitHub</a></li>
     </ul>
     <section class="copyright">Made with love by <a class="page__footer__link" href="http://oak.is">Oak</a>.</section>
   </div>
