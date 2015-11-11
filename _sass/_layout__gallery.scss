@@ -1,0 +1,6 @@
+// Gallery
+// -------
+
+.gallery__image {
+  @include responsive-image;
+}
