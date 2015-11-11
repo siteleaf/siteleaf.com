@@ -8,10 +8,13 @@ $margin-bottom--page: $v * 4;
   margin-top: $margin-top--page;
   margin-bottom: $margin-bottom--page;
 }
-
 .page__main--teaser {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.page__main__footer {
+  text-align: center;
 }
 
 @import 'layout__header';

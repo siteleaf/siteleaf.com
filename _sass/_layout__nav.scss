@@ -1,14 +1,19 @@
 // Nav
 // ---
 
+$logo-natural-height: 94px;
+
 .nav {
   position: relative;
-  // font-size: $font-size-05;
 }
 
 .nav__logoLink {
   @include vert-align;
   left: 0;
+}
+
+.nav__logo {
+  height: $logo-natural-height / $font-size-html * 1em;
 }
 
 .nav__list {
@@ -24,13 +29,21 @@
 .nav__item {
   display: inline-block;
 }
+.nav__item--footer {
+  @include max-width($bp-footer-collapses) {
+    display: block;
+  }
+}
 
 .nav__link {
   margin-left: 0.75em;
   margin-right: 0.75em;
-  .nav__list--header .nav__item:last-child & {
-    margin-right: 0;
+  @include min-width($bp-header-shows) {
+    .nav__item--header:last-child & {
+      margin-right: 0;
+    }
   }
+  // TO DO: (1) make this more modular
   .page__header &:not(.button) {
     color: $color-green-dark;
     &:hover {
@@ -41,17 +54,36 @@
     color: $color-white;
     &:hover {
       color: rgba($color-white, 0.6);
-    } // TO DO: make this more modular
+    }
   }
-  .page__footer & {
-    @extend %link--default;
-  }
+  // end TO DO
+}
+.nav__link--footer {
+  @extend %link--default;
 }
 .nav__link--active {
-  .page__header &:not(.button) {
+  .page__header &:not(.button) { // TO DO: decrease specificity once (1) is addressed
     color: $color-gray-0;
   }
   .page__header--dark & {
     color: $color-white;
   }
+}
+
+@include max-width($bp-header-collapses) {
+
+  .nav__logoLink {
+    position: static;
+  }
+
+  .nav__logo {
+    margin-top: $v * 2;
+  }
+
+  .nav__list--header {
+    display: block;
+    padding-top: $v * 1;
+    padding-bottom: $v * 1;
+  }
+
 }

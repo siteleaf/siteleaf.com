@@ -3,6 +3,9 @@
 
 .page__header {
   text-align: right;
+  @include max-width($bp-header-collapses) {
+    text-align: center;
+  }
 }
 
 .page__header--dark {
