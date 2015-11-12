@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<main class="page__main page__main--plans">
+  <div class="wrap wrap--narrow">
+    {% for plan in page.plans %}
+      {{ plan | jsonify }}
+    {% endfor %}
+  </div>
+</main>
