@@ -5,11 +5,11 @@ layout: plans
 plans:
 - title: Hobby
   price: 9
-  content:
+  content: 
 - title: Team
   price: 39
   callout: Most popular
-  content:
+  content: 
 - title: Business
   price: 99
   content: 
