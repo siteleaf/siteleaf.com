@@ -5,11 +5,19 @@ permalink: "/plans/"
 plans:
 - title: Hobby
   price: 9
-  content: 
+  content: |-
+    - **1** site
+    - **5** users per site
+    - **Free hosting**
+    - 14 day **free trial**
 - title: Team
   price: 39
   callout: Most popular
-  content: 
+  content: |-
+    - **5** sites
+    - **10** users per site
+    - **Free hosting**
+    - 14 day **free trial**
 - title: Business
   price: 99
   content: |-
