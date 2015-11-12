@@ -6,9 +6,6 @@
   padding-top: $v * 1.5;
   padding-bottom: $v * 1.5;
   color: $color-white-alpha;
-  .page__footer__link {
-    color: $color-white;
-  }
 }
 
 .page__footer:not(.page__footer--teaser) {
@@ -24,4 +21,9 @@
 
 .page__footer__link {
   @extend %link--alt;
+}
+
+.page__footer--teaser__link { // TO DO: remove
+  color: $color-white;
+  text-decoration: none;
 }
