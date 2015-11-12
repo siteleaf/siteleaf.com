@@ -107,6 +107,9 @@
 // images
 %figure--hover {
   background-color: $color-blue-light;
+  img {
+    @include transition("opacity #{$duration-fast} ease-out");
+  }
   &:hover img {
     opacity: 0.5;
   }
