@@ -4,7 +4,8 @@
 $spacing-top--section:    $v * 2;
 $spacing-bottom--section: $v * 2;
 
-.page__main {
+.page__main:not(.page__main--teaser) {
+  // TO DO: remove teaser style
   padding-top: $spacing-top--section;
 }
 
