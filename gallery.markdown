@@ -69,7 +69,7 @@ items:
 - title: Chroma
   image: "/uploads/gallery__chroma.png"
   url: http://chr.ma/
-- title: Úll Conference
+- title: "Úll Conference"
   image: "/uploads/gallery__ullconference.png"
   url: http://2014.ull.ie/
 - title: Able Parris
