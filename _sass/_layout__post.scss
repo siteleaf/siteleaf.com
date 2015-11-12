@@ -15,11 +15,16 @@
 .post__header {
   margin-bottom: $v * 1.5;
   // text-align: center; // TO DO: decide on this
+  @include max-width($bp-header-collapses) {
+    text-align: center;
+  }
 }
 
 .post__hero {
   margin-bottom: $v * 1.5;
   text-align: center;
+}
+.post__hero--linked {
   @extend %figure--hover;
 }
 

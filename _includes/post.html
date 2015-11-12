@@ -8,10 +8,10 @@
           <iframe class="post__video" src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </figure>
       {% elsif post.hero %}
-        <figure class="post__hero">
-          <a href="{{ post.url }}">
+        <figure class="post__hero{% if isExcerpt %} post__hero--linked{% endif %}">
+          {% if isExcerpt %}<a href="{{ post.url }}">{% endif %}
             <img class="post__hero__image" src="{{ post.hero }}" />
-          </a>
+          {% if isExcerpt %}</a>{% endif %}
         </figure>
       {% endif %}
     </div>

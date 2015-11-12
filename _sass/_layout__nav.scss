@@ -36,8 +36,7 @@ $logo-natural-height: 94px;
 }
 
 .nav__link {
-  margin-left: 0.75em;
-  margin-right: 0.75em;
+  margin: 0.3em 0.6em;
   @include min-width($bp-header-shows) {
     .nav__item--header:last-child & {
       margin-right: 0;
