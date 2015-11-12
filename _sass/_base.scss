@@ -43,7 +43,6 @@ h1 {
   line-height: $line-height-tighter;
   margin-top: $v * 0;
   margin-bottom: ($v * 2.5) - computed-line-height($font-size-6, $line-height-tighter);
-  // text-align: center; // TO DO: decide
   color: $color-blue;
 }
 

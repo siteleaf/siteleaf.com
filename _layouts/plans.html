@@ -3,9 +3,26 @@ layout: default
 ---
 
 <main class="page__main page__main--plans">
-  <div class="wrap wrap--narrow">
-    {% for plan in page.plans %}
-      {{ plan | jsonify }}
-    {% endfor %}
+  <div class="wrap wrap--wide">
+    <section class="plans">
+      {% for plan in page.plans %}
+        <div class="planOuter">
+          <a class="planLink" href="https://manage.siteleaf.com/signup?plan={{ plan.title | downcase }}">
+            <article class="plan">
+              {% if plan.callout %}
+                <h6 class="plan__callout">{{ plan.callout }}</h6>
+              {% endif %}
+              <h4 class="plan__title{% if plan.callout %} plan__title--callout{% endif %}">{{ plan.title }}</h4>
+              <h6 class="plan__price"><span class="plan__price__number">{{ plan.price }}</span></h6>
+              <section class="plan__content">{{ plan.content | markdownify }}</section>
+            </article>
+          </a>
+        </div>
+      {% endfor %}
+    </section>
+    <footer class="page__main__footer">
+      <p><small><a class="page__main--plans__try" href="https://manage.siteleaf.com/signup?plan=developer">Or try a free developer account.</a></small></p>
+      <a class="button button--blue button--large" href="https://manage.siteleaf.com/signup/">Create an account</a>
+    </footer>
   </div>
 </main>

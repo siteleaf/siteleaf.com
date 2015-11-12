@@ -14,7 +14,8 @@
 .page__footer:not(.page__footer--teaser) {
   // TO DO: remove :not after teaser is removed
   text-align: center;
-  padding-bottom: $v * 3;
+  padding-top: $spacing-top--section;
+  padding-bottom: $spacing-bottom--section * 1.5;
 }
 
 .copyright {

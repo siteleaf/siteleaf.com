@@ -2,19 +2,17 @@
 // ----
 
 .post {
-  margin-top: $margin-top--page;
-  margin-bottom: $margin-bottom--page * 2;
-  &:last-of-type {
-    margin-bottom: $margin-bottom--page;
-  }
+  padding-bottom: $spacing-bottom--section;
   img {
     @include responsive-image;
   }
 }
+.post + .post {
+  padding-top: $spacing-top--section * 2;
+}
 
 .post__header {
   margin-bottom: $v * 1.5;
-  // text-align: center; // TO DO: decide on this
   @include max-width($bp-header-collapses) {
     text-align: center;
   }

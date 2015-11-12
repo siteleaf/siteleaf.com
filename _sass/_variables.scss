@@ -71,7 +71,7 @@ $letter-spacing-tightest: -0.02em;
 $letter-spacing-tighter:  -0.015em;
 $letter-spacing-tight:    -0.015em;
 $letter-spacing-base:     0;
-$letter-spacing-loose:    0.04em;
+$letter-spacing-loose:    0.03em;
 
 // vertical spacing
 $v: ($font-size-0 / 1em) * $line-height-base * 1rem;
@@ -116,3 +116,4 @@ $border-radius:       3px;
 $button-thickness:    2px;
 $button-hover-darken: 7%;
 $duration:            150ms;
+$duration-fast:       75ms;

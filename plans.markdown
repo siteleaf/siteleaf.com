@@ -8,23 +8,23 @@ plans:
   content: |-
     - **1** site
     - **5** users per site
-    - **Free hosting**
-    - 14 day **free trial**
+    - Free hosting
+    - 14 day free trial
 - title: Team
   price: 39
   callout: Most popular
   content: |-
     - **5** sites
     - **10** users per site
-    - **Free hosting**
-    - 14 day **free trial**
+    - Free hosting
+    - 14 day free trial
 - title: Business
   price: 99
   content: |-
     - **15** sites
     - **20** users per site
-    - **Free hosting**
-    - 14 day **free trial**
+    - Free hosting
+    - 14 day free trial
 layout: plans
 ---
 

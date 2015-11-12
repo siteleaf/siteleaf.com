@@ -1,0 +1,122 @@
+// Plans
+// -----
+
+.page__main--plans {
+  background-color: $color-gray-n4;
+}
+
+$gutter--plans:     5.5556%;
+$font-size--price:  6em;
+$padding-top--line: $v * 0.25;
+$padding-top--line: $v * 0.25;
+
+.plans {
+  margin-left: -$gutter--plans / 2;
+  margin-right: -$gutter--plans / 2;
+  @include clearfix;
+  font-size: $font-size-05;
+}
+
+.planOuter {
+  float: left; // TO DO: modularize grids
+  display: inline-block;
+  margin-top: $v * 3;
+  margin-bottom: $v * 1;
+  width: 33.3333%;
+  padding-left: $gutter--plans / 2;
+  padding-right: $gutter--plans / 2;
+  @include max-width(1000px) {
+    width: 50%;
+  }
+  @include max-width($bp-header-collapses) {
+    width: 100%;
+  }
+  vertical-align: baseline;
+}
+
+.plan {
+  .planLink:hover & {
+    box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter; // TO DO: modularize box shadow
+    @include transform(translateY(-2px)); // TO DO: modularize this animation
+  }
+  .planLink:active & {
+    @include transform(translateY(0));
+  }
+  @include transition("transform #{$duration-fast} ease-out");
+  text-align: center;
+  position: relative;
+  & > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  & > *:first-child {
+    border-radius: $border-radius $border-radius 0 0;
+  }
+}
+
+.plan__callout {
+  background-color: $color-green;
+  color: $color-black-alpha-dark;
+  font-weight: $font-weight-normal;
+  @include min-width($bp-header-shows) {
+    @include vert-align-top;
+    width: 100%;
+  }
+  padding-top: $padding-top--line;
+  padding-bottom: $padding-top--line;
+}
+
+.plan__title {
+  background-color: $color-blue;
+  color: $color-white;
+  padding-top: $padding-top--line;
+  padding-bottom: $padding-top--line;
+}
+
+.plan__title--callout {
+  background-color: $color-green-dark;
+}
+
+
+.plan__price {
+  font-weight: $font-weight-normal;
+  background-color: $color-white;
+  &:before {
+    content: "$";
+    font-size: $font-size-1;
+    position: relative;
+    top: -$font-size--price / 2;
+  }
+  &:after {
+    content: "/mo";
+    font-size: $font-size-1;
+  }
+}
+
+.plan__price__number {
+  font-size: $font-size--price;
+  font-weight: $font-weight-light;
+  letter-spacing: $letter-spacing-tightest;
+}
+
+.plan__content {
+  ol,
+  ul {
+    @extend %list--unformatted;
+  }
+  li {
+    background-color: $color-white;
+    padding-top: $padding-top--line;
+    padding-bottom: $padding-top--line;
+    margin-top: 2px;
+    &:last-child {
+      border-radius: 0 0 $border-radius $border-radius;
+      padding-bottom: $padding-top--line * 1.5;
+    }
+  }
+}
+
+.page__main--plans__try {
+  @extend %link--alt;
+  font-size: $font-size-05;
+}

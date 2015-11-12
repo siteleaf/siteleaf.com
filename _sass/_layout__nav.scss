@@ -8,7 +8,7 @@ $logo-natural-height: 94px;
 }
 
 .nav__logoLink {
-  @include vert-align;
+  @include vert-align-middle;
   left: 0;
 }
 
@@ -22,8 +22,8 @@ $logo-natural-height: 94px;
 }
 .nav__list--header {
   margin-bottom: 0;
-  padding-top: $v * 2;
-  padding-bottom: $v * 2;
+  padding-top: $spacing-top--section;
+  padding-bottom: $spacing-bottom--section;
 }
 
 .nav__item {

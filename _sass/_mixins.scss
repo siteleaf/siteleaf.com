@@ -65,10 +65,16 @@
   height: auto;
 }
 
-@mixin vert-align {
+@mixin vert-align-middle {
   @include transform(translateY(-50%));
   position: absolute;
   top: 50%;
+}
+
+@mixin vert-align-top {
+  @include transform(translateY(-100%));
+  position: absolute;
+  top: 0;
 }
 
 @mixin static-vert-align-parent {

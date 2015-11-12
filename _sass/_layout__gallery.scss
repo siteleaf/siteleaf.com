@@ -4,12 +4,13 @@
 $gutter--gallery: 5.5556%;
 
 .gallery {
-  @include clearfix;
+  padding-bottom: $spacing-bottom--section;
 }
 
 .gallery__items {
   margin-left: -$gutter--gallery / 2;
   margin-right: -$gutter--gallery / 2;
+  @include clearfix;
 }
 
 .gallery__item {

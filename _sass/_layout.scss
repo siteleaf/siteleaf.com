@@ -1,19 +1,16 @@
 // General layout
 // --------------
 
-$margin-top--page:    $v * 2;
-$margin-bottom--page: $v * 4;
+$spacing-top--section:    $v * 2;
+$spacing-bottom--section: $v * 2;
 
 .page__main {
-  margin-top: $margin-top--page;
-  margin-bottom: $margin-bottom--page;
-}
-.page__main--teaser {
-  margin-top: 0;
-  margin-bottom: 0;
+  padding-top: $spacing-top--section;
 }
 
 .page__main__footer {
+  padding-top: $spacing-top--section;
+  padding-bottom: $spacing-bottom--section;
   text-align: center;
 }
 
@@ -24,3 +21,4 @@ $margin-bottom--page: $v * 4;
 @import 'layout__post';
 @import 'layout__archive';
 @import 'layout__gallery';
+@import 'layout__plans';
