@@ -7,6 +7,9 @@ $spacing-bottom--section: $v * 2;
 .page__main:not(.page__main--teaser) {
   // TO DO: remove teaser style
   padding-top: $spacing-top--section;
+  @include max-width($bp-sm) {
+    padding-top: $spacing-top--section / 2;
+  }
 }
 
 .page__main__footer {

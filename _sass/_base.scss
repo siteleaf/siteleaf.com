@@ -205,6 +205,11 @@ mark {
 .button--large {
   @extend %text--large;
   padding: 0.75em 4em;
+  @include max-width($bp-header-collapses) {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .button--blue {
   background-color: $color-blue;
