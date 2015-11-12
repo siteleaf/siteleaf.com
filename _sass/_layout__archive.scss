@@ -1,19 +1,28 @@
 // Archive
 // -------
 
+.archive {
+  padding-bottom: $spacing-bottom--section;
+}
+
 .archive__list {
   @extend %list--unformatted;
+}
+
+.archive__month {
+  color: $color-gray-0;
 }
 
 .archive__item {
   display: table;
 }
 
-.archive__day {
-  display: table-cell;
-  width: 1.5em;
+.archive__title {
+  @extend %link--alt;
 }
 
-.archive__title {
-  @extend %link--default;
+.archive__day {
+  display: table-cell;
+  width: 1.75em;
+  @extend %text--bold;
 }

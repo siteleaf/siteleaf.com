@@ -185,7 +185,7 @@ mark {
   padding: 0.5em 2em;
   display: inline-block;
   font-weight: $font-weight-semibold;
-  @include transition('#{$duration} background-color');
+  @include transition('background-color #{$duration}');
   &:hover {
     color: $color-white;
   }

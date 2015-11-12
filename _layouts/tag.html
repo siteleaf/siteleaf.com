@@ -5,5 +5,12 @@ layout: default
 <main class="page__main page__main--tag">
   {% assign tag = page.title | downcase %}
   {% assign tag_posts = site.tags[tag] %}
-  {% include archive.html title=page.title posts=tag_posts %}
+  {% for post in tag_posts limit:10 %}
+    {% include post.html post=post excerpt=true %}
+  {% endfor %}
+  <footer class="page__main__footer">
+    <div class="wrap wrap--narrow">
+      <a class="button button--green button--large" href="/blog/archive/">View all posts</a>
+    </div>
+  </footer>
 </main>

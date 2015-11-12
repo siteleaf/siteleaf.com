@@ -42,7 +42,7 @@ $padding-top--line: $v * 0.25;
   .planLink:active & {
     @include transform(translateY(0));
   }
-  @include transition("transform #{$duration-fast} ease-out");
+  @include transition('transform #{$duration-fast} ease-out');
   text-align: center;
   position: relative;
   & > * {
@@ -118,5 +118,5 @@ $padding-top--line: $v * 0.25;
 
 .page__main--plans__try {
   @extend %link--alt;
-  font-size: $font-size-05;
+  font-size: $font-size-1;
 }
