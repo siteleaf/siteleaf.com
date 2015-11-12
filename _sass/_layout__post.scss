@@ -14,12 +14,13 @@
 
 .post__header {
   margin-bottom: $v * 1.5;
-  text-align: center;
+  // text-align: center; // TO DO: decide on this
 }
 
 .post__hero {
   margin-bottom: $v * 1.5;
   text-align: center;
+  @extend %figure--hover;
 }
 
 .post__title__link {

@@ -43,7 +43,7 @@ h1 {
   line-height: $line-height-tighter;
   margin-top: $v * 0;
   margin-bottom: ($v * 2.5) - computed-line-height($font-size-6, $line-height-tighter);
-  text-align: center;
+  // text-align: center; // TO DO: decide
   color: $color-blue;
 }
 
@@ -204,7 +204,8 @@ mark {
   }
 }
 .button--large {
-  padding: 1em 4em;
+  @extend %text--large;
+  padding: 0.75em 4em;
 }
 .button--blue {
   background-color: $color-blue;

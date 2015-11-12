@@ -1,22 +1,36 @@
 // Gallery
 // -------
 
+$gutter--gallery: 5.5556%;
+
 .gallery {
   @include clearfix;
 }
 
 .gallery__items {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -$gutter--gallery / 2;
+  margin-right: -$gutter--gallery / 2;
 }
 
 .gallery__item {
   float: left;
+  display: inline-block;
+  margin-top: $v * 1;
+  margin-bottom: $v * 2;
   width: 50%;
-  padding: 20px;
+  padding-left: $gutter--gallery / 2;
+  padding-right: $gutter--gallery / 2;
   @include max-width($bp-header-collapses) {
     width: 100%;
   }
+  &:nth-child(odd) {
+    clear: both;
+  }
+}
+
+.gallery__figure {
+  margin-bottom: $v * 0.75;
+  @extend %figure--hover;
 }
 
 .gallery__image {

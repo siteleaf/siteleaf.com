@@ -104,6 +104,14 @@
 // Components
 // ----------
 
+// images
+%figure--hover {
+  background-color: $color-blue-light;
+  &:hover img {
+    opacity: 0.5;
+  }
+}
+
 // lists
 %list--unformatted {
   padding-left: 0;

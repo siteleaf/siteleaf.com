@@ -12,6 +12,7 @@ $color-gray-n4:    #F2F6F7;
 $color-gray-n5:    #FAFCFC;
 $color-blue:       #0091E5;
 $color-blue-dark:  darken($color-blue, 7.5%);
+$color-blue-light: lighten($color-blue, 10%);
 $color-green:      #8DCF3F;
 $color-green-dark: darken($color-green, 7.5%);
 $color-navy:       #293E52;

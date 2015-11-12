@@ -17,4 +17,4 @@ The first thing you might notice is a redesigned page menu in the sidebar. After
 
 ### Quickly search and browse posts
 
-Another new thing we've introduced is the posts sidebar. Now you can dive straight into a page's posts by clicking the posts icon <img alt="posts-icon" src="/uploads/posts-icon.png" style="margin: 0" /> next to the page link in the sidebar, or by clicking the "other posts" link on the post itself. From the posts sidebar you can now search and filter the posts list by title.
+Another new thing we've introduced is the posts sidebar. Now you can dive straight into a page's posts by clicking the posts icon ![posts-icon](/uploads/posts-icon.png) next to the page link in the sidebar, or by clicking the "other posts" link on the post itself. From the posts sidebar you can now search and filter the posts list by title.

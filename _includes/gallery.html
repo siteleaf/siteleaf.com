@@ -4,7 +4,7 @@
     <div class="gallery__items">
       {% for item in items %}
         <article class="gallery__item">
-          <a href="{{ item.url }}"><img class="gallery__image" src="{{ item.image }}" alt="{{ item.title }}" /></a>
+          <figure class="gallery__figure"><a href="{{ item.url }}"><img class="gallery__image" src="{{ item.image }}" alt="{{ item.title }}" /></a></figure>
           <h1 class="gallery__title"><a class="gallery__title__link" href="{{ item.url }}">{{ item.title }}</a></h1>
         </article>
       {% endfor %}
