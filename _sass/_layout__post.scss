@@ -30,6 +30,10 @@
   @extend %link--default;
 }
 
+.post__hero__image {
+  width: 100%;
+}
+
 .post__meta {
   @extend %text--small;
   color: $color-gray-a1;
