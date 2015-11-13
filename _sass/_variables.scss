@@ -1,22 +1,13 @@
 // Colors
 // ------
 
-$color-gray-base:  #0F1214;
-$color-gray-base:  darken(#27415a, 10%);
-$color-gray-2:     rgba($color-gray-base, 0.84);
-$color-gray-1:     rgba($color-gray-base, 0.76);
-$color-gray-0:     rgba($color-gray-base, 0.4);
-$color-gray-n1:    #B6BCBF;
-$color-gray-n2:    #DDE2E5;
-$color-gray-n3:    #EBF0F2;
-$color-gray-n4:    #F2F6F7;
-$color-gray-n5:    #FAFCFC;
+// colorful colors
 $color-blue:       #0091E5;
-$color-blue-dark:  darken($color-blue, 7.5%);
 $color-blue-light: lighten($color-blue, 10%);
+$color-blue-dark:  darken($color-blue, 7.5%);
 $color-green:      #8DCF3F;
 $color-green-dark: darken($color-green, 7.5%);
-$color-navy:       #293E52;
+$color-navy:       #27415A;
 $color-magenta:    #D6457F;
 $color-orange:     #FF9233;
 $color-red:        #D14040;
@@ -24,12 +15,41 @@ $color-yellow:     #F1C40F;
 $color-white:      #FFF;
 $color-mint:       #21B899;
 
-$color-black-alpha-lighter: rgba(#000, 0.075);
-$color-black-alpha-light:   rgba(#000, 0.1);
-$color-black-alpha:         rgba(#000, 0.2);
-$color-black-alpha-dark:    rgba(#000, 0.4);
-$color-black-alpha-darker:  rgba(#000, 0.6);
-$color-white-alpha:         rgba(#fff, 0.6);
+// alpha colors
+// a = alpha
+// n = negative
+$color-gray-a2:  rgba(desaturate($color-navy, 10%), 0.9);
+$color-gray-a1:  rgba(desaturate($color-navy, 10%), 0.5);
+$color-gray-a0:  rgba(desaturate($color-navy, 10%), 0.4);
+$color-gray-an1: rgba(desaturate($color-navy, 10%), 0.2);
+$color-gray-an2: rgba(desaturate($color-navy, 10%), 0.1);
+$color-gray-an3: rgba(desaturate($color-navy, 10%), 0.05);
+$color-gray-an4: rgba(desaturate($color-navy, 10%), 0.03333);
+
+$color-true-gray-a2:  rgba(desaturate($color-navy, 100%), 0.9);
+$color-true-gray-a1:  rgba(desaturate($color-navy, 100%), 0.5);
+$color-true-gray-a0:  rgba(desaturate($color-navy, 100%), 0.4);
+$color-true-gray-an1: rgba(desaturate($color-navy, 100%), 0.2);
+$color-true-gray-an2: rgba(desaturate($color-navy, 100%), 0.1);
+$color-true-gray-an3: rgba(desaturate($color-navy, 100%), 0.05);
+$color-true-gray-an4: rgba(desaturate($color-navy, 100%), 0.03333);
+
+$color-white-a2:  rgba($color-white, 0.9);
+$color-white-a1:  rgba($color-white, 0.5);
+$color-white-a0:  rgba($color-white, 0.4);
+$color-white-an1: rgba($color-white, 0.2);
+$color-white-an2: rgba($color-white, 0.1);
+$color-white-an3: rgba($color-white, 0.05);
+$color-white-an4: rgba($color-white, 0.03333);
+
+// solid colors
+$color-gray-2:  #415364;
+$color-gray-1:  #96A0AA;
+$color-gray-0:  #ABB3BA;
+$color-gray-n1: #D5D9DD;
+$color-gray-n2: #EAECEE;
+$color-gray-n3: #F5F6F7;
+$color-gray-n4: #F8F9F9;
 
 // Typography
 // ----------

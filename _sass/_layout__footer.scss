@@ -5,7 +5,7 @@
   @extend %background--navy;
   padding-top: $v * 1.5;
   padding-bottom: $v * 1.5;
-  color: $color-white-alpha;
+  color: rgba(white, 0.6);
 }
 
 .page__footer:not(.page__footer--teaser) {

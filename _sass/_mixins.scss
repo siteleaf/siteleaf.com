@@ -25,6 +25,11 @@
   :-ms-input-placeholder      {@content;}
 }
 
+@mixin selection {
+  ::-moz-selection {@content;}
+  ::selection      {@content;}
+}
+
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
