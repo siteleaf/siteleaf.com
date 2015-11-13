@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  color: $color-gray-1;
+  color: $color-gray-a2;
   font-family: $font-family-sans-serif;
   font-size: $font-size-0;
   line-height: $line-height-base;
@@ -33,7 +33,7 @@ h4,
 h5,
 h6,
 strong {
-  color: $color-gray-2;
+  color: $color-gray-a2;
 }
 
 h1 {
@@ -48,7 +48,7 @@ h1 {
 
 h2 {
   font-size: $font-size-4;
-  letter-spacing: $letter-spacing-tight;
+  letter-spacing: $letter-spacing-tighter;
   line-height: $line-height-tighter;
   margin-top: $v * 1.75;
   margin-bottom: ($v * 2) - computed-line-height($font-size-4, $line-height-tighter);
@@ -57,7 +57,7 @@ h2 {
 h3 {
   font-size: $font-size-3;
   letter-spacing: $letter-spacing-tight;
-  color: $color-gray-0;
+  color: $color-gray-a1;
   line-height: $line-height-tighter;
   margin-top: $v * 1.75;
   margin-bottom: ($v * 1.5) - computed-line-height($font-size-3, $line-height-tighter);
@@ -91,7 +91,7 @@ em {
 
 small {
   @extend %text--small;
-  color: $color-gray-0;
+  color: $color-gray-a1;
 }
 
 .large {
@@ -113,9 +113,9 @@ ul {
 
 blockquote {
   margin-left: 0.7em;
-  border-left: 0.15em solid $color-gray-n2;
+  border-left: 0.15em solid $color-gray-an2;
   padding-left: $tab - 0.7em - 0.15em;
-  color: $color-gray-0;
+  color: $color-gray-a1;
 }
 
 code,
@@ -130,19 +130,20 @@ samp {
 code {
   padding: 0 0.25em;
   border-radius: $border-radius;
-  border: 1px solid $color-gray-n3;
-  color: $color-gray-2;
+  border: 1px solid $color-gray-an3;
+  color: $color-gray-a2;
   pre & {
     padding: 0;
     border: 0;
-    color: $color-gray-1;
+    color: $color-gray-a2;
+    background-color: transparent;
   }
 }
 
 pre {
   padding: $v * 0.75;
   border-radius: $border-radius;
-  border: 1px solid $color-gray-n3;
+  border: 1px solid $color-gray-an3;
   @extend %pre;
 }
 
@@ -150,12 +151,16 @@ hr {
   width: 5em;
   margin: ($v * 2) auto;
   border: 0;
-  border-top: 1px solid $color-gray-n2;
+  border-top: 1px solid $color-gray-an2;
 }
 
 mark {
-  color: $color-gray-2;
-  background-color: #FFFF99;
+  color: $color-gray-a2;
+  background-color: lighten(yellow, 30%);
+}
+
+@include selection {
+  background-color: lighten($color-blue, 45%);
 }
 
 // Wrap
@@ -181,7 +186,7 @@ mark {
   color: $color-white;
   border-radius: $border-radius;
   text-decoration: none;
-  border-bottom: $button-thickness solid $color-black-alpha-light;
+  border-bottom: $button-thickness solid $color-true-gray-an2;
   padding: 0.5em 2em;
   display: inline-block;
   font-weight: $font-weight-semibold;
@@ -224,8 +229,8 @@ mark {
   }
 }
 .button--onDark {
-  background-color: $color-black-alpha-light;
+  background-color: $color-true-gray-an2;
   &:hover {
-    background-color: fade-in($color-black-alpha-light, $button-hover-darken / 100%);
+    background-color: fade-in($color-true-gray-an2, $button-hover-darken / 100%);
   }
 }

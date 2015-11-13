@@ -32,7 +32,7 @@
 
 .post__meta {
   @extend %text--small;
-  color: $color-gray-0;
+  color: $color-gray-a1;
 }
 
 .post__tags {
@@ -63,7 +63,7 @@
 
 .post__warning--archive {
   @extend %text--smaller;
-  color: $color-gray-0;
+  color: $color-gray-a1;
 }
 
 $width--bullet: 1em;

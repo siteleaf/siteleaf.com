@@ -62,7 +62,7 @@
 
 // code
 %pre {
-  background-color: $color-gray-n5;
+  background-color: $color-gray-an4;
 }
 
 // Sections
@@ -81,13 +81,13 @@
 }
 
 %background--smoke {
-  background-color: $color-gray-n4;
+  background-color: $color-gray-an4;
 }
 
 %background--dark,
 %background--smoke {
   %pre {
-    background-color: desaturate(blend-multiply($color-gray-n4, $color-gray-n4), 6%);
+    background-color: desaturate(blend-multiply($color-gray-an4, $color-gray-an4), 6%);
   }
 }
 
@@ -123,13 +123,13 @@
 
 // inputs
 %inverted {
-  box-shadow: inset 0 $button-thickness $button-thickness $color-black-alpha-lighter;
+  box-shadow: inset 0 $button-thickness $button-thickness $color-true-gray-an3;
   border-radius: $border-radius;
 }
 
 %input {
   @extend %inverted;
-  background-color: $color-gray-n4;
+  background-color: $color-gray-an4;
   outline: 0;
   &:focus {
     box-shadow: inset 0 0 0 2px $color-blue;

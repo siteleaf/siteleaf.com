@@ -2,7 +2,7 @@
 // -----
 
 .page__main--plans {
-  background-color: $color-gray-n4;
+  background-color: $color-gray-an4;
 }
 
 $gutter--plans:     5.5556%;
@@ -36,7 +36,7 @@ $padding-top--line: $v * 0.25;
 
 .plan {
   .planLink:hover & {
-    box-shadow: 0 $button-thickness $button-thickness $color-black-alpha-lighter; // TO DO: modularize box shadow
+    box-shadow: 0 $button-thickness $button-thickness $color-true-gray-an3; // TO DO: modularize box shadow
     @include transform(translateY(-2px)); // TO DO: modularize this animation
   }
   .planLink:active & {
@@ -56,7 +56,7 @@ $padding-top--line: $v * 0.25;
 
 .plan__callout {
   background-color: $color-green;
-  color: $color-black-alpha-dark;
+  color: $color-true-gray-a1;
   font-weight: $font-weight-normal;
   @include min-width($bp-header-shows) {
     @include vert-align-top;
