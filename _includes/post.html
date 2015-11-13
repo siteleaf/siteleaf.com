@@ -29,7 +29,6 @@
           {% if post.tags %}
             in
             <ul class="post__tags">
-              {% assign isDeprecated = false %}
               {% for tag in post.tags %}
                 {% if tag == 'v1' %}
                   {% assign isDeprecated = true %}

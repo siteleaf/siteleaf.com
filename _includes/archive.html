@@ -6,6 +6,11 @@
     <ul class="archive__list">
       {% for post in posts %}
         {% assign month = post.date | date: '%B %Y' %}
+        {% if post.tags contains 'v1' %}
+          {% assign isDeprecated = true %}
+        {% else %}
+          {% assign isDeprecated = false %}
+        {% endif %}
         {% unless post.next %}
           <h4 class="archive__month">{{ month }}</h4>
         {% else %}
@@ -14,7 +19,11 @@
             <h4 class="archive__month">{{ month }}</h4>
           {% endif %}
         {% endunless %}
-        <li class="archive__item"><time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time><a class="archive__title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        <li class="archive__item">
+          <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
+          <a class="archive__title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {% if isDeprecated %}<span class="post__warning post__warning--archive">deprecated</span>{% endif %}
+        </li>
       {% endfor %}
     </ul>
 </div>

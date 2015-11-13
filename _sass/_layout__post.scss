@@ -53,12 +53,17 @@
 }
 
 .post__warning {
+  margin-left: 0.5em;
   @extend %text--caps;
   @extend %text--small;
-  margin-left: 0.5em;
   background-color: rgba($color-yellow, 0.3); // TO DO: decide on this
   padding: 0em 0.25em;
   border-radius: $border-radius;
+}
+
+.post__warning--archive {
+  @extend %text--smaller;
+  color: $color-gray-0;
 }
 
 $width--bullet: 1em;
