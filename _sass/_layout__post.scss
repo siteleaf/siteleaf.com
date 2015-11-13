@@ -73,9 +73,13 @@ $width--bullet: 1em;
     @extend %link--default;
   }
   pre,
-  img {
+  img,
+  figure {
     margin-top: $v * 1.25;
     margin-bottom: $v * 1.25;
+  }
+  img + figcaption {
+    margin-top: -$v * 1;
   }
 }
 
