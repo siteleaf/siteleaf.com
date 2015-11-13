@@ -134,7 +134,7 @@ code {
   color: $color-gray-a2;
   pre & {
     padding: 0;
-    border: 0;
+    box-shadow: none;
     color: $color-gray-a2;
     background-color: transparent;
   }
