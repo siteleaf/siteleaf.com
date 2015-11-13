@@ -108,8 +108,8 @@ items:
 - title: Pizza Compass
   image: "/uploads/gallery__pizzacompass.png"
   url: http://pizza-compass.com/
-- title: Alonso Felix
-  image: "/uploads/gallery__alonsofelix.png"
+- title: Alonzo Felix
+  image: "/uploads/gallery__alonzofelix.png"
   url: http://www.alonzofelix.com/
 - title: Jessica Harllee
   image: "/uploads/gallery__jessicaharllee.png"
