@@ -2,6 +2,7 @@
 // ------
 
 $color-gray-base:  #0F1214;
+$color-gray-base:  darken(#27415a, 10%);
 $color-gray-2:     rgba($color-gray-base, 0.84);
 $color-gray-1:     rgba($color-gray-base, 0.76);
 $color-gray-0:     rgba($color-gray-base, 0.4);
@@ -67,9 +68,9 @@ $line-height-tight:   1.375;
 $line-height-base:    1.625;
 
 // letter-spacing
-$letter-spacing-tightest: -0.02em;
-$letter-spacing-tighter:  -0.015em;
-$letter-spacing-tight:    -0.015em;
+$letter-spacing-tightest: -0.022em;
+$letter-spacing-tighter:  -0.016em;
+$letter-spacing-tight:    -0.012em;
 $letter-spacing-base:     0;
 $letter-spacing-loose:    0.03em;
 

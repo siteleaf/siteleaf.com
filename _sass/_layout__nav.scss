@@ -63,6 +63,9 @@ $logo-natural-height: 94px;
 .nav__link--active {
   .page__header &:not(.button) { // TO DO: decrease specificity once (1) is addressed
     color: $color-gray-0;
+    &:hover {
+      color: $color-gray-0;
+    }
   }
   .page__header--dark & {
     color: $color-white;

@@ -48,7 +48,7 @@ h1 {
 
 h2 {
   font-size: $font-size-4;
-  letter-spacing: $letter-spacing-tight;
+  letter-spacing: $letter-spacing-tighter;
   line-height: $line-height-tighter;
   margin-top: $v * 1.75;
   margin-bottom: ($v * 2) - computed-line-height($font-size-4, $line-height-tighter);
