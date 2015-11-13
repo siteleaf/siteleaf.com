@@ -72,18 +72,6 @@ $width--bullet: 1em;
     margin-top: $v * 1.25;
     margin-bottom: $v * 1.25;
   }
-  ul li {
-    list-style-type: none;
-    &:before {
-      position: relative;
-      display: inline-block;
-      width: $width--bullet;
-      left: -$width--bullet;
-      margin-right: -$width--bullet;
-      content: "•";
-      font-size: $font-size-1;
-    }
-  }
 }
 
 .post__footer__link {

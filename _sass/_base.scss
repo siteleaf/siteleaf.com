@@ -112,10 +112,10 @@ ul {
 }
 
 blockquote {
-  margin-left: 0.8em;
+  margin-left: 0.7em;
   border-left: 0.15em solid $color-gray-n2;
-  padding-left: $tab - 0.8em - 0.15em;
-  @extend %text--italic;
+  padding-left: $tab - 0.7em - 0.15em;
+  color: $color-gray-0;
 }
 
 code,
