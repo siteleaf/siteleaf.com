@@ -86,6 +86,10 @@ $width--bullet: 1em;
   }
 }
 
-.post__moreLink {
+.post__footer__link {
   @extend %link--default;
+  display: inline-block;
+}
+.post__footer__link--back {
+  margin-top: $spacing-top--section;
 }

@@ -1,6 +1,7 @@
 {% if include.post %}
   {% assign post = include.post %}
-  {% assign isExcerpt = include.excerpt %}
+  {% assign isExcerpt = include.isExcerpt %}
+  {% assign isPermalink = include.isPermalink %}
   <article class="post post--excerpt">
     <div class="wrap wrap--wide">
       {% if post.vimeo %}
@@ -44,8 +45,10 @@
       <footer class="post__footer">
         {% if isExcerpt %}
           {% if post.excerpt != post.content %}
-            <a class="post__moreLink" href="{{ post.url }}">Read more &rarr;</a>
+            <a class="post__footer__link post__footer__link--more" href="{{ post.url }}">Read more &rarr;</a>
           {% endif %}
+        {% elsif isPermalink %}
+            <a class="post__footer__link post__footer__link--back" href="/blog/">&larr; Back to Blog</a>
         {% endif %}
         {% if post.footer_date and post.date %}
           <small class="post__footer__date">Last edited: {{ post.date | date: site.date_format }}</small>
