@@ -130,7 +130,7 @@ samp {
 code {
   padding: 0 0.25em;
   border-radius: $border-radius;
-  border: 1px solid $color-gray-an3;
+  box-shadow: inset 0 0 1px $color-true-gray-an1;
   color: $color-gray-a2;
   pre & {
     padding: 0;
@@ -143,7 +143,7 @@ code {
 pre {
   padding: $v * 0.75;
   border-radius: $border-radius;
-  border: 1px solid $color-gray-an3;
+  box-shadow: inset 0 0 1px $color-true-gray-an1;
   @extend %pre;
 }
 
