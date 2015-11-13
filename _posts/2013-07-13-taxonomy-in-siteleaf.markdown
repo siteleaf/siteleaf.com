@@ -5,6 +5,7 @@ permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
+- v1
 hero: "/uploads/taxonomy-in-siteleaf-ui.png"
 Docs:
 - taxonomy

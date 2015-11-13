@@ -5,6 +5,7 @@ permalink: "/blog/:title/"
 tags:
 - tip
 - liquid
+- v1
 hero: 
 ---
 

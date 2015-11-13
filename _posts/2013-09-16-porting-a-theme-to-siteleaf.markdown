@@ -5,6 +5,7 @@ permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
+- v1
 hero: "/uploads/porting-a-theme-to-siteleaf-martin.png"
 Docs:
 - getting started

@@ -35,30 +35,30 @@
   color: $color-gray-0;
 }
 
-.post__author {
-  &:before {
-    content: "by"
-  }
-}
-
 .post__tags {
   display: inline-block;
   @extend %list--unformatted;
   margin-bottom: 0;
-  &:before {
-    content: "in";
-  }
 }
 
 .post__tag {
   display: inline-block;
-  &:not(:last-child):after {
+  &:not(:last-of-type):after {
     content: ",";
   }
 }
 
 .post__tagLink {
   @extend %link--alt;
+}
+
+.post__warning {
+  @extend %text--caps;
+  @extend %text--small;
+  margin-left: 0.5em;
+  background-color: rgba($color-yellow, 0.3); // TO DO: decide on this
+  padding: 0em 0.25em;
+  border-radius: $border-radius;
 }
 
 $width--bullet: 1em;
