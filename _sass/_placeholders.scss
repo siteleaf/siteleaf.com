@@ -19,6 +19,10 @@
   font-size: $font-size-n2;
 }
 
+%text--smallest {
+  font-size: $font-size-n3;
+}
+
 %text--caps {
   text-transform: uppercase;
   letter-spacing: $letter-spacing-loose;

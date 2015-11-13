@@ -20,6 +20,9 @@
 .archive__title {
   @extend %link--alt;
 }
+.archive__title--deprecated {
+  color: $color-gray-a1; // TO DO: decide on this
+}
 
 .archive__day {
   display: table-cell;

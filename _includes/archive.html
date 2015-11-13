@@ -21,8 +21,7 @@
         {% endunless %}
         <li class="archive__item">
           <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
-          <a class="archive__title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          {% if isDeprecated %}<span class="post__warning post__warning--archive">deprecated</span>{% endif %}
+          <a class="archive__title{% if isDeprecated %} archive__title--deprecated{% endif %}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </li>
       {% endfor %}
     </ul>
