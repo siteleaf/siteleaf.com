@@ -1,7 +1,7 @@
 ---
 title: Siteleaf v2
 url: http://v2.siteleaf.com
-timezone: UTC
+timezone: America/New_York
 collections:
   tags:
     title: Tags
