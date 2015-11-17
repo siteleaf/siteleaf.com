@@ -20,6 +20,10 @@
 }
 .section--blue {
   @extend %background--blue;
+
+  .section__body{
+    color: $color-white-blue;
+  }
 }
 .section--navy {
   @extend %background--navy;
@@ -29,8 +33,10 @@
   @extend %text--title;
   margin-bottom: ($v * 3) - computed-line-height($font-size-6, $line-height-tighter);
 }
+
 .section__title--headline {
   margin-top: $v * 0.5;
+  margin-bottom: 0;
 }
 
 .section__link {
