@@ -1,10 +1,10 @@
 ---
 title: Siteleaf v2
-date: 2015-10-21 13:09:00 Z
+date: 2015-10-21 09:09:00 -04:00
 permalink: "/"
 headline: A new Siteleaf.
 button:
-  title: Sign up for v2 beta
+  title: Join the beta
   url: https://siteleaf.typeform.com/to/EoFRli
 features:
 - title: Open source superpowers
