@@ -91,4 +91,4 @@ features:
 layout: teaser
 ---
 
-We're currently hard at work on version 2 of Siteleaf, which brings with it a bunch of new features and improvements that we're eager to show off!
+We're currently hard at work on version 2 of Siteleaf, which brings with it a bunch of new features and improvements that we're eager to show off.
