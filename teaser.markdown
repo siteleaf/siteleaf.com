@@ -43,22 +43,22 @@ features:
   - title: Advanced metadata
     body: Metadata now supports nested lists and objects, plus a shiny new interface
       that supports drag and drop ordering and <a href="http://jekyllrb.com/docs/configuration/#front-matter-defaults">Jekyll
-      defaults</a>. A lot of other cool things coming soon too, including smart fields
-      for files, dates, booleans and more. It’s the metadata editor of your dreams!
+      defaults</a>. Fields are a lot smarter too, presenting user friendly controls for
+      files, dates, booleans and more. Simple, but powerful!
+  - title: More than just pages and posts
+    body: Now in addition to pages and posts, you can create custom sets of content
+      (called <a href="http://jekyllrb.com/docs/collections/">Collections</a>), each with their own entries (called Documents). Choose
+      to output your documents just like posts, or simply use them as super-metadata
+      within your theme.
   - title: Custom permalinks
     body: Customize the way your site is generated. Choose date-based permalinks (`/2015/10/20/hello-world`),
       pretty permalinks (`/posts/hello-world`), or whatever suits your needs.
-  - title: More than just pages and posts
-    body: Now in addition to pages and posts, you can create custom sets of content
-      (called Collections), each with their own entries (called Documents). Choose
-      to output your documents just like posts, or simply use them as super-metadata
-      within your theme.
   graphic: g-metadata
 - title: Optimized workflow
   body:
   - title: Offline development
-    body: Sync your Siteleaf content to local Markdown files and develop your site
-      completely offline. Work faster, even without an internet connection.
+    body: Sync your Siteleaf content to local Markdown files and <a href="http://jekyllrb.com/docs/usage/">develop your site
+      completely offline</a>. Work faster, even without an internet connection.
   - title: Free publishing
     body: While we’ve always had free accounts for developers, publishing was reserved
       for paid accounts only. We’re now making it possible to publish to <a href="https://pages.github.com/">GitHub
