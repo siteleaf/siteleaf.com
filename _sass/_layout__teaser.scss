@@ -10,6 +10,22 @@
   height: 94px; // natural height of asset
 }
 
+.newsletter-link{
+  text-decoration: underline;
+  color: $color-white-blue;
+  margin-left: 15px;
+  font-size: $font-size-n1;
+
+  @include max-width($bp-xs){
+    display: block;
+    margin: 5px 0 0;
+  }
+
+  &:hover{
+    color: $color-white;
+  }
+}
+
 // sections
 .section {
   padding-top: $v * 3;
