@@ -46,6 +46,5 @@ redcarpet:
   - tables
   - footnotes
   - highlight
-
 sass:
   style: :compressed
