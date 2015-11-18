@@ -1,5 +1,5 @@
 ---
-title: Version 2 of Siteleaf
+title: A new Siteleaf
 date: 2015-10-21 09:09:00 -04:00
 permalink: "/"
 headline: A new Siteleaf.
@@ -94,4 +94,4 @@ features:
 layout: teaser
 ---
 
-We’re currently hard at work on version 2 of Siteleaf, which brings with it a bunch of new features and improvements that we’re eager to show off (see below). While we wrap things up, we’re inviting a small batch of good people to try things out and provide feedback. Interested?
+We’re currently hard at work on version 2 of Siteleaf, which brings a bunch of new features and improvements that we’re eager to show off. While we wrap things up, we’re inviting a small batch of good people to try things out and provide feedback.
