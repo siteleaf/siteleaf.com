@@ -10,7 +10,7 @@ features:
 - title: Open source superpowers
   body:
   - title: Compatible with a larger ecosystem
-    body: We’ve reimagined Siteleaf to be built on <a href="http://jekyllrb.com/">Jekyll</a>.
+    body: Siteleaf v2 brings full compatibility with <a href="http://jekyllrb.com/">Jekyll</a>.
       Enjoy the benefits of a large open source community, along with the accessibility
       of the Siteleaf interface you’ve come to love. Use any off-the-shelf Jekyll
       theme, or take your Siteleaf theme with you.
