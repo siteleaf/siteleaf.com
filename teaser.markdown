@@ -10,10 +10,11 @@ features:
 - title: Open source superpowers
   body:
   - title: Compatible with a larger ecosystem
-    body: Siteleaf v2 brings full compatibility with <a href="http://jekyllrb.com/">Jekyll</a>.
-      Enjoy the benefits of a large open source community, along with the accessibility
-      of the Siteleaf interface you’ve come to love. Use any off-the-shelf Jekyll
-      theme, or take your Siteleaf theme with you.
+    body: Siteleaf v2 brings full compatibility with <a href="http://jekyllrb.com/">Jekyll</a>,
+      the same open source technology GitHub uses to power over <a href="https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months">half
+      a million websites</a>. Enjoy the benefits of a large open source community,
+      along with the accessibility of the Siteleaf interface you’ve come to love.
+      Use any off-the-shelf Jekyll theme, or take your Siteleaf theme with you.
   - title: Data portability
     body: Now with <a href="http://jekyllrb.com/">Jekyll</a>, your entire site’s source
       code and content are portable, not just the compiled HTML. Move sites into and
