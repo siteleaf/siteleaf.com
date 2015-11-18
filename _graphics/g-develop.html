@@ -21,24 +21,23 @@
       main.scss
     </div>
     <div class="g__window__code">
-      {% highlight scss %}* {
-  @include box-sizing(border-box);
-}
-
-html {
-  font-size: $font-size-html;
-  @include max-width($bp-sm) {
-    font-size: $font-size-html-sm;
-  }
-}
+      {% highlight scss %}
 
 body {
-  color: $color-gray-dark;
-  font-family: $font-family-sans-serif;
-  font-size: $font-size-0;
-  line-height: $line-height-base;
-  letter-spacing: $letter-spacing-base;
-  @include antialias;
+  background: $bg-gray;
+  color: $text-color-base;
+  font-family: $family-serif;
+  font-size: $font-size-base;
+  margin: 0;
+}
+
+a{
+  @include thick-underline;
+  color: $text-color-base;
+
+  &:hover{
+    color: $text-color-blue;
+  }
 }{% endhighlight %}
     </div>
   </div>
