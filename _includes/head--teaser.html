@@ -3,12 +3,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{{ page.title }}</title>
+  <meta name="og:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+
+  <meta name="og:site-name" content="Siteleaf">
+  <meta name="twitter:site" content="@siteleaf">
+
+  <meta name="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+
+  <meta name="description" content="{{ page.content | strip_html | strip_newlines | truncate: 300 }}">
+  <meta name="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 300 }}">
+  <meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncate: 300 }}">
+
+  <meta name="og:image" content="/images/og-image.png">
+  <meta name="twitter:image:src" content="/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link href="//cdn.symbolset.com/fe53f0eec3a73760941acb609672ebdd0840fda7/symbolset.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/css/main--teaser.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="SHORTCUT ICON" href="/images/favicon.ico">
 </head>
