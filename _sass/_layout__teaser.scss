@@ -34,6 +34,10 @@
 
 .section__body a{
   text-decoration: underline;
+
+  &:hover{
+    opacity: 0.65;
+  }
 }
 
 .section--smoke {

@@ -19,6 +19,7 @@ defaults:
 description: Content management simplified. Edit in the cloud, publish anywhere. Supports
   static file output, any host, markdown, and multiple collaborators.
 permalinks: pretty
+github_username: siteleaf
 twitter_username: siteleaf
 date_format: "%b %d, %Y"
 exclude:

@@ -64,7 +64,7 @@ features:
       for paid accounts only. We’re now making it possible to publish to <a href="https://pages.github.com/">GitHub
       Pages</a>, totally free for developers and open source projects.
   - title: Built-in preprocessors
-    body: Siteleaf now includes built-in support for compiling Sass, SCSS, and CoffeeScript,
+    body: Siteleaf now includes built-in support for compiling <a href="http://sass-lang.com/">Sass</a>, SCSS, and <a href="http://coffeescript.org/">CoffeeScript</a>,
       thanks to the power of Jekyll.
   background: smoke
   graphic: g-develop
