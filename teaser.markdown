@@ -14,7 +14,7 @@ features:
       Enjoy the benefits of a large open source community, along with the accessibility
       of the Siteleaf interface you’ve come to love. Use any off-the-shelf Jekyll
       theme, or take your Siteleaf theme with you.
-  - title: Portable source code
+  - title: Data portability
     body: Now with <a href="http://jekyllrb.com/">Jekyll</a>, your entire site’s source
       code and content are portable, not just the compiled HTML. Move sites into and
       out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll
@@ -27,7 +27,7 @@ features:
   graphic: g-jekyll
 - title: GitHub integration
   body:
-  - title: Theme syncing
+  - title: Theme sync
     body: No more manually pushing and pulling your theme changes using the command
       line. Siteleaf will automatically sync theme changes directly with <a href="http://github.com">GitHub</a>,
       with no need to install a Siteleaf gem.
@@ -59,7 +59,7 @@ features:
   - title: Offline development
     body: Sync your Siteleaf content to local Markdown files and <a href="http://jekyllrb.com/docs/usage/">develop
       your site completely offline</a>. Work faster, even without an internet connection.
-  - title: Free publishing
+  - title: Free for developers
     body: While we’ve always had free accounts for developers, publishing was reserved
       for paid accounts only. We’re now making it possible to publish to <a href="https://pages.github.com/">GitHub
       Pages</a>, totally free for developers and open source projects.
