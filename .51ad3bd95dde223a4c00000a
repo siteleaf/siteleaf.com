@@ -1,5 +1,5 @@
 ---
-time: 1446575125
+time: 1448386078
 inventory:
   "/home/index.html":
     md5: 91314c3e71a7236ec05cc8a7ef5120a9
@@ -392,11 +392,11 @@ inventory:
     md5: 60242694aaeaae79fe51cf25ab711f20
     time: 1446575044
   "/privacy/index.html":
-    md5: 2cffeaac0e05603b45e49c9fe1ff83ae
-    time: 1446575044
+    md5: fc07be5ef11b9d8d967062195078bd38
+    time: 1448386072
   "/terms/index.html":
-    md5: 839420aefa2ba9c66dccf209754cc98c
-    time: 1446575044
+    md5: 7c1b92203ba807220437c04541a80090
+    time: 1448386072
   "/help/index.html":
     md5: a4b6763f6522d061e5805e0b7c14c327
     time: 1446575044
@@ -425,8 +425,8 @@ inventory:
     md5: dba80af9652ca351a117a6f56b9b89b0
     time: 1446575045
   "/help/v2/index.html":
-    md5: ad0e1f102b6e017314656400077953dc
-    time: 1446575045
+    md5: bcf4a2dcbda24bc42c0d1acd651c968d
+    time: 1448386072
   "/help/themes/getting-started/index.html":
     md5: d40936338ced9bb95e603c0fe336c8bf
     time: 1446575045
@@ -580,6 +580,9 @@ inventory:
   "/help/v2/export-v1/index.html":
     md5: 1f5c71fe7f6a803d7e7e6821bac118cc
     time: 1446575046
+  "/help/v2/improved-metadata-in-v2/index.html":
+    md5: 28406711376568822bdb687988aa080b
+    time: 1448386073
   "/CNAME":
     md5: df3ece69eda4fc7670e4e998aa464ed0
     time: 1446575046
@@ -587,8 +590,8 @@ inventory:
     md5: f0508f73dca55ecbcfd84061c3bc81f3
     time: 1446575046
   "/feed.xml":
-    md5: 07d8032f07acc726d3b3310791b0d6e2
-    time: 1446575046
+    md5: eec34531c1f5b2ace57b3525f14a5446
+    time: 1448386076
   "/assets/Siteleaf_Feature_1_Illustration.svg":
     md5: 4ba2408532847a3f9d8749bb41f4ce93
     time: 1446571408

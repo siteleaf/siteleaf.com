@@ -9,16 +9,16 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="description" content="Thanks for beta testing Siteleaf v2. We&amp;rsquo;re in the process of putting together proper help docs. In the meantime, please dig into these resources.
+  <meta property="description" content="We&amp;rsquo;ve greatly improved the metadata user experience in V2! Now you can define defaults on a per-page basis, have repeatable fields, and fields can now be arrays or objects, in addition to the standard text field.
 
-Feedback
+Setting default fields
 
-Bug reports and beta feedback are welcomed and encouraged! While logged in to the v2 beta, you&amp;rsquo;ll notice a blue speech bubble ic...">
-  <meta property='st:title' content='Siteleaf v2 Beta' />
+You can define Jekyll Defaults for all your content (...">
+  <meta property='st:title' content='Improved metadata in V2' />
   <meta name="twitter:widgets:link-color" content="#0091e5">
 
   
-    <title>Siteleaf v2 Beta</title>
+    <title>Improved metadata in V2</title>
   
 
   <link href="//cdn.symbolset.com/fe53f0eec3a73760941acb609672ebdd0840fda7/symbolset.css" rel="stylesheet">
@@ -110,7 +110,7 @@ Bug reports and beta feedback are welcomed and encouraged! While logged in to th
           </form>
         
 
-        <h2 class="page-title title">Siteleaf v2 Beta</h2>
+        <h2 class="page-title title">Improved metadata in V2</h2>
 
         
 
@@ -144,92 +144,35 @@ Bug reports and beta feedback are welcomed and encouraged! While logged in to th
         
       
     
+      
+
+        
+
+          
+            <a href=""></a> &raquo;
+          
+
+        
+      
+    
   </div>
 
         
 
 
 
-  <ul class="help-topics">
-    
-      <li class="help-topic">
-        <a href="/help/v2/improved-metadata-in-v2" class="help-topic-link">Improved metadata in V2</a>
-
-        
-      </li>
-
-    
-  </ul>
-
-
-
         <div class="body">
-          <p><em>Thanks for beta testing Siteleaf v2. We&rsquo;re in the process of putting together proper help docs. In the meantime, please dig into these resources.</em></p>
+          <p>We&rsquo;ve greatly improved the metadata user experience in V2! Now you can define defaults on a per-page basis, have repeatable fields, and fields can now be arrays or objects, in addition to the standard text field.</p>
 
-<h3>Feedback</h3>
+<h3>Setting default fields</h3>
 
-<p>Bug reports and beta feedback are welcomed and encouraged! While logged in to the v2 beta, you&rsquo;ll notice a blue speech bubble icon in the bottom left corner of your screen — use this to send us a quick note at any time (or email <a href="mailto:team@siteleaf.com">team@siteleaf.com</a>).</p>
+<p>You can define Jekyll Defaults for all your content (or by collection) in your config file. <a href="http://jekyllrb.com/docs/configuration/#front-matter-defaults">More information on setting default front matter can be found in the Jekyll docs.</a></p>
 
-<p>You&rsquo;re also welcome to join us on Slack for v2 beta discussions: <a href="http://chat.siteleaf.com">http://chat.siteleaf.com</a></p>
+<h3>File fields</h3>
 
-<h3>Jekyll</h3>
+<p>If you have a meta field with a key of <code>asset</code>, <code>assets</code>, <code>file</code>, <code>files</code>, <code>image</code>, or <code>images</code> Siteleaf will place a file picker button within the field, making it easy to quickly upload or select an existing upload.</p>
 
-<p>All Siteleaf sites are Jekyll 3.0 compatible, so all <a href="http://jekyllrb.com/docs/home/">Jekyll documentation</a> can be applied to your Siteleaf site.</p>
-
-<h4>Local development</h4>
-
-<p>1) Install Jekyll:</p>
-
-<pre><code>gem install jekyll
-</code></pre>
-
-<p><small>For help with Jekyll installation, please see: <a href="http://jekyllrb.com/docs/installation/">http://jekyllrb.com/docs/installation/</a></small></p>
-
-<p>2) Start a local server:</p>
-
-<pre><code>jekyll serve
-</code></pre>
-
-<h3>Syncing with GitHub</h3>
-
-<p>Siteleaf now automatically syncs theme and content changes directly with GitHub, with no need to install a Siteleaf gem and manually push/pull changes. To enable sync:</p>
-
-<p>1) After creating a v2 site, go to the <strong>Sync</strong> tab under <strong>Settings</strong>:</p>
-
-<p><img src="http://drp.mk/i/FvgLjssgFN.png" alt=""></p>
-
-<p>2) Choose a repo, and optionally a branch name. </p>
-
-<p><small>We generally recommend using the <code>master</code> branch for syncing source files, and if using GitHub Pages for hosting, the <code>gh-pages</code> branch in the same repo for published sites. However you may use two separate repos, or any configuration you wish.</small></p>
-
-<p>3) Commit changes to this branch using your favorite Git tools, and Siteleaf will automatically pick up on any changes using webhooks.</p>
-
-<p><small>Note: While we recommend GitHub sync for a better workflow, a <a href="/help/v2/gem">v2 beta gem</a> is also available.</small></p>
-
-<h3>Backing up your site</h3>
-
-<p>To avoid any accidental data loss during beta testing, we strongly encourage you to back up your v2 sites. You can easily back up your site by forking or cloning your GitHub repo, or create an <a href="/help/v2/gem#backup">offline backup</a> using the v2 beta gem.</p>
-
-<h3>More</h3>
-
-<ul>
-<li><a href="/help/v2/export-v1">Export your v1 site to Jekyll-ready format</a></li>
-<li><a href="/help/v2/gem">Using the v2 beta gem (optional)</a></li>
-<li><a href="/help/v2/improved-metadata-in-v2">Improved metadata in V2</a></li>
-<li><a href="/help/hosting/github/">Hosting with GitHub Pages</a></li>
-</ul>
-
-<h3>Other useful resources</h3>
-
-<ul>
-<li><a href="http://jekyllrb.com/docs/home/">Jekyll Docs</a></li>
-<li><a href="https://talk.jekyllrb.com">Jekyll Help</a></li>
-<li><a href="http://jekyllrb.com/docs/assets/#sassscss">Sass support in Jekyll</a></li>
-<li><a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Liquid for Designers</a></li>
-<li><a href="https://bitbucket.org/granteagon/shopify-liquid/src/ccb7a8040615/README.rst">Liquid syntax highlighting for Sublime Text 2</a></li>
-<li><a href="http://wiki.shopify.com/Liquid">Liquid Wiki</a></li>
-<li><a href="https://help.github.com">GitHub Help</a></li>
-</ul>
+<p>If you&rsquo;re coming from Siteleaf V1, you&rsquo;ll probably notice that the &ldquo;assets&rdquo; section is no longer its own field. Instead, you can create a &ldquo;List&rdquo; (array) meta field and give it a key of <code>assets</code>. If you want to add assets with additional metadata (like maybe a caption), you could create a &ldquo;List&rdquo; meta field and add &ldquo;Objects&rdquo; to the list. Your object could have keys like <code>file</code> and <code>caption</code>. When you add a new item to the list, a new object with those same keys will be added for you, making it easy to add multiple assets with the same structure.</p>
 
         </div>
 
