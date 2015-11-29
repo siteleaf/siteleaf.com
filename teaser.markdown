@@ -10,27 +10,26 @@ features:
 - title: Open source superpowers
   body:
   - title: Compatible with a larger ecosystem
-    body: Siteleaf v2 brings full compatibility with <a href="http://jekyllrb.com/">Jekyll</a>,
-      the same open source technology GitHub uses to power over <a href="https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months">half
-      a million websites</a>. Enjoy the benefits of a large open source community,
+    body: Siteleaf v2 brings full compatibility with [Jekyll](http://jekyllrb.com/),
+      the same open source technology GitHub uses to power over [half
+      a million websites](https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months). Enjoy the benefits of a large open source community,
       along with the accessibility of the Siteleaf interface you’ve come to love.
       Use any off-the-shelf Jekyll theme, or take your Siteleaf theme with you.
   - title: Data portability
-    body: Now with <a href="http://jekyllrb.com/">Jekyll</a>, your entire site’s source
+    body: Now with [Jekyll](http://jekyllrb.com/), your entire site’s source
       code and content are portable, not just the compiled HTML. Move sites into and
       out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll
       never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
     body: Export your existing v1 site content to v2-ready Jekyll format using the
       Siteleaf gem. You can also import from WordPress, Tumblr, Ghost, Drupal, and
-      more using the <a href="http://import.jekyllrb.com/">community-supported Jekyll
-      importers</a>.
+      more using the community-supported [Jekyll importers](http://import.jekyllrb.com/).
   graphic: g-jekyll
 - title: GitHub integration
   body:
   - title: Theme sync
     body: No more manually pushing and pulling your theme changes using the command
-      line. Siteleaf will automatically sync theme changes directly with <a href="http://github.com">GitHub</a>,
+      line. Siteleaf will automatically sync theme changes directly with [GitHub](http://github.com),
       with no need to install a Siteleaf gem.
   - title: Time machine for your content
     body: No more accidental overwrites or deletes. Every edit you (or other authors)
@@ -58,15 +57,15 @@ features:
 - title: Optimized workflow
   body:
   - title: Offline development
-    body: Sync your Siteleaf content to local Markdown files and <a href="http://jekyllrb.com/docs/usage/">develop
-      your site completely offline</a>. Work faster, even without an internet connection.
+    body: Sync your Siteleaf content to local Markdown files and [develop
+      your site completely offline](http://jekyllrb.com/docs/usage/). Work faster, even without an internet connection.
   - title: Free for developers
     body: While we’ve always had free accounts for developers, publishing was reserved
-      for paid accounts only. We’re now making it possible to publish to <a href="https://pages.github.com/">GitHub
-      Pages</a>, totally free for developers and open source projects.
+      for paid accounts only. We’re now making it possible to publish to [GitHub
+      Pages](https://pages.github.com/), totally free for developers and open source projects.
   - title: Built-in preprocessors
-    body: Siteleaf now includes built-in support for compiling <a href="http://sass-lang.com/">Sass</a>,
-      SCSS, and <a href="http://coffeescript.org/">CoffeeScript</a>, thanks to the
+    body: Siteleaf now includes built-in support for compiling [Sass](http://sass-lang.com/),
+      SCSS, and [CoffeeScript](http://coffeescript.org/), thanks to the
       power of Jekyll.
   background: smoke
   graphic: g-develop
