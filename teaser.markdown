@@ -11,14 +11,14 @@ features:
   body:
   - title: Compatible with a larger ecosystem
     body: Siteleaf v2 brings full compatibility with [Jekyll](http://jekyllrb.com/),
-      the same open source technology GitHub uses to power over [half
-      a million websites](https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months). Enjoy the benefits of a large open source community,
-      along with the accessibility of the Siteleaf interface you’ve come to love.
-      Use any off-the-shelf Jekyll theme, or take your Siteleaf theme with you.
+      the same open source technology GitHub uses to power over [half a million websites](https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months).
+      Enjoy the benefits of a large open source community, along with the accessibility
+      of the Siteleaf interface you’ve come to love. Use any off-the-shelf Jekyll
+      theme, or take your Siteleaf theme with you.
   - title: Data portability
-    body: Now with [Jekyll](http://jekyllrb.com/), your entire site’s source
-      code and content are portable, not just the compiled HTML. Move sites into and
-      out of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll
+    body: Now with [Jekyll](http://jekyllrb.com/), your entire site’s source code
+      and content are portable, not just the compiled HTML. Move sites into and out
+      of Siteleaf easily. Even compile it yourself without using Siteleaf. You’ll
       never be locked into a CMS again.
   - title: Import from v1, WordPress, and more
     body: Export your existing v1 site content to v2-ready Jekyll format using the
@@ -57,16 +57,16 @@ features:
 - title: Optimized workflow
   body:
   - title: Offline development
-    body: Sync your Siteleaf content to local Markdown files and [develop
-      your site completely offline](http://jekyllrb.com/docs/usage/). Work faster, even without an internet connection.
+    body: Sync your Siteleaf content to local Markdown files and [develop your site
+      completely offline](http://jekyllrb.com/docs/usage/). Work faster, even without
+      an internet connection.
   - title: Free for developers
     body: While we’ve always had free accounts for developers, publishing was reserved
-      for paid accounts only. We’re now making it possible to publish to [GitHub
-      Pages](https://pages.github.com/), totally free for developers and open source projects.
+      for paid accounts only. We’re now making it possible to publish to [GitHub Pages](https://pages.github.com/),
+      totally free for developers and open source projects.
   - title: Built-in preprocessors
     body: Siteleaf now includes built-in support for compiling [Sass](http://sass-lang.com/),
-      SCSS, and [CoffeeScript](http://coffeescript.org/), thanks to the
-      power of Jekyll.
+      SCSS, and [CoffeeScript](http://coffeescript.org/), thanks to the power of Jekyll.
   background: smoke
   graphic: g-develop
 - title: And everything you already love
