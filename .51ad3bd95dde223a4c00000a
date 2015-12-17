@@ -1,5 +1,5 @@
 ---
-time: 1450394359
+time: 1450394477
 inventory:
   "/home/index.html":
     md5: 91314c3e71a7236ec05cc8a7ef5120a9
@@ -35,11 +35,11 @@ inventory:
     md5: 566c1e3367fbfaabb77891a6d13110ee
     time: 1446575043
   "/blog/index.html":
-    md5: f8991e9ad29aecebde5bc7fd45c5c817
-    time: 1450394352
+    md5: 06b806c487c898d75972ae0e325e0f53
+    time: 1450394471
   "/blog/join-our-team/index.html":
-    md5: 6c467b923d264f208e777d1ca3c5cb06
-    time: 1450394352
+    md5: acae5aa1bf796ef2578fdee19d1bffd6
+    time: 1450394471
   "/blog/v2-beta/index.html":
     md5: e3377f77763ac985d8d6b9cf975a9dcb
     time: 1450379334
@@ -140,14 +140,14 @@ inventory:
     md5: ebe995528d0e5cc6a367bf410742c6f4
     time: 1446575043
   "/blog/archive/index.html":
-    md5: c81fcdfd08cfd91a21cf5b766c944b59
-    time: 1450394352
+    md5: dc86ab7052012076eacb65d29131e9a4
+    time: 1450394472
   "/blog/tags/index.html":
     md5: 6d71f70cf78b2aa4b9feb43440399401
     time: 1446575043
   "/blog/tags/announcement/index.html":
-    md5: 0b2b1fbed550d9c31ecbf59423e7f1dd
-    time: 1450394352
+    md5: bce15e1e0b13862ee01929796ecda6be
+    time: 1450394472
   "/blog/tags/tutorial/index.html":
     md5: 27729ef3731cfe7aa6d86d2df865c6ba
     time: 1446575043
@@ -593,11 +593,11 @@ inventory:
     md5: df3ece69eda4fc7670e4e998aa464ed0
     time: 1446575046
   "/sitemap.xml":
-    md5: 2b8a564fb5c63482839a516438df5006
-    time: 1450394356
+    md5: 164a94ef2b68f1d56da0b91e254c65d2
+    time: 1450394474
   "/feed.xml":
-    md5: 3e5737a09aac2ae97fce5d5b4580a779
-    time: 1450394356
+    md5: d07f0cbdff5471c0e5cc81144f97cbfe
+    time: 1450394474
   "/assets/Siteleaf_Feature_1_Illustration.svg":
     md5: 4ba2408532847a3f9d8749bb41f4ce93
     time: 1446571408
