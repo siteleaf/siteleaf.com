@@ -1,5 +1,5 @@
 ---
-time: 1450379344
+time: 1450380248
 inventory:
   "/home/index.html":
     md5: 91314c3e71a7236ec05cc8a7ef5120a9
@@ -827,8 +827,8 @@ inventory:
     md5: 42e25f3813fe7a9a98cbbd1c95adf0a6
     time: 1446571421
   "/assets/github-sync.png":
-    md5: cc68373bc2e85a3d7afad2754372765d
-    time: 1450379340
+    md5: b6669e24ad1d85753e185b94e792b95a
+    time: 1450380247
   "/assets/screenshot-local-dev.png":
     md5: 3f3848dd70ce984f66a7df6570017ff3
     time: 1446571422
