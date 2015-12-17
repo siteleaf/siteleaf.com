@@ -1,5 +1,5 @@
 ---
-time: 1449593072
+time: 1450379344
 inventory:
   "/home/index.html":
     md5: 91314c3e71a7236ec05cc8a7ef5120a9
@@ -35,8 +35,11 @@ inventory:
     md5: 566c1e3367fbfaabb77891a6d13110ee
     time: 1446575043
   "/blog/index.html":
-    md5: 7e407a39d6c118e6af2bc79786d452f6
-    time: 1446575043
+    md5: 466646f2b2b732494057948418ee7876
+    time: 1450379334
+  "/blog/v2-beta/index.html":
+    md5: e3377f77763ac985d8d6b9cf975a9dcb
+    time: 1450379334
   "/blog/publishing-via-the-api/index.html":
     md5: e5bf7a06a4ba2fc4dd50c23719aa9b6a
     time: 1446575043
@@ -134,8 +137,8 @@ inventory:
     md5: ebe995528d0e5cc6a367bf410742c6f4
     time: 1446575043
   "/blog/archive/index.html":
-    md5: 482661c685a672c39ea3f637a2b9b6dd
-    time: 1446575043
+    md5: b7b0537fa293609fcaf9aeb23633b60b
+    time: 1450379334
   "/blog/tags/index.html":
     md5: 6d71f70cf78b2aa4b9feb43440399401
     time: 1446575043
@@ -392,11 +395,11 @@ inventory:
     md5: 60242694aaeaae79fe51cf25ab711f20
     time: 1446575044
   "/privacy/index.html":
-    md5: 3af59f37dbf7496c3c91185e985f612d
-    time: 1449593067
+    md5: b32812f81cfd91abd11e4e53fb5ce7c3
+    time: 1450379336
   "/terms/index.html":
-    md5: 4ab84122258c9c874ae19a7e360f164a
-    time: 1449593067
+    md5: 7a61110717a8fe454a3660780cc04888
+    time: 1450379336
   "/help/index.html":
     md5: a4b6763f6522d061e5805e0b7c14c327
     time: 1446575044
@@ -587,11 +590,11 @@ inventory:
     md5: df3ece69eda4fc7670e4e998aa464ed0
     time: 1446575046
   "/sitemap.xml":
-    md5: f0508f73dca55ecbcfd84061c3bc81f3
-    time: 1446575046
+    md5: b654d64608eed2524fcff96231f6df93
+    time: 1450379339
   "/feed.xml":
-    md5: 649847e6ee95e4435ba0376f115af69b
-    time: 1449593069
+    md5: e1124ae1bc99a924f7f275616b261175
+    time: 1450379340
   "/assets/Siteleaf_Feature_1_Illustration.svg":
     md5: 4ba2408532847a3f9d8749bb41f4ce93
     time: 1446571408
@@ -823,6 +826,9 @@ inventory:
   "/styles/sass/help.sass":
     md5: 42e25f3813fe7a9a98cbbd1c95adf0a6
     time: 1446571421
+  "/assets/github-sync.png":
+    md5: cc68373bc2e85a3d7afad2754372765d
+    time: 1450379340
   "/assets/screenshot-local-dev.png":
     md5: 3f3848dd70ce984f66a7df6570017ff3
     time: 1446571422

@@ -3,7 +3,21 @@
   <channel>
     <title>Siteleaf</title>
     <link>http://www.siteleaf.com</link>
-    <pubDate>Tue, 08 Dec 2015 11:44:29 -0500</pubDate>
+    <pubDate>Thu, 17 Dec 2015 14:08:59 -0500</pubDate>
+    
+    <item>
+      <title>Siteleaf v2 is coming</title>
+      <link>http://www.siteleaf.com/blog/v2-beta</link>
+      <pubDate>Wed, 16 Dec 2015 00:00:00 -0500</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/v2-beta</guid>
+      <description>&lt;p&gt;We’re currently hard at work on version 2 of Siteleaf, which brings a bunch of new features and improvements that we’re eager to show off. We’ve taken everything you love about v1 and made it more open, more customizable, and easier to develop.&lt;/p&gt;
+
+&lt;p&gt;For a tour of the new features, check out &lt;a href=&quot;http://v2.siteleaf.com&quot;&gt;v2.siteleaf.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;While we wrap things up, we’re also inviting a small batch of good people to try things out and provide feedback. If you are interesting, &lt;a href=&quot;https://siteleaf.typeform.com/to/EoFRli&quot;&gt;sign up to join the beta&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Publishing via the API</title>
@@ -868,22 +882,6 @@ $ siteleaf publish --quiet
 &lt;p&gt;Layouts can be incredibly useful for websites that vary from section to section. They can also help keep code to a minimum, resulting in cleaner code base. Try applying layouts to your current website and see if you can reduce the copy pasta. And, as always, don’t hesitate to &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;reach out&lt;/a&gt; if you have any questions.&lt;/p&gt;
 
 &lt;p&gt;&lt;small&gt;This article was originally posted on destroytoday.com.&lt;/small&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Developer accounts</title>
-      <link>http://www.siteleaf.com/blog/developer-accounts</link>
-      <pubDate>Tue, 22 Oct 2013 10:32:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://www.siteleaf.com/blog/developer-accounts</guid>
-      <description>&lt;p&gt;Today, we’re announcing developer accounts. At launch, we required a subscription in order to use Siteleaf, unless you were invited to a site. Now, you can sign up for free, test the waters, and get a feel for the service before subscribing. If you want to publish your site, simply upgrade to one of our &lt;a href=&quot;/plans&quot;&gt;plans&lt;/a&gt; and publish away.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/developer-accounts-transfer-ownership.jpg&quot; alt=&quot;transfer-ownership&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Alongside developer accounts, we’re introducing the ability to transfer ownership of sites. Instead of using up your site limit with client websites, transfer ownership of the sites to their account. This way, your clients can pay for their account directly and you can make space for that side project you actually want to work on.&lt;/p&gt;
-
-&lt;p&gt;If you’re new to Siteleaf, &lt;a href=&quot;https://manage.siteleaf.com/signup?plan=developer&quot;&gt;try out a developer account&lt;/a&gt; today and, as always, feel free to reach out to us on &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;Twitter&lt;/a&gt; or by &lt;a href=&quot;mailto:team@siteleaf.com&quot;&gt;email&lt;/a&gt; if you need a hand.&lt;/p&gt;
 </description>
     </item>
     
