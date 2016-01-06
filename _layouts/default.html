@@ -32,8 +32,10 @@
     ga('send', 'pageview');
   </script>
 
+  {% if (url != '/v2') %}
+    <a class="v2Teaser" href="http://v2.siteleaf.com">We’re working on great updates to Siteleaf &rarr;</a>
+  {% endif %}
   <section class="layer main{% if home? %} dark{% endif %}">
-    <section>
       <header>
         <h1 class="logo">
           <a href="/">Siteleaf</a>
@@ -59,7 +61,7 @@
       </header>
 
       {% if home? %}
-        <h2 class="intro-header">{{ current.body_raw }}</h2>
+        <h2 class="intro-header v2__title">{{ current.body_raw }}</h2>
         <figure class="image-wrapper screenshot" id="show-intro-video">
           <span class="play-ic ss-icon">play</span>
           <ul class="image-carousel">
@@ -75,7 +77,6 @@
           </div>
         </div>
       {% endif %}
-    </section>
   </section>
 
   {{ content }}

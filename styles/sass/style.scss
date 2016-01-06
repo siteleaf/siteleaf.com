@@ -308,6 +308,9 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     padding-top:0;
     padding-bottom:0;
     overflow:hidden;
+    @include max-width($bp_nav_hides){ // v2
+        padding-top: $height_teaser;
+    }
 }
 
 .main.dark {
@@ -339,7 +342,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     font-size: 18px;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: $height_teaser;
     right: 0;
     padding: 20px 15px 15px;
     display: none;
@@ -360,6 +363,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
     .is-showing-nav &{
         color: transparent;
+        top: 0;
 
         &:after{
             color: #fff;
@@ -1176,10 +1180,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
     .twitter-tweet, iframe{
         width: 31% !important;
-        margin: 0 1% 1% !important;
+        margin: 0 1% 2% !important;
         float: left;
         font-size: 18px;
-        border: 1px solid rgba(#000, 0.1) !important;
+        border: none !important;
         box-shadow: none !important;
 
         &:nth-child(4){
@@ -1210,6 +1214,24 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     }
 }
 
+// V2
+// ++++++++++++++++++++++++++++++
+.v2Teaser {
+    display: block;
+    background-color: $blue;
+    color: #fff;
+    line-height: 22px;
+    padding: (($height_teaser - 22px) / 2) 0;
+
+    &:hover {
+        background-color: $dark_blue;
+    }
+
+    @include max-width($bp_nav_hides){
+        font-size: 14px;
+    }
+}
+
 /*========================================
 
                 PLANS
@@ -1217,7 +1239,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 ========================================*/
 
 .plans {
-    background:#e7f2f0;
+    background:$bg_smoke;
     margin-bottom: 60px;
 }
 
@@ -1772,7 +1794,7 @@ footer.layer {
 }
 
 .footer-nav li {
-    margin:0 18px;
+    margin:0 18px 9px;
     display:inline-block;
     font-size:1.25em;
 }
@@ -1841,9 +1863,6 @@ footer.layer {
 @media screen and (max-width: 768px) {
     .hide {
         display:none;
-    }
-    .footer-nav li {
-        margin-bottom:9px;
     }
 }
 
