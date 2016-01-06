@@ -1221,9 +1221,14 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     background-color: $blue;
     color: #fff;
     line-height: 22px;
-    padding: (($height_teaser - 22px) / 2) 5%;
+    padding: (($height_teaser - 22px) / 2) 0;
+
     &:hover {
         background-color: $dark_blue;
+    }
+
+    @include max-width($bp_nav_hides){
+        font-size: 14px;
     }
 }
 
