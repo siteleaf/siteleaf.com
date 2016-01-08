@@ -3,6 +3,9 @@ title: Siteleaf v2
 url: http://v2.siteleaf.com
 timezone: America/New_York
 collections:
+  posts:
+    title: Posts
+    output: true
   tags:
     title: Tags
     output: true
