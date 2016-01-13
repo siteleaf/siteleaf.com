@@ -3,68 +3,7 @@
   <channel>
     <title>Siteleaf</title>
     <link>http://www.siteleaf.com</link>
-    <pubDate>Wed, 06 Jan 2016 16:42:52 -0500</pubDate>
-    
-    <item>
-      <title>Join our team</title>
-      <link>http://www.siteleaf.com/blog/join-our-team</link>
-      <pubDate>Thu, 17 Dec 2015 16:15:00 -0500</pubDate>
-      <author>Skylar Challand</author>
-      <guid>http://www.siteleaf.com/blog/join-our-team</guid>
-      <description>&lt;p&gt;We are seeking a talented &lt;strong&gt;Backend Developer&lt;/strong&gt;, our first ever full-time Siteleaf hire. This is a super rare opportunity to join our small, tight-knit team and contribute to the future of Siteleaf in a meaningful and rewarding way.&lt;/p&gt;
-
-&lt;p&gt;Siteleaf powers thousands of websites from independent blogs to Fortune 500 companies, with a passionate following among developers (we are a product for developers, made by developers). We are currently working on an all-new &lt;a href=&quot;http://v2.siteleaf.com&quot;&gt;Siteleaf v2&lt;/a&gt;, and have big ideas for the future. Right now is the perfect time to join our team, and help reimagine the future of static websites.&lt;/p&gt;
-
-&lt;p&gt;We are looking for someone with a strong code background (Ruby) and a passion for product design. You are not only interested in writing code, but making a product you love to use on every day. You will work closely with our team of designers and developers, collaborate on product vision, take ownership, and execute on your ideas. As a team we enjoy blurring the lines of design and engineering, and encourage cross-disciplinary collaboration as much as possible.&lt;/p&gt;
-
-&lt;p&gt;You will have some combination of the skills listed below, but always continue to learn and grow along with the product.&lt;/p&gt;
-
-&lt;h3&gt;Responsibilities&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Driving technical direction of core products&lt;/li&gt;
-&lt;li&gt;Writing application code and reviewing pull requests&lt;/li&gt;
-&lt;li&gt;Maintaining and contributing to open source projects&lt;/li&gt;
-&lt;li&gt;Documenting APIs and software you help build&lt;/li&gt;
-&lt;li&gt;Server deployment, scalability, and performance enhancements&lt;/li&gt;
-&lt;li&gt;Working with customers to resolve issues and make product improvements&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Skills &amp;amp; Experience&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Strong Ruby experience and coding practices&lt;/li&gt;
-&lt;li&gt;Familiarity with our product and related technology (Jekyll, Liquid, Markdown, etc)&lt;/li&gt;
-&lt;li&gt;RESTful API design&lt;/li&gt;
-&lt;li&gt;Experience with databases (MongoDB, Redis)&lt;/li&gt;
-&lt;li&gt;Web application stack (Nginx, Rack, Sinatra, etc)&lt;/li&gt;
-&lt;li&gt;Amazon Web Services (Elastic Beanstalk, EC2, S3, etc)&lt;/li&gt;
-&lt;li&gt;Test-driven development (RSpec, etc)&lt;/li&gt;
-&lt;li&gt;Git and GitHub&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Bonus Points&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You are a Siteleaf user!&lt;/li&gt;
-&lt;li&gt;Experience with Ruby Gems and open source projects&lt;/li&gt;
-&lt;li&gt;Continuous integration and automation&lt;/li&gt;
-&lt;li&gt;Docker and secure code environments (Hoosegow, etc)&lt;/li&gt;
-&lt;li&gt;Frontend web development (JavaScript, Haml, Sass)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br/&gt;
-Siteleaf is made by &lt;a href=&quot;http://oak.is&quot;&gt;Oak&lt;/a&gt;, a New York-based team of designers and developers who also make &lt;a href=&quot;http://www.dropmark.com&quot;&gt;Dropmark&lt;/a&gt; and a number of &lt;a href=&quot;http://pizza-compass.com&quot;&gt;other&lt;/a&gt; &lt;a href=&quot;http://partlyblue.com&quot;&gt;projects&lt;/a&gt;. We are located in a &lt;a href=&quot;http://www.fastcompany.com/3043545/most-creative-people/here-is-an-open-office-any-employee-would-love&quot;&gt;beautiful&lt;/a&gt; Manhattan studio filled with creative energy, panoramic views, and our friends at &lt;a href=&quot;http://www.wearecollins.com&quot;&gt;Collins&lt;/a&gt;. Enjoy everything &lt;a href=&quot;http://en.wikipedia.org/wiki/Union_Square,_Manhattan&quot;&gt;Union Square&lt;/a&gt; has to offer, including at least 6 Chipotles within a 4-block radius and a daily selection of lunch recommendations by our bagel-obsessed &lt;a href=&quot;http://drp.mk/i/S2T2hHwnqN&quot;&gt;Slack-bot&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;While New York is preferred, we may consider remote for the right person. We are an equal opportunity team and value diversity at our company. &lt;/p&gt;
-
-&lt;h3&gt;Sound like you?&lt;/h3&gt;
-
-&lt;p&gt;Send an email to &lt;a href=&quot;mailto:team@siteleaf.com?subject=Backend%20Developer&quot;&gt;team@siteleaf.com&lt;/a&gt; and introduce yourself. &lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;p.s. Sound interesting but not sure you have the experience? We’re also currently &lt;a href=&quot;http://oak.is/intern&quot;&gt;hiring an intern&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
-</description>
-    </item>
+    <pubDate>Wed, 13 Jan 2016 16:42:09 -0500</pubDate>
     
     <item>
       <title>Siteleaf v2 is coming</title>
@@ -491,6 +430,67 @@ $ siteleaf publish --quiet
 &lt;p&gt;Happy blogging.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This post was originally posted at larryfox.us.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Join our team</title>
+      <link>http://www.siteleaf.com/blog/join-our-team</link>
+      <pubDate>Wed, 14 Jan 2015 10:00:00 -0500</pubDate>
+      <author>Skylar Challand</author>
+      <guid>http://www.siteleaf.com/blog/join-our-team</guid>
+      <description>&lt;p&gt;We are seeking a talented &lt;strong&gt;Backend Developer&lt;/strong&gt;, our first ever full-time Siteleaf hire. This is a super rare opportunity to join our small, tight-knit team and contribute to the future of Siteleaf in a meaningful and rewarding way.&lt;/p&gt;
+
+&lt;p&gt;Siteleaf powers thousands of websites from independent blogs to Fortune 500 companies, with a passionate following among developers (we are a product for developers, made by developers). We are currently working on an all-new &lt;a href=&quot;http://v2.siteleaf.com&quot;&gt;Siteleaf v2&lt;/a&gt;, and have big ideas for the future. Right now is the perfect time to join our team, and help reimagine the future of static websites.&lt;/p&gt;
+
+&lt;p&gt;We are looking for someone with a strong code background (Ruby) and a passion for product design. You are not only interested in writing code, but making a product you love to use on every day. You will work closely with our team of designers and developers, collaborate on product vision, take ownership, and execute on your ideas. As a team we enjoy blurring the lines of design and engineering, and encourage cross-disciplinary collaboration as much as possible.&lt;/p&gt;
+
+&lt;p&gt;You will have some combination of the skills listed below, but always continue to learn and grow along with the product.&lt;/p&gt;
+
+&lt;h3&gt;Responsibilities&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Driving technical direction of core products&lt;/li&gt;
+&lt;li&gt;Writing application code and reviewing pull requests&lt;/li&gt;
+&lt;li&gt;Maintaining and contributing to open source projects&lt;/li&gt;
+&lt;li&gt;Documenting APIs and software you help build&lt;/li&gt;
+&lt;li&gt;Server deployment, scalability, and performance enhancements&lt;/li&gt;
+&lt;li&gt;Working with customers to resolve issues and make product improvements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Skills &amp;amp; Experience&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Strong Ruby experience and coding practices&lt;/li&gt;
+&lt;li&gt;Familiarity with our product and related technology (Jekyll, Liquid, Markdown, etc)&lt;/li&gt;
+&lt;li&gt;RESTful API design&lt;/li&gt;
+&lt;li&gt;Experience with databases (MongoDB, Redis)&lt;/li&gt;
+&lt;li&gt;Web application stack (Nginx, Rack, Sinatra, etc)&lt;/li&gt;
+&lt;li&gt;Amazon Web Services (Elastic Beanstalk, EC2, S3, etc)&lt;/li&gt;
+&lt;li&gt;Test-driven development (RSpec, etc)&lt;/li&gt;
+&lt;li&gt;Git and GitHub&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Bonus Points&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You are a Siteleaf user!&lt;/li&gt;
+&lt;li&gt;Experience with Ruby Gems and open source projects&lt;/li&gt;
+&lt;li&gt;Continuous integration and automation&lt;/li&gt;
+&lt;li&gt;Docker and secure code environments (Hoosegow, etc)&lt;/li&gt;
+&lt;li&gt;Frontend web development (JavaScript, Haml, Sass)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br/&gt;
+Siteleaf is made by &lt;a href=&quot;http://oak.is&quot;&gt;Oak&lt;/a&gt;, a New York-based team of designers and developers who also make &lt;a href=&quot;http://www.dropmark.com&quot;&gt;Dropmark&lt;/a&gt; and a number of &lt;a href=&quot;http://pizza-compass.com&quot;&gt;other&lt;/a&gt; &lt;a href=&quot;http://partlyblue.com&quot;&gt;projects&lt;/a&gt;. We are located in a &lt;a href=&quot;http://www.fastcompany.com/3043545/most-creative-people/here-is-an-open-office-any-employee-would-love&quot;&gt;beautiful&lt;/a&gt; Manhattan studio filled with creative energy, panoramic views, and our friends at &lt;a href=&quot;http://www.wearecollins.com&quot;&gt;Collins&lt;/a&gt;. Enjoy everything &lt;a href=&quot;http://en.wikipedia.org/wiki/Union_Square,_Manhattan&quot;&gt;Union Square&lt;/a&gt; has to offer, including at least 6 Chipotles within a 4-block radius and a daily selection of lunch recommendations by our bagel-obsessed &lt;a href=&quot;http://drp.mk/i/S2T2hHwnqN&quot;&gt;Slack-bot&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;While New York is preferred, we may consider remote for the right person. We are an equal opportunity team and value diversity at our company. &lt;/p&gt;
+
+&lt;h3&gt;Sound like you?&lt;/h3&gt;
+
+&lt;p&gt;Send an email to &lt;a href=&quot;mailto:team@siteleaf.com?subject=Backend%20Developer&quot;&gt;team@siteleaf.com&lt;/a&gt; and introduce yourself. &lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;p.s. Sound interesting but not sure you have the experience? We’re also currently &lt;a href=&quot;http://oak.is/intern&quot;&gt;hiring an intern&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
 </description>
     </item>
     

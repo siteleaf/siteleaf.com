@@ -23,12 +23,6 @@
   
     
     <url>
-      <loc>http://www.siteleaf.com/blog/join-our-team</loc>
-      <lastmod>2015-12-19 20:58:53 +0000</lastmod>
-      <priority>0.5</priority>
-    </url>
-    
-    <url>
       <loc>http://www.siteleaf.com/blog/v2-beta</loc>
       <lastmod>2015-12-17 19:07:29 +0000</lastmod>
       <priority>0.5</priority>
@@ -61,6 +55,12 @@
     <url>
       <loc>http://www.siteleaf.com/blog/using-aws-s3-and-route-53</loc>
       <lastmod>2015-04-07 04:45:17 +0000</lastmod>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://www.siteleaf.com/blog/join-our-team</loc>
+      <lastmod>2016-01-13 21:41:35 +0000</lastmod>
       <priority>0.5</priority>
     </url>
     
