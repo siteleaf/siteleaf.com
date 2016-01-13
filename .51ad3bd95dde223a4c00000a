@@ -1,5 +1,5 @@
 ---
-time: 1452721335
+time: 1452721426
 inventory:
   "/home/index.html":
     md5: 3ee2b6e9e0abcd29a7ff4f3001d4c2fe
@@ -35,8 +35,11 @@ inventory:
     md5: f0662359ab496e1f6c88af4c4abcf5f6
     time: 1452116566
   "/blog/index.html":
-    md5: c99b5c3398d0fce71c3380e0afaeebe7
-    time: 1452721320
+    md5: c67010f5d8785a48d905e6a3259edf59
+    time: 1452721416
+  "/blog/join-our-team/index.html":
+    md5: 15f9b756f72bc33748fa9116d7c7d6c9
+    time: 1452721416
   "/blog/v2-beta/index.html":
     md5: 744512003dcb39b8ba792aa05ef7eef1
     time: 1452116566
@@ -55,9 +58,6 @@ inventory:
   "/blog/using-aws-s3-and-route-53/index.html":
     md5: 9fea335b61400b2638fe0c3b0f0c291d
     time: 1452116566
-  "/blog/join-our-team/index.html":
-    md5: 31ffbf214178c53c5b310c9b98d880e6
-    time: 1452721320
   "/blog/improvements-to-page-and-post-management/index.html":
     md5: 805a841406afef07da882295ec1c377b
     time: 1452116566
@@ -140,14 +140,14 @@ inventory:
     md5: 7c83acfde0e8ae01505905be7125f296
     time: 1452116566
   "/blog/archive/index.html":
-    md5: 8320b2243f35537c07bf4eafe199580f
-    time: 1452721320
+    md5: c13d997b3ab613e6755f75f9a8574299
+    time: 1452721417
   "/blog/tags/index.html":
     md5: 1c828263cd97ee87fa610f6f7a50a25c
     time: 1452116567
   "/blog/tags/announcement/index.html":
-    md5: dfca5a7b5f0f4c3281f1a730566ae573
-    time: 1452721321
+    md5: 6845eb9619b9ba7a8e6c8fd3275c2bed
+    time: 1452721417
   "/blog/tags/tutorial/index.html":
     md5: a42776a7ca33ad82b5f775efb2c04fdb
     time: 1452116567
@@ -593,11 +593,11 @@ inventory:
     md5: df3ece69eda4fc7670e4e998aa464ed0
     time: 1446575046
   "/sitemap.xml":
-    md5: 39b48286cacb3d184a467855d27f18d4
-    time: 1452721329
+    md5: 06984d2992dd9e7a6fc4747bf407a2f9
+    time: 1452721422
   "/feed.xml":
-    md5: e3290ab385285d6bf755286afc3134ac
-    time: 1452721329
+    md5: 680733a24bca2eb81d55a1ea9f05c7e5
+    time: 1452721422
   "/assets/Siteleaf_Feature_1_Illustration.svg":
     md5: 4ba2408532847a3f9d8749bb41f4ce93
     time: 1446571408
