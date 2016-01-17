@@ -9,11 +9,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="description" content="We recommend using GitHub sync with v2, but you can still use the Gem if that&amp;rsquo;s your preferred workflow.
-
-The v1 gem is not compatible with v2 sites (and vice versa), so we recommend using a Gemfile to allow both versions to be installed.
-
-Important note: when using push/pull in v2, both th...">
+  <meta property="description" content="Siteleaf V2 docs have been moved to learn.siteleaf.com
+">
   <meta property='st:title' content='Using the v2 Gem' />
   <meta name="twitter:widgets:link-color" content="#0091e5">
 
@@ -163,54 +160,7 @@ Important note: when using push/pull in v2, both th...">
 
 
         <div class="body">
-          <p>We recommend using <a href="/help/v2">GitHub sync</a> with v2, but you can still use the Gem if that&rsquo;s your preferred workflow.</p>
-
-<p>The v1 gem is not compatible with v2 sites (and vice versa), so we recommend using a <a href="http://bundler.io/gemfile.html">Gemfile</a> to allow both versions to be installed.</p>
-
-<p><strong>Important note:</strong> when using push/pull in v2, both theme and content files are included. Always make sure to do a <code>pull</code> first to avoid overwriting your Siteleaf content on <code>push</code>. Your local directory must have a <code>_config.yml</code> in order to push.</p>
-
-<p>1) Create a file called <code>Gemfile</code> in your site&rsquo;s root folder and add the v2 beta gem to your bundle:</p>
-
-<pre><code>source &#39;http://rubygems.org&#39;
-
-gem &#39;siteleaf&#39;, github: &#39;siteleaf/siteleaf-gem&#39;, branch: &#39;2.0.0.pre&#39;
-</code></pre>
-
-<p><small>For help with Bundler or Gemfiles, please see: <a href="http://bundler.io/gemfile.html">http://bundler.io/gemfile.html</a></small></p>
-
-<p>2) Install the bundle:</p>
-
-<pre><code>gem install bundler
-bundle install
-</code></pre>
-
-<p>3) Configure your v2 site:</p>
-
-<pre><code>bundle exec siteleaf config yoursite.com
-</code></pre>
-
-<p>4) Pull your content and theme from Siteleaf:</p>
-
-<pre><code>bundle exec siteleaf pull
-</code></pre>
-
-<p>5) Push your content and theme to Siteleaf:</p>
-
-<pre><code>bundle exec siteleaf push
-</code></pre>
-
-<h3><a name="backup"></a>Backing up your site</h3>
-
-<p>Creating a full backup of your v2 site is simple. Just copy your <code>Gemfile</code> to an empty directory and do a <code>pull</code>:</p>
-
-<pre><code>cp Gemfile /path/to/backup/
-cd /path/to/backup/
-bundle install
-bundle exec siteleaf config yoursite.com
-bundle exec siteleaf pull
-</code></pre>
-
-<p>This will include your entire site, including theme files, assets, content, and site metadata.</p>
+          <p>Siteleaf V2 docs have been moved to <a href="http://learn.siteleaf.com">learn.siteleaf.com</a></p>
 
         </div>
 
