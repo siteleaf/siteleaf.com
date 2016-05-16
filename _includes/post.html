@@ -1,68 +1,56 @@
-{% if include.post %}
-  {% assign post = include.post %}
-  {% assign isExcerpt = include.isExcerpt %}
-  {% assign isPermalink = include.isPermalink %}
-  <article class="post post--excerpt">
-    <div class="wrap wrap--wide">
-      {% if post.vimeo %}
-        <figure class="post__hero post__hero--video">
-          <iframe class="post__video" src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </figure>
-      {% elsif post.hero %}
-        <figure class="post__hero{% if isExcerpt %} post__hero--linked{% endif %}">
-          {% if isExcerpt %}<a href="{{ post.url }}">{% endif %}
-            <img class="post__hero__image" src="{{ post.hero }}" />
-          {% if isExcerpt %}</a>{% endif %}
-        </figure>
+{% assign post = include.post %}
+{% assign is_excerpt = include.is_excerpt %}
+{% assign is_permalink = include.is_permalink %}
+{% assign tag_collection = site.collections | where: 'label', 'tags' | first %}
+<article>
+  {% if post.vimeo %}
+    <figure>
+      <iframe src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </figure>
+  {% elsif post.hero %}
+    <figure>
+      {% if is_excerpt %}<a href="{{ post.url }}">{% endif %}
+        <img src="{{ post.hero }}" />
+      {% if is_excerpt %}</a>{% endif %}
+    </figure>
+  {% endif %}
+  <header>
+    <h1>{% if is_excerpt %}<a href="{{ post.url }}">{% endif %}{{ post.title }}{% if is_excerpt %}</a>{% endif %}</h1>
+    <section>
+      {% if post.date %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
       {% endif %}
-    </div>
-    <div class="wrap wrap--narrow">
-      <header class="post__header">
-        <h1 class="post__title">{% if isExcerpt %}<a href="{{ post.url }}" class="post__title__link">{% endif %}{{ post.title }}{% if isExcerpt %}</a>{% endif %}</h1>
-        <section class="post__meta">
-          {% if post.date and post.footer_date != true %}
-            <time class="post__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
-          {% endif %}
-          {% if post.author %}
-            by <a class="post__author">{{ post.author }}</a>
-          {% endif %}
-          {% if post.tags %}
-            in
-            <ul class="post__tags">
-              {% assign isDeprecated = false %}
-              {% for tag in post.tags %}
-                {% if tag == 'v1' %}
-                  {% assign isDeprecated = true %}
-                {% else %}
-                  <li class="post__tag"><a class="post__tagLink" href="/blog/tags/{{ tag | downcase }}">{{ tag }}</a></li>
-                {% endif %}
-              {% endfor %}
-              {% if isDeprecated %}
-                <span class="post__warning">deprecated</span>
+      {% if post.author %}
+        by <a>{{ post.author }}</a>
+      {% endif %}
+      {% if post.tags %}
+        in
+        <ul>
+          {% for post_tag in post.tags %}
+            {% assign post_tag_downcase = post_tag | downcase %}
+            {% for site_tag in tag_collection.docs %}
+              {% assign site_tag_title = site_tag.title | downcase %}
+              {% if site_tag_title == post_tag_downcase %}
+                <li><a href="{{ site_tag.permalink }}">{{ site_tag.title }}</a></li>
               {% endif %}
-            </ul>
-          {% endif %}
-        </section>
-      </header>
-      <section class="post__content">
-        {% if isExcerpt %}
-          {{ post.excerpt | markdownify }}
-        {% else %}
-          {{ post.content | markdownify }}
-        {% endif %}
-      </section>
-      <footer class="post__footer">
-        {% if isExcerpt %}
-          {% if post.excerpt != post.content %}
-            <a class="post__footer__link post__footer__link--more" href="{{ post.url }}">Read more &rarr;</a>
-          {% endif %}
-        {% elsif isPermalink %}
-            <a class="post__footer__link post__footer__link--back" href="/blog/">&larr; Back to Blog</a>
-        {% endif %}
-        {% if post.footer_date and post.date %}
-          <small class="post__footer__date">Last edited: {{ post.date | date: site.date_format }}</small>
-        {% endif %}
-      </footer>
-    </div>
-  </article>
-{% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+  </header>
+  <section>
+    {% if is_excerpt %}
+      {{ post.excerpt | markdownify }}
+    {% else %}
+      {{ post.content | markdownify }}
+    {% endif %}
+  </section>
+  <footer>
+    {% if is_excerpt and post.excerpt != post.content %}
+      <a href="{{ post.url }}">Read more &rarr;</a>
+    {% elsif is_permalink %}
+      <a href="/blog/">&larr; Back to Blog</a>
+    {% endif %}
+  </footer>
+</article>

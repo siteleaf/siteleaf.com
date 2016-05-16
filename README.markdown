@@ -23,7 +23,7 @@ Compile and minify JavaScript:
 grunt
 ```
 
-Generate static site in `_site`:
+Generate static site to `_site`:
 
 ```
 jekyll build

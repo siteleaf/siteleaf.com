@@ -26,28 +26,29 @@ github_username: siteleaf
 twitter_username: siteleaf
 date_format: "%b %d, %Y"
 exclude:
-- node_modules
-- config.ru
-- Gemfile*
 - Gruntfile.js
 - package.json
-- README.markdown
+- README*
+- node_modules
 - ".gitignore"
-- ".siteleaf.yml"
-excerpt_separator: |2+
-
-
-
-markdown: redcarpet
-redcarpet:
-  extensions:
-  - autolink
-  - fenced_code_blocks
-  - lax_spacing
-  - strikethrough
-  - superscript
-  - tables
-  - footnotes
-  - highlight
+excerpt_separator: "\n\n"
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+# markdown: redcarpet
+# redcarpet:
+#   extensions:
+#   - autolink
+#   - fenced_code_blocks
+#   - lax_spacing
+#   - strikethrough
+#   - superscript
+#   - tables
+#   - footnotes
+#   - highlight
 sass:
-  style: :compressed
+  sass_dir: styles/
+  style: compressed
+per_page: 3

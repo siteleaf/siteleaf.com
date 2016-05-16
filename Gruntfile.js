@@ -7,20 +7,20 @@ module.exports = function(grunt) {
         separator: ';',
       },
       dist: {
-        src: ['js/_source/*.js'],
-        dest: 'js/main.js',
+        src: ['scripts/_source/*.js'],
+        dest: 'scripts/all.js',
       },
     },
     uglify: {
       my_target: {
         files: {
-          'js/main.js': ['js/main.js']
+          'js/all.js': ['js/all.js']
         }
       }
     },
     watch: {
       scripts: {
-        files: ['js/_source/*.js'],
+        files: ['scripts/_source/*.js'],
         tasks: ['concat'],
         options: {
           livereload: true,

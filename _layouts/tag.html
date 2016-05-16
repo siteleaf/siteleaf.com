@@ -2,15 +2,10 @@
 layout: default
 ---
 
-<main class="page__main page__main--tag">
-  {% assign tag = page.title | downcase %}
-  {% assign tag_posts = site.tags[tag] %}
-  {% for post in tag_posts limit:10 %}
-    {% include post.html post=post excerpt=true %}
-  {% endfor %}
-  <footer class="page__main__footer">
-    <div class="wrap wrap--narrow">
-      <a class="button button--green button--large" href="/blog/archive/">View all posts</a>
-    </div>
-  </footer>
-</main>
+{% assign tag = page.title | downcase %}
+{% assign tag_posts = site.tags[tag] %}
+{% for post in tag_posts | limit: site.per_page %}
+  {% include post.html post=post is_excerpt=true %}
+{% endfor %}
+
+<a href="/blog/archive/">View all posts</a>

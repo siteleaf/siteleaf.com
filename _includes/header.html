@@ -1,15 +1,10 @@
-<header class="page__header">
-  <nav class="nav">
-    <div class="wrap wrap--wide">
-      <a class="nav__logoLink" href="{{ site.baseurl }}/"><img class="nav__logo" src="/uploads/logo.svg" alt="{{ site.title }}" /></a>
-      <ul class="nav__list nav__list--header">
-        <li class="nav__item nav__item--header"><a class="nav__link nav__link--header{% if page.url == '/plans/' %} nav__link--active{% endif %}" href="/plans/">Plans</a>
-        <li class="nav__item nav__item--header"><a class="nav__link nav__link--header{% if page.url == '/blog/' %} nav__link--active{% endif %}" href="/blog/">Blog</a>
-        <li class="nav__item nav__item--header"><a class="nav__link nav__link--header{% if page.url == '/gallery/' %} nav__link--active{% endif %}" href="/gallery/">Gallery</a>
-        <li class="nav__item nav__item--header"><a class="nav__link nav__link--header{% if page.url == '/themes/' %} nav__link--active{% endif %}" href="/themes/">Themes</a>
-        <li class="nav__item nav__item--header"><a class="nav__link nav__link--header" href="https://manage.siteleaf.com">Log in</a>
-        <li class="nav__item nav__item--header"><a class="nav__link nav__link--header button button--small button--green" href="https://manage.siteleaf.com/signup/">Sign up</a>
-      </ul>
-    </div>
-  </nav>
-</header>
+ <header>
+  <a href="/"><img src="/assets/logo.svg" alt="{{ site.title }}"></a>
+  <ul>
+    {% for item in site.data.navigation.header %}
+    <li>
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+ </header>

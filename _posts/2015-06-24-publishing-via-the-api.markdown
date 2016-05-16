@@ -10,6 +10,7 @@ hero:
 
 For the last week publishing in the Siteleaf interface has been powered by our API. This has been a requested feature by some of our users and ourselves. Its behavior is bit different than some of our other API endpoints, so let's go over it.
 
+
 *Just want to use the Siteleaf gem? [Skip to the bottom!](#jump-gem)*
 
 To initiate a publish, make an authenticated `POST` request to the `/sites/:id/publish` endpoint.

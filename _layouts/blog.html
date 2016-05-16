@@ -2,13 +2,8 @@
 layout: default
 ---
 
-<main class="page__main page__main--posts">
-  {% for post in site.posts limit:12 %}
-    {% include post.html post=post isExcerpt=true %}
-  {% endfor %}
-  <footer class="page__main__footer">
-    <div class="wrap wrap--narrow">
-      <a class="button button--green button--large" href="/blog/archive/">View all posts</a>
-    </div>
-  </footer>
-</main>
+{% for post in site.posts | limit: site.per_page %}
+  {% include post.html post=post is_excerpt=true %}
+{% endfor %}
+
+<a href="/blog/archive/">View all posts</a>

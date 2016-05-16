@@ -1,19 +1,49 @@
----
----
-
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include head.html %}
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
+    <meta name="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}">
 
-  <body class="page">
+    <meta name="og:site-name" content="Siteleaf">
+    <meta name="twitter:site" content="@siteleaf">
 
+    <meta name="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+
+    <!-- TO DO: use page.content | markdownify | strip_html | strip_newlines | truncate: 300 -->
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- TO DO -->
+    <!-- <meta name="og:image" content="/assets/og-image.png">
+    <meta name="twitter:image:src" content="/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image"> -->
+
+    <link rel="stylesheet" href="{{ "/styles/all.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  </head>
+  <body>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
-
-    <script src="//cdn.symbolset.com/fe53f0eec3a73760941acb609672ebdd0840fda7/symbolset.js"></script>
-    <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/scripts/all.js" | prepend: site.baseurl }}"></script>
+    {% if site.google_analytics %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
   </body>
-
 </html>
