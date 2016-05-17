@@ -32,19 +32,39 @@
 
     <!-- TO DO: remove this when using real hosted fonts -->
     <script type="text/javascript">
-        (function() {
-            var path = '//easy.myfonts.net/v2/js?sid=277994(font-family=Objektiv+Mk2+Bold)&sid=278002(font-family=Objektiv+Mk2+Italic)&sid=278006(font-family=Objektiv+Mk2+Medium)&sid=278015(font-family=Objektiv+Mk2)&key=tPI1Ids7do',
-                protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-                trial = document.createElement('script');
-            trial.type = 'text/javascript';
-            trial.async = true;
-            trial.src = protocol + path;
-            var head = document.getElementsByTagName("head")[0];
-            head.appendChild(trial);
-        })();
+      (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=277994(font-family=Objektiv+Mk2+Bold)&sid=278002(font-family=Objektiv+Mk2+Italic)&sid=278006(font-family=Objektiv+Mk2+Medium)&sid=278015(font-family=Objektiv+Mk2)&key=tPI1Ids7do',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+      })();
     </script>
   </head>
-  <body{% if (page.url == '/gallery/') %} class="gallery"{% endif %}>
+
+  {% if (page.url == '/') %}
+    {% assign page_class = 'home' %}
+  {% elsif (page.url == '/plans/') %}
+    {% assign page_class = 'plans' %}
+  {% elsif (page.url == '/gallery/') %}
+    {% assign page_class = 'gallery' %}
+  {% elsif (page.url == '/blog/') %}
+    <!-- blog index -->
+    {% assign page_class = 'blog' %}
+  {% elsif (page.url contains '/blog/tags/') %}
+    <!-- blog tag -->
+    {% assign page_class = 'tag' %}
+  {% elsif (page.url contains '/blog/') %}
+    <!-- blog permalink -->
+    {% assign page_class = 'permalink' %}
+  {% else %}
+    {% assign page_class = 'page' %}
+  {% endif %}
+  
+  <body class="{{ page_class }}">
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

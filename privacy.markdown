@@ -3,6 +3,7 @@ title: Privacy
 date: 2015-11-11 00:00:00 Z
 permalink: "/privacy/"
 layout: page
+is_legal: true
 ---
 
 #### General Information

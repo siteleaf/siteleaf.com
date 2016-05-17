@@ -3,6 +3,7 @@ title: Terms
 date: 2015-11-11 00:00:00 Z
 permalink: "/terms/"
 layout: page
+is_legal: true
 ---
 
 By using the Siteleaf.com web site ("Service"), or any services of Oak Studios LLC ("Siteleaf"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). If you are entering into this agreement on behalf of a company or other legal entity, you represent that you have the authority to bind such entity, its affiliates and all users who access our services through your account to these terms and conditions, in which case the terms "you" or "your" shall refer to such entity, its affiliates and users associated with it. If you do not have such authority, or if you do not agree with these terms and conditions, you must not accept this agreement and may not use the services.
