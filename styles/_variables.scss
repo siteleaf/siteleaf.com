@@ -2,10 +2,10 @@
 // ------
 
 $color--white:  rgb(255,255,255);
-$color--blue:   rgb(202,92,94);
-$color--green:  rgb(37,190,161);
-$color--yellow: rgb(251,188,9);
-$color--red:    rgb(229,97,52);
+$color--blue:   rgb(19,159,240);
+$color--green:  rgb(37,204,174);
+$color--yellow: rgb(250,186,10);
+$color--red:    rgb(229,95,50);
 $color--purple: rgb(153,97,201);
 
 $color--gray-darker:   rgb(46,56,71);
@@ -18,8 +18,8 @@ $color--gray-lightest: rgb(245,247,250);
 // typography
 // ----------
 
-$font-size--html:    18px;
-$font-size--html-sm: 16px;
+$font-size--html:    20px;
+$font-size--html-sm: 18px;
 
 // TO DO: change these when using real hosted fonts
 $font-family--sans-serif:        'Objektiv Mk2', sans-serif;
@@ -27,12 +27,18 @@ $font-family--sans-serif-bold:   'Objektiv Mk2 Bold', sans-serif;
 $font-family--sans-serif-italic: 'Objektiv Mk2 Italic', sans-serif;
 $font-family--sans-serif-medium: 'Objektiv Mk2 Medium', sans-serif;
 
-$font-family--monospace: monospace;
+// $font-family--monospace: 'Anonymous Pro', monospace;
+$font-family--monospace: 'Source Code Pro', monospace;
 
-$line-height--tight: 1.2;
-$line-height--base:  1.4;
+$line-height--tight: 1.16;
+$line-height--base:  1.5;
 
 $letter-spacing--tight: -0.024em;
+
+// sizing and spacing
+// ------------------
+
+$v: $line-height--base * 1rem;
 
 // grid
 // ----
@@ -43,3 +49,8 @@ $min-width--lg: 1080px;
 $max-width--xs: ($min-width--sm - 1);
 $max-width--sm: ($min-width--md - 1);
 $max-width--md: ($min-width--lg - 1);
+
+// miscellaneous
+// -------------
+
+$border-radius--base: 0.25em;

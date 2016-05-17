@@ -1,12 +1,16 @@
 header:
-- title: Learn
-  url: http://learn.siteleaf.com/
 - title: Plans
   url: /plans/
 - title: Gallery
   url: /gallery/
 - title: Blog
   url: /blog/
+- title: Learn
+  url: http://learn.siteleaf.com
+- title: Log in
+  url: https://manage.siteleaf.com
+- title: Sign up
+  url: https://manage.siteleaf.com/signup/
 footer:
 - title: Terms
   url: /terms/

@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<section>
+<main class="main">
   {% for item in site.data.gallery %}
     <figure>
       <a href="{{ item.url }}"><img src="{{ item.image }}" alt="{{ item.title }}" /></a>
       <figcaption><a href="{{ item.url }}">{{ item.title }}</a></figcaption>
     </figure>
   {% endfor %}
-</section>
+</main>

@@ -2,7 +2,7 @@
 {% assign is_excerpt = include.is_excerpt %}
 {% assign is_permalink = include.is_permalink %}
 {% assign tag_collection = site.collections | where: 'label', 'tags' | first %}
-<article>
+<article class="article">
   {% if post.vimeo %}
     <figure>
       <iframe src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -14,43 +14,42 @@
       {% if is_excerpt %}</a>{% endif %}
     </figure>
   {% endif %}
-  <header>
-    <h1>{% if is_excerpt %}<a href="{{ post.url }}">{% endif %}{{ post.title }}{% if is_excerpt %}</a>{% endif %}</h1>
-    <section>
-      {% if post.date %}
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
-      {% endif %}
-      {% if post.author %}
-        by <a>{{ post.author }}</a>
-      {% endif %}
+  <header class="article__header">
+    <h1 class="article__title">{% if is_excerpt %}<a href="{{ post.url }}">{% endif %}{{ post.title }}{% if is_excerpt %}</a>{% endif %}</h1>
+    <section class="article__meta">
       {% if post.tags %}
-        in
-        <ul>
+        <ul class="article__tags">
           {% for post_tag in post.tags %}
             {% assign post_tag_downcase = post_tag | downcase %}
             {% for site_tag in tag_collection.docs %}
               {% assign site_tag_title = site_tag.title | downcase %}
               {% if site_tag_title == post_tag_downcase %}
-                <li><a href="{{ site_tag.permalink }}">{{ site_tag.title }}</a></li>
+                <li class="article__tag"><a href="{{ site_tag.permalink }}" class="article__tag__link">{{ site_tag.title }}</a></li>
               {% endif %}
             {% endfor %}
           {% endfor %}
         </ul>
       {% endif %}
+      {% if post.date %}
+      <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+      {% endif %}
+      {% if post.author %}
+        by <a>{{ post.author }}</a>
+      {% endif %}
     </section>
   </header>
-  <section>
+  <section class="article__content">
     {% if is_excerpt %}
       {{ post.excerpt | markdownify }}
     {% else %}
       {{ post.content | markdownify }}
     {% endif %}
   </section>
-  <footer>
+  <footer class="article__footer">
     {% if is_excerpt and post.excerpt != post.content %}
-      <a href="{{ post.url }}">Read more &rarr;</a>
+      <a href="{{ post.url }}" class="article__footer__link">Read more &rarr;</a>
     {% elsif is_permalink %}
-      <a href="/blog/">&larr; Back to Blog</a>
+      <a href="/blog/" class="article__footer__link">&larr; Back to Blog</a>
     {% endif %}
   </footer>
 </article>
