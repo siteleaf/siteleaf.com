@@ -1,6 +1,8 @@
 $(function(){
   'use strict';
 
+  // TO DO: fix all this stuff
+  
   // Variables
   // ---------
 

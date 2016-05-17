@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
-    <meta name="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}">
+    <meta name="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}" />
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}" />
 
-    <meta name="og:site-name" content="Siteleaf">
-    <meta name="twitter:site" content="@siteleaf">
+    <meta name="og:site-name" content="Siteleaf" />
+    <meta name="twitter:site" content="@siteleaf" />
 
-    <meta name="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
     <!-- TO DO: use page.content | markdownify | strip_html | strip_newlines | truncate: 300 -->
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
 
     <!-- TO DO -->
-    <!-- <meta name="og:image" content="/assets/og-image.png">
-    <meta name="twitter:image:src" content="/assets/og-image.png">
-    <meta name="twitter:card" content="summary_large_image"> -->
+    <!-- <meta name="og:image" content="/assets/og-image.png" />
+    <meta name="twitter:image:src" content="/assets/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" /> -->
 
-    <link rel="stylesheet" href="{{ "/styles/all.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="{{ "/styles/all.css" | prepend: site.baseurl }}" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+    <!-- TO DO: remove this when using real hosted fonts -->
+    <script type="text/javascript">
+        (function() {
+            var path = '//easy.myfonts.net/v2/js?sid=277994(font-family=Objektiv+Mk2+Bold)&sid=278002(font-family=Objektiv+Mk2+Italic)&sid=278006(font-family=Objektiv+Mk2+Medium)&sid=278015(font-family=Objektiv+Mk2)&key=tPI1Ids7do',
+                protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+                trial = document.createElement('script');
+            trial.type = 'text/javascript';
+            trial.async = true;
+            trial.src = protocol + path;
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(trial);
+        })();
+    </script>
   </head>
   <body>
     {% include header.html %}

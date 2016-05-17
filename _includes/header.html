@@ -1,10 +1,10 @@
- <header>
-  <a href="/"><img src="/assets/logo.svg" alt="{{ site.title }}"></a>
-  <ul>
+<header class="header">
+  <a href="/"><img src="/assets/logo.svg" alt="{{ site.title }}" /></a>
+  <ul class="header__items">
     {% for item in site.data.navigation.header %}
-    <li>
+    <li class="header__item">
       <a href="{{ item.url }}">{{ item.title }}</a>
     </li>
     {% endfor %}
   </ul>
- </header>
+</header>

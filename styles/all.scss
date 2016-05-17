@@ -3,4 +3,87 @@
 
 @charset "utf-8";
 
+// imports
+// -------
+
 @import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'placeholders';
+
+// base
+// ----
+
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+html {
+  font-size: $font-size--html;
+  @include max-width($max-width--sm) {
+    font-size: $font-size--html-sm;
+  }
+}
+body {
+  color: $color--gray-darker;
+  background-color: $color--white;
+  font-family: $font-family--sans-serif;
+  line-height: $line-height--base;
+  @include antialias;
+  overflow-x: hidden;
+  @extend %container--narrow;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  font-family: $font-family--sans-serif-bold;
+  font-size: 3em;
+  line-height: $line-height--tight;
+  letter-spacing: $letter-spacing--tight;
+}
+
+// components
+// ----------
+
+.header__item,
+.footer__item {
+  display: inline-block;
+}
+
+// TEMP
+// ----
+
+#mfPreviewBar {
+  display: none;
+}
+.box {
+  width: 9em;
+  height: 9em;
+  background-color: red;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  display: inline-block;
+  &.gray-darker {
+    background-color: $color--gray-darker;
+  }
+  &.gray-dark {
+    background-color: $color--gray-dark;
+  }
+  &.gray {
+    background-color: $color--gray;
+  }
+  &.gray-light {
+    background-color: $color--gray-light;
+  }
+  &.gray-lighter {
+    background-color: $color--gray-lighter;
+  }
+  &.gray-lightest {
+    background-color: $color--gray-lightest;
+  }
+}

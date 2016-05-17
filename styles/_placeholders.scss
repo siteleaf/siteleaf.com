@@ -1,0 +1,12 @@
+%container {
+  width: 100%;
+  @include margin-center;
+}
+%container--narrow {
+  @extend %container;
+  max-width: 36rem;
+}
+%container--wide {
+  @extend %container;
+  max-width: 1200px;
+}
