@@ -12,11 +12,11 @@ header:
 - title: Sign up
   url: https://manage.siteleaf.com/signup/
 footer:
+- title: Contact
+  url: /contact/
 - title: Terms
   url: /terms/
 - title: Privacy
   url: /privacy/
-- title: Contact
-  url: /contact/
 - title: Status
   url: http://status.siteleaf.com
