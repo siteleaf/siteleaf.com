@@ -11,6 +11,7 @@
 @import 'mixins';
 @import 'variables';
 @import 'placeholders';
+@import 'highlight';
 
 // base
 // ----
@@ -67,7 +68,6 @@ code {
   font-size: 0.916667em;
   font-weight: 600;
   pre & {
-    font-size: inherit;
     font-weight: inherit;
   }
 }
