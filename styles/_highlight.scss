@@ -13,8 +13,6 @@ $cyan:     $color--red; //  strings, numbers
 $green:    $color--green; //  operators, other keywords
 
 .highlight {
-  background-color: $bg-color;
-  color: $body;
   .c { color: $base01; } /* Comment */
   .err { color: $body; } /* Error */
   .g { color: $body; } /* Generic */
