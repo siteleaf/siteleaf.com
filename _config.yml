@@ -44,7 +44,7 @@ highlighter: rouge
 #   - tables
 #   - footnotes
 #   - highlight
-# excerpt_separator: "\n\n"
+excerpt_separator: "\n\n\n"
 sass:
   sass_dir: styles/
   style: compressed

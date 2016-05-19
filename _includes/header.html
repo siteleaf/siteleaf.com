@@ -1,10 +1,12 @@
-<header class="header">
-  <a href="/" class="header__home"><img src="/assets/logo.svg" class="header__logo" alt="{{ site.title }}" /></a>
-  <ul class="header__items">
-    {% for item in site.data.navigation.header %}
-    <li class="header__item">
-      <a href="{{ item.url }}" class="header__link{% if item.url contains '/signup/' %} header__link--signup{% endif %}">{{ item.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</header>
+<!-- <div class="headerWrap"> -->
+  <header class="header">
+    <a href="/" class="header__home"><img src="/assets/logo.svg" class="header__logo" alt="{{ site.title }}" /></a>
+    <ul class="header__items">
+      {% for item in site.data.navigation.header %}
+      <li class="header__item">
+        <a href="{{ item.url }}" class="header__link{% if item.url contains '/signup/' %} header__link--signup{% endif %}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </header>
+<!-- </div> -->

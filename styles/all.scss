@@ -124,9 +124,12 @@ hr {
   padding-bottom: $v*2.25;
   font-size: 0.916667em;
 }
+.footer__items {
+  margin-bottom: $v*0.75;
+}
 .header__item,
 .footer__item {
-  font-family: $font-family--sans-serif-bold;
+  font-family: $font-family--sans-serif-medium;
   margin-left: 0.6em;
   margin-right: 0.6em;
   &:first-of-type {
@@ -184,7 +187,7 @@ hr {
 
 // articles
 .article + .article {
-  margin-top: $v*4;
+  margin-top: $v*6;
 }
 .article__title {
   margin-bottom: $v*0.5;
@@ -195,6 +198,7 @@ hr {
 }
 .article__date {
   color: $color--gray-dark;
+  display: inline-block;
 }
 .article__date--legal {
   &:before {
@@ -208,6 +212,9 @@ hr {
 .article__meta {
   font-size: 0.833333em;
   margin-bottom: $v;
+}
+.article__tag {
+  margin-bottom: $v*0.5;
 }
 .article__tag__link {
   background-color: $color--green;
