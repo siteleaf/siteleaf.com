@@ -87,6 +87,8 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 ;$(function(){
   'use strict';
 
+  // TO DO: fix all this stuff
+  
   // Variables
   // ---------
 

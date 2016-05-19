@@ -3,7 +3,7 @@
   <ul class="header__items">
     {% for item in site.data.navigation.header %}
     <li class="header__item">
-      <a href="{{ item.url }}">{{ item.title }}</a>
+      <a href="{{ item.url }}" class="header__link{% if item.url contains '/signup/' %} header__link--signup{% endif %}">{{ item.title }}</a>
     </li>
     {% endfor %}
   </ul>

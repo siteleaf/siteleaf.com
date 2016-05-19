@@ -30,9 +30,9 @@
           {% endfor %}
         </ul>
       {% endif %}
-      {% if post.date %}
+      {% unless post.is_page %}
         <time class="article__date{% if post.is_legal %} article__date--legal{% endif %}" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
-      {% endif %}
+      {% endunless %}
       {% if post.author %}
         by <a>{{ post.author }}</a>
       {% endif %}

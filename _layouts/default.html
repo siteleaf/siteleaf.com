@@ -57,6 +57,9 @@
   {% elsif (page.url contains '/blog/tags/') %}
     <!-- blog tag -->
     {% assign page_class = 'tag' %}
+  {% elsif (page.url contains '/blog/archive/') %}
+    <!-- blog archive -->
+    {% assign page_class = 'archive' %}
   {% elsif (page.url contains '/blog/') %}
     <!-- blog permalink -->
     {% assign page_class = 'permalink' %}

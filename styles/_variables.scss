@@ -8,8 +8,9 @@ $color--yellow: rgb(250,186,10);
 $color--red:    rgb(229,95,50);
 $color--purple: rgb(153,97,201);
 
-$color--gray-darker:   rgb(46,56,71);
-$color--gray-dark:     rgb(119,128,143);
+$color--gray-darkest:  rgb(54,65,82);
+$color--gray-darker:   rgb(89,102,122);
+$color--gray-dark:     rgb(136,146,163);
 $color--gray:          rgb(173,182,196);
 $color--gray-light:    rgb(209,216,227);
 $color--gray-lighter:  rgb(230,235,242);
@@ -30,8 +31,8 @@ $font-family--sans-serif-medium: 'Objektiv Mk2 Medium', sans-serif;
 // $font-family--monospace: 'Anonymous Pro', monospace;
 $font-family--monospace: 'Source Code Pro', monospace;
 
-$line-height--tight: 1.16;
-$line-height--base:  1.5;
+$line-height--tight: 1.18;
+$line-height--base:  1.6;
 
 $letter-spacing--tight: -0.024em;
 
@@ -44,7 +45,7 @@ $v: $line-height--base * 1rem;
 // ----
 
 $min-width--sm: 480px;
-$min-width--md: 720px;
+$min-width--md: 768px;
 $min-width--lg: 1080px;
 $max-width--xs: ($min-width--sm - 1);
 $max-width--sm: ($min-width--md - 1);
@@ -53,4 +54,9 @@ $max-width--md: ($min-width--lg - 1);
 // miscellaneous
 // -------------
 
+$width--logo:         72px;
 $border-radius--base: 0.25em;
+
+$max-width--container--narrow: 37.5rem;
+$max-width--container--wide:   1200px;
+$padding--container:           2rem;

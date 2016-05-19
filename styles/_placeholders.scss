@@ -4,13 +4,13 @@
 }
 %container--narrow {
   @extend %container;
-  max-width: 37rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: $max-width--container--narrow;
+  padding-left: $padding--container;
+  padding-right: $padding--container;
 }
 %container--wide {
   @extend %container;
-  max-width: 1200px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: $max-width--container--wide;
+  padding-left: $padding--container;
+  padding-right: $padding--container;
 }
