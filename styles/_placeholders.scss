@@ -14,3 +14,10 @@
   padding-left: $padding--container;
   padding-right: $padding--container;
 }
+
+%link--underline {
+  text-decoration: underline;
+  &:hover {
+    opacity: 0.6;
+  }
+}

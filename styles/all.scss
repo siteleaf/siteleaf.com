@@ -50,36 +50,39 @@ h6 {
   font-family: $font-family--sans-serif-bold;
 }
 h1 {
-  // font-size: 3.25em;
   font-size: 3em;
   line-height: $line-height--tight;
-  letter-spacing: $letter-spacing--tight;
+  letter-spacing: $letter-spacing--tighter;
 }
 h2 {
-  // font-size: 2.5em;
   font-size: 2.25em;
   line-height: $line-height--tight;
-  letter-spacing: $letter-spacing--tight;
+  letter-spacing: $letter-spacing--tighter;
 }
 h3 {
   font-size: 1.75em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tight;
 }
+h4,
+h5,
+h6 {
+  font-size: 1.083333em;
+}
 img {
   @include responsive-image;
 }
-pre {
+pre,
+code {
   background-color: $color--gray-lightest;
+  color: $color--gray-darker;
+}
+pre {
   padding: 1em;
-  // border-radius: $border-radius--base;
 }
 code {
   font-size: 0.916667em;
-  font-weight: 600;
-  pre & {
-    font-weight: inherit;
-  }
+  padding: 0.1em 0.25em
 }
 pre,
 code,
@@ -99,7 +102,7 @@ hr {
   width: 5em;
   margin: $v*1.5 auto;
   border: 0;
-  border-top: 2px solid $color--gray-lighter;
+  border-top: 0.2em solid $color--gray-lighter;
 }
 
 // components
@@ -119,7 +122,6 @@ hr {
   @extend %container--wide;
   padding-top: $v*2.25;
   padding-bottom: $v*2.25;
-  // color: $color--gray-dark;
   font-size: 0.916667em;
 }
 .header__item,
@@ -161,7 +163,7 @@ hr {
 }
 .main {
   margin-top: $v*2;
-  margin-bottom: $v*4;
+  margin-bottom: $v*6;
   .blog &,
   .permalink &,
   .tag &,
@@ -201,10 +203,7 @@ hr {
 }
 .article__footer__link {
   color: $color--gray-dark;
-  text-decoration: underline;
-  &:hover {
-    text-decoration: none;
-  }
+  @extend %link--underline;
 }
 .article__meta {
   font-size: 0.833333em;
@@ -214,7 +213,7 @@ hr {
   background-color: $color--green;
   color: $color--white;
   padding: 0.6em 0.6em 0.4em;
-  margin-right: 0.2em;
+  margin-right: 0.3em;
   border-radius: $border-radius--base;
   .article__tag:nth-of-type(2) & {
     background-color: $color--blue;
@@ -232,25 +231,28 @@ hr {
   iframe {
     margin-bottom: $v*0.75;
   }
-  // TO DO
   ol,
   ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
+    padding-left: 1.2em;
   }
-  // TO DO
+  ol {
+    list-style-type: decimal;
+  }
+  ul {
+    list-style-type: disc;
+  }
   blockquote {
     font-family: $font-family--sans-serif-italic;
-    margin-left: 0.4em;
-    padding-left: 1.5em - 0.4em - 0.2em;
+    margin-left: 0.3em;
+    padding-left: 1.2em - 0.3em - 0.2em;
     border-left: 0.2em solid $color--gray-lighter;
+    em {
+      font-family: $font-family--sans-serif;
+    }
   }
   a {
     font-family: $font-family--sans-serif-bold;
-    text-decoration: underline;
-    &:hover {
-      text-decoration: none;
-    }
+    @extend %link--underline;
   }
   h2 {
     margin-top: $v*1.75;
