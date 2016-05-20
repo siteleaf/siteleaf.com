@@ -293,7 +293,6 @@ img {
   margin-top: $v*4;
 }
 .blog__more__link {
-  font-size: 1.083333em;
   @extend %button--large;
   background-color: $color--gray;
   color: $color--white;
@@ -315,22 +314,20 @@ img {
 // archive
 // -------
 
-.archive__items {
-  margin-top: $v*2;
+.archive__main {
+  margin-top: $v*1;
   margin-bottom: $v*2;
   @extend %container--narrow;
 }
-.archive__month {
-  margin-top: $v*1;
+.archive__year {
+  margin-top: $v*1.5;
   margin-bottom: $v*0.5;
 }
-.archive__item {
-  display: table;
+.archive__items {
+  padding-left: 1.2em;
 }
-.archive__day {
-  color: $color--gray;
-  display: table-cell;
-  width: 1.75em;
+.archive__item {
+  list-style-type: disc;
 }
 .archive__link {
   &:hover {

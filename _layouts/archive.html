@@ -2,20 +2,23 @@
 layout: default
 ---
 
-<ul class="archive__items">
+<main class="archive__main">
   {% for post in site.posts %}
-    {% assign month = post.date | date: '%B %Y' %}
+    {% assign year = post.date | date: '%Y' %}
     {% unless post.next %}
-      <h4 class="archive__month">{{ month }}</h4>
+      <h3 class="archive__year">{{ year }}</h3>
+      <ul class="archive__items">
     {% else %}
-      {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
-      {% if month != next_month %}
-        <h4 class="archive__month">{{ month }}</h4>
+      {% capture next_year %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != next_year %}
+        </ul>
+        <h3 class="archive__year">{{ year }}</h3>
+        <ul class="archive__items">
       {% endif %}
     {% endunless %}
     <li class="archive__item">
-      <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
       <a class="archive__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <!-- <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d' }}</time> -->
     </li>
   {% endfor %}
-</ul>
+</main>
