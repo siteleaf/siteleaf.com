@@ -2,9 +2,9 @@
   <ul class="footer__items">
     {% for item in site.data.navigation.footer %}
     <li class="footer__item">
-      <a href="{{ item.url }}">{{ item.title }}</a>
+      <a href="{{ item.url }}" class="footer__link">{{ item.title }}</a>
     </li>
     {% endfor %}
+    <!-- <li class="footer__item">Made by <a href="http://oak.is/">Oak</a></li> -->
   </ul>
-  <!-- Made by <a href="http://oak.is/">Oak</a> -->
 </footer>

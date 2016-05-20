@@ -4,10 +4,6 @@ layout: default
 
 {% assign tag = page.title | downcase %}
 {% assign tag_posts = site.tags[tag] %}
-{% for post in tag_posts | limit: site.per_page %}
+{% for post in tag_posts %}
   {% include post.html post=post is_excerpt=true %}
 {% endfor %}
-<section class="older">
-  <a href="/blog/archive/">Older posts</a>
-</section>
-

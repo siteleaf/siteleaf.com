@@ -76,10 +76,6 @@ img {
 // header and footer
 // -----------------
 
-.header__item,
-.footer__item {
-  display: inline-block;
-}
 .header,
 .footer {
   @extend %container;
@@ -95,6 +91,7 @@ img {
 }
 .header__item,
 .footer__item {
+  display: inline-block;
   font-size: 0.916667em;
   font-family: $font-family--sans-serif-medium;
   margin-left: 0.6em;
@@ -108,9 +105,7 @@ img {
 }
 .headerWrap {
   background-color: $color--gray-lightest;
-  .green &,
-  .blue &,
-  .red & {
+  .colored & {
     color: $color--white;
   }
   .green & {
@@ -134,7 +129,7 @@ img {
   }
 }
 .header__title {
-  margin-top: $v*1.5;
+  margin-top: $v*2.25;
   @include margin-center();
   text-align: center;
   max-width: $max-width--header__title;
@@ -143,6 +138,12 @@ img {
   @include max-width($max-width--sm) {
     padding-left: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
     padding-right: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
+  }
+}
+.header__link:not(.header__link--signup),
+.footer__link {
+  &:hover {
+    text-decoration: underline;
   }
 }
 .header__link--signup {
@@ -155,6 +156,9 @@ img {
 }
 .footer {
   text-align: center;
+}
+.footer__item {
+  color: $color--gray;
 }
 
 // articles
@@ -169,6 +173,7 @@ img {
 .article__content a,
 .article__footer a {
   @extend %link--underline;
+  @extend %link--hover;
 }
 .article + .article {
   margin-top: $v*4;
@@ -227,7 +232,7 @@ img {
     margin-bottom: $v*0.5;
   }
   h3 {
-    margin-top: $v*1.75;
+    margin-top: $v*1.5;
     margin-bottom: $v*0.5;
   }
   h4,
@@ -278,18 +283,27 @@ img {
     font-family: $font-family--sans-serif-italic;
   }
 }
-.older {
+
+// blog
+// ----
+
+.blog__more {
   @extend %container;
+  text-align: center;
+  margin-top: $v*4;
+}
+.blog__more__link {
+  font-size: 1.083333em;
+  @extend %button--large;
+  background-color: $color--gray;
+  color: $color--white;
+  font-family: $font-family--sans-serif-bold;
+  @extend %link--hover;
 }
 
 // gallery
 // -------
 
-.gallery,
-.gallery .headerWrap {
-  background-color: darken($color--gray-darkest, 5%);
-  color: $color--white;
-}
 .gallery__items {
   @include clearfix;
 }
@@ -300,6 +314,29 @@ img {
 
 // archive
 // -------
+
+.archive__items {
+  margin-top: $v*2;
+  margin-bottom: $v*2;
+  @extend %container--narrow;
+}
+.archive__month {
+  margin-top: $v*1;
+  margin-bottom: $v*0.5;
+}
+.archive__item {
+  display: table;
+}
+.archive__day {
+  color: $color--gray;
+  display: table-cell;
+  width: 1.75em;
+}
+.archive__link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 // TEMP
 // ----

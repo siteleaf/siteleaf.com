@@ -49,7 +49,7 @@ $v: $line-height--base * 1rem;
 // ----
 
 $min-width--sm: 480px;
-$min-width--md: 840px;
+$min-width--md: 760px;
 $min-width--lg: 1080px;
 $max-width--xs: ($min-width--sm - 1);
 $max-width--sm: ($min-width--md - 1);
@@ -59,7 +59,7 @@ $max-width--md: ($min-width--lg - 1);
 // -------------
 
 $width--logo:         74px;
-$border-radius--base: 0.25em;
+$border-radius--base: 0.2em;
 
 $max-width--container--narrow: 37.5rem;
 $max-width--container--wide:   1340px;

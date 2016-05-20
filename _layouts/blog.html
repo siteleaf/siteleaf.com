@@ -5,6 +5,6 @@ layout: default
 {% for post in site.posts | limit: site.per_page %}
   {% include post.html post=post is_excerpt=true %}
 {% endfor %}
-<section class="older">
-  <a href="/blog/archive/">Older posts</a>
-</section>
+<div class="blog__more">
+  <a href="/blog/archive/" class="blog__more__link">Older posts</a>
+</div>
