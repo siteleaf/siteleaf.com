@@ -2,24 +2,21 @@
 layout: default
 ---
 
-<main class="main">
-  <!-- <h1>{{ page.title }}</h1> -->
-  <section>
-    {% for plan in page.plans %}
-      <a href="https://manage.siteleaf.com/signup?plan={{ plan.title | downcase }}">
-        <article>
-          {% if plan.callout %}
-            <h6>{{ plan.callout }}</h6>
-          {% endif %}
-          <h4>{{ plan.title }}</h4>
-          <h6>{{ plan.price }}</h6>
-          <section>{{ plan.content | markdownify }}</section>
-        </article>
-      </a>
-    {% endfor %}
-  </section>
-  <footer>
-    <a href="https://manage.siteleaf.com/signup?plan=developer">Or try a free developer account.</a>
-    <a href="https://manage.siteleaf.com/signup/">Create an account</a>
-  </footer>
-</main>
+<section>
+  {% for plan in page.plans %}
+    <a href="https://manage.siteleaf.com/signup?plan={{ plan.title | downcase }}">
+      <article>
+        {% if plan.callout %}
+          <h6>{{ plan.callout }}</h6>
+        {% endif %}
+        <h4>{{ plan.title }}</h4>
+        <h6>{{ plan.price }}</h6>
+        <section>{{ plan.content | markdownify }}</section>
+      </article>
+    </a>
+  {% endfor %}
+</section>
+<footer>
+  <a href="https://manage.siteleaf.com/signup?plan=developer">Or try a free developer account.</a>
+  <a href="https://manage.siteleaf.com/signup/">Create an account</a>
+</footer>

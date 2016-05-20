@@ -1,43 +1,43 @@
 {% assign post = include.post %}
 {% assign is_excerpt = include.is_excerpt %}
-{% assign is_permalink = include.is_permalink %}
 {% assign tag_collection = site.collections | where: 'label', 'tags' | first %}
 <article class="article">
   {% if post.vimeo %}
     <figure>
-      <iframe src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      <!-- <iframe src="http://player.vimeo.com/video/{{post.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> --><!-- TO DO -->
     </figure>
   {% elsif post.hero %}
     <figure>
       {% if is_excerpt %}<a href="{{ post.url }}">{% endif %}
-        <!-- <img src="{{ post.hero }}" /> --><!-- TO DO: uncomment -->
+        <!-- <img src="{{ post.hero }}" /> --><!-- TO DO -->
       {% if is_excerpt %}</a>{% endif %}
     </figure>
   {% endif %}
-  <header class="article__header">
-    <h1 class="article__title">{% if is_excerpt %}<a href="{{ post.url }}">{% endif %}{{ post.title }}{% if is_excerpt %}</a>{% endif %}</h1>
-    <section class="article__meta">
-      {% if post.tags %}
-        <ul class="article__tags">
-          {% for post_tag in post.tags %}
-            {% assign post_tag_downcase = post_tag | downcase %}
-            {% for site_tag in tag_collection.docs %}
-              {% assign site_tag_title = site_tag.title | downcase %}
-              {% if site_tag_title == post_tag_downcase %}
-                <li class="article__tag"><a href="{{ site_tag.permalink }}" class="article__tag__link">{{ site_tag.title }}</a></li>
-              {% endif %}
-            {% endfor %}
+  {% if is_excerpt %}
+    <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  {% endif %}
+  <section class="article__meta">
+    {% unless post.is_page %}
+      <time class="article__date{% if post.is_legal %} article__date--legal{% endif %}" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+    {% endunless %}
+    {% if post.author %}
+      by <a>{{ post.author }}</a>
+    {% endif %}
+    {% if post.tags %}
+      <ul class="article__tags">
+        in 
+        {% for post_tag in post.tags %}
+          {% assign post_tag_downcase = post_tag | downcase %}
+          {% for site_tag in tag_collection.docs %}
+            {% assign site_tag_title = site_tag.title | downcase %}
+            {% if site_tag_title == post_tag_downcase %}
+              <li class="article__tag"><a href="{{ site_tag.permalink }}" class="article__tag__link">{{ site_tag.title }}</a></li>
+            {% endif %}
           {% endfor %}
-        </ul>
-      {% endif %}
-      {% unless post.is_page %}
-        <time class="article__date{% if post.is_legal %} article__date--legal{% endif %}" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
-      {% endunless %}
-      {% if post.author %}
-        by <a>{{ post.author }}</a>
-      {% endif %}
-    </section>
-  </header>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </section>
   <section class="article__content">
     {% if is_excerpt %}
       {{ post.excerpt | markdownify }}

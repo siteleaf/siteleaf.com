@@ -67,7 +67,7 @@
     {% assign page_class = 'page' %}
   {% endif %}
   
-  <body class="{{ page_class }}">
+  <body class="{{ page_class }}{% if page.color %} {{ page.color }}{% endif %}">
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

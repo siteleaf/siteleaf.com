@@ -1,18 +1,16 @@
 %container {
   width: 100%;
   @include margin-center;
+  padding-left: $padding--container;
+  padding-right: $padding--container;
 }
 %container--narrow {
   @extend %container;
   max-width: $max-width--container--narrow;
-  padding-left: $padding--container;
-  padding-right: $padding--container;
 }
 %container--wide {
   @extend %container;
   max-width: $max-width--container--wide;
-  padding-left: $padding--container;
-  padding-right: $padding--container;
 }
 
 %link--underline {
@@ -20,4 +18,9 @@
   &:hover {
     opacity: 0.6;
   }
+}
+
+%button {
+  padding: 0.6em 0.5em 0.4em;
+  border-radius: $border-radius--base;
 }

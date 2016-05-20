@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<main class="main">
-  {% for post in site.posts | limit: site.per_page %}
-    {% include post.html post=post is_excerpt=true %}
-  {% endfor %}
+{% for post in site.posts | limit: site.per_page %}
+  {% include post.html post=post is_excerpt=true %}
+{% endfor %}
+<section class="older">
   <a href="/blog/archive/">Older posts</a>
-</main>
+</section>
