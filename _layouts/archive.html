@@ -6,11 +6,11 @@ layout: default
   {% for post in site.posts %}
     {% assign month = post.date | date: '%B %Y' %}
     {% unless post.next %}
-      <h3 class="archive__month">{{ month }}</h3>
+      <h4 class="archive__month">{{ month }}</h4>
     {% else %}
       {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
       {% if month != next_month %}
-        <h3 class="archive__month">{{ month }}</h3>
+        <h4 class="archive__month">{{ month }}</h4>
       {% endif %}
     {% endunless %}
     <li class="archive__item">

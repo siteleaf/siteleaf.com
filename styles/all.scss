@@ -308,22 +308,20 @@ img {
 // gallery
 // -------
 
+.gallery,
+.gallery .headerWrap {
+  background-color: $color--gray-darkest;
+}
 .gallery {
-  background-color: $color--gray-lightest;
+  color: $color--white;
 }
 .gallery__items {
-  // @include clearfix;
   @extend %container--narrow;
   margin-top: $v*2;
   margin-bottom: $v*2;
 }
 .gallery__item {
   margin-bottom: $v*4;
-  // float: left;
-  // width: 50%;
-  // @include max-width($max-width--sm) {
-  //   width: 100%;
-  // }
 }
 .gallery__caption {
   margin-top: $v*0.5;
@@ -338,7 +336,7 @@ img {
 // -------
 
 .archive__items {
-  margin-top: $v*2;
+  margin-top: $v*1.5;
   margin-bottom: $v*2;
   @extend %container--narrow;
 }
