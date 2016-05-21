@@ -53,6 +53,9 @@ h1 {
   font-size: 3.25em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tighter;
+  @include max-width($max-width--sm) {
+    font-size: 3em;
+  }
 }
 h2 {
   font-size: 2.5em;
@@ -82,7 +85,7 @@ img {
 }
 .header {
   padding-top: $padding--container*0.75;
-  padding-bottom: $padding--container*1.5;
+  padding-bottom: $padding--container*1.25;
   position: relative;
 }
 .footer {
@@ -136,8 +139,10 @@ img {
   padding-left: $width--logo * 1.25;
   padding-right: $width--logo * 1.25;
   @include max-width($max-width--sm) {
-    padding-left: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
-    padding-right: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
+    padding-left: 0;
+    padding-right: 0;
+    // padding-left: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
+    // padding-right: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
   }
 }
 .header__link:not(.header__link--signup),
@@ -165,15 +170,15 @@ img {
 // --------
 
 .article {
-  margin-top: $v*1;
+  margin-top: $v*1.5;
   margin-bottom: $v*2;
   @extend %container--narrow;
 }
 .article__meta a,
 .article__content a,
 .article__footer a {
-  @extend %link--underline;
-  @extend %link--hover;
+  text-decoration: underline;
+  @include hover-fade;
 }
 .article + .article {
   margin-top: $v*4;
@@ -293,23 +298,40 @@ img {
   margin-top: $v*4;
 }
 .blog__more__link {
-  font-size: 1.083333em;
   @extend %button--large;
   background-color: $color--gray;
   color: $color--white;
   font-family: $font-family--sans-serif-bold;
-  @extend %link--hover;
+  @include hover-fade;
 }
 
 // gallery
 // -------
 
+.gallery {
+  background-color: $color--gray-lightest;
+}
 .gallery__items {
-  @include clearfix;
+  // @include clearfix;
+  @extend %container--narrow;
+  margin-top: $v*2;
+  margin-bottom: $v*2;
 }
 .gallery__item {
-  width: 50%;
-  float: left;
+  margin-bottom: $v*4;
+  // float: left;
+  // width: 50%;
+  // @include max-width($max-width--sm) {
+  //   width: 100%;
+  // }
+}
+.gallery__caption {
+  margin-top: $v*0.5;
+}
+.gallery__caption__link {
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 // archive

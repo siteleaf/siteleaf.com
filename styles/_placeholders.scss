@@ -13,15 +13,6 @@
   max-width: $max-width--container--wide;
 }
 
-%link--hover {
-  &:hover {
-    opacity: 0.7;
-  }
-}
-%link--underline {
-  text-decoration: underline;
-}
-
 %button {
   padding: 0.6em 0.6em 0.4em;
   border-radius: $border-radius--base;

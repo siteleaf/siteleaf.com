@@ -5,8 +5,8 @@ layout: default
 <main class="gallery__items">
   {% for item in site.data.gallery %}
     <figure class="gallery__item">
-      <a href="{{ item.url }}"><img src="{{ item.image }}" alt="{{ item.title }}" /></a>
-      <!-- <figcaption><a href="{{ item.url }}">{{ item.title }}</a></figcaption> -->
+      <a href="{{ item.url }}"><img src="{{ item.image }}" alt="{{ item.title }}" class="gallery__image" /></a>
+      <h4 class="gallery__caption"><a href="{{ item.url }}" class="gallery__caption__link">{{ item.title }}</a></h4>
     </figure>
   {% endfor %}
 </main>

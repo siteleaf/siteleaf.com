@@ -1,18 +1,19 @@
-- title: Collaborative Fund
-  image: "/uploads/gallery__collaborativefund.png"
-  url: http://www.collaborativefund.com/
-
 - title: Collins
   image: "/uploads/gallery__collins.png"
   url: http://www.wearecollins.com/
 
-- title: Adam Feuerman
-  image: "/uploads/gallery__adamfeuerman.png"
-  url: http://www.adamfeuerman.com/
-
 - title: On the Grid
   image: "/uploads/gallery__onthegrid.png"
   url: http://www.onthegrid.city/
+
+- title: OKREAL
+  image: "/uploads/gallery__okreal.png"
+  url: http://www.okreal.co/
+
+- title: FiftyThree Press
+  image: "/uploads/gallery__fiftythreepress.png"
+  url: http://press.fiftythree.com/
+
 
 - title: Brian Hoff Design
   image: "/uploads/gallery__brianhoffdesign.png"
@@ -22,6 +23,10 @@
   image: "/uploads/gallery__bondfire.png"
   url: http://www.bondfire.co/
 
+- title: Collaborative Fund
+  image: "/uploads/gallery__collaborativefund.png"
+  url: http://www.collaborativefund.com/
+
 - title: Other Machine Co.
   image: "/uploads/gallery__othermachineco.png"
   url: https://othermachine.co/
@@ -29,14 +34,6 @@
 - title: London SE
   image: "/uploads/gallery__londonse.png"
   url: http://www.london-se.com/
-
-- title: OKREAL
-  image: "/uploads/gallery__okreal.png"
-  url: http://www.okreal.co/
-
-- title: FiftyThree Press
-  image: "/uploads/gallery__fiftythreepress.png"
-  url: http://press.fiftythree.com/
 
 - title: Nearly Impossible
   image: "/uploads/gallery__nearlyimpossible.png"
@@ -90,6 +87,10 @@
   image: "/uploads/gallery__ullconference.png"
   url: http://2014.ull.ie/
 
+- title: Adam Feuerman
+  image: "/uploads/gallery__adamfeuerman.png"
+  url: http://www.adamfeuerman.com/
+  
 - title: Able Parris
   image: "/uploads/gallery__ableparris.png"
   url: http://www.ableparris.com/

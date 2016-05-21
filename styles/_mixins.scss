@@ -20,6 +20,12 @@
   margin-right: auto;
 }
 
+@mixin hover-fade {
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
 @mixin placeholder {
   ::-webkit-input-placeholder {@content;}
   :-moz-placeholder           {@content;}
