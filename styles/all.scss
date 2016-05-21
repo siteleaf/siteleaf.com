@@ -84,7 +84,7 @@ img {
   @extend %container;
 }
 .header {
-  padding-top: $padding--container*0.75;
+  padding-top: $padding--container;
   padding-bottom: $padding--container*1.25;
   position: relative;
 }
@@ -95,10 +95,10 @@ img {
 .header__item,
 .footer__item {
   display: inline-block;
-  font-size: 0.916667em;
+  font-size: $font-size--small;
   font-family: $font-family--sans-serif-medium;
-  margin-left: 0.6em;
-  margin-right: 0.6em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
   &:first-of-type {
     margin-left: 0;
   }
@@ -111,19 +111,25 @@ img {
   .colored & {
     color: $color--white;
   }
+  .blue & {
+    background-color: $color--blue;
+  }
   .green & {
     background-color: $color--green;
   }
-  .blue & {
-    background-color: $color--blue;
+  .yellow & {
+    background-color: $color--yellow;
   }
   .red & {
     background-color: $color--red;
   }
+  .purple & {
+    background-color: $color--purple;
+  }
 }
 .header__home {
   position: absolute;
-  @include transform(translateY(-7.5%));
+  @include transform(translateY(-6%));
 }
 .header__logo {
   width: $width--logo;
@@ -145,6 +151,10 @@ img {
     // padding-right: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
   }
 }
+.header__link,
+.footer__link {
+  @extend %button;
+}
 .header__link:not(.header__link--signup),
 .footer__link {
   &:hover {
@@ -152,9 +162,9 @@ img {
   }
 }
 .header__link--signup {
-  @extend %button;
   background-color: $color--leaf;
   color: $color--white;
+  margin-left: 0.5em;
 }
 .header__items {
   text-align: right;
@@ -198,7 +208,7 @@ img {
 .article__meta {
   color: $color--gray;
   font-family: $font-family--sans-serif-medium;
-  font-size: 0.916667em;
+  font-size: $font-size--small;
   margin-bottom: $v*0.75;
 }
 .article__date--legal {
@@ -270,7 +280,7 @@ img {
     padding: 1em;
   }
   code {
-    font-size: 0.916667em;
+    font-size: $font-size--small;
     padding: 0.1em 0.25em
   }
   pre,

@@ -25,6 +25,8 @@ $color--gray-lightest: rgb(245,247,250);
 $font-size--html:    20px;
 $font-size--html-sm: 18px;
 
+$font-size--small: 0.916667em;
+
 // TO DO: change these when using real hosted fonts
 $font-family--sans-serif:        'Objektiv Mk2', sans-serif;
 $font-family--sans-serif-bold:   'Objektiv Mk2 Bold', sans-serif;
@@ -64,4 +66,4 @@ $border-radius--base: 0.2em;
 $max-width--container--narrow: 39rem;
 $max-width--container--wide:   1340px;
 $max-width--header__title:     1200px;
-$padding--container:           2rem;
+$padding--container:           1.75rem;
