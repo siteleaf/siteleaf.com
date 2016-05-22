@@ -53,28 +53,25 @@ h1 {
   font-size: 3.25em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tighter;
-  // @include max-width($max-width--sm) {
-  //   font-size: 2.75em;
-  // }
-  // @include max-width($max-width--xs) {
-  //   font-size: 2em;
-  // }
+  @include max-width($max-width--sm) {
+    font-size: 2.5em;
+  }
 }
 h2 {
   font-size: 2.5em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tighter;
-  // @include max-width($max-width--sm) {
-  //   font-size: 2em;
-  // }
+  @include max-width($max-width--sm) {
+    font-size: 2em;
+  }
 }
 h3 {
   font-size: 1.5em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tight;
-  // @include max-width($max-width--sm) {
-  //   font-size: 1.333333em;
-  // }
+  @include max-width($max-width--sm) {
+    font-size: 1.333333em;
+  }
 }
 h4,
 h5,
