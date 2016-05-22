@@ -53,19 +53,28 @@ h1 {
   font-size: 3.25em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tighter;
-  @include max-width($max-width--sm) {
-    font-size: 3em;
-  }
+  // @include max-width($max-width--sm) {
+  //   font-size: 2.75em;
+  // }
+  // @include max-width($max-width--xs) {
+  //   font-size: 2em;
+  // }
 }
 h2 {
   font-size: 2.5em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tighter;
+  // @include max-width($max-width--sm) {
+  //   font-size: 2em;
+  // }
 }
 h3 {
   font-size: 1.5em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tight;
+  // @include max-width($max-width--sm) {
+  //   font-size: 1.333333em;
+  // }
 }
 h4,
 h5,
@@ -84,27 +93,19 @@ img {
   @extend %container;
 }
 .header {
-  padding-top: $padding--container;
-  padding-bottom: $padding--container*1.25;
+  padding-top: $gutter;
+  padding-bottom: $gutter*1.5;
   position: relative;
 }
 .footer {
-  padding-top: $padding--container*2;
-  padding-bottom: $padding--container*2;
+  padding-top: $gutter*2;
+  padding-bottom: $gutter*2;
 }
 .header__item,
 .footer__item {
   display: inline-block;
   font-size: $font-size--small;
   font-family: $font-family--sans-serif-medium;
-  margin-left: 0.2em;
-  margin-right: 0.2em;
-  &:first-of-type {
-    margin-left: 0;
-  }
-  &:last-of-type {
-    margin-right: 0;
-  }
 }
 .headerWrap {
   background-color: $color--gray-lightest;
@@ -127,30 +128,6 @@ img {
     background-color: $color--purple;
   }
 }
-.header__home {
-  position: absolute;
-  @include transform(translateY(-6%));
-}
-.header__logo {
-  width: $width--logo;
-  @include max-width($max-width--sm) {
-    width: $width--logo * ($font-size--html-sm/$font-size--html);
-  }
-}
-.header__title {
-  margin-top: $v*2.25;
-  @include margin-center();
-  text-align: center;
-  max-width: $max-width--header__title;
-  padding-left: $width--logo * 1.25;
-  padding-right: $width--logo * 1.25;
-  @include max-width($max-width--sm) {
-    padding-left: 0;
-    padding-right: 0;
-    // padding-left: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
-    // padding-right: $width--logo * ($font-size--html-sm/$font-size--html) * 1.25;
-  }
-}
 .header__link,
 .footer__link {
   @extend %button;
@@ -167,13 +144,54 @@ img {
   margin-left: 0.5em;
 }
 .header__items {
+  float: right;
   text-align: right;
+  @include max-width($max-width--sm) {
+    float: none;
+  }
+}
+.header__item:not(.header__item--login) {
+  @include max-width($max-width--sm) {
+    display: none;
+  }
+}
+.header__link {
+  @include max-width($max-width--sm) {
+    padding: 0;
+  }
+}
+.header__home {
+  position: absolute;
+  @include transform(translateY(-7.5%));
+  @include max-width($max-width--sm) {
+    position: static;
+  }
+}
+.header__logo {
+  width: $width--logo;
+  @include max-width($max-width--sm) {
+    @include margin-center();
+  }
+}
+.header__title {
+  margin-top: $v*3.5;
+  @include margin-center();
+  text-align: center;
+  max-width: $max-width--header__title;
+  padding-left: $width--logo * 1.4;
+  padding-right: $width--logo * 1.4;
+  @include max-width($max-width--sm) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: $v*1.25;
+  }
+}
+.footerWrap {
+  margin-top: $v*3;
 }
 .footer {
-  text-align: center;
-}
-.footer__item {
   color: $color--gray;
+  text-align: center;
 }
 
 // articles
@@ -213,7 +231,7 @@ img {
 }
 .article__date--legal {
   &:before {
-    content: 'Updated ';
+    content: 'As of ';
   }
 }
 .article__footer__link {
@@ -306,6 +324,7 @@ img {
   @extend %container;
   text-align: center;
   margin-top: $v*4;
+  margin-bottom: $v;
 }
 .blog__more__link {
   @extend %button--large;
@@ -320,18 +339,18 @@ img {
 
 .gallery,
 .gallery .headerWrap {
-  background-color: $color--gray-darkest;
+  background-color: $color--gray-lightest;
 }
-.gallery {
-  color: $color--white;
-}
+// .gallery {
+//   color: $color--white;
+// }
 .gallery__items {
   @extend %container--narrow;
   margin-top: $v*2;
   margin-bottom: $v*2;
 }
 .gallery__item {
-  margin-bottom: $v*4;
+  margin-bottom: $v*2;
 }
 .gallery__caption {
   margin-top: $v*0.5;

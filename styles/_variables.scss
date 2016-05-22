@@ -15,8 +15,7 @@ $color--gray-dark:     rgb(136,146,163);
 $color--gray:          rgb(173,182,196);
 $color--gray-light:    rgb(209,216,227);
 $color--gray-lighter:  rgb(230,235,242);
-$color--gray-lightest: rgb(245,247,250);
-// $color--gray-lightest: rgb(247,249,252);
+$color--gray-lightest: rgb(247,249,252);
 
 
 // typography
@@ -36,8 +35,8 @@ $font-family--sans-serif-medium: 'Objektiv Mk2 Medium', sans-serif;
 // $font-family--monospace: 'Anonymous Pro', monospace;
 $font-family--monospace: 'Source Code Pro', monospace;
 
-$line-height--tight: 1.18;
-$line-height--base:  1.6;
+$line-height--tight: 1.16;
+$line-height--base:  1.64;
 
 $letter-spacing--tighter: -0.027em;
 $letter-spacing--tight:   -0.018em;
@@ -50,12 +49,18 @@ $v: $line-height--base * 1rem;
 // grid
 // ----
 
-$min-width--sm: 480px;
-$min-width--md: 760px;
+$min-width--sm: 600px;
+$min-width--md: 720px;
 $min-width--lg: 1080px;
 $max-width--xs: ($min-width--sm - 1);
 $max-width--sm: ($min-width--md - 1);
 $max-width--md: ($min-width--lg - 1);
+
+$max-width--container--narrow: $min-width--md;
+$max-width--container--wide:   1340px;
+$max-width--header__title:     $min-width--lg;
+
+$gutter: 1.5rem;
 
 // miscellaneous
 // -------------
@@ -63,7 +68,3 @@ $max-width--md: ($min-width--lg - 1);
 $width--logo:         74px;
 $border-radius--base: 0.2em;
 
-$max-width--container--narrow: 39rem;
-$max-width--container--wide:   1340px;
-$max-width--header__title:     1200px;
-$padding--container:           1.75rem;

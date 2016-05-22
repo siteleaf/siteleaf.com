@@ -1,13 +1,19 @@
 <div class="headerWrap">
   <header class="header">
-    <a href="/" class="header__home"><img src="/assets/logo.svg" class="header__logo" alt="{{ site.title }}" /></a>
     <ul class="header__items">
       {% for item in site.data.navigation.header %}
       <li class="header__item">
-        <a href="{{ item.url }}" class="header__link{% if item.url contains '/signup/' %} header__link--signup{% endif %}">{{ item.title }}</a>
+        <a href="{{ item.url }}" class="header__link">{{ item.title }}</a>
       </li>
       {% endfor %}
+      <li class="header__item header__item--login">
+        <a href="https://manage.siteleaf.com" class="header__link">Log in</a>
+      </li>
+      <li class="header__item">
+        <a href="https://manage.siteleaf.com/signup/" class="header__link header__link--signup">Sign up</a>
+      </li>
     </ul>
+    <a href="/" class="header__home"><img src="/assets/logo.svg" class="header__logo" alt="{{ site.title }}" /></a>
     <h1 class="header__title">{{ page.title }}</h1>
   </header>
 </div>

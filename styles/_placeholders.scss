@@ -1,8 +1,8 @@
 %container {
   width: 100%;
   @include margin-center;
-  padding-left: $padding--container;
-  padding-right: $padding--container;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 %container--narrow {
   @extend %container;
@@ -14,7 +14,7 @@
 }
 
 %button {
-  padding: 0.6em 0.6em 0.4em;
+  padding: 0.6em 0.5em 0.4em;
   border-radius: $border-radius--base;
 }
 %button--large {

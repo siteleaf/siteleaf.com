@@ -1,10 +1,16 @@
-<footer class="footer">
-  <ul class="footer__items">
-    {% for item in site.data.navigation.footer %}
-    <li class="footer__item">
-      <a href="{{ item.url }}" class="footer__link">{{ item.title }}</a>
-    </li>
-    {% endfor %}
-    <!-- <li class="footer__item">Made by <a href="http://oak.is/">Oak</a></li> -->
-  </ul>
-</footer>
+<div class="footerWrap">
+  <footer class="footer">
+    <ul class="footer__items">
+      {% for item in site.data.navigation.header %}
+      <li class="footer__item">
+        <a href="{{ item.url }}" class="footer__link">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+      {% for item in site.data.navigation.footer %}
+      <li class="footer__item">
+        <a href="{{ item.url }}" class="footer__link">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </footer>
+</div>
