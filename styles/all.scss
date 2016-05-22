@@ -91,7 +91,7 @@ img {
 }
 .header {
   padding-top: $gutter;
-  padding-bottom: $gutter*1.5;
+  padding-bottom: $gutter;
   position: relative;
 }
 .footer {
@@ -135,6 +135,10 @@ img {
     text-decoration: underline;
   }
 }
+.footer__item {
+  margin-top: $v*0.125;
+  margin-bottom: $v*0.125;
+}
 .header__link--signup {
   background-color: $color--leaf;
   color: $color--white;
@@ -172,6 +176,7 @@ img {
 }
 .header__title {
   margin-top: $v*3.5;
+  margin-bottom: $v*0.5;
   @include margin-center();
   text-align: center;
   max-width: $max-width--header__title;
@@ -181,21 +186,20 @@ img {
     padding-left: 0;
     padding-right: 0;
     margin-top: $v*1.25;
+    margin-bottom: 0;
   }
-}
-.footerWrap {
-  margin-top: $v*3;
 }
 .footer {
   color: $color--gray;
   text-align: center;
+  margin-top: $v;
 }
 
 // articles
 // --------
 
 .article {
-  margin-top: $v*1.5;
+  margin-top: $v*1;
   margin-bottom: $v*2;
   @extend %container--narrow;
 }
@@ -320,8 +324,7 @@ img {
 .blog__more {
   @extend %container;
   text-align: center;
-  margin-top: $v*4;
-  margin-bottom: $v;
+  margin-top: $v*3;
 }
 .blog__more__link {
   @extend %button--large;
