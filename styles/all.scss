@@ -339,21 +339,30 @@ img {
 
 .gallery,
 .gallery .headerWrap {
-  background-color: $color--gray-lightest;
+  background-color: $color--gray-darkest;
 }
-// .gallery {
-//   color: $color--white;
-// }
-.gallery__items {
-  @extend %container--narrow;
+.gallery {
+  color: $color--white;
+}
+.gallery__main {
+  @extend %container--wide;
   margin-top: $v*2;
   margin-bottom: $v*2;
 }
+.gallery__items {
+  @extend %row;
+}
 .gallery__item {
+  @extend %column;
+  width: 50%;
   margin-bottom: $v*2;
+  @include max-width($max-width--xs) {
+    width: 100%;
+  }
 }
 .gallery__caption {
   margin-top: $v*0.5;
+  @include ellipsis;
 }
 .gallery__caption__link {
   &:hover {
