@@ -64,20 +64,21 @@ layout: default
           </div>
         {% when 'words' %}
           <div class="feature__body">
-            <ul class="testimonials">
-              {% for testimonial in feature.testimonials %}
-                <li class="testimonial">
-                  <div class="testimonial__card">
-                    <div class="testimonial__header">
-                      <div class="testimonial__header__item">
-                        <img src="{{ testimonial.face }}" class="testimonial__face" />
+            <ul class="tweets">
+              {% for tweet in feature.tweets %}
+                <li class="tweet">
+                  <div class="tweet__card">
+                    <div class="tweet__header">
+                      <div class="tweet__header__item">
+                        <img src="{{ tweet.avatar }}" class="tweet__avatar" />
                       </div>
-                      <div class="testimonial__header__item">
-                        <h5 class="testimonial__name">{{ testimonial.name }}</h5>
-                        <small class="testimonial__handle">{{ testimonial.handle }}</small>
+                      <div class="tweet__header__item">
+                        <h5 class="tweet__name">{{ tweet.name }}</h5>
+                        <small class="tweet__handle">{{ tweet.handle }}</small>
                       </div>
                     </div>
-                    <div class="testimonial__words">{{ testimonial.words | markdownify }}</div>
+                    <div class="tweet__words">{{ tweet.words | markdownify }}</div>
+                    <a href="{{ tweet.link }}" class="tweet__link">tweet</a>
                   </div>
                 </li>
               {% endfor %}

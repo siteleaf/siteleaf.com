@@ -50,13 +50,13 @@ $v: $line-height--base * 1rem;
 
 $min-width--sm: 480px;
 $min-width--md: 720px;
-$min-width--lg: 1080px;
+$min-width--lg: 1024px;
 $max-width--xs: ($min-width--sm - 1);
 $max-width--sm: ($min-width--md - 1);
 $max-width--md: ($min-width--lg - 1);
 
 $max-width--container--narrow: $min-width--md;
-$max-width--container--wide:   1200px;
+$max-width--container--wide:   1240px;
 $max-width--header__title:     960px;
 $max-width--header__subtitle:  24rem;
 
@@ -68,3 +68,4 @@ $gutter: 1.5rem;
 $width--logo:         3.75rem;
 $border-radius--base: 0.2em;
 
+$opacity--hover: 0.7;

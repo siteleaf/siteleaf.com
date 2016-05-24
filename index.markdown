@@ -100,31 +100,37 @@ features:
 - title: What people say
   handle: words
   color: gray
-  testimonials:
+  tweets:
   - name: Randy J. Hunt
     handle: "@randyjhunt"
-    face: "/uploads/face--randyjhunt.png"
-    words: Spent a good part of Sunday with [@siteleaf](https://twitter.com/siteleaf), and have to say, the simplicity continues to do it for me. This is a really long tweet to test the flexbox stuff that I put in.
+    avatar: https://pbs.twimg.com/profile_images/1771989329/image1327197190_bigger.png
+    words: Spent a good part of Sunday with [@siteleaf](https://twitter.com/siteleaf), and have to say, the simplicity continues to do it for me.
+    link: https://twitter.com/randyjhunt/status/475987996387594240
   - name: Randy 2. Hunt
     handle: "@randyjhunt"
-    face: "/uploads/face--randyjhunt.png"
+    avatar: https://pbs.twimg.com/profile_images/714911101939490823/PgjvIyjY_bigger.jpg
     words: I love Siteleaf.
+    link: https://twitter.com/randyjhunt/status/475987996387594240
   - name: Randy 3. Hunt
     handle: "@randyjhunt"
-    face: "/uploads/face--randyjhunt.png"
+    avatar: https://pbs.twimg.com/profile_images/1771989329/image1327197190_bigger.png
     words: Siteleaf is great.
+    link: https://twitter.com/randyjhunt/status/475987996387594240
   - name: Randy 4. Hunt
     handle: "@randyjhunt"
-    face: "/uploads/face--randyjhunt.png"
+    avatar: https://pbs.twimg.com/profile_images/714911101939490823/PgjvIyjY_bigger.jpg
     words: I've been using [@siteleaf](https://twitter.com/siteleaf) for 15 minutes and I'm already impressed. Simple set-up, a clear, concise interface, and amazing customer service!
+    link: https://twitter.com/randyjhunt/status/475987996387594240
   - name: Randy 5. Hunt
     handle: "@randyjhunt"
-    face: "/uploads/face--randyjhunt.png"
+    avatar: https://pbs.twimg.com/profile_images/1771989329/image1327197190_bigger.png
     words: I love Siteleaf.
+    link: https://twitter.com/randyjhunt/status/475987996387594240
   - name: Randy 6. Hunt
     handle: "@randyjhunt"
-    face: "/uploads/face--randyjhunt.png"
+    avatar: https://pbs.twimg.com/profile_images/714911101939490823/PgjvIyjY_bigger.jpg
     words: Been really enjoying [@siteleaf](https://twitter.com/siteleaf). The simplicity is refreshing
+    link: https://twitter.com/randyjhunt/status/475987996387594240
   logos:
   - title: Microsoft
     image: "/uploads/logo--microsoft.png"
