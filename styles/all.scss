@@ -372,6 +372,7 @@ img {
   @include flexbox;
   @include flex-wrap(wrap);
   text-align: left;
+  margin-bottom: $v*3;
 }
 .tweet {
   @extend %column;
@@ -435,7 +436,16 @@ img {
   }
 }
 // companies
-
+.companies {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+.company {
+  display: inline-block;
+  height: 2.125rem;
+  margin: 0.5rem 1rem;
+}
 
 // articles
 // --------

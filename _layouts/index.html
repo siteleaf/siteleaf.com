@@ -85,7 +85,7 @@ layout: default
             </ul>
             <div class="companies">
               {% for logo in feature.logos %}
-                <img src="logo.image" class="company" />
+                <img src="{{ logo.image }}" alt="{{ logo.title }}" class="company" />
               {% endfor %}
             </div>
           </div>

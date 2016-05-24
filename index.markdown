@@ -133,11 +133,17 @@ features:
     link: https://twitter.com/randyjhunt/status/475987996387594240
   logos:
   - title: Microsoft
-    image: "/uploads/logo--microsoft.png"
-  - title: NYU
-    image: "/uploads/logo--nyu.png"
+    image: "/uploads/logo--microsoft.svg"
   - title: Spotify
-    image: "/uploads/logo--spotify.png"
+    image: "/uploads/logo--spotify.svg"
+  - title: NYU
+    image: "/uploads/logo--nyu.svg"
+  - title: MoMA
+    image: "/uploads/logo--moma.svg"
+  - title: Zendesk
+    image: "/uploads/logo--zendesk.svg"
+  - title: Dish
+    image: "/uploads/logo--dish.svg"
 - title: Create something great
   handle: outro
   color: white
