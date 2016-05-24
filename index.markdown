@@ -104,7 +104,7 @@ features:
   - name: Randy J. Hunt
     handle: "@randyjhunt"
     face: "/uploads/face--randyjhunt.png"
-    words: Spent a good part of Sunday with [@siteleaf](https://twitter.com/siteleaf), and have to say, the simplicity continues to do it for me. This is a really long tweet to test the flexbox stuff that I put in. Yay.
+    words: Spent a good part of Sunday with [@siteleaf](https://twitter.com/siteleaf), and have to say, the simplicity continues to do it for me. This is a really long tweet to test the flexbox stuff that I put in.
   - name: Randy 2. Hunt
     handle: "@randyjhunt"
     face: "/uploads/face--randyjhunt.png"

@@ -63,18 +63,31 @@ layout: default
             {% endfor %}
           </div>
         {% when 'words' %}
-          <ul class="testimonials">
-            {% for testimonial in feature.testimonials %}
-              <li class="testimonial">
-                <img src="{{ testimonial.face }}" class="testimonial__face" />
-                <h5 class="testimonial__name">{{ testimonial.name }}</h5>
-                <small class="testimonial__handle">{{ testimonial.handle }}</small>
-                <div class="testimonial__words">{{ testimonial.words | markdownify }}</div>
-              </li>
-            {% endfor %}
-          </ul>
-          {% for logo in feature.logos %}
-          {% endfor %}
+          <div class="feature__body">
+            <ul class="testimonials">
+              {% for testimonial in feature.testimonials %}
+                <li class="testimonial">
+                  <div class="testimonial__card">
+                    <div class="testimonial__header">
+                      <div class="testimonial__header__item">
+                        <img src="{{ testimonial.face }}" class="testimonial__face" />
+                      </div>
+                      <div class="testimonial__header__item">
+                        <h5 class="testimonial__name">{{ testimonial.name }}</h5>
+                        <small class="testimonial__handle">{{ testimonial.handle }}</small>
+                      </div>
+                    </div>
+                    <div class="testimonial__words">{{ testimonial.words | markdownify }}</div>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+            <div class="companies">
+              {% for logo in feature.logos %}
+                <img src="logo.image" class="company" />
+              {% endfor %}
+            </div>
+          </div>
           <!-- TO DO -->
         {% when 'outro' %}
           {{ feature.body | markdownify }}
