@@ -16,9 +16,7 @@
 // base
 // ----
 
-* {
-  @include box-sizing(border-box);
-}
+*,
 *:before,
 *:after {
   @include box-sizing(border-box);
@@ -31,7 +29,7 @@ html {
 }
 body {
   color: $color--gray-darkest;
-  background-color: $color--white;
+  background: $color--white;
   font-family: $font-family--sans-serif;
   line-height: $line-height--base;
   @include antialias;
@@ -55,15 +53,17 @@ h1 {
   letter-spacing: $letter-spacing--tighter;
   @include max-width($max-width--sm) {
     font-size: 2.5em;
+    letter-spacing: $letter-spacing--tight;
   }
 }
 h2 {
   font-size: 2.5em;
   line-height: $line-height--tight;
-  letter-spacing: $letter-spacing--tighter;
+  letter-spacing: $letter-spacing--tight;
   @include max-width($max-width--sm) {
     font-size: 2em;
   }
+  margin-bottom: $v*0.5;
 }
 h3 {
   font-size: 1.5em;
@@ -72,11 +72,60 @@ h3 {
   @include max-width($max-width--sm) {
     font-size: 1.333333em;
   }
+  margin-bottom: $v*0.5;
 }
-h4,
-h5,
-h6 {
+h4 {
   font-size: 1.083333em;
+  margin-bottom: $v*0.5;
+}
+p,
+ul,
+ol,
+blockquote,
+pre,
+iframe {
+  margin-bottom: $v*0.75;
+}
+hr {
+  width: 5em;
+  margin: $v*1.5 auto;
+  border: 0;
+  border-top: 0.2em solid $color--gray-lighter;
+}
+blockquote {
+  font-family: $font-family--sans-serif-italic;
+  margin-left: 0.3em;
+  padding-left: 1.2em - 0.3em - 0.2em;
+  border-left: 0.2em solid $color--gray-lighter;
+  em {
+    font-family: $font-family--sans-serif;
+  }
+}
+pre,
+code {
+  background: $color--gray-lightest;
+  color: $color--gray-darker;
+}
+pre {
+  padding: 1em;
+}
+code {
+  font-size: $font-size--small;
+  padding: 0.1em 0.25em
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: $font-family--monospace;
+  overflow: auto;
+  white-space: pre;
+}
+strong {
+  font-family: $font-family--sans-serif-bold;
+}
+em {
+  font-family: $font-family--sans-serif-italic;
 }
 img {
   @include responsive-image;
@@ -93,10 +142,19 @@ img {
   padding-top: $gutter;
   padding-bottom: $gutter;
   position: relative;
+  .home & {
+    text-align: center;
+  }
+  @include max-width($max-width--sm) {
+    text-align: center;
+  }
 }
 .footer {
+  text-align: center;
+  color: $color--gray-dark;
   padding-top: $gutter*2;
   padding-bottom: $gutter*2;
+  margin-top: $v;
 }
 .header__item,
 .footer__item {
@@ -104,26 +162,9 @@ img {
   font-size: $font-size--small;
   font-family: $font-family--sans-serif-medium;
 }
-.headerWrap {
-  background-color: $color--gray-lightest;
-  .colored & {
-    color: $color--white;
-  }
-  .blue & {
-    background-color: $color--blue;
-  }
-  .green & {
-    background-color: $color--green;
-  }
-  .yellow & {
-    background-color: $color--yellow;
-  }
-  .red & {
-    background-color: $color--red;
-  }
-  .purple & {
-    background-color: $color--purple;
-  }
+.headerWrap,
+.footerWrap, {
+  @extend %bg--colors;
 }
 .header__link,
 .footer__link {
@@ -140,59 +181,203 @@ img {
   margin-bottom: $v*0.125;
 }
 .header__link--signup {
-  background-color: $color--leaf;
+  background: $color--leaf;
   color: $color--white;
   margin-left: 0.5em;
 }
 .header__items {
   float: right;
   text-align: right;
+  .home & {
+    float: none;
+  }
   @include max-width($max-width--sm) {
     float: none;
   }
 }
 .header__item:not(.header__item--login) {
+  .home & {
+    display: none;
+  }
   @include max-width($max-width--sm) {
     display: none;
   }
 }
 .header__link {
+  .home & {
+    padding: 0;
+  }
   @include max-width($max-width--sm) {
     padding: 0;
   }
 }
 .header__home {
   position: absolute;
-  @include transform(translateY(-7.5%));
+  @include translate3d(0,-7.5%,0);
+  .home & {
+    position: static;
+    display: inline-block;
+    @include margin-center;
+  }
   @include max-width($max-width--sm) {
     position: static;
+    display: inline-block;
+    @include margin-center;
   }
 }
 .header__logo {
   width: $width--logo;
-  @include max-width($max-width--sm) {
-    @include margin-center();
+  .home & {
+    width: $width--logo * 1.15;
   }
+  @include max-width($max-width--sm) {
+    .home & {
+      width: $width--logo;
+    }
+  }
+}
+.header__title,
+.header__subtitle {
+  text-align: center;
+  @include margin-center;
 }
 .header__title {
   margin-top: $v*3.5;
   margin-bottom: $v*0.5;
-  @include margin-center();
-  text-align: center;
   max-width: $max-width--header__title;
   padding-left: $width--logo * 1.4;
   padding-right: $width--logo * 1.4;
+  .home & {
+    max-width: 40rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: $v;
+    margin-bottom: 0;
+  }
   @include max-width($max-width--sm) {
     padding-left: 0;
     padding-right: 0;
-    margin-top: $v*1.25;
+    margin-top: $v;
     margin-bottom: 0;
+    .home & {
+      max-width: 30rem;
+    }
   }
 }
-.footer {
-  color: $color--gray;
+.header__subtitle {
+  max-width: $max-width--header__subtitle;
+  margin-top: $v*0.5;
+}
+
+// home
+// ----
+
+.featureWrap {
+  padding-top: $v*4;
+  padding-bottom: $v*4;
+  @extend %bg--colors;
+}
+.featureWrap.bg--custom {
+  padding-top: $v;
+  background: linear-gradient(180deg, $color--yellow 8.5rem, $color--gray-lightest 8.5rem, $color--gray-lightest);
+  @include max-width($max-width--sm) {
+    padding-top: $v*2;
+    background: $color--gray-lightest;
+  }
+}
+.feature {
   text-align: center;
-  margin-top: $v;
+  @extend %container--wide;
+}
+// feature elements
+.feature__button {
+  font-family: $font-family--sans-serif-bold;
+  @extend %button--large;
+  background: $color--blue;
+  color: $color--white;
+  margin-top: $v*0.5;
+}
+.feature__title {
+  @include margin-center;
+  .feature--manage & {
+    max-width: 30rem;
+  }
+}
+.feature__row {
+  @extend %row;
+}
+// TO DO: fix this shit
+.feature__column {
+  @extend %column;
+  width: 100%;
+  @include max-width($max-width--sm) {
+    margin-bottom: $v*0.75;
+  }
+}
+.feature__column--2 {
+  width: 50%;
+  @include max-width($max-width--sm) {
+    width: 100%;
+  }
+}
+.feature__column--3 {
+  width: 33.333333%;
+  @include max-width($max-width--sm) {
+    width: 100%;
+  }
+}
+.feature__column__image {
+  @include margin-center;
+  margin-bottom: $v;
+}
+.feature__section {
+  @extend %row;
+  text-align: left;
+  padding-top: $v*2;
+  padding-bottom: $v*2;
+  h3 {
+    font-size: 2em;
+  }
+}
+.feature__section > * {
+  @extend %column;
+  width: 50%;
+  @include max-width($max-width--sm) {
+    width: 100%;
+  }
+}
+.feature__section * {
+  @extend %colors;
+}
+.feature__section__text {
+  .feature__section:nth-of-type(2n+1) & {
+    float: right;
+  }
+}
+.feature__section__image {
+  .feature__section:nth-of-type(2n) & {
+    float: right;
+  }
+}
+// testimontials
+.testimonials {
+  @extend %row;
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+}
+.testimonial {
+  @extend %column;
+  border: 1px solid red; // TEMP
+  // height: 20rem;
+  width: 33.333333%;
+  @include max-width($max-width--sm) {
+    width: 50%;
+  }
+  @include max-width($max-width--xs) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 // articles
@@ -204,10 +389,12 @@ img {
   @extend %container--narrow;
 }
 .article__meta a,
-.article__content a,
-.article__footer a {
+.article__footer a,
+.article__content a {
   text-decoration: underline;
-  @include hover-fade;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 .article + .article {
   margin-top: $v*4;
@@ -240,13 +427,14 @@ img {
   font-family: $font-family--sans-serif-bold;
 }
 .article__content {
-  p,
-  ul,
-  ol,
-  blockquote,
-  pre,
-  iframe {
-    margin-bottom: $v*0.75;
+  h2 {
+    margin-top: $v*1.75;
+  }
+  h3 {
+    margin-top: $v*1.5;
+  }
+  h4 {
+    margin-top: $v;
   }
   ol,
   ul {
@@ -260,61 +448,7 @@ img {
   }
   a {
     font-family: $font-family--sans-serif-bold;
-  }
-  h2 {
-    margin-top: $v*1.75;
-    margin-bottom: $v*0.5;
-  }
-  h3 {
-    margin-top: $v*1.5;
-    margin-bottom: $v*0.5;
-  }
-  h4,
-  h5,
-  h6 {
-    margin-top: $v;
-    margin-bottom: $v*0.5;
-  }
-  hr {
-    width: 5em;
-    margin: $v*1.5 auto;
-    border: 0;
-    border-top: 0.2em solid $color--gray-lighter;
-  }
-  blockquote {
-    font-family: $font-family--sans-serif-italic;
-    margin-left: 0.3em;
-    padding-left: 1.2em - 0.3em - 0.2em;
-    border-left: 0.2em solid $color--gray-lighter;
-    em {
-      font-family: $font-family--sans-serif;
-    }
-  }
-  pre,
-  code {
-    background-color: $color--gray-lightest;
-    color: $color--gray-darker;
-  }
-  pre {
-    padding: 1em;
-  }
-  code {
-    font-size: $font-size--small;
-    padding: 0.1em 0.25em
-  }
-  pre,
-  code,
-  kbd,
-  samp {
-    font-family: $font-family--monospace;
-    overflow: auto;
-    white-space: pre;
-  }
-  strong {
-    font-family: $font-family--sans-serif-bold;
-  }
-  em {
-    font-family: $font-family--sans-serif-italic;
+    text-decoration: underline;
   }
 }
 
@@ -328,21 +462,20 @@ img {
 }
 .blog__more__link {
   @extend %button--large;
-  background-color: $color--gray;
+  background: $color--gray;
   color: $color--white;
   font-family: $font-family--sans-serif-bold;
-  @include hover-fade;
 }
 
 // gallery
 // -------
 
-.gallery,
-.gallery .headerWrap {
-  background-color: $color--gray-darkest;
-}
 .gallery {
-  color: $color--white;
+  &,
+  .footer {
+    background: $color--blue;
+    color: $color--white;
+  }
 }
 .gallery__main {
   @extend %container--wide;
@@ -351,6 +484,9 @@ img {
 }
 .gallery__items {
   @extend %row;
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
 }
 .gallery__item {
   @extend %column;
@@ -362,7 +498,6 @@ img {
 }
 .gallery__caption {
   margin-top: $v*0.5;
-  @include ellipsis;
 }
 .gallery__caption__link {
   &:hover {
@@ -401,33 +536,4 @@ img {
 
 #mfPreviewBar {
   display: none;
-}
-.box {
-  width: 9em;
-  height: 9em;
-  background-color: red;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  display: inline-block;
-  &.gray-darkest {
-    background-color: $color--gray-darkest;
-  }
-  &.gray-darker {
-    background-color: $color--gray-darker;
-  }
-  &.gray-dark {
-    background-color: $color--gray-dark;
-  }
-  &.gray {
-    background-color: $color--gray;
-  }
-  &.gray-light {
-    background-color: $color--gray-light;
-  }
-  &.gray-lighter {
-    background-color: $color--gray-lighter;
-  }
-  &.gray-lightest {
-    background-color: $color--gray-lightest;
-  }
 }

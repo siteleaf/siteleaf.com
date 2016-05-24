@@ -1,4 +1,9 @@
-<div class="headerWrap">
+{% if include.color %}
+  {% assign color = include.color %}
+{% else %}
+  {% assign color = 'gray' %}
+{% endif %}
+<div class="headerWrap bg--{{ color }}">
   <header class="header">
     <ul class="header__items">
       {% for item in site.data.navigation.header %}
@@ -15,5 +20,6 @@
     </ul>
     <a href="/" class="header__home"><img src="/assets/logo.svg" class="header__logo" alt="{{ site.title }}" /></a>
     <h1 class="header__title">{{ page.title }}</h1>
+    {% if page.subtitle %}<div class="header__subtitle">{{ page.subtitle | markdownify }}</div>{% endif %}
   </header>
 </div>

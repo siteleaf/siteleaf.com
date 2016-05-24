@@ -10,6 +10,8 @@ header:
 footer:
 - title: Contact
   url: /contact/
+- title: Status
+  url: http://status.siteleaf.com
 - title: Terms
   url: /terms/
 - title: Privacy

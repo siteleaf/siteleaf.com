@@ -32,7 +32,6 @@ $font-family--sans-serif-bold:   'Objektiv Mk2 Bold', sans-serif;
 $font-family--sans-serif-italic: 'Objektiv Mk2 Italic', sans-serif;
 $font-family--sans-serif-medium: 'Objektiv Mk2 Medium', sans-serif;
 
-// $font-family--monospace: 'Anonymous Pro', monospace;
 $font-family--monospace: 'Source Code Pro', monospace;
 
 $line-height--tight: 1.16;
@@ -59,6 +58,7 @@ $max-width--md: ($min-width--lg - 1);
 $max-width--container--narrow: $min-width--md;
 $max-width--container--wide:   1200px;
 $max-width--header__title:     $min-width--lg;
+$max-width--header__subtitle:  24rem;
 
 $gutter: 1.5rem;
 

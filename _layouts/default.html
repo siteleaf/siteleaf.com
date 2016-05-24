@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
+    <title>{% unless page.url == '/' %}{{ page.title }} – {% endunless %}{{ site.title }}</title>
     <meta name="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}" />
 
@@ -67,8 +67,8 @@
     {% assign page_class = 'page' %}
   {% endif %}
   
-  <body class="{{ page_class }}{% if page.color %} colored {{ page.color }}{% endif %}">
-    {% include header.html %}
+  <body class="{{ page_class }}">
+    {% include header.html color=page.color %}
     {{ content }}
     {% include footer.html %}
     <script src="{{ "/scripts/all.js" | prepend: site.baseurl }}"></script>

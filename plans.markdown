@@ -2,6 +2,7 @@
 title: Plans
 date: 2015-11-11 16:33:00 Z
 permalink: "/plans/"
+color: purple
 plans:
 - title: Hobby
   price: 9

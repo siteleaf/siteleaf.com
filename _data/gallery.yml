@@ -67,9 +67,9 @@
   image: "/uploads/gallery__sling.png"
   url: http://blog.sling.com/
 
-- title: Tobias Frere-Jones
-  image: "/uploads/gallery__tobiasfrerejones.png"
-  url: http://www.frerejones.com/blog/
+# - title: Tobias Frere-Jones
+#   image: "/uploads/gallery__tobiasfrerejones.png"
+#   url: http://www.frerejones.com/blog/
 
 - title: Object & Subject
   image: "/uploads/gallery__objectsubject.png"
