@@ -3,27 +3,27 @@ layout: default
 ---
 
 {% for feature in page.features %}
-  <div class="featureWrap bg--{{ feature.color}}">
-    <section class="feature feature--{{ feature.handle }}">
+  <div class="featureWrap bg--{{ feature.background}}">
+    <section class="feature {{ feature.handle }}">
       {% if feature.title %}
         <h2 class="feature__title">{{ feature.title }}</h2>
       {% endif %}
       {% case feature.handle %}
         {% when 'intro' %}
-          <div class="feature__row">
-            {% for column in feature.body %}
-              <div class="feature__column feature__column--{{ feature.body | size }}">
-                <img src="{{ column.image }}" class="feature__column__image" />
-                <h5>{{ column.title }}</h5>
-                {{ column.body | markdownify }}
+          <div class="intro__subsections">
+            {% for subsection in feature.subsections %}
+              <div class="intro__subsection">
+                <img src="{{ subsection.image }}" class="intro__subsection__image" />
+                <h5>{{ subsection.title }}</h5>
+                {{ subsection.body | markdownify }}
               </div>
             {% endfor %}
           </div>
         {% when 'manage' %}
-          <a href="{{ feature.link.url }}">{{ feature.link.title }}</a>
-          <div class="feature__tabs">
+          <a href="{{ feature.link.url }}" class="{{ feature.color }}">{{ feature.link.title }}</a>
+          <div class="manage__tabs">
             {% for item in feature.body %}
-              <div class="feature__tab">
+              <div class="manage__tab">
                 <h5>{{ item.title }}</h5>
                 {{ item.body | markdownify }}
               </div>
@@ -32,64 +32,61 @@ layout: default
           <!-- TO DO -->
 
         {% when 'develop' %}
-          {% for section in feature.body %}
-            <!-- TO DO: name these better -->
-            <div class="feature__section">
-              <img src="{{ section.image }}" class="feature__section__image" />
-              <div class="feature__section__text">
-                <h3 class="{{ section.color }}">{{ section.title }}</h3>
-                {{ section.body | markdownify }}
-                {% if section.logos %}
-                  <ul>
-                    {% for logo in section.logos %}
-                      <li><img src="{{ logo.image }}" alt="{{ logo.title }}" /></li>
+          {% for subsection in feature.subsections %}
+            <div class="develop__subsection">
+              <img src="{{ subsection.image }}" class="develop__subsection__image" />
+              <div class="develop__subsection__text">
+                <h3 class="{{ subsection.color }}">{{ subsection.title }}</h3>
+                {{ subsection.body | markdownify }}
+                <a href="{{ subsection.link.url }}" class="{{ subsection.color }}">{{ subsection.link.title }}</a>
+                {% if subsection.logos %}
+                  <div class="develop__logos">
+                    {% for logo in subsection.logos %}
+                      <img src="{{ logo.image }}" alt="{{ logo.title }}" class="develop__logo" />
                     {% endfor %}
-                  </ul>
+                  </div>
                 {% endif %}
-                <a href="{{ section.link.url }}" class="feature__section__link {{ section.color }}">{{ section.link.title }}</a>
               </div>
             </div>
-            <!-- TO DO: rename some divs to sections -->
           {% endfor %}
         {% when 'free' %}
-          <img src="{{ feature.image }}" alt="{{ feature.title }}" />
-          <div class="feature__row">
-            {% for column in feature.body %}
-              <div class="feature__column feature__column--{{ feature.body | size }}">
-                <h5>{{ column.title }}</h5>
-                {{ column.body | markdownify }}
-                <a href="{{ column.link.url }}">{{ column.link.title }}</a>
+          <img src="{{ feature.image }}" alt="{{ feature.title }}" class="free__image" />
+          <div class="free__subsections">
+            {% for subsection in feature.subsections %}
+              <div class="free__subsection">
+                <h5>{{ subsection.title }}</h5>
+                {{ subsection.body | markdownify }}
+                <a href="{{ subsection.link.url }}">{{ subsection.link.title }}</a>
               </div>
             {% endfor %}
           </div>
-        {% when 'words' %}
-          <div class="feature__body">
-            <ul class="tweets">
-              {% for tweet in feature.tweets %}
-                <li class="tweet">
-                  <div class="tweet__card">
-                    <div class="tweet__header">
-                      <div class="tweet__header__item">
-                        <img src="{{ tweet.avatar }}" class="tweet__avatar" />
-                      </div>
-                      <div class="tweet__header__item">
-                        <h5 class="tweet__name">{{ tweet.name }}</h5>
-                        <small class="tweet__handle">{{ tweet.handle }}</small>
-                      </div>
+        {% when 'better' %}
+          <div class="better__content">{{ feature.body | markdownify }}</div>
+        {% when 'love' %}
+          <ul class="love__tweets">
+            {% for tweet in feature.tweets %}
+              <li class="love__tweet">
+                <div class="love__tweet__card">
+                  <div class="love__tweet__header">
+                    <div class="love__tweet__header__item">
+                      <img src="{{ tweet.avatar }}" class="love__tweet__avatar" />
                     </div>
-                    <div class="tweet__words">{{ tweet.words | markdownify }}</div>
-                    <a href="{{ tweet.link }}" class="tweet__link">tweet</a>
+                    <div class="love__tweet__header__item">
+                      <h5 class="love__tweet__name">{{ tweet.name }}</h5>
+                      <small class="love__tweet__handle">{{ tweet.handle }}</small>
+                    </div>
                   </div>
-                </li>
-              {% endfor %}
-            </ul>
-            <div class="companies">
-              {% for logo in feature.logos %}
-                <img src="{{ logo.image }}" alt="{{ logo.title }}" class="company" />
-              {% endfor %}
-            </div>
+                  <div class="love__tweet__words">{{ tweet.words | markdownify }}</div>
+                  <a href="{{ tweet.link }}" class="love__tweet__link">tweet</a>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+          <div class="love__logos">
+            {% for logo in feature.logos %}
+              <img src="{{ logo.image }}" alt="{{ logo.title }}" class="love__logo" />
+            {% endfor %}
           </div>
-          <!-- TO DO -->
         {% when 'outro' %}
           {{ feature.body | markdownify }}
       {% endcase %}

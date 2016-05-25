@@ -2,20 +2,18 @@
 layout: index
 title: Built for developers, loved by everyone
 subtitle:
-  Siteleaf is a content management system designed for a better web.
-
-  
-  <a href="https://player.vimeo.com/video/69301083">Watch the intro</a>
-color: yellow
+  <p class="large">Siteleaf is a content management system designed for a better web.</p>
+  <a href="https://player.vimeo.com/video/69301083" class="white">Watch the intro</a>
+background: yellow
 button:
   title: Get started
   url: https://manage.siteleaf.com/signup/
 features:
 - title:
   handle: intro
-  color: custom
+  background: custom
   button: true
-  body:
+  subsections:
   - title: Develop with existing tools
     body: Code offline with Jekyll, sync with GitHub
     image: "/uploads/feature__intro--develop.png"
@@ -27,7 +25,8 @@ features:
     image: "/uploads/feature__intro--publish.png"
 - title: Content management for the whole team
   handle: manage
-  color: white
+  background: white
+  color: blue
   link:
     title: How to manage your site
     url: https://player.vimeo.com/video/69301083
@@ -44,16 +43,16 @@ features:
   - title: Customized content
     body: Customize for your content, with document collections, advanced metadata lists and objects, and custom permalink formats.
     image: "/uploads/feature__manage--metadata.png"
-- title: Tools you already love
+- title: Use tools you already love
   handle: develop
-  color: gray
-  body:
+  background: gray
+  subsections:
   - title: Open source superpowers
     body:
       Siteleaf is compatible with Jekyll, the static site generator for over half a million websites on GitHub Pages.
 
 
-      Benefit from a large open source community. Use any existing Jekyll theme, or write your own using Liquid, Sass, and CoffeeScript.
+      Benefit from a **large open source community**. Use any existing Jekyll theme, or write your own using Liquid, Sass, and CoffeeScript.
     image: "/uploads/feature__develop--jekyll.png"
     logos:
     - title: Jekyll
@@ -68,7 +67,7 @@ features:
       url: http://learn.siteleaf.com/
   - title: GitHub integration
     body:
-      No more accidental overwrites or deletes. Any change made in Siteleaf can be synced to GitHub, where you can see a log of edits, who made them, and roll back to any state, giving you a time machine for your content.
+      No more accidental overwrites or deletes. Any change made in Siteleaf can be synced to GitHub, where you can see a log of edits, who made them, and roll back to any state, giving you a **time machine for your content**.
 
 
       As you develop your theme, Siteleaf can also update to reflect the changes you push to GitHub. Fits right into your existing workflow.
@@ -79,9 +78,9 @@ features:
       url: http://learn.siteleaf.com/
 - title: Free your content
   handle: free
-  color: green
+  background: green
   image: "/uploads/feature__free.png"
-  body:
+  subsections:
   - title: Host anywhere
     body: Generate static sites using your own domain to S3, Rackspace, FTP, and GitHub Pages—free for developers and open source projects.
     link:
@@ -97,9 +96,14 @@ features:
     link:
       title: Learn more
       url: http://learn.siteleaf.com/
+- title: Launch better sites
+  handle: better
+  background: blue
+  image: "/uploads/feature__free.png"
+  body: We believe that content management shouldn't be hard. That you should be able to host your website anywhere you want. That websites should be able to outlive their CMS. That our tools should be simplified, not dumbed down.
 - title: What people say
-  handle: words
-  color: gray
+  handle: love
+  background: gray
   tweets:
   - name: Randy J. Hunt
     handle: "@randyjhunt"
@@ -144,10 +148,10 @@ features:
     image: "/uploads/logo--zendesk.svg"
   - title: Dish
     image: "/uploads/logo--dish.svg"
-- title: Create something great
+- title: Make websites great again
   handle: outro
-  color: white
+  background: white
   button: true
-  body: It's free for developers, so come on in.
+  body: Siteleaf is **free** for developers and open source projects.
 ---
 

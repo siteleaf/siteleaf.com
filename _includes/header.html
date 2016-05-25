@@ -1,9 +1,9 @@
-{% if include.color %}
-  {% assign color = include.color %}
+{% if include.background %}
+  {% assign background = include.background %}
 {% else %}
-  {% assign color = 'gray' %}
+  {% assign background = 'gray' %}
 {% endif %}
-<div class="headerWrap bg--{{ color }}">
+<div class="headerWrap bg--{{ background }}">
   <header class="header">
     <ul class="header__items">
       {% for item in site.data.navigation.header %}

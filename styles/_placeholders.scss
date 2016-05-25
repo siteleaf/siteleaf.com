@@ -27,68 +27,6 @@
   padding-right: $gutter/2;
 }
 
-// colors
-// ------
-
-%colors {
-  &.blue {
-    color: $color--blue;
-  }
-  &.green {
-    color: $color--green;
-  }
-  &.yellow {
-    color: $color--yellow;
-  }
-  &.red {
-    color: $color--red;
-  }
-  &.purple {
-    color: $color--purple;
-  }
-  &.gray {
-    color: $color--gray-dark;
-  }
-  &.white {
-    color: $color--white;
-  }
-}
-%bg--colors {
-  &.bg--blue {
-    background: $color--blue;
-    color: $color--white;
-  }
-  &.bg--green {
-    background: $color--green;
-    color: $color--white;
-  }
-  &.bg--yellow {
-    background: $color--yellow;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: $color--white;
-    }
-  }
-  &.bg--red {
-    background: $color--red;
-    color: $color--white;
-  }
-  &.bg--purple {
-    background: $color--purple;
-    color: $color--white;
-  }
-  &.bg--gray {
-    background: $color--gray-lightest;
-  }
-  &.bg--white {
-    background: $color--white;
-  }
-}
-
 // buttons
 // -------
 
