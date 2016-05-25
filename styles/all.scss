@@ -278,6 +278,9 @@ p.large {
   padding-top: $v*4;
   padding-bottom: $v*4;
 }
+.featureWrap--withButton {
+  padding-bottom: $v*2;
+}
 .featureWrap.bg--custom {
   padding-top: $v;
   background: linear-gradient(180deg, $color--yellow 8.5rem, $color--gray-lightest 8.5rem, $color--gray-lightest);
@@ -305,6 +308,27 @@ p.large {
     max-width: 28rem;
   }
 }
+.browser {
+  background: #eee;
+  border: 3px solid $color--gray-darkest;
+  border-radius: 6px;
+  padding-top: 1.6rem;
+  overflow: hidden;
+  position: relative;
+  img {
+    border-top: 3px solid $color--gray-darkest;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.6rem;
+    width: 100%;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA4MCAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODAgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMjkzOTUzO30KCS5zdDF7ZmlsbDojRTU2MTM0O30KCS5zdDJ7ZmlsbDojMjVCRUExO30KCS5zdDN7ZmlsbDojRkJCQzA5O30KPC9zdHlsZT4KPHRpdGxlPk92YWwgMjEyIENvcHk8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KPGc+Cgk8Y2lyY2xlIGlkPSJwYXRoLTFfMl8iIGNsYXNzPSJzdDAiIGN4PSIxNiIgY3k9IjE2IiByPSI4Ii8+CjwvZz4KPGNpcmNsZSBpZD0icGF0aC0xXzZfIiBjbGFzcz0ic3QxIiBjeD0iMTYiIGN5PSIxNiIgcj0iNSIvPgo8Zz4KCTxjaXJjbGUgaWQ9InBhdGgtMV83XyIgY2xhc3M9InN0MCIgY3g9IjY0IiBjeT0iMTYiIHI9IjgiLz4KPC9nPgo8Y2lyY2xlIGlkPSJwYXRoLTFfMV8iIGNsYXNzPSJzdDIiIGN4PSI2NCIgY3k9IjE2IiByPSI1Ii8+CjxnPgoJPGNpcmNsZSBpZD0icGF0aC0xXzlfIiBjbGFzcz0ic3QwIiBjeD0iNDAiIGN5PSIxNiIgcj0iOCIvPgo8L2c+CjxjaXJjbGUgaWQ9InBhdGgtMV84XyIgY2xhc3M9InN0MyIgY3g9IjQwIiBjeT0iMTYiIHI9IjUiLz4KPC9zdmc+Cg==');
+    background-repeat: no-repeat;
+  }
+}
 // feature: intro
 .intro__subsections {
   @extend %row;
@@ -323,7 +347,7 @@ p.large {
 }
 // feature: manage
 .manage__content {
-  @extend %row;
+  // @extend %row;
   @include flexbox;
   @include align-items(center);
   @include flex-wrap(wrap);
@@ -334,7 +358,7 @@ p.large {
   }
 }
 .manage__content > * {
-  @extend %column;
+  // @extend %column;
 }
 .manage__screenshots {
   width: 70%;
@@ -370,7 +394,7 @@ p.large {
 }
 // feature: develop
 .develop__subsection {
-  @extend %row;
+  // @extend %row;
   @include flexbox;
   @include align-items(center);
   @include flex-wrap(wrap);
@@ -384,7 +408,7 @@ p.large {
   }
 }
 .develop__subsection > * {
-  @extend %column;
+  // @extend %column; // TO DO: remove if unused
 }
 .develop__subsection__text {
   width: 40%;
@@ -395,10 +419,11 @@ p.large {
     width: 100%;
   }
 }
-.develop__subsection__image {
+.develop__subsection__figure {
   width: 70%;
   @include max-width($max-width--md) {
     width: 100%;
+    margin-bottom: $v*1.5;
   }
   .develop__subsection:nth-of-type(2n+1) & {
     margin-left: -15%;
@@ -419,7 +444,6 @@ p.large {
       margin-right: 0;
     }
   }
-  margin-bottom: $v*1.5;
 }
 
 .develop__logos {
@@ -463,7 +487,7 @@ p.large {
   @include flex-wrap(wrap);
   text-align: left;
   margin-top: $v*2.5;
-  margin-bottom: $v*2;
+  margin-bottom: $v*2.5;
 }
 .love__tweet {
   @extend %column;
@@ -496,7 +520,7 @@ p.large {
   min-width: 3rem;
   min-height: 3rem;
   border-radius: 50%;
-  margin-right: 0.75em;
+  margin-right: 0.8em;
 }
 .love__tweet__handle {
   margin-top: -$v*0.1;

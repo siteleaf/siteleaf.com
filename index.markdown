@@ -16,13 +16,13 @@ features:
   subsections:
   - title: Develop with existing tools
     body: Code offline with Jekyll, sync with GitHub
-    image: "/uploads/feature__intro--develop.png"
+    image: "/uploads/home__intro--develop.png"
   - title: Edit in the cloud
     body: A breeze for non-technical writers and clients
-    image: "/uploads/feature__intro--manage.png"
+    image: "/uploads/home__intro--manage.png"
   - title: Publish anywhere
     body: Generate static sites to S3, GitHub Pages, FTP
-    image: "/uploads/feature__intro--publish.png"
+    image: "/uploads/home__intro--publish.png"
 - title: Content management for the whole team
   handle: manage
   background: white
@@ -34,19 +34,19 @@ features:
   - title: Collaborate
     handle: collaborate
     body: Invite clients and team members as Admin, Publisher, or Writer. Let them create or edit content without having to touch a single line of code.
-    image: "/uploads/feature__manage--collaborate.png"
+    image: "/uploads/home__manage--collaborate.png"
   - title: Preview before you publish
     handle: preview
     body: Preview changes before they go live. Then publish with one click whenever you’re ready.
-    image: "/uploads/feature__manage--preview.png"
+    image: "/uploads/home__manage--preview.png"
   - title: Smart text editor
     handle: edit
     body: Whether you prefer a visual editor or Markdown, we've got you covered. Drag and drop images or even entire text files.
-    image: "/uploads/feature__manage--edit.png"
+    image: "/uploads/home__manage--edit.png"
   - title: Powerful content
     handle: customize
     body: Customize for your content, with document collections, advanced metadata lists and objects, and custom permalink formats.
-    image: "/uploads/feature__manage--customize.png"
+    image: "/uploads/home__manage--customize.png"
 - title: Develop with tools you already love
   handle: develop
   background: gray
@@ -57,7 +57,7 @@ features:
 
 
       Benefit from a **large open source community**. Use any existing Jekyll theme, or write your own using Liquid, Sass, and CoffeeScript.
-    image: "/uploads/feature__develop--jekyll.png"
+    image: "/uploads/home__develop--jekyll.png"
     logos:
     - title: Jekyll
       image: "/uploads/logo--jekyll.svg"
@@ -75,7 +75,7 @@ features:
 
 
       As you develop your theme, Siteleaf can also update to reflect the changes you push to GitHub. Fits right into your existing workflow.
-    image: "/uploads/feature__develop--github.png"
+    image: "/uploads/home__develop--github.png"
     color: purple
     link:
       title: Learn more
@@ -83,7 +83,7 @@ features:
 - title: Free your content
   handle: free
   background: green
-  image: "/uploads/feature__free.png"
+  image: "/uploads/home__free.png"
   subsections:
   - title: Host anywhere
     body: Generate static sites using your own domain to S3, Rackspace, FTP, and GitHub Pages—free for developers and open source projects.
@@ -103,7 +103,7 @@ features:
 # - title: Launch better sites
 #   handle: launch
 #   background: blue
-#   image: "/uploads/feature__free.png"
+#   image: "/uploads/home__free.png"
 #   body: We believe that content management shouldn't be hard. That you should be able to host your website anywhere you want. That websites should be able to outlive their CMS. That our tools should be simplified, not dumbed down.
 - title: Love your CMS
   handle: love
@@ -114,16 +114,16 @@ features:
   #   avatar: https://pbs.twimg.com/profile_images/465845091161370624/JgX2EDmf_bigger.jpeg
   #   words: "I've been using [@siteleaf](https://twitter.com/siteleaf) for 15 minutes and I'm already impressed. Simple set-up, a clear, concise interface, and amazing customer service!"
   #   link: https://twitter.com/labartsch/status/453249739879112704
-  - name: Casey Gollan
-    handle: "@CaseyG"
-    avatar: https://pbs.twimg.com/profile_images/699399274669350912/62-rUSw-_bigger.jpg
-    words: Playing with [@siteleaf](https://twitter.com/siteleaf). As nimble to build with as Jekyll for me. Easier to use than Wordpress for my client.
-    link: https://twitter.com/CaseyG/status/358286369962995712
   - name: Jonnie Hallman
     handle: "@destroytoday"
     avatar: https://pbs.twimg.com/profile_images/572167830659080194/LHbfvECN_bigger.jpeg
     words: Starting building my new website on [@siteleaf](https://twitter.com/siteleaf) v2—its Github syncing and Jekyll-compatibility are absolutely killer.
     link: https://twitter.com/destroytoday/status/672962921903820801
+  - name: Casey Gollan
+    handle: "@CaseyG"
+    avatar: https://pbs.twimg.com/profile_images/699399274669350912/62-rUSw-_bigger.jpg
+    words: Playing with [@siteleaf](https://twitter.com/siteleaf). As nimble to build with as Jekyll for me. Easier to use than Wordpress for my client.
+    link: https://twitter.com/CaseyG/status/358286369962995712
   # - name: Jon Dueck
   #   handle: "@jondueck"
   #   avatar: https://pbs.twimg.com/profile_images/636404759239393280/R2zCmsun_bigger.jpg
