@@ -168,10 +168,6 @@ p.large {
   font-size: $font-size--small;
   font-family: $font-family--sans-serif-medium;
 }
-.headerWrap,
-.footerWrap, {
-  // @extend %bg--colors;
-}
 .header__link,
 .footer__link {
   @extend %button;
@@ -254,7 +250,7 @@ p.large {
   padding-left: $width--logo * 1.4;
   padding-right: $width--logo * 1.4;
   .home & {
-    max-width: 40rem;
+    max-width: 36rem;
     padding-left: 0;
     padding-right: 0;
     margin-top: $v;
@@ -266,12 +262,12 @@ p.large {
     margin-top: $v;
     margin-bottom: 0;
     .home & {
-      max-width: 30rem;
+      max-width: 28rem;
     }
   }
 }
 .header__subtitle {
-  max-width: $max-width--header__subtitle;
+  max-width: 24rem;
   margin-top: $v*0.5;
 }
 
@@ -281,7 +277,6 @@ p.large {
 .featureWrap {
   padding-top: $v*4;
   padding-bottom: $v*4;
-  // @extend %bg--colors;
 }
 .featureWrap.bg--custom {
   padding-top: $v;
@@ -305,8 +300,9 @@ p.large {
 }
 .feature__title {
   @include margin-center;
-  .feature.manage & {
-    max-width: 30rem;
+  .feature.manage &,
+  .feature.develop & {
+    max-width: 28rem;
   }
 }
 // feature: intro
@@ -326,11 +322,51 @@ p.large {
   margin-bottom: $v;
 }
 // feature: manage
-.manage__tabs {
-  margin-top: $v*3;
+.manage__content {
+  @extend %row;
+  @include flexbox;
+  @include align-items(center);
+  @include flex-wrap(wrap);
   text-align: left;
+  margin-top: $v*3;
+  @include max-width($max-width--md) {
+    margin-top: $v*2;
+  }
+}
+.manage__content > * {
+  @extend %column;
+}
+.manage__screenshots {
+  width: 70%;
+  margin-left: 5%;
+  margin-right: -15%;
+  @include order(1);
+  @include max-width($max-width--md) {
+    @include order(0);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.manage__tabs {
+  width: 40%;
+  @include max-width($max-width--md) {
+    margin-top: $v*2;
+    width: 100%;
+  }
 }
 .manage__tab {
+  .js & {
+    cursor: pointer;
+    &.active {
+      background: red;
+    }
+  }
+}
+.manage__screenshot {
+  &.hidden {
+    display: none;
+  }
 }
 // feature: develop
 .develop__subsection {
@@ -338,15 +374,14 @@ p.large {
   @include flexbox;
   @include align-items(center);
   @include flex-wrap(wrap);
-  @include justify-content(space-between);
   text-align: left;
   margin-top: $v*3;
+  @include max-width($max-width--md) {
+    margin-top: $v*2;
+  }
   h3 {
     font-size: 2em;
   }
-  // * {
-  //   @extend %colors;
-  // } // TO DO: remove
 }
 .develop__subsection > * {
   @extend %column;
@@ -356,24 +391,35 @@ p.large {
   .develop__subsection:nth-of-type(2n+1) & {
     float: right;
   }
-  @include max-width($max-width--sm) {
+  @include max-width($max-width--md) {
     width: 100%;
   }
 }
 .develop__subsection__image {
   width: 70%;
-  margin-right: 7.5%;
-  margin-left: -17.5%;
-  .develop__subsection:nth-of-type(2n) & {
-    float: right;
-    margin-left: 7.5%;
-    margin-right: -17.5%;
-    @include order(1);
-  }
-  @include max-width($max-width--sm) {
+  @include max-width($max-width--md) {
     width: 100%;
   }
-  margin-bottom: $v*0.75;
+  .develop__subsection:nth-of-type(2n+1) & {
+    margin-left: -15%;
+    margin-right: 5%;
+    @include max-width($max-width--md) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .develop__subsection:nth-of-type(2n) & {
+    float: right;
+    margin-left: 5%;
+    margin-right: -15%;
+    @include order(1);
+    @include max-width($max-width--md) {
+      @include order(0);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  margin-bottom: $v*1.5;
 }
 
 .develop__logos {
@@ -402,14 +448,13 @@ p.large {
 .free__image {
   margin-bottom: $v;
 }
-// feature: better
-.feature.better {
+// feature: launch
+.feature.launch {
   // TO DO: background image
 }
-.better__content {
+.launch__content {
   margin-top: $v*1;
   text-align: left;
-  @extend %container--narrow;
 }
 // feature: love
 .love__tweets {
@@ -417,7 +462,7 @@ p.large {
   @include flexbox;
   @include flex-wrap(wrap);
   text-align: left;
-  margin-top: $v*2;
+  margin-top: $v*2.5;
   margin-bottom: $v*2;
 }
 .love__tweet {
@@ -426,7 +471,7 @@ p.large {
   margin-bottom: $gutter;
   font-size: $font-size--small;
   width: 33.333333%;
-  @include max-width($max-width--md) {
+  @include max-width($max-width--lg) {
     width: 50%;
   }
   @include max-width($max-width--sm) {
@@ -437,7 +482,7 @@ p.large {
   background-color: $color--white;
   border-radius: $border-radius--base;
   width: 100%;
-  padding: $gutter*0.75 $gutter*0.75 $gutter*1.75;
+  padding: $gutter*0.666667 $gutter*0.666667 $gutter*1.75;
   position: relative;
 }
 .love__tweet__header {
@@ -446,17 +491,16 @@ p.large {
   margin-bottom: $v*0.75;
 }
 .love__tweet__avatar {
-  width: 3.5rem;
-  height: 3.5rem;
-  min-width: 3.5rem;
-  min-height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
   border-radius: 50%;
   margin-right: 0.75em;
 }
-.love__tweet__name {
-  line-height: 1;
-}
 .love__tweet__handle {
+  margin-top: -$v*0.1;
+  display: block;
   color: $color--gray;
 }
 .love__tweet__words {
@@ -469,8 +513,8 @@ p.large {
 }
 .love__tweet__link {
   position: absolute;
-  bottom: $gutter*0.75;
-  width: 25px;
+  bottom: $gutter*0.666667;
+  width: 1.25rem;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;

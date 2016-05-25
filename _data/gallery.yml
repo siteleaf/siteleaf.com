@@ -14,7 +14,6 @@
   image: "/uploads/gallery__fiftythreepress.png"
   url: http://press.fiftythree.com/
 
-
 - title: Brian Hoff Design
   image: "/uploads/gallery__brianhoffdesign.png"
   url: http://brianhoffdesign.com/#/work
@@ -186,3 +185,11 @@
 - title: Sawyer Hollenshead
   image: "/uploads/gallery__sawyerhollenshead.png"
   url: http://sawyerhollenshead.com/
+
+# - title: Yoko Sakao Ohama
+#   image:
+#   url: http://yoko.is/
+  
+# - title: Morning Show
+#   image:
+#   url: http://morningshow.am/

@@ -21,16 +21,21 @@ layout: default
           </div>
         {% when 'manage' %}
           <a href="{{ feature.link.url }}" class="{{ feature.color }}">{{ feature.link.title }}</a>
-          <div class="manage__tabs">
-            {% for item in feature.body %}
-              <div class="manage__tab">
-                <h5>{{ item.title }}</h5>
-                {{ item.body | markdownify }}
-              </div>
-            {% endfor %}
+          <div class="manage__content">
+            <div class="manage__screenshots">
+              {% for subsection in feature.subsections %}
+                <img src="{{ subsection.image }}" class="manage__screenshot{% unless forloop.first == true %} hidden{% endunless %}" data-handle="{{ subsection.handle }}" />
+              {% endfor %}
+            </div>
+            <div class="manage__tabs">
+              {% for subsection in feature.subsections %}
+                <div class="manage__tab{% if forloop.first == true %} active{% endif %}" data-handle="{{ subsection.handle }}">
+                  <h5>{{ subsection.title }}</h5>
+                  {{ subsection.body | markdownify }}
+                </div>
+              {% endfor %}
+            </div>
           </div>
-          <!-- TO DO -->
-
         {% when 'develop' %}
           {% for subsection in feature.subsections %}
             <div class="develop__subsection">
@@ -60,8 +65,8 @@ layout: default
               </div>
             {% endfor %}
           </div>
-        {% when 'better' %}
-          <div class="better__content">{{ feature.body | markdownify }}</div>
+        {% when 'launch' %}
+          <div class="launch__content">{{ feature.body | markdownify }}</div>
         {% when 'love' %}
           <ul class="love__tweets">
             {% for tweet in feature.tweets %}

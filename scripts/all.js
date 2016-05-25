@@ -87,83 +87,46 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 ;$(function(){
   'use strict';
 
-  // TO DO: fix all this stuff
-  
-  // Variables
-  // ---------
-
-  var $window = $(window),
-    $document = $(document),
-    scrollInterval = 250,
-    windowHeight = 0,
-    bodyHeight = 0,
-    scrollTop = 0,
-    relativeScrollTop = 0,
-    scrollBottom = 0,
-    visibleBuffer = 200,
-    $graphics = $('.js-graphic');
-
-  // Functions
-  // ---------
+  var $body = $('body'),
+    $tabs = $('.manage__tab'),
+    $screenshots = $('.manage__screenshot'),
+    activeClass = 'active',
+    hiddenClass = 'hidden';
 
   var init = function() {
-    $('body').addClass('is-js');
-    $('.post__hero--video').fitVids();
-    setInitialValues();
-    bindWindowResize();
-
-    if ($window.scrollIntervalId) {
-      // clear previous scrollIntervalId
-      $window.prevScrollIntervalId = $window.scrollIntervalId;
-      clearInterval($window.prevScrollIntervalId);
-    }
-    $window.scrollIntervalId = setInterval(updatePage, scrollInterval);
-
+    $('body').addClass('js');
+    initTabs();
   };
 
-  var setInitialValues = function() {
-    windowHeight = window.innerHeight;
-    updateValues();
-  };
-
-  var updatePage = function() {
-    window.requestAnimationFrame(function() {
-      updateValues();
-      updateElements();
+  var initTabs = function() {
+    $tabs.click(function(e) {
+      $tabs.each(function(e) {
+        $(this).removeClass(activeClass);
+      });
+      var handle = $(this).data('handle');
+      showScreenshot(handle);
+      $(this).addClass(activeClass);
+      return false;
     });
   };
 
-  var updateValues = function() {
-    bodyHeight = $document[0].body.scrollHeight;
-    scrollTop = window.pageYOffset;
-    scrollBottom = scrollTop + windowHeight;
-  };
-
-  var updateElements = function() {
-    $graphics.each(function() {
-      var $graphic = $(this),
-        graphicTop = $graphic.offset().top,
-        graphicBottom = graphicTop + $graphic.height(),
-        isVisible = ((scrollBottom >= graphicTop + visibleBuffer) && (scrollTop <= graphicBottom));
-
-      if (isVisible) {
-        $graphic.addClass('is-visible');
+  var showScreenshot = function(handle) {
+    $screenshots.each(function() {
+      if ($(this).data('handle') == handle) {
+        if ($(this).hasClass(hiddenClass)) {
+          // hidden, so show
+          $(this).removeClass(hiddenClass);
+        }
       } else {
-        $graphic.removeClass('is-visible');
+        if (!$(this).hasClass(hiddenClass)) {
+          // shown, so hide
+          $(this).addClass(hiddenClass);
+        }
       }
-
     });
   };
 
-  var bindWindowResize = function() {
-    $window.bind('resize',
-      function() {
-        setInitialValues();
-      }
-    );
-  };
-
-  // Initialize
+  // initialize
   // ----------
 
   init();
