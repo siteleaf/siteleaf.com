@@ -41,14 +41,14 @@ features:
     handle: edit
     body: Whether you prefer a visual editor or Markdown, we've got you covered. Drag and drop images or even entire text files.
     image: "/uploads/home__manage--edit.png"
-  - title: Powerful content
-    handle: customize
-    body: Customize for your content, with document collections, advanced metadata lists and objects, and custom permalink formats.
-    image: "/uploads/home__manage--customize.png"
   - title: Preview before you publish
     handle: preview
     body: Preview changes before they go live. Then publish with one click whenever you’re ready.
     image: "/uploads/home__manage--preview.png"
+  - title: Powerful content
+    handle: customize
+    body: Customize for your content, with document collections, advanced metadata lists and objects, and custom permalink formats.
+    image: "/uploads/home__manage--customize.png"
 - title: Develop with tools you already love
   handle: develop
   background: light-gray
