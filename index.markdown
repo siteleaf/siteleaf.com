@@ -37,10 +37,6 @@ features:
     handle: collaborate
     body: Invite clients and team members as Admin, Publisher, or Writer. Let them create or edit content without having to touch a single line of code.
     image: "/uploads/home__manage--collaborate.png"
-  - title: Preview before you publish
-    handle: preview
-    body: Preview changes before they go live. Then publish with one click whenever you’re ready.
-    image: "/uploads/home__manage--preview.png"
   - title: Smart text editor
     handle: edit
     body: Whether you prefer a visual editor or Markdown, we've got you covered. Drag and drop images or even entire text files.
@@ -49,6 +45,10 @@ features:
     handle: customize
     body: Customize for your content, with document collections, advanced metadata lists and objects, and custom permalink formats.
     image: "/uploads/home__manage--customize.png"
+  - title: Preview before you publish
+    handle: preview
+    body: Preview changes before they go live. Then publish with one click whenever you’re ready.
+    image: "/uploads/home__manage--preview.png"
 - title: Develop with tools you already love
   handle: develop
   background: gray
