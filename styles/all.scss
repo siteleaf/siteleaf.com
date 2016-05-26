@@ -279,8 +279,8 @@ p.large {
 // ----
 
 .featureWrap {
-  padding-top: $v*4;
-  padding-bottom: $v*4;
+  padding-top: $v*3;
+  padding-bottom: $v*3;
 }
 .featureWrap--withButton {
   padding-bottom: $v*2;
@@ -457,7 +457,7 @@ p.large {
   @include align-items(center);
   @include justify-content(space-around);
   text-align: left;
-  margin-top: $v*4;
+  margin-top: $v*3;
   @include max-width($max-width--md) {
     @include flex-wrap(wrap);
     margin-top: $v*2;
