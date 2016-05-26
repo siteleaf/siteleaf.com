@@ -24,7 +24,7 @@ layout: default
           <div class="manage__content">
             <div class="manage__screenshots">
               {% for subsection in feature.subsections %}
-                <figure class="browser manage__screenshot{% unless forloop.first == true %} hidden{% endunless %}" data-handle="{{ subsection.handle }}">
+                <figure class="browser manage__screenshot{% if forloop.first == true %} shown{% endif %}" data-handle="{{ subsection.handle }}">
                   <img src="{{ subsection.image }}" />
                 </figure>
               {% endfor %}

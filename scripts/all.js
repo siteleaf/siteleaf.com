@@ -91,7 +91,7 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
     $tabs = $('.manage__tab'),
     $screenshots = $('.manage__screenshot'),
     activeClass = 'active',
-    hiddenClass = 'hidden';
+    shownClass = 'shown';
 
   var init = function() {
     $('body').addClass('js');
@@ -113,14 +113,14 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
   var showScreenshot = function(handle) {
     $screenshots.each(function() {
       if ($(this).data('handle') == handle) {
-        if ($(this).hasClass(hiddenClass)) {
+        if (!$(this).hasClass(shownClass)) {
           // hidden, so show
-          $(this).removeClass(hiddenClass);
+          $(this).addClass(shownClass);
         }
       } else {
-        if (!$(this).hasClass(hiddenClass)) {
+        if ($(this).hasClass(shownClass)) {
           // shown, so hide
-          $(this).addClass(hiddenClass);
+          $(this).removeClass(shownClass);
         }
       }
     });

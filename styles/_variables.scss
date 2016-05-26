@@ -23,7 +23,7 @@ $color--gray-lightest: rgb(246,248,251); // #F6F8FB
 $font-size--html:    20px;
 $font-size--html-sm: 18px;
 
-$font-size--large:   1.083333em;
+$font-size--large:   1.166667em;
 $font-size--small:   0.916667em;
 
 // TO DO: change these when using real hosted fonts
@@ -59,6 +59,7 @@ $max-width--lg: ($min-width--xl - 1);
 
 $max-width--container--narrow: $min-width--md;
 $max-width--container--wide:   $min-width--xl;
+$max-width--container--wider:  1600px;
 $max-width--header__title:     $min-width--lg;
 
 $gutter: 1.5rem;

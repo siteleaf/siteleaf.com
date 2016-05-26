@@ -75,7 +75,7 @@ h3 {
   margin-bottom: $v*0.5;
 }
 h4 {
-  font-size: $font-size--large;
+  font-size: 1.083333em;
   margin-bottom: $v*0.5;
 }
 p,
@@ -268,7 +268,7 @@ p.large {
 }
 .header__subtitle {
   max-width: 24rem;
-  margin-top: $v*0.5;
+  margin-top: $v*0.75;
 }
 
 // home
@@ -354,53 +354,100 @@ p.large {
   margin-bottom: $v;
 }
 // feature: manage
+.feature.manage {
+  max-width: 1600px;
+}
 .manage__content {
   @include flexbox;
   @include align-items(center);
   @include justify-content(space-around);
   text-align: left;
   margin-top: $v*3;
-  @include max-width($max-width--md) {
+  @include max-width($max-width--lg) {
     @include flex-wrap(wrap);
     margin-top: $v*2;
   }
 }
-.manage__screenshots {
-  width: 75%;
-  min-width: 900px;
-  max-width: 1800px;
-  margin-right: -400px;
-  @include order(1);
-  @include max-width($max-width--md) {
-    @include order(0);
-    width: 100%;
-    min-width: 0;
-    margin-right: 0;
-  }
-}
 .manage__tabs {
-  width: 28rem;
+  width: 45%;
+  max-width: 28rem;
   padding-right: $gutter*1.5;
-  @include max-width($max-width--md) {
+  @include max-width($max-width--lg) {
     margin-top: $v*2;
+    max-width: none;
     width: 100%;
     padding-right: 0;
   }
 }
-.manage__tab {
-  .js & {
-    cursor: pointer;
-    &.active {
-      background: red;
-    }
+.manage__screenshots {
+  @include order(1);
+  max-width: 1120px;
+  width: 80%;
+  margin-right: -14rem;
+  position: relative;
+  @include max-width($max-width--lg) {
+    @include order(0);
+    width: 100%;
+    margin-right: 0;
+  }
+  position: relative;
+  height: 100%;
+}
+@include keyframes(fadeInFromRight) {
+  0% {
+    display: none;
+    opacity: 0;
+    @include translate3d(4rem,0,0);
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    @include translate3d(0,0,0);
+
+  }
+  100% {
+    display: block;
+    opacity: 1;
   }
 }
 .manage__screenshot {
-  &.hidden {
-    display: none;
+  opacity: 0;
+  display: none;
+  &.shown {
+    @include animation(fadeInFromRight 600ms);
+    opacity: 1;
+    display: block;
+  }
+}
+.manage__tab {
+  p {
+    margin-bottom: 0;
+  }
+  padding-top: $v*0.75;
+  padding-bottom: $v*0.75;
+  border-radius: $border-radius--base;
+  .js & {
+    padding-left: $v*0.75;
+    padding-right: $v*0.75;
+    cursor: pointer;
+    &:hover,
+    &.active {
+      h5 {
+        color: $color--blue;
+      }
+    }
+    &.active {
+      background: $color--gray-lightest;
+    }
   }
 }
 // feature: develop
+.feature.develop {
+  max-width: 1280px;
+}
 .develop__subsection {
   @include flexbox;
   @include align-items(center);
@@ -416,9 +463,11 @@ p.large {
   }
 }
 .develop__subsection__text {
-  width: 28rem;
+  width: 45%;
+  max-width: 28rem;
   @include max-width($max-width--md) {
     width: 100%;
+    max-width: none;
   }
   .develop__subsection:nth-of-type(odd) & {
     padding-left: $gutter*1.5;
@@ -434,23 +483,21 @@ p.large {
   }
 }
 .develop__subsection__figure {
-  width: 75%;
-  min-width: 700px;
-  max-width: 900px;
+  width: 80%;
+  max-width: 800px;
   @include max-width($max-width--md) {
     width: 100%;
-    min-width: 0;
     margin-bottom: $v*1.5;
   }
   .develop__subsection:nth-of-type(odd) & {
-    margin-left: -300px;
+    margin-left: -14rem;
     @include max-width($max-width--md) {
       margin-left: 0;
     }
   }
   .develop__subsection:nth-of-type(even) & {
     @include order(1);
-    margin-right: -300px;
+    margin-right: -14rem;
     @include max-width($max-width--md) {
       @include order(0);
       margin-right: 0;
@@ -489,7 +536,7 @@ p.large {
   // TO DO: background image
 }
 .launch__content {
-  margin-top: $v*1;
+  margin-top: $v;
   text-align: left;
 }
 // feature: love
@@ -498,8 +545,8 @@ p.large {
   @include flexbox;
   @include flex-wrap(wrap);
   text-align: left;
-  margin-top: $v*2.5;
-  margin-bottom: $v*2.5;
+  margin-top: $v*2;
+  margin-bottom: $v*2;
 }
 .love__tweet {
   @extend %column;
@@ -774,6 +821,9 @@ p.large {
   color: $color--white;
 }
 .bg--gray {
+  background: $color--gray;
+}
+.bg--light-gray {
   background: $color--gray-lightest;
 }
 .bg--white {
