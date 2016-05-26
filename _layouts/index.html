@@ -4,7 +4,7 @@ layout: default
 
 {% for feature in page.features %}
   <div class="featureWrap{% if feature.button %} featureWrap--withButton{% endif %} bg--{{ feature.background}}">
-    <section class="feature {{ feature.handle }}">
+    <section class="feature feature--{{ feature.width }} {{ feature.handle }}">
       {% if feature.title %}
         <h2 class="feature__title">{{ feature.title }}</h2>
       {% endif %}

@@ -291,7 +291,15 @@ p.large {
 }
 .feature {
   text-align: center;
+}
+.feature--full {
+  @extend %container;
+}
+.feature--wide {
   @extend %container--wide;
+}
+.feature--narrow {
+  @extend %container--narrow;
 }
 // feature elements
 .feature__button {
@@ -347,36 +355,36 @@ p.large {
 }
 // feature: manage
 .manage__content {
-  // @extend %row;
   @include flexbox;
   @include align-items(center);
-  @include flex-wrap(wrap);
+  @include justify-content(space-around);
   text-align: left;
   margin-top: $v*3;
   @include max-width($max-width--md) {
+    @include flex-wrap(wrap);
     margin-top: $v*2;
   }
 }
-.manage__content > * {
-  // @extend %column;
-}
 .manage__screenshots {
-  width: 70%;
-  margin-left: 5%;
-  margin-right: -15%;
+  width: 75%;
+  min-width: 900px;
+  max-width: 1800px;
+  margin-right: -400px;
   @include order(1);
   @include max-width($max-width--md) {
     @include order(0);
     width: 100%;
-    margin-left: 0;
+    min-width: 0;
     margin-right: 0;
   }
 }
 .manage__tabs {
-  width: 40%;
+  width: 28rem;
+  padding-right: $gutter*1.5;
   @include max-width($max-width--md) {
     margin-top: $v*2;
     width: 100%;
+    padding-right: 0;
   }
 }
 .manage__tab {
@@ -394,58 +402,61 @@ p.large {
 }
 // feature: develop
 .develop__subsection {
-  // @extend %row;
   @include flexbox;
   @include align-items(center);
-  @include flex-wrap(wrap);
+  @include justify-content(space-around);
   text-align: left;
-  margin-top: $v*3;
+  margin-top: $v*4;
   @include max-width($max-width--md) {
+    @include flex-wrap(wrap);
     margin-top: $v*2;
   }
   h3 {
     font-size: 2em;
   }
 }
-.develop__subsection > * {
-  // @extend %column; // TO DO: remove if unused
-}
 .develop__subsection__text {
-  width: 40%;
-  .develop__subsection:nth-of-type(2n+1) & {
-    float: right;
-  }
+  width: 28rem;
   @include max-width($max-width--md) {
     width: 100%;
+  }
+  .develop__subsection:nth-of-type(odd) & {
+    padding-left: $gutter*1.5;
+    @include max-width($max-width--md) {
+      padding-left: 0;
+    }
+  }
+  .develop__subsection:nth-of-type(even) & {
+    padding-right: $gutter*1.5;
+    @include max-width($max-width--md) {
+      padding-right: 0;
+    }
   }
 }
 .develop__subsection__figure {
-  width: 70%;
+  width: 75%;
+  min-width: 700px;
+  max-width: 900px;
   @include max-width($max-width--md) {
     width: 100%;
+    min-width: 0;
     margin-bottom: $v*1.5;
   }
-  .develop__subsection:nth-of-type(2n+1) & {
-    margin-left: -15%;
-    margin-right: 5%;
+  .develop__subsection:nth-of-type(odd) & {
+    margin-left: -300px;
     @include max-width($max-width--md) {
       margin-left: 0;
-      margin-right: 0;
     }
   }
-  .develop__subsection:nth-of-type(2n) & {
-    float: right;
-    margin-left: 5%;
-    margin-right: -15%;
+  .develop__subsection:nth-of-type(even) & {
     @include order(1);
+    margin-right: -300px;
     @include max-width($max-width--md) {
       @include order(0);
-      margin-left: 0;
       margin-right: 0;
     }
   }
 }
-
 .develop__logos {
   margin-top: $v*0.75;
 }
@@ -470,7 +481,8 @@ p.large {
   }
 }
 .free__image {
-  margin-bottom: $v;
+  margin-top: $v*2;
+  margin-bottom: $v*2;
 }
 // feature: launch
 .feature.launch {
@@ -520,7 +532,7 @@ p.large {
   min-width: 3rem;
   min-height: 3rem;
   border-radius: 50%;
-  margin-right: 0.8em;
+  margin-right: 1em;
 }
 .love__tweet__handle {
   margin-top: -$v*0.1;

@@ -12,6 +12,7 @@ features:
 - title:
   handle: intro
   background: custom
+  width: wide
   button: true
   subsections:
   - title: Develop with existing tools
@@ -26,6 +27,7 @@ features:
 - title: Content management for the whole team
   handle: manage
   background: white
+  width: full
   color: blue
   link:
     title: How to manage your site
@@ -50,6 +52,7 @@ features:
 - title: Develop with tools you already love
   handle: develop
   background: gray
+  width: full
   subsections:
   - title: Open source superpowers
     body:
@@ -83,6 +86,7 @@ features:
 - title: Free your content
   handle: free
   background: green
+  width: wide
   image: "/uploads/home__free.png"
   subsections:
   - title: Host anywhere
@@ -103,11 +107,13 @@ features:
 # - title: Launch better sites
 #   handle: launch
 #   background: blue
+#   width: narrow
 #   image: "/uploads/home__free.png"
 #   body: We believe that content management shouldn't be hard. That you should be able to host your website anywhere you want. That websites should be able to outlive their CMS. That our tools should be simplified, not dumbed down.
 - title: Love your CMS
   handle: love
   background: gray
+  width: wide
   tweets:
   # - name: Leigh-Ann Bartsch
   #   handle: "@labartsch"
@@ -181,6 +187,7 @@ features:
 - title: Make websites great again
   handle: outro
   background: white
+  width: wide
   button: true
   body: Siteleaf is **free** for developers and open source projects.
 ---
