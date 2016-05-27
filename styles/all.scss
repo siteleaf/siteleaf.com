@@ -131,14 +131,15 @@ strong {
 em {
   font-family: $font-family--sans-serif-italic;
 }
-small {
+small,
+.small {
   font-size: $font-size--small;
+}
+.large {
+  font-size: $font-size--large;
 }
 img {
   @include responsive-image;
-}
-p.large {
-  font-size: $font-size--large;
 }
 
 // header and footer
@@ -280,7 +281,7 @@ p.large {
 
 .featureWrap {
   padding-top: $v*3;
-  padding-bottom: $v*3;
+  padding-bottom: $v*4;
 }
 .featureWrap--withButton {
   padding-bottom: $v*2;
@@ -777,24 +778,45 @@ p.large {
 
 .blue {
   color: $color--blue;
+  &.icon {
+    fill: $color--blue;
+  }
 }
 .green {
   color: $color--green;
+  &.icon {
+    fill: $color--green;
+  }
 }
 .yellow {
   color: $color--yellow;
+  &.icon {
+    fill: $color--yellow;
+  }
 }
 .red {
   color: $color--red;
+  &.icon {
+    fill: $color--red;
+  }
 }
 .purple {
   color: $color--purple;
+  &.icon {
+    fill: $color--purple;
+  }
 }
 .gray {
-  color: $color--gray-dark;
+  color: $color--gray;
+  &.icon {
+    fill: $color--gray;
+  }
 }
 .white {
   color: $color--white;
+  &.icon {
+    fill: $color--white;
+  }
 }
 
 .bg--blue {
@@ -832,6 +854,16 @@ p.large {
 }
 .bg--white {
   background: $color--white;
+}
+
+// icons
+// -----
+
+.icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  @include translate3d(0,-0.1rem,0);
 }
 
 // TEMP
