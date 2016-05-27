@@ -126,21 +126,21 @@ features:
     avatar: https://pbs.twimg.com/profile_images/699399274669350912/62-rUSw-_bigger.jpg
     words: Playing with [@siteleaf](https://twitter.com/siteleaf). As nimble to build with as Jekyll for me. Easier to use than Wordpress for my client.
     link: https://twitter.com/CaseyG/status/358286369962995712
-  - name: John Choura Jr.
-    handle: "@johnchourajr"
-    avatar: https://pbs.twimg.com/profile_images/667942812223016961/tuClaiDk_bigger.jpg
-    words: I just have to say, building websites with [@siteleaf](https://twitter.com/siteleaf) is great. That is all.
-    link: https://twitter.com/johnchourajr/status/571840493727948800
-  - name: Ryan Glover
-    handle: "@rglover"
-    avatar: https://pbs.twimg.com/profile_images/713918049192161280/hjXxZdva_bigger.jpg
-    words: Really like that [@siteleaf](https://twitter.com/siteleaf) let's you host your site via S3. Control of data is nice :)
-    link: https://twitter.com/rglover/status/477504707334651905
   - name: Nick Beattie
     handle: "@nicktweattie"
     avatar: https://pbs.twimg.com/profile_images/726497972867993601/AFm_QUPQ_bigger.jpg
     words: "[@siteleaf](https://twitter.com/siteleaf) is going to be my CMS of choice, no doubt. Also, thanks for speedy email back about questions."
     link: https://twitter.com/nicktweattie/status/432199961443581952
+  - name: Ryan Glover
+    handle: "@rglover"
+    avatar: https://pbs.twimg.com/profile_images/713918049192161280/hjXxZdva_bigger.jpg
+    words: Really like that [@siteleaf](https://twitter.com/siteleaf) let's you host your site via S3. Control of data is nice :)
+    link: https://twitter.com/rglover/status/477504707334651905
+  - name: John Choura Jr.
+    handle: "@johnchourajr"
+    avatar: https://pbs.twimg.com/profile_images/667942812223016961/tuClaiDk_bigger.jpg
+    words: I just have to say, building websites with [@siteleaf](https://twitter.com/siteleaf) is great. That is all.
+    link: https://twitter.com/johnchourajr/status/571840493727948800
   - name: Max Murdoch
     handle: "@maxalfiemurdoch"
     avatar: https://pbs.twimg.com/profile_images/650943227613286400/6OIjh7RJ_bigger.jpg

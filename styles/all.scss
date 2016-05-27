@@ -252,8 +252,8 @@ img {
   margin-top: $v*3.5;
   margin-bottom: $v*0.5;
   max-width: $max-width--header__title;
-  padding-left: $width--logo * 1.4;
-  padding-right: $width--logo * 1.4;
+  padding-left: $width--logo * 1.333333;
+  padding-right: $width--logo * 1.333333;
   .home & {
     max-width: 36rem;
     padding-left: 0;
@@ -368,7 +368,7 @@ img {
   @include justify-content(space-around);
   text-align: left;
   margin-top: $v*3;
-  @include max-width($max-width--lg) {
+  @include max-width($max-width--md) {
     @include flex-wrap(wrap);
     margin-top: $v*2;
   }
@@ -377,7 +377,7 @@ img {
   width: 45%;
   max-width: 28rem;
   padding-right: $gutter*1.5;
-  @include max-width($max-width--lg) {
+  @include max-width($max-width--md) {
     margin-top: $v*2;
     max-width: none;
     width: 100%;
@@ -390,7 +390,7 @@ img {
   width: 80%;
   margin-right: -14rem;
   position: relative;
-  @include max-width($max-width--lg) {
+  @include max-width($max-width--md) {
     @include order(0);
     width: 100%;
     margin-right: 0;
@@ -451,7 +451,7 @@ img {
 }
 // feature: develop
 .feature.develop {
-  max-width: 1280px;
+  max-width: 1200px;
 }
 .develop__subsection {
   @include flexbox;
@@ -492,6 +492,7 @@ img {
   max-width: 800px;
   @include max-width($max-width--md) {
     width: 100%;
+    max-width: none;
     margin-bottom: $v*1.5;
   }
   .develop__subsection:nth-of-type(odd) & {
@@ -559,7 +560,7 @@ img {
   margin-bottom: $gutter;
   font-size: $font-size--small;
   width: 33.333333%;
-  @include max-width($max-width--lg) {
+  @include max-width($max-width--md) {
     width: 50%;
   }
   @include max-width($max-width--sm) {
