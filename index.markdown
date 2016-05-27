@@ -91,7 +91,7 @@ features:
   image: "/uploads/home__free.png"
   subsections:
   - title: Host anywhere
-    body: Generate static sites to S3, Rackspace, FTP, and GitHub Pages—free for developers and open source projects.
+    body: Generate static sites to S3, Rackspace, FTP, and GitHub Pages, and use your own domain name.
     link:
       title: Learn more
       url: http://learn.siteleaf.com/sites/hosting/
