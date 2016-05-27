@@ -3,8 +3,8 @@ layout: index
 title: Built for developers, loved by everyone
 subtitle:
   <p class="large">Siteleaf is a content management system designed for a better web.</p>
-  <a href="https://player.vimeo.com/video/69301083" class="white"><svg class="icon icon--play white" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve"><g><path d="M21.3,12c0,5.1-4.2,9.3-9.3,9.3S2.7,17.1,2.7,12S6.9,2.7,12,2.7S21.3,6.9,21.3,12z M20,12c0-4.4-3.6-8-8-8s-8,3.6-8,8
-      s3.6,8,8,8S20,16.4,20,12z M9.3,8l7.3,4l-7.3,4V8z M10.7,13.7l3.2-1.7l-3.2-1.7V13.7z"/></g></svg> Watch the intro</a>
+  <a href="https://player.vimeo.com/video/69301083" class="home__more white"><svg class="icon icon--play white" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve"><g><path d="M21.3,12c0,5.1-4.2,9.3-9.3,9.3S2.7,17.1,2.7,12S6.9,2.7,12,2.7S21.3,6.9,21.3,12z M20,12c0-4.4-3.6-8-8-8s-8,3.6-8,8
+      s3.6,8,8,8S20,16.4,20,12z M9.3,8l7.3,4l-7.3,4V8z M10.7,13.7l3.2-1.7l-3.2-1.7V13.7z"/></g></svg>Watch the intro</a>
 background: yellow
 button:
   title: Get started
@@ -72,7 +72,7 @@ features:
     color: red
     link:
       title: Learn more
-      url: http://learn.siteleaf.com/
+      url: http://learn.siteleaf.com/themes/getting-started/
   - title: GitHub integration
     body:
       No more accidental overwrites or deletes. Any change made in Siteleaf can be synced to GitHub, where you can see a log of edits, who made them, and roll back to any state, giving you a **time machine for your content**.
@@ -83,7 +83,7 @@ features:
     color: purple
     link:
       title: Learn more
-      url: http://learn.siteleaf.com/
+      url: http://learn.siteleaf.com/themes/github-sync/
 - title: Free your content
   handle: free
   background: green
@@ -91,20 +91,20 @@ features:
   image: "/uploads/home__free.png"
   subsections:
   - title: Host anywhere
-    body: Generate static sites using your own domain to S3, Rackspace, FTP, and GitHub Pages—free for developers and open source projects.
+    body: Generate static sites to S3, Rackspace, FTP, and GitHub Pages—free for developers and open source projects.
     link:
       title: Learn more
-      url: http://learn.siteleaf.com/
+      url: http://learn.siteleaf.com/sites/hosting/
   - title: Import and export
     body: Easily move your content into or out of Siteleaf. Import from legacy CMSs like WordPress, Drupal, Tumblr, Ghost.
     link:
       title: Learn more
       url: http://learn.siteleaf.com/
-  - title: Do more with your content
+  - title: An API for your data
     body: Access your data and integrate into other websites, apps, or anything else. Automate your workflow with Zapier.
     link:
       title: Learn more
-      url: http://learn.siteleaf.com/
+      url: http://learn.siteleaf.com/api/
 - title: Launch better sites
   handle: launch
   background: blue
