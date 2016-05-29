@@ -32,9 +32,6 @@ features:
   background: white
   width: full
   color: blue
-  link:
-    title: How to manage your site
-    url: https://player.vimeo.com/video/69301083
   subsections:
   - title: Collaborate
     handle: collaborate
@@ -68,9 +65,6 @@ features:
       title: open source
       image: "/uploads/logos--open-source.svg"
     color: red
-    link:
-      title: Learn more
-      url: http://learn.siteleaf.com/themes/getting-started/
   - title: GitHub integration
     body:
       No more accidental overwrites or deletes. Any change made in Siteleaf can be synced to [GitHub](https://github.com/), where you can see a log of edits, who made them, and roll back to any state, giving you a time machine for your content.
@@ -79,9 +73,6 @@ features:
       As you develop your theme, Siteleaf can also update to reflect the changes you push to GitHub. Fits right into your existing workflow.
     image: "/uploads/home__develop--github.png"
     color: purple
-    link:
-      title: Learn more
-      url: http://learn.siteleaf.com/themes/github-sync/
 - title: Free your content
   handle: free
   background: green
@@ -90,19 +81,10 @@ features:
   subsections:
   - title: Host anywhere
     body: Generate static sites to S3, Rackspace, FTP, and GitHub Pages, and use your own domain name.
-    link:
-      title: Learn more
-      url: http://learn.siteleaf.com/sites/hosting/
   - title: Import and export
     body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/) from legacy CMSs like WordPress, Drupal, Tumblr, Ghost.
-    link:
-      title: Learn more
-      url: http://learn.siteleaf.com/
   - title: An API for your data
     body: Access your data and integrate into other websites, apps, or anything else. Automate your workflow with Zapier.
-    link:
-      title: Learn more
-      url: http://learn.siteleaf.com/api/
 - title: Launch better sites
   handle: launch
   background: dark-gray
