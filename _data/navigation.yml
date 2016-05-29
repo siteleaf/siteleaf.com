@@ -1,10 +1,10 @@
 header:
-- title: Plans
-  url: /plans/
-- title: Gallery
-  url: /gallery/
 - title: Blog
   url: /blog/
+- title: Gallery
+  url: /gallery/
+- title: Plans
+  url: /plans/
 - title: Learn
   url: http://learn.siteleaf.com
 footer:

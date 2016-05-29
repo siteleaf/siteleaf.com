@@ -20,7 +20,7 @@ layout: default
             {% endfor %}
           </div>
         {% when 'manage' %}
-          <a href="{{ feature.link.url }}" class="home__more {{ feature.color }}">{% include play.svg fill=feature.color %}{{ feature.link.title }}</a>
+          <!-- <a href="{{ feature.link.url }}" class="home__more {{ feature.color }}">{% include play.svg fill=feature.color %}{{ feature.link.title }}</a> -->
           <div class="manage__content">
             <div class="manage__screenshots">
               {% for subsection in feature.subsections %}
@@ -47,13 +47,9 @@ layout: default
               <div class="develop__subsection__text">
                 <h3 class="{{ subsection.color }}">{{ subsection.title }}</h3>
                 {{ subsection.body | markdownify }}
-                <a href="{{ subsection.link.url }}" class="home__more {{ subsection.color }}">{% include right.svg fill=subsection.color %}{{ subsection.link.title }}</a>
+                <!-- <a href="{{ subsection.link.url }}" class="home__more {{ subsection.color }}">{% include right.svg fill=subsection.color %}{{ subsection.link.title }}</a> -->
                 {% if subsection.logos %}
-                  <div class="develop__logos">
-                    {% for logo in subsection.logos %}
-                      <img src="{{ logo.image }}" alt="{{ logo.title }}" class="develop__logo" />
-                    {% endfor %}
-                  </div>
+                  <img src="{{ subsection.logos.image }}" alt="{{ subsection.logos.title }}" class="develop__logos" />
                 {% endif %}
               </div>
             </div>
@@ -65,7 +61,7 @@ layout: default
               <div class="free__subsection">
                 <h5>{{ subsection.title }}</h5>
                 {{ subsection.body | markdownify }}
-                <a href="{{ subsection.link.url }}" class="home__more">{% include right.svg %}{{ subsection.link.title }}</a>
+                <!-- <a href="{{ subsection.link.url }}" class="home__more">{% include right.svg %}{{ subsection.link.title }}</a> -->
               </div>
             {% endfor %}
           </div>
@@ -91,11 +87,7 @@ layout: default
               </li>
             {% endfor %}
           </ul>
-          <div class="love__logos">
-            {% for logo in feature.logos %}
-              <img src="{{ logo.image }}" alt="{{ logo.title }}" class="love__logo" />
-            {% endfor %}
-          </div>
+          <img src="{{ feature.logos.image }}" alt="{{ feature.logos.title }}" class="love__logos" />
         {% when 'outro' %}
           {{ feature.body | markdownify }}
       {% endcase %}

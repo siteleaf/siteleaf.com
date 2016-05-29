@@ -36,6 +36,8 @@
   border-radius: $border-radius--base;
 }
 %button--large {
+  font-size: $font-size--large;
+  font-family: $font-family--sans-serif-bold;
   @extend %button;
-  padding: 0.7em 3.0em 0.5em;
+  padding: 0.6em 3em 0.4em;
 }

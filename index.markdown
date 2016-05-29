@@ -2,7 +2,9 @@
 layout: index
 title: Built for developers, loved by everyone
 subtitle:
-  <p class="large">Siteleaf is a content management system designed for a better web.</p>
+  Siteleaf is a content management system designed for a better web.
+
+
   <a href="https://player.vimeo.com/video/69301083" class="home__more white"><svg class="icon icon--play white" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve"><g><path d="M21.3,12c0,5.1-4.2,9.3-9.3,9.3S2.7,17.1,2.7,12S6.9,2.7,12,2.7S21.3,6.9,21.3,12z M20,12c0-4.4-3.6-8-8-8s-8,3.6-8,8
       s3.6,8,8,8S20,16.4,20,12z M9.3,8l7.3,4l-7.3,4V8z M10.7,13.7l3.2-1.7l-3.2-1.7V13.7z"/></g></svg>Watch the intro</a>
 background: yellow
@@ -57,25 +59,21 @@ features:
   subsections:
   - title: Open source superpowers
     body:
-      Siteleaf is compatible with Jekyll, the static site generator for over half a million websites on GitHub Pages.
+      Siteleaf is compatible with [Jekyll](http://jekyllrb.com/), the static site generator for over half a million websites on GitHub Pages.
 
 
-      Benefit from a **large open source community**. Use any existing Jekyll theme, or write your own using Liquid, Sass, and CoffeeScript.
+      Benefit from a large open source community. Use any existing Jekyll theme, or write your own using [Liquid](https://shopify.github.io/liquid/), [Sass](http://sass-lang.com/), and [CoffeeScript](http://coffeescript.org/).
     image: "/uploads/home__develop--jekyll.png"
     logos:
-    - title: Jekyll
-      image: "/uploads/logo--jekyll.svg"
-    - title: Sass
-      image: "/uploads/logo--sass.svg"
-    - title: CoffeeScript
-      image: "/uploads/logo--coffeescript.svg"
+      title: open source
+      image: "/uploads/logos--open-source.svg"
     color: red
     link:
       title: Learn more
       url: http://learn.siteleaf.com/themes/getting-started/
   - title: GitHub integration
     body:
-      No more accidental overwrites or deletes. Any change made in Siteleaf can be synced to GitHub, where you can see a log of edits, who made them, and roll back to any state, giving you a **time machine for your content**.
+      No more accidental overwrites or deletes. Any change made in Siteleaf can be synced to [GitHub](https://github.com/), where you can see a log of edits, who made them, and roll back to any state, giving you a time machine for your content.
 
 
       As you develop your theme, Siteleaf can also update to reflect the changes you push to GitHub. Fits right into your existing workflow.
@@ -96,7 +94,7 @@ features:
       title: Learn more
       url: http://learn.siteleaf.com/sites/hosting/
   - title: Import and export
-    body: Easily move your content into or out of Siteleaf. Import from legacy CMSs like WordPress, Drupal, Tumblr, Ghost.
+    body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/) from legacy CMSs like WordPress, Drupal, Tumblr, Ghost.
     link:
       title: Learn more
       url: http://learn.siteleaf.com/
@@ -107,7 +105,7 @@ features:
       url: http://learn.siteleaf.com/api/
 - title: Launch better sites
   handle: launch
-  background: blue
+  background: dark-gray
   width: narrow
   image: "/uploads/home__free.png"
   body: We believe that content management shouldn't be hard. That you should be able to host your website anywhere you want. That websites should be able to outlive their CMS. That our tools should be simplified, not dumbed down.
@@ -146,6 +144,7 @@ features:
     avatar: https://pbs.twimg.com/profile_images/650943227613286400/6OIjh7RJ_bigger.jpg
     words:
       I’ve been using [@siteleaf](https://twitter.com/siteleaf) for 30 mins and, like all [@oakstudios](https://twitter.com/oakstudios)’ products, it’s a dream to work with. Never again, Wordpress. Never ever.
+    link: https://twitter.com/maxalfiemurdoch/status/492342773560131584
   # - name: Leigh-Ann Bartsch
   #   handle: "@labartsch"
   #   avatar: https://pbs.twimg.com/profile_images/465845091161370624/JgX2EDmf_bigger.jpeg
@@ -161,7 +160,6 @@ features:
   #   avatar: https://pbs.twimg.com/profile_images/657684171310145536/Mh1P_L6F_bigger.png
   #   words: So, so happy with [@siteleaf](https://twitter.com/siteleaf)! Client needs grew faster than I had anticipated and with only a few lines of code changed, needs were met.
   #   link: https://twitter.com/simplyand/status/469298011550781440
-  #   link: https://twitter.com/maxalfiemurdoch/status/492342773560131584
   # - name: Randy J. Hunt
   #   handle: "@randyjhunt"
   #   avatar: https://pbs.twimg.com/profile_images/1771989329/image1327197190_bigger.png
@@ -173,23 +171,13 @@ features:
   #   words: "[@siteleaf](https://twitter.com/siteleaf)'s Generate Preview feature is astoundingly good"
   #   link: https://twitter.com/tobyshorin/status/733330657234030592
   logos:
-  - title: Microsoft
-    image: "/uploads/logo--microsoft.svg"
-  - title: Spotify
-    image: "/uploads/logo--spotify.svg"
-  - title: NYU
-    image: "/uploads/logo--nyu.svg"
-  - title: MoMA
-    image: "/uploads/logo--moma.svg"
-  - title: Zendesk
-    image: "/uploads/logo--zendesk.svg"
-  - title: Dish
-    image: "/uploads/logo--dish.svg"
-- title: Make websites great again
+    title: companies
+    image: "/uploads/logos--companies.svg"
+- title: Enjoy making websites again
   handle: outro
   background: white
   width: wide
   button: true
-  body: Siteleaf is **free** for developers and open source projects.
+  body: Free for developers and open source projects.
 ---
 
