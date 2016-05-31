@@ -1,5 +1,19 @@
-{% if include.background %}
-  {% assign background = include.background %}
+{% if page.background %}
+  {% assign background = page.background %}
+{% elsif (include.page == 'permalink') %}
+  <!-- blog permalink, inherit from first tag -->
+  {% assign tag_collection = site.collections | where: 'label', 'tags' | first %}
+  {% assign post_tag_downcase = page.tags | first | downcase %}
+  {% for site_tag in tag_collection.docs %}
+    {% assign site_tag_title = site_tag.title | downcase %}
+    {% if site_tag_title == post_tag_downcase %}
+      {% if site_tag.background %}
+        {% assign background = site_tag.background %}
+      {% else %}
+        {% assign background = 'light-gray' %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 {% else %}
   {% assign background = 'light-gray' %}
 {% endif %}

@@ -68,7 +68,7 @@
   {% endif %}
   
   <body class="{{ page_class }}">
-    {% include header.html background=page.background %}
+    {% include header.html page=page_class %}
     {{ content }}
     {% include footer.html %}
     <script src="{{ "/scripts/all.js" | prepend: site.baseurl }}"></script>
