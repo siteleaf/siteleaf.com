@@ -139,6 +139,8 @@ img {
 .header,
 .footer {
   @extend %container;
+  font-size: $font-size--small;
+  font-family: $font-family--sans-serif-medium;
 }
 .header {
   padding-top: $gutter;
@@ -153,13 +155,24 @@ img {
   color: $color--gray;
   padding-top: $gutter*2;
   padding-bottom: $gutter*2;
-  margin-top: $v;
+  margin-top: $v*3;
+}
+.footer__items {
+  color: $color--white;
+  margin-bottom: $v*0.75;
+}
+.footer__madeBy {
+  color: $color--gray;
+  a:hover {
+    color: $color--white;
+  }
+}
+.footerWrap {
+  background-color: $color--gray-darkest;
 }
 .header__item,
 .footer__item {
   display: inline-block;
-  font-size: $font-size--small;
-  font-family: $font-family--sans-serif-medium;
 }
 .header__link,
 .footer__link {
@@ -689,8 +702,7 @@ img {
 
 .gallery {
   &,
-  .headerWrap,
-  .footer {
+  .headerWrap {
     background: $color--gray-darkest;
     color: $color--white;
   }
