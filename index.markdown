@@ -75,7 +75,7 @@ features:
     color: purple
 - title: Free your content
   handle: free
-  background: green
+  background: dark-gray
   width: wide
   image: "/uploads/home__free.png"
   subsections:
@@ -85,9 +85,9 @@ features:
     body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/) from legacy CMSs like WordPress, Drupal, Tumblr, Ghost.
   - title: An API for your data
     body: Access your data and integrate into other websites, apps, or anything else. Automate your workflow with Zapier.
-- title: Launch better sites
+- title: A better web
   handle: launch
-  background: dark-gray
+  background: green
   width: narrow
   image: "/uploads/home__free.png"
   body: We believe that content management shouldn't be hard. That you should be able to host your website anywhere you want. That websites should be able to outlive their CMS. That our tools should be simplified, not dumbed down.
@@ -96,16 +96,21 @@ features:
   background: light-gray
   width: wide
   tweets:
-  - name: Jonnie Hallman
-    handle: "@destroytoday"
-    avatar: https://pbs.twimg.com/profile_images/572167830659080194/LHbfvECN_bigger.jpeg
-    words: Starting building my new website on [@siteleaf](https://twitter.com/siteleaf) v2—its Github syncing and Jekyll-compatibility are absolutely killer.
-    link: https://twitter.com/destroytoday/status/672962921903820801
+  - name: Jason Huff
+    handle: "@jsnhff"
+    avatar: https://pbs.twimg.com/profile_images/731933389129809920/yshfSBTD_bigger.jpg
+    words: "[@siteleaf](https://twitter.com/siteleaf) is a pretty handy tool for making custom websites that humans can edit. Hooray!"
+    link: https://twitter.com/jsnhff/status/737047990339284992
   - name: Casey Gollan
     handle: "@CaseyG"
     avatar: https://pbs.twimg.com/profile_images/699399274669350912/62-rUSw-_bigger.jpg
     words: Playing with [@siteleaf](https://twitter.com/siteleaf). As nimble to build with as Jekyll for me. Easier to use than Wordpress for my client.
     link: https://twitter.com/CaseyG/status/358286369962995712
+  - name: Jonnie Hallman
+    handle: "@destroytoday"
+    avatar: https://pbs.twimg.com/profile_images/572167830659080194/LHbfvECN_bigger.jpeg
+    words: Starting building my new website on [@siteleaf](https://twitter.com/siteleaf) v2—its Github syncing and Jekyll-compatibility are absolutely killer.
+    link: https://twitter.com/destroytoday/status/672962921903820801
   - name: Nick Beattie
     handle: "@nicktweattie"
     avatar: https://pbs.twimg.com/profile_images/726497972867993601/AFm_QUPQ_bigger.jpg
@@ -116,17 +121,17 @@ features:
     avatar: https://pbs.twimg.com/profile_images/713918049192161280/hjXxZdva_bigger.jpg
     words: Really like that [@siteleaf](https://twitter.com/siteleaf) let's you host your site via S3. Control of data is nice :)
     link: https://twitter.com/rglover/status/477504707334651905
-  - name: John Choura Jr.
-    handle: "@johnchourajr"
-    avatar: https://pbs.twimg.com/profile_images/667942812223016961/tuClaiDk_bigger.jpg
-    words: I just have to say, building websites with [@siteleaf](https://twitter.com/siteleaf) is great. That is all.
-    link: https://twitter.com/johnchourajr/status/571840493727948800
   - name: Max Murdoch
     handle: "@maxalfiemurdoch"
     avatar: https://pbs.twimg.com/profile_images/650943227613286400/6OIjh7RJ_bigger.jpg
     words:
       I’ve been using [@siteleaf](https://twitter.com/siteleaf) for 30 mins and, like all [@oakstudios](https://twitter.com/oakstudios)’ products, it’s a dream to work with. Never again, Wordpress. Never ever.
     link: https://twitter.com/maxalfiemurdoch/status/492342773560131584
+  # - name: John Choura Jr.
+  #   handle: "@johnchourajr"
+  #   avatar: https://pbs.twimg.com/profile_images/667942812223016961/tuClaiDk_bigger.jpg
+  #   words: I just have to say, building websites with [@siteleaf](https://twitter.com/siteleaf) is great. That is all.
+  #   link: https://twitter.com/johnchourajr/status/571840493727948800
   # - name: Leigh-Ann Bartsch
   #   handle: "@labartsch"
   #   avatar: https://pbs.twimg.com/profile_images/465845091161370624/JgX2EDmf_bigger.jpeg
