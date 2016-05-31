@@ -139,8 +139,6 @@ img {
 .header,
 .footer {
   @extend %container;
-  font-size: $font-size--small;
-  font-family: $font-family--sans-serif-medium;
 }
 .header {
   padding-top: $gutter;
@@ -155,7 +153,6 @@ img {
   color: $color--gray;
   padding-top: $gutter*2;
   padding-bottom: $gutter*2;
-  margin-top: $v*3;
 }
 .footer__items {
   color: $color--white;
@@ -169,6 +166,15 @@ img {
 }
 .footerWrap {
   background-color: $color--gray-darkest;
+  margin-top: $v*3;
+  .home & {
+    margin-top: 0;
+  }
+}
+.header__item,
+.footer {
+  font-size: $font-size--small;
+  font-family: $font-family--sans-serif-medium;
 }
 .header__item,
 .footer__item {
@@ -608,7 +614,7 @@ img {
 // --------
 
 .article {
-  margin-top: $v*1;
+  margin-top: $v*1.5;
   margin-bottom: $v*2;
   @extend %container--narrow;
 }
@@ -633,18 +639,7 @@ img {
 }
 .article__title {
   margin-top: $v*2;
-  margin-bottom: $v*0.25;
-}
-.article__meta {
-  color: $color--gray;
-  font-family: $font-family--sans-serif-medium;
-  font-size: $font-size--small;
-  margin-bottom: $v*0.75;
-}
-.article__date--legal {
-  &:before {
-    content: 'As of ';
-  }
+  margin-bottom: $v*0.5;
 }
 .article__footer__link {
   color: $color--gray-dark;
@@ -682,6 +677,22 @@ img {
     text-decoration: underline;
   }
 }
+.article__meta {
+  color: $color--gray-dark;
+  font-size: $font-size--small;
+  margin-top: $v*1.5;
+  margin-bottom: $v*0.75;
+}
+.article__date--permalink {
+  &:before {
+    content: 'Posted: ';
+  }
+}
+.article__date--legal {
+  &:before {
+    content: 'Last updated: ';
+  }
+}
 
 // blog
 // ----
@@ -689,7 +700,6 @@ img {
 .blog__more {
   @extend %container;
   text-align: center;
-  margin-top: $v*3;
 }
 .blog__more__link {
   @extend %button--large;
@@ -710,7 +720,6 @@ img {
 .gallery__main {
   @extend %container--wide;
   margin-top: $v*2;
-  margin-bottom: $v*2;
 }
 .gallery__items {
   @extend %row;
@@ -739,7 +748,6 @@ img {
 
 .archive__items {
   margin-top: $v*1.5;
-  margin-bottom: $v*2;
   @extend %container--narrow;
 }
 .archive__month {

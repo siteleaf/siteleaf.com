@@ -45,22 +45,22 @@
     </script>
   </head>
 
-  {% if (page.url == '/') %}
+  {% if page.url == '/' %}
     {% assign page_class = 'home' %}
-  {% elsif (page.url == '/plans/') %}
+  {% elsif page.url == '/plans/' %}
     {% assign page_class = 'plans' %}
-  {% elsif (page.url == '/gallery/') %}
+  {% elsif page.url == '/gallery/' %}
     {% assign page_class = 'gallery' %}
-  {% elsif (page.url == '/blog/') %}
+  {% elsif page.url == '/blog/' %}
     <!-- blog index -->
     {% assign page_class = 'blog' %}
-  {% elsif (page.url contains '/blog/tags/') %}
+  {% elsif page.url contains '/blog/tags/' %}
     <!-- blog tag -->
     {% assign page_class = 'tag' %}
-  {% elsif (page.url contains '/blog/archive/') %}
+  {% elsif page.url contains '/blog/archive/' %}
     <!-- blog archive -->
     {% assign page_class = 'archive' %}
-  {% elsif (page.url contains '/blog/') %}
+  {% elsif page.url contains '/blog/' %}
     <!-- blog permalink -->
     {% assign page_class = 'permalink' %}
   {% else %}

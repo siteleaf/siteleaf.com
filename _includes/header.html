@@ -1,6 +1,6 @@
 {% if page.background %}
   {% assign background = page.background %}
-{% elsif (include.page == 'permalink') %}
+{% elsif include.page == 'permalink' %}
   <!-- blog permalink, inherit from first tag -->
   {% assign tag_collection = site.collections | where: 'label', 'tags' | first %}
   {% assign post_tag_downcase = page.tags | first | downcase %}
