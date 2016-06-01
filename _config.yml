@@ -1,6 +1,5 @@
 ---
 title: Siteleaf v2
-url: http://v2.siteleaf.com
 timezone: America/New_York
 collections:
   posts:
@@ -19,6 +18,7 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
+url: http://v2.siteleaf.com
 description: Content management simplified. Edit in the cloud, publish anywhere. Supports
   static file output, any host, markdown, and multiple collaborators.
 permalinks: pretty
@@ -33,18 +33,10 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
-# markdown: redcarpet
-# redcarpet:
-#   extensions:
-#   - autolink
-#   - fenced_code_blocks
-#   - lax_spacing
-#   - strikethrough
-#   - superscript
-#   - tables
-#   - footnotes
-#   - highlight
-excerpt_separator: "\n\n\n"
+excerpt_separator: |2+
+
+
+
 sass:
   sass_dir: styles/
   style: compressed

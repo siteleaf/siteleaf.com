@@ -1,6 +1,6 @@
 ---
 title: Plans
-date: 2015-11-11 16:33:00 Z
+date: 2015-11-11 11:33:00 -05:00
 permalink: "/plans/"
 background: purple
 plans:
