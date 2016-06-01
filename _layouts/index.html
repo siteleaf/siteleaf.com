@@ -57,7 +57,7 @@ layout: default
           <div class="free__subsections">
             {% for subsection in feature.subsections %}
               <div class="free__subsection">
-                <h5>{{ subsection.title }}</h5>
+                <h4>{{ subsection.title }}</h4>
                 {{ subsection.body | markdownify }}
               </div>
             {% endfor %}

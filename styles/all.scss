@@ -348,7 +348,7 @@ img {
 .manage__tabs {
   width: 45%;
   max-width: 28rem;
-  padding-right: $gutter*1.5;
+  padding-right: $gutter*2;
   @include max-width($max-width--md) {
     margin-top: $v*2;
     max-width: none;
@@ -458,13 +458,13 @@ img {
     max-width: none;
   }
   .develop__subsection:nth-of-type(odd) & {
-    padding-left: $gutter*1.5;
+    padding-left: $gutter*2;
     @include max-width($max-width--md) {
       padding-left: 0;
     }
   }
   .develop__subsection:nth-of-type(even) & {
-    padding-right: $gutter*1.5;
+    padding-right: $gutter*2;
     @include max-width($max-width--md) {
       padding-right: 0;
     }
