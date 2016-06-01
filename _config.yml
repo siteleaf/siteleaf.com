@@ -1,6 +1,5 @@
 ---
-title: Siteleaf v2
-url: http://v2.siteleaf.com
+title: Siteleaf
 timezone: America/New_York
 collections:
   posts:
@@ -22,31 +21,32 @@ defaults:
 description: Content management simplified. Edit in the cloud, publish anywhere. Supports
   static file output, any host, markdown, and multiple collaborators.
 permalinks: pretty
+github_username: siteleaf
+twitter_username: siteleaf
+date_format: "%b %d, %Y"
 exclude:
+- node_modules
+- config.ru
+- Gemfile*
 - Gruntfile.js
 - package.json
-- README*
-- node_modules
+- README.markdown
 - ".gitignore"
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-highlighter: rouge
-# markdown: redcarpet
-# redcarpet:
-#   extensions:
-#   - autolink
-#   - fenced_code_blocks
-#   - lax_spacing
-#   - strikethrough
-#   - superscript
-#   - tables
-#   - footnotes
-#   - highlight
-excerpt_separator: "\n\n\n"
+- ".siteleaf.yml"
+excerpt_separator: |2+
+
+
+
+markdown: redcarpet
+redcarpet:
+  extensions:
+  - autolink
+  - fenced_code_blocks
+  - lax_spacing
+  - strikethrough
+  - superscript
+  - tables
+  - footnotes
+  - highlight
 sass:
-  sass_dir: styles/
   style: compressed
-per_page: 10
-date_format: "%b %-d, %Y"
