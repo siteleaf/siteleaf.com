@@ -1,6 +1,6 @@
 ---
 title: Terms
-date: 2015-11-10 19:00:00 -05:00
+date: 2015-11-11 00:00:00 Z
 permalink: "/terms/"
 layout: page
 is_legal: true
