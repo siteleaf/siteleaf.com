@@ -77,7 +77,7 @@ features:
   handle: free
   background: dark-gray
   width: wide
-  image: "/uploads/home__free.png"
+  image: "/uploads/home__free.svg"
   subsections:
   - title: Host anywhere
     body: Generate static sites to S3, Rackspace, FTP, and GitHub Pages, and use your own domain name.
