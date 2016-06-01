@@ -1,6 +1,6 @@
 ---
 title: Archive
-date: 2015-11-10 15:17:00 Z
+date: 2015-11-10 10:17:00 -05:00
 permalink: "/blog/archive/"
 layout: archive
 background: gray
