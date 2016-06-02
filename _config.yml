@@ -42,3 +42,4 @@ sass:
   style: compressed
 per_page: 12
 date_format: "%b %d, %Y"
+google_analytics: UA-1666437-33
