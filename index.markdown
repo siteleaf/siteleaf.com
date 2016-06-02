@@ -1,5 +1,5 @@
 ---
-title: Built for developers, loved by everyone
+title: Built for developers, Loved by everyone
 layout: index
 subtitle: |-
   Siteleaf is a content management system designed for a better web.
