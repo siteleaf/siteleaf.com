@@ -1,30 +1,25 @@
 ---
 title: Plans
 date: 2015-11-11 11:33:00 -05:00
+layout: plans
 permalink: "/plans/"
 plans:
-- title: Hobby
-  price: 9
-  content: |-
-    - **1** site
-    - **5** users per site
-    - Free hosting
-    - 14 day free trial
-- title: Team
-  price: 39
-  callout: Most popular
-  content: |-
-    - **5** sites
-    - **10** users per site
-    - Free hosting
-    - 14 day free trial
-- title: Business
-  price: 99
-  content: |-
-    - **15** sites
-    - **20** users per site
-    - Free hosting
-    - 14 day free trial
-layout: plans
+- name: Developer
+  price: 0
+  description: "Basic functionality for folks wanting to try siteleaf for an unlimited period of time."
+- name: Personal
+  price: 12
+  discount: 0.4
+  description: "Gain access to site previewing, additional hosting options, support, and more."
+- name: Team
+  price: 49
+  discount: 0.4
+  description: "Assign different user roles, increased file storage, and unlimited pages."
+- name: Business
+  price: 149
+  discount: 0.4
+  description: "Improved build performance for complex sites and queue priority."
+- name: Enterprise
+  price: 299
+  description: "Enterprise support and a tailored build process to meet your site’s requirements."
 ---
-

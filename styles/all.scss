@@ -867,3 +867,40 @@ img {
 #mfPreviewBar {
   display: none;
 }
+
+// plans
+// -------
+.plan-summary-cards {
+  max-width: 1200px;
+  width: 90%;
+  margin: -30px auto 0;
+}
+
+.plan-card {
+  width: 20%;
+
+  @include max-width(830px) {
+    width: 33%;
+
+    &:nth-child(3) {
+      border-right-width: 0;
+    }
+  }
+
+  @include max-width(460px) {
+    width: 50%;
+
+    &:nth-child(3) {
+      border-right-width: 1px;
+    }
+
+    &:nth-child(2n) {
+      border-right-width: 0;
+    }
+  }
+}
+
+.plan-card__desc {
+  margin: 0;
+  font-size: 13px;
+}

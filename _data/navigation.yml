@@ -3,11 +3,11 @@ header:
   url: /blog/
 - title: Gallery
   url: /gallery/
+- title: Plans
+  url: /plans/
 - title: Learn
   url: http://learn.siteleaf.com
 footer:
-- title: Plans
-  url: /plans/
 - title: Privacy
   url: /privacy/
 - title: Terms

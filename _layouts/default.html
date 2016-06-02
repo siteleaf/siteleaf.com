@@ -25,7 +25,11 @@
     <meta name="twitter:image:src" content="/assets/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" /> -->
 
-    <link rel="stylesheet" href="{{ "/styles/all.css" | prepend: site.baseurl }}" />
+    {% if page.url contains '/plan' %}
+      <link rel="stylesheet" href="/styles/plan-summary-cards.css" />
+    {% endif %}
+
+    <link rel="stylesheet" href="/styles/all.css" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
@@ -66,12 +70,17 @@
   {% else %}
     {% assign page_class = 'page' %}
   {% endif %}
-  
+
   <body class="{{ page_class }}">
     {% include header.html page=page_class %}
     {{ content }}
     {% include footer.html %}
-    <script src="{{ "/scripts/all.js" | prepend: site.baseurl }}"></script>
+
+    {% if page.url contains '/plan' %}
+      <script src="/scripts/plan-summary-cards.js"></script>
+    {% endif %}
+
+    <script src="/scripts/all.js"></script>
     {% if site.google_analytics %}
       <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
