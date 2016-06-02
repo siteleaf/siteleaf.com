@@ -40,8 +40,9 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-family: $font-family--sans-serif-bold-alt;
+  @extend %mk1;
 }
+h1,
 h2,
 h3,
 h4,
@@ -272,6 +273,9 @@ img {
 }
 .feature {
   text-align: center;
+  p {
+    @extend %mk3;
+  }
 }
 .feature--full {
   @extend %container;
@@ -626,6 +630,12 @@ img {
   margin-bottom: $v*0.75;
 }
 .article__content {
+  p,
+  ul,
+  ol,
+  blockquote {
+    @extend %mk3;
+  }
   h2 {
     margin-top: $v*1.75;
   }

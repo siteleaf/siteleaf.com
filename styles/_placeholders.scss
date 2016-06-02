@@ -41,3 +41,16 @@
   @extend %button;
   padding: 0.6em 3em 0.4em;
 }
+
+// font variations
+// ---------------
+
+%mk1 {
+  font-feature-settings: "ss01";
+}
+%mk2 {
+  font-feature-settings: "ss02";
+}
+%mk3 {
+  font-feature-settings: "ss03";
+}
