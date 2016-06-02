@@ -2,6 +2,5 @@
 title: v1
 permalink: "/blog/tags/v1/"
 layout: tag
-background: gray
 ---
 

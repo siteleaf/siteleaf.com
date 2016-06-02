@@ -40,5 +40,5 @@ excerpt_separator: |2+
 sass:
   sass_dir: styles/
   style: compressed
-per_page: 12
-date_format: "%b %d, %Y"
+per_page: 10
+date_format: "%b %-d, %Y"
