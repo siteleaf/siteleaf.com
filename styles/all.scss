@@ -54,7 +54,7 @@ h1 {
   font-size: 3.333333em;
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tighter;
-  @include max-width($max-width--lg) {
+  @include max-width($max-width--md) {
     font-size: 3em;
     letter-spacing: $letter-spacing--tight;
   }
@@ -144,8 +144,8 @@ img {
   @extend %container;
 }
 .header {
-  padding-top: $gutter;
-  padding-bottom: $gutter;
+  padding-top: $gutter*0.75;
+  padding-bottom: $gutter*0.75;
   position: relative;
   @include max-width($max-width--sm) {
     text-align: center;
@@ -211,7 +211,6 @@ img {
 }
 .header__home {
   position: absolute;
-  @include translate3d(0,-7.5%,0);
   @include max-width($max-width--sm) {
     position: static;
     display: inline-block;
@@ -227,7 +226,7 @@ img {
   @include margin-center;
 }
 .header__title {
-  margin-top: $v*3.5;
+  margin-top: $v*4;
   margin-bottom: $v*0.5;
   max-width: $max-width--header__title;
   padding-left: $width--logo * 1.333333;
@@ -563,7 +562,7 @@ img {
 }
 .love__tweet__card {
   background-color: $color--white;
-  border-radius: $border-radius--base;
+  // border-radius: $border-radius--base;
   width: 100%;
   padding: $gutter*0.666667 $gutter*0.666667 $gutter*1.5;
   position: relative;
@@ -675,6 +674,7 @@ img {
 }
 .article__meta {
   color: $color--gray-dark;
+  font-size: $font-size--small;
   font-family: $font-family--sans-serif-medium;
   margin-top: $v*1.5;
 }
@@ -895,8 +895,8 @@ img {
 // -----
 
 .icon {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.3rem;
   vertical-align: middle;
   @include translate3d(0,-0.1rem,0);
