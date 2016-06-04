@@ -9,8 +9,8 @@ $color--red:    #E56134;
 $color--purple: #9961C9;
 $color--leaf:   #8DCF3F;
 
-$color--gray-darkest:  #323C4C;
-$color--gray-darker:   #586373;
+$color--gray-darkest:  #374252;
+$color--gray-darker:   #5A6575;
 $color--gray-dark:     #8C95A3;
 $color--gray:          #B1B8C4;
 $color--gray-light:    #D3D8E0;
@@ -21,10 +21,11 @@ $color--gray-lightest: #F7F8FA;
 // ----------
 
 $font-size--html:    20px;
-$font-size--html-sm: 17px;
+$font-size--html-sm: 18px;
 
-$font-size--large: 1.166667em;
-$font-size--small: 0.916667em;
+$font-size--large:   1.166667em;
+$font-size--small:   0.916667em;
+$font-size--smaller: 0.833333em;
 
 // TO DO: change these when using real hosted fonts
 $font-family--sans-serif:        'Objektiv Mk2', sans-serif;
@@ -57,7 +58,7 @@ $max-width--sm: ($min-width--md - 1);
 $max-width--md: ($min-width--lg - 1);
 $max-width--lg: ($min-width--xl - 1);
 
-$max-width--container--narrow: 720px;
+$max-width--container--narrow: 740px;
 $max-width--container--wide:   $min-width--xl;
 $max-width--container--wider:  1600px;
 $max-width--header__title:     $min-width--lg;

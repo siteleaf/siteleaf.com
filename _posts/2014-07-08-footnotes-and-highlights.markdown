@@ -8,7 +8,7 @@ tags:
 hero: 
 ---
 
-In addition to the [Markdown basics](http://daringfireball.net/projects/markdown/syntax), Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a ==highlight== and also a footnote[^1]. 
+In addition to the [Markdown basics](http://daringfireball.net/projects/markdown/syntax), Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a <mark>highlight</mark> and also a footnote[^1]. 
 
 [^1]: This is a footnote in Siteleaf!
 
