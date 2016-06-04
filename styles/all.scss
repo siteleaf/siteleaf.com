@@ -311,29 +311,6 @@ mark {
     max-width: 28rem;
   }
 }
-.browser {
-  // background: #eee;
-  // border: 3px solid $color--gray-darkest;
-  // border-radius: 6px;
-  // padding-top: 1.6rem;
-  // overflow: hidden;
-  // position: relative;
-  // img {
-  //   border-top: 3px solid $color--gray-darkest;
-  // }
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   height: 1.6rem;
-  //   width: 100%;
-  //   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA4MCAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgODAgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMjkzOTUzO30KCS5zdDF7ZmlsbDojRTU2MTM0O30KCS5zdDJ7ZmlsbDojMjVCRUExO30KCS5zdDN7ZmlsbDojRkJCQzA5O30KPC9zdHlsZT4KPHRpdGxlPk92YWwgMjEyIENvcHk8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KPGc+Cgk8Y2lyY2xlIGlkPSJwYXRoLTFfMl8iIGNsYXNzPSJzdDAiIGN4PSIxNiIgY3k9IjE2IiByPSI4Ii8+CjwvZz4KPGNpcmNsZSBpZD0icGF0aC0xXzZfIiBjbGFzcz0ic3QxIiBjeD0iMTYiIGN5PSIxNiIgcj0iNSIvPgo8Zz4KCTxjaXJjbGUgaWQ9InBhdGgtMV83XyIgY2xhc3M9InN0MCIgY3g9IjY0IiBjeT0iMTYiIHI9IjgiLz4KPC9nPgo8Y2lyY2xlIGlkPSJwYXRoLTFfMV8iIGNsYXNzPSJzdDIiIGN4PSI2NCIgY3k9IjE2IiByPSI1Ii8+CjxnPgoJPGNpcmNsZSBpZD0icGF0aC0xXzlfIiBjbGFzcz0ic3QwIiBjeD0iNDAiIGN5PSIxNiIgcj0iOCIvPgo8L2c+CjxjaXJjbGUgaWQ9InBhdGgtMV84XyIgY2xhc3M9InN0MyIgY3g9IjQwIiBjeT0iMTYiIHI9IjUiLz4KPC9zdmc+Cg==');
-  //   background-repeat: no-repeat;
-  // }
-
-  
-}
 // intro
 .intro__subsections {
   @extend %row;
@@ -455,7 +432,7 @@ mark {
     &:hover {
       opacity: $opacity--hover;
     }
-  }
+  } // TO DO: generalize <a> styles
 }
 .develop__subsection {
   @include flexbox;
@@ -554,6 +531,13 @@ mark {
   text-align: left;
   margin-top: $v*1;
   margin-bottom: $v*2;
+  a {
+    font-family: $font-family--sans-serif-bold;
+    text-decoration: underline;
+    &:hover {
+      opacity: $opacity--hover;
+    }
+  }
 }
 .launch__image {
   @include margin-center;

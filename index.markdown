@@ -95,11 +95,11 @@ features:
   unpad: true
   image: "/uploads/home__launch.svg"
   body: |-
-    We believe that content management shouldn’t be hard. That you should be able to host your website wherever you want. That websites should be able to outlive their CMS. Our tools should be simplified, not dumbed down.
+    We believe that content management shouldn’t be hard. That you should be able to host your website wherever you want. That websites should be able to outlive their CMS. Our tools should be simplified, but never dumbed down.
 
-    Static sites are fast, secure, and keep visitors happy.
+    Static sites are faster, more secure, and keep visitors happy. In 2009, Amazon demonstrated that [every 100 milliseconds of latency resulted in a 1% loss in sales](http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales).
 
-    Your content and code are completely portable, too, so you’ll never be locked into a CMS again. A fast, open web is a better web.
+    And unlike legacy CMSs like WordPress and Drupal, your website’s entire source code and content are completely portable, so you’ll never be locked into a service again. An Open Web is a better web.
 - title: What people say
   handle: love
   background: light-gray
