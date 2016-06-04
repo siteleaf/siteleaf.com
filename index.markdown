@@ -80,8 +80,9 @@ features:
   image: "/uploads/home__free.svg"
   subsections:
   - title: Publish anywhere
-    body: Generate static sites to [Amazon S3](https://aws.amazon.com/s3/), [GitHub Pages](https://pages.github.com/), [Rackspace](https://www.rackspace.com/), or FTP using
-      your own domain name.
+    body: Generate static sites to [Amazon S3](https://aws.amazon.com/s3/), [GitHub
+      Pages](https://pages.github.com/), [Rackspace](https://www.rackspace.com/),
+      or FTP using your own domain name.
   - title: Import and export
     body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/)
       from WordPress, Drupal, Tumblr, Ghost, and more.
