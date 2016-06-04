@@ -33,11 +33,13 @@ features:
   subsections:
   - title: Collaborate
     handle: collaborate
-    body: Invite your client or team to create and edit content. Set them as Admin, Publisher, or Writer.
+    body: Invite your client or team to create and edit content. Set them as Admin,
+      Publisher, or Writer.
     image: "/uploads/home__manage--collaborate.png"
   - title: Smart text editor
     handle: edit
-    body: Choose between a visual editor or just plain Markdown. Drag and drop images or even entire text files.
+    body: Choose between a visual editor or just plain Markdown. Drag and drop images
+      or even entire text files.
     image: "/uploads/home__manage--edit.png"
   - title: Preview before you publish
     handle: preview
@@ -46,7 +48,8 @@ features:
     image: "/uploads/home__manage--preview.png"
   - title: Powerful content
     handle: customize
-    body: Customize for your content, with document collections, advanced metadata, and custom permalinks.
+    body: Customize for your content, with document collections, advanced metadata,
+      and custom permalinks.
     image: "/uploads/home__manage--customize.png"
 - title: Develop with tools you already love
   handle: develop
@@ -77,11 +80,14 @@ features:
   image: "/uploads/home__free.svg"
   subsections:
   - title: Publish anywhere
-    body: Generate static sites to Amazon S3, GitHub Pages, Rackspace, or FTP using your own domain name.
+    body: Generate static sites to Amazon S3, GitHub Pages, Rackspace, or FTP using
+      your own domain name.
   - title: Import and export
-    body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/) from WordPress, Drupal, Tumblr, Ghost, and more.
+    body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/)
+      from WordPress, Drupal, Tumblr, Ghost, and more.
   - title: API for your content
-    body: Access your data and integrate into other websites and apps. Automate tasks with [Zapier](https://zapier.com/zapbook/siteleaf/).
+    body: Access your data and integrate into other websites and apps. Automate tasks
+      with [Zapier](https://zapier.com/zapbook/siteleaf/).
 - title: Towards a better web
   handle: launch
   background: green
