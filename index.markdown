@@ -4,7 +4,7 @@ layout: index
 subtitle: |-
   Siteleaf is a content management system designed for a better web.
 
-  <a href="https://player.vimeo.com/video/69301083" class="home__more white"><svg class="icon icon--play white" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve"><g><path d="M21.3,12c0,5.1-4.2,9.3-9.3,9.3S2.7,17.1,2.7,12S6.9,2.7,12,2.7S21.3,6.9,21.3,12z M20,12c0-4.4-3.6-8-8-8s-8,3.6-8,8 s3.6,8,8,8S20,16.4,20,12z M9.3,8l7.3,4l-7.3,4V8z M10.7,13.7l3.2-1.7l-3.2-1.7V13.7z"/></g></svg>Watch the intro</a>
+  <a href="https://player.vimeo.com/video/69301083" class="videoLink white"><svg class="icon icon--play white" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve"><g><path d="M21.3,12c0,5.1-4.2,9.3-9.3,9.3S2.7,17.1,2.7,12S6.9,2.7,12,2.7S21.3,6.9,21.3,12z M20,12c0-4.4-3.6-8-8-8s-8,3.6-8,8 s3.6,8,8,8S20,16.4,20,12z M9.3,8l7.3,4l-7.3,4V8z M10.7,13.7l3.2-1.7l-3.2-1.7V13.7z"/></g></svg>Watch the intro</a>
 background: yellow
 button:
   title: Get started
@@ -28,7 +28,7 @@ features:
 - title: Content management for the whole team
   handle: manage
   background: white
-  width: full
+  width: wide
   color: blue
   subsections:
   - title: Collaborate
@@ -54,7 +54,7 @@ features:
 - title: Develop with tools you already love
   handle: develop
   background: light-gray
-  width: full
+  width: wide
   subsections:
   - title: Built on open source
     body: |-

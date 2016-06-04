@@ -172,9 +172,9 @@ mark {
   margin-bottom: $v*0.666667;
 }
 .footer__madeBy {
-  color: $color--gray;
+  color: $color--gray-dark;
   a:hover {
-    color: $color--white;
+    text-decoration: underline;
   }
 }
 .footerWrap {
@@ -197,10 +197,19 @@ mark {
 .footer__link {
   @extend %button;
 }
+.header__link:not(.header__link--signup),
+.footer__link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 .header__link--signup {
   background: $color--leaf;
   color: $color--white;
   margin-left: 0.5em;
+  &:hover {
+    background: darken($color--leaf, $darken--button);
+  }
 }
 .header__items {
   float: right;
@@ -265,15 +274,17 @@ mark {
 // home
 // ----
 
+.videoLink {
+  &:hover {
+    opacity: $opacity--hover;
+  }
+}
 .featureWrap {
   padding-top: $v*4;
   padding-bottom: $v*4;
 }
 .featureWrap--noPaddingBottom {
   padding-bottom: 0;
-}
-.featureWrap--withButton {
-  padding-bottom: $v*4;
 }
 .featureWrap.bg--custom {
   padding-top: $v;
@@ -284,13 +295,10 @@ mark {
   }
 }
 .feature {
-  text-align: center; // TO DO: change this to selectively center
+  text-align: center;
   p {
     @extend %mk3;
   }
-}
-.feature--full {
-  @extend %container;
 }
 .feature--wide {
   @extend %container--wide;
@@ -303,13 +311,13 @@ mark {
   background: $color--blue;
   color: $color--white;
   margin-top: $v;
+  &:hover {
+    background: darken($color--blue, $darken--button);
+  }
 }
 .feature__title {
   @include margin-center;
-  .feature.manage &,
-  .feature.develop & {
-    max-width: 28rem;
-  }
+  max-width: 30rem;
 }
 // intro
 .intro__subsections {
@@ -329,47 +337,59 @@ mark {
 }
 .intro__subsection__image {
   @include margin-center;
-  margin-bottom: $v;
+  margin-bottom: $v; // TO DO: tweak once images are in
 }
 // manage
-.manage {
-  max-width: 1480px;
-}
-.manage__content {
+%twoUpParent {
   @include flexbox;
   @include align-items(center);
-  @include justify-content(space-around);
-  text-align: left;
-  margin-top: $v*3;
   @include max-width($max-width--md) {
     @include flex-wrap(wrap);
+  }
+  margin-top: $v*3;
+  @include max-width($max-width--md) {
     margin-top: $v*2;
   }
 }
-.manage__tabs {
-  width: 45%;
-  max-width: 28rem;
-  padding-right: $gutter*2;
+%twoUpChild--text {
+  width: 40%;
+  max-width: 22rem;
   @include max-width($max-width--md) {
+    width: 100%;
+    max-width: none;
     margin-top: $v*2;
+  }
+}
+%twoUpChild--figure {
+  max-width: 1024px;
+  width: 80%;
+  @include max-width($max-width--md) {
     max-width: none;
     width: 100%;
-    padding-right: 0;
   }
 }
-.manage__screenshots {
-  @include order(1);
-  max-width: 1030px;
-  width: 80%;
-  margin-right: -14rem;
-  position: relative;
+.manage__content {
+  @extend %twoUpParent;
+  text-align: left;
+}
+.manage__tabs {
+  @extend %twoUpChild--text;
+  margin-right: $gutter*2;
+  @include max-width($max-width--lg) {
+    margin-right: $gutter;
+  }
   @include max-width($max-width--md) {
-    @include order(0);
-    width: 100%;
     margin-right: 0;
   }
-  position: relative;
-  height: 100%;
+}
+.manage__figures {
+  @extend %twoUpChild--figure;
+  @include order(1);
+  margin-right: -15rem;
+  @include max-width($max-width--md) {
+    @include order(0);
+    margin-right: 0;
+  }
 }
 @include keyframes(fadeInFromRight) {
   0% {
@@ -391,7 +411,7 @@ mark {
     opacity: 1;
   }
 }
-.manage__screenshot {
+.manage__figure {
   @extend %browser;
   opacity: 0;
   display: none;
@@ -424,27 +444,12 @@ mark {
   }
 }
 // develop
-.develop {
-  max-width: 1480px; // TO DO: generalize styles with manage section
-  a {
-    font-family: $font-family--sans-serif-bold;
-    text-decoration: underline;
-    &:hover {
-      opacity: $opacity--hover;
-    }
-  } // TO DO: generalize <a> styles
-}
 .develop__subsection {
-  @include flexbox;
-  @include align-items(center);
-  @include justify-content(space-around);
-  text-align: left;
-  margin-top: $v*3;
-  margin-bottom: $v*3;
-  @include max-width($max-width--md) {
-    @include flex-wrap(wrap);
-    margin-top: $v*2;
+  @extend %twoUpParent;
+  &:nth-of-type(odd) {
+    @include justify-content(flex-end);
   }
+  text-align: left;
   h3 {
     font-size: 2em;
     @include max-width($max-width--sm) {
@@ -452,43 +457,42 @@ mark {
     }
   }
 }
-.develop__subsection__text {
-  width: 45%;
-  max-width: 28rem;
-  @include max-width($max-width--md) {
-    width: 100%;
-    max-width: none;
-  }
+.develop__subsection__content {
+  @extend %twoUpChild--text;
   .develop__subsection:nth-of-type(odd) & {
-    padding-left: $gutter*2;
+    margin-left: $gutter*2;
+    @include max-width($max-width--lg) {
+      margin-left: $gutter;
+    }
     @include max-width($max-width--md) {
-      padding-left: 0;
+      margin-left: 0;
     }
   }
   .develop__subsection:nth-of-type(even) & {
-    padding-right: $gutter*2;
-    @include max-width($max-width--md) {
-      padding-right: 0;
+    margin-right: $gutter*2;
+    @include max-width($max-width--lg) {
+      margin-right: $gutter;
     }
+    @include max-width($max-width--md) {
+      margin-right: 0;
+    }
+  }
+  a {
+    @extend %link--bold;
   }
 }
 .develop__subsection__figure {
-  width: 80%;
-  max-width: 1030px;
-  @include max-width($max-width--md) {
-    width: 100%;
-    max-width: none;
-    margin-bottom: $v*1.5;
-  }
+  @extend %browser;
+  @extend %twoUpChild--figure;
   .develop__subsection:nth-of-type(odd) & {
-    margin-left: -14rem;
+    margin-left: -15rem;
     @include max-width($max-width--md) {
       margin-left: 0;
     }
   }
   .develop__subsection:nth-of-type(even) & {
     @include order(1);
-    margin-right: -14rem;
+    margin-right: -15rem;
     @include max-width($max-width--md) {
       @include order(0);
       margin-right: 0;
@@ -501,15 +505,6 @@ mark {
   max-width: 468px;
 }
 // free
-.free {
-  a {
-    font-family: $font-family--sans-serif-bold;
-    text-decoration: underline;
-    &:hover {
-      opacity: $opacity--hover;
-    }
-  }
-}
 .free__subsections {
   @include clearfix;
   @extend %row;
@@ -521,10 +516,19 @@ mark {
   @include max-width($max-width--sm) {
     width: 100%;
   }
+  a {
+    @extend %link--bold;
+  }
 }
 .free__image {
   margin-top: $v*3;
   margin-bottom: $v*3;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  @include max-width($max-width--md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 // launch
 .launch__content {
@@ -532,11 +536,7 @@ mark {
   margin-top: $v*1;
   margin-bottom: $v*2;
   a {
-    font-family: $font-family--sans-serif-bold;
-    text-decoration: underline;
-    &:hover {
-      opacity: $opacity--hover;
-    }
+    @extend %link--bold;
   }
 }
 .launch__image {
@@ -562,7 +562,6 @@ mark {
     width: 50%;
   }
   @include max-width($max-width--sm) {
-    font-size: $font-size--small;
     width: 100%;
   }
 }
@@ -570,7 +569,7 @@ mark {
   background-color: $color--white;
   border-radius: $border-radius--base;
   width: 100%;
-  padding: $gutter*0.75 $gutter*0.75 $gutter*0.5;
+  padding: $gutter*0.75;
   position: relative;
 }
 .love__tweet__header {
@@ -589,11 +588,11 @@ mark {
   display: block;
   color: $color--gray;
 }
-.love__tweet__words {
+.love__tweet__content {
   a {
     color: #05A0F6; // Twitter blue
     &:hover {
-      opacity: $opacity--hover;
+      text-decoration: underline;
     }
   }
 }
@@ -652,11 +651,7 @@ mark {
     list-style-type: disc;
   }
   a {
-    font-family: $font-family--sans-serif-bold;
-    text-decoration: underline;
-    &:hover {
-      opacity: $opacity--hover;
-    }
+    @extend %link--bold;
   }
 }
 .article__content__more {
@@ -688,6 +683,27 @@ mark {
   @extend %button;
   background: $color--gray;
   color: $color--white;
+  &.bg--blue:hover {
+    background: darken($color--blue, $darken--button);
+  }
+  &.bg--green:hover {
+    background: darken($color--green, $darken--button);
+  }
+  &.bg--yellow:hover {
+    background: darken($color--yellow, $darken--button);
+  }
+  &.bg--red:hover {
+    background: darken($color--red, $darken--button);
+  }
+  &.bg--purple:hover {
+    background: darken($color--purple, $darken--button);
+  }
+  &.bg--dark-gray:hover {
+    background: darken($color--gray-darkest, $darken--button);
+  }
+  &.bg--gray:hover {
+    background: darken($color--gray-dark, $darken--button);
+  }
 }
 
 // blog
@@ -701,6 +717,9 @@ mark {
   @extend %button--large;
   background: $color--gray;
   color: $color--white;
+  &:hover {
+    background: darken($color--gray, $darken--button);
+  }
 }
 
 // gallery

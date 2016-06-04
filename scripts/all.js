@@ -89,7 +89,7 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 
   var $body = $('body'),
     $tabs = $('.manage__tab'),
-    $screenshots = $('.manage__screenshot'),
+    $screenshots = $('.manage__figure'),
     activeClass = 'active',
     shownClass = 'shown';
 

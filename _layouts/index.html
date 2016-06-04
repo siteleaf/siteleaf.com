@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for feature in page.features %}
-  <div class="featureWrap{% if feature.button %} featureWrap--withButton{% endif %}{% if feature.unpad %} featureWrap--noPaddingBottom{% endif %} bg--{{ feature.background}}">
+  <div class="featureWrap{% if feature.unpad %} featureWrap--noPaddingBottom{% endif %} bg--{{ feature.background}}">
     <section class="feature feature--{{ feature.width }} {{ feature.handle }}">
       {% if feature.title %}<h2 class="feature__title">{{ feature.title }}</h2>{% endif %}
       {% case feature.handle %}
@@ -19,9 +19,9 @@ layout: default
           </div>
         {% when 'manage' %}
           <div class="manage__content">
-            <div class="manage__screenshots">
+            <div class="manage__figures">
               {% for subsection in feature.subsections %}
-                <figure class="manage__screenshot{% if forloop.first == true %} shown{% endif %}" data-handle="{{ subsection.handle }}">
+                <figure class="manage__figure{% if forloop.first == true %} shown{% endif %}" data-handle="{{ subsection.handle }}">
                   <img src="{{ subsection.image }}" />
                 </figure>
               {% endfor %}
@@ -41,7 +41,7 @@ layout: default
               <figure class="develop__subsection__figure">
                 <img src="{{ subsection.image }}" />
               </figure>
-              <div class="develop__subsection__text">
+              <div class="develop__subsection__content">
                 <h3 class="{{ subsection.color }}">{{ subsection.title }}</h3>
                 {{ subsection.body | markdownify }}
                 {% if subsection.logos %}
@@ -79,7 +79,7 @@ layout: default
                       </div>
                     </div>
                   </a>
-                  <div class="love__tweet__words">{{ tweet.body | markdownify }}</div>
+                  <div class="love__tweet__content">{{ tweet.body | markdownify }}</div>
                 </div>
               </li>
             {% endfor %}

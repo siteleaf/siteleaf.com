@@ -57,6 +57,13 @@
 // miscellaneous
 // -------------
 
+%link--bold {
+  font-family: $font-family--sans-serif-bold;
+  text-decoration: underline;
+  &:hover {
+    opacity: $opacity--hover;
+  }
+}
 %browser {
   &:before {
     content: '';

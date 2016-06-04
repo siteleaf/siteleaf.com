@@ -3,7 +3,7 @@ $(function(){
 
   var $body = $('body'),
     $tabs = $('.manage__tab'),
-    $screenshots = $('.manage__screenshot'),
+    $screenshots = $('.manage__figure'),
     activeClass = 'active',
     shownClass = 'shown';
 
