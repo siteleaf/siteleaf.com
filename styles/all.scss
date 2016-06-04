@@ -525,6 +525,8 @@ mark {
 .free__image {
   margin-top: $v*3;
   margin-bottom: $v*3;
+  @include margin-center;
+  max-width: 1020px;
 }
 // launch
 .launch__content {
