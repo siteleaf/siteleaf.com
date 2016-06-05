@@ -289,7 +289,11 @@ mark {
 }
 .featureWrap.bg--custom {
   padding-top: $v;
-  background: linear-gradient(180deg, $color--yellow 8.5rem, $color--gray-lightest 8.5rem, $color--gray-lightest);
+  background: linear-gradient(180deg, $color--yellow 12rem, $color--gray-lightest 12rem, $color--gray-lightest);
+  @include max-width($max-width--lg) {
+    padding-top: 0;
+    background: linear-gradient(180deg, $color--yellow 8rem, $color--gray-lightest 8rem, $color--gray-lightest);
+  }
   @include max-width($max-width--sm) {
     padding-top: $v*2;
     background: $color--gray-lightest;
@@ -338,7 +342,11 @@ mark {
 }
 .intro__subsection__image {
   @include margin-center;
+  max-width: 300px;
   margin-bottom: $v; // TO DO: tweak once images are in
+  @include max-width($max-width--sm) {
+    max-width: 240px;
+  }
 }
 // manage
 %twoUpParent {

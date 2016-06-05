@@ -18,13 +18,13 @@ features:
   subsections:
   - title: Develop with existing tools
     body: Code offline with Jekyll, sync with GitHub
-    image: "/uploads/home__intro--develop.png"
+    image: "/uploads/home__intro--raccoon.svg"
   - title: Edit in the cloud
     body: Easy for non-technical writers and producers
-    image: "/uploads/home__intro--manage.png"
+    image: "/uploads/home__intro--fox.svg"
   - title: Publish anywhere
     body: Generate static sites to S3, GitHub Pages, FTP
-    image: "/uploads/home__intro--publish.png"
+    image: "/uploads/home__intro--owl.svg"
 - title: Content management for the whole team
   handle: manage
   background: white
