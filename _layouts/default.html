@@ -4,30 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo %}
 
-    <title>{% unless page.url == '/' %}{{ page.title }} – {% endunless %}{{ site.title }}</title>
-    <meta name="og:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}" />
-
-    <meta name="og:site-name" content="Siteleaf" />
-    <meta name="twitter:site" content="@siteleaf" />
-
-    <meta name="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-
-    <!-- TO DO: use page.content | markdownify | strip_html | strip_newlines | truncate: 300 -->
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.description }}{% endif %}" />
-
-    <!-- TO DO -->
-    <!-- <meta name="og:image" content="/assets/og-image.png" />
-    <meta name="twitter:image:src" content="/assets/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" /> -->
-
-    {% if page.url contains '/plan' %}
-      <link rel="stylesheet" href="/styles/plan-summary-cards.css" />
-    {% endif %}
+    {% if page.url == '/plans/' %}<link rel="stylesheet" href="/styles/plan-summary-cards.css" />{% endif %}
 
     <link rel="stylesheet" href="/styles/all.css" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
@@ -75,11 +54,7 @@
     {% include header.html page=page_class %}
     {{ content }}
     {% include footer.html %}
-
-    {% if page.url contains '/plan' %}
-      <script src="/scripts/plan-summary-cards.js"></script>
-    {% endif %}
-
+    {% if page.url == '/plans/' %}<script src="/scripts/plan-summary-cards.js"></script>{% endif %}
     <script src="/scripts/all.js"></script>
     {% if site.google_analytics %}
       <script type="text/javascript">

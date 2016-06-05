@@ -1,6 +1,11 @@
-Siteleaf template for `v2.siteleaf.com`, built on Siteleaf v2, which will eventually become the new `siteleaf.com`.
-
 ## Local development
+
+Install gems:
+
+```
+bundle install
+```
+
 
 Compile and watch for changes to JavaScript in `_src`:
 

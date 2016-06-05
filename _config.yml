@@ -28,6 +28,8 @@ exclude:
 - README*
 - node_modules
 - ".gitignore"
+gems:
+  - jekyll-seo-tag
 markdown: kramdown
 kramdown:
   input: GFM
