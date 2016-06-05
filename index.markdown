@@ -89,7 +89,7 @@ features:
   - title: API for your content
     body: Access your data and integrate into other websites and apps. Automate tasks
       with [Zapier](https://zapier.com/zapbook/siteleaf/).
-- title: Towards a better web
+- title: Launch better sites
   handle: launch
   background: green
   width: narrow
@@ -101,7 +101,7 @@ features:
     Static sites are faster, more secure, and keep visitors happy. In 2009, Amazon demonstrated that [every 100 milliseconds of latency resulted in a 1% loss in sales](http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales).
 
     And unlike legacy CMSs like WordPress and Drupal, your website’s entire source code and content are completely portable, so you won’t be locked into a particular service. An Open Web is a better web.
-- title: What people say
+- title: Join thousands of happy customers
   handle: love
   background: light-gray
   width: wide
