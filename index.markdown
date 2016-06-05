@@ -130,8 +130,8 @@ features:
   - name: Dan Mall
     handle: "@danielmall"
     avatar: "/uploads/avatar--danielmall.jpeg"
-    body: "That's what's deceiving about
-      [@siteleaf](https://twitter.com/siteleaf): looks simple, but it's pretty powerful."
+    body: 'That''s what''s deceiving about [@siteleaf](https://twitter.com/siteleaf):
+      looks simple, but it''s pretty powerful.'
     link: https://twitter.com/danielmall/status/551085989364776960
     visible: true
   - name: Nick Beattie
