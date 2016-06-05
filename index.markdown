@@ -116,7 +116,8 @@ features:
   - name: Anna Zocher
     handle: "@annazocher"
     avatar: "/uploads/avatar--annazocher.jpeg"
-    body: "Spending today converting sites to #Liquid to show client how great [@siteleaf](https://twitter.com/siteleaf) is going to be use."
+    body: 'Spending today converting sites to #Liquid to show client how great [@siteleaf](https://twitter.com/siteleaf)
+      is going to be use.'
     link: https://twitter.com/annazocher/status/442702234984656896
     visible: true
   - name: Casey Gollan
@@ -129,7 +130,8 @@ features:
   - name: Dan Mall
     handle: "@danielmall"
     avatar: "/uploads/avatar--danielmall.jpeg"
-    body: "@mezzoblue: I initially thought that too. That's what's deceiving about [@siteleaf](https://twitter.com/siteleaf): looks simple, but it's pretty powerful."
+    body: "@mezzoblue: I initially thought that too. That's what's deceiving about
+      [@siteleaf](https://twitter.com/siteleaf): looks simple, but it's pretty powerful."
     link: https://twitter.com/danielmall/status/551085989364776960
     visible: true
   - name: Nick Beattie
@@ -142,7 +144,8 @@ features:
   - name: Jon Dueck
     handle: "@jondueck"
     avatar: https://pbs.twimg.com/profile_images/636404759239393280/R2zCmsun_400x400.jpg
-    body: Always amazed by the [@Siteleaf](https://twitter.com/siteleaf) team’s quick responses and willingness to help. Customer service done right.
+    body: Always amazed by the [@Siteleaf](https://twitter.com/siteleaf) team’s quick
+      responses and willingness to help. Customer service done right.
     link: https://twitter.com/jondueck/status/443241912112128000
     visible: false
   - name: Max Murdoch
@@ -170,31 +173,38 @@ features:
   - name: John Choura Jr.
     handle: "@johnchourajr"
     avatar: "/uploads/avatar--johnchourajr.jpg"
-    body: I just have to say, building websites with [@siteleaf](https://twitter.com/siteleaf) is great. That is all.
+    body: I just have to say, building websites with [@siteleaf](https://twitter.com/siteleaf)
+      is great. That is all.
     link: https://twitter.com/johnchourajr/status/571840493727948800
     visible: false
   - name: Leigh-Ann Bartsch
     handle: "@labartsch"
     avatar: "/uploads/avatar--labartsch.jpeg"
-    body: "I've been using [@siteleaf](https://twitter.com/siteleaf) for 15 minutes and I'm already impressed. Simple set-up, a clear, concise interface, and amazing customer service!"
+    body: I've been using [@siteleaf](https://twitter.com/siteleaf) for 15 minutes
+      and I'm already impressed. Simple set-up, a clear, concise interface, and amazing
+      customer service!
     link: https://twitter.com/labartsch/status/453249739879112704
     visible: false
   - name: Chris Bernardi
     handle: "@simplyand"
     avatar: "/uploads/avatar--simplyand.png"
-    body: So, so happy with [@siteleaf](https://twitter.com/siteleaf)! Client needs grew faster than I had anticipated and with only a few lines of code changed, needs were met.
+    body: So, so happy with [@siteleaf](https://twitter.com/siteleaf)! Client needs
+      grew faster than I had anticipated and with only a few lines of code changed,
+      needs were met.
     link: https://twitter.com/simplyand/status/469298011550781440
     visible: false
   - name: Randy J. Hunt
     handle: "@randyjhunt"
     avatar: "/uploads/avatar--randyjhunt.jpg"
-    body: Spent a good part of Sunday with [@siteleaf](https://twitter.com/siteleaf), and have to say, the simplicity continues to do it for me.
+    body: Spent a good part of Sunday with [@siteleaf](https://twitter.com/siteleaf),
+      and have to say, the simplicity continues to do it for me.
     link: https://twitter.com/randyjhunt/status/475987996387594240
     visible: false
   - name: Toby Shorin
     handle: "@tobyshorin"
     avatar: "/uploads/avatar--tobyshorin.jpg"
-    body: "[@siteleaf](https://twitter.com/siteleaf)'s Generate Preview feature is astoundingly good"
+    body: "[@siteleaf](https://twitter.com/siteleaf)'s Generate Preview feature is
+      astoundingly good"
     link: https://twitter.com/tobyshorin/status/733330657234030592
     visible: false
   logos:
