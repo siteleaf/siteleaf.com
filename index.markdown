@@ -122,7 +122,7 @@ features:
     visible: true
   - name: Casey Gollan
     handle: "@CaseyG"
-    avatar: "/uploads/avatar--CaseyG.jpg"
+    avatar: "/uploads/avatar--CaseyG.jpeg"
     body: Playing with [@siteleaf](https://twitter.com/siteleaf). As nimble to build
       with as Jekyll for me. Easier to use than Wordpress for my client.
     link: https://twitter.com/CaseyG/status/358286369962995712
