@@ -596,6 +596,7 @@ mark {
   margin-top: -$v*0.05;
   display: block;
   color: $color--gray;
+  @extend %mk3;
 }
 .love__tweet__content {
   a {

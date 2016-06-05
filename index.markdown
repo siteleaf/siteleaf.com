@@ -130,7 +130,7 @@ features:
   - name: Dan Mall
     handle: "@danielmall"
     avatar: "/uploads/avatar--danielmall.jpeg"
-    body: "@mezzoblue: I initially thought that too. That's what's deceiving about
+    body: "That's what's deceiving about
       [@siteleaf](https://twitter.com/siteleaf): looks simple, but it's pretty powerful."
     link: https://twitter.com/danielmall/status/551085989364776960
     visible: true
@@ -140,6 +140,13 @@ features:
     body: "[@siteleaf](https://twitter.com/siteleaf) is going to be my CMS of choice,
       no doubt. Also, thanks for speedy email back about questions."
     link: https://twitter.com/nicktweattie/status/432199961443581952
+    visible: false
+  - name: Jonnie Hallman
+    handle: "@destroytoday"
+    avatar: "/uploads/avatar--destroytoday.jpeg"
+    body: Starting building my new website on [@siteleaf](https://twitter.com/siteleaf)
+      v2—its Github syncing and Jekyll-compatibility are absolutely killer.
+    link: https://twitter.com/destroytoday/status/672962921903820801
     visible: true
   - name: Jon Dueck
     handle: "@jondueck"
@@ -156,13 +163,6 @@ features:
       to work with. Never again, Wordpress. Never ever.
     link: https://twitter.com/maxalfiemurdoch/status/492342773560131584
     visible: true
-  - name: Jonnie Hallman
-    handle: "@destroytoday"
-    avatar: "/uploads/avatar--destroytoday.jpeg"
-    body: Starting building my new website on [@siteleaf](https://twitter.com/siteleaf)
-      v2—its Github syncing and Jekyll-compatibility are absolutely killer.
-    link: https://twitter.com/destroytoday/status/672962921903820801
-    visible: false
   - name: Ryan Glover
     handle: "@rglover"
     avatar: "/uploads/avatar--rglover.jpg"
