@@ -29,7 +29,7 @@ exclude:
 - node_modules
 - ".gitignore"
 gems:
-  - jekyll-seo-tag
+- jekyll-seo-tag
 markdown: kramdown
 kramdown:
   input: GFM
