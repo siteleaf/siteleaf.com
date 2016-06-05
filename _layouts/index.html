@@ -66,22 +66,24 @@ layout: default
         {% when 'love' %}
           <ul class="love__tweets">
             {% for tweet in feature.tweets %}
-              <li class="love__tweet">
-                <div class="love__tweet__card">
-                  <a href="{{ tweet.link }}">
-                    <div class="love__tweet__header">
-                      <div class="love__tweet__header__item">
-                        <img src="{{ tweet.avatar }}" class="love__tweet__avatar" />
+              {% if tweet.visible %}
+                <li class="love__tweet">
+                  <div class="love__tweet__card">
+                    <a href="{{ tweet.link }}">
+                      <div class="love__tweet__header">
+                        <div class="love__tweet__header__item">
+                          <img src="{{ tweet.avatar }}" class="love__tweet__avatar" />
+                        </div>
+                        <div class="love__tweet__header__item">
+                          <h5 class="love__tweet__name">{{ tweet.name }}</h5>
+                          <small class="love__tweet__handle">{{ tweet.handle }}</small>
+                        </div>
                       </div>
-                      <div class="love__tweet__header__item">
-                        <h5 class="love__tweet__name">{{ tweet.name }}</h5>
-                        <small class="love__tweet__handle">{{ tweet.handle }}</small>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="love__tweet__content">{{ tweet.body | markdownify }}</div>
-                </div>
-              </li>
+                    </a>
+                    <div class="love__tweet__content">{{ tweet.body | markdownify }}</div>
+                  </div>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
           <img src="{{ feature.logos.image }}" alt="{{ feature.logos.title }}" class="love__logos" />

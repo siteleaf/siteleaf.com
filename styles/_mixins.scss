@@ -24,11 +24,6 @@
   text-overflow: ellipsis;
 }
 
-// @mixin relativize($y: 0) {
-//   position: relative;
-//   top: $y;
-// } // TO DO: remove if unused
-
 @mixin margin-center {
   margin-left: auto;
   margin-right: auto;
