@@ -36,16 +36,16 @@ features:
     body: Invite your client or team to create and edit content. Set them as Admin,
       Publisher, or Writer.
     image: "/uploads/home__manage--collaborate.png"
+  - title: Preview before you publish
+    handle: preview
+    body: Preview changes before they go live. Then publish with one click whenever
+      you’re ready.
+    image: "/uploads/home__manage--preview.svg"
   - title: Smart text editor
     handle: edit
     body: Choose between a visual editor or just plain Markdown. Drag and drop images
       or even entire text files.
     image: "/uploads/home__manage--edit.png"
-  - title: Preview before you publish
-    handle: preview
-    body: Preview changes before they go live. Then publish with one click whenever
-      you’re ready.
-    image: "/uploads/home__manage--preview.png"
   - title: Powerful content
     handle: customize
     body: Customize for your content, with document collections, advanced metadata,

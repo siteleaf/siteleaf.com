@@ -458,6 +458,11 @@ mark {
     }
   }
 }
+.develop__subsection + .develop__subsection {
+  @include max-width($max-width--sm) {
+    margin-top: $v*3;
+  }
+}
 .develop__subsection__content {
   @extend %twoUpChild--text;
   .develop__subsection:nth-of-type(odd) & {
@@ -529,6 +534,9 @@ mark {
   @include max-width($max-width--md) {
     padding-left: 0;
     padding-right: 0;
+  }
+  @include max-width($max-width--sm) {
+    margin-top: $v*2;
   }
 }
 // launch
