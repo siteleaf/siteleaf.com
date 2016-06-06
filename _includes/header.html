@@ -32,7 +32,7 @@
         <a href="https://manage.siteleaf.com/signup/" class="header__link header__link--signup">Sign up</a>
       </li>
     </ul>
-    <a href="/" class="header__home"><img src="/assets/logo.svg" class="header__logo" alt="{{ site.title }}" /></a>
+    <a href="/" class="header__home"><img src="{{ site.logo }}" class="header__logo" alt="{{ site.title }}" /></a>
     <h1 class="header__title">{{ page.header_title | default: page.title }}</h1>
     {% if page.subtitle %}<div class="header__subtitle">{{ page.subtitle | markdownify }}</div>{% endif %}
     {% if page.button and page.url != '/' %}
