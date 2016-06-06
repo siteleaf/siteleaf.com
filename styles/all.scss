@@ -117,7 +117,10 @@ pre {
 }
 code {
   font-size: $font-size--small;
-  padding: 0.1em 0.25em
+  padding: 0.1em 0.25em;
+  a & {
+    font-weight: normal;
+  }
 }
 pre,
 code,
