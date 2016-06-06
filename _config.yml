@@ -1,5 +1,5 @@
 ---
-title: Siteleaf v2
+title: Siteleaf
 timezone: America/New_York
 collections:
   posts:
@@ -18,12 +18,13 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
-url: http://v2.siteleaf.com
-description: Content management simplified. Edit in the cloud, publish anywhere. Supports
-  static file output, any host, markdown, and multiple collaborators.
+url: http://www.siteleaf.com
+description: Built for developers, Loved by everyone. Supports Jekyll, user collaboration, publishing to AWS S3, GitHub Pages, FTP, and more.
 permalinks: pretty
 exclude:
 - Gruntfile.js
+- Gemfile
+- Gemfile.lock
 - package.json
 - README*
 - node_modules

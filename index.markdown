@@ -1,5 +1,6 @@
 ---
-title: Built for developers, Loved by everyone
+title: Siteleaf - The friendly CMS for your static site
+header_title: Built for developers, Loved by everyone
 layout: index
 subtitle: |-
   Siteleaf is a content management system designed for a better web.
@@ -10,7 +11,7 @@ button:
   title: Get started
   url: https://manage.siteleaf.com/signup/
 features:
-- title: 
+- title:
   handle: intro
   background: custom
   width: wide

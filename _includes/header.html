@@ -33,7 +33,7 @@
       </li>
     </ul>
     <a href="/" class="header__home"><img src="/assets/logo.svg" class="header__logo" alt="{{ site.title }}" /></a>
-    <h1 class="header__title">{{ page.title }}</h1>
+    <h1 class="header__title">{{ page.header_title | default: page.title }}</h1>
     {% if page.subtitle %}<div class="header__subtitle">{{ page.subtitle | markdownify }}</div>{% endif %}
     {% if page.button and page.url != '/' %}
       <p class="header__button__wrap">
