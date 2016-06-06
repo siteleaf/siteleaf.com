@@ -648,13 +648,18 @@ mark {
   }
   ol,
   ul {
-    padding-left: 1.2em;
+    padding-left: 1.5em;
   }
   ol {
     list-style-type: decimal;
   }
-  ul {
-    list-style-type: disc;
+  ul li:before {
+    padding-right: 0.666667rem;
+    content: '•';
+    position: absolute;
+    width: 2rem;
+    margin-left: -2rem;
+    text-align: right;
   }
   a {
     @extend %link--bold;
