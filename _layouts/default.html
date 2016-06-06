@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% seo %}
+    {% seo title=false %}
+    <title>{{ page.title }}{% if page.url != '/' %} - Siteleaf{% endif %}</title>
     {% if page.url == '/plans/' %}<link rel="stylesheet" href="/styles/plan-summary-cards.css" />{% endif %}
     <link rel="stylesheet" href="/styles/all.css" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
