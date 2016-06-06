@@ -20,7 +20,7 @@ features:
     body: Code offline with Jekyll, sync with GitHub
     image: "/uploads/home__intro--raccoon.svg"
   - title: Edit in the cloud
-    body: Easy for non-technical writers and producers
+    body: Easy for non-technical clients, writers, and producers
     image: "/uploads/home__intro--fox.svg"
   - title: Publish anywhere
     body: Generate static sites to S3, GitHub Pages, FTP
