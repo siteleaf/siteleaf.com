@@ -1,7 +1,8 @@
 ---
 title: Plans
-subtitle: New sites start with a free 14-day trial on the Personal plan. Upgrade or downgrade anytime.
 permalink: "/plans/"
+subtitle: New sites start with a free 14-day trial on the Personal plan. Upgrade or
+  downgrade anytime.
 layout: plans
 plans:
 - name: Developer
@@ -70,6 +71,5 @@ details:
   - Custom build server
   - Custom API limits
   - Dedicated support
-
 ---
 
