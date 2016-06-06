@@ -535,30 +535,20 @@ mark {
   }
 }
 .free__image {
-  margin-top: $v*3;
-  margin-bottom: $v*3;
-  padding-left: $gutter;
-  padding-right: $gutter;
-  @include max-width($max-width--md) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @include max-width($max-width--sm) {
-    margin-top: $v*2;
-  }
+  margin-top: $v*2;
+  margin-bottom: $v*2;
 }
 // launch
 .launch__content {
   text-align: left;
   margin-top: $v*1;
-  margin-bottom: $v*2;
   a {
     @extend %link--bold;
   }
 }
 .launch__image {
   @include margin-center;
-  max-width: 540px;
+  max-width: 640px;
 }
 // love
 .love__tweets {
