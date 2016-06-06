@@ -5,11 +5,18 @@ $(function(){
     $tabs = $('.manage__tab'),
     $screenshots = $('.manage__figure'),
     activeClass = 'active',
-    shownClass = 'shown';
+    shownClass = 'shown',
+    $videoOpen = $('#videoOpen'),
+    $videoModal = $('#videoModal'),
+    modalShownClass = 'isModalOpen';
+
+  var iframe = document.getElementById('intro'),
+    player = $f(iframe); // $f == Froogaloop
 
   var init = function() {
     $('body').addClass('js');
     initTabs();
+    initModal();
   };
 
   var initTabs = function() {
@@ -38,6 +45,34 @@ $(function(){
         }
       }
     });
+  };
+
+  var initModal = function() {
+    $videoOpen.click(function(e) {
+      e.preventDefault();
+      showModal();
+      return false;
+    });
+    $videoModal.click(function(e) {
+      closeModal();
+    });
+  };
+
+  // esc key handler
+  $(document).keydown(function(e) {
+    if (e.keyCode == 27 && $body.hasClass(modalShownClass)) { // esc
+      closeModal();
+    }
+  });
+
+  var showModal = function() {
+    $body.addClass(modalShownClass);
+    player.api('play');
+  };
+
+  var closeModal = function() {
+    player.api('pause');
+    $body.removeClass(modalShownClass);
   };
 
   // initialize
