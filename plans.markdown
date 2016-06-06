@@ -23,8 +23,7 @@ plans:
 - name: Personal
   price: 12
   discount: 0.4
-  description: Gain access to previews, additional hosting options, support,
-    and more.
+  description: Gain access to previews, additional hosting options, support, and more.
   color: red
   features:
   - Sync and publish to **private** GitHub repos
@@ -94,7 +93,8 @@ faqs:
     can always upgrade to a v2 plan from your Site's settings page and cancel your
     legacy plan from your account page.
 - title: Have more questions?
-  body: No problem. Send a message to us [on Twitter](https://twitter.com/siteleaf) or contact [billing@siteleaf.com](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
+  body: No problem. Send a message to us [on Twitter](https://twitter.com/siteleaf)
+    or contact [billing@siteleaf.com](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
 layout: plans
 ---
 
