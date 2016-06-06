@@ -358,7 +358,7 @@ mark {
 }
 .intro__subsection__image {
   @include margin-center;
-  max-width: 270px;
+  max-width: 300px;
   margin-bottom: $v;
   @include max-width($max-width--sm) {
     max-width: 240px;
