@@ -709,6 +709,7 @@ mark {
   blockquote,
   pre,
   iframe,
+  .fluid-width-video-wrapper,
   figure {
     margin-bottom: $v*0.75;
   }
@@ -730,11 +731,14 @@ mark {
   a {
     @extend %link--bold;
   }
-  & > iframe:first-child {
-    margin-top: $v*0.5;
+  & > img:first-child,
+  & > iframe:first-child,
+  & > .fluid-width-video-wrapper:first-child {
+    margin-top: $v*1;
   }
+  img + p > small:only-child,
   iframe + p > small:only-child,
-  img + p > small:only-child {
+  .fluid-width-video-wrapper + p > small:only-child {
     // "captions"
     color: $color--gray-dark;
     display: block;
