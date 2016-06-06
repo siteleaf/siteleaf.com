@@ -11,7 +11,7 @@ button:
   title: Get started
   url: https://manage.siteleaf.com/signup/
 features:
-- title: 
+- title:
   handle: intro
   background: custom
   width: wide
@@ -36,7 +36,7 @@ features:
     handle: collaborate
     body: Invite your client or team to create and edit content. Set them as Admin,
       Publisher, or Writer.
-    image: "/uploads/home__manage--collaborate.png"
+    image: "/uploads/home__manage--collaborate.jpg"
   - title: Preview before you publish
     handle: preview
     body: Preview changes before they go live. Then publish with one click whenever
@@ -46,12 +46,12 @@ features:
     handle: edit
     body: Choose between a visual editor or just plain Markdown. Drag and drop images
       or even entire text files.
-    image: "/uploads/home__manage--edit.png"
+    image: "/uploads/home__manage--edit.jpg"
   - title: Powerful content
     handle: customize
     body: Customize for your content, with document collections, advanced metadata,
       and custom permalinks.
-    image: "/uploads/home__manage--customize.png"
+    image: "/uploads/home__manage--customize.jpg"
 - title: Develop with tools you already love
   handle: develop
   background: light-gray
@@ -116,21 +116,21 @@ features:
     visible: true
   - name: Anna Zocher
     handle: "@annazocher"
-    avatar: "/uploads/avatar--annazocher.jpeg"
+    avatar: "/uploads/avatar--annazocher.jpg"
     body: 'Spending today converting sites to #Liquid to show client how great [@siteleaf](https://twitter.com/siteleaf)
       is going to be use.'
     link: https://twitter.com/annazocher/status/442702234984656896
     visible: true
   - name: Casey Gollan
     handle: "@CaseyG"
-    avatar: "/uploads/avatar--CaseyG.jpeg"
+    avatar: "/uploads/avatar--CaseyG.jpg"
     body: Playing with [@siteleaf](https://twitter.com/siteleaf). As nimble to build
       with as Jekyll for me. Easier to use than Wordpress for my client.
     link: https://twitter.com/CaseyG/status/358286369962995712
     visible: true
   - name: Dan Mall
     handle: "@danielmall"
-    avatar: "/uploads/avatar--danielmall.jpeg"
+    avatar: "/uploads/avatar--danielmall.jpg"
     body: 'That''s what''s deceiving about [@siteleaf](https://twitter.com/siteleaf):
       looks simple, but it''s pretty powerful.'
     link: https://twitter.com/danielmall/status/551085989364776960
@@ -144,7 +144,7 @@ features:
     visible: false
   - name: Jonnie Hallman
     handle: "@destroytoday"
-    avatar: "/uploads/avatar--destroytoday.jpeg"
+    avatar: "/uploads/avatar--destroytoday.jpg"
     body: Starting building my new website on [@siteleaf](https://twitter.com/siteleaf)
       v2—its Github syncing and Jekyll-compatibility are absolutely killer.
     link: https://twitter.com/destroytoday/status/672962921903820801
@@ -180,7 +180,7 @@ features:
     visible: false
   - name: Leigh-Ann Bartsch
     handle: "@labartsch"
-    avatar: "/uploads/avatar--labartsch.jpeg"
+    avatar: "/uploads/avatar--labartsch.jpg"
     body: I've been using [@siteleaf](https://twitter.com/siteleaf) for 15 minutes
       and I'm already impressed. Simple set-up, a clear, concise interface, and amazing
       customer service!
@@ -188,7 +188,7 @@ features:
     visible: false
   - name: Chris Bernardi
     handle: "@simplyand"
-    avatar: "/uploads/avatar--simplyand.png"
+    avatar: "/uploads/avatar--simplyand.jpg"
     body: So, so happy with [@siteleaf](https://twitter.com/siteleaf)! Client needs
       grew faster than I had anticipated and with only a few lines of code changed,
       needs were met.
