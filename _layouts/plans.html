@@ -5,4 +5,24 @@ layout: default
 <script>
   var PLANS = {{ page.plans | jsonify }};
 </script>
-<div class="jsx-plan-summary-cards"></div>
+<main class="plans__main">
+  <div class="jsx-plan-summary-cards"></div>
+  <section class="plans__details">
+    {% for plan in page.details %}
+      <div class="plans__details__item">
+        <h3 class="plans__details__title {{ plan.color }}">{{ plan.name }}</h3>
+        <div class="plans__details__subtitle">
+          {% if plan.previous %}
+            Everything in {{ plan.previous }}, plus&hellip;
+          {% else %}
+          {% endif %}
+        </div>
+        <ul class="plans__details__features">
+          {% for feature in plan.features %}
+            <li class="plans__details__feature">{{ feature | markdownify }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </section>
+</main>

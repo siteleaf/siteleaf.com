@@ -269,7 +269,9 @@ mark {
 }
 .header__subtitle {
   max-width: 24rem;
-  font-size: $font-size--large;
+  .home & {
+    font-size: $font-size--large;
+  }
 }
 
 // home
@@ -782,20 +784,22 @@ mark {
 // plans
 // -----
 
+.plans__main {
+  @extend %container--wide;
+  margin-top: $v*1.5;
+}
 .plan-summary-cards {
-  max-width: 1200px;
-  width: 90%;
-  margin: -30px auto 0;
+  margin-bottom: $v*2;
 }
 .plan-card {
   width: 20%;
-  @include max-width(830px) {
-    width: 33%;
+  @include max-width($max-width--lg) {
+    width: 33.333333%;
     &:nth-child(3) {
       border-right-width: 0;
     }
   }
-  @include max-width(460px) {
+  @include max-width($max-width--md) {
     width: 50%;
     &:nth-child(3) {
       border-right-width: 1px;
@@ -806,8 +810,43 @@ mark {
   }
 }
 .plan-card__desc {
-  margin: 0;
-  font-size: 13px;
+}
+.plans__details {
+  @extend %row;
+  @include clearfix;
+  font-size: $font-size--smaller;
+  @include flexbox;
+  @include flex-wrap(wrap);
+}
+.plans__details__item {
+  margin-bottom: $v;
+  width: 20%;
+  @extend %column;
+  @include max-width($max-width--lg) {
+    width: 33.333333%;
+  }
+  @include max-width($max-width--md) {
+    width: 50%;
+  }
+  @include max-width($max-width--sm) {
+    width: 100%;
+  }
+}
+.plans__details__title {
+}
+.plans__details__subtitle {
+  font-family: $font-family--sans-serif-italic;
+  color: $color--gray-dark;
+  margin-bottom: $v*0.75;
+}
+.plans__details__features {
+  // padding-left: 1.2em;
+  // list-style-type: disc;
+}
+.plans__details__feature {
+  p {
+    margin-bottom: $v*0.5;
+  }
 }
 
 // archive

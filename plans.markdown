@@ -1,6 +1,6 @@
 ---
 title: Plans
-date: 2015-11-11 11:33:00 -05:00
+subtitle: New sites start with a free 14-day trial on the Personal plan. Upgrade or downgrade anytime.
 permalink: "/plans/"
 layout: plans
 plans:
@@ -26,5 +26,50 @@ plans:
   price: 299
   description: Enterprise support and a tailored build process to meet your site’s
     requirements.
+details:
+- name: Developer
+  color: yellow
+  features:
+  - Publish to GitHub Pages
+  - Sync and publish to **public** GitHub repos
+  - Unlimited collaborators
+  - GitHub sync
+  - API access
+  - Community support (Slack channel and docs)
+- name: Personal
+  color: red
+  previous: Developer
+  features:
+  - Publish to Amazon S3, Rackspace, FTP
+  - Sync and publish to **private** GitHub repos
+  - Preview before publishing
+  - Basic support (including email)
+- name: Team
+  color: purple
+  previous: Personal
+  features:
+  - User roles (Admin, Publisher, Writer)
+  - Unlimited pages
+  - Increased file storage
+  - Increased API limits
+- name: Business
+  color: green
+  previous: Team
+  features:
+  - Priority support
+  - Increased build time limit
+  - Priority position in the publish queue
+  - Third-party Jekyll plugins (coming soon)
+  - Advanced support
+- name: Enterprise
+  color: blue
+  previous: Business
+  features:
+  - Sync and publish to GitHub Enterprise
+  - Scheduled publishing
+  - Custom build server
+  - Custom API limits
+  - Dedicated support
+
 ---
 
