@@ -277,6 +277,14 @@ mark {
   }
 }
 
+.header__button__wrap {
+  text-align: center;
+}
+
+.header__button {
+  @extend %button--large;
+}
+
 // home
 // ----
 
@@ -751,9 +759,13 @@ mark {
 // plans
 // -----
 
+.plans .header {
+  padding-bottom: $v*2;
+}
+
 .plans__main {
   @extend %container--wide;
-  margin-top: $v*1.5;
+  margin-top: $v*1.5 * -1;
 }
 .plan-summary-cards {
   margin-bottom: $v*2;
@@ -776,9 +788,22 @@ mark {
     }
   }
 }
+
 .plan-card__desc {
   margin-bottom: 0;
+  font-size: 0.8em;
 }
+
+.plan-card__price,
+.plan-card__price__symbol {
+  font-weight: $font-weight--bold
+}
+
+.plan-card--developer .plan-card__price {
+  font-weight: $font-weight--normal;
+  letter-spacing: -1px;
+}
+
 .plans__details {
   @extend %row;
   font-size: 0.8em;
@@ -786,11 +811,8 @@ mark {
 }
 .plans__details__item {
   margin-bottom: $v;
-  width: 20%;
+  width: 25%;
   @extend %column;
-  @include max-width($max-width--lg) {
-    width: 33.333333%;
-  }
   @include max-width($max-width--md) {
     width: 50%;
   }
@@ -798,27 +820,23 @@ mark {
     width: 100%;
   }
 }
-.plans__details__title {
-}
+
 .plans__details__subtitle {
   font-style: italic;
   color: $color--gray-dark;
   margin-bottom: $v*0.5;
 }
-.plans__details__features {
-  // padding-left: 1.2em;
-  // list-style-type: disc;
-}
 .plans__details__feature {
+  margin-bottom: $v*0.5;
+
   p {
-    margin-bottom: $v*0.5;
+    margin: 0;
   }
-}
-.plans__footer {
-  text-align: center;
-}
-.plans__button {
-  @extend %button--large;
+
+  p:nth-child(2) {
+    color: $color--gray-dark;
+    font-size: 0.9em;
+  }
 }
 
 // archive

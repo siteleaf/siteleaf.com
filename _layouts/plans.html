@@ -7,25 +7,27 @@ layout: default
 </script>
 <main class="plans__main">
   <div class="jsx-plan-summary-cards"></div>
+
   <section class="plans__details">
-    {% for plan in page.details %}
-      <div class="plans__details__item">
-        <h3 class="plans__details__title {{ plan.color }}">{{ plan.name }}</h3>
-        <div class="plans__details__subtitle">
-          {% if plan.previous %}
-            Everything in {{ plan.previous }}, plus&hellip;
-          {% else %}
-          {% endif %}
+    {% for plan in page.plans %}
+      {% if plan.features %}
+        <div class="plans__details__item">
+          <h3 class="plans__details__title {{ plan.color }}">{{ plan.name }}</h3>
+          <div class="plans__details__subtitle">
+            {% unless forloop.first %}
+              Everything in <span class="{{ previous_plan.color }}">{{ previous_plan.name }}</span>, plus&hellip;
+            {% endunless %}
+          </div>
+          <ul class="plans__details__features">
+            {% for feature in plan.features %}
+              <li class="plans__details__feature">
+                {{ feature | markdownify }}
+              </li>
+            {% endfor %}
+          </ul>
         </div>
-        <ul class="plans__details__features">
-          {% for feature in plan.features %}
-            <li class="plans__details__feature">{{ feature | markdownify }}</li>
-          {% endfor %}
-        </ul>
-      </div>
+        {% assign previous_plan = plan %}
+      {% endif %}
     {% endfor %}
   </section>
-  <footer class="plans__footer">
-    <a href="{{ page.button.url }}" class="plans__button bg--blue">{{ page.button.title }}</a>
-  </footer>
 </main>
