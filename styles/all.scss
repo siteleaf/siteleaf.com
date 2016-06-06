@@ -163,7 +163,7 @@ mark {
 }
 .header {
   padding-top: $gutter*0.75;
-  padding-bottom: $gutter*1;
+  padding-bottom: $gutter*0.75;
   position: relative;
   @include max-width($max-width--sm) {
     text-align: center;
