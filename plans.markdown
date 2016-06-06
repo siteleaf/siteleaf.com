@@ -3,7 +3,6 @@ title: Plans
 permalink: "/plans/"
 subtitle: New sites start with a free 14-day trial on the Personal plan. Upgrade or
   downgrade anytime.
-layout: plans
 plans:
 - name: Developer
   price: 0
@@ -76,5 +75,18 @@ plans:
 button:
   title: Try for free
   url: https://manage.siteleaf.com/signup/
+faqs:
+- title: What's early-bird pricing?
+  body: To celebrate the launch of Siteleaf v2 and show appreciation to early adopters,
+    we're offering a pretty sweat deal on our site plans. Sign up while we have early-bird
+    pricing to lock in the price before it's gone.
+- title: How do subscriptions work?
+  body: Each new site you create starts with a free 14 day trial on the Personal plan.
+    No credit card is required to get started. When your trial expires, you'll be
+    prompted to select a plan. Each site is billed monthly. You can upgrade or downgrade
+    at any time and your next month's bill will be prorated.
+- title: 
+  body: 
+layout: plans
 ---
 
