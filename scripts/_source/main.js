@@ -67,7 +67,9 @@ $(function(){
 
   var showModal = function() {
     $body.addClass(modalShownClass);
-    player.api('play');
+    setTimeout(function() {
+      player.api('play');
+    }, 300);
   };
 
   var closeModal = function() {

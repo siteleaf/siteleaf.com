@@ -628,7 +628,6 @@ mark {
   height: 0;
   width: 0;
   opacity: 0;
-  overflow-y: scroll;
   @include flexbox;
   @include align-items(center);
   @include justify-content(center);
@@ -653,7 +652,7 @@ mark {
   padding-bottom: 56.25%;
   position: relative;
   @include scale(0.9);
-  transition: all 200ms;
+  transition: all 300ms;
   iframe {
     position: absolute;
     top: 0;
