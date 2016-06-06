@@ -21,6 +21,10 @@
 *:after {
   @include box-sizing(border-box);
 }
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   font-size: $font-size--html;
   @include max-width($max-width--sm) {
@@ -33,7 +37,6 @@ body {
   font-family: $font-family--sans-serif;
   line-height: $line-height--base;
   @include antialias;
-  overflow-x: hidden;
 }
 a {
   color: inherit;
