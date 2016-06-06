@@ -85,8 +85,11 @@ faqs:
     No credit card is required to get started. When your trial expires, you'll be
     prompted to select a plan. Each site is billed monthly. You can upgrade or downgrade
     at any time and your next month's bill will be prorated.
-- title: 
-  body: 
+- title: Can I use my legacy V1 plan?
+  body: Yes! You can create a v2 site using your legacy plan. If you're using a legacy
+    plan you'll be held to any user and site limits associated with that plan. You
+    can always upgrade to a v2 plan from your Site's settings page and cancel your
+    legacy plan from your account page.
 layout: plans
 ---
 
