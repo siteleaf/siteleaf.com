@@ -31,14 +31,14 @@
 
 %button {
   display: inline-block;
-  padding: 0.35em 0.5em 0.15em;
+  padding: 0.2em 0.5em 0.3em;
   border-radius: $border-radius--base;
 }
 %button--large {
   font-size: $font-size--large;
-  font-family: $font-family--sans-serif-bold;
+  font-weight: $font-weight--bold;
   @extend %button;
-  padding: 0.6em 2.75em 0.4em;
+  padding: 0.4em 2.75em 0.6em;
 }
 
 // font variations
@@ -58,7 +58,7 @@
 // -------------
 
 %link--bold {
-  font-family: $font-family--sans-serif-bold;
+  font-weight: $font-weight--bold;
   text-decoration: underline;
   &:hover {
     opacity: $opacity--hover;
