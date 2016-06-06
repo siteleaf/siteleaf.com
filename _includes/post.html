@@ -6,6 +6,11 @@
     <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   {% endif %}
   <section class="article__content">
+    {% unless is_excerpt %}
+      {% if post.tags contains 'v1' %}
+        <div class="article__note light-gray">☞ Note: This is a Siteleaf v1 post</div>
+      {% endif %}
+    {% endunless %}
     {% if is_excerpt %}
       {{ post.excerpt | markdownify }}
     {% else %}

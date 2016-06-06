@@ -700,11 +700,16 @@ mark {
   h4 {
     margin-top: $v;
   }
+  h3 + h5,
+  h3 + h6 {
+    margin-top: $v*0.75;
+  }
   ul,
   ol,
   blockquote,
   pre,
-  iframe {
+  iframe,
+  figure {
     margin-bottom: $v*0.75;
   }
   ol,
@@ -724,6 +729,17 @@ mark {
   }
   a {
     @extend %link--bold;
+  }
+  & > iframe:first-child {
+    margin-top: $v*0.5;
+  }
+  iframe + p > small:only-child,
+  img + p > small:only-child {
+    // "captions"
+    color: $color--gray-dark;
+    display: block;
+    margin-top: -$v*0.5;
+    margin-bottom: $v*1.5;
   }
 }
 .article__content__more {
@@ -755,6 +771,13 @@ mark {
   @extend %button;
   background: $color--gray;
   color: $color--white;
+}
+.article__note {
+  background: $color--gray-lightest;
+  font-weight: $font-weight--medium;
+  color: $color--gray-dark;
+  margin-bottom: $v*1.5;
+  padding: 1em;
 }
 
 // blog
@@ -939,7 +962,15 @@ mark {
 
 .archive__items {
   margin-top: $v*1.5;
+  margin-bottom: $v*3;
+}
+.archive__items,
+.archive__more {
   @extend %container--narrow;
+}
+.archive__more__link {
+  color: $color--gray-dark;
+  @extend %link--bold;
 }
 .archive__month {
   margin-top: $v*1.5;
