@@ -89,6 +89,7 @@ h4 {
   margin-bottom: $v*0.5;
 }
 p {
+  @extend %mk3;
   margin-bottom: $v*0.75;
 }
 hr {
@@ -162,10 +163,13 @@ mark {
 }
 .header {
   padding-top: $gutter*0.75;
-  padding-bottom: $gutter*0.75;
+  padding-bottom: $gutter*1;
   position: relative;
   @include max-width($max-width--sm) {
     text-align: center;
+  }
+  p {
+    @extend %mk2;
   }
 }
 .footer {
@@ -318,9 +322,6 @@ mark {
 }
 .feature {
   text-align: center;
-  p {
-    @extend %mk3;
-  }
 }
 .feature--wide {
   @extend %container--wide;
