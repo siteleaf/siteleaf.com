@@ -149,6 +149,10 @@ mark {
   color: inherit;
 }
 
+.container--wide {
+  @extend %container--wide;
+}
+
 // header and footer
 // -----------------
 
@@ -763,10 +767,14 @@ mark {
   padding-bottom: $v*2;
 }
 
+.plans .footerWrap {
+  margin-top: 0;
+}
+
 .plans__main {
-  @extend %container--wide;
   margin-top: $v*1.5 * -1;
 }
+
 .plan-summary-cards {
   margin-bottom: $v*2;
 }
@@ -816,7 +824,7 @@ mark {
   @include max-width($max-width--md) {
     width: 50%;
   }
-  @include max-width($max-width--sm) {
+  @include max-width($max-width--xs) {
     width: 100%;
   }
 }
@@ -836,6 +844,44 @@ mark {
   p:nth-child(2) {
     color: $color--gray-dark;
     font-size: 0.9em;
+  }
+}
+
+.plans__faqs__row {
+  padding: $v*3 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: $v * 2;
+  }
+}
+
+.plans__faqs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plans__faq {
+  width: 48%;
+  margin-bottom: $v * 1.5;
+
+  @include max-width($max-width--sm) {
+    width: 100%;
+  }
+
+  p{
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $color--blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

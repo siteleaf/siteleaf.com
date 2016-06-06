@@ -5,7 +5,7 @@ layout: default
 <script>
   var PLANS = {{ page.plans | jsonify }};
 </script>
-<main class="plans__main">
+<main class="plans__main container--wide">
   <div class="jsx-plan-summary-cards"></div>
 
   <section class="plans__details">
@@ -31,3 +31,18 @@ layout: default
     {% endfor %}
   </section>
 </main>
+
+<section class="plans__faqs__row bg--light-gray">
+    <div class="container--wide">
+      <h2>FAQ</h2>
+
+      <div class="plans__faqs">
+        {% for faq in page.faqs %}
+          <article class="plans__faq">
+            <h4>{{ faq.title }}</h4>
+            {{ faq.body | markdownify }}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+</section>
