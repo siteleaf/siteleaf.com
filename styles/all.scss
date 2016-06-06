@@ -318,12 +318,7 @@ mark {
 }
 .feature__button {
   @extend %button--large;
-  background: $color--blue;
-  color: $color--white;
   margin-top: $v;
-  &:hover {
-    background: darken($color--blue, $darken--button);
-  }
 }
 .feature__title {
   @include margin-center;
@@ -526,7 +521,6 @@ mark {
 }
 // free
 .free__subsections {
-  @include clearfix;
   @extend %row;
 }
 .free__subsection {
@@ -569,8 +563,6 @@ mark {
 // love
 .love__tweets {
   @extend %row;
-  @include flexbox;
-  @include flex-wrap(wrap);
   text-align: left;
   margin-top: $v*2.5;
   margin-bottom: $v*2.5;
@@ -707,27 +699,6 @@ mark {
   @extend %button;
   background: $color--gray;
   color: $color--white;
-  &.bg--blue:hover {
-    background: darken($color--blue, $darken--button);
-  }
-  &.bg--green:hover {
-    background: darken($color--green, $darken--button);
-  }
-  &.bg--yellow:hover {
-    background: darken($color--yellow, $darken--button);
-  }
-  &.bg--red:hover {
-    background: darken($color--red, $darken--button);
-  }
-  &.bg--purple:hover {
-    background: darken($color--purple, $darken--button);
-  }
-  &.bg--dark-gray:hover {
-    background: darken($color--gray-darkest, $darken--button);
-  }
-  &.bg--gray:hover {
-    background: darken($color--gray-dark, $darken--button);
-  }
 }
 
 // blog
@@ -763,8 +734,6 @@ mark {
 }
 .gallery__items {
   @extend %row;
-  @include flexbox;
-  @include flex-wrap(wrap);
 }
 .gallery__item {
   @extend %column;
@@ -813,13 +782,12 @@ mark {
   }
 }
 .plan-card__desc {
+  margin-bottom: 0;
 }
 .plans__details {
   @extend %row;
-  @include clearfix;
-  font-size: $font-size--smaller;
-  @include flexbox;
-  @include flex-wrap(wrap);
+  font-size: 0.8em;
+  margin-bottom: $v*2;
 }
 .plans__details__item {
   margin-bottom: $v;
@@ -840,7 +808,7 @@ mark {
 .plans__details__subtitle {
   font-style: italic;
   color: $color--gray-dark;
-  margin-bottom: $v*0.75;
+  margin-bottom: $v*0.5;
 }
 .plans__details__features {
   // padding-left: 1.2em;
@@ -850,6 +818,12 @@ mark {
   p {
     margin-bottom: $v*0.5;
   }
+}
+.plans__footer {
+  text-align: center;
+}
+.plans__button {
+  @extend %button--large;
 }
 
 // archive
@@ -963,6 +937,27 @@ mark {
 }
 .bg--white {
   background: $color--white;
+}
+a.bg--blue:hover {
+  background: darken($color--blue, $darken--button);
+}
+a.bg--green:hover {
+  background: darken($color--green, $darken--button);
+}
+a.bg--yellow:hover {
+  background: darken($color--yellow, $darken--button);
+}
+a.bg--red:hover {
+  background: darken($color--red, $darken--button);
+}
+a.bg--purple:hover {
+  background: darken($color--purple, $darken--button);
+}
+a.bg--dark-gray:hover {
+  background: darken($color--gray-darkest, $darken--button);
+}
+a.bg--gray:hover {
+  background: darken($color--gray-dark, $darken--button);
 }
 
 // icons

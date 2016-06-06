@@ -71,5 +71,8 @@ details:
   - Custom build server
   - Custom API limits
   - Dedicated support
+button:
+  title: Try for free
+  url: https://manage.siteleaf.com/signup/
 ---
 

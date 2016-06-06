@@ -90,7 +90,7 @@ layout: default
         {% when 'outro' %}
           {{ feature.body | markdownify }}
       {% endcase %}
-      {% if feature.button %}<a href="{{ page.button.url }}" class="feature__button">{{ page.button.title }}</a>{% endif %}
+      {% if feature.button %}<a href="{{ page.button.url }}" class="feature__button bg--blue">{{ page.button.title }}</a>{% endif %}
     </section>
   </div>
 {% endfor %}

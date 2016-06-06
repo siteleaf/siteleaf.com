@@ -19,9 +19,10 @@
 %row {
   margin-left: -$gutter/2;
   margin-right: -$gutter/2;
+  @include flexbox;
+  @include flex-wrap(wrap);
 }
 %column {
-  float: left;
   padding-left: $gutter/2;
   padding-right: $gutter/2;
 }
