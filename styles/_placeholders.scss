@@ -6,6 +6,11 @@
   @include margin-center;
   padding-left: $gutter;
   padding-right: $gutter;
+
+  @include max-width($max-width--xs) {
+    padding-left: $gutter * 0.5;
+    padding-right: $gutter * 0.5;
+  }
 }
 %container--narrow {
   @extend %container;

@@ -196,6 +196,10 @@ mark {
 .footer {
   font-size: $font-size--small;
   font-weight: $font-weight--medium;
+
+  @include max-width($max-width--sm) {
+    font-size: $font-size--smaller;
+  }
 }
 .header__item,
 .footer__item {
@@ -224,16 +228,8 @@ mark {
   text-align: right;
   @include max-width($max-width--sm) {
     float: none;
-  }
-}
-.header__item:not(.header__item--login) {
-  @include max-width($max-width--sm) {
-    display: none;
-  }
-}
-.header__link {
-  @include max-width($max-width--sm) {
-    padding: 0;
+    text-align: center;
+    margin-bottom: $v;
   }
 }
 .header__home {
@@ -246,6 +242,10 @@ mark {
 }
 .header__logo {
   width: $width--logo;
+
+  @include max-width($max-width--sm) {
+    width: $width--logo * 0.75;
+  }
 }
 .header__title,
 .header__subtitle {
