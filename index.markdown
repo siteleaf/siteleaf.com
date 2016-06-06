@@ -62,7 +62,7 @@ features:
       Siteleaf is compatible with [Jekyll](http://jekyllrb.com/), the static site generator for over half a million websites running on GitHub Pages.
 
       Benefit from a large open source community. Use any existing Jekyll theme, or write your own using [Liquid](https://shopify.github.io/liquid/), [Sass](http://sass-lang.com/), and [CoffeeScript](http://coffeescript.org/). Develop locally and even offline.
-    image: "/uploads/home__develop--jekyll.png"
+    image: "/uploads/home__develop--jekyll.jpg"
     logos:
       title: open source
       image: "/uploads/logos--open-source.svg"
@@ -72,7 +72,7 @@ features:
       No more accidental overwrites or deletes. Any change made in Siteleaf can be synced to [GitHub](https://github.com/), where you can see a log of edits and roll back to any state, giving you a time machine for your content.
 
       As you develop your theme, Siteleaf can also automatically update to reflect your GitHub commits. Fits right into your existing workflow.
-    image: "/uploads/home__develop--github.png"
+    image: "/uploads/home__develop--github.jpg"
     color: purple
 - title: Free your content
   handle: free
