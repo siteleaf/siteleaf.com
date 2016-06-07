@@ -1,6 +1,6 @@
 ---
 title: Join our team
-date: 2016-06-06 00:00:00 -04:00
+date: 2016-01-14 00:00:00 -05:00
 permalink: "/blog/:title/"
 tags:
 - announcement
@@ -54,4 +54,4 @@ While New York is preferred, we may consider remote for the right person. We are
 
 Send an email to [team@siteleaf.com](mailto:team@siteleaf.com?subject=Backend%20Developer) and introduce yourself. 
 
-<small>p.s. Sound interesting but not sure you have the experience? We’re also looking for a [fall intern](http://oak.is/intern) later this year.</small>
+<small>p.s. Sound interesting but not sure you have the experience? We’re also looking for a [fall intern](http://oak.is/intern) later this year %.</small>
