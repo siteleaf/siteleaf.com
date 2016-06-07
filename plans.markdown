@@ -28,7 +28,7 @@ plans:
   features:
   - Sync and publish to **private** GitHub repos
   - Publish to Amazon S3, Rackspace, FTP
-  - Preview yor site online before publishing
+  - Preview your site online before publishing
   - |-
     Basic support
 
@@ -97,4 +97,3 @@ faqs:
     or contact [billing@siteleaf.com](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
 layout: plans
 ---
-
