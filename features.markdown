@@ -2,6 +2,7 @@
 title: New in v2
 date: 2016-06-06 00:00:00 -04:00
 layout: page
+permalink: /features
 ---
 
 ### Open source superpowers
