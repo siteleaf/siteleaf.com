@@ -1,7 +1,6 @@
 ---
 title: Siteleaf - A friendly CMS for your static site
 header_title: Built for developers, Loved by everyone
-layout: index
 subtitle: |-
   Siteleaf is a content management system designed for a better web.
 
@@ -23,8 +22,9 @@ features:
   - title: Edit in the cloud
     body: Easy for non-technical clients, writers, and producers
     image: "/uploads/home__intro--fox.svg"
-  - title: Publish anywhere
-    body: Generate static sites to S3, GitHub Pages, FTP
+  - title: Free your content
+    body: Access by [API](http://learn.siteleaf.com/api/) or generate static sites
+      to S3, GitHub, FTP
     image: "/uploads/home__intro--owl.svg"
 - title: Content management for the whole team
   handle: manage
@@ -87,8 +87,8 @@ features:
     body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/)
       from WordPress, Drupal, Tumblr, Ghost, and more.
   - title: API for your content
-    body: Access your data and integrate into other websites and apps. Automate tasks
-      with [Zapier](https://zapier.com/zapbook/siteleaf/).
+    body: Access [your data](http://learn.siteleaf.com/api/) and integrate into other
+      websites and apps. Automate tasks with [Zapier](https://zapier.com/zapbook/siteleaf/).
 - title: Launch better sites
   handle: launch
   background: green
@@ -216,5 +216,6 @@ features:
   button: true
   body: Free for developers and open source projects.
 image: "/assets/og-image.png"
+layout: index
 ---
 
