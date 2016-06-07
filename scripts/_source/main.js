@@ -51,18 +51,20 @@ $(function(){
   var initModal = function() {
     $videoOpen.click(function(e) {
       e.preventDefault();
-      showModal();
+      showModal(300);
       return false;
     });
     $videoModal.click(function(e) {
       closeModal();
     });
     if (window.location.hash === '#video') {
-      setTimeout(function() {
-        showModal();
-      }, 0);
+      showModal(1000);
     }
   };
+
+  player.addEvent('ready', function() {
+    console.log('ready');
+  });
 
   // esc key handler
   $(document).keydown(function(e) {
@@ -71,12 +73,11 @@ $(function(){
     }
   });
 
-  var showModal = function() {
+  var showModal = function(timeout) {
     $body.addClass(modalShownClass);
-    // console.log(vimeo_player_loaded());
     setTimeout(function() {
       player.api('play');
-    }, 300);
+    }, timeout);
   };
 
   var closeModal = function() {
