@@ -18,7 +18,7 @@
   {% assign background = 'light-gray' %}
 {% endif %}
 <div class="headerWrap bg--{{ background }}">
-  <header class="header">
+  <header class="header{% if page.extended_header %} header--extended{% endif %}">
     <ul class="header__items">
       {% for item in site.data.navigation.header %}
       <li class="header__item">
