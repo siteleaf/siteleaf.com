@@ -94,7 +94,7 @@ faqs:
     Site’s settings page and cancel your legacy plan from your account page. You can
     also add additional v2 sites on top of your legacy plan if you hit your limit.
 - title: Is there a cost per user?
-  body: All v2 plans come with **unlimited users at no extra cost**. You can invite
+  body: All v2 plans come with **unlimited users** at no extra cost. You can invite
     your clients, writers, and teammates without having to pay extra. For those on
     a grandfathered plan, user limits may apply (see your account page for details).
 - title: What are the page and storage limits?
