@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% assign count = 0 %}
+{% for post in site.posts %}
+  {% if count >= site.per_page %}
+    {% break %}
+  {% endif %}
+  {% unless post.tags contains 'v1' %}
+    {% include post.html post=post is_excerpt=true %}
+    {% assign count = count | plus: 1 %}
+  {% endunless %}
+{% endfor %}
+<div class="blog__more">
+  <a href="/blog/archive/" class="blog__more__link">Older posts</a>
+</div>

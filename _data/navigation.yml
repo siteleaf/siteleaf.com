@@ -1,0 +1,18 @@
+header:
+- title: Blog
+  url: /blog/
+- title: Gallery
+  url: /gallery/
+- title: Plans
+  url: /plans/
+- title: Learn
+  url: http://learn.siteleaf.com
+footer:
+- title: Privacy
+  url: /privacy/
+- title: Terms
+  url: /terms/
+- title: Status
+  url: http://status.siteleaf.com
+- title: Twitter
+  url: https://twitter.com/siteleaf

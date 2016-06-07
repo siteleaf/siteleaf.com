@@ -1,0 +1,44 @@
+{% if page.background %}
+  {% assign background = page.background %}
+{% elsif include.page == 'permalink' %}
+  <!-- blog permalink, inherit from first tag -->
+  {% assign tag_collection = site.collections | where: 'label', 'blog_tags' | first %}
+  {% assign post_tag_downcase = page.tags | first | downcase %}
+  {% for site_tag in tag_collection.docs %}
+    {% assign site_tag_title = site_tag.title | downcase %}
+    {% if site_tag_title == post_tag_downcase %}
+      {% if site_tag.background %}
+        {% assign background = site_tag.background %}
+      {% else %}
+        {% assign background = 'light-gray' %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% assign background = 'light-gray' %}
+{% endif %}
+<div class="headerWrap bg--{{ background }}">
+  <header class="header">
+    <ul class="header__items">
+      {% for item in site.data.navigation.header %}
+      <li class="header__item">
+        <a href="{{ item.url }}" class="header__link">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+      <li class="header__item header__item--login">
+        <a href="https://manage.siteleaf.com" class="header__link">Log in</a>
+      </li>
+      <li class="header__item">
+        <a href="https://manage.siteleaf.com/signup/" class="header__link header__link--signup">Sign up</a>
+      </li>
+    </ul>
+    <a href="/" class="header__home"><img src="{{ site.logo }}" class="header__logo" alt="{{ site.title }}" /></a>
+    <h1 class="header__title">{{ page.header_title | default: page.title }}</h1>
+    {% if page.subtitle %}<div class="header__subtitle">{{ page.subtitle | markdownify }}</div>{% endif %}
+    {% if page.button and page.url != '/' %}
+      <p class="header__button__wrap">
+        <a href="{{ page.button.url }}" class="header__button bg--{{ page.button.color | default: 'blue' }}">{{ page.button.title }}</a>
+      </p>
+    {% endif %}
+  </header>
+</div>

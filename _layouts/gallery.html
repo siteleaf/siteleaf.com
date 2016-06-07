@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<main class="gallery__main">
+  <div class="gallery__items">
+    {% for item in page.items %}
+      <figure class="gallery__item">
+        <a href="{{ item.url }}"><img src="{{ item.image }}" alt="{{ item.title }}" class="gallery__image" /></a>
+        <figcaption class="gallery__caption"><a href="{{ item.url }}" class="gallery__caption__link">{{ item.title }}</a></figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</main>

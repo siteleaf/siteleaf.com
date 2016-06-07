@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<script>
+  var PLANS = {{ page.plans | jsonify }};
+</script>
+<main class="plans__main container--wide">
+  <div class="jsx-plan-summary-cards"></div>
+
+  <section class="plans__details">
+    {% for plan in page.plans %}
+      {% if plan.features %}
+        <div class="plans__details__item">
+          <h3 class="plans__details__title {{ plan.color }}">{{ plan.name }}</h3>
+          <div class="plans__details__subtitle">
+            {% unless forloop.first %}
+              Everything in <span class="{{ previous_plan.color }}">{{ previous_plan.name }}</span>, plus&hellip;
+            {% endunless %}
+          </div>
+          <ul class="plans__details__features">
+            {% for feature in plan.features %}
+              <li class="plans__details__feature">
+                {{ feature | markdownify }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% assign previous_plan = plan %}
+      {% endif %}
+    {% endfor %}
+  </section>
+</main>
+
+<section class="plans__faqs__row bg--light-gray">
+    <div class="container--wide">
+      <h2>FAQ</h2>
+
+      <div class="plans__faqs">
+        {% for faq in page.faqs %}
+          <article class="plans__faq">
+            <h4>{{ faq.title }}</h4>
+            {{ faq.body | markdownify }}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+</section>

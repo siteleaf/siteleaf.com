@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo title=false %}
+    <title>{{ page.title }}{% if page.url != '/' %} - Siteleaf{% endif %}</title>
+    {% if page.url == '/plans/' %}<link rel="stylesheet" href="/styles/plan-summary-cards.css" />{% endif %}
+    <link rel="stylesheet" href="/styles/all.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  </head>
+
+  {% if page.url == '/' %}
+    {% assign page_class = 'home' %}
+  {% elsif page.url == '/plans/' %}
+    {% assign page_class = 'plans' %}
+  {% elsif page.url == '/gallery/' %}
+    {% assign page_class = 'gallery' %}
+  {% elsif page.url == '/blog/' %}
+    <!-- blog index -->
+    {% assign page_class = 'blog' %}
+  {% elsif page.url contains '/blog/tags/' %}
+    <!-- blog tag -->
+    {% assign page_class = 'tag' %}
+  {% elsif page.url contains '/blog/archive/' %}
+    <!-- blog archive -->
+    {% assign page_class = 'archive' %}
+  {% elsif page.url contains '/blog/' %}
+    <!-- blog permalink -->
+    {% assign page_class = 'permalink' %}
+  {% else %}
+    {% assign page_class = 'page' %}
+  {% endif %}
+
+  <body class="{{ page_class }}">
+    {% if site.google_analytics %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+    {% include header.html page=page_class %}
+    {{ content }}
+    {% include footer.html %}
+    {% if page.url == '/plans/' %}<script src="/scripts/plan-summary-cards.js"></script>{% endif %}
+    <script src="/scripts/all.js"></script>
+  </body>
+</html>

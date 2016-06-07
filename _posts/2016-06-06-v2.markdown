@@ -1,0 +1,29 @@
+---
+title: Introducing Siteleaf v2
+date: 2016-06-06 00:00:00 -04:00
+tags:
+- Announcement
+---
+
+<iframe src="https://player.vimeo.com/video/169542999?title=0&byline=0&portrait=0" width="680" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<small><a href="https://vimeo.com/169542999">Introducing Siteleaf v2</a> on <a href="https://vimeo.com/169542999">Vimeo</a></small>
+
+Nearly three years ago to the day, we launched the [first public version](/blog/introducing-siteleaf/) of Siteleaf. We set out to create a new kind of content management system, one that marries the best parts of a static website generator (speed and simplicity) with a traditional CMS (power and collaboration). We dreamed of a tool that could be simple, without being dumbed down. One that values data portability, and is designed for a better web. As web developers ourselves, we wouldn't have it any other way.
+
+Today marks a huge milestone towards this goal. We’re excited to announce Siteleaf v2 is now available, and with it comes compatibility with [Jekyll](http://jekyllrb.com/), the [most popular](http://www.staticgen.com) open source static site generator. Everything you already love about Siteleaf is still here (and much improved), but we've traded our proprietary templating system for one that's powering over [half a million websites](https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months) by GitHub alone. We feel pretty good about that.
+
+Those familiar with Siteleaf v1 will immediately feel at home with Jekyll. It's the same HTML, Liquid, and Markdown goodness you already love, but with a bag of snazzy new tricks — including collections, nested metadata, custom permalinks, offline development, and more. Now, not only can you host your compiled site anywhere, you're in control of your source data too. 
+
+In addition, Siteleaf v2 now [syncs directly with GitHub](/features) so you can bring your existing Jekyll sites over in one click — and just as easily move your site out. Every edit you or other authors make in Siteleaf is synced to GitHub, including content and theme changes. See a log of edits, who made them, and revert back to any state with the Git tools you already use. It's a time machine for your content.
+
+With v2, we're also launching a new set of [plans](/plans), including a Developer plan which allows you to sync and publish to public GitHub repos totally free! To celebrate the launch, all new v2 plans come with a 40% off early-bird discount, because we love you.
+
+For a more complete list of what's new in v2, visit our [Features page](/features). 
+
+And don't worry, v1 isn't going away any time soon. We'll continue to support all existing sites and grandfathered plans for the foreseeable future. We think you're going to love v2, but there's no pressure to immediately upgrade.
+
+We've been inspired by all the [amazing things](/gallery) built by the Siteleaf community in these three short years, and we're pumped to see what you'll make with v2!
+
+Finally, big thanks to all our beta testers for patiently helping us iron out bugs over the past few months.
+
+Dive in to our brand new help site and get started with v2: [learn.siteleaf.com](http://learn.siteleaf.com)

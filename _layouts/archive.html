@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% unless post.tags contains 'v1' %}
+{% endunless %}
+
+<ul class="archive__items">
+  {% for post in site.posts %}
+    {% unless post.tags contains 'v1' %}
+      {% assign month = post.date | date: '%B %Y' %}
+      {% unless post.next %}<!-- first post -->
+        <h4 class="archive__month">{{ month }}</h4>
+      {% else %}
+        {% unless post.next.tags contains 'v1' %}
+          {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
+          {% if month != next_month %}
+            <h4 class="archive__month">{{ month }}</h4>
+          {% endif %}
+        {% endunless %}
+      {% endunless %}
+      <li class="archive__item">
+        <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
+        <a class="archive__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
+<div class="archive__more">
+  <a href="http://v1.siteleaf.com/blog/" class="archive__more__link">Siteleaf v1 posts &rarr;</a>
+</div>

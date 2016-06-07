@@ -1,0 +1,96 @@
+---
+title: Siteleaf overview
+date: 2013-06-22 13:00:00 -04:00
+permalink: "/blog/:title/"
+tags:
+- tutorial
+- liquid
+hero: "/uploads/an-introduction-to-siteleaf-collaboration.png"
+Docs:
+- getting started
+---
+
+Recently, we at [Oak](http://oak.is) launched a new website publishing platform, called [Siteleaf](http://siteleaf.com). In short, Siteleaf lets you build your website locally, edit its content in the cloud, and publish to static. In between, it’s so much more. Let me tell you about it.
+
+### Develop locally
+
+As the one who makes the websites, you undoubtedly have a dev environment you prefer. All your code is version-controlled, your snippets are award-worthy, and you are one with your text editor. With Siteleaf, there’s no online WYSIWYG editor forced upon you, so you can build your website in the comfort of your own IDE. Use the [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem) to preview your templates locally using the data from the live server. When you’re ready to go live, simply push the files with the gem or upload them using the website. You can even use [Pow](http://pow.cx/) or [Anvil](http://anvilformac.com/) to preview your sites with a proper hostname.
+
+![anvil](/uploads/an-introduction-to-siteleaf-anvil.jpg) 
+
+
+### Edit content in the cloud
+
+Prior to Siteleaf, I used [Jekyll](http://jekyllrb.com/), an open source, static site generator. With Jekyll, you build your templates locally, but you also edit your content locally. Over time, I grew frustrated with the need to open my local dev environment every time I wanted to write a new blog post. I would decide against writing a post just because it became such a chore. I wished for a Jekyll in the cloud where I could separate my website’s content from its code. This is where Siteleaf shines.
+
+![interface](/uploads/an-introduction-to-siteleaf-interface.png) 
+
+Siteleaf has a clean, simple web interface that stays out of your way, letting you focus on your content. Its layout is responsive, so you can write on any device. And the editor is built on [Ace](http://ace.ajax.org/), so tabs work as expected and your Markdown is properly formatted.
+
+### Publish anywhere
+
+![publish](/uploads/an-introduction-to-siteleaf-publish.png) 
+
+At Oak, we believe in data independence. You should be able to host your website wherever you want, without being tied down to the platform on which it was built. Siteleaf makes this possible by publishing static files to FTP, [Amazon S3](http://aws.amazon.com/s3/), or [Rackspace Cloud Files](http://www.rackspace.com/cloud/files/). You can also publish to Siteleaf’s CDN, so with one click and zero configuration, you can see your website online. This website is hosted on S3, which provides instant page loads and a $1/month hosting bill. If I were to ever have a change of heart, my website would still live on, independent of Siteleaf.
+
+### Cascading templates
+
+In determining which templates to use for each page or post, Siteleaf uses what we like to call “cascading templates.” Let’s say you have a blog post with the path `/blog/hello-world`. With cascading templates, Siteleaf will check the following paths for a template:
+
+```
+/blog/hello-world/index.html
+/blog/hello-world.html
+/blog/default.html
+/default.html
+```
+
+This provides the ability to easily customize your website down to a page-by-page level. Some of the more ambitious designers out there use a different template for each blog post and now that approach is even easier with Siteleaf. For more on Siteleaf templates, take a look at the [documentation](https://github.com/siteleaf/siteleaf-themes).
+
+### Liquid templating
+
+If you use [Shopify](http://shopify.com) or Jekyll, you are certainly familiar with [Liquid](https://github.com/Shopify/liquid/). For those who aren’t, it’s an incredibly simple and versatile templating language built by the fine folks at Shopify. With Siteleaf and Liquid, you can make a single-page website as easy as:
+
+```liquid
+{% raw %}<html>
+    <head>
+        <title>{{ site.title }} - {{ title }}</title>
+    </head>
+    <body>
+        {{ body }}
+    </body>
+</html>{% endraw %}
+```
+
+The language is clear, yet powerful. It supports loops, conditionals, partials—you name it. Combined with Siteleaf’s flexible data structure, you can really push the boundaries. On this website, I use custom metadata to specify the colors on each page by inserting variables in the CSS, like:
+
+```liquid
+{% raw %}<style>
+    body {
+        background-color: {{ meta.background_color }};
+    }
+</style>{% endraw %}
+```
+
+Taking it a step further, I can assign a fallback color, in case a page doesn’t specify the metadata:
+
+```liquid
+{% raw %}<style>
+    body {
+        background-color: {{ meta.background_color | fallback: '#fff' }};
+    }
+</style>{% endraw %}
+```
+
+A complete overview of Liquid’s syntax can be found [here](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
+
+### Collaboration
+
+![collaboration](/uploads/an-introduction-to-siteleaf-collaboration.png) 
+
+Collaboration is very important when it comes to managing websites, even if you’re building one for an individual client. As soon as you finish the website, both you and the client need to be able to update it. Since all of us here need to be able to update both the Oak and Siteleaf websites, we needed collaboration from day one. With a team or agency account, you can invite a collaborator using their email address. If they are a Siteleaf user, your site will simply appear in their list. If they don't have an account, Siteleaf will create a free, collaboration-only account for them.
+
+### In closing
+
+I hope this overview was useful to those wanting to know more about [Siteleaf](http://siteleaf.com). There’s still so much more to share, but in a series of more detailed posts. I encourage you to kick the tires and let us know what you think. Siteleaf has become my go-to platform for building websites. I’m confident it will for you, too.
+
+<small>This article was originally posted on destroytoday.com.</small>
