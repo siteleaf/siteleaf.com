@@ -8,6 +8,10 @@ header:
 - title: Learn
   url: http://learn.siteleaf.com
 footer:
+- title: Features
+  url: /features/
+- title: Purpose
+  url: /purpose/
 - title: Privacy
   url: /privacy/
 - title: Terms
