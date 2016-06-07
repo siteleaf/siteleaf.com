@@ -3,6 +3,9 @@ title: Gallery
 permalink: "/gallery/"
 layout: gallery
 items:
+- title: Cushion
+  image: "/uploads/gallery__cushion.jpg"
+  url: http://cushionapp.com/
 - title: Collins
   image: "/uploads/gallery__collins.png"
   url: http://www.wearecollins.com/
@@ -139,7 +142,7 @@ items:
   image: "/uploads/gallery__destroytoday.png"
   url: http://destroytoday.com/
 - title: Sawyer Hollenshead
-  image: "/uploads/gallery__sawyerhollenshead.png"
-  url: http://sawyerhollenshead.com/
+  image: "/uploads/gallery__sawyerhollenshead.jpg"
+  url: http://sawyerh.com/
 ---
 
