@@ -156,6 +156,14 @@ mark {
 // components
 // ----------
 
+.link {
+  &:hover {
+    opacity: $opacity--hover;
+  }
+}
+.link--bold {
+  @extend %link--bold;
+}
 [class$="__buttonWrap"] {
   @extend %container;
   text-align: center;
@@ -196,7 +204,7 @@ mark {
   margin-bottom: $v*0.75 - 0.275rem;
 }
 .footer__madeBy {
-  color: $color--gray-dark;
+  color: fade-out($color--white, 0.6);
   a:hover {
     color: $color--white;
     text-decoration: underline;
@@ -275,8 +283,8 @@ mark {
   max-width: $max-width--header__title;
   padding-left: $width--logo * 1.333333;
   padding-right: $width--logo * 1.333333;
-  .home & {
-    max-width: 36rem;
+  .header--extended & {
+    max-width: 34rem;
     margin-top: $v*4.75;
     padding-left: 0;
     padding-right: 0;
@@ -285,7 +293,7 @@ mark {
     padding-left: 0;
     padding-right: 0;
     margin-top: $v*0.75;
-    .home & {
+    .header--extended & {
       margin-top: $v*0.75;
       max-width: 28rem;
     }
@@ -293,7 +301,7 @@ mark {
 }
 .header__subtitle {
   max-width: 24rem;
-  .home & {
+  .header--extended & {
     font-size: $font-size--large;
   }
 }
@@ -301,16 +309,11 @@ mark {
 // home
 // ----
 
-.videoLink {
-  &:hover {
-    opacity: $opacity--hover;
-  }
-}
 .featureWrap {
   padding-top: $v*4;
   padding-bottom: $v*4;
 }
-.featureWrap--noPaddingBottom {
+.featureWrap--unpadBottom {
   padding-bottom: 0;
 }
 .featureWrap.bg--custom {
@@ -985,6 +988,29 @@ mark {
 .archive__link {
   &:hover {
     text-decoration: underline;
+  }
+}
+
+// 404
+// ---
+
+.fourOhFour {
+  &,
+  .headerWrap,
+  .footerWrap {
+    background: $color--purple;
+    color: $color--white;
+  }
+  img {
+    max-width: 360px;
+    @include margin-center;
+  }
+  .article {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footerWrap {
+    margin-top: 0;
   }
 }
 
