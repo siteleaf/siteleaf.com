@@ -17,6 +17,7 @@ $(function(){
     $('body').addClass('js');
     initTabs();
     initModal();
+    initFitVids();
   };
 
   var initTabs = function() {
@@ -75,6 +76,10 @@ $(function(){
   var closeModal = function() {
     player.api('pause');
     $body.removeClass(modalShownClass);
+  };
+
+  var initFitVids = function() {
+    $('.article__content').fitVids();
   };
 
   // initialize
