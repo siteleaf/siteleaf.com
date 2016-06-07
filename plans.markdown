@@ -98,7 +98,7 @@ faqs:
     your clients, writers, and teammates without having to pay extra. For those on
     a grandfathered plan, user limits may apply (see your account page for details).
 - title: What are the page and storage limits?
-  body: Trial and Developer plans are limited to 100mb and 100 pages, including posts
+  body: Trial and Developer sites are limited to 100mb and 100 pages, including posts
     and documents. Personal sites are limited to 500mb and 500 pages. All other plans,
     including grandfathered plans come with 1 GB of storage and unlimited pages.
 - title: Have more questions?
