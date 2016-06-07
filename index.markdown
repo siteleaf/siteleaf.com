@@ -28,7 +28,6 @@ features:
     image: "/uploads/home__intro--owl.svg"
 - title: Content management for the whole team
   handle: manage
-  background: white
   width: wide
   color: blue
   subsections:
@@ -213,7 +212,6 @@ features:
     image: "/uploads/logos--companies.svg"
 - title: Create something great
   handle: outro
-  background: white
   width: wide
   button: true
   body: Free for developers and open source projects.

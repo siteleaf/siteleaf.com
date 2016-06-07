@@ -153,6 +153,16 @@ mark {
   color: inherit;
 }
 
+// components
+// ----------
+
+[class$="__buttonWrap"] {
+  @extend %container;
+  text-align: center;
+}
+[class$="__button"] {
+  @extend %button--large;
+}
 .container--wide {
   @extend %container--wide;
 }
@@ -286,14 +296,6 @@ mark {
   .home & {
     font-size: $font-size--large;
   }
-}
-
-.header__button__wrap {
-  text-align: center;
-}
-
-.header__button {
-  @extend %button--large;
 }
 
 // home
@@ -682,7 +684,7 @@ mark {
 }
 .article__title {
   margin-top: $v*2;
-  margin-bottom: $v*0.75;
+  margin-bottom: $v*0.666667;
 }
 .article__content {
   p,
@@ -790,22 +792,6 @@ mark {
   color: $color--gray-dark;
   margin-bottom: $v*1.5;
   padding: 1em;
-}
-
-// blog
-// ----
-
-.blog__more {
-  @extend %container;
-  text-align: center;
-}
-.blog__more__link {
-  @extend %button--large;
-  background: $color--gray;
-  color: $color--white;
-  &:hover {
-    background: darken($color--gray, $darken--button);
-  }
 }
 
 // gallery
