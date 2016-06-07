@@ -10,9 +10,6 @@ $(function(){
     $videoModal = $('#videoModal'),
     modalShownClass = 'isModalOpen';
 
-  var iframe = document.getElementById('intro'),
-    player = $f(iframe); // $f == Froogaloop
-
   var init = function() {
     $('body').addClass('js');
     initTabs();
@@ -48,6 +45,9 @@ $(function(){
     });
   };
 
+  var iframe = $('#intro')[0],
+    player = $f(iframe); // $f == Froogaloop
+
   var initModal = function() {
     $videoOpen.click(function(e) {
       e.preventDefault();
@@ -57,6 +57,11 @@ $(function(){
     $videoModal.click(function(e) {
       closeModal();
     });
+    if (window.location.hash === '#video') {
+      setTimeout(function() {
+        showModal();
+      }, 0);
+    }
   };
 
   // esc key handler
@@ -68,6 +73,7 @@ $(function(){
 
   var showModal = function() {
     $body.addClass(modalShownClass);
+    // console.log(vimeo_player_loaded());
     setTimeout(function() {
       player.api('play');
     }, 300);
