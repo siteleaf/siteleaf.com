@@ -211,7 +211,8 @@ features:
   - name: Gilles Bertaux
     handle: "@gillesbertaux"
     avatar: https://pbs.twimg.com/profile_images/2713230287/665da44b466cc11e706cf5e4cf918618_400x400.png
-    body: "Just played around with [@siteleaf](https://twitter.com/siteleaf) for 30min. Already migrated personal website. The Jekyll CMS I wish I knew before."
+    body: Just played around with [@siteleaf](https://twitter.com/siteleaf) for 30min.
+      Already migrated personal website. The Jekyll CMS I wish I knew before.
     link: https://twitter.com/gillesbertaux/status/740302270483550208
     visible: false
   logos:
