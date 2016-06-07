@@ -83,10 +83,10 @@ faqs:
     we're offering a pretty sweet deal on our site plans. Sign up while we have early-bird
     pricing to lock in the price before it's gone.
 - title: How do subscriptions work?
-  body: Each new site you create starts with a free 14 day trial on the Personal plan.
-    No credit card is required to get started. When your trial expires, you'll be
-    prompted to select a plan. Each site is billed monthly. You can upgrade or downgrade
-    at any time and your next month's bill will be prorated.
+  body: Each new site you create starts with a **free 14 day trial** on the Personal
+    plan. No credit card is required to get started. When your trial expires, you'll
+    be prompted to select a plan. Each site is billed monthly. You can upgrade or
+    downgrade at any time and your next month's bill will be prorated.
 - title: Can I use my legacy v1 plan?
   body: Yes! You can create a v2 site using your legacy plan, grandfathered at its
     current price. If you’re using a legacy plan you’ll be held to any user and site
@@ -94,9 +94,9 @@ faqs:
     Site’s settings page and cancel your legacy plan from your account page. You can
     also add additional v2 sites on top of your legacy plan if you hit your limit.
 - title: Is there a cost per user?
-  body: All v2 plans come with unlimited users at no extra cost. You can invite your
-    clients, writer, and teammates without having to pay extra. For those on grandfathered
-    plan, user limits may apply (see your account page for details).
+  body: All v2 plans come with **unlimited users at no extra cost**. You can invite
+    your clients, writer, and teammates without having to pay extra. For those on
+    grandfathered plan, user limits may apply (see your account page for details).
 - title: What are the page and storage limits?
   body: Trial and Developer plans are limited to 100mb and 100 pages, including posts
     and documents. Personal sites are limited to 500mb and 500 pages. All other plans,
