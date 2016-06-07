@@ -2,7 +2,7 @@
 title: Introducing Siteleaf v2
 date: 2016-06-07 10:00:00 -04:00
 tags:
-- Announcement
+- announcement
 ---
 
 <iframe src="https://player.vimeo.com/video/169542999?title=0&byline=0&portrait=0" width="680" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
