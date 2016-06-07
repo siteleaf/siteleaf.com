@@ -3,3 +3,8 @@ layout: default
 ---
 
 {% include post.html post=page %}
+{% if page.button %}
+  <div class="page__buttonWrap">
+    <a href="{{ page.button.url }}" class="bg--{{ page.button.color | default: 'blue' }} page__button">{{ page.button.title }}</a>
+  </div>
+{% endif %}

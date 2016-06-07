@@ -3,6 +3,9 @@ title: Plans
 permalink: "/plans/"
 subtitle: New sites start with a free 14-day trial on the Personal plan. Upgrade or
   downgrade anytime.
+header_button:
+  title: Try for free
+  url: https://manage.siteleaf.com/signup
 plans:
 - name: Developer
   price: 0
@@ -74,9 +77,6 @@ plans:
   - Custom build server
   - Custom API limits
   - Dedicated support
-button:
-  title: Try for free
-  url: https://manage.siteleaf.com/signup
 faqs:
 - title: What's early-bird pricing?
   body: To celebrate the launch of Siteleaf v2 and show appreciation to early adopters,
