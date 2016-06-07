@@ -2,10 +2,9 @@
 title: New in v2
 permalink: "/features/"
 layout: page
-background: yellow
 ---
 
-## Open source superpowers
+### Open source superpowers
 
 ##### Compatible with a larger ecosystem
 
@@ -28,9 +27,7 @@ Export your existing v1 site content to v2-ready Jekyll format using the
 Siteleaf gem. You can also import from WordPress, Tumblr, Ghost, Drupal, and
 more using the community-supported [Jekyll importers](http://import.jekyllrb.com/).
 
----
-
-## GitHub integration  
+### GitHub integration  
 
 ##### Theme sync
 
@@ -45,9 +42,7 @@ make in Siteleaf is synced to GitHub, including content and theme changes. See
 a log of edits, who made them, and revert back to any state with the Git tools
 you already use.
 
----
-
-## Customized content 
+### Customized content 
 
 ##### Advanced metadata
 
@@ -68,9 +63,7 @@ like posts, or simply use them as super-metadata within your theme.
 Customize the way your site is generated. Choose date-based permalinks (`/2015/10/20/hello-world`),
 pretty permalinks (`/posts/hello-world`), or whatever suits your needs.
 
----
-
-## Optimized workflow
+### Optimized workflow
 
 ##### Offline development
 
@@ -89,9 +82,7 @@ totally free for developers and open source projects.
 Siteleaf now includes built-in support for compiling [Sass](http://sass-lang.com/),
 SCSS, and [CoffeeScript](http://coffeescript.org/), thanks to the power of Jekyll.
 
----
-
-## And everything you already love
+### And everything you already love
 
 ##### A smart Markdown editor
 
