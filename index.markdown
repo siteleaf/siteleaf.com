@@ -9,9 +9,9 @@ subtitle: |-
 background: yellow
 button:
   title: Get started
-  url: https://manage.siteleaf.com/signup/
+  url: https://manage.siteleaf.com/signup
 features:
-- title: 
+- title:
   handle: intro
   background: custom
   width: wide
