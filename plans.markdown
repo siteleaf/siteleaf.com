@@ -7,7 +7,7 @@ header_button:
   title: Try for free
   url: https://manage.siteleaf.com/signup
 plans:
-- name: Developer
+- name: Developer Site
   price: 0
   description: Basic functionality for folks wanting to try Siteleaf for an unlimited
     period of time.
@@ -23,7 +23,7 @@ plans:
     Community support
 
     Slack channel and docs
-- name: Personal
+- name: Personal Site
   price: 12
   discount: 0.4
   description: Gain access to previews, additional hosting options, support, and more.
@@ -36,7 +36,7 @@ plans:
     Basic support
 
     Email us your questions
-- name: Team
+- name: Team Site
   price: 49
   discount: 0.4
   description: Assign different user roles, increased file storage, and unlimited
@@ -50,7 +50,7 @@ plans:
   - Unlimited pages
   - Increased file storage
   - Increased API limits
-- name: Business
+- name: Business Site
   price: 149
   discount: 0.4
   description: Improved build performance for complex sites and queue priority.
@@ -83,15 +83,24 @@ faqs:
     we're offering a pretty sweet deal on our site plans. Sign up while we have early-bird
     pricing to lock in the price before it's gone.
 - title: How do subscriptions work?
-  body: Each new site you create starts with a free 14 day trial on the Personal plan.
-    No credit card is required to get started. When your trial expires, you'll be
-    prompted to select a plan. Each site is billed monthly. You can upgrade or downgrade
-    at any time and your next month's bill will be prorated.
+  body: Each new site you create starts with a **free 14 day trial** on the Personal
+    plan. No credit card is required to get started. When your trial expires, you'll
+    be prompted to select a plan. Each site is billed monthly. You can upgrade or
+    downgrade at any time and your next month's bill will be prorated.
 - title: Can I use my legacy v1 plan?
-  body: Yes! You can create a v2 site using your legacy plan. If you're using a legacy
-    plan you'll be held to any user and site limits associated with that plan. You
-    can always upgrade to a v2 plan from your Site's settings page and cancel your
-    legacy plan from your account page.
+  body: Yes! You can create a v2 site using your legacy plan, grandfathered at its
+    current price. If you’re using a legacy plan you’ll be held to any user and site
+    limits associated with that plan. You can always upgrade to a v2 plan from your
+    Site’s settings page and cancel your legacy plan from your account page. You can
+    also add additional v2 sites on top of your legacy plan if you hit your limit.
+- title: Is there a cost per user?
+  body: All v2 plans come with **unlimited users** at no extra cost. You can invite
+    your clients, writers, and teammates without having to pay extra. For those on
+    a grandfathered plan, user limits may apply (see your account page for details).
+- title: What are the page and storage limits?
+  body: Trial and Developer plans are limited to 100mb and 100 pages, including posts
+    and documents. Personal sites are limited to 500mb and 500 pages. All other plans,
+    including grandfathered plans come with 1 GB of storage and unlimited pages.
 - title: Have more questions?
   body: No problem. Send a message to us [on Twitter](https://twitter.com/siteleaf)
     or contact [billing@siteleaf.com](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
