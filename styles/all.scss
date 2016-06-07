@@ -160,7 +160,7 @@ mark {
   @extend %container;
   text-align: center;
 }
-[class$="__button"] {
+[class$="__button"]:not(.plan-card__button) {
   @extend %button--large;
 }
 .container--wide {
