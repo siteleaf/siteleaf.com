@@ -1,7 +1,6 @@
 ---
-title: Siteleaf - The friendly CMS for your static site
+title: Siteleaf - A friendly CMS for your static site
 header_title: Built for developers, Loved by everyone
-layout: index
 subtitle: |-
   Siteleaf is a content management system designed for a better web.
 
