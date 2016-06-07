@@ -95,7 +95,7 @@ faqs:
     also add additional v2 sites on top of your legacy plan if you hit your limit.
 - title: Is there a cost per user?
   body: All v2 plans come with **unlimited users at no extra cost**. You can invite
-    your clients, writer, and teammates without having to pay extra. For those on
+    your clients, writers, and teammates without having to pay extra. For those on
     grandfathered plan, user limits may apply (see your account page for details).
 - title: What are the page and storage limits?
   body: Trial and Developer plans are limited to 100mb and 100 pages, including posts
