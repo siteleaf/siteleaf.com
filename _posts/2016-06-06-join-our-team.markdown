@@ -1,15 +1,15 @@
 ---
 title: Join our team
-date: 2016-01-14 05:00:00 -05:00
+date: 2016-06-06 00:00:00 -04:00
 permalink: "/blog/:title/"
 tags:
 - announcement
 hero: 
 ---
 
-We are seeking a talented **Backend Developer**, our first ever full-time Siteleaf hire. This is a super rare opportunity to join our small, tight-knit team and contribute to the future of Siteleaf in a meaningful and rewarding way.
+We are seeking a talented **Backend Developer** to join our small, tight-knit team and contribute to the future of Siteleaf in a meaningful and rewarding way.
 
-Siteleaf powers thousands of websites from independent blogs to Fortune 500 companies, with a passionate following among developers (we are a product for developers, made by developers). We are currently working on an all-new [Siteleaf v2](http://v2.siteleaf.com), and have big ideas for the future. Right now is the perfect time to join our team, and help reimagine the future of static websites.
+Siteleaf powers thousands of websites from independent blogs to Fortune 500 companies, with a passionate following among developers (we are a product for developers, made by developers). We just released an all-new [Siteleaf v2](http://www.siteleaf.com), and have big ideas for the future. Right now is the perfect time to join our team, and help reimagine the future of static websites.
 
 
 
@@ -46,12 +46,12 @@ You will have some combination of the skills listed below, but always continue t
 - Frontend web development (JavaScript, Haml, Sass)
 
 <br/>
-Siteleaf is made by [Oak](http://oak.is), a New York-based team of designers and developers who also make [Dropmark](http://www.dropmark.com) and a number of [other](http://pizza-compass.com) [projects](http://partlyblue.com). We are located in a [beautiful](http://www.fastcompany.com/3043545/most-creative-people/here-is-an-open-office-any-employee-would-love) Manhattan studio filled with creative energy, panoramic views, and our friends at [Collins](http://www.wearecollins.com). Enjoy everything [Union Square](http://en.wikipedia.org/wiki/Union_Square,_Manhattan) has to offer, including at least 6 Chipotles within a 4-block radius and a daily selection of lunch recommendations by our bagel-obsessed [Slack-bot](http://drp.mk/i/S2T2hHwnqN). 
+Siteleaf is made by [Oak](http://oak.is), a Brooklyn-based team of designers and developers who also make [Dropmark](http://www.dropmark.com) and a number of [other](http://pizza-compass.com) [projects](http://partlyblue.com). 
 
-While New York is preferred, we may consider remote for the right person. We are an equal opportunity team and value diversity at our company. 
+While New York is preferred, we may consider remote for the right person. We are an equal opportunity team and value diversity at our company. Let's be awesome together!
 
 ### Sound like you? 
 
 Send an email to [team@siteleaf.com](mailto:team@siteleaf.com?subject=Backend%20Developer) and introduce yourself. 
 
-<small>p.s. Sound interesting but not sure you have the experience? We’re also currently [hiring an intern](http://oak.is/intern).</small>
+<small>p.s. Sound interesting but not sure you have the experience? We’re also looking for a [fall intern](http://oak.is/intern) later this year %.</small>
