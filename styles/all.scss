@@ -218,10 +218,6 @@ mark {
 .footer {
   font-size: $font-size--small;
   font-weight: $font-weight--medium;
-
-  @include max-width($max-width--sm) {
-    font-size: $font-size--smaller;
-  }
 }
 .header__item,
 .footer__item {
@@ -264,10 +260,6 @@ mark {
 }
 .header__logo {
   width: $width--logo;
-
-  @include max-width($max-width--sm) {
-    width: $width--logo * 0.75;
-  }
 }
 .header__title,
 .header__subtitle {
