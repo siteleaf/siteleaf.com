@@ -312,8 +312,8 @@ mark {
   padding-bottom: 0;
 }
 .featureWrap.bg--custom {
-  padding-top: $v;
-  background: linear-gradient(180deg, $color--yellow 12rem, $color--gray-lightest 12rem, $color--gray-lightest);
+  padding-top: 0;
+  background: linear-gradient(180deg, $color--yellow 11.5rem, $color--gray-lightest 11.5rem, $color--gray-lightest);
   @include max-width($max-width--lg) {
     padding-top: 0;
     background: linear-gradient(180deg, $color--yellow 8rem, $color--gray-lightest 8rem, $color--gray-lightest);
@@ -358,8 +358,8 @@ mark {
 }
 .intro__subsection__image {
   @include margin-center;
-  max-width: 300px;
   margin-bottom: $v;
+  max-width: 312px;
   @include max-width($max-width--sm) {
     max-width: 240px;
   }
@@ -564,7 +564,7 @@ mark {
 }
 .launch__image {
   @include margin-center;
-  max-width: 640px;
+  max-width: 680px;
 }
 // love
 .love__tweets {

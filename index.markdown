@@ -41,7 +41,7 @@ features:
     handle: preview
     body: Preview changes before they go live. Then publish with one click whenever
       you’re ready.
-    image: "/uploads/home__manage--preview.svg"
+    image: "/uploads/home__manage--preview.jpg"
   - title: Smart text editor
     handle: edit
     body: Choose between a visual editor or just plain Markdown. Drag and drop images
