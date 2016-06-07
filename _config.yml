@@ -51,3 +51,8 @@ twitter:
   username: siteleaf
 logo: "/assets/logo.svg"
 future: true
+image:
+  twitter: "/assets/og-image.png"
+  facebook: "/assets/og-image.png"
+  height: 630
+  width: 1200
