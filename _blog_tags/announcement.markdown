@@ -2,6 +2,6 @@
 title: Announcement
 permalink: "/blog/tags/announcement/"
 layout: tag
-background: green
+header_color: green
 ---
 

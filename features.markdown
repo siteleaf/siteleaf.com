@@ -2,7 +2,7 @@
 title: New in v2
 permalink: "/features/"
 layout: page
-background: yellow
+header_color: yellow
 button:
   title: Get started
   url: https://manage.siteleaf.com/signup

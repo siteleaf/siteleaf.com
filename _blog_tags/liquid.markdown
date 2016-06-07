@@ -2,6 +2,6 @@
 title: Liquid
 permalink: "/blog/tags/liquid/"
 layout: tag
-background: red
+header_color: dark-gray
 ---
 

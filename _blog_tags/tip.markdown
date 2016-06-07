@@ -2,6 +2,6 @@
 title: Tip
 permalink: "/blog/tags/tip/"
 layout: tag
-background: yellow
+header_color: yellow
 ---
 
