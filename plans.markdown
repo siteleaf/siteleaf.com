@@ -76,7 +76,7 @@ plans:
   - Dedicated support
 button:
   title: Try for free
-  url: https://manage.siteleaf.com/signup/
+  url: https://manage.siteleaf.com/signup
 faqs:
 - title: What's early-bird pricing?
   body: To celebrate the launch of Siteleaf v2 and show appreciation to early adopters,
