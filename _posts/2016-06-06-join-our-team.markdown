@@ -1,6 +1,6 @@
 ---
 title: Join our team
-date: 2016-01-14 00:00:00 -05:00
+date: 2016-06-06 00:00:00 -04:00
 permalink: "/blog/:title/"
 tags:
 - announcement
