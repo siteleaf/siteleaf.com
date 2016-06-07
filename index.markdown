@@ -218,6 +218,5 @@ features:
   button: true
   body: Free for developers and open source projects.
 image: "/assets/og-image.png"
-
 ---
 
