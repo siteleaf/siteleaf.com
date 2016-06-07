@@ -673,7 +673,7 @@ mark {
 // --------
 
 .article {
-  margin-top: $v*2;
+  margin-top: $v*1.5;
   margin-bottom: $v*3;
   @extend %container--narrow;
 }
@@ -731,11 +731,6 @@ mark {
   a {
     @extend %link--bold;
   }
-  & > img:first-child,
-  & > iframe:first-child,
-  & > .fluid-width-video-wrapper:first-child {
-    margin-top: $v*1;
-  }
   img + p > small:only-child,
   iframe + p > small:only-child,
   .fluid-width-video-wrapper + p > small:only-child {
@@ -752,7 +747,6 @@ mark {
 .article__meta {
   font-size: $font-size--small;
   font-weight: $font-weight--medium;
-  margin-top: $v*1.5;
 }
 .article__date {
   color: $color--gray-dark;
@@ -762,7 +756,8 @@ mark {
 .article__date {
   display: inline-block;
 }
-.article__tags {
+.article__tags,
+.article__date {
   margin-bottom: $v*0.75;
 }
 .article__tag {

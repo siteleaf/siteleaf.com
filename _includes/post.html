@@ -5,21 +5,7 @@
   {% if is_excerpt %}
     <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   {% endif %}
-  <section class="article__content">
-    {% unless is_excerpt %}
-      {% if post.tags contains 'v1' %}
-        <div class="article__note light-gray">☞ Note: This is a Siteleaf v1 post</div>
-      {% endif %}
-    {% endunless %}
-    {% if is_excerpt %}
-      {{ post.excerpt | markdownify }}
-    {% else %}
-      {{ post.content | markdownify }}
-    {% endif %}
-    {% if is_excerpt and post.excerpt != post.content %}
-      <a href="{{ post.url }}" class="article__content__more">Read more</a>
-    {% endif %}
-  </section>
+  {% if post.tags or post.date %}
   <section class="article__meta">
     {% if post.tags %}
       <ul class="article__tags">
@@ -34,6 +20,24 @@
         {% endfor %}
       </ul>
     {% endif %}
+    {% if post.date %}
     <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{% if page.url == '/privacy/' or page.url == '/terms/' %}Last updated: {% endif %}{{ post.date | date: site.date_format }}</time>
+    {% endif %}
+  </section>
+  {% endif %}
+  <section class="article__content">
+    {% unless is_excerpt %}
+      {% if post.tags contains 'v1' %}
+        <div class="article__note light-gray">☞ Note: This is a Siteleaf v1 post</div>
+      {% endif %}
+    {% endunless %}
+    {% if is_excerpt %}
+      {{ post.excerpt | markdownify }}
+    {% else %}
+      {{ post.content | markdownify }}
+    {% endif %}
+    {% if is_excerpt and post.excerpt != post.content %}
+      <a href="{{ post.url }}" class="article__content__more">Read more</a>
+    {% endif %}
   </section>
 </article>
