@@ -7,7 +7,7 @@ header_button:
   title: Try for free
   url: https://manage.siteleaf.com/signup
 plans:
-- name: Developer
+- name: Developer Site
   price: 0
   description: Basic functionality for folks wanting to try Siteleaf for an unlimited
     period of time.
@@ -23,7 +23,7 @@ plans:
     Community support
 
     Slack channel and docs
-- name: Personal
+- name: Personal Site
   price: 12
   discount: 0.4
   description: Gain access to previews, additional hosting options, support, and more.
@@ -36,7 +36,7 @@ plans:
     Basic support
 
     Email us your questions
-- name: Team
+- name: Team Site
   price: 49
   discount: 0.4
   description: Assign different user roles, increased file storage, and unlimited
@@ -50,7 +50,7 @@ plans:
   - Unlimited pages
   - Increased file storage
   - Increased API limits
-- name: Business
+- name: Business Site
   price: 149
   discount: 0.4
   description: Improved build performance for complex sites and queue priority.
