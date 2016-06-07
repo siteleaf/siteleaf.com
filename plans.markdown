@@ -28,7 +28,7 @@ plans:
   features:
   - Sync and publish to **private** GitHub repos
   - Publish to Amazon S3, Rackspace, FTP
-  - Preview yor site online before publishing
+  - Preview your site online before publishing
   - |-
     Basic support
 
