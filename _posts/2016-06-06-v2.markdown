@@ -14,7 +14,7 @@ Today marks a huge milestone towards this goal. We’re excited to announce Site
 
 Those familiar with Siteleaf v1 will immediately feel at home with Jekyll. It's the same HTML, Liquid, and Markdown goodness you already love, but with a bag of snazzy new tricks — including collections, nested metadata, custom permalinks, offline development, and more. Now, not only can you host your compiled site anywhere, you're in control of your source data too. 
 
-In additional, Siteleaf v2 now [syncs directly with GitHub](/features) so you can bring your existing Jekyll sites over in one click — and just as easily move your site out. Every edit you or other authors make in Siteleaf is synced to GitHub, including content and theme changes. See a log of edits, who made them, and revert back to any state with the Git tools you already use. It's a time machine for your content.
+In addition, Siteleaf v2 now [syncs directly with GitHub](/features) so you can bring your existing Jekyll sites over in one click — and just as easily move your site out. Every edit you or other authors make in Siteleaf is synced to GitHub, including content and theme changes. See a log of edits, who made them, and revert back to any state with the Git tools you already use. It's a time machine for your content.
 
 With v2, we're also launching a new set of [plans](/plans), including a Developer plan which allows you to sync and publish to public GitHub repos totally free! To celebrate the launch, all new v2 plans come with a 40% off early-bird discount, because we love you.
 
@@ -26,4 +26,4 @@ We've been inspired by all the [amazing things](/gallery) built by the Siteleaf 
 
 Finally, big thanks to all our beta testers for patiently helping us iron out bugs over the past few months.
 
-Dive in to our brand new help site and get started with v2: <http://learn.siteleaf.com>
+Dive in to our brand new help site and get started with v2: [learn.siteleaf.com](http://learn.siteleaf.com)
