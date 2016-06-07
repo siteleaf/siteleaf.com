@@ -195,23 +195,20 @@ mark {
 }
 .footer {
   text-align: center;
-  color: $color--gray;
   padding-top: $gutter*2 - 0.1833333rem; // offset for footer__link padding
   padding-bottom: $gutter*2;
 }
 .footer__items {
-  color: $color--white;
   margin-bottom: $v*0.75 - 0.275rem;
 }
 .footer__madeBy {
-  color: fade-out($color--white, 0.6);
+  opacity: $opacity--hover;
   a:hover {
-    color: $color--white;
     text-decoration: underline;
   }
 }
 .footerWrap {
-  background-color: $color--gray-darkest;
+  background: $color--gray-lightest;
   margin-top: $v*4;
   .home & {
     margin-top: 0;
@@ -221,10 +218,6 @@ mark {
 .footer {
   font-size: $font-size--small;
   font-weight: $font-weight--medium;
-
-  @include max-width($max-width--sm) {
-    font-size: $font-size--smaller;
-  }
 }
 .header__item,
 .footer__item {
@@ -267,10 +260,6 @@ mark {
 }
 .header__logo {
   width: $width--logo;
-
-  @include max-width($max-width--sm) {
-    width: $width--logo * 0.75;
-  }
 }
 .header__title,
 .header__subtitle {
@@ -681,6 +670,9 @@ mark {
   margin-top: $v*1.5;
   margin-bottom: $v*3;
   @extend %container--narrow;
+  .wrap > &:last-child {
+    margin-bottom: 0;
+  }
 }
 .article + .article {
   margin-top: $v*4;
@@ -1121,6 +1113,18 @@ a.bg--dark-gray:hover {
 }
 a.bg--gray:hover {
   background: darken($color--gray-dark, $darken--button);
+}
+
+// sticky footer
+// -------------
+
+body {
+  min-height: 100vh;
+  @include flexbox;
+  @include flex-direction(column);
+}
+.wrap {
+  @include flex-grow(1);
 }
 
 // icons

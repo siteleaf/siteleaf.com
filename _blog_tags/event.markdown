@@ -2,6 +2,6 @@
 title: Event
 permalink: "/blog/tags/event/"
 layout: tag
-background: yellow
+header_color: yellow
 ---
 

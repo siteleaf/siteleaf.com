@@ -1,5 +1,5 @@
-{% if page.background %}
-  {% assign background = page.background %}
+{% if page.header_color %}
+  {% assign background = page.header_color %}
 {% elsif include.page == 'permalink' %}
   <!-- blog permalink, inherit from first tag -->
   {% assign tag_collection = site.collections | where: 'label', 'blog_tags' | first %}
@@ -7,17 +7,13 @@
   {% for site_tag in tag_collection.docs %}
     {% assign site_tag_title = site_tag.title | downcase %}
     {% if site_tag_title == post_tag_downcase %}
-      {% if site_tag.background %}
-        {% assign background = site_tag.background %}
-      {% else %}
-        {% assign background = 'light-gray' %}
+      {% if site_tag.header_color %}
+        {% assign background = site_tag.header_color %}
       {% endif %}
     {% endif %}
   {% endfor %}
-{% else %}
-  {% assign background = 'light-gray' %}
 {% endif %}
-<div class="headerWrap bg--{{ background }}">
+<div class="headerWrap bg--{{ background | default: 'light-gray' }}">
   <header class="header{% if page.extended_header %} header--extended{% endif %}">
     <ul class="header__items">
       {% for item in site.data.navigation.header %}
