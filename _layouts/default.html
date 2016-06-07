@@ -29,6 +29,8 @@
   {% elsif page.url contains '/blog/' %}
     <!-- blog permalink -->
     {% assign page_class = 'permalink' %}
+  {% elsif page.is_404 %}
+    {% assign page_class = 'fourOhFour' %}
   {% else %}
     {% assign page_class = 'page' %}
   {% endif %}

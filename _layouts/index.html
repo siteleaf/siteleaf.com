@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for feature in page.features %}
-  <div class="featureWrap{% if feature.unpad %} featureWrap--noPaddingBottom{% endif %} bg--{{ feature.background | default:'white' }}">
+  <div class="featureWrap{% if feature.unpad == 'bottom' %} featureWrap--unpadBottom{% endif %} bg--{{ feature.background | default:'white' }}">
     <section class="feature feature--{{ feature.width }} {{ feature.handle }}">
       {% if feature.title %}<h2 class="feature__title">{{ feature.title }}</h2>{% endif %}
       {% case feature.handle %}
