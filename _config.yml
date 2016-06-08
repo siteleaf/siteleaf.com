@@ -29,7 +29,7 @@ defaults:
 url: http://www.siteleaf.com
 description: Built for developers, Loved by everyone. Supports Jekyll, user collaboration,
   publishing to AWS S3, GitHub Pages, FTP, and more.
-permalinks: pretty
+permalink: pretty
 exclude:
 - Gruntfile.js
 - Gemfile
