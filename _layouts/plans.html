@@ -34,12 +34,12 @@ layout: default
 
 <section class="plans__faqs__row bg--light-gray">
     <div class="container--wide">
-      <h2>FAQ</h2>
+      <h2 id="faq">FAQ</h2>
 
       <div class="plans__faqs">
         {% for faq in page.faqs %}
           <article class="plans__faq">
-            <h4>{{ faq.title }}</h4>
+            <h4 id="{{ faq.handle }}">{{ faq.title }}</h4>
             {{ faq.body | markdownify }}
           </article>
         {% endfor %}
