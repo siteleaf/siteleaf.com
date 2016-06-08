@@ -1,5 +1,6 @@
 ---
 title: Tobyshorin
+position: 14
 name: Toby Shorin
 handle: "@tobyshorin"
 avatar: "/uploads/avatar--tobyshorin.jpg"
