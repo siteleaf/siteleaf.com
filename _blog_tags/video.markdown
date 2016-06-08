@@ -2,6 +2,6 @@
 title: Video
 permalink: "/blog/tags/video/"
 layout: tag
-header_color: dark-gray
+color: dark-gray
 ---
 
