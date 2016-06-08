@@ -1,4 +1,5 @@
 ---
+title: Jsnhff
 name: Jason Huff
 handle: "@jsnhff"
 avatar: "/uploads/avatar--jsnhff.jpg"

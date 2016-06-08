@@ -1,4 +1,5 @@
 ---
+title: Simplyand
 name: Chris Bernardi
 handle: "@simplyand"
 avatar: "/uploads/avatar--simplyand.jpg"

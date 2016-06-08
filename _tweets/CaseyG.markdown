@@ -1,4 +1,5 @@
 ---
+title: Caseyg
 name: Casey Gollan
 handle: "@CaseyG"
 avatar: "/uploads/avatar--CaseyG.jpg"

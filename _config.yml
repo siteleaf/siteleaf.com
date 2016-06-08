@@ -5,15 +5,15 @@ collections:
   posts:
     title: Posts
     output: true
-  uploads:
-    title: Uploads
-    output: true
   blog_tags:
     title: Tags
     output: true
   tweets:
     title: Tweets
     output: false
+  uploads:
+    title: Uploads
+    output: true
 defaults:
 - scope:
     path: ''
@@ -22,6 +22,7 @@ defaults:
     permalink: "/blog/:title/"
     layout: post
 - scope:
+    path: ''
     type: blog_tags
   values:
     layout: tag

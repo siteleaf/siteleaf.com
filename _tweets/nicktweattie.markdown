@@ -1,4 +1,5 @@
 ---
+title: Nicktweattie
 name: Nick Beattie
 handle: "@nicktweattie"
 avatar: "/uploads/avatar--nicktweattie.jpg"

@@ -1,4 +1,5 @@
 ---
+title: Randyjhunt
 name: Randy J. Hunt
 handle: "@randyjhunt"
 avatar: "/uploads/avatar--randyjhunt.jpg"

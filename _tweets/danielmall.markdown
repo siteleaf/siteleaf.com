@@ -1,4 +1,5 @@
 ---
+title: Danielmall
 name: Dan Mall
 handle: "@danielmall"
 avatar: "/uploads/avatar--danielmall.jpg"

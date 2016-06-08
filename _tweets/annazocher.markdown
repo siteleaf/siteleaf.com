@@ -1,4 +1,5 @@
 ---
+title: Annazocher
 name: Anna Zocher
 handle: "@annazocher"
 avatar: "/uploads/avatar--annazocher.jpg"

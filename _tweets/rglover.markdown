@@ -1,4 +1,5 @@
 ---
+title: Rglover
 name: Ryan Glover
 handle: "@rglover"
 avatar: "/uploads/avatar--rglover.jpg"

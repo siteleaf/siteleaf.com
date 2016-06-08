@@ -1,4 +1,5 @@
 ---
+title: Destroytoday
 name: Jonnie Hallman
 handle: "@destroytoday"
 avatar: "/uploads/avatar--destroytoday.jpg"

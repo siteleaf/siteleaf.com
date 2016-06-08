@@ -1,4 +1,5 @@
 ---
+title: Gillesbertaux
 name: Gilles Bertaux
 handle: "@gillesbertaux"
 avatar: "/uploads/avatar--gillesbertaux.jpg"

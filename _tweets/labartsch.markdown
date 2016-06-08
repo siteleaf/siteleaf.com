@@ -1,4 +1,5 @@
 ---
+title: Labartsch
 name: Leigh-Ann Bartsch
 handle: "@labartsch"
 avatar: "/uploads/avatar--labartsch.jpg"

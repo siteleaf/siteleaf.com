@@ -1,4 +1,5 @@
 ---
+title: Maxalfiemurdoch
 name: Max Murdoch
 handle: "@maxalfiemurdoch"
 avatar: "/uploads/avatar--maxalfiemurdoch.jpg"
