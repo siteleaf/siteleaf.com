@@ -1,6 +1,6 @@
 ---
 title: Johnchourajr
-position: 6
+position: 7
 name: John Choura Jr.
 handle: "@johnchourajr"
 avatar: "/uploads/avatar--johnchourajr.jpg"

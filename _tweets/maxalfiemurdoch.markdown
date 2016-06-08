@@ -1,6 +1,6 @@
 ---
 title: Maxalfiemurdoch
-position: 9
+position: 5
 name: Max Murdoch
 handle: "@maxalfiemurdoch"
 avatar: "/uploads/avatar--maxalfiemurdoch.jpg"

@@ -1,6 +1,6 @@
 ---
 title: Labartsch
-position: 8
+position: 9
 name: Leigh-Ann Bartsch
 handle: "@labartsch"
 avatar: "/uploads/avatar--labartsch.jpg"

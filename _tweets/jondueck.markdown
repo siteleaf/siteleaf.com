@@ -1,6 +1,6 @@
 ---
 title: Jondueck
-position: 7
+position: 8
 name: Jon Dueck
 handle: "@jondueck"
 avatar: "/uploads/avatar--jondueck.jpg"
