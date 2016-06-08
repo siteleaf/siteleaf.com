@@ -19,13 +19,14 @@
 *,
 *:before,
 *:after {
-  @include box-sizing(border-box);
+  @include box-sizing(inherit);
 }
 html,
 body {
   overflow-x: hidden;
 }
 html {
+  @include box-sizing(border-box);
   font-size: $font-size--html;
   @include max-width($max-width--sm) {
     font-size: $font-size--html-sm;
