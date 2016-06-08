@@ -1,9 +1,8 @@
 ---
-title: Jondueck
+title: Jon Dueck
 position: 8
-name: Jon Dueck
 handle: "@jondueck"
-avatar: "/uploads/avatar--jondueck.jpg"
+image: "/uploads/avatar--jondueck.jpg"
 link: https://twitter.com/jondueck/status/443241912112128000
 ---
 

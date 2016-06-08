@@ -1,9 +1,8 @@
 ---
-title: Jsnhff
+title: Jason Huff
 position: 0
-name: Jason Huff
 handle: "@jsnhff"
-avatar: "/uploads/avatar--jsnhff.jpg"
+image: "/uploads/avatar--jsnhff.jpg"
 link: https://twitter.com/jsnhff/status/737047990339284992
 ---
 

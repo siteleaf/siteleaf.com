@@ -1,9 +1,8 @@
 ---
-title: Destroytoday
+title: Jonnie Hallman
 position: 4
-name: Jonnie Hallman
 handle: "@destroytoday"
-avatar: "/uploads/avatar--destroytoday.jpg"
+image: "/uploads/avatar--destroytoday.jpg"
 link: https://twitter.com/destroytoday/status/672962921903820801
 ---
 

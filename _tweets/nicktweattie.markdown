@@ -1,9 +1,8 @@
 ---
-title: Nicktweattie
+title: Nick Beattie
 position: 10
-name: Nick Beattie
 handle: "@nicktweattie"
-avatar: "/uploads/avatar--nicktweattie.jpg"
+image: "/uploads/avatar--nicktweattie.jpg"
 link: https://twitter.com/nicktweattie/status/432199961443581952
 ---
 

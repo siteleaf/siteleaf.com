@@ -1,9 +1,8 @@
 ---
-title: Simplyand
+title: Chris Bernardi
 position: 13
-name: Chris Bernardi
 handle: "@simplyand"
-avatar: "/uploads/avatar--simplyand.jpg"
+image: "/uploads/avatar--simplyand.jpg"
 link: https://twitter.com/simplyand/status/469298011550781440
 ---
 

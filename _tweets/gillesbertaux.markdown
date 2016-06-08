@@ -1,9 +1,8 @@
 ---
-title: Gillesbertaux
+title: Gilles Bertaux
 position: 6
-name: Gilles Bertaux
 handle: "@gillesbertaux"
-avatar: "/uploads/avatar--gillesbertaux.jpg"
+image: "/uploads/avatar--gillesbertaux.jpg"
 link: https://twitter.com/gillesbertaux/status/740302270483550208
 ---
 

@@ -1,9 +1,8 @@
 ---
-title: Annazocher
+title: Anna Zocher
 position: 1
-name: Anna Zocher
 handle: "@annazocher"
-avatar: "/uploads/avatar--annazocher.jpg"
+image: "/uploads/avatar--annazocher.jpg"
 link: https://twitter.com/annazocher/status/442702234984656896
 ---
 

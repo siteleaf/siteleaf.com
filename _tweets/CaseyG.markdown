@@ -1,9 +1,8 @@
 ---
-title: Caseyg
+title: Casey Gollan
 position: 2
-name: Casey Gollan
 handle: "@CaseyG"
-avatar: "/uploads/avatar--CaseyG.jpg"
+image: "/uploads/avatar--CaseyG.jpg"
 link: https://twitter.com/CaseyG/status/358286369962995712
 ---
 

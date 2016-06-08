@@ -1,9 +1,8 @@
 ---
-title: Rglover
+title: Ryan Glover
 position: 12
-name: Ryan Glover
 handle: "@rglover"
-avatar: "/uploads/avatar--rglover.jpg"
+image: "/uploads/avatar--rglover.jpg"
 link: https://twitter.com/rglover/status/477504707334651905
 ---
 

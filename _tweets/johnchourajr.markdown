@@ -1,9 +1,8 @@
 ---
-title: Johnchourajr
+title: John Choura Jr.
 position: 7
-name: John Choura Jr.
 handle: "@johnchourajr"
-avatar: "/uploads/avatar--johnchourajr.jpg"
+image: "/uploads/avatar--johnchourajr.jpg"
 link: https://twitter.com/johnchourajr/status/571840493727948800
 ---
 

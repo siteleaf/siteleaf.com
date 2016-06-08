@@ -65,16 +65,17 @@ layout: default
           <img src="{{ feature.image }}" alt="{{ feature.title }}" class="launch__image" />
         {% when 'love' %}
           <ul class="love__tweets">
-            {% for tweet in site.tweets limit:6 %}
+            {% assign sorted_tweets = site.tweets | sort:'position' %}
+            {% for tweet in sorted_tweets limit:6 %}
               <li class="love__tweet">
                 <div class="love__tweet__card">
                   <a href="{{ tweet.link }}">
                     <div class="love__tweet__header">
                       <div class="love__tweet__header__item">
-                        <img src="{{ tweet.avatar }}" class="love__tweet__avatar" />
+                        <img src="{{ tweet.image }}" class="love__tweet__avatar" />
                       </div>
                       <div class="love__tweet__header__item">
-                        <h5 class="love__tweet__name">{{ tweet.name }}</h5>
+                        <h5 class="love__tweet__name">{{ tweet.title }}</h5>
                         <small class="love__tweet__handle">{{ tweet.handle }}</small>
                       </div>
                     </div>

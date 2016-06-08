@@ -1,9 +1,8 @@
 ---
-title: Maxalfiemurdoch
+title: Max Murdoch
 position: 5
-name: Max Murdoch
 handle: "@maxalfiemurdoch"
-avatar: "/uploads/avatar--maxalfiemurdoch.jpg"
+image: "/uploads/avatar--maxalfiemurdoch.jpg"
 link: https://twitter.com/maxalfiemurdoch/status/492342773560131584
 ---
 

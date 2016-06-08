@@ -1,9 +1,8 @@
 ---
-title: Danielmall
+title: Dan Mall
 position: 3
-name: Dan Mall
 handle: "@danielmall"
-avatar: "/uploads/avatar--danielmall.jpg"
+image: "/uploads/avatar--danielmall.jpg"
 link: https://twitter.com/danielmall/status/551085989364776960
 ---
 

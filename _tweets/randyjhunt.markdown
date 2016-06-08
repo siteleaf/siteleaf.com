@@ -1,9 +1,8 @@
 ---
-title: Randyjhunt
+title: Randy J. Hunt
 position: 11
-name: Randy J. Hunt
 handle: "@randyjhunt"
-avatar: "/uploads/avatar--randyjhunt.jpg"
+image: "/uploads/avatar--randyjhunt.jpg"
 link: https://twitter.com/randyjhunt/status/475987996387594240
 ---
 

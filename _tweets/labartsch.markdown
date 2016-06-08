@@ -1,9 +1,8 @@
 ---
-title: Labartsch
+title: Leigh-Ann Bartsch
 position: 9
-name: Leigh-Ann Bartsch
 handle: "@labartsch"
-avatar: "/uploads/avatar--labartsch.jpg"
+image: "/uploads/avatar--labartsch.jpg"
 link: https://twitter.com/labartsch/status/453249739879112704
 ---
 
