@@ -1,6 +1,6 @@
 ---
 title: Siteleaf turns one
-date: 2014-06-06 17:59:00 Z
+date: 2014-06-06 13:59:00 -04:00
 permalink: "/blog/:title/"
 tags:
 - announcement
