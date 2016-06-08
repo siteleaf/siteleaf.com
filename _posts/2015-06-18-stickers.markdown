@@ -1,13 +1,13 @@
 ---
 title: Stickers now available
-date: 2014-06-18 15:51:00 -04:00
+date: 2015-06-18 15:51:00 -04:00
 permalink: "/blog/:title/"
 tags:
 - community
 hero: 
 ---
 
-Siteleaf stickers are now available from Sticker Mule!
+Siteleaf stickers are now available from Sticker Mule!!
 
 Make your laptop happy and [pick one up today](http://www.stickermule.com/marketplace/855-siteleaf-stickers). Available at cost with free shipping in quantities of 1-1000 (in case you have a lot of friends).
 
