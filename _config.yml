@@ -8,6 +8,9 @@ collections:
   blog_tags:
     title: Tags
     output: true
+  tweets:
+    title: Tweets
+    output: false
   uploads:
     title: Uploads
     output: true
@@ -18,6 +21,11 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
+- scope:
+    path: ''
+    type: blog_tags
+  values:
+    layout: tag
 url: http://www.siteleaf.com
 description: Built for developers, Loved by everyone. Supports Jekyll, user collaboration,
   publishing to AWS S3, GitHub Pages, FTP, and more.

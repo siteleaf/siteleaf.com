@@ -1,6 +1,5 @@
 {% assign post = include.post %}
 {% assign is_excerpt = include.is_excerpt %}
-{% assign tag_collection = site.collections | where: 'label', 'blog_tags' | first %}
 <article class="article">
   {% if is_excerpt %}
     <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -11,7 +10,7 @@
       <ul class="article__tags">
         {% for post_tag in post.tags %}
           {% assign post_tag_downcase = post_tag | downcase %}
-          {% for site_tag in tag_collection.docs %}
+          {% for site_tag in site.blog_tags %}
             {% assign site_tag_title = site_tag.title | downcase %}
             {% if site_tag_title == post_tag_downcase %}
               <li class="article__tag"><a href="{{ site_tag.permalink }}" class="article__tag__link{% if site_tag.color %} bg--{{site_tag.color}}{% endif %}">{{ site_tag.title }}</a></li>
