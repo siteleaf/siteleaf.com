@@ -2,6 +2,6 @@
 title: Tutorial
 permalink: "/blog/tags/tutorial/"
 layout: tag
-color: blue
+color: dark-gray
 ---
 
