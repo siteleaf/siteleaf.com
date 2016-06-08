@@ -65,25 +65,23 @@ layout: default
           <img src="{{ feature.image }}" alt="{{ feature.title }}" class="launch__image" />
         {% when 'love' %}
           <ul class="love__tweets">
-            {% for tweet in feature.tweets %}
-              {% if tweet.visible %}
-                <li class="love__tweet">
-                  <div class="love__tweet__card">
-                    <a href="{{ tweet.link }}">
-                      <div class="love__tweet__header">
-                        <div class="love__tweet__header__item">
-                          <img src="{{ tweet.avatar }}" class="love__tweet__avatar" />
-                        </div>
-                        <div class="love__tweet__header__item">
-                          <h5 class="love__tweet__name">{{ tweet.name }}</h5>
-                          <small class="love__tweet__handle">{{ tweet.handle }}</small>
-                        </div>
+            {% for tweet in site.tweets limit:6 %}
+              <li class="love__tweet">
+                <div class="love__tweet__card">
+                  <a href="{{ tweet.link }}">
+                    <div class="love__tweet__header">
+                      <div class="love__tweet__header__item">
+                        <img src="{{ tweet.avatar }}" class="love__tweet__avatar" />
                       </div>
-                    </a>
-                    <div class="love__tweet__content">{{ tweet.body | markdownify }}</div>
-                  </div>
-                </li>
-              {% endif %}
+                      <div class="love__tweet__header__item">
+                        <h5 class="love__tweet__name">{{ tweet.name }}</h5>
+                        <small class="love__tweet__handle">{{ tweet.handle }}</small>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="love__tweet__content">{{ tweet.content | markdownify }}</div>
+                </div>
+              </li>
             {% endfor %}
           </ul>
           <img src="{{ feature.logos.image }}" alt="{{ feature.logos.title }}" class="love__logos" />
