@@ -14,7 +14,7 @@
           {% for site_tag in tag_collection.docs %}
             {% assign site_tag_title = site_tag.title | downcase %}
             {% if site_tag_title == post_tag_downcase %}
-              <li class="article__tag"><a href="{{ site_tag.permalink }}" class="article__tag__link{% if site_tag.header_color %} bg--{{site_tag.header_color}}{% endif %}">{{ site_tag.title }}</a></li>
+              <li class="article__tag"><a href="{{ site_tag.permalink }}" class="article__tag__link{% if site_tag.color %} bg--{{site_tag.color}}{% endif %}">{{ site_tag.title }}</a></li>
             {% endif %}
           {% endfor %}
         {% endfor %}

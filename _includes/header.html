@@ -1,5 +1,5 @@
-{% if page.header_color %}
-  {% assign background = page.header_color %}
+{% if page.color %}
+  {% assign background = page.color %}
 {% elsif include.page == 'permalink' %}
   <!-- blog permalink, inherit from first tag -->
   {% assign tag_collection = site.collections | where: 'label', 'blog_tags' | first %}
@@ -7,8 +7,8 @@
   {% for site_tag in tag_collection.docs %}
     {% assign site_tag_title = site_tag.title | downcase %}
     {% if site_tag_title == post_tag_downcase %}
-      {% if site_tag.header_color %}
-        {% assign background = site_tag.header_color %}
+      {% if site_tag.color %}
+        {% assign background = site_tag.color %}
       {% endif %}
     {% endif %}
   {% endfor %}
