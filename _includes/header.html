@@ -1,5 +1,17 @@
 {% if page.color %}
   {% assign background = page.color %}
+{% elsif include.page == 'blog' %}
+  <!-- blog index, inherit from first tag of first post -->
+  {% assign first_post = site.posts | first %}
+  {% assign post_tag_downcase = first_post.tags | first | downcase %}
+  {% for site_tag in site.blog_tags %}
+    {% assign site_tag_title = site_tag.title | downcase %}
+    {% if site_tag_title == post_tag_downcase %}
+      {% if site_tag.color %}
+        {% assign background = site_tag.color %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 {% elsif include.page == 'permalink' %}
   <!-- blog permalink, inherit from first tag -->
   {% assign post_tag_downcase = page.tags | first | downcase %}
@@ -12,7 +24,7 @@
     {% endif %}
   {% endfor %}
 {% endif %}
-<div class="headerWrap bg--{{ background | default: 'light-gray' }}">
+<div class="headerWrap bg--{{ background | default: 'lightest-gray' }}">
   <header class="header{% if page.extended_header %} header--extended{% endif %}">
     <ul class="header__items">
       {% for item in site.data.navigation.header %}
