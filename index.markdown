@@ -54,7 +54,7 @@ features:
     image: "/uploads/home__manage--customize.jpg"
 - title: Develop with tools you already love
   handle: develop
-  background: light-gray
+  background: lightest-gray
   width: wide
   subsections:
   - title: Built on open source
@@ -76,7 +76,7 @@ features:
     color: purple
 - title: Free your content
   handle: free
-  background: dark-gray
+  background: darkest-gray
   width: wide
   image: "/uploads/home__free.svg"
   subsections:
@@ -104,7 +104,7 @@ features:
     Best of all, unlike legacy CMSs like WordPress and Drupal, your website’s entire source code and content are completely portable. Never be locked into a particular service again. An Open Web is a better web.
 - title: Join thousands of happy customers
   handle: love
-  background: light-gray
+  background: lightest-gray
   width: wide
   logos:
     title: companies
