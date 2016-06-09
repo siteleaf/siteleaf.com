@@ -33,7 +33,7 @@ html {
   }
 }
 body {
-  color: $color--gray-darkest;
+  color: $color--darkest-gray;
   background: $color--white;
   font-family: $font-family--sans-serif;
   line-height: $line-height--base;
@@ -97,21 +97,21 @@ hr {
   width: 5em;
   margin: $v*1.5 auto;
   border: 0;
-  border-top: 0.2em solid $color--gray-lighter;
+  border-top: 0.2em solid $color--lighter-gray;
 }
 blockquote {
   font-style: italic;
   margin-left: 0.3em;
   padding-left: 1.2em - 0.3em - 0.2em;
-  border-left: 0.2em solid $color--gray-lighter;
+  border-left: 0.2em solid $color--lighter-gray;
   em {
     font-family: $font-family--sans-serif;
   }
 }
 pre,
 code {
-  background: $color--gray-lightest;
-  color: $color--gray-darker;
+  background: $color--lightest-gray;
+  color: $color--darker-gray;
 }
 pre {
   padding: 1em;
@@ -131,10 +131,12 @@ samp {
   overflow: auto;
   white-space: pre;
 }
-strong {
+strong,
+b {
   font-weight: $font-weight--bold;
 }
-em {
+em,
+i {
   font-style: italic;
 }
 small {
@@ -209,7 +211,7 @@ mark {
   }
 }
 .footerWrap {
-  background: $color--gray-lightest;
+  background: $color--lightest-gray;
   margin-top: $v*3;
   .home & {
     margin-top: 0;
@@ -228,13 +230,13 @@ mark {
 .footer__link {
   @extend %button;
 }
-.header__link:not(.header__link--signup),
+.header__link:not(.header__link--button),
 .footer__link {
   &:hover {
     text-decoration: underline;
   }
 }
-.header__link--signup {
+.header__link--button {
   background: $color--leaf;
   color: $color--white;
   margin-left: 0.5em;
@@ -308,14 +310,14 @@ mark {
 }
 .featureWrap.bg--custom {
   padding-top: 0;
-  background: linear-gradient(180deg, $color--yellow 11.5rem, $color--gray-lightest 11.5rem, $color--gray-lightest);
+  background: linear-gradient(180deg, $color--yellow 11.5rem, $color--lightest-gray 11.5rem, $color--lightest-gray);
   @include max-width($max-width--lg) {
     padding-top: 0;
-    background: linear-gradient(180deg, $color--yellow 8rem, $color--gray-lightest 8rem, $color--gray-lightest);
+    background: linear-gradient(180deg, $color--yellow 8rem, $color--lightest-gray 8rem, $color--lightest-gray);
   }
   @include max-width($max-width--sm) {
     padding-top: $v*2;
-    background: $color--gray-lightest;
+    background: $color--lightest-gray;
   }
 }
 .feature {
@@ -355,6 +357,9 @@ mark {
   @include margin-center;
   margin-bottom: $v;
   max-width: 312px;
+  @include max-width($max-width--lg) {
+    max-width: 294px;
+  }
   @include max-width($max-width--sm) {
     max-width: 240px;
   }
@@ -460,7 +465,7 @@ mark {
       }
     }
     &.active {
-      background: $color--gray-lightest;
+      background: $color--lightest-gray;
     }
   }
 }
@@ -744,21 +749,21 @@ mark {
   iframe + p > small:only-child,
   .fluid-width-video-wrapper + p > small:only-child {
     // "captions"
-    color: $color--gray-dark;
+    color: $color--dark-gray;
     display: block;
     margin-top: -$v*0.5;
     margin-bottom: $v*1;
   }
 }
 .article__content__more {
-  color: $color--gray-dark;
+  color: $color--dark-gray;
 }
 .article__meta {
   font-size: $font-size--small;
   font-weight: $font-weight--medium;
 }
 .article__date {
-  color: $color--gray-dark;
+  color: $color--dark-gray;
 }
 .article__tags,
 .article__tag,
@@ -781,9 +786,9 @@ mark {
   color: $color--white;
 }
 .article__note {
-  background: $color--gray-lightest;
+  background: $color--lightest-gray;
   font-weight: $font-weight--medium;
-  color: $color--gray-dark;
+  color: $color--dark-gray;
   margin-bottom: $v*1.5;
   padding: 1em;
 }
@@ -795,7 +800,7 @@ mark {
   &,
   .headerWrap,
   .footerWrap {
-    background: darken($color--gray-darkest, 3%);
+    background: darken($color--darkest-gray, 3%);
     color: $color--white;
   }
 }
@@ -895,7 +900,7 @@ mark {
 
 .plans__details__subtitle {
   font-style: italic;
-  color: $color--gray-dark;
+  color: $color--dark-gray;
   margin-bottom: $v*0.5;
 }
 .plans__details__feature {
@@ -906,7 +911,7 @@ mark {
   }
 
   p:nth-child(2) {
-    color: $color--gray-dark;
+    color: $color--dark-gray;
     font-size: 0.9em;
   }
 }
@@ -961,7 +966,7 @@ mark {
   @extend %container--narrow;
 }
 .archive__more__link {
-  color: $color--gray-dark;
+  color: $color--dark-gray;
   @extend %link--bold;
 }
 .archive__month {
@@ -1039,21 +1044,21 @@ mark {
   }
 }
 .darkest-gray {
-  color: $color--gray-darkest;
+  color: $color--darkest-gray;
   &.icon {
-    fill: $color--gray-darkest;
+    fill: $color--darkest-gray;
   }
 }
 .darker-gray {
-  color: $color--gray-darker;
+  color: $color--darker-gray;
   &.icon {
-    fill: $color--gray-darker;
+    fill: $color--darker-gray;
   }
 }
 .dark-gray {
-  color: $color--gray-dark;
+  color: $color--dark-gray;
   &.icon {
-    fill: $color--gray-dark;
+    fill: $color--dark-gray;
   }
 }
 .gray {
@@ -1097,15 +1102,15 @@ mark {
   color: $color--white;
 }
 .bg--darkest-gray {
-  background: $color--gray-darkest;
+  background: $color--darkest-gray;
   color: $color--white;
 }
 .bg--darker-gray {
-  background: $color--gray-darker;
+  background: $color--darker-gray;
   color: $color--white;
 }
 .bg--dark-gray {
-  background: $color--gray-dark;
+  background: $color--dark-gray;
   color: $color--white;
 }
 .bg--gray {
@@ -1113,7 +1118,7 @@ mark {
   color: $color--white;
 }
 .bg--lightest-gray {
-  background: $color--gray-lightest;
+  background: $color--lightest-gray;
 }
 .bg--white {
   background: $color--white;
@@ -1134,13 +1139,13 @@ a.bg--purple:hover {
   background: darken($color--purple, $darken--button);
 }
 a.bg--darkest-gray:hover {
-  background: darken($color--gray-darkest, $darken--button);
+  background: darken($color--darkest-gray, $darken--button);
 }
 a.bg--darker-gray:hover {
-  background: darken($color--gray-darker, $darken--button);
+  background: darken($color--darker-gray, $darken--button);
 }
 a.bg--dark-gray:hover {
-  background: darken($color--gray-dark, $darken--button);
+  background: darken($color--dark-gray, $darken--button);
 }
 a.bg--gray:hover {
   background: darken($color--gray, $darken--button);

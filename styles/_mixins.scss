@@ -41,7 +41,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin placeholder($color: $input-color-placeholder) {
+@mixin placeholder($color) {
   // Firefox
   &::-moz-placeholder {
     color: $color;
