@@ -131,10 +131,12 @@ samp {
   overflow: auto;
   white-space: pre;
 }
-strong {
+strong,
+b {
   font-weight: $font-weight--bold;
 }
-em {
+em,
+i {
   font-style: italic;
 }
 small {
@@ -228,13 +230,13 @@ mark {
 .footer__link {
   @extend %button;
 }
-.header__link:not(.header__link--signup),
+.header__link:not(.header__link--button),
 .footer__link {
   &:hover {
     text-decoration: underline;
   }
 }
-.header__link--signup {
+.header__link--button {
   background: $color--leaf;
   color: $color--white;
   margin-left: 0.5em;
@@ -355,6 +357,9 @@ mark {
   @include margin-center;
   margin-bottom: $v;
   max-width: 312px;
+  @include max-width($max-width--lg) {
+    max-width: 294px;
+  }
   @include max-width($max-width--sm) {
     max-width: 240px;
   }
