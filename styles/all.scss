@@ -699,11 +699,9 @@ mark {
   h3 {
     margin-top: $v*1.5;
   }
-  h4 {
-    margin-top: $v*1.5;
-  }
-  h2 + h5,
-  h2 + h6 {
+  h4,
+  h5,
+  h6 {
     margin-top: $v*0.75;
   }
   h2,
