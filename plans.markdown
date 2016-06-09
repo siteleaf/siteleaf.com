@@ -106,6 +106,12 @@ faqs:
   body: Trial and Developer sites are limited to 100 MB and 100 pages, including posts
     and documents. Personal sites are limited to 500 MB and 500 pages. All other plans,
     including grandfathered plans come with 1 GB of storage and unlimited pages.
+- title: Where can I host my site?
+  handle: hosting
+  body: With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files,
+    or any host that supports FTP or FTPS (Media Temple,  Dreamhost, GoDaddy, etc).
+    Unlike v1, we do not offer built-in Siteleaf Hosting. We decided to focus our
+    on efforts on being the best CMS and let others be the best hosting company.
 - title: Have more questions?
   handle: more-questions
   body: No problem. Send a message to us [on Twitter](https://twitter.com/siteleaf)
