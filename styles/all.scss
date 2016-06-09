@@ -680,7 +680,7 @@ mark {
 }
 .article__title {
   margin-top: $v*2;
-  margin-bottom: $v*0.666667;
+  margin-bottom: $v*0.5;
 }
 .article__content {
   p,
@@ -1038,6 +1038,24 @@ mark {
     fill: $color--purple;
   }
 }
+.gray-darkest {
+  color: $color--gray-darkest;
+  &.icon {
+    fill: $color--gray-darkest;
+  }
+}
+.gray-darker {
+  color: $color--gray-darker;
+  &.icon {
+    fill: $color--gray-darker;
+  }
+}
+.gray-dark {
+  color: $color--gray-dark;
+  &.icon {
+    fill: $color--gray-dark;
+  }
+}
 .gray {
   color: $color--gray;
   &.icon {
@@ -1078,15 +1096,23 @@ mark {
   background: $color--purple;
   color: $color--white;
 }
-.bg--dark-gray {
+.bg--darkest-gray {
   background: $color--gray-darkest;
   color: $color--white;
 }
-.bg--gray {
+.bg--darker-gray {
+  background: $color--gray-darker;
+  color: $color--white;
+}
+.bg--dark-gray {
   background: $color--gray-dark;
   color: $color--white;
 }
-.bg--light-gray {
+.bg--gray {
+  background: $color--gray;
+  color: $color--white;
+}
+.bg--lightest-gray {
   background: $color--gray-lightest;
 }
 .bg--white {
@@ -1107,11 +1133,17 @@ a.bg--red:hover {
 a.bg--purple:hover {
   background: darken($color--purple, $darken--button);
 }
-a.bg--dark-gray:hover {
+a.bg--darkest-gray:hover {
   background: darken($color--gray-darkest, $darken--button);
 }
-a.bg--gray:hover {
+a.bg--darker-gray:hover {
+  background: darken($color--gray-darker, $darken--button);
+}
+a.bg--dark-gray:hover {
   background: darken($color--gray-dark, $darken--button);
+}
+a.bg--gray:hover {
+  background: darken($color--gray, $darken--button);
 }
 
 // sticky footer
