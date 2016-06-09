@@ -699,10 +699,10 @@ mark {
     @include max-width($max-width--sm) {
       font-size: 1.75em;
     }
-    margin-top: $v*1.5;
+    margin-top: $v*1;
   }
   h3 {
-    margin-top: $v*1.5;
+    margin-top: $v*1;
   }
   h4,
   h5,
