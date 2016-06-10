@@ -27,7 +27,7 @@
   <section class="article__content">
     {% unless is_excerpt %}
       {% if post.tags contains 'v1' %}
-        <div class="article__note light-gray">☞ Note: This is a Siteleaf v1 post</div>
+        <p class="note">This post references a legacy version of Siteleaf.</p>
       {% endif %}
     {% endunless %}
     {% if is_excerpt %}

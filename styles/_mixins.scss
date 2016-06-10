@@ -73,11 +73,6 @@
 // transformations and transforms
 // ------------------------------
 
-@mixin transition($transition...) {
-  -webkit-transition: $transition;
-       -o-transition: $transition;
-          transition: $transition;
-}
 @mixin scale($ratio...) {
   -webkit-transform: scale($ratio);
       -ms-transform: scale($ratio);
