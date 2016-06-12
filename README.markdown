@@ -16,7 +16,7 @@ grunt dev
 Start the server and watch for changes:
 
 ```
-jekyll serve
+bundle exec jekyll serve
 ```
 
 
