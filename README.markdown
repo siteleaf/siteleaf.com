@@ -28,10 +28,4 @@ Compile and minify JavaScript:
 grunt
 ```
 
-Generate static site to `_site`:
-
-```
-jekyll build
-```
-
 With GitHub sync enabled, push to GitHub. Then publish on Siteleaf.
