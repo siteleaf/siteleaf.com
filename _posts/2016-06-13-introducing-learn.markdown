@@ -9,12 +9,12 @@ tags:
 
 Last week we released [Siteleaf v2](/blog/v2) which is built on Jekyll and comes with tons of [new features](/features).
 
-To help get up to speed on v2, we're excited to launch our new help site [learn.siteleaf.com](http://learn.siteleaf.com).
+To help get everyone up to speed all the new features in v2, we're excited to launch our new help site [learn.siteleaf.com](http://learn.siteleaf.com).
 
 Learn about [Developing Themes](http://learn.siteleaf.com/themes/), [Managing Content](http://learn.siteleaf.com/content/), using the [API](http://learn.siteleaf.com/api/), how to migrate your [Legacy Site](http://learn.siteleaf.com/v1/), and more!
 
 The help site itself is built on Siteleaf v2 (of course), and is [open source on GitHub](https://github.com/siteleaf/learn.siteleaf.com). We encourage your feedback and contributions.
 
-**Pro tip:** You can even download a copy of the repo ([ZIP](https://github.com/siteleaf/learn.siteleaf.com/archive/master.zip)) for offline reference.
+**Pro tip:** You can even download a full copy of the repo ([ZIP](https://github.com/siteleaf/learn.siteleaf.com/archive/master.zip)) for offline reference.
 
 Happy learning!
