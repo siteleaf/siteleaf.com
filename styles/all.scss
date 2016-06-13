@@ -174,9 +174,6 @@ mark {
 [class$="__button"]:not(.plan-card__button) {
   @extend %button--large;
 }
-.container--wide {
-  @extend %container--wide;
-}
 .anchor {
   text-decoration: none;
   color: $color--gray;
@@ -1250,4 +1247,44 @@ body {
   height: 1.5rem;
   margin-right: 0.3rem;
   vertical-align: text-bottom;
+}
+
+// placeholder classes
+// -------------------
+
+.container {
+  @extend %container;
+}
+.container--narrow {
+  @extend %container--narrow;
+}
+.container--wide {
+  @extend %container--wide;
+}
+.row {
+  @extend %row;
+}
+.column {
+  @extend %column;
+}
+.button {
+  @extend %button;
+}
+.button--large {
+  @extend %button--large;
+}
+.mk1 {
+  @extend %mk1;
+}
+.mk2 {
+  @extend %mk2;
+}
+.mk3 {
+  @extend %mk3;
+}
+.link--bold {
+  @extend %link--bold;
+}
+.browser {
+  @extend %browser;
 }
