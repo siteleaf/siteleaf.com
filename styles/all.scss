@@ -746,7 +746,8 @@ h6 {
   pre,
   iframe,
   .fluid-width-video-wrapper,
-  figure {
+  figure,
+  table {
     margin-bottom: $v*0.75;
   }
   ol,
@@ -766,15 +767,6 @@ h6 {
   }
   a:not(.anchor) {
     @extend %link--bold;
-  }
-  img + p > small:only-child,
-  iframe + p > small:only-child,
-  .fluid-width-video-wrapper + p > small:only-child {
-    // "captions"
-    color: $color--dark-gray;
-    display: block;
-    margin-top: -$v*0.5;
-    margin-bottom: $v*1;
   }
   .note,
   .tip,
@@ -814,6 +806,15 @@ h6 {
     &:before {
       content: 'Use care: ';
     }
+  }
+  .caption {
+    color: $color--dark-gray;
+    font-size: $font-size--small;
+    &,
+    a {
+      font-weight: $font-weight--medium;
+    }
+    margin-top: -$v*0.5;
   }
   table {
     width: 100%;
