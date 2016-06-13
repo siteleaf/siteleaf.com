@@ -2,15 +2,8 @@
 layout: default
 ---
 
-{% assign count = 0 %}
-{% for post in site.posts %}
-  {% if count >= site.per_page %}
-    {% break %}
-  {% endif %}
-  {% unless post.tags contains 'v1' %}
-    {% include post.html post=post is_excerpt=true %}
-    {% assign count = count | plus: 1 %}
-  {% endunless %}
+{% for post in site.posts limit:site.per_page %}
+  {% include post.html post=post is_excerpt=true %}
 {% endfor %}
 <div class="blog__buttonWrap">
   <a href="/blog/archive/" class="bg--gray blog__button">Older posts</a>
