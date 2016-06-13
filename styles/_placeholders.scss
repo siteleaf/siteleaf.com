@@ -7,8 +7,8 @@
   padding-left: $gutter;
   padding-right: $gutter;
   @include max-width($max-width--xs) {
-    padding-left: $gutter*0.75;
-    padding-right: $gutter*0.75;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 %container--narrow {
