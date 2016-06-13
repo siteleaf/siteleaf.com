@@ -177,22 +177,22 @@ mark {
 .container--wide {
   @extend %container--wide;
 }
+.anchor {
+  text-decoration: none;
+  color: $color--gray;
+  margin-left: 0.3em;
+  opacity: 0;
+  transition: opacity 100ms;
+  &:hover {
+    color: $color--dark-gray;
+  }
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  .anchor {
-    text-decoration: none;
-    color: $color--gray;
-    margin-left: 0.3em;
-    opacity: 0;
-    transition: opacity 100ms;
-    &:hover {
-      color: $color--dark-gray;
-    }
-  }
   &:hover {
     .anchor {
       opacity: 1;
@@ -764,7 +764,7 @@ h6 {
     margin-left: -2rem;
     text-align: right;
   }
-  a {
+  a:not(.anchor) {
     @extend %link--bold;
   }
   img + p > small:only-child,
