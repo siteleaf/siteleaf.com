@@ -177,6 +177,28 @@ mark {
 .container--wide {
   @extend %container--wide;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  .anchor {
+    text-decoration: none;
+    color: $color--gray;
+    margin-left: 0.3em;
+    opacity: 0;
+    transition: opacity 100ms;
+    &:hover {
+      color: $color--dark-gray;
+    }
+  }
+  &:hover {
+    .anchor {
+      opacity: 1;
+    }
+  }
+}
 
 // header and footer
 // -----------------
