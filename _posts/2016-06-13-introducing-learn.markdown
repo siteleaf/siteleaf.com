@@ -5,7 +5,7 @@ tags:
 - announcement
 ---
 
-![learn.siteleaf.com](/uploads/learn.siteleaf.com.png)
+[![learn.siteleaf.com](/uploads/learn.siteleaf.com.png)](http://learn.siteleaf.com)
 
 Last week we released [Siteleaf v2](/blog/v2) which is built on Jekyll and comes with tons of [new features](/features).
 
