@@ -9,7 +9,7 @@ tags:
 
 Last week we released the brand new [Siteleaf v2](/blog/v2), which is built on Jekyll and comes with tons of [new features](/features) like GitHub sync.
 
-To help get everyone up to speed on all the new features in v2, we're excited to officially launch our new help site [learn.siteleaf.com](http://learn.siteleaf.com).
+To help get everyone up to speed on v2, we're excited to officially launch our new help site [learn.siteleaf.com](http://learn.siteleaf.com).
 
 Learn about [Developing Themes](http://learn.siteleaf.com/themes/), [Managing Content](http://learn.siteleaf.com/content/), using the [API](http://learn.siteleaf.com/api/), how to migrate your [Legacy Site](http://learn.siteleaf.com/v1/), and more!
 
