@@ -118,7 +118,7 @@ categories: jekyll update
 You’ll find this post in your `_posts` directory...
 ```
 
-### Site
+### Output
 
 Another special folder you’ll come across later is `_site`. This is where Jekyll stores its compiled HTML files. Once built, these files can be uploaded directly to an FTP server for hosting.
 
