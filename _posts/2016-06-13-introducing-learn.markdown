@@ -3,6 +3,7 @@ title: Introducing learn.siteleaf.com
 date: 2016-06-13 17:03:00 -04:00
 tags:
 - announcement
+image: "/uploads/learn.siteleaf.com.png"
 ---
 
 [![learn.siteleaf.com](/uploads/learn.siteleaf.com.png)](http://learn.siteleaf.com)
