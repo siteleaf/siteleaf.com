@@ -15,7 +15,7 @@ image: "/uploads/jekyll-from-scratch-title.png"
 Watch <a href="https://vimeo.com/170526921">Jekyll from Scratch</a> on Vimeo
 {: .caption}
 
-In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com). We'll cover installation, creating a new site, file structure, and finally we'll commit our new site to GitHub.
+In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com). We'll cover installation, creating a new site, file structure, and finally we'll commit the new site to GitHub.
 
 ## What is Jekyll?
 
