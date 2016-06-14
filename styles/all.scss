@@ -123,6 +123,9 @@ code {
     font-weight: normal;
   }
 }
+pre code {
+  padding: 0;
+}
 pre,
 code,
 kbd,
