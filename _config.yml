@@ -21,6 +21,11 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
+    image:
+    description:
+    button:
+     title:
+     url:
 - scope:
     path: ''
     type: blog_tags
