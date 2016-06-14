@@ -193,6 +193,6 @@ And that’s it, you should now have a working Jekyll site on GitHub.
 
 ## Next steps
 
-To dive deeper, check out our help site [learn.siteleaf.com](http://learn.siteleaf.com), [Jekyll’s official documentation](http://jekyllrb.com/docs), and for a great primer on Liquid templating see [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
+To dive deeper, check out our help site [learn.siteleaf.com](http://learn.siteleaf.com) and [Jekyll’s official documentation](http://jekyllrb.com/docs).
 
 Stay tuned for the next tutorial where we’ll show you how to sync your GitHub repo with Siteleaf.
