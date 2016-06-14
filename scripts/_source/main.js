@@ -15,6 +15,7 @@ $(function(){
     initTabs();
     initModal();
     initFitVids();
+    initAnchors();
   };
 
   var initTabs = function() {
@@ -112,13 +113,15 @@ $(function(){
   };
 
   // Add header anchor links
-  var contentBlock = document.getElementsByClassName("article__content")[0];
-  if (!contentBlock) {
-    return;
-  }
-  for (var level = 1; level <= 6; level++) {
-    linkifyAnchors(level, contentBlock);
-  }
+  var initAnchors = function() {
+    var contentBlock = document.getElementsByClassName("article__content")[0];
+    if (!contentBlock) {
+      return;
+    }
+    for (var level = 1; level <= 6; level++) {
+      linkifyAnchors(level, contentBlock);
+    }
+  };
 
   // initialize
   // ----------
