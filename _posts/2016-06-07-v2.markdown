@@ -21,6 +21,7 @@ Those familiar with Siteleaf v1 will immediately feel at home with Jekyll. It's 
 
 In addition, Siteleaf v2 now [syncs directly with GitHub](/features) so you can bring your existing Jekyll sites over in one click — and just as easily move your site out. Every edit you or other authors make in Siteleaf is synced to GitHub, including content and theme changes. See a log of edits, who made them, and revert back to any state with the Git tools you already use. It's a time machine for your content.
 
+
 With v2, we're also launching a new set of [plans](/plans), including a Developer plan which allows you to sync and publish to public GitHub repos totally free! To celebrate the launch, all new v2 plans come with a 40% off early-bird discount, because we love you.
 
 For a more complete list of what's new in v2, visit our [Features page](/features). 

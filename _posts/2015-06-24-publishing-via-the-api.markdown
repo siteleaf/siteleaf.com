@@ -23,6 +23,7 @@ This triggers a publish and immediately returns a job ID (or returns an already 
 
 But the fun doesn't stop there. You can optionally check in on publish progress using your `job_id` from above by making an authenticated `GET` request to the new `/jobs/:id` endpoint.
 
+
 ~~~bash
 $ curl -u "$API_KEY:$API_SECRET" \
   http://api.siteleaf.com/api/v1/jobs/e79af12c79ccd8866902d3dd
