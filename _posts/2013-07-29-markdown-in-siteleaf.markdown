@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Markdown in Siteleaf'
-date: 2013-07-29 15:01:00 Z
+date: 2013-07-29 11:01:00 -04:00
 tags:
 - tutorial
 - markdown

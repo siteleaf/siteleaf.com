@@ -1,6 +1,6 @@
 ---
 title: 'Advanced Liquid: Where'
-date: 2015-04-08 19:25:00 Z
+date: 2015-04-08 15:25:00 -04:00
 tags:
 - tutorial
 - liquid

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Taxonomy in Siteleaf'
-date: 2013-07-13 14:57:00 Z
+date: 2013-07-13 10:57:00 -04:00
 tags:
 - tutorial
 - liquid

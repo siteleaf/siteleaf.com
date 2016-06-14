@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Hello World, I’m Siteleaf'
-date: 2013-07-01 14:43:00 Z
+date: 2013-07-01 10:43:00 -04:00
 tags:
 - tutorial
 - v1

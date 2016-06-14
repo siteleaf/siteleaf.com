@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Metadata in Siteleaf'
-date: 2013-07-07 14:51:00 Z
+date: 2013-07-07 10:51:00 -04:00
 tags:
 - tutorial
 - liquid

@@ -1,6 +1,6 @@
 ---
 title: Using AWS S3 and Route 53
-date: 2015-03-25 19:55:00 Z
+date: 2015-03-25 15:55:00 -04:00
 tags:
 - tutorial
 - aws

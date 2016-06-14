@@ -1,6 +1,6 @@
 ---
 title: Using Markdown in metadata
-date: 2013-10-29 15:55:00 Z
+date: 2013-10-29 11:55:00 -04:00
 tags:
 - tip
 - markdown

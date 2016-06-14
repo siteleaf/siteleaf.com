@@ -1,6 +1,6 @@
 ---
 title: Now publishing to GitHub Pages
-date: 2014-06-04 13:00:00 Z
+date: 2014-06-04 09:00:00 -04:00
 tags:
 - announcement
 hero: "/uploads/github.svg"

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Porting a theme to Siteleaf'
-date: 2013-09-16 15:05:00 Z
+date: 2013-09-16 11:05:00 -04:00
 tags:
 - tutorial
 - liquid

@@ -1,6 +1,6 @@
 ---
 title: Improvements to page and post management
-date: 2014-07-10 15:05:00 Z
+date: 2014-07-10 11:05:00 -04:00
 tags:
 - announcement
 - v1
