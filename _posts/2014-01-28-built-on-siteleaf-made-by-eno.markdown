@@ -1,7 +1,6 @@
 ---
 title: 'Built on Siteleaf: Made by Eno'
 date: 2014-01-28 19:31:00 Z
-permalink: "/blog/:title/"
 tags:
 - community
 hero: "/uploads/erin-nolan.jpg"

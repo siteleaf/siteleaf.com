@@ -1,7 +1,6 @@
 ---
 title: Publishing via the API
 date: 2015-06-24 11:10:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - announcement
 - tutorial

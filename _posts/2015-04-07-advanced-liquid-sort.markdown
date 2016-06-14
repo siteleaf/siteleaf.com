@@ -1,7 +1,6 @@
 ---
 title: 'Advanced Liquid: Sort'
 date: 2015-04-07 14:00:00 Z
-permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid

@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Markdown in Siteleaf'
 date: 2013-07-29 15:01:00 Z
-permalink: "/blog/:title/"
 tags:
 - tutorial
 - markdown

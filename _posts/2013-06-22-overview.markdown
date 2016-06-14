@@ -1,7 +1,6 @@
 ---
 title: Siteleaf overview
 date: 2013-06-22 17:00:00 Z
-permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid

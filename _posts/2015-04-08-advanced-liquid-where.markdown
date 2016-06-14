@@ -1,7 +1,6 @@
 ---
 title: 'Advanced Liquid: Where'
 date: 2015-04-08 19:25:00 Z
-permalink: "/blog/:title/"
 tags:
 - tutorial
 - liquid
