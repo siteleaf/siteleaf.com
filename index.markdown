@@ -101,7 +101,7 @@ features:
 
     Static sites are faster, more secure, and keep visitors happy. And speed matters: According to Google, **nearly half of all visitors will leave a mobile site if the pages don’t load within 3 seconds**.
 
-    Best of all, unlike legacy CMSs like WordPress and Drupal, your website’s entire source code and content are completely portable. Never be locked into a particular service again. An Open Web is a better web.
+    Best of all, unlike legacy CMSs such as WordPress and Drupal, your website’s entire source code and content are completely portable. Never be locked into a particular service again. An Open Web is a better web.
 - title: Join thousands of happy customers
   handle: love
   background: lightest-gray
