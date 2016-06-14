@@ -62,8 +62,7 @@
 // miscellaneous
 // -------------
 
-%link--bold {
-  font-weight: $font-weight--bold;
+%link--underline {
   text-decoration: underline;
   &:hover {
     opacity: $opacity--hover;
