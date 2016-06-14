@@ -93,11 +93,11 @@ github_username:  jekyll
 These settings can be referenced in Liquid using the `site` prefix, for example: {% raw %}`{{site.email}}`{% endraw %}
 {: .tip}
 
-You refer to [Jekyll’s excellent documentation](https://jekyllrb.com/docs/configuration/) for a full list of configuration settings.
+You can refer to [Jekyll’s excellent documentation](https://jekyllrb.com/docs/configuration/) for a full list of configuration settings.
 
-### Templates
+### Templates & partials
 
-You should see a pair of special folders called `_includes` and `_layouts`, this is where your Liquid templates will go. 
+You should see a pair of special folders called `_includes` and `_layouts`, this is where your Liquid files will go. 
 
 Includes are great for small bits of [reusable code](https://jekyllrb.com/docs/templates/#includes), and Layouts define how a page will render.
 
