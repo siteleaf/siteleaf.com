@@ -197,4 +197,4 @@ And that’s it, you should now have a working Jekyll site on GitHub.
 
 To dive deeper, check out our help site [learn.siteleaf.com](http://learn.siteleaf.com) and [Jekyll’s official documentation](http://jekyllrb.com/docs).
 
-Stay tuned for the next tutorial where we’ll show you how to sync your GitHub repo with Siteleaf.
+Stay tuned next week for the second tutorial where we’ll show you how to sync your GitHub repo with Siteleaf.
