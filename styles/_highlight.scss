@@ -46,9 +46,9 @@ $green:  $color--green;         // operators, other keywords
   .m { color: $cyan; } /* Literal.Number */
   .s { color: $cyan; } /* Literal.String */
   .na { color: $base01; } /* Name.Attribute */
-  .nb { color: $orange } /* Name.Builtin */
+  .nb { color: $base01 } /* Name.Builtin */
   .nc { color: $blue; } /* Name.Class */
-  .no { color: $orange; } /* Name.Constant */
+  .no { color: $base01; } /* Name.Constant */
   .nd { color: $blue; } /* Name.Decorator */
   .ni { color: $orange; } /* Name.Entity */
   .ne { color: $orange; } /* Name.Exception */
