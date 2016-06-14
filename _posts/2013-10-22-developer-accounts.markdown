@@ -1,7 +1,6 @@
 ---
 title: Developer accounts
 date: 2013-10-22 10:32:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - announcement
 ---

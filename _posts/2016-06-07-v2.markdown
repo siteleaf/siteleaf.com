@@ -10,7 +10,7 @@ button:
 
 <iframe src="https://player.vimeo.com/video/169542999?title=0&byline=0&portrait=0" width="680" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-[Introducing Siteleaf v2](https://vimeo.com/169542999) on [Vimeo](https://vimeo.com/169542999)
+Watch [Introducing Siteleaf v2](https://vimeo.com/169542999) on Vimeo
 {: .caption}
 
 Nearly three years ago to the day, we launched the [first public version](/blog/introducing-siteleaf/) of Siteleaf. We set out to create a new kind of content management system, one that marries the best parts of a static website generator (speed and simplicity) with a traditional CMS (power and collaboration). We dreamed of a tool that could be simple, without being dumbed down. One that values data portability, and is designed for a better web. As web developers ourselves, we wouldn't have it any other way.
@@ -20,6 +20,7 @@ Today marks a huge milestone towards this goal. We’re excited to announce Site
 Those familiar with Siteleaf v1 will immediately feel at home with Jekyll. It's the same HTML, Liquid, and Markdown goodness you already love, but with a bag of snazzy new tricks — including collections, nested metadata, custom permalinks, offline development, and more. Now, not only can you host your compiled site anywhere, you're in control of your source data too. 
 
 In addition, Siteleaf v2 now [syncs directly with GitHub](/features) so you can bring your existing Jekyll sites over in one click — and just as easily move your site out. Every edit you or other authors make in Siteleaf is synced to GitHub, including content and theme changes. See a log of edits, who made them, and revert back to any state with the Git tools you already use. It's a time machine for your content.
+
 
 With v2, we're also launching a new set of [plans](/plans), including a Developer plan which allows you to sync and publish to public GitHub repos totally free! To celebrate the launch, all new v2 plans come with a 40% off early-bird discount, because we love you.
 

@@ -1,7 +1,6 @@
 ---
 title: Publishing via the API
 date: 2015-06-24 11:10:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - announcement
 - tutorial
@@ -22,6 +21,7 @@ $ curl -u "$API_KEY:$API_SECRET" -X POST \
 This triggers a publish and immediately returns a job ID (or returns an already running job ID if one exists). You can stop here if you'd like and Siteleaf will happily chug away in the background. 
 
 But the fun doesn't stop there. You can optionally check in on publish progress using your `job_id` from above by making an authenticated `GET` request to the new `/jobs/:id` endpoint.
+
 
 ~~~bash
 $ curl -u "$API_KEY:$API_SECRET" \

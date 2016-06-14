@@ -1,7 +1,6 @@
 ---
 title: 'Video: Getting started'
 date: 2013-07-01 18:00:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - video
 - tutorial

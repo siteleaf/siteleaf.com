@@ -1,7 +1,6 @@
 ---
 title: 'Video: Developing sites and themes'
 date: 2013-07-11 15:34:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - tutorial
 - video

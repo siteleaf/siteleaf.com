@@ -1,7 +1,6 @@
 ---
 title: Introducing Siteleaf
 date: 2013-06-05 22:47:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - announcement
 hero: "/uploads/introducing-siteleaf.jpg"

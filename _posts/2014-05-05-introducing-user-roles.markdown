@@ -1,7 +1,6 @@
 ---
 title: Introducing user roles
 date: 2014-05-05 09:00:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - announcement
 hero: "/uploads/user-roles-post.jpg"

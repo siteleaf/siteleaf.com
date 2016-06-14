@@ -1,7 +1,6 @@
 ---
 title: Now publishing to SFTP
 date: 2014-06-13 10:35:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - announcement
 hero: 

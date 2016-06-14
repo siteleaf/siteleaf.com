@@ -1,7 +1,6 @@
 ---
 title: 'Video: Introducing Siteleaf'
 date: 2013-06-28 17:50:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - video
 vimeo: '69301083'

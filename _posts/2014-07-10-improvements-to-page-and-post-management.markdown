@@ -1,7 +1,6 @@
 ---
 title: Improvements to page and post management
 date: 2014-07-10 11:05:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - announcement
 - v1

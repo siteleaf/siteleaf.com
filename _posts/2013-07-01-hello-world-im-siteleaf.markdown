@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Hello World, I’m Siteleaf'
 date: 2013-07-01 10:43:00 -04:00
-permalink: "/blog/:title/"
 tags:
 - tutorial
 - v1

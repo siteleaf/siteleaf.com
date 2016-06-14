@@ -3,6 +3,10 @@ title: Introducing learn.siteleaf.com
 date: 2016-06-13 17:03:00 -04:00
 tags:
 - announcement
+image: "/uploads/learn.siteleaf.com.png"
+description: We're excited to officially launch our new help site learn.siteleaf.com.
+  Learn about developing themes, managing content, using the API, how to migrate your
+  legacy site, and more!
 ---
 
 [![learn.siteleaf.com](/uploads/learn.siteleaf.com.png)](http://learn.siteleaf.com)

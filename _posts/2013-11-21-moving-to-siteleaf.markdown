@@ -1,7 +1,6 @@
 ---
 title: Moving to Siteleaf
 date: 2013-11-21 01:22:00 -05:00
-permalink: "/blog/:title/"
 tags:
 - community
 hero: 

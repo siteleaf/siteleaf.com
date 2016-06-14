@@ -123,6 +123,9 @@ code {
     font-weight: normal;
   }
 }
+pre code {
+  padding: 0;
+}
 pre,
 code,
 kbd,
@@ -163,9 +166,6 @@ mark {
   &:hover {
     opacity: $opacity--hover;
   }
-}
-.link--bold {
-  @extend %link--bold;
 }
 [class$="__buttonWrap"] {
   @extend %container;
@@ -528,7 +528,7 @@ h6 {
     }
   }
   a {
-    @extend %link--bold;
+    @extend %link--underline;
   }
 }
 .develop__subsection__figure {
@@ -566,7 +566,7 @@ h6 {
     width: 100%;
   }
   a {
-    @extend %link--bold;
+    @extend %link--underline;
   }
 }
 .free__image {
@@ -578,7 +578,7 @@ h6 {
   text-align: left;
   margin-top: $v*1;
   a {
-    @extend %link--bold;
+    @extend %link--underline;
   }
 }
 .launch__image {
@@ -763,7 +763,7 @@ h6 {
     text-align: right;
   }
   a:not(.anchor) {
-    @extend %link--bold;
+    @extend %link--underline;
   }
   .note,
   .tip,
@@ -833,6 +833,7 @@ h6 {
 }
 .article__content__more {
   color: $color--dark-gray;
+  font-weight: $font-weight--bold;
 }
 .article__meta {
   font-size: $font-size--small;
@@ -1037,13 +1038,8 @@ h6 {
   margin-top: $v*1.5;
   margin-bottom: $v*1.5;
 }
-.archive__items,
-.archive__more {
+.archive__items {
   @extend %container--narrow;
-}
-.archive__more__link {
-  color: $color--dark-gray;
-  @extend %link--bold;
 }
 .archive__month {
   margin-top: $v*1.5;
@@ -1282,8 +1278,8 @@ body {
 .mk3 {
   @extend %mk3;
 }
-.link--bold {
-  @extend %link--bold;
+.link--underline {
+  @extend %link--underline;
 }
 .browser {
   @extend %browser;
