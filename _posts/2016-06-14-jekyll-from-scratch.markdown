@@ -3,6 +3,11 @@ title: Jekyll from scratch
 date: 2016-06-14 13:00:00 -04:00
 tags:
 - tutorial
+description: In this tutorial, we’ll show you how to get set up and develop websites
+  locally using Jekyll, a static website generator built on Ruby. We'll cover installing
+  Jekyll, creating a new site, file structure, and finally we'll commit our new site
+  to GitHub.
+image: "/uploads/jekyll-from-scratch-title.png"
 ---
 
 <iframe src="https://player.vimeo.com/video/170526921?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -10,7 +15,7 @@ tags:
 Watch <a href="https://vimeo.com/170526921">Jekyll from Scratch</a> on Vimeo
 {: .caption}
 
-In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com).
+In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com). We'll cover installing Jekyll, creating a new site, file structure, and finally we'll commit our new site to GitHub.
 
 ## What is Jekyll?
 
