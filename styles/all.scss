@@ -167,6 +167,11 @@ mark {
     opacity: $opacity--hover;
   }
 }
+.blog__buttonWrap,
+.page__buttonWrap,
+.post__buttonWrap {
+  margin-bottom: $v*3;
+}
 [class$="__buttonWrap"] {
   @extend %container;
   text-align: center;
@@ -231,10 +236,6 @@ h6 {
 }
 .footerWrap {
   background: $color--lightest-gray;
-  margin-top: $v*3;
-  .home & {
-    margin-top: 0;
-  }
 }
 .header__item,
 .footer {
@@ -693,14 +694,8 @@ h6 {
 
 .article {
   margin-top: $v*1.5;
-  margin-bottom: $v*3;
+  margin-bottom: $v*4;
   @extend %container--narrow;
-  .wrap > &:last-child {
-    margin-bottom: 0;
-  }
-}
-.article + .article {
-  margin-top: $v*4;
 }
 .article__title {
   margin-top: $v*2;
@@ -877,13 +872,14 @@ h6 {
   &,
   .headerWrap,
   .footerWrap {
-    background: darken($color--darkest-gray, 3%);
+    background: $color--darkest-gray;
     color: $color--white;
   }
 }
 .gallery__main {
   @extend %container--wide;
   margin-top: $v*1.5;
+  margin-bottom: $v*2;
 }
 .gallery__items {
   @extend %row;
@@ -912,11 +908,6 @@ h6 {
 .plans .header {
   padding-bottom: $v*2;
 }
-
-.plans .footerWrap {
-  margin-top: 0;
-}
-
 .plans__main {
   margin-top: $v*1.5 * -1;
 }
@@ -1036,7 +1027,7 @@ h6 {
 
 .archive__items {
   margin-top: $v*1.5;
-  margin-bottom: $v*1.5;
+  margin-bottom: $v*4;
 }
 .archive__items {
   @extend %container--narrow;
@@ -1076,9 +1067,6 @@ h6 {
   .article {
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .footerWrap {
-    margin-top: 0;
   }
 }
 
@@ -1188,6 +1176,12 @@ h6 {
 .bg--gray {
   background: $color--gray;
   color: $color--white;
+}
+.bg--light-gray {
+  background: $color--light-gray;
+}
+.bg--lighter-gray {
+  background: $color--lighter-gray;
 }
 .bg--lightest-gray {
   background: $color--lightest-gray;
