@@ -9,7 +9,7 @@ description: We're excited to officially launch our new help site learn.siteleaf
   legacy site, and more!
 ---
 
-[![learn.siteleaf.com](/uploads/learn.siteleaf.com.png)](http://learn.siteleaf.com)
+[![learn.siteleaf.com](/uploads/badges.svg)](http://learn.siteleaf.com)
 
 Last week we released the brand new [Siteleaf v2](/blog/v2), which is built on Jekyll and comes with tons of [new features](/features) like GitHub sync.
 
