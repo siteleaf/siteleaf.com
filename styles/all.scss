@@ -24,9 +24,9 @@
 html,
 body {
   overflow-x: hidden;
-  height: 100%;
 }
 html {
+  height: 100%;
   @include box-sizing(border-box);
   font-size: $font-size--html;
   @include max-width($max-width--sm) {

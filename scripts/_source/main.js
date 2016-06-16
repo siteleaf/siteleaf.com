@@ -104,15 +104,17 @@ $(function(){
 
   var showMobileNav = function() {
     $body.addClass(mobileNavShownClass);
+    $body.css('height', '100%');
   };
 
   var closeMobileNav = function() {
     $body.removeClass(mobileNavShownClass);
+    $body.css('height', 'auto');
   };
 
   // keydown handlers
   // ----------------
-  
+
   $(document).keydown(function(e) {
     if (e.keyCode == 27 && $body.hasClass(modalShownClass)) { // esc
       closeModal();
