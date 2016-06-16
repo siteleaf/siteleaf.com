@@ -24,6 +24,7 @@
 html,
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 html {
   @include box-sizing(border-box);
@@ -59,7 +60,7 @@ h1 {
   line-height: $line-height--tight;
   letter-spacing: $letter-spacing--tighter;
   @include max-width($max-width--md) {
-    font-size: 3em;
+    font-size: 2.75em;
     letter-spacing: $letter-spacing--tight;
   }
   @include max-width($max-width--sm) {
@@ -249,11 +250,12 @@ h6 {
 .header__link,
 .footer__link {
   @extend %button;
+  cursor: pointer;
 }
 .header__link:not(.header__link--button),
 .footer__link {
   &:hover {
-    text-decoration: underline;
+    opacity: $opacity--hover;
   }
 }
 .header__link--button {
@@ -263,6 +265,15 @@ h6 {
   &:hover {
     background: darken($color--leaf, $darken--button);
   }
+  @include max-width($max-width--sm) {
+    background: inherit;
+    color: inherit;
+    margin-left: 0;
+    &:hover {
+      background: inherit;
+      opacity: $opacity--hover;
+    }
+  }
 }
 .header__items {
   float: right;
@@ -271,6 +282,62 @@ h6 {
     float: none;
     text-align: center;
     margin-bottom: $v;
+  }
+  .mobileNav & {
+    margin-bottom: 0;
+  }
+}
+.header__item--mobile {
+  display: none;
+}
+@include max-width($max-width--sm) {
+  .js--mobileNav {
+    .header__items {
+      text-align: right;
+    }
+    .header__item:not(.header__item--mobile) {
+      display: none;
+    }
+    .header__item--mobile {
+      display: inline-block;
+    }
+  }
+}
+.mobileNav {
+  display: none;
+  background: inherit;
+  @include max-width($max-width--sm) {
+    .js--mobileNav & {
+      display: block;
+    }
+  }
+  overflow-y: scroll;
+  visibility: hidden;
+  top: -999em;
+  left: -999em;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  transition: opacity 150ms;
+  .isMobileNavOpen & {
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+.mobileNav__link {
+  display: block;
+  font-size: 1.5em;
+  font-weight: $font-weight--medium;
+  text-align: left;
+  padding: 0.333333em 0.5em;
+  &:hover {
+    opacity: $opacity--hover;
   }
 }
 .header__home {
@@ -293,8 +360,8 @@ h6 {
   margin-top: $v*3.75;
   margin-bottom: $v*0.75;
   max-width: $max-width--header__title;
-  padding-left: $width--logo * 1.333333;
-  padding-right: $width--logo * 1.333333;
+  padding-left: $width--logo * 1.2;
+  padding-right: $width--logo * 1.2;
   .header--extended & {
     max-width: 34rem;
     margin-top: $v*4.75;
@@ -652,6 +719,7 @@ h6 {
   height: 0;
   width: 0;
   opacity: 0;
+  transition: opacity 200ms;
   @include flexbox;
   @include align-items(center);
   @include justify-content(center);
@@ -664,7 +732,6 @@ h6 {
     top: 0;
     left: 0;
     opacity: 1;
-    transition: opacity 200ms;
   }
 }
 .modal__body {

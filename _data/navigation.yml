@@ -7,6 +7,8 @@ header:
   url: /plans/
 - title: Learn
   url: http://learn.siteleaf.com
+- title: Log in
+  url: https://manage.siteleaf.com
 footer:
 - title: Features
   url: /features/
