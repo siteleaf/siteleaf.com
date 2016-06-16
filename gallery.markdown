@@ -2,6 +2,7 @@
 title: Gallery
 permalink: "/gallery/"
 layout: gallery
+color: darkest-gray
 items:
 - title: Cushion
   image: "/uploads/gallery__cushion.jpg"

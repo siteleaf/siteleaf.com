@@ -8,13 +8,17 @@ $(function(){
     shownClass = 'shown',
     $videoOpen = $('#videoOpen'),
     $videoModal = $('#videoModal'),
-    modalShownClass = 'isModalOpen';
+    modalShownClass = 'isModalOpen',
+    $mobileNavOpen = $('#mobileNavOpen'),
+    $mobileNavClose = $('#mobileNavClose'),
+    mobileNavShownClass = 'isMobileNavOpen';
 
   var init = function() {
     $('body').addClass('js');
     initTabs();
     initModal();
     initFitVids();
+    initMobileNav();
     initAnchors();
   };
 
@@ -67,13 +71,6 @@ $(function(){
     console.log('ready');
   });
 
-  // esc key handler
-  $(document).keydown(function(e) {
-    if (e.keyCode == 27 && $body.hasClass(modalShownClass)) { // esc
-      closeModal();
-    }
-  });
-
   var showModal = function(timeout) {
     $body.addClass(modalShownClass);
     setTimeout(function() {
@@ -89,6 +86,40 @@ $(function(){
   var initFitVids = function() {
     $('.article__content').fitVids();
   };
+
+  // mobile nav
+  // ----------
+
+  var initMobileNav = function() {
+    $('body').addClass('js--mobileNav');
+    $mobileNavOpen.click(function(e) {
+      e.preventDefault();
+      showMobileNav();
+      return false;
+    });
+    $mobileNavClose.click(function(e) {
+      closeMobileNav();
+    });
+  };
+
+  var showMobileNav = function() {
+    $body.addClass(mobileNavShownClass);
+  };
+
+  var closeMobileNav = function() {
+    $body.removeClass(mobileNavShownClass);
+  };
+
+  // keydown handlers
+  // ----------------
+  
+  $(document).keydown(function(e) {
+    if (e.keyCode == 27 && $body.hasClass(modalShownClass)) { // esc
+      closeModal();
+    } else if (e.keyCode == 27 && $body.hasClass(mobileNavShownClass)) { // esc
+      closeMobileNav();
+    }
+  });
 
   // anchors
   // -------
