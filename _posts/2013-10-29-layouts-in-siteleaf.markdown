@@ -16,8 +16,8 @@ In my last article about [Siteleaf](http://siteleaf.com), I wrote about what goe
 
 ### What is a layout?
 
-```html
-<html>
+```liquid
+{% raw %}<html>
     <head>
         ...
     </head>
@@ -26,7 +26,7 @@ In my last article about [Siteleaf](http://siteleaf.com), I wrote about what goe
         {{ content }}
         <footer>...</footer>
     </body>
-</html>
+</html>{% endraw %}
 ```
 
 In Siteleaf, a layout is a base template that can be used and reused as a foundation for your website. For example, the [default layout](https://github.com/destroytoday/destroytoday.com/blob/master/_layouts/default.html) for my [personal website](http://destroytoday.com) consists of the HTML head content, the header, and the footer. In between the header and footer, I use a `{% raw %}{{ content }}{% endraw %}` tag to insert the rest of my website’s content. This way, I don’t need to copy and paste the surrounding code into every template. I can assign a block of HTML to the `content` variable and [Liquid](https://github.com/Shopify/liquid/), our templating engine, will place the variable’s value wherever referenced.
