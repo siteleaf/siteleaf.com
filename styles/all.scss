@@ -281,7 +281,7 @@ h6 {
   @include max-width($max-width--sm) {
     float: none;
     text-align: center;
-    margin-bottom: $v;
+    margin-bottom: $v*0.75;
   }
   .mobileNav & {
     margin-bottom: 0;
