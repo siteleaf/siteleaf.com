@@ -384,6 +384,10 @@ h6 {
     font-size: $font-size--large;
   }
 }
+.header__buttonWrap {
+  margin-top: $v*1;
+  margin-bottom: $v*0.75;
+}
 
 // home
 // ----
@@ -972,13 +976,10 @@ h6 {
 // plans
 // -----
 
-.plans .header {
-  padding-bottom: $v*2;
+.plans__cards {
+  @extend %container--wide;
+  padding-top: $v*0.75;
 }
-.plans__main {
-  margin-top: $v*1.5 * -1;
-}
-
 .plan-summary-cards {
   margin-bottom: $v*2;
 }
@@ -1000,28 +1001,29 @@ h6 {
     }
   }
 }
-
 .plan-card__desc {
-  margin-bottom: 0;
-  font-size: 0.8em;
+  border-top: 0;
+  margin-bottom: $v*0.25;
+  font-size: $font-size--smaller;
 }
-
 .plan-card__price,
 .plan-card__price__symbol {
   font-weight: $font-weight--bold
 }
-
 .plan-card--developer .plan-card__price {
   font-weight: $font-weight--normal;
   letter-spacing: -1px;
 }
 
 .plans__details {
+  @extend %container--wide;
+  padding-bottom: $v*2;
+}
+.plans__details__items {
   @extend %row;
-  font-size: 0.8em;
-  margin-bottom: $v*2;
 }
 .plans__details__item {
+  font-size: $font-size--smaller;
   margin-bottom: $v;
   width: 25%;
   @extend %column;
@@ -1032,7 +1034,6 @@ h6 {
     width: 100%;
   }
 }
-
 .plans__details__subtitle {
   font-style: italic;
   color: $color--dark-gray;
@@ -1040,52 +1041,36 @@ h6 {
 }
 .plans__details__feature {
   margin-bottom: $v*0.5;
-
   p {
     margin: 0;
   }
-
   p:nth-child(2) {
     color: $color--dark-gray;
-    font-size: 0.9em;
+    font-size: $font-size--small;
   }
 }
 
-.plans__faqs__row {
-  padding: $v*3 0;
-
-  h2 {
-    text-align: center;
-    margin-bottom: $v * 2;
+.plans__questions {
+  @extend %container--wide;
+  margin-top: $v*3;
+  margin-bottom: $v*4;
+}
+.plans__questions__title {
+  text-align: center;
+  margin-bottom: $v*2;
+}
+.plans__questions__row {
+  @extend %row;
+}
+.plans__questions__col {
+  @extend %column;
+  font-size: $font-size--small;
+  p {
+    margin-bottom: $v*1.5;
   }
-}
-
-.plans__faqs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.plans__faq {
-  width: 48%;
-  margin-bottom: $v * 1.5;
-
-  @include max-width($max-width--sm) {
+  width: 50%;
+  @include max-width($max-width--xs) {
     width: 100%;
-  }
-
-  p{
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  a {
-    color: $color--blue;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
