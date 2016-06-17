@@ -43,9 +43,9 @@
     <h1 class="header__title">{{ page.header_title | default: page.title }}</h1>
     {% if page.subtitle %}<div class="header__subtitle">{{ page.subtitle | markdownify }}</div>{% endif %}
     {% if page.header_button and page.url != '/' %}
-      <p class="header__buttonWrap">
+      <div class="header__buttonWrap">
         <a href="{{ page.header_button.url }}" class="bg--{{ page.header_button.color | default: 'blue' }} header__button">{{ page.header_button.title }}</a>
-      </p>
+      </div>
     {% endif %}
   </header>
   <nav class="mobileNav">

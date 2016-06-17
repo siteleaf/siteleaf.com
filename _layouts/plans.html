@@ -5,44 +5,48 @@ layout: default
 <script>
   var PLANS = {{ page.plans | jsonify }};
 </script>
-<main class="plans__main container--wide">
-  <div class="jsx-plan-summary-cards"></div>
-
-  <section class="plans__details">
-    {% for plan in page.plans %}
-      {% if plan.features %}
-        <div class="plans__details__item">
-          <h3 class="plans__details__title {{ plan.color }}">{{ plan.name }}</h3>
-          <div class="plans__details__subtitle">
-            {% unless forloop.first %}
-              Everything in <span class="{{ previous_plan.color }}">{{ previous_plan.name }}</span>, plus&hellip;
-            {% endunless %}
-          </div>
-          <ul class="plans__details__features">
-            {% for feature in plan.features %}
-              <li class="plans__details__feature">
-                {{ feature | markdownify }}
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% assign previous_plan = plan %}
-      {% endif %}
-    {% endfor %}
+<div class="bg--lightest-gray">
+  <section class="plans__cards">
+    <div class="jsx-plan-summary-cards"></div>
   </section>
-</main>
-
-<section class="plans__faqs__row bg--lightest-gray">
-    <div class="container--wide">
-      <h2 id="faqs">FAQs</h2>
-
-      <div class="plans__faqs">
-        {% for faq in page.faqs %}
-          <article class="plans__faq">
-            <h4 id="{{ faq.handle }}">{{ faq.title }}</h4>
-            {{ faq.body | markdownify }}
-          </article>
-        {% endfor %}
-      </div>
+  <section class="plans__details">
+    <div class="plans__details__items">
+      {% for plan in page.plans %}
+        {% if plan.features %}
+          <div class="plans__details__item">
+            <h3 class="plans__details__title {{ plan.color }}">{{ plan.name }}</h3>
+            <p class="plans__details__subtitle">
+              {% if forloop.first %}
+                Includes these features:
+              {% else %}
+                Everything in <strong>{{ previous_plan.name | remove: " site" }}</strong>, plus:
+              {% endif %}
+            </p>
+            <ul class="plans__details__features">
+              {% for feature in plan.features %}
+                <li class="plans__details__feature">
+                  {{ feature | markdownify }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% assign previous_plan = plan %}
+        {% endif %}
+      {% endfor %}
     </div>
+  </section>
+</div>
+
+<section class="plans__questions">
+  <h2 id="questions" class="plans__questions__title">Questions</h2>
+  <div class="plans__questions__row article__content">
+    <div class="plans__questions__col">
+      {% for question in page.questions %}
+        {% if forloop.index == 4 %}
+          </div><div class="plans__questions__col">
+        {% endif %}
+        {{ question | markdownify }}
+      {% endfor %}
+    </div>
+  </div>
 </section>
