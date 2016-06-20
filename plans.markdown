@@ -1,7 +1,6 @@
 ---
 title: Plans
 permalink: "/plans/"
-layout: plans
 subtitle: New sites start with a free 14 day trial on the Personal plan. Upgrade or
   downgrade anytime.
 header_button:
@@ -102,10 +101,11 @@ questions:
 - |-
   #### Where can I host my site?
 
-  With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files, or any host that supports FTP or FTPS (Media Temple,  Dreamhost, GoDaddy, etc). Unlike v1, we no longer offer built-in Siteleaf Hosting. We decided to focus our on efforts on being the best CMS and let others be the best hosting company.
+  With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files, or any host that supports FTP or FTPS (Media Temple,  Dreamhost, GoDaddy, etc). Unlike v1, we no longer offer built-in Siteleaf Hosting. We decided to focus our efforts on being the best CMS and let others be the best hosting company.
 - |-
   #### Have more questions?
 
   No problem! [Tweet](https://twitter.com/siteleaf) at us or contact [billing@siteleaf.com](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
+layout: plans
 ---
 
