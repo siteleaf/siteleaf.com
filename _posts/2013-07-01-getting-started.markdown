@@ -1,5 +1,5 @@
 ---
-title: 'Getting started'
+title: Getting started
 date: 2013-07-01 18:00:00 -04:00
 tags:
 - video

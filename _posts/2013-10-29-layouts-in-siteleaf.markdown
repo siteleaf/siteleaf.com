@@ -1,5 +1,5 @@
 ---
-title: 'Layouts in Siteleaf'
+title: Layouts in Siteleaf
 date: 2013-10-29 10:42:00 -04:00
 tags:
 - tutorial
