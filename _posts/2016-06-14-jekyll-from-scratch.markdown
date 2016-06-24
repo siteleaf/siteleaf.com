@@ -17,7 +17,7 @@ Watch <a href="https://vimeo.com/170526921">Jekyll from Scratch</a> on Vimeo
 
 In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com). We'll cover installation, creating a new site, file structure, and finally we'll commit the new site to GitHub.
 
-This will give you a functional website that you can edit offline. Come back for the second part next week, and we'll connect our site to the new [Siteleaf v2](/blog/v2) so we can edit content in the cloud.
+This will give you a functional website that you can edit offline. Also make sure to check out the [next tutorial](/blog/connecting-github) where we'll connect our site to the new [Siteleaf v2](/blog/v2) so we can edit content in the cloud.
 
 ## What is Jekyll?
 
@@ -197,4 +197,4 @@ And that’s it, you should now have a working Jekyll site on GitHub.
 
 To dive deeper, check out our help site [learn.siteleaf.com](http://learn.siteleaf.com) and [Jekyll’s official documentation](http://jekyllrb.com/docs).
 
-Stay tuned next week for the second tutorial where we’ll show you how to sync your GitHub repo with Siteleaf.
+Check out our [next tutorial](/blog/connecting-github) where we’ll show you how to sync your GitHub repo with Siteleaf.
