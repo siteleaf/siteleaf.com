@@ -4,7 +4,9 @@ date: 2016-06-24 13:00:00 -04:00
 tags:
 - tutorial
 image: "/uploads/connecting-github-and-siteleaf-title.png"
-description: This tutorial will show you how to connect and sync an existing Jekyll site from GitHub to Siteleaf, so you can edit content and preview your site in the cloud. 
+description: This tutorial will show you how to connect and sync an existing Jekyll
+  site from GitHub to Siteleaf, so you can edit content and preview your site in the
+  cloud.
 ---
 
 <iframe src="https://player.vimeo.com/video/171941124?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
