@@ -16,7 +16,7 @@ Watch <a href="https://vimeo.com/171941124">Connecting GitHub and Siteleaf</a> o
 
 This tutorial will show you how to connect and sync an existing Jekyll site from GitHub to Siteleaf, so you can edit content and preview your site in the cloud. 
 
-If you are new to Jekyll, you may want to start with our [Jekyll from Scratch](/blog/jekyll-from-scratch-copy/) first tutorial to catch up on the basics.
+If you are new to Jekyll, you may want to start with our [Jekyll from Scratch](/blog/jekyll-from-scratch/) first tutorial to catch up on the basics.
 
 ## What is GitHub sync?
 
@@ -31,7 +31,7 @@ We like to think of it as a time machine for your content.
 
 ## Connecting your repo
 
-We already have our GitHub repo from the [previous tutorial](/blog/jekyll-from-scratch-copy/), so the next step is to create a new site in Siteleaf.
+We already have our GitHub repo from the [previous tutorial](/blog/jekyll-from-scratch/), so the next step is to create a new site in Siteleaf.
 
 ![Connecting your GitHub repo in Siteleaf](/uploads/connecting-github-new.jpg)
 
