@@ -9,8 +9,8 @@ description: In this tutorial, we’ll show you how to get set up and develop we
   Jekyll, creating a new site, file structure, and finally we'll commit our new site
   to GitHub.
 button:
-  title: See more tutorials
-  url: "/blog/tags/tutorial"
+  title: See the next tutorial
+  url: "/blog/connecting-github"
 ---
 
 <iframe src="https://player.vimeo.com/video/170526921?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
