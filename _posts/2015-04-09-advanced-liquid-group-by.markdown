@@ -21,7 +21,7 @@ For example, here’s how we could group all posts by year published:
 {% raw %}{% assign posts_by_year = site.posts | group_by:"year" %}{% endraw %}
 ```
 
-You can group by [any property](/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Here are a few real-world examples you may want to apply to your theme.
+You can group by [any property](http://v1.siteleaf.com/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Here are a few real-world examples you may want to apply to your theme.
 
 
 ### Group posts by author
@@ -81,7 +81,7 @@ Our grouped array will look something like this:
 
 ### Archive page
 
-Grouping posts by year is a common pattern on archive pages. Since Siteleaf already [generates archive pages](/help/themes/naming-your-files/) for us, we can easily sprinkle in `group_by` and have a beautiful blog archive in minutes.
+Grouping posts by year is a common pattern on archive pages. Since Siteleaf already [generates archive pages](http://v1.siteleaf.com/help/themes/naming-your-files/) for us, we can easily sprinkle in `group_by` and have a beautiful blog archive in minutes.
 
 First, let’s group our posts by year:
 
@@ -121,7 +121,7 @@ Now we can display our grouped posts:
 {% endfor %}{% endraw %}
 ```
 
-In case you're wondering, `%B` gives us the month name (e.g. “April”) from a date. For full documentation see our [date formatting](/help/themes/filters-and-tags/date-formating) guide.
+In case you're wondering, `%B` gives us the month name (e.g. “April”) from a date. For full documentation see our [date formatting](http://v1.siteleaf.com/help/themes/filters-and-tags/date-formating) guide.
 
 Until next time, happy coding!
 

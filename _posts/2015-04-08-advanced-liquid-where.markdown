@@ -21,7 +21,7 @@ For example, here’s how we could find all pages titled “Foo”:
 {% raw %}{% assign foo_pages = site.pages | where:"title","Foo" %}{% endraw %}
 ```
 
-As with `sort`, you can use [any property](/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Below are few real-world examples you might find useful.
+As with `sort`, you can use [any property](http://v1.siteleaf.com/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Below are few real-world examples you might find useful.
 
 
 ### Show posts by author
