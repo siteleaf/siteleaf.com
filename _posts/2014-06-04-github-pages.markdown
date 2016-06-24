@@ -23,7 +23,7 @@ GitHub Pages is a solid choice for static web hosting, especially if you already
 </figure>
 
 
-Siteleaf will publish your site to the `gh-pages` branch of your repository (private or public), and even create the required `CNAME` file for GitHub. For full details, visit our [GitHub Pages help page](/help/hosting/github).
+Siteleaf will publish your site to the `gh-pages` branch of your repository (private or public), and even create the required `CNAME` file for GitHub. For full details, visit our [GitHub Pages help page](http://v1.siteleaf.com/help/hosting/github).
 
 We've been quietly testing this feature out over the past couple weeks, and we're excited to make it available to all users right now. 
 

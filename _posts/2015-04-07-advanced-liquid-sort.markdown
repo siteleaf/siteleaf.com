@@ -11,9 +11,9 @@ Docs:
 - sort
 ---
 
-[Liquid](http://www.siteleaf.com/help/themes/getting-started/) is the flexible templating language that powers themes on Siteleaf. While simple at first glance, there’s a lot of power under the hood for those wanting a greater level of control. In this new blog series, we’ll dive deeper and take a look at some advanced Liquid code and examples.
+[Liquid](http://v1.siteleaf.com/help/themes/getting-started/) is the flexible templating language that powers themes on Siteleaf. While simple at first glance, there’s a lot of power under the hood for those wanting a greater level of control. In this new blog series, we’ll dive deeper and take a look at some advanced Liquid code and examples.
 
-First up in this post, we’ll take a look at the `sort` [filter](/help/themes/filters-and-tags).
+First up in this post, we’ll take a look at the `sort` [filter](http://v1.siteleaf.com/help/themes/filters-and-tags).
 
 With any site, Siteleaf makes some general assumptions about your content. For example, posts are sorted by date (newest post shows first) and pages are sorted manually. In cases where this doesn’t fit your design, you can utilize the `sort` filter to order content any way you wish.
 
@@ -29,7 +29,7 @@ This will sort in ascending order, but we could also choose descending order by 
 {% raw %}{% assign sorted = pages | sort:"date" | reverse %}{% endraw %}
 ```
 
-You can sort on [any property](http://www.siteleaf.com/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Below are few real-world examples you might find useful.
+You can sort on [any property](http://v1.siteleaf.com/help/themes/variables/content/) like date, title, slug, even metadata and taxonomy. Below are few real-world examples you might find useful.
 
 
 ### Sort tags alphabetically
