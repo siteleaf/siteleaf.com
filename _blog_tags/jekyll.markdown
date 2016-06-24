@@ -1,6 +1,6 @@
 ---
 title: Jekyll
-permalink: "/blog/tags/yellow/"
+permalink: "/blog/tags/jekyll/"
 color: yellow
 ---
 
