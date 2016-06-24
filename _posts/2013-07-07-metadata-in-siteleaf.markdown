@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Metadata in Siteleaf'
+title: Metadata in Siteleaf
 date: 2013-07-07 10:51:00 -04:00
 tags:
 - tutorial

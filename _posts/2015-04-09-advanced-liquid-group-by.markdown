@@ -4,6 +4,7 @@ date: 2015-04-09 16:30:00 -04:00
 tags:
 - tutorial
 - liquid
+- v1
 hero: "/uploads/group_by.svg"
 Docs:
 - filters and tags

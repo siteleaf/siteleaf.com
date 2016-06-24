@@ -3,6 +3,7 @@ title: Introducing Siteleaf
 date: 2013-06-05 22:47:00 -04:00
 tags:
 - announcement
+- v1
 hero: "/uploads/introducing-siteleaf.jpg"
 ---
 

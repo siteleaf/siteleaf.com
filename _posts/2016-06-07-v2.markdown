@@ -3,6 +3,7 @@ title: Say hello to Siteleaf v2
 date: 2016-06-07 10:00:00 -04:00
 tags:
 - announcement
+- video
 button:
   title: Try for free
   url: https://manage.siteleaf.com/signup
