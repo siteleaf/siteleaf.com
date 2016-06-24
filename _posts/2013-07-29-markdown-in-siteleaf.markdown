@@ -1,14 +1,14 @@
 ---
-title: 'Tutorial: Markdown in Siteleaf'
+title: 'Markdown in Siteleaf'
 date: 2013-07-29 11:01:00 -04:00
 tags:
 - tutorial
 - markdown
+- v1
 hero: "/uploads/markdown-in-siteleaf-ui.png"
 ---
 
 In the last [Siteleaf](http://siteleaf.com) post, we explored [taxonomy](/blog/taxonomy-in-siteleaf) and the many ways you could use it to extend your website. This time, we’ll break from templating and take a closer look at content—specifically, Markdown’s role in Siteleaf.
-
 
 ### Markdown
 
@@ -26,7 +26,8 @@ Along with styling, we can also use Markdown for more complex elements, like lin
 
 With the support of Markdown, Siteleaf posts can follow our guiding principle—all content should outlive its CMS. No matter where you manage your website, you should be able to take your content with you, free from any ties to the previous system.
 
-### The Editor
+
+### The editor
 
 ![editor-text](/uploads/markdown-in-siteleaf-editor-text.jpg) 
 

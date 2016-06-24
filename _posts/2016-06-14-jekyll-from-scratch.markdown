@@ -3,6 +3,9 @@ title: Jekyll from scratch
 date: 2016-06-14 13:00:00 -04:00
 tags:
 - tutorial
+- jekyll
+- github
+- video
 image: "/uploads/jekyll-from-scratch-title.png"
 description: In this tutorial, we’ll show you how to get set up and develop websites
   locally using Jekyll, a static website generator built on Ruby. We'll cover installing

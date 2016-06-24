@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Hello World, I’m Siteleaf'
+title: 'Hello World, I’m Siteleaf'
 date: 2013-07-01 10:43:00 -04:00
 tags:
 - tutorial

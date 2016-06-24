@@ -4,6 +4,7 @@ date: 2013-06-22 13:00:00 -04:00
 tags:
 - tutorial
 - liquid
+- v1
 hero: "/uploads/an-introduction-to-siteleaf-collaboration.png"
 Docs:
 - getting started

@@ -3,6 +3,7 @@ title: Now publishing to GitHub Pages
 date: 2014-06-04 09:00:00 -04:00
 tags:
 - announcement
+- github
 hero: "/uploads/github.svg"
 ---
 
@@ -26,4 +27,4 @@ Siteleaf will publish your site to the `gh-pages` branch of your repository (pri
 
 We've been quietly testing this feature out over the past couple weeks, and we're excited to make it available to all users right now. 
 
-GitHub Pages joins our existing publishing options—FTP, Amazon S3, Rackspace Cloud Files, and our free Siteleaf Hosting—giving you more flexibility and reaffirming our committment that your data belongs to you. Enjoy!
+GitHub Pages joins our existing publishing options—FTP, Amazon S3, Rackspace Cloud Files, and our free Siteleaf Hosting—giving you more flexibility and reaffirming our commitment that your data belongs to you. Enjoy!
