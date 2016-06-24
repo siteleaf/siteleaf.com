@@ -30,6 +30,16 @@
         <p class="note">This post refers to a legacy version of Siteleaf.</p>
       {% endif %}
     {% endunless %}
+
+    {% if post.vimeo %}
+    <iframe src="https://player.vimeo.com/video/{{post.vimeo}}?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreenn></iframe>
+    <p class="caption">Watch <a href="https://vimeo.com/{{post.vimeo}}" target="_blank">{{post.title}}</a> on Vimeo</p>
+    {% elsif post.hero %}
+    <p>
+      <a href="{{post.url}}"><img src="{{post.hero}}" alt="{{post.title}}" /></a>
+    </p>
+    {% endif %}
+
     {% if is_excerpt %}
       {{ post.excerpt | markdownify }}
     {% else %}
