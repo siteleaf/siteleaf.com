@@ -1,9 +1,9 @@
 {
-  "name": "v2.siteleaf.com",
+  "name": "siteleaf.com",
   "version": "1.1.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oakstudios/v2.siteleaf.com.git"
+    "url": "git+https://github.com/siteleaf/siteleaf.com.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
