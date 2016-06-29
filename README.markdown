@@ -6,6 +6,11 @@ Install gems:
 bundle install
 ```
 
+Install node packages:
+
+```
+npm install
+```
 
 Compile and watch for changes to JavaScript in `_src`:
 
