@@ -1,7 +1,7 @@
 ---
 title: New in v2
 permalink: "/features/"
-layout: page
+layout: post
 color: yellow
 button:
   title: Get started

@@ -1,7 +1,7 @@
 ---
 title: Purpose
 permalink: "/purpose/"
-layout: page
+layout: post
 color: green
 ---
 
