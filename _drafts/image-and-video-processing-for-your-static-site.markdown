@@ -4,6 +4,9 @@ date: 2016-07-05 10:16:00 -04:00
 tags:
 - tutorial
 - aws
+image: "/uploads/media-processing-diagram.png"
+description: Static sites can benefit from microservices just as much as any other
+  type of site, especially when it comes to processing images and video.
 ---
 
 Static HTML sites are great — there’s no reliance on a server or database, you can host them for cheap, archive an entire copy on a USB drive, and when they’re properly optimized they can be blazing fast. This last part, optimization, can be tricky when it comes to static sites though. Since there’s no server processing and generating your pages, you don’t have the benefit of using something like [ImageMagick](http://www.imagemagick.org/) alongside a gem like CarrierWave, which makes it easy to resize and optimize your images when they’re uploaded. The same goes for video. If you’re not hosting your video on YouTube or Vimeo, you’re responsible for transcoding the video into the various formats favored by the different browsers. So what’s a developer to do?
