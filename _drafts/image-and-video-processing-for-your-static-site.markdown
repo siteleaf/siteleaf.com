@@ -37,13 +37,54 @@ What follows is a high-level overview of the AWS services you can use to build y
 
 ### S3 Event Notifications
 
-The main magic to all of this are S3 event notifications. With this you can trigger Lambda functions when new objects are published to your bucket. You can specify which directory (using the Prefix field) and which file extensions to watch for (using the Suffix field). For example, you could set up an event notification to trigger a Lambda function when any object ending with “jpg” is added to the “original/” directory.
+The main magic to all of this are S3 event notifications. With this you can trigger Lambda functions when new objects are published to your bucket. You can specify which directory (using the Prefix field) and which file extensions to watch for (using the Suffix field). For example, you could set up an event notification to trigger a Lambda function when any object ending with `jpg` is added to the `original/` directory.
 
 ![s3-event-notification.png](/uploads/s3-event-notification.png)
 
 ### Lambda
 
 Lambda is where we place the code that manages our processing logic. When a new object is added to our S3 bucket, S3 sends an event to our Lambda function with information about the object. Here’s a sample event, the only parts we care about are the object’s key and bucket name:
+
+```json
+{
+  "Records": [
+    {
+      "eventVersion": "2.0",
+      "eventTime": "1970-01-01T00:00:00.000Z",
+      "requestParameters": {
+        "sourceIPAddress": "127.0.0.1"
+      },
+      "s3": {
+        "configurationId": "testConfigRule",
+        "object": {
+          "eTag": "0123456789abcdef0123456789abcdef",
+          "sequencer": "0A1B2C3D4E5F678901",
+          "key": "HappyFace.jpg",
+          "size": 1024
+        },
+        "bucket": {
+          "arn": "arn:aws:s3:::mybucket",
+          "name": "sourcebucket",
+          "ownerIdentity": {
+            "principalId": "EXAMPLE"
+          }
+        },
+        "s3SchemaVersion": "1.0"
+      },
+      "responseElements": {
+        "x-amz-id-2": "EXAMPLE123/5678abcdefghijklambdaisawesome/mnopqrstuvwxyzABCDEFGH",
+        "x-amz-request-id": "EXAMPLE123456789"
+      },
+      "awsRegion": "us-east-1",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "EXAMPLE"
+      },
+      "eventSource": "aws:s3"
+    }
+  ]
+}
+```
 
 ImageMagick is provided in the Lambda environment without any installation required on our part, and we can use this to resize and process our images. The AWS SDK is also provided by default and we can use it to save our processed images back to S3 or to trigger an Elastic Transcoder job which handles our video processing.
 
