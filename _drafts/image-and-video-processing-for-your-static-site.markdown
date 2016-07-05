@@ -12,6 +12,8 @@ Static HTML sites are great — there’s no reliance on a server or databas
 
 One option is to use a 3rd party. There’s been a handful of companies who have started offering image and video processing as a service. These services are a great option if you don’t want to maintain your own solution, are “on demand”, and make it really simple to get started. To name just a few:
 
+![imgix servers](/uploads/imgix-servers.jpeg)
+
 imgix generates your images on demand. In your image URLs you specify parameters like the dimensions, filters, face detection and type of cropping. Once the image is generated, it’s cached and served via their CDN. imgix charges $3 per “1,000 master images accessed each month” and $0.08 per GB of bandwidth.
 
 Cloudinary offers processing services for images and video and is a bit more robust than imgix. Cloudinary offers a limited free plan with the next step up being $44/month.
