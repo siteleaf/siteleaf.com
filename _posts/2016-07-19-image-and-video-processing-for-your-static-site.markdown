@@ -1,6 +1,6 @@
 ---
 title: Image and video processing for your static site
-date: 2016-07-05 10:16:00 -04:00
+date: 2016-07-19 10:16:00 -04:00
 tags:
 - tutorial
 - aws
@@ -28,6 +28,7 @@ One option is to use a 3rd party. There’s been a handful of companies who have
 ## Rolling your own solution with AWS
 
 What if you don’t want to pay a premium to subscribe to another service to process and serve your media? Typically you don’t need all the whiz-bang options offered by 3rd party services and a straightforward approach is typically enough for simple sites. Static sites can benefit just as much from a microservices approach as any other type of site, and if you host your site on S3, AWS gives us all the tools we need to processes our own images and video for much cheaper, though with a bit more setup and expertise required from our end.
+
 
 ![media-processing-diagram.png](/uploads/media-processing-diagram.png)
 
