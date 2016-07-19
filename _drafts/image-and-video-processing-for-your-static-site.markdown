@@ -37,13 +37,13 @@ What follows is a high-level overview of the AWS services you can use to build y
 
 ### S3 Event Notifications
 
-The main magic to all of this are S3 event notifications. With this you can trigger Lambda functions when new objects are published to your bucket. You can specify which directory (using the Prefix field) and which file extensions to watch for (using the Suffix field). For example, you could set up an event notification to trigger a Lambda function when any object ending with `jpg` is added to the `original/` directory.
+The main magic to all of this are [S3 event notifications](https://docs.aws.amazon.com/en_us/console/s3/events). With this you can trigger Lambda functions when new objects are published to your bucket. You can specify which directory (using the Prefix field) and which file extensions to watch for (using the Suffix field). For example, you could set up an event notification to trigger a Lambda function when any object ending with `jpg` is added to the `original/` directory.
 
 ![s3-event-notification.png](/uploads/s3-event-notification.png)
 
 ### Lambda
 
-Lambda is where we place the code that manages our processing logic. When a new object is added to our S3 bucket, S3 sends an event to our Lambda function with information about the object. Here’s a sample event, the only parts we care about are the object’s key and bucket name:
+[Lambda](https://aws.amazon.com/lambda/) is where we place the code that manages our processing logic. When a new object is added to our S3 bucket, S3 sends an event to our Lambda function with information about the object. Here’s a sample event, the only parts we care about are the object’s key and bucket name:
 
 ```json
 {
@@ -90,7 +90,7 @@ ImageMagick is provided in the Lambda environment without any installation requi
 
 ### Elastic Transcoder
 
-Elastic Transcoder transcodes videos from one format to another to be playable on various devices and browsers. For example, you could use it to convert MP4 files to WebM. AWS Lambda can create an Elastic Transcoder job for each new video object that its been notified about. In Elastic Trancoder you create a “pipeline” which specifies the input and output buckets for your media files. Optionally, you can also create a “preset” which specifies the output format, dimensions, and thumbnail options. In most cases you can just use one of the standard presets AWS provides.
+[Elastic Transcoder](https://aws.amazon.com/elastictranscoder/) transcodes videos from one format to another to be playable on various devices and browsers. For example, you could use it to convert MP4 files to WebM. AWS Lambda can create an Elastic Transcoder job for each new video object that its been notified about. In Elastic Trancoder you create a “pipeline” which specifies the input and output buckets for your media files. Optionally, you can also create a “preset” which specifies the output format, dimensions, and thumbnail options. In most cases you can just use one of the standard presets AWS provides.
 
 ### Build your own
 
