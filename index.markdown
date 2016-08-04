@@ -49,8 +49,8 @@ features:
     image: "/uploads/home__manage--edit.jpg"
   - title: Powerful content
     handle: customize
-    body: Customize your content with document collections, advanced metadata, and
-      custom permalinks.
+    body: Customize your site with document collections, advanced metadata, and custom
+      permalinks.
     image: "/uploads/home__manage--customize.jpg"
 - title: Develop with tools you already love
   handle: develop
