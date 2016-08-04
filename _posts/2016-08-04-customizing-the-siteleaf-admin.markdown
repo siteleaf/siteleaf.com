@@ -7,7 +7,9 @@ tags:
 - github
 - video
 image: "/uploads/customizing-the-siteleaf-admin-title.png"
-description: Siteleaf v2 was built to be be customized. In this tutorial, we’ll dive deeper into the Siteleaf admin and learn some tricks on how to tweak the interface to suit our needs.
+description: Siteleaf v2 was built to be be customized. In this tutorial, we’ll dive
+  deeper into the Siteleaf admin and learn some tricks on how to tweak the interface
+  to suit our needs.
 button:
   title: See more tutorials
   url: "/blog/tags/tutorial"
