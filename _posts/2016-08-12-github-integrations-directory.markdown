@@ -4,6 +4,9 @@ date: 2016-08-12 14:59:00 -04:00
 tags:
 - announcement
 image: "/uploads/github-integrations.png"
+button:
+  title: Connect Siteleaf and GitHub
+  url: https://github.com/integrations/siteleaf
 ---
 
 ![](/uploads/github-integrations.png)
