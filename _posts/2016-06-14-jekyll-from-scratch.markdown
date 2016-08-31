@@ -52,7 +52,7 @@ So now to install Jekyll, we’ll run:
 $ gem install jekyll -v 3.1.6
 ```
 
-This tutorial was created using Jekyll version 3.1.6. Newer versions (3.2+) will give you a theme by default instead of `_layouts` and `_includes`. For the purpose of this tutorial you may want to downgrade to Jekyll 3.1.6 (run `gem uninstall jekyll` to remove other versions). Stay tuned for a future tutorial on themes!
+This tutorial was created using Jekyll version 3.1.6. Newer versions (3.2+) will give you a theme by default instead of `_layouts` and `_includes`. For the purpose of this tutorial you may want to downgrade to Jekyll 3.1.6 (to remove other versions, run `gem uninstall jekyll`). Stay tuned for a future tutorial on themes!
 {: .warning}
 
 ## Creating a site
