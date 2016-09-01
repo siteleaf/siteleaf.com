@@ -1,9 +1,11 @@
 ---
 title: Gallery
 permalink: "/gallery/"
-layout: gallery
 color: darkest-gray
 items:
+- title: NODAY
+  image: "/uploads/gallery__noday.jpg"
+  url: http://www.noday.co/
 - title: Cushion
   image: "/uploads/gallery__cushion.jpg"
   url: http://cushionapp.com/
@@ -145,5 +147,6 @@ items:
 - title: Sawyer Hollenshead
   image: "/uploads/gallery__sawyerhollenshead.jpg"
   url: http://sawyerh.com/
+layout: gallery
 ---
 
