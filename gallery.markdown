@@ -4,7 +4,7 @@ permalink: "/gallery/"
 color: darkest-gray
 items:
 - title: NODAY
-  image: "/uploads/gallery__noday.png"
+  image: "/uploads/gallery__noday.jpg"
   url: http://www.noday.co/
 - title: Cushion
   image: "/uploads/gallery__cushion.jpg"
