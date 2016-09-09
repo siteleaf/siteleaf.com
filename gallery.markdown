@@ -3,6 +3,9 @@ title: Gallery
 permalink: "/gallery/"
 color: darkest-gray
 items:
+- title: Katie Swinden
+  image: "/uploads/gallery__katieswinden.jpg"
+  url: http://katieswinden.com/
 - title: NODAY
   image: "/uploads/gallery__noday.jpg"
   url: http://www.noday.co/
