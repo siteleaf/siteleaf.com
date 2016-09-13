@@ -21,6 +21,8 @@ button:
 Watch <a href="https://vimeo.com/170526921">Jekyll from Scratch</a> on Vimeo
 {: .caption}
 
+**Update (2016-09-13)**: In Jekyll 3.2, the `jekyll new` command no longer creates a site with theme files, but instead uses the new ["Gem-based themes"](https://jekyllrb.com/docs/themes/) feature.
+
 In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com). We'll cover installation, creating a new site, file structure, and finally we'll commit the new site to GitHub.
 
 This will give you a functional website that you can edit offline. Also make sure to check out the [next tutorial](/blog/connecting-github) where we'll connect our site to the new [Siteleaf v2](/blog/v2) so we can edit content in the cloud.
