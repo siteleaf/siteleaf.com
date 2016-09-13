@@ -49,7 +49,7 @@ The [latest stable](https://www.ruby-lang.org/en/downloads/) version is 2.3.1, b
 So now to install Jekyll, we’ll run:
 
 ```bash
-$ gem install jekyll -v 3.1.6
+$ gem install jekyll
 ```
 
 This tutorial was created using Jekyll version 3.1.6. Newer versions (3.2+) will give you a theme by default instead of `_layouts` and `_includes`. For the purpose of this tutorial you may want to downgrade to Jekyll 3.1.6 (to remove other versions, run `gem uninstall jekyll`). Stay tuned for a future tutorial on themes!
