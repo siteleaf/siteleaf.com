@@ -21,7 +21,11 @@ button:
 Watch <a href="https://vimeo.com/170526921">Jekyll from Scratch</a> on Vimeo
 {: .caption}
 
+----
+
 **Update (2016-09-13)**: In Jekyll 3.2, the `jekyll new` command no longer creates a site with theme files, but instead uses the new ["Gem-based themes"](https://jekyllrb.com/docs/themes/) feature.
+
+----
 
 In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com). We'll cover installation, creating a new site, file structure, and finally we'll commit the new site to GitHub.
 
