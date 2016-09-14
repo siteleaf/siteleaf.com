@@ -1,7 +1,8 @@
 ---
 title: Plans
 permalink: "/plans/"
-subtitle: Start with a **free 14 day trial**, upgrade or downgrade anytime. All plans include **unlimited users**.
+subtitle: Start with a **free 14 day trial**, upgrade or downgrade anytime. All plans
+  include **unlimited users**.
 header_button:
   title: Try for free
   url: https://manage.siteleaf.com/signup
@@ -15,7 +16,7 @@ plans:
   - Sync and publish to **public** GitHub repos
   - |-
     Unlimited collaborators
-    
+
     Invite additional users free
   - |-
     [API](http://learn.siteleaf.com/api/) access
@@ -34,8 +35,7 @@ plans:
   - Sync and publish to **private** GitHub repos
   - Publish to Amazon S3, Rackspace, FTP
   - Preview your site online before publishing
-  - |-
-    [Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
+  - "[Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins"
   - Jekyll theme support <small class="red">NEW</small>
   - |-
     Basic support
@@ -44,8 +44,7 @@ plans:
 - name: Team
   price: 49
   discount: 0.4
-  description: Custom plugins, user roles, increased file storage, and unlimited
-    pages.
+  description: Custom plugins, user roles, increased file storage, and unlimited pages.
   color: purple
   features:
   - |-
@@ -55,10 +54,8 @@ plans:
   - Unlimited pages
   - Increased file storage
   - Increased API limits
-  - |-
-    Third-party Jekyll plugins <small class="purple">NEW</small>
-    
-    Build sites with custom Ruby code  
+  - "Third-party Jekyll plugins <small class=\"purple\">NEW</small>\n\nBuild sites
+    with custom Ruby code  "
 - name: Business
   price: 149
   discount: 0.4
