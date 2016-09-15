@@ -7,6 +7,9 @@ image: "/uploads/learn.siteleaf.com.png"
 description: We're excited to officially launch our new help site learn.siteleaf.com.
   Learn about developing themes, managing content, using the API, how to migrate your
   legacy site, and more!
+button:
+  title: learn.siteleaf.com
+  url: "http://learn.siteleaf.com/"
 ---
 
 [![learn.siteleaf.com](/uploads/badges.svg)](http://learn.siteleaf.com)
