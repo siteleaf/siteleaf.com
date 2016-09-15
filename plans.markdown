@@ -25,7 +25,7 @@ plans:
   - |-
     [Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
 
-    GitHub-approved plugins and themes
+    GitHub-approved plugins & themes
   - |-
     Community support
 
