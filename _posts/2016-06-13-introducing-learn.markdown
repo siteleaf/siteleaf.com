@@ -9,7 +9,7 @@ description: We're excited to officially launch our new help site learn.siteleaf
   legacy site, and more!
 button:
   title: learn.siteleaf.com
-  url: "http://learn.siteleaf.com/"
+  url: http://learn.siteleaf.com/
 ---
 
 [![learn.siteleaf.com](/uploads/badges.svg)](http://learn.siteleaf.com)
