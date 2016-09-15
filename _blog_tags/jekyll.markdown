@@ -1,6 +1,6 @@
 ---
 title: Jekyll
 permalink: "/blog/tags/jekyll/"
-color: yellow
+color: red
 ---
 

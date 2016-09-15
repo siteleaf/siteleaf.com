@@ -380,7 +380,7 @@ h6 {
   }
 }
 .header__subtitle {
-  max-width: 24rem;
+  max-width: 28rem;
   .header--extended & {
     font-size: $font-size--large;
   }
@@ -1051,6 +1051,14 @@ h6 {
   p:nth-child(2) {
     color: $color--dark-gray;
     font-size: $font-size--small;
+  }
+  small {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 3px;
+  }
+  a {
+    @extend %link--underline;
   }
 }
 
