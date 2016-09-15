@@ -23,6 +23,10 @@ plans:
 
     Within limits
   - |-
+    [Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
+
+    GitHub-approved plugins & themes
+  - |-
     Community support
 
     [Slack channel](http://chat.siteleaf.com) and [docs](http://learn.siteleaf.com)
@@ -35,8 +39,10 @@ plans:
   - Sync and publish to **private** GitHub repos
   - Publish to Amazon S3, Rackspace, FTP
   - Preview your site online before publishing
-  - "[Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins"
-  - Jekyll theme support <small class="red">NEW</small>
+  - |-
+    Jekyll theme support <small class="red">NEW</small>
+
+    Use custom Gem-based themes
   - |-
     Basic support
 
