@@ -26,6 +26,8 @@ plans:
     Community support
 
     [Slack channel](http://chat.siteleaf.com) and [docs](http://learn.siteleaf.com)
+  - "[Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
+    and themes"
 - name: Personal
   price: 12
   discount: 0.4
@@ -35,8 +37,10 @@ plans:
   - Sync and publish to **private** GitHub repos
   - Publish to Amazon S3, Rackspace, FTP
   - Preview your site online before publishing
-  - "[Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins"
-  - Jekyll theme support <small class="red">NEW</small>
+  - |-
+    Jekyll theme support <small class="red">NEW</small>
+
+    Use custom Gem-based themes
   - |-
     Basic support
 
