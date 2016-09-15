@@ -16,7 +16,7 @@ In addition to themes, we're extremely happy to introduce support for third-part
 
 Sites on the free developer plan can make use of the new GitHub Pages-approved [Minima theme](https://github.com/jekyll/minima), while all paid plans (including legacy and Personal plans) can take full advantage of custom themes. Themes are a great way to maintain a separation of content and code, and makes it possible to share themes across multiple sites.
 
-We also gave the Jekyll build process a nice speed boost, you may notice your site building up to 2x faster!
+We also gave the Jekyll build process a nice speed boost. In some cases, you may notice your site building up to 2x faster!
 
 
 ### How it works
