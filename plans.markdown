@@ -23,11 +23,13 @@ plans:
 
     Within limits
   - |-
+    [Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
+
+    Use GitHub-approved plugins and themes
+  - |-
     Community support
 
     [Slack channel](http://chat.siteleaf.com) and [docs](http://learn.siteleaf.com)
-  - "[Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
-    and themes"
 - name: Personal
   price: 12
   discount: 0.4
