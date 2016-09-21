@@ -10,13 +10,13 @@ button:
   url: "/plans"
 ---
 
-Today's the day! We're excited to update to Jekyll 3.2, which brings over [100 improvements](http://jekyllrb.com/docs/history/#minor-enhancements-v3-2-0) including [Gem-based themes](https://jekyllrb.com/docs/themes/).
+Today's the day! We're excited to update to Jekyll 3.2, which brings over [100 improvements](http://jekyllrb.com/docs/history/#minor-enhancements-v3-2-0) including [Gem-based themes](https://learn.siteleaf.com/themes/gem-based-themes/).
 
-In addition to themes, we're extremely happy to introduce support for third-party [Jekyll plugins](https://jekyllrb.com/docs/plugins/). Sites on the new [Team, Business, and Enterprise plans](/plans) can now install and utilize custom plugins to extend the functionality of Jekyll and Siteleaf. As always, [whitelisted plugins](http://learn.siteleaf.com/themes/jekyll-plugins/) are supported on all other plans.
+In addition to themes, we're extremely happy to introduce support for third-party [Jekyll plugins](https://learn.siteleaf.com/themes/jekyll-plugins/). Sites on the new [Team, Business, and Enterprise plans](/plans) can now install and leverage custom plugins to extend the functionality of Jekyll and Siteleaf. As always, [whitelisted plugins](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) are supported on all other plans.
 
-Sites on the free developer plan can make use of the new GitHub Pages-approved [Minima theme](https://github.com/jekyll/minima), while all paid plans (including legacy and Personal plans) can take full advantage of custom themes. Themes are a great way to maintain a separation of content and code, and makes it possible to share themes across multiple sites.
+Sites on the free developer plan can make use of the new GitHub Pages-approved [Minima theme](https://github.com/jekyll/minima), while all paid plans (including legacy and Personal plans) can take full advantage of custom themes. Themes package layouts, includes, and stylesheets in a way that can be overridden by your site’s content. It is a great way to maintain a separation of content and code, and makes it possible to share themes across multiple sites.
 
-We also gave the Jekyll build process a nice speed boost across the board. In some cases, you may notice your site building up to 2x faster!
+We also gave the Jekyll build process a nice speed boost across the board. In some cases, you may notice your site building up to 2x as fast!
 
 
 ### How it works
@@ -25,7 +25,7 @@ When previewing or publishing your site, Siteleaf will now look for an optional 
 
 Custom plugins are supported even when publishing to GitHub Pages. Just make sure to choose the "Compiled by Siteleaf" format in your hosting settings, and Siteleaf will pre-compile your site before pushing it to GitHub.
 
-See the Jekyll docs for full instructions on [using themes](https://jekyllrb.com/docs/themes/) and [plugins](https://jekyllrb.com/docs/plugins/).
+See our docs for full instructions on [using themes](https://learn.siteleaf.com/themes/gem-based-themes/) and [plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
 
 ### Try it out
 
