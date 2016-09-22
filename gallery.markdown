@@ -3,6 +3,9 @@ title: Gallery
 permalink: "/gallery/"
 color: darkest-gray
 items:
+- title: DC Design Week
+  image: "/uploads/gallery__dcdw.jpg"
+  url: http://www.dcdesignweek.org/
 - title: Katie Swinden
   image: "/uploads/gallery__katieswinden.jpg"
   url: http://katieswinden.com/
@@ -72,7 +75,7 @@ items:
 - title: Chroma
   image: "/uploads/gallery__chroma.jpg"
   url: http://chr.ma/
-- title: "Úll Conference"
+- title: Úll Conference
   image: "/uploads/gallery__ullconference.jpg"
   url: http://2014.ull.ie/
 - title: Adam Feuerman
