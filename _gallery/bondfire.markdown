@@ -1,6 +1,6 @@
 ---
 title: Bondfire
-position: 14
+position: 15
 image: "/uploads/gallery__bondfire.jpg"
 url: http://www.bondfire.co/
 ---

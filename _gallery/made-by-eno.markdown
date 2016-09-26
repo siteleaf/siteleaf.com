@@ -1,6 +1,6 @@
 ---
 title: Made By Eno
-position: 21
+position: 22
 image: "/uploads/gallery__madebyeno.jpg"
 url: http://www.madebyeno.com/
 ---
