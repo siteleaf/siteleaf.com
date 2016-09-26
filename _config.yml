@@ -2,6 +2,9 @@
 title: Siteleaf
 timezone: America/New_York
 collections:
+  gallery:
+    title: Gallery
+    output: false
   posts:
     title: Posts
     output: true
@@ -31,6 +34,13 @@ defaults:
     type: blog_tags
   values:
     layout: tag
+- scope:
+    path: ''
+    type: gallery
+  values:
+    title: 
+    image: 
+    url: 
 url: http://www.siteleaf.com
 description: Built for developers, Loved by everyone. Supports Jekyll, user collaboration,
   publishing to AWS S3, GitHub Pages, FTP, and more.
