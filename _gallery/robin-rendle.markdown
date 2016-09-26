@@ -1,6 +1,6 @@
 ---
 title: Robin Rendle
-position: 49
+position: 41
 image: "/uploads/gallery__robinrendle.jpg"
 url: https://robinrendle.com/
 ---
