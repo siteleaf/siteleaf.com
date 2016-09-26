@@ -1,6 +1,6 @@
 ---
 title: Destroy Today
-position: 29
+position: 31
 image: "/uploads/gallery__destroytoday.jpg"
 url: http://destroytoday.com/
 ---
