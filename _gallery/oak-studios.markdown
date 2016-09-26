@@ -1,6 +1,6 @@
 ---
 title: Oak Studios
-position: 40
+position: 41
 image: "/uploads/gallery__oakstudios.jpg"
 url: http://oak.is/
 ---
