@@ -1,6 +1,6 @@
 ---
 title: Hyperakt
-position: 28
+position: 29
 image: "/uploads/gallery__hyperakt.jpg"
 url: http://hyperakt.com/
 ---

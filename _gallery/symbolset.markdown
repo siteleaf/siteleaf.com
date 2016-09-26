@@ -1,6 +1,6 @@
 ---
 title: Symbolset
-position: 36
+position: 37
 image: "/uploads/gallery__symbolset.jpg"
 url: http://blog.symbolset.com/
 ---
