@@ -1,6 +1,6 @@
 ---
 title: Alonzo Felix
-position: 22
+position: 23
 image: "/uploads/gallery__alonzofelix.jpg"
 url: http://www.alonzofelix.com/
 ---
