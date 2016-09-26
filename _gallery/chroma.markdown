@@ -1,6 +1,6 @@
 ---
 title: Chroma
-position: 33
+position: 34
 image: "/uploads/gallery__chroma.jpg"
 url: http://chr.ma/
 ---
