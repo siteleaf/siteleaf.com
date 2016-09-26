@@ -1,6 +1,6 @@
 ---
 title: Tito
-position: 21
+position: 22
 image: "/uploads/gallery__tito.jpg"
 url: http://blog.tito.io/
 ---
