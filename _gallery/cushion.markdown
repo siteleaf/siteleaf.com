@@ -1,6 +1,6 @@
 ---
 title: Cushion
-position: 18
+position: 3
 image: "/uploads/gallery__cushion.jpg"
 url: http://cushionapp.com/
 ---

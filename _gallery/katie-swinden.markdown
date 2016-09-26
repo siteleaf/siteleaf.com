@@ -1,6 +1,6 @@
 ---
 title: Katie Swinden
-position: 38
+position: 1
 image: "/uploads/gallery__katieswinden.jpg"
 url: http://katieswinden.com/
 ---

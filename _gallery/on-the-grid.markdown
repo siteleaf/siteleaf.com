@@ -1,6 +1,6 @@
 ---
 title: On the Grid
-position: 24
+position: 25
 image: "/uploads/gallery__onthegrid.jpg"
 url: http://www.onthegrid.city/
 ---
