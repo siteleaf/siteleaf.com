@@ -1,6 +1,6 @@
 ---
 title: Object & Subject
-position: 44
+position: 21
 image: "/uploads/gallery__objectsubject.jpg"
 url: http://objectsubject.com/
 ---
