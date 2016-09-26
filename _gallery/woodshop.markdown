@@ -1,6 +1,6 @@
 ---
 title: Woodshop
-position: 33
+position: 34
 image: "/uploads/gallery__woodshop.jpg"
 url: http://www.woodshopusa.com/
 ---
