@@ -1,6 +1,6 @@
 ---
 title: Sawyer Hollenshead
-position: 48
+position: 49
 image: "/uploads/gallery__sawyerhollenshead.jpg"
 url: http://sawyerh.com/
 ---
