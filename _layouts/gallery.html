@@ -8,7 +8,7 @@ layout: default
     {% for item in sorted_gallery %}
       <figure class="gallery__item">
         <a href="{{ item.link }}" target="_blank"  rel="nofollow"><img src="{{ item.image }}" alt="{{ item.title }}" class="gallery__image" /></a>
-        <figcaption class="gallery__caption"><a href="{{ item.link }}" target="_blank" rel="nofollow" class="gallery__caption__link">{{ item.title }}</a></figcaption>
+        <figcaption class="gallery__caption"><a href="{{ item.link }}" target="_blank" rel="nofollow noopener" class="gallery__caption__link">{{ item.title }}</a></figcaption>
       </figure>
     {% endfor %}
   </div>
