@@ -1,6 +1,6 @@
 ---
 title: Another
-position: 21
+position: 17
 image: "/uploads/gallery__another.jpg"
 url: http://ofanother.com/
 ---
