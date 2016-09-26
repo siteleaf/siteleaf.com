@@ -1,6 +1,6 @@
 ---
 title: Get Biked
-position: 31
+position: 32
 image: "/uploads/gallery__getbiked.jpg"
 url: http://www.getbiked.com/
 ---

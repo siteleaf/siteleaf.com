@@ -1,6 +1,6 @@
 ---
 title: Frank Chimero
-position: 32
+position: 33
 image: "/uploads/gallery__frankchimero.jpg"
 url: http://frankchimero.com/
 ---
