@@ -2,15 +2,15 @@
 title: Siteleaf
 timezone: America/New_York
 collections:
+  gallery:
+    title: Gallery
+    output: false
   posts:
     title: Posts
     output: true
   blog_tags:
     title: Tags
     output: true
-  gallery:
-    title: Gallery
-    output: false
   tweets:
     title: Tweets
     output: false
