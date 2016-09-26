@@ -1,6 +1,6 @@
 ---
 title: Jessica Harllee
-position: 41
+position: 39
 image: "/uploads/gallery__jessicaharllee.jpg"
 url: http://jessicaharllee.com/
 ---
