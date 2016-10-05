@@ -1,6 +1,6 @@
 ---
 title: Other Machine Co.
-position: 13
+position: 14
 image: "/uploads/gallery__othermachineco.jpg"
 link: https://othermachine.co/
 ---
