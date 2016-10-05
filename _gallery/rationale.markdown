@@ -1,6 +1,6 @@
 ---
 title: Rationale
-position: 14
+position: 17
 image: "/uploads/gallery__rationale.jpg"
 link: http://rationale-design.com/
 ---

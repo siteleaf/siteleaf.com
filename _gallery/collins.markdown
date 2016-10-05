@@ -1,6 +1,6 @@
 ---
 title: Collins
-position: 4
+position: 8
 image: "/uploads/gallery__collins.jpg"
 link: http://www.wearecollins.com/
 ---
