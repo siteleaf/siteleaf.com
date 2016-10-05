@@ -1,6 +1,6 @@
 ---
 title: Brian Hoff Design
-position: 8
+position: 11
 image: "/uploads/gallery__brianhoffdesign.jpg"
 link: http://brianhoffdesign.com/#/work
 ---

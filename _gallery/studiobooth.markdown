@@ -1,6 +1,6 @@
 ---
 title: StudioBooth
-position: 43
+position: 45
 image: "/uploads/gallery__studiobooth.jpg"
 link: http://thestudiobooth.com/
 ---

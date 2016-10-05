@@ -1,6 +1,6 @@
 ---
 title: Brooklyn Derby
-position: 22
+position: 24
 image: "/uploads/gallery__brooklynderby.jpg"
 link: http://brooklynderby.com/
 ---
