@@ -159,7 +159,7 @@ defaults:
 
 You can include values to be used as fallback, or just define the basic structure here to help editors out. A good trick is to copy and paste the existing metadata structure from the front matter of one of your existing documents.
 
-You can refer to our [documentation](http://localhost:4000/blog/customizing-the-siteleaf-admin/) for more on the syntax, and remember to use smart field names here to customize the UI.
+You can refer to our [documentation](/blog/customizing-the-siteleaf-admin/) for more on the syntax, and remember to use smart field names here to customize the UI.
 
 Now when we create a new post, we should see these default fields and any values we provided. Defaults are also merged into existing posts to provide consistent structure and fallback values. Content editors can fill these fields out, or leave them blank to accept the default values.
 
