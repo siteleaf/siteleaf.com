@@ -3,6 +3,7 @@ title: Jekyll environments
 date: 2016-10-10 11:30:00 -04:00
 tags:
 - jekyll
+- tip
 image: "/uploads/usersnap.png"
 description: When working with Jekyll and Siteleaf, you typically have 3 distinct
   environments to help you code, preview, and publish your site.
