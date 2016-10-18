@@ -1,11 +1,12 @@
 ---
 title: Authors and tags
-date: 2016-10-18
+date: 2016-10-18 00:00:00 -04:00
 tags:
 - tutorial
 - jekyll
 image: 
-description: In this tutorial, we'll show you how to set up your Jekyll blog with authors and tags, as well as how to leverage Siteleaf to maintain your content.
+description: In this tutorial, we'll show you how to set up your Jekyll blog with
+  authors and tags, as well as how to leverage Siteleaf to maintain your content.
 button:
   title: See more tutorials
   url: "/blog/tags/tutorial"
