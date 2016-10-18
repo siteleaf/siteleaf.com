@@ -107,7 +107,7 @@ defaults:
 
 ## Tags
 
-While we can certainly create a collection of `blog_tags` to create tag functionality in the same way we did for `authors` (in fact, the Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach), we can also use third-party (or even custom) plugins now that they're [supported](/blog/plugins-and-themes-are-here/) by Siteleaf.
+While we can certainly create a collection of `blog_tags` to create tag functionality in the same way we did for `authors` (in fact, the Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach), we can also use third-party or custom plugins now that they're [supported](/blog/plugins-and-themes-are-here/) by Siteleaf.
 
 Plugins can automatically generate a page for each unique tag, for example. This lets authors and content managers create new tags on the fly (without having to create a new document for each new tag), while still having autocomplete available in the Siteleaf UI.
 
