@@ -1,6 +1,6 @@
 {% if page.color %}
   {% assign background = page.color %}
-{% elsif include.page == 'blog' %}
+{% elsif page.layout == 'blog' %}
   <!-- blog index, inherit from first tag of first post -->
   {% assign first_post = site.posts | first %}
   {% assign post_tag_downcase = first_post.tags | first | downcase %}
@@ -12,7 +12,7 @@
       {% endif %}
     {% endif %}
   {% endfor %}
-{% elsif include.page == 'permalink' %}
+{% elsif page.collection == 'posts' %}
   <!-- blog permalink, inherit from first tag -->
   {% assign post_tag_downcase = page.tags | first | downcase %}
   {% for site_tag in site.blog_tags %}
