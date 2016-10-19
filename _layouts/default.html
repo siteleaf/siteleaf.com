@@ -22,19 +22,6 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    {% if jekyll.environment == 'staging' %}
-      <script type="text/javascript">
-      (function() {
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = '//api.usersnap.com/load/'+
-              '0a912c42-72e9-4459-8369-41d1b7b0080d.js';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-      })();
-      </script>
-    {% endif %}
     <div class="wrap">
       {% include header.html %}
       {{ content }}
