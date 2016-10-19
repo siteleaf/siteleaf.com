@@ -73,19 +73,30 @@ In your post template, you can display the post's author and link to the author 
 ```
 {% endraw %}
 
-Then in the author page template, you can list the posts by that author as well as show other fields you've defined, such as their bio (`page.content`) and Twitter handle.
+Then in the author page template, you can list the posts by that author as well as show other fields you've defined, such as their bio (`page.content`).
 
 {% raw %}
 ```liquid
-<h1>{{ page.title }}</h1>
-{{ page.content }}
-@<a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a>
+<h1 class="name">{{ page.title }}</h1>
+<div class="bio">{{ page.content }}</div>
 
 {% assign posts = site.posts | where: 'author', page.title %}
 {% for post in posts %}
   {% include post.html %}
 {% endfor %}
 
+```
+{% endraw %}
+
+Finally, you can list all authors for your site in an [index page](http://www.collaborativefund.com/blog/authors/).
+
+{% raw %}
+```liquid
+<ul>
+  {% for author in site.authors %}
+    <li><a href="{{ author.permalink }}">{{ author.title }}</a></li>
+  {% endfor %}
+</ul>
 ```
 {% endraw %}
 
@@ -105,7 +116,7 @@ author: Craig Shapiro
 ---
 ```
 
-Finally, in `_config.yml`, set up `author` as a default field for each post. You can also enter a default author name if you want, for example `author: Collaborative Team`.
+In `_config.yml`, set up `author` as a default field for each post. You can also enter a default author name if you want, for example `author: Collaborative Team`.
 
 ```yml
 defaults:
@@ -170,9 +181,9 @@ In the post template, you can list the post's tags and link to their correspondi
 ```liquid
 <ul>
   {% for tag in page.tags %}
-  <li>
-    <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
-  </li>
+    <li>
+      <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/">{{ tag }}</a>
+    </li>
   {% endfor %}
 </ul>
 ```
@@ -191,3 +202,19 @@ Then in the tag page template, you can list the posts with that tag.
 ```
 {% endraw %}
 
+
+Finally, you can list all tags for your site in an [index page](http://www.collaborativefund.com/blog/tags/).
+
+{% raw %}
+```liquid
+<ul>
+  {% for tag in site.tags %}
+  {% assign t = tag | first %}
+    <li><a href="/{{ site.tag_page_dir }}/{{ t | slugify: 'pretty' }}/">{{ t }}</a></li>
+  {% endfor %}
+</ul>
+```
+{% endraw %}
+
+You can [sort your tags](https://gist.github.com/sskylar/8956549d1ae9dc91c89e74b1c5a0d8c9) by popularity (number of posts), too.
+{: .tip}
