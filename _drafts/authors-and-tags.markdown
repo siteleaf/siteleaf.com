@@ -12,20 +12,18 @@ button:
   url: "/blog/tags/tutorial"
 ---
 
-At Oak, we recently launched a new website for our friends at [Collaborative Fund](http://www.collaborativefund.com/), built on Siteleaf v2. The site features a [blog](http://www.collaborativefund.com/blog/) for their prolific content, including [author](http://www.collaborativefund.com/blog/authors/morgan/) and [tag](http://www.collaborativefund.com/blog/tags/featured/) pages.
+At Oak, we recently launched a new website for our friends at [Collaborative Fund](http://www.collaborativefund.com/), built on Siteleaf. The site features a [blog](http://www.collaborativefund.com/blog/) for their prolific content, including [author](http://www.collaborativefund.com/blog/authors/morgan/) and [tag](http://www.collaborativefund.com/blog/tags/featured/) pages.
 
 In this tutorial, we'll show you how to set up your Jekyll blog with authors and tags, as well as how to leverage Siteleaf to maintain your content.
 
 
 ## Authors
 
-While Jekyll doesn't support authors out-of-the-box, its [collections](https://jekyllrb.com/docs/collections/) are flexible enough to create this functionality for yourself.
+Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and namespace, making them flexible and powerful enough to create rich author pages.
 
 ### Create an author collection
 
-In your site, create a collection called `authors`, with documents representing each blog author. Set the [output](https://jekyllrb.com/docs/collections/#step-3-optionally-render-your-collections-documents-into-independent-files) to `true` in `_config.yml` to generate a page for each author.
-
-Here is what your file structure should look like:
+In your site, create a collection called `authors` and add documents representing each blog author. You can do so in Siteleaf or in code. Here's an example of that file structure:
 
 ```
 _authors/
@@ -34,7 +32,21 @@ _authors/
   pharrell-williams.markdown
 ```
 
-You can set up each author document however you like. In the case of Collaborative Fund, we have the fields `title`, `permalink`, `twitter` handle, and Markdown content representing the bio.
+![](/uploads/author-collection.png)
+
+In `_config.yml`, set the [`output`](https://jekyllrb.com/docs/collections/#step-3-optionally-render-your-collections-documents-into-independent-files) to `true` so that Jekyll will generate a page for each author:
+
+```
+collections:
+  authors:
+    title: Authors
+    output: true
+```
+
+If creating this collection in the Siteleaf UI, `output` is set to `true` by default.
+{: .tip}
+
+Next, we fill out each author document. You can define the fields however you like. In the case of Collaborative Fund, we have `title` (for the author's name), `permalink`, `twitter` handle, and Markdown content representing the bio.
 
 Here is an example, `craig-shapiro.markdown`:
 
@@ -50,28 +62,32 @@ Craig Shapiro is a founder and managing partner of Collaborative Fund.
 
 ### Set up your templates
 
-In your post template, you can include the post's author and link.
+In your post template, you can display the post's author and link to the author page.
 
 {% raw %}
 ```liquid
-{% for site_author in site.authors %}
-  {% if site_author.title == post.author %}
-    <a href="{{ site_author.permalink }}">{{ site_author.title }}</a>
-  {% endif %}
-{% endfor %}
+{% assign author = site.authors | where: 'title', post.author | first %}
+{% if author %}
+  <a href="{{ author.permalink }}">{{ author.title }}</a>
+{% endif %}
 ```
 {% endraw %}
 
-In the author page template, you can list the posts by that author.
+Then in the author page template, you can list the posts by that author as well as show other fields you've defined, such as their bio (`page.content`) and Twitter handle.
 
 {% raw %}
 ```liquid
-<h1>Posts by {{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
+<section>
+  {{ page.content }}
+  @<a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a>
+</section>
 
 {% assign posts = site.posts | where: 'author', page.title %}
 {% for post in posts %}
   {% include post.html %}
 {% endfor %}
+
 ```
 {% endraw %}
 
@@ -91,7 +107,7 @@ author: Craig Shapiro
 ---
 ```
 
-In `_config.yml`, set up `author` as a default field for each post:
+Finally, in `_config.yml`, set up `author` as a default field for each post. You can also enter a default author name if you want, for example `author: Collaborative Team`.
 
 ```yml
 defaults:
@@ -104,23 +120,53 @@ defaults:
     author: 
 ```
 
+This tells Siteleaf to populate each new post with that metadata field automatically. Here's how it looks in Siteleaf:
+
+![](/uploads/author-select.gif)
+
 
 ## Tags
 
-While we can certainly create a collection of `blog_tags` to create tag functionality in the same way we did for `authors` (in fact, the Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach), we can also use third-party or custom plugins now that they're [supported](/blog/plugins-and-themes-are-here/) by Siteleaf.
+To create tag pages, you can create a collection of `blog_tags` in the same way we did for `authors`. The Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach, for example.
 
-Plugins can automatically generate a page for each unique tag, for example. This lets authors and content managers create new tags on the fly (without having to create a new document for each new tag), while still having autocomplete available in the Siteleaf UI.
+However, if you plan to use more than a dozen or so tags, a plugin can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly.
+
+![](/uploads/tags-select.gif)
 
 The rest of this tutorial will show you how to set up tags using the [`jekyll-tagging`](https://github.com/pattex/jekyll-tagging) plugin, used on Collaborative Fund's website.
 
 Third-party and custom plugins are available starting on the Team plan.
 {: .note}
 
+### Install the plugin
+
+In your `Gemfile`, include `'jekyll-tagging'`:
+
+```
+source 'https://rubygems.org'
+gem 'jekyll'
+group :jekyll_plugins do
+  gem 'jekyll-tagging'
+end
+```
+
+In `_config.yml`, include the plugin in the list of gems:
+
+```
+gems:
+- jekyll/tagging
+```
+
+Due to the directory layout for this plugin, we include it as `jekyll/tagging` rather than the standard `jekyll-tagging`.
+{: .note}
+
+For more, check out our docs on using [plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
+
 ### Set up your templates
 
-Since the `jekyll-tagging` plugin automatically generates tag pages with a specified layout in a specified directory, all you need to do is set up your templates to expose these tag pages.
+Since the [`jekyll-tagging`](https://github.com/pattex/jekyll-tagging) plugin automatically generates pages for each unique tag (with a specified layout in a specified directory, `tag_page_dir`), all you need to do is set up your templates to expose these tag pages.
 
-In the post template, list the post's tags and link to their corresponding pages.
+In the post template, you can list the post's tags and link to their corresponding tag pages.
 
 {% raw %}
 ```liquid
@@ -134,7 +180,7 @@ In the post template, list the post's tags and link to their corresponding pages
 ```
 {% endraw %}
 
-Then in the author page template, you can list the posts with that tag.
+Then in the tag page template (`tag_page_layout`), you can list the posts with that tag.
 
 {% raw %}
 ```liquid
@@ -147,16 +193,3 @@ Then in the author page template, you can list the posts with that tag.
 ```
 {% endraw %}
 
-### Install the plugin
-
-In `_config.yml`, simply include the plugin in the list of gems:
-
-```
-gems:
-- jekyll/tagging
-```
-
-Due to the directory layout for this plugin, we include it as `jekyll/tagging` rather than the standard `jekyll-tagging`.
-{: .note}
-
-For more, check out our docs on using [plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
