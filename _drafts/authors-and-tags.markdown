@@ -6,6 +6,7 @@ tags:
 - jekyll
 description: In this tutorial, we'll show you how to set up your Jekyll blog with
   authors and tags, as well as how to leverage Siteleaf to maintain your content.
+image: "/uploads/author-select.png"
 button:
   title: See more tutorials
   url: "/blog/tags/tutorial"
