@@ -21,11 +21,8 @@ button:
 Watch <a href="https://vimeo.com/170526921">Jekyll from Scratch</a> on Vimeo
 {: .caption}
 
-----
-
-**Update (2016-08-31)**: This tutorial was created using Jekyll version 3.1.6. Newer versions (3.2+) will give you a theme by default instead of `_layouts` and `_includes`. See the [getting started](#getting-started) section below to learn how to use the same Jekyll version as this tutorial.
-
-----
+This tutorial was created using Jekyll version 3.1.6. Newer versions (3.2+) will give you a theme by default instead of `_layouts` and `_includes`. For the purpose of this tutorial you may want to downgrade to Jekyll 3.1.6 (to remove other versions, run `gem uninstall jekyll`). Stay tuned for a future tutorial on themes!
+{: .warning}
 
 In this tutorial, we’ll show you how to get set up and develop websites locally using [Jekyll](http://jekyllrb.com). We'll cover installation, creating a new site, file structure, and finally we'll commit the new site to GitHub.
 
@@ -38,9 +35,6 @@ Jekyll is a static website generator built on Ruby. It takes [Markdown text](htt
 It's also what powers [GitHub Pages](https://pages.github.com), which serves more than [half a million websites](https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months).
 
 ## Getting started
-
-This tutorial was created using Jekyll version 3.1.6. Newer versions (3.2+) will give you a theme by default instead of `_layouts` and `_includes`. For the purpose of this tutorial you may want to downgrade to Jekyll 3.1.6 (to remove other versions, run `gem uninstall jekyll`). Stay tuned for a future tutorial on themes!
-{: .warning}
 
 To get started, we are going to install Jekyll, which is available to download as a Ruby gem. We’ll be following the quick-start instructions on [Jekyll’s website](http://jekyllrb.com). 
 

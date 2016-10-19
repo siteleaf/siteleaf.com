@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% seo title=false %}
+    {% unless page.image %}<meta name="twitter:image" content="{{ site.url }}/assets/images/avatar.png"/>{% endunless %}
     <title>{{ page.title }}{% if page.url != '/' %} - Siteleaf{% endif %}</title>
     {% if page.url == '/plans/' %}<link rel="stylesheet" href="/styles/plan-summary-cards.css" />{% endif %}
     <link rel="stylesheet" href="/styles/all.css" />
@@ -20,19 +21,6 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
-      </script>
-    {% endif %}
-    {% if jekyll.environment == 'staging' %}
-      <script type="text/javascript">
-      (function() {
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = '//api.usersnap.com/load/'+
-              '0a912c42-72e9-4459-8369-41d1b7b0080d.js';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-      })();
       </script>
     {% endif %}
     <div class="wrap">
