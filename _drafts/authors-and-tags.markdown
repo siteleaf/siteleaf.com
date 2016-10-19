@@ -177,7 +177,7 @@ In the post template, you can list the post's tags and link to their correspondi
 ```
 {% endraw %}
 
-Then in the tag page template (`tag_page_layout`), you can list the posts with that tag.
+Then in the tag page template, you can list the posts with that tag.
 
 {% raw %}
 ```liquid
