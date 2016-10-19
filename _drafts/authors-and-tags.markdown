@@ -4,7 +4,6 @@ date: 2016-10-18 00:00:00 -04:00
 tags:
 - tutorial
 - jekyll
-image: 
 description: In this tutorial, we'll show you how to set up your Jekyll blog with
   authors and tags, as well as how to leverage Siteleaf to maintain your content.
 button:
@@ -19,7 +18,7 @@ In this tutorial, we'll show you how to set up your Jekyll blog with authors and
 
 ## Authors
 
-Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and namespace, making them flexible and powerful enough to create rich author pages.
+Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and namespace, making them flexible enough to create rich author pages.
 
 ### Create an author collection
 
