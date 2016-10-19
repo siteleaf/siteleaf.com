@@ -11,34 +11,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="alternate" type="application/rss+xml" title="Siteleaf: Blog (RSS)" href="{{ site.url }}/feed.xml" />
   </head>
-
-  {% if page.url == '/' %}
-    {% assign page_handle = 'home' %}
-  {% elsif page.url == '/plans/' %}
-    {% assign page_handle = 'plans' %}
-  {% elsif page.url == '/gallery/' %}
-    {% assign page_handle = 'gallery' %}
-  {% elsif page.url == '/purpose/' %}
-    {% assign page_handle = 'purpose' %}
-  {% elsif page.url == '/blog/' %}
-    <!-- blog index -->
-    {% assign page_handle = 'blog' %}
-  {% elsif page.url contains '/blog/tags/' %}
-    <!-- blog tag -->
-    {% assign page_handle = 'tag' %}
-  {% elsif page.url contains '/blog/archive/' %}
-    <!-- blog archive -->
-    {% assign page_handle = 'archive' %}
-  {% elsif page.url contains '/blog/' %}
-    <!-- blog permalink -->
-    {% assign page_handle = 'permalink' %}
-  {% elsif page.is_404 %}
-    {% assign page_handle = 'fourOhFour' %}
-  {% else %}
-    {% assign page_handle = 'page' %}
-  {% endif %}
-
-  <body class="{{ page_handle }}">
+  <body class="{{ page.layout }}">
     {% if site.google_analytics %}
       <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -63,7 +36,7 @@
       </script>
     {% endif %}
     <div class="wrap">
-      {% include header.html page=page_handle %}
+      {% include header.html %}
       {{ content }}
     </div>
     {% include footer.html %}

@@ -54,6 +54,7 @@ exclude:
 - ".gitignore"
 gems:
 - jekyll-seo-tag
+- jekyll-sitemap
 markdown: kramdown
 kramdown:
   input: GFM

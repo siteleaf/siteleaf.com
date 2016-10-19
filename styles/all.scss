@@ -899,6 +899,19 @@ h6 {
     }
   }
 }
+.footnotes {
+  color: $color--dark-gray;
+  font-size: $font-size--small;
+  margin-top: $v*2;
+  &:before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 5em;
+    background: $color--light-gray;
+    margin-bottom: $v*0.5;
+  }
+}
 .article__content__more {
   color: $color--dark-gray;
   font-weight: $font-weight--bold;
