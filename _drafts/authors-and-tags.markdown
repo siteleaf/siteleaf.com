@@ -77,10 +77,8 @@ Then in the author page template, you can list the posts by that author as well 
 {% raw %}
 ```liquid
 <h1>{{ page.title }}</h1>
-<section>
-  {{ page.content }}
-  @<a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a>
-</section>
+{{ page.content }}
+@<a href="https://twitter.com/{{ page.twitter }}">{{ page.twitter }}</a>
 
 {% assign posts = site.posts | where: 'author', page.title %}
 {% for post in posts %}
