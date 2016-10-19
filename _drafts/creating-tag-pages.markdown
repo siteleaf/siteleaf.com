@@ -15,9 +15,9 @@ At Oak, we recently launched a new website for our friends at [Collaborative Fun
 
 In this tutorial, we'll show you how to set up your Jekyll blog with tag pages and leverage Siteleaf to maintain your content.
 
+
 This is the second part a tutorial series. Check out the first part on [author pages](/blog/creating-author-pages/).
 {: .note}
-
 
 ## Introduction
 

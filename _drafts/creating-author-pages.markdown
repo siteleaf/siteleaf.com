@@ -15,6 +15,7 @@ At Oak, we recently launched a new website for our friends at [Collaborative Fun
 
 In this tutorial, we'll show you how to set up your Jekyll blog with author pages and leverage Siteleaf to maintain your content.
 
+
 ## Create an author collection
 
 Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and namespace, making them flexible enough to create rich author pages.
