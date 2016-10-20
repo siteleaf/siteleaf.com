@@ -35,12 +35,10 @@ If you plan to use more than a dozen or so tags, a plugin can save you from havi
 
 ![](/uploads/tags-select.gif)
 
+For this tutorial, we demonstrate how to set up tag pages on your Jekyll blog using the [jekyll-tagging](https://github.com/pattex/jekyll-tagging) plugin, which we at Oak used when building the [Collaborative Fund blog](http://www.collaborativefund.com/blog/).
+
 Third-party and custom plugins are available starting on the Team plan.
 {: .note}
-
-There are a number of plugins available for tags. TO DO: list them.
-
-In this tutorial, we'll demonstrate how to set up tag pages on your Jekyll blog using the [jekyll-tagging](https://github.com/pattex/jekyll-tagging) plugin, which we at Oak used when building the [Collaborative Fund blog](http://www.collaborativefund.com/blog/).
 
 ### Install the plugin
 
@@ -64,7 +62,7 @@ gems:
 Due to the directory layout for this plugin, we include it as `jekyll/tagging` rather than the standard `jekyll-tagging`.
 {: .note}
 
-For more, read the full documentation on using [plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
+For more, read our full documentation on using [plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
 
 ### Set up your templates
 
@@ -123,4 +121,10 @@ You can even [sort your tags](https://gist.github.com/sskylar/8956549d1ae9dc91c8
 
 ## Recap
 
-Hooray! You now know two ways to create tag pages. One approach uses collections, while the other utilizes a plugin to generate tag pages for each of the tags in your blog.
+Hooray! You now know two ways to add tag pages to your Jekyll blog. One approach uses collections, while the other utilizes a plugin to automatically generate pages for each of your tags.
+
+## Further reading
+
+- [Jekyll: Collections](https://jekyllrb.com/docs/collections/)
+- [Jekyll: Plugins](https://jekyllrb.com/docs/plugins/)
+- [Siteleaf: Plugins](https://learn.siteleaf.com/themes/jekyll-plugins/)
