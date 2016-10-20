@@ -53,11 +53,23 @@ Here's an example, `craig-shapiro.markdown`:
 ```markdown
 ---
 title: Craig Shapiro
-permalink: "/blog/authors/craig/"
 twitter: cshapiro
 ---
 
 Craig Shapiro is a founder and managing partner of Collaborative Fund.
+```
+
+Update the author defaults in `_config.yml` to match the fields you've chosen:
+
+```
+defaults:
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/blog/authors/:title/"
+    layout: author
+    twitter: 
 ```
 
 ## Set up your templates
@@ -133,7 +145,16 @@ This tells Siteleaf to populate each new post with that metadata field automatic
 
 ![](/uploads/author-select.gif)
 
-That's it! You now know how to create a collection of authors, set up your templates to display authors and link to their pages, and configure Siteleaf to easily add an author to a post.
+## Recap
+
+You did it! You should now know how to:
+
+- Create a collection of authors
+- Define metadata fields for each author
+- Set up your post template to display the post's author and link to their page
+- Set up your author page template with relevant author information
+- Set up an author index template to list all authors
+- Configure Siteleaf with an autocomplete author field for each post
 
 ## Next steps
 
