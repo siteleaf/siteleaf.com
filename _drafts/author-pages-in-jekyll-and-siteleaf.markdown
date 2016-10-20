@@ -24,11 +24,11 @@ The approach we use in this tutorial can be easily adapted to other sets of cont
 
 Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and output a page for each, making them flexible enough to create rich author pages.
 
-To get started, create a collection called `authors` and add documents representing each blog author. You can do this manually in your source files or in Siteleaf.
+You can create collections in Siteleaf or manually in your source files.
 
 ### Creating in Siteleaf
 
-To create your collection in Siteleaf, click **New collection** in the sidebar of the Siteleaf UI and name it "Authors".
+To create your collection in Siteleaf, click **New collection** in the sidebar of the Siteleaf UI and give it the title "Authors".
 
 Define the default metadata fields for each document under **Collection settings** (for example, you can add a field `twitter` for their Twitter handle). Then click **New author** to add a document for each author, with `Title` representing the name of the author.
 
