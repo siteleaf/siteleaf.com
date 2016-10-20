@@ -5,7 +5,7 @@ tags:
 - tutorial
 - jekyll
 description: In this tutorial, we show you how to set up your Jekyll blog with author
-  pages and then leverage Siteleaf to maintain your content.
+  pages and leverage Siteleaf to maintain your content.
 image: 
 button:
   title: See more tutorials
@@ -14,7 +14,7 @@ button:
 
 At Oak, we recently launched a new website for our friends at [Collaborative Fund](http://www.collaborativefund.com/), built on Siteleaf. The site features a [blog](http://www.collaborativefund.com/blog/) for their prolific content, including [author](http://www.collaborativefund.com/blog/authors/morgan/) and [tag](http://www.collaborativefund.com/blog/tags/featured/) pages.
 
-In this tutorial, we show you how to create author pages on your Jekyll blog using collections and how to leverage Siteleaf to maintain your content.
+In this tutorial, we show you how to set up your Jekyll blog with author pages and leverage Siteleaf to maintain your content.
 
 
 The approach we use in this tutorial can be easily adapted to other sets of content as well, not just authors. It also is plugin-less, which means it can be readily published to GitHub Pages on the Siteleaf's free Developer plan.
