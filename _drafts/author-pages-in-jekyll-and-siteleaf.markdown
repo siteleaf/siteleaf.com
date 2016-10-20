@@ -160,12 +160,12 @@ This tells Siteleaf to populate each new post with that metadata field automatic
 
 You did it! You now know how to:
 
-- create a collection of authors,
-- define metadata fields for each author,
-- set up your post template to display the post's author and link to their page,
-- set up your author page template with relevant author information,
-- set up an author index template to list all authors, and
-- configure Siteleaf with an autocomplete author field for each post.
+- create a collection of authors
+- define metadata fields for each author
+- set up your post template to display the post's author and link to their page
+- set up your author page template with relevant author information
+- set up an author index template to list all authors
+- configure Siteleaf with an autocomplete author field for each post
 
 ## Next steps
 
