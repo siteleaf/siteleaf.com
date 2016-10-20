@@ -1,75 +1,40 @@
 ---
 title: Tag pages in Jekyll and Siteleaf
-date: 2016-10-18 00:00:00 -04:00
+date: 2016-10-20 14:22:00 -04:00
 tags:
 - tutorial
 - jekyll
-description: In this tutorial, we show you a couple approaches for how to set up your
-  Jekyll blog with tag pages.
+description: In this tutorial, we show you some approaches for working with tags in Jekyll and Siteleaf.
 image: 
 button:
   title: See more tutorials
   url: "/blog/tags/tutorial"
 ---
 
-In this tutorial, we show you a couple approaches for how to set up your Jekyll blog with tag pages.
+In this tutorial, we show you some approaches for working with tags in Jekyll and Siteleaf.
 
 
-This is the second part a tutorial series. Check out the first part on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
-{: .tip}
-
-## Approach 1: Collections
-
-To create tag pages, you could create a [collection](https://jekyllrb.com/docs/collections/) of tags, in the same way we did for authors in the [first part of this tutorial series](/blog/author-pages-in-jekyll-and-siteleaf/). The Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach, for example. Each document within the collection represents a different tag.
-
-You can create your collection in Siteleaf or manually in your source files.
-
-### Creating in Siteleaf
-
-To create your collection in Siteleaf, simply click **New collection** in the sidebar of the Siteleaf UI. Name your collection "Tags".
-
-Under your collection settings, 
-![](/uploads/tag-collection.png)
-
-Using the name `blog_tags` lets us reference our collection as `site.blog_tags`. This avoids confusion with the built-in Jekyll site variable `site.tags`.
+This is part two of a tutorial series on Jekyll and Siteleaf. Be sure to check out part one on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
 {: .note}
 
-### Creating manually
+## Collection approach
 
-```
-collections:
-  gallery:
-    title: Gallery
-    output: false
-  posts:
-    title: Posts
-    output: true
-  blog_tags:
-    title: Tags
-    output: true
-```
+One way to add tag pages to your Jekyll blog is to create a [collection](https://jekyllrb.com/docs/collections/) of tags, in the same way we did for authors in the [author page](/blog/author-pages-in-jekyll-and-siteleaf/) tutorial. Each document in the collection would represent a different tag.
 
-If creating in Siteleaf, 
+The Siteleaf blog uses this approach, for example. This lets us [give](/blog/tags/tutorial/) [fun](/blog/tags/jekyll/) [colors](/blog/tags/announcement/) to each tag page by setting up a `color` field for each tag document.
 
-The file structure of your source files looks like this:
+Explore the Siteleaf blog [source code](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) or read more about this approach in the [author page](/blog/author-pages-in-jekyll-and-siteleaf/) tutorial.
 
-```
-_blog_tags/
-  my-tag-1.markdown
-  announcement.markdown
-  third-tag.markdown
-```
+## Plugin approach
 
-## Approach 2: Plugins
-
-However, if you plan to use more than a dozen or so tags, a plugin can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly.
+If you plan to use more than a dozen or so tags, a plugin can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly and have autocomplete available in the Siteleaf UI.
 
 ![](/uploads/tags-select.gif)
 
-The rest of this tutorial will show you how to set up tags using the [`jekyll-tagging`](https://github.com/pattex/jekyll-tagging) plugin, used on Collaborative Fund's website.
-
 Third-party and custom plugins are available starting on the Team plan.
 {: .note}
+
+There are a number of plugins available for tags. TO DO: list them. Here, we show you how to set up tag pages on your Jekyll blog using the [`jekyll-tagging`](https://github.com/pattex/jekyll-tagging) plugin, which we use on the Collaborative Fund website.
 
 ### Install the plugin
 
@@ -83,7 +48,7 @@ group :jekyll_plugins do
 end
 ```
 
-In `_config.yml`, include the plugin in the list of gems:
+Then in `_config.yml`, include the plugin in the list of gems:
 
 ```
 gems:
@@ -97,9 +62,16 @@ For more, check out our docs on using [plugins](https://learn.siteleaf.com/theme
 
 ### Set up your templates
 
-Since the [`jekyll-tagging`](https://github.com/pattex/jekyll-tagging) plugin automatically generates pages for each unique tag (with a specified layout in a specified directory, `tag_page_dir`), all you need to do is set up your templates to expose these tag pages.
+The [`jekyll-tagging`](https://github.com/pattex/jekyll-tagging) plugin automatically generates pages for each unique tag across all your posts. You can specify the layout template these tag pages use and the directory into which these pages are generated in your `_config.yml`.
 
-In the post template, you can list the post's tags and link to their corresponding tag pages.
+```
+tag_page_layout: tag
+tag_page_dir: blog/tags
+```
+
+All you need to do, then, is set up your templates to expose these tag pages.
+
+In the [post](http://www.collaborativefund.com/blog/the-villain-test/) template, you can list the post's tags and link to their corresponding tag pages.
 
 {% raw %}
 ```liquid
@@ -113,7 +85,7 @@ In the post template, you can list the post's tags and link to their correspondi
 ```
 {% endraw %}
 
-Then in the tag page template, you can list the posts with that tag.
+Then in the [tag page](http://www.collaborativefund.com/blog/tags/investment-thesis/) template, you can list the posts with that tag.
 
 {% raw %}
 ```liquid
@@ -142,3 +114,12 @@ Finally, you can list all tags for your site in an [index page](http://www.colla
 
 You can [sort your tags](https://gist.github.com/sskylar/8956549d1ae9dc91c89e74b1c5a0d8c9) by popularity (number of posts), too.
 {: .tip}
+
+## Recap
+
+You now know how to:
+
+- do this
+- do that
+- TO DO
+
