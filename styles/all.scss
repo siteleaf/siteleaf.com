@@ -57,7 +57,7 @@ h6 {
 }
 h1 {
   font-size: 3.333333em;
-  line-height: $line-height--tight;
+  line-height: $line-height--tighter;
   letter-spacing: $letter-spacing--tighter;
   @include max-width($max-width--md) {
     font-size: 2.75em;
