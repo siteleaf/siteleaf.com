@@ -24,11 +24,19 @@ The approach we use in this tutorial can be easily adapted to other sets of cont
 
 Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and output a page for each, making them flexible enough to create rich author pages.
 
-To get started, create a collection called `authors` and add documents representing each blog author. You can do this in Siteleaf or manually in your source files.
+To get started, create a collection called `authors` and add documents representing each blog author. You can do this manually in your source files or in Siteleaf.
+
+### Creating in Siteleaf
+
+To create your collection in Siteleaf, click **New collection** in the sidebar of the Siteleaf UI and name it "Authors".
+
+Define the default metadata fields for each document under **Collection settings** (for example, you can add a field `twitter` for their Twitter handle). Then click **New author** to add a document for each author, with `Title` representing the name of the author.
 
 ![](/uploads/author-collection.png)
 
-Here's an example of the file structure:
+### Creating manually
+
+To create your collection manually, create a Markdown file for each author in a directory `_authors`:
 
 ```
 _authors/
@@ -46,10 +54,10 @@ collections:
     output: true
 ```
 
-If creating this collection in the Siteleaf UI, `output` is set to `true` by default.
+When creating your collection in Siteleaf, the `output` setting is set to `true` by default.
 {: .tip}
 
-Next, we fill out each author document. You can define the fields however you like. In the case of Collaborative Fund, we have `title` (for the author's name), `permalink`, `twitter` handle, and Markdown content representing the bio.
+Next, fill out each author document. You can define the metadata fields however you like. In the case of Collaborative Fund, we have `title` (for the author's name), `permalink`, `twitter` handle, and Markdown content representing the bio.
 
 Here's an example, `craig-shapiro.markdown`:
 
@@ -76,6 +84,8 @@ defaults:
 ```
 
 ## Set up your templates
+
+Now that your authors collection is all set up, you can write them into your templates however you want.
 
 In your [post](http://www.collaborativefund.com/blog/the-villain-test/) template, you can display the post's author and link to the author page.
 
@@ -125,8 +135,6 @@ Just name your field the singular `author` to your plural collection `authors`. 
 ---
 title: My Blog Post
 date: 2010-01-19 13:24:00
-tags:
-- Announcements
 author: Craig Shapiro
 ---
 ```
@@ -150,7 +158,7 @@ This tells Siteleaf to populate each new post with that metadata field automatic
 
 ## Recap
 
-You did it! You should now know how to:
+You did it! You now know how to:
 
 - create a collection of authors,
 - define metadata fields for each author,
