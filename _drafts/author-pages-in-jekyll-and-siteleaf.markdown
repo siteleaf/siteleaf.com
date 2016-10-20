@@ -14,12 +14,15 @@ button:
 
 At Oak, we recently launched a new website for our friends at [Collaborative Fund](http://www.collaborativefund.com/), built on Siteleaf. The site features a [blog](http://www.collaborativefund.com/blog/) for their prolific content, including [author](http://www.collaborativefund.com/blog/authors/morgan/) and [tag](http://www.collaborativefund.com/blog/tags/featured/) pages.
 
-In this tutorial, we show you how to set up your Jekyll blog with author pages and then leverage Siteleaf to maintain your content.
+In this tutorial, we show you how to create author pages on your Jekyll blog using collections and how to leverage Siteleaf to maintain your content.
 
 
-## Create an author collection
+The approach we use in this tutorial can be easily adapted to other sets of content as well, not just authors. It also is plugin-less, which means it can be readily published to GitHub Pages on the Siteleaf's free Developer plan.
+{: .tip}
 
-Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and namespace, making them flexible enough to create rich author pages.
+## Create a collection
+
+Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and output a page for each, making them flexible enough to create rich author pages.
 
 To get started, create a collection called `authors` and add documents representing each blog author. You can do this in Siteleaf or manually in your source files.
 
@@ -74,7 +77,7 @@ defaults:
 
 ## Set up your templates
 
-In your post template, you can display the post's author and link to the author page.
+In your [post](http://www.collaborativefund.com/blog/the-villain-test/) template, you can display the post's author and link to the author page.
 
 {% raw %}
 ```liquid
@@ -85,7 +88,7 @@ In your post template, you can display the post's author and link to the author 
 ```
 {% endraw %}
 
-Then in the author page template, you can list the posts by that author as well as show other fields you've defined, such as their bio (`page.content`).
+Then in the [author page](http://www.collaborativefund.com/blog/authors/craig/) template, you can list the posts by that author as well as show other fields you've defined, such as their bio (`page.content`).
 
 {% raw %}
 ```liquid
