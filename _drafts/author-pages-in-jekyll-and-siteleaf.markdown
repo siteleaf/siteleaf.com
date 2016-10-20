@@ -26,15 +26,26 @@ Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way 
 
 You can create collections in Siteleaf or manually in your source files.
 
-### Creating in Siteleaf
+### In Siteleaf
 
-To create your collection in Siteleaf, click **New collection** in the sidebar of the Siteleaf UI and give it the title "Authors".
-
-Define the default metadata fields for each document under **Collection settings** (for example, you can add a field `twitter` for their Twitter handle). Then click **New author** to add a document for each author, with `Title` representing the name of the author.
+To create your collection in Siteleaf, click **New collection** in the sidebar of the Siteleaf UI and give it the title "Authors". Then click **New author** to add a document for each author, with `Title` representing the name of the author.
 
 ![](/uploads/author-collection.png)
 
-### Creating manually
+Finally, define the default metadata fields for each author document in `_config.yml` (for example, you can add a default `twitter` field for their Twitter handle).
+
+```
+defaults:
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/blog/authors/:title/"
+    layout: author
+    twitter: 
+```
+
+### Manually
 
 To create your collection manually, create a Markdown file for each author in a directory `_authors`:
 
@@ -70,7 +81,7 @@ twitter: cshapiro
 Craig Shapiro is a founder and managing partner of Collaborative Fund.
 ```
 
-Update the author defaults in `_config.yml` to match the fields you've chosen:
+Finally, update the author defaults in `_config.yml` to match the fields you've chosen:
 
 ```
 defaults:
