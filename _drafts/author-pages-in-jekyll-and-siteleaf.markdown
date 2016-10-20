@@ -20,7 +20,7 @@ In this tutorial, we show you how to set up your Jekyll blog with author pages a
 The approach we use in this tutorial can be easily adapted to other sets of content as well, not just authors. It also is plugin-less, which means it can be readily published to GitHub Pages on the Siteleaf's free Developer plan.
 {: .tip}
 
-## Create a collection
+## Create your collection
 
 Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and output a page for each, making them flexible enough to create rich author pages.
 
@@ -31,19 +31,6 @@ You can create collections in Siteleaf or manually in your source files.
 To create your collection in Siteleaf, click **New collection** in the sidebar of the Siteleaf UI and give it the title "Authors". Then click **New author** to add a document for each author, with `Title` representing the name of the author.
 
 ![](/uploads/author-collection.png)
-
-Finally, define the default metadata fields for each author document in `_config.yml` (for example, you can add a default `twitter` field for their Twitter handle).
-
-```
-defaults:
-- scope:
-    path: ''
-    type: authors
-  values:
-    permalink: "/blog/authors/:title/"
-    layout: author
-    twitter: 
-```
 
 ### Manually
 
@@ -68,9 +55,7 @@ collections:
 When creating your collection in Siteleaf, the `output` setting is set to `true` by default.
 {: .tip}
 
-Next, fill out each author document. You can define the metadata fields however you like. In the case of Collaborative Fund, we have `title` (for the author's name), `twitter` handle, and Markdown content representing the bio.
-
-Here's an example, `craig-shapiro.markdown`:
+Next, fill out each author document. Here, we have `title` (for the author's name), `twitter`, and Markdown content representing the bio. This is `craig-shapiro.markdown`:
 
 ```markdown
 ---
@@ -81,7 +66,9 @@ twitter: cshapiro
 Craig Shapiro is a founder and managing partner of Collaborative Fund.
 ```
 
-Finally, update the author defaults in `_config.yml` to match the fields you've chosen:
+## Define defaults
+
+Set the default metadata fields for each author document in `_config.yml`. You can define them however you like (for example, you could add a `profile_image` field). In this case, we've added a `twitter` field for their Twitter handle.
 
 ```
 defaults:
@@ -94,9 +81,43 @@ defaults:
     twitter: 
 ```
 
+If you created your authors collection in Siteleaf, you could define the defaults for each author prior to adding new authors. This way, the metadata fields appear automatically in the UI for each new author.
+{: .tip}
+
+## Configure with Siteleaf
+
+We can make it easy for content managers to specify the author for new posts in the Siteleaf UI with an autocomplete dropdown. To do so, we take advantage of [associated](https://learn.siteleaf.com/content/metadata/#collection-fields) metadata fields in Siteleaf.
+
+Just name your field the singular `author` to your plural collection `authors`. So, a post's metadata will look something like:
+
+```yml
+---
+title: My Blog Post
+date: 2010-01-19 13:24:00
+author: Craig Shapiro
+---
+```
+
+In `_config.yml`, set up `author` as a default field for each post. You can also enter a default author name if you want, for example `author: Collaborative Team`.
+
+```yml
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author: 
+```
+
+This tells Siteleaf to populate each new post with that metadata field automatically. Here's how it looks in Siteleaf:
+
+![](/uploads/author-select.gif)
+
 ## Set up your templates
 
-Now that your authors collection is all set up, you can write them into your templates however you want.
+Now that your authors collection is set up and configured with Siteleaf, all you need to do is write them into your templates.
 
 In your [post](http://www.collaborativefund.com/blog/the-villain-test/) template, you can display the post's author and link to the author page.
 
@@ -136,47 +157,16 @@ Finally, you can list all authors for your site in an [index page](http://www.co
 ```
 {% endraw %}
 
-## Configure with Siteleaf
-
-We can make it easy for content managers to specify the author for new posts in the Siteleaf UI with an autocomplete dropdown. To do so, we take advantage of [associated](https://learn.siteleaf.com/content/metadata/#collection-fields) metadata fields in Siteleaf.
-
-Just name your field the singular `author` to your plural collection `authors`. So, a post's metadata will look something like:
-
-```yml
----
-title: My Blog Post
-date: 2010-01-19 13:24:00
-author: Craig Shapiro
----
-```
-
-In `_config.yml`, set up `author` as a default field for each post. You can also enter a default author name if you want, for example `author: Collaborative Team`.
-
-```yml
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author: 
-```
-
-This tells Siteleaf to populate each new post with that metadata field automatically. Here's how it looks in Siteleaf:
-
-![](/uploads/author-select.gif)
-
 ## Recap
 
 You did it! You now know how to:
 
-- create a collection of authors
+- create an authors collection
 - define metadata fields for each author
+- configure Siteleaf with an autocomplete author field for new posts
 - set up your post template to display the post's author and link to their page
 - set up your author page template with relevant author information
 - set up an author index template to list all authors
-- configure Siteleaf with an autocomplete author field for each post
 
 ## Next steps
 
