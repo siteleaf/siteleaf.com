@@ -4,7 +4,8 @@ date: 2016-10-20 14:22:00 -04:00
 tags:
 - tutorial
 - jekyll
-description: In this tutorial, we show you some approaches for working with tags in Jekyll and Siteleaf.
+description: In this tutorial, we show you some approaches for working with tags in
+  Jekyll and Siteleaf.
 image: 
 button:
   title: See more tutorials
