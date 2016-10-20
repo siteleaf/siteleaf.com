@@ -4,7 +4,8 @@ date: 2016-10-18 00:00:00 -04:00
 tags:
 - tutorial
 - jekyll
-description: In this tutorial, we'll show you a couple approaches for how to set up your Jekyll blog with tag pages.
+description: In this tutorial, we'll show you a couple approaches for how to set up
+  your Jekyll blog with tag pages.
 image: 
 button:
   title: See more tutorials

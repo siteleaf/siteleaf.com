@@ -4,7 +4,8 @@ date: 2016-10-18 00:00:00 -04:00
 tags:
 - tutorial
 - jekyll
-description: In this tutorial, we'll show you how to set up your Jekyll blog with author pages and then leverage Siteleaf to maintain your content.
+description: In this tutorial, we'll show you how to set up your Jekyll blog with
+  author pages and then leverage Siteleaf to maintain your content.
 image: 
 button:
   title: See more tutorials
