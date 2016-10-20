@@ -4,7 +4,7 @@ date: 2016-10-18 00:00:00 -04:00
 tags:
 - tutorial
 - jekyll
-description: In this tutorial, we'll show you a couple approaches for how to set up
+description: In this tutorial, we show you a couple approaches for how to set up
   your Jekyll blog with tag pages.
 image: 
 button:
@@ -12,7 +12,7 @@ button:
   url: "/blog/tags/tutorial"
 ---
 
-In this tutorial, we'll show you a couple approaches for how to set up your Jekyll blog with tag pages.
+In this tutorial, we show you a couple approaches for how to set up your Jekyll blog with tag pages.
 
 
 This is the second part a tutorial series. Check out the first part on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
