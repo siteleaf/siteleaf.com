@@ -68,7 +68,7 @@ collections:
 When creating your collection in Siteleaf, the `output` setting is set to `true` by default.
 {: .tip}
 
-Next, fill out each author document. You can define the metadata fields however you like. In the case of Collaborative Fund, we have `title` (for the author's name), `permalink`, `twitter` handle, and Markdown content representing the bio.
+Next, fill out each author document. You can define the metadata fields however you like. In the case of Collaborative Fund, we have `title` (for the author's name), `twitter` handle, and Markdown content representing the bio.
 
 Here's an example, `craig-shapiro.markdown`:
 
