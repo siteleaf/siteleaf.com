@@ -1,12 +1,11 @@
 ---
 title: Author pages in Jekyll and Siteleaf
-date: 2016-10-18 00:00:00 -04:00
+date: 2016-10-20 14:13:00 -04:00
 tags:
 - tutorial
 - jekyll
 description: In this tutorial, we show you how to set up your Jekyll blog with author
   pages and leverage Siteleaf to maintain your content.
-image: 
 button:
   title: See more tutorials
   url: "/blog/tags/tutorial"
