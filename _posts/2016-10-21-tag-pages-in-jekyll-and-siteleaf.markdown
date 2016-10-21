@@ -1,5 +1,5 @@
 ---
-title: Tag pages in Jekyll and Siteleaf
+title: Creating tag pages with Jekyll and Siteleaf
 date: 2016-10-21 12:13:00 -04:00
 tags:
 - tutorial
@@ -13,7 +13,6 @@ button:
 
 In this tutorial, we show you approaches for creating tag pages in Jekyll and Siteleaf.
 
-
 This is part two of a tutorial series on Jekyll and Siteleaf. Check out part one on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
 {: .note}
 
@@ -22,6 +21,7 @@ This is part two of a tutorial series on Jekyll and Siteleaf. Check out part one
 If you plan to use more than a dozen or so tags, a [plugin](https://jekyllrb.com/docs/plugins/) can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly while still having autocomplete available in the Siteleaf UI.
 
 ![](/uploads/tags-select.gif)
+
 
 For this tutorial, we demonstrate how to set up tag pages on your Jekyll blog using the [jekyll-tagging](https://github.com/pattex/jekyll-tagging) plugin, which we at Oak used when building the [Collaborative Fund blog](http://www.collaborativefund.com/blog/).
 
