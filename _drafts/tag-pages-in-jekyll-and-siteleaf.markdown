@@ -15,12 +15,12 @@ button:
 In this tutorial, we show you some approaches for working with tags in Jekyll and Siteleaf.
 
 
-This is part two of a tutorial series on Jekyll and Siteleaf. Be sure to check out part one on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
+This is part two of a tutorial series on Jekyll and Siteleaf. Check out part one on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
 {: .note}
 
 ## The collection approach
 
-A simple, plugin-less way to add tag pages to your Jekyll blog is to create a tags [collection](https://jekyllrb.com/docs/collections/), in the same way we did for authors in the [previous tutorial](/blog/author-pages-in-jekyll-and-siteleaf/). Jekyll could then generate a page for each tag document in your collection.
+A simple, plugin-less way to add tag pages to your Jekyll blog is to create a tags [collection](https://jekyllrb.com/docs/collections/), in the same way we did for authors in the [previous tutorial](/blog/author-pages-in-jekyll-and-siteleaf/). Jekyll can then generate a page for each tag document in your collection.
 
 The Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach, for example. This even gives us the flexibility to [add](/blog/tags/tutorial/) [fun](/blog/tags/jekyll/) [colors](/blog/tags/announcement/) to each tag page by setting up a `color` metadata field for each tag document.
 
@@ -121,7 +121,10 @@ You can even [sort your tags](https://gist.github.com/sskylar/8956549d1ae9dc91c8
 
 ## Recap
 
-Hooray! You now know two ways to add tag pages to your Jekyll blog. One approach uses collections, while the other utilizes a plugin to automatically generate pages for each of your tags.
+Way to go! You now know two ways to add tag pages to your Jekyll blog:
+
+- The first approach uses collections to output a page for each tag document.
+- The second approach utilizes a plugin to automatically generate pages for each of your tags.
 
 ## Further reading
 
