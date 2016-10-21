@@ -18,10 +18,10 @@ In this tutorial, we show you how to set up your Jekyll blog with author pages a
 The approach we use in this tutorial can be easily adapted to other sets of content as well, not just authors. It also is plugin-less, which means it can be readily published to GitHub Pages on Siteleaf's free Developer plan.
 {: .tip}
 
+
 ## Create your collection
 
 Jekyll [collections](https://jekyllrb.com/docs/collections/) are a powerful way to organize and manage content on your site. Collections allow you to define documents with their own properties and output a page for each, making them flexible enough to create rich author pages.
-
 
 You can create collections in Siteleaf or manually in your source files.
 
