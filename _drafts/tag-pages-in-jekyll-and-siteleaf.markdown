@@ -18,20 +18,9 @@ In this tutorial, we show you approaches for creating tag pages in Jekyll and Si
 This is part two of a tutorial series on Jekyll and Siteleaf. Check out part one on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
 {: .note}
 
-## The collection approach
-
-A simple, plugin-less way to add tag pages to your Jekyll blog is to create a tags [collection](https://jekyllrb.com/docs/collections/), in the same way we did for authors in the [previous tutorial](/blog/author-pages-in-jekyll-and-siteleaf/). Jekyll can then generate a page for each tag document in your collection.
-
-The Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach, for example. This even gives us the flexibility to [add](/blog/tags/tutorial/) [fun](/blog/tags/jekyll/) [colors](/blog/tags/announcement/) to each tag page by setting up a `color` metadata field for each tag document.
-
-Since this approach doesn't require a plugin, your site can be readily published to GitHub Pages on Siteleaf's free Developer plan.
-{: .tip}
-
-For more on this collection approach, read the tutorial on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/) or explore the Siteleaf blog [source code](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags).
-
 ## The plugin approach
 
-If you plan to use more than a dozen or so tags, a plugin can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly while still having autocomplete available in the Siteleaf UI.
+If you plan to use more than a dozen or so tags, a [plugin](https://jekyllrb.com/docs/plugins/) can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly while still having autocomplete available in the Siteleaf UI.
 
 ![](/uploads/tags-select.gif)
 
@@ -119,15 +108,26 @@ Finally, you can list all the tags for your site in an [index page](http://www.c
 You can even [sort your tags](https://gist.github.com/sskylar/8956549d1ae9dc91c89e74b1c5a0d8c9) by popularity (number of posts).
 {: .tip}
 
+## The collection approach
+
+A simple, plugin-less way to add tag pages to your Jekyll blog is to create a tags [collection](https://jekyllrb.com/docs/collections/), in the same way we did for authors in the [previous tutorial](/blog/author-pages-in-jekyll-and-siteleaf/). Jekyll can then generate a page for each tag document in your collection.
+
+The Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags) this approach, for example. This even gives us the flexibility to [add](/blog/tags/tutorial/) [fun](/blog/tags/jekyll/) [colors](/blog/tags/announcement/) to each tag page by setting up a `color` metadata field for each tag document.
+
+Since this approach doesn't require a plugin, your site can be readily published to GitHub Pages on Siteleaf's free Developer plan.
+{: .tip}
+
+For more on this collection approach, read the tutorial on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/) or explore the Siteleaf blog [source code](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags).
+
 ## Recap
 
 Way to go! You now know two ways to add tag pages to your Jekyll blog:
 
-- The first approach uses collections to output a page for each tag document.
-- The second approach utilizes a plugin to automatically generate pages for each of your tags. Content managers can then easily add new tags or existing tags in the Siteleaf UI.
+- The first approach utilizes a plugin to automatically generate pages for each of your tags. Content managers can then easily add new tags or existing tags in the Siteleaf UI.
+- The second approach uses collections to output a page for each tag document.
 
 ## Further reading
 
-- [Jekyll: Collections](https://jekyllrb.com/docs/collections/)
 - [Jekyll: Plugins](https://jekyllrb.com/docs/plugins/)
 - [Siteleaf: Plugins](https://learn.siteleaf.com/themes/jekyll-plugins/)
+- [Jekyll: Collections](https://jekyllrb.com/docs/collections/)
