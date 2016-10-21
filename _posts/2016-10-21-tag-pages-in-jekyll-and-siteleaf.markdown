@@ -18,7 +18,7 @@ This is part two of a tutorial series on Jekyll and Siteleaf. Check out part one
 
 ## The plugin approach
 
-If you plan to use more than a dozen or so tags, a [plugin](https://jekyllrb.com/docs/plugins/) can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly while still having autocomplete available in the Siteleaf UI.
+If you plan to use more than a dozen or so tags, a [plugin](https://jekyllrb.com/docs/plugins/) can save you from having to create individual documents for each. This approach lets authors and content managers easily create new tags on the fly, while having autocomplete available in the Siteleaf UI.
 
 ![](/uploads/tags-select.gif)
 
