@@ -1,5 +1,5 @@
 ---
-title: Author pages in Jekyll and Siteleaf
+title: Creating author pages with Jekyll and Siteleaf
 date: 2016-10-20 14:13:00 -04:00
 tags:
 - tutorial
@@ -15,9 +15,9 @@ At Oak, we recently launched a new website for our friends at [Collaborative Fun
 
 In this tutorial, we show you how to set up your Jekyll blog with author pages and leverage Siteleaf to maintain your content.
 
-
 The approach we use in this tutorial can be easily adapted to other sets of content as well, not just authors. It also is plugin-less, which means it can be readily published to GitHub Pages on Siteleaf's free Developer plan.
 {: .tip}
+
 
 ## Create your collection
 
