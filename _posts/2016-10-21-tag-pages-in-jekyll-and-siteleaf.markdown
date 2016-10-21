@@ -14,6 +14,7 @@ button:
 In this tutorial, we show you approaches for creating tag pages in Jekyll and Siteleaf.
 
 This is part two of a tutorial series on Jekyll and Siteleaf. Check out part one on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/).
+{: .note}
 
 ## The plugin approach
 
