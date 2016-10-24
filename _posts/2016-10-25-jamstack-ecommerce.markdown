@@ -5,7 +5,8 @@ tags:
 - tutorial
 - jekyll
 - github
-description: How to use the JAMstack (JavaScript, APIs, & Markup) to create a static site with e-commerce, powered by Siteleaf and Snipcart.
+description: How to use the JAMstack (JavaScript, APIs, & Markup) to create a static
+  site with e-commerce, powered by Siteleaf and Snipcart.
 button:
   title: See more tutorials
   url: "/blog/tags/tutorial"
