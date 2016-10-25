@@ -125,7 +125,7 @@ We can then create a new product by clicking on the `+` sign beside Products in 
 
 ## 2. Add a shopping cart platform with Snipcart
 
-Okay, it's time to play with Snipcart a bit! So we now have the mandatory products meta-data. If we check the repo on GitHub, we notice that Siteleaf created a structure similar to the one we made in a [previous post about a Jekyll + Snipcart integration](https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll).
+Okay, it's time to play with Snipcart a bit! So we now have the mandatory products metadata. If we check the repo on GitHub, we notice that Siteleaf created a structure similar to the one we made in a [previous post about a Jekyll + Snipcart integration](https://snipcart.com/blog/static-site-e-commerce-part-2-integrating-snipcart-with-jekyll).
 
 For the next steps, we'll clone the repository of the blog post above and copy the `_includes`, `_layouts`, `_sass_` and `css` folders. Let's also copy the `index.html` file.
 
