@@ -124,7 +124,7 @@ In your [post](http://www.collaborativefund.com/blog/the-villain-test/) template
 ```liquid
 {% assign author = site.authors | where: 'title', post.author | first %}
 {% if author %}
-  <a href="{{ author.permalink }}">{{ author.title }}</a>
+  <a href="{{ author.url }}">{{ author.title }}</a>
 {% endif %}
 ```
 {% endraw %}
@@ -150,7 +150,7 @@ Finally, you can list all authors for your site in an [index page](http://www.co
 ```liquid
 <ul>
   {% for author in site.authors %}
-    <li><a href="{{ author.permalink }}">{{ author.title }}</a></li>
+    <li><a href="{{ author.url }}">{{ author.title }}</a></li>
   {% endfor %}
 </ul>
 ```
