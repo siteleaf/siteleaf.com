@@ -43,6 +43,7 @@ This would render as:
 
 For details see: <https://github.com/benbalter/jekyll-avatar>
 
+
 #### 2. jekyll-relative-links
 
 [Jekyll Relative Links](https://github.com/benbalter/jekyll-relative-links) convert relative markdown links to their rendered equivalents.
