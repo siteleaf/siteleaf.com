@@ -11,7 +11,9 @@ We have updated our default Jekyll version from 3.3.0 to 3.3.1, to match the [re
 
 This update includes a few minor enhancements and bug fixes. For a full list of revisions [check out the release notes](https://jekyllrb.com/docs/history/#v3-3-1).
 
-Also included in this update are two new [whitelisted plugins](https://learn.siteleaf.com/themes/jekyll-plugins/):
+Also included in this update are two new [whitelisted plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
+
+
 
 #### 1. jekyll-avatar
 
@@ -40,6 +42,7 @@ This would render as:
 ```
 
 For details see: <https://github.com/benbalter/jekyll-avatar>
+
 
 #### 2. jekyll-relative-links
 
