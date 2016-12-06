@@ -59,6 +59,8 @@ This plugin converts your link to the rendered permalink version:
 
 For details on this plugin see: <https://github.com/benbalter/jekyll-relative-links>
 
+---
+
 For most sites, no action is required to take advantage of the latest version. If you wish to use a specific version of Jekyll for your site, you can define that in your `Gemfile`.
 
 As a reminder, sites on our Team and higher plans can also use custom (non-whitelisted) gems. See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for all the details.
