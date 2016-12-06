@@ -54,7 +54,7 @@ For example, if you link to a Markdown file called `bar.md`:
 This plugin converts your link to the rendered permalink version:
 
 ```html
-<a href="/bar.html">
+<a href="/bar.html">foo</a>
 ```
 
 For details see: <https://github.com/benbalter/jekyll-relative-links>
