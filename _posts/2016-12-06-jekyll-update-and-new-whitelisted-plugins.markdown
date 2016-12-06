@@ -20,13 +20,17 @@ Also included in this update are two new whitelisted gems:
 Simply add the following, anywhere you'd like a user's avatar to appear:
 
 ```
+{% raw %}
 {% avatar USERNAME %}
+{% endraw %}
 ```
 
 You can also customize the size:
 
 ```
+{% raw %}
 {% avatar siteleaf size=50 %}
+{% endraw %}
 ```
 
 This would render as:
