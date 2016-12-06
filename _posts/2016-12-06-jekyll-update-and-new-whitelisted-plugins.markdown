@@ -13,25 +13,25 @@ This update includes a few minor enhancements and bug fixes. For a full list of 
 
 Also included in this update are two new whitelisted gems:
 
-### 1. `jekyll-avatar`
+#### 1. jekyll-avatar
 
 [Jekyll Avatar](https://github.com/benbalter/jekyll-avatar) makes it easy to add GitHub avatars to your site by specifying a username. Avatars are cached by GitHub, load in parallel, and use retina images when supported.
 
 Simply add the following, anywhere you'd like a user's avatar to appear:
 
-```
 {% raw %}
-{% avatar USERNAME %}
-{% endraw %}
 ```
+{% avatar USERNAME %}
+```
+{% endraw %}
 
 You can also customize the size:
 
-```
 {% raw %}
-{% avatar siteleaf size=50 %}
-{% endraw %}
 ```
+{% avatar siteleaf size=50 %}
+```
+{% endraw %}
 
 This would render as:
 
@@ -41,7 +41,7 @@ This would render as:
 
 For details on this plugin see: <https://github.com/benbalter/jekyll-avatar>
 
-### 2. `jekyll-relative-links`
+#### 2. jekyll-relative-links
 
 [Jekyll Relative Links](https://github.com/benbalter/jekyll-relative-links) convert relative markdown links to their rendered equivalents.
 
