@@ -39,7 +39,7 @@ This would render as:
 <img class="avatar" src="https://avatars3.githubusercontent.com/siteleaf?v=3&amp;s=50" alt="siteleaf" srcset="https://avatars3.githubusercontent.com/siteleaf?v=3&amp;s=50 1x, https://avatars3.githubusercontent.com/siteleaf?v=3&amp;s=100 2x, https://avatars3.githubusercontent.com/siteleaf?v=3&amp;s=150 3x, https://avatars3.githubusercontent.com/siteleaf?v=3&amp;s=200 4x" width="50" height="50" />
 ```
 
-For details on this plugin see: <https://github.com/benbalter/jekyll-avatar>
+For details see: <https://github.com/benbalter/jekyll-avatar>
 
 #### 2. jekyll-relative-links
 
@@ -57,7 +57,7 @@ This plugin converts your link to the rendered permalink version:
 <a href="/bar.html">
 ```
 
-For details on this plugin see: <https://github.com/benbalter/jekyll-relative-links>
+For details see: <https://github.com/benbalter/jekyll-relative-links>
 
 ---
 
