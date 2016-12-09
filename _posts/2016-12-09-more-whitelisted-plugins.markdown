@@ -7,7 +7,7 @@ tags:
 - github
 ---
 
-Hot on the heals of the [Jekyll 3.3.1 update earlier this week](/blog/jekyll-update-and-new-whitelisted-plugins/), GitHub Pages has [whitelisted](https://github.com/blog/2289-publishing-with-github-pages-now-as-easy-as-1-2-3) 4 additional plugins. 
+Hot on the heals of the [Jekyll 3.3.1 update earlier this week](/blog/jekyll-update-and-new-whitelisted-plugins/), GitHub Pages have [whitelisted](https://github.com/blog/2289-publishing-with-github-pages-now-as-easy-as-1-2-3) 4 additional plugins. 
 
 These plugins are specifically geared toward software and open source code projects on GitHub, but may come in handy for any type of website.
 
