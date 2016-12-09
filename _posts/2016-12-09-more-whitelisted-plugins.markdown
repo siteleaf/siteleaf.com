@@ -49,4 +49,4 @@ These plugins are enabled by default when your site is compiled by GitHub, or if
 
 In addition to whitelisted plugins, sites on our Team and higher plans can use third-party plugins. 
 
-See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for a full list of whitelisted plugins, and all the details.
+See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for a full list of whitelisted plugins, and how to use a `Gemfile`.
