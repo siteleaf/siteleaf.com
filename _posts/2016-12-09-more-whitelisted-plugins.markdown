@@ -11,6 +11,8 @@ Hot on the heals of the [Jekyll 3.3.1 update earlier this week](/blog/jekyll-upd
 
 These plugins are specifically geared toward software and open source code projects on GitHub, but may come in handy for any type of website.
 
+
+
 Here they are:
 
 #### 1. jekyll-default-layout
