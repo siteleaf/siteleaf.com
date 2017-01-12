@@ -64,7 +64,7 @@ Here are some tutorials to get set up with HTTPS and Let's Encrypt on a few popu
 - [Let's Encrypt with Media Temple](https://mediatemple.net/community/products/dv/208603976/install-a-let's-encrypt-ssl)
 - [Let's Encrypt with DigitalOcean](https://www.digitalocean.com/community/tags/let-s-encrypt?type=tutorials)
 
-Instructions may vary by host, so check your provider's help docs for instructions on how to install an SSL certificate.
+Instructions may vary by host, so check your provider's help docs for specific details on how to install an SSL certificate.
 
 ---
 
