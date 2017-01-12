@@ -5,13 +5,15 @@ tags:
 - tutorial
 - jekyll
 - github
-image: "/uploads/jamstack-ecommerce-cart.png"
+image: "/uploads/jamstack-ecommerce.png"
 description: How to use the JAMstack (JavaScript, APIs, & Markup) to create a static
   site with e-commerce, powered by Siteleaf and Snipcart.
 button:
   title: See more tutorials
   url: "/blog/tags/tutorial"
 ---
+
+![](/uploads/jamstack-ecommerce.png)
 
 *This is a guest post by Charles Ouellet, co-founder of [Snipcart](https://snipcart.com/).*
 
