@@ -4,7 +4,7 @@ date: 2014-07-08 10:00:00 -04:00
 tags:
 - tip
 - markdown
-hero:
+hero: 
 ---
 
 In addition to the [Markdown basics](http://daringfireball.net/projects/markdown/syntax), Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a <mark>highlight</mark> and also a footnote[^1].

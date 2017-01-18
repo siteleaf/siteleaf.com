@@ -4,7 +4,7 @@ date: 2015-03-25 15:55:00 -04:00
 tags:
 - tutorial
 - aws
-hero:
+hero: 
 ---
 
 After building Siteleaf we took it upon ourselves to each rebuild our site using the service. I had previously used S3 with Jeykll and wanted to continue using it, but getting set up can be a bit of a mystery.
