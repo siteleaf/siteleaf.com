@@ -15,7 +15,7 @@ Today, I ported [another theme](http://martin.siteleaf.net) to [Siteleaf](http:/
 
 If you first take a look at the [diff](https://github.com/destroytoday/martin-for-siteleaf/commit/4d7bb736b682294513db591d9c47bdb34713c507#L9R3) on Github, you'll immediately see how little I needed to change in order to port the theme to Siteleaf. In fact, I only replaced six lines—and I deleted several dozen in the process. I accomplished this by extracting the theme's content to Siteleaf and wiring these spots to page variables and meta fields.
 
-![porting-a-theme-to-siteleaf-sections](/uploads/porting-a-theme-to-siteleaf-sections.png) 
+![porting-a-theme-to-siteleaf-sections](/uploads/porting-a-theme-to-siteleaf-sections.png)
 
 Looking at the previous code, we can separate the entire page into three sections—header, body (represented as a `<section>`), and footer. If we take a closer look at the body, the bulk of it is simple HTML that can easily be rendered from Markdown. Because of this, we can replace the entire block of code inside the `<section>` tag with the liquid tag `{% raw %}{{ body }}{% endraw %}` and move the previous content into a Siteleaf page body, rewritten in Markdown. Siteleaf will render that Markdown to HTML, inject it into our template, and allow us to modify it easily in the CMS, without touching the template code. Previously, the snippet of code to produce a table looked like this:
 
@@ -65,7 +65,7 @@ The end result is the same both ways, but with Siteleaf and Markdown, the conten
 
 The body content is typically the easiest to extract because Siteleaf does most of the work. Let's now take a look at the header, which is comprised of a few external links, the page's title and its tagline.
 
-![porting-a-theme-to-siteleaf-header](/uploads/porting-a-theme-to-siteleaf-header.png) 
+![porting-a-theme-to-siteleaf-header](/uploads/porting-a-theme-to-siteleaf-header.png)
 
 If this theme were meant for multiple pages, the links at the top would appear on every page, so it's safe to consider these global values. As such, we can extract them into site meta fields. Starting with the byline in the top-left, we *could* simply replace it with the full URL to the GitHub profile page, but instead, let's write the template in a way that saves us from repeating the URI with every occurrance. I take this approach because we use several GitHub links on the top bar, including one for the repo and another for a zip of the master branch. Here's a look at the previous code:
 
@@ -88,7 +88,7 @@ The base GitHub URL appears three times (and once without the protocol), the Git
 </div>
 <div class="downloads">
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}">Fork on GitHub</a>
-  &bull; 
+  &bull;
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}/archive/master.zip">Download ZIP</a>
 </div>{% endraw %}
 ```
@@ -99,7 +99,7 @@ With this setup, if we ever decide to change our username or repo name, we only 
 {% raw %}<div class="byline"><a href="https://github.com/{{ site.meta.github_user }}">github.com/{{ site.meta.github_user }}</a></div>
 <div class="downloads">
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}">{{ site.meta.fork_text | fallback: 'Fork on GitHub' }}</a>
-  &bull; 
+  &bull;
   <a href="https://github.com/{{ site.meta.github_user }}/{{ site.meta.github_repo }}/archive/master.zip">{{ site.meta.download_text | fallback: 'Download ZIP' }}</a>
 </div>{% endraw %}
 ```
@@ -126,5 +126,3 @@ Again, the user can upload the theme without specifying the `window_title`, but 
 ### Wrapping up
 
 Allison's theme, [Martin](http://house.github.io/martin/), is a beautiful theme, and its simplicity, both in style and code, is what attracted me. While the theme is a good example for a single-page site, there is so much more to cover when porting larger, more complex themes. Hopefully, this walkthrough gives you a solid starting point to try it for yourself. I'm going to continue porting themes to Siteleaf, while providing the source code on [my GitHub account](https://github.com/destroytoday). You can also check out the [list of existing themes](https://github.com/siteleaf/siteleaf-themes/wiki/Siteleaf-themes-on-Github) on the Siteleaf wiki.
-
-<small>This article was originally posted on destroytoday.com.</small>

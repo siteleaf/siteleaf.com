@@ -4,10 +4,10 @@ date: 2014-07-08 10:00:00 -04:00
 tags:
 - tip
 - markdown
-hero: 
+hero:
 ---
 
-In addition to the [Markdown basics](http://daringfireball.net/projects/markdown/syntax), Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a <mark>highlight</mark> and also a footnote[^1]. 
+In addition to the [Markdown basics](http://daringfireball.net/projects/markdown/syntax), Siteleaf supports some advanced syntax to make formatting your content easier. Here is a sentence showing off a <mark>highlight</mark> and also a footnote[^1].
 
 [^1]: This is a footnote in Siteleaf!
 
@@ -37,5 +37,3 @@ And rendered like this:
 ~~~
 
 Highlighting is useful when you'd like to direct the readers attention somewhere specific. To use it, wrap a phrase in `==double equal signs==`. Highlights simply get wrapped in `<mark>` tags. And remember, “with great power comes great responsibility.”
-
-<small>A version of this article was originally posted on larryfox.us.</small>
