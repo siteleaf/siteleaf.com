@@ -49,7 +49,7 @@ The property (in this case `author`) can be accessed by `name` and matching post
 ```liquid
 {% raw %}{% for author in posts_by_author %}
   <dt>{{author.name}}</dt>
-  {% for posts in author.items %}
+  {% for post in author.items %}
   <dd><a href="{{post.url}}">{{post.title}}</a></dd>
   {% endfor %}
 {% endfor %}{% endraw %}
