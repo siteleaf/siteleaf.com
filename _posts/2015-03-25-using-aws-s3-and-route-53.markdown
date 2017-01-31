@@ -38,11 +38,11 @@ In the root domain (e.g. example.com) bucket, go to Properties » Static Website
 }
 ```
 
-![s3-2](/uploads/s3-2.gif) 
+![s3-2](/uploads/s3-2.gif)
 
 Now in the subdomain bucket, go to Properties » Static Website Hosting and check “Redirect all requests to another host name”, filling it in the name of your root domain. Easy.
 
-![s3-3](/uploads/s3-3.gif) 
+![s3-3](/uploads/s3-3.gif)
 
 ### Route 53 and DNS
 
@@ -50,12 +50,10 @@ In the [Route 53 Console](https://console.aws.amazon.com/route53) create a new h
 
 For both choose an A record, check alias, and set the alias target to the respective bucket (root to root bucket, www to www bucket). Save it, and in a few moments your domain and subdomain should point to your bucket.
 
-![route53-1](/uploads/route53-1.gif) 
+![route53-1](/uploads/route53-1.gif)
 
 ### Publishing with Siteleaf
 
 Back on your Siteleaf settings page select “Amazon S3” for publishing and enter your root domain name, Access Key/Secret Key (found under [Security Credentials](https://portal.aws.amazon.com/gp/aws/securityCredentials) in your AWS account), and bucket region. After saving you should be ready to publish.
 
 Happy blogging.
-
-*This post was originally posted at larryfox.us.*

@@ -33,7 +33,7 @@ In Siteleaf, a layout is a base template that can be used and reused as a founda
 
 ### Creating a layout
 
-![file structure](/uploads/layouts-in-siteleaf-structure-0.jpg) 
+![file structure](/uploads/layouts-in-siteleaf-structure-0.jpg)
 
 Let’s get our hands dirty by building our own layout. Start by creating a `_layouts` folder in your website’s root directory. In this folder, create a `default.html` file. This file will be used as the base layout. Below is some basic code you can use to get started with your layout:
 
@@ -50,7 +50,7 @@ Let’s get our hands dirty by building our own layout. Start by creating a `_la
 
 This code simply sets the browser window title and shows any HTML assigned to the `content` variable.
 
-![file structure](/uploads/layouts-in-siteleaf-structure-1.jpg) 
+![file structure](/uploads/layouts-in-siteleaf-structure-1.jpg)
 
 Now, in your website’s default template (`default.html` in your root directory), write the following code:
 
@@ -71,7 +71,7 @@ With Liquid, we can use the `capture` tag to assign a block of content to a give
 
 Now that we have a single layout, let’s take a look at adding another one. Imagine we have a blog page that shows a post with next and previous links. Since we don’t want these links on all of our pages, we’ll create a new layout on top of the default layout.
 
-![file structure](/uploads/layouts-in-siteleaf-structure-2.jpg) 
+![file structure](/uploads/layouts-in-siteleaf-structure-2.jpg)
 
 Start by creating a `blog.html` file in your `_layouts` directory and write the following code:
 
@@ -92,7 +92,7 @@ Start by creating a `blog.html` file in your `_layouts` directory and write the 
 
 Like before, we assign our title and body to the variable `content`, but this time, we also add links to the previous and next posts if they exist. Then, we include the default layout.
 
-![file structure](/uploads/layouts-in-siteleaf-structure-3.jpg) 
+![file structure](/uploads/layouts-in-siteleaf-structure-3.jpg)
 
 Next, we need to write a blog template that uses this layout. Create a `blog` directory in your website’s folder and a `default.html` file inside of it. This HTML file will now be used by all pages and posts that start with `/blog` in their URL. Inside the `blog/default.html` file, write the following line of code:
 
@@ -107,5 +107,3 @@ Let’s say we started a new section on our website, like “Library,” which u
 ### Wrapping up
 
 Layouts can be incredibly useful for websites that vary from section to section. They can also help keep code to a minimum, resulting in cleaner code base. Try applying layouts to your current website and see if you can reduce the copy pasta. And, as always, don’t hesitate to [reach out](http://twitter.com/siteleaf) if you have any questions.
-
-<small>This article was originally posted on destroytoday.com.</small>
