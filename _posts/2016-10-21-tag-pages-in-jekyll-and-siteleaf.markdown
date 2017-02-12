@@ -116,6 +116,9 @@ The Siteleaf blog [uses](https://github.com/siteleaf/siteleaf.com/tree/master/_b
 Since this approach doesn't require a plugin, your site can be readily published to GitHub Pages on Siteleaf's free Developer plan.
 {: .tip}
 
+To avoid confusion with the `site.tags` [Jekyll variable](https://jekyllrb.com/docs/variables/#site-variables), name the collection something like `blog_tags` and can reference it with `site.blog_tags`.
+{: .warning}
+
 For more on this collection approach, read the tutorial on [author pages](/blog/author-pages-in-jekyll-and-siteleaf/) or explore the Siteleaf blog [source code](https://github.com/siteleaf/siteleaf.com/tree/master/_blog_tags).
 
 ## Recap
