@@ -23,7 +23,7 @@ If you plan to use more than a dozen or so tags, a [plugin](https://jekyllrb.com
 ![](/uploads/tags-select.gif)
 
 
-For this tutorial, we demonstrate how to set up tag pages on your Jekyll blog using the [jekyll-tagging](https://github.com/pattex/jekyll-tagging) plugin, which we at Oak used when building the [Collaborative Fund blog](http://www.collaborativefund.com/blog/).
+For this tutorial, we demonstrate how to set up tag pages on your Jekyll `_posts` using the [jekyll-tagging](https://github.com/pattex/jekyll-tagging) plugin, which we at Oak used when building the [Collaborative Fund blog](http://www.collaborativefund.com/blog/).
 
 Third-party and custom plugins are available starting on the Team plan.
 {: .note}
