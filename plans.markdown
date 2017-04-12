@@ -105,7 +105,7 @@ questions:
 - |-
   #### What are the page and storage limits?
 
-  Developer sites are limited to 100 MB and 100 pages, including posts and documents. Personal sites are limited to 500 MB and 500 pages. All other plans, including legacy plans, come with 1 GB of storage and unlimited pages.
+  Developer sites are limited to 100 MB and 100 pages, including posts and documents. Personal sites are limited to 500 MB and 500 pages. All other plans, including legacy plans, come with unlimited pages and 1 GB of storage (as [limited by GitHub](https://help.github.com/articles/what-is-my-disk-quota/)).
 - |-
   #### Where can I host my site?
 
