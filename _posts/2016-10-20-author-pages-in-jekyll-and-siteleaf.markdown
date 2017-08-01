@@ -122,7 +122,7 @@ In your [post](http://www.collaborativefund.com/blog/the-villain-test/) template
 
 {% raw %}
 ```liquid
-{% assign author = site.authors | where: 'title', post.author | first %}
+{% assign author = site.authors | where: 'title', page.author | first %}
 {% if author %}
   <a href="{{ author.url }}">{{ author.title }}</a>
 {% endif %}
