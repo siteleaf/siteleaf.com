@@ -24,11 +24,11 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
-    image: 
-    description: 
+    image:
+    description:
     button:
-      title: 
-      url: 
+      title:
+      url:
 - scope:
     path: ''
     type: blog_tags
@@ -38,8 +38,8 @@ defaults:
     path: ''
     type: gallery
   values:
-    image: 
-    link: 
+    image:
+    link:
 url: http://www.siteleaf.com
 description: Built for developers, Loved by everyone. Supports Jekyll, user collaboration,
   publishing to AWS S3, GitHub Pages, FTP, and more.
@@ -52,7 +52,7 @@ exclude:
 - README*
 - node_modules
 - ".gitignore"
-gems:
+plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 markdown: kramdown
