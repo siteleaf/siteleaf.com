@@ -1,6 +1,6 @@
 ---
 title: Jekyll 3.5.2 is here
-date: 2017-08-24
+date: 2017-08-24 00:00:00 -04:00
 tags:
 - announcement
 - jekyll
