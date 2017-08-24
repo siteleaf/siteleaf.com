@@ -52,7 +52,7 @@ exclude:
 - README*
 - node_modules
 - ".gitignore"
-gems:
+plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 markdown: kramdown

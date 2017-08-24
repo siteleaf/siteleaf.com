@@ -4,7 +4,7 @@ layout: default
 
 <main class="gallery__main">
   <div class="gallery__items">
-    {% assign sorted_gallery = site.gallery | sort: 'position' %}
+    {% assign sorted_gallery = site.gallery | where_exp: 'item','item.published != false' | sort: 'position' %}
     {% for item in sorted_gallery %}
       <figure class="gallery__item">
         <a href="{{ item.link }}" target="_blank" rel="noopener"><img src="{{ item.image }}" alt="{{ item.title }}" class="gallery__image" /></a>

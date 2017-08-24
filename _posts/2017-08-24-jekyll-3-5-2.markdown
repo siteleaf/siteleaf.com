@@ -1,0 +1,33 @@
+---
+title: Jekyll 3.5.2 is here
+date: 2017-08-24 00:00:00 -04:00
+tags:
+- announcement
+- jekyll
+- github
+---
+
+Recently GitHub Pages upgraded to Jekyll 3.5.2, and we've now made it our default to match.
+
+This update includes a few enhancements and bug fixes, most notably one which should dramatically speed up generation of your site! In testing [jekyllrb.com](https://jekyllrb.com), generation went from 18 seconds down to 8.
+
+For a full list of revisions [check out the release notes](https://jekyllrb.com/news/2017/08/12/jekyll-3-5-2-released/).
+
+If you are still using Jekyll 3.4, here's everything that's new in 3.5 so far:
+
+- Jekyll now uses Liquid 4, the latest! It comes with whitespace control, new filters `concat` and `compact`, loop performance improvements and [many fixes](https://github.com/Shopify/liquid/blob/master/History.md#400--2016-12-14--branch-4-0-stable).
+- Themes can specify dependencies and Jekyll will require those. This makes it easier for theme writers to use plugins.
+- The `gems` key in the `_config.yml` is now `plugins`. This is backwards-compatible, as Jekyll will gracefully upgrade gems to plugins if you use the former.
+- Filters like sort now allow you to sort based on a subvalue, e.g. {% raw %}`{% assign sorted = site.posts | sort: "image.alt_text" %}`{% endraw %}.
+- You can now use tab-separated data files.
+- Using `layout: none` will now produce a file with no layout. Equivalent to `layout: null`, with the exception that none is a truthy value and won’t be overwritten by front matter defaults.
+- Dramatically faster site generation!
+- Lots [more](https://jekyllrb.com/news/2017/06/15/jekyll-3-5-0-released/) [bug](https://jekyllrb.com/news/2017/07/17/jekyll-3-5-1-released/) [fixes](https://jekyllrb.com/news/2017/08/12/jekyll-3-5-2-released/).
+
+
+
+---
+
+For most sites, no action is required to take advantage of the latest version. As always, if you wish to use a different version of Jekyll for your site, you can define that in your `Gemfile`.
+
+As a reminder, sites on our Team and higher plans can also use custom (non-whitelisted) gems. See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for all the details.
