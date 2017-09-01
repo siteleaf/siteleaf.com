@@ -11,15 +11,8 @@ layout:
     "icon": "{{ "/assets/avatar.png" | absolute_url }}",
     "favicon": "{{ "/assets/favicon.ico" | absolute_url }}",
     "expired": false,
-    {% if site.author %}
-    "author": {% if site.author.name %} {
-        "name": "{{ site.author.name }}",
-        "url": {% if site.author.url %}"{{ site.author.url }}"{% else %}null{% endif %},
-        "avatar": {% if site.author.avatar %}"{{ site.author.avatar }}"{% else %}null{% endif %}
-    },{% else %}"{{ site.author }}",{% endif %}
-    {% endif %}
     "items": [
-    {% for post in site.posts limit:36 %}
+    {% for post in site.posts limit:10 %}
         {
             "id": "{{ post.url | absolute_url | sha1 }}",
             "title": {{ post.title | jsonify }},
