@@ -1,5 +1,5 @@
 ---
-title: See you GitHub Universe
+title: See you at GitHub Universe
 date: 2017-10-02 18:15:00 -04:00
 tags:
 - event
