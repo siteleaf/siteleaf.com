@@ -13,9 +13,9 @@ button:
 
 ![](/uploads/github-universe.png)
 
-Next week the Siteleaf team is heading to west coast for the [GitHub Universe](https://githubuniverse.com) conference, October 11th and 12th in San Francisco.
+Next week the Siteleaf team is heading west for the [GitHub Universe](https://githubuniverse.com) conference, October 11th and 12th in San Francisco.
 
-If you are attending the conference or in the nearby area, hit us up! We'd love to meet up and chat with as many Siteleaf users as possible.
+If you are attending the conference or in the nearby area, [hit us up](https://twitter.com/siteleaf)! We'd love to meet up and chat with as many Siteleaf users as possible.
 
 A few talks we're excited to see at GitHub Universe:
 - Real-time collaborative editing: the science behind the magic
