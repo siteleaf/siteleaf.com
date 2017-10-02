@@ -24,4 +24,4 @@ A few talks we're excited to see at GitHub Universe:
 - Accessibility: it's more than just screen readers
 - Balancing identity & privacy: building tools to help users
 
-As a proud sponsor of the conference, we're excited to offer 15% discount on tickets. Use the promo code `COMMUNITYU1715` and come hang with us!
+As a proud sponsor of the conference, we're excited to offer [15% discount on tickets](https://githubuniverse.com/register/?promo=COMMUNITYU1715). Use the promo code `COMMUNITYU1715` and come hang with us!
