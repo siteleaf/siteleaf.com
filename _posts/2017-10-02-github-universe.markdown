@@ -6,6 +6,9 @@ tags:
 - community
 - github
 image: "/uploads/github-universe.png"
+button:
+  title: Get tickets
+  url: https://githubuniverse.com/register/?promo=COMMUNITYU1715
 ---
 
 ![](/uploads/github-universe.png)
