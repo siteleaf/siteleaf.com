@@ -1,5 +1,5 @@
 ---
-title: 'Making Your First Jekyll Theme: Part 1'
+title: 'Making your first Jekyll theme: Part 1'
 date: 2017-10-03 11:27:00 -04:00
 tags:
 - tutorial
@@ -10,7 +10,7 @@ tags:
 
 ## Introduction
 
-By nature, any well structured site that has easily editable content is 'themeable' - a layer, or skin, that presents content in the way the owner or creator intended; Jekyll is no different. Pages, posts and any other form of formatted content can be segregated from the templating files. 
+By nature, any well structured site that has easily editable content is 'themeable' — a layer, or skin, that presents content in the way the owner or creator intended; Jekyll is no different. Pages, posts and any other form of formatted content can be segregated from the templating files. 
 
 Themes for Jekyll have been around for a while, but the process of installing a theme *was* a bit clunky. Content files and templating files would have to be carefully copied over. But, with the introduction of [**Gem-based themes**](https://jekyllrb.com/docs/themes/), themes can now be installed with a couple of lines of code.
 
@@ -20,15 +20,16 @@ Themes for Jekyll have been around for a while, but the process of installing a 
 
 Jekyll themes allow you to contain all the templating and presentational code within a Ruby gem, much in the same way Jekyll plugins are contained. This means the design can be easily applied to a site, used on multiple sites, and the site codebase isn’t cluttered by the presentational layer.
 
-
-    root/
-    ├── _posts/
-    │   └── my-amazing-post-14-09-2017.md
-    ├── index.html
-    ├── Gemfile
-    ├── _config.yml
-    ├── 404.md
-    └── about.md
+```
+root/
+├── _posts/
+│   └── my-amazing-post-14-09-2017.md
+├── index.html
+├── Gemfile
+├── _config.yml
+├── 404.md
+└── about.md
+```
 
 *Caption: Example of a Jekyll site structure when using a theme gem*
 
@@ -40,36 +41,41 @@ Installing a theme is really quite simple, but if you're a bit new to Jekyll, yo
 
 First, you should add the theme you want to use to the list of gems you're using for your site:
 
+```ruby
+# Main jekyll gem
+gem "jekyll", "~> 3.4"
 
-    # Main jekyll gem
-    gem "jekyll", "~> 3.4"
-    
-    # My selected theme gem
-    gem "alembic-jekyll-theme", "~> 2.2"
-    
-    # Any plugins I'm using
-    group :jekyll_plugins do
-      gem "jekyll-sitemap"
-      gem "jekyll-paginate"
-      gem "jekyll-seo-tag"
-    end
+# My selected theme gem
+gem "alembic-jekyll-theme", "~> 2.2"
+
+# Any plugins I'm using
+group :jekyll_plugins do
+  gem "jekyll-sitemap"
+  gem "jekyll-paginate"
+  gem "jekyll-seo-tag"
+end
+```
 
 The code above is from an example `Gemfile`. The `Gemfile` is designed to manage all the gems in your project in conjunction with [Bundler](http://bundler.io/). In this case, I'm installing my own theme, `alembic-jekyll-theme`, along with the other Jekyll related plugins.
 
 The second step is to set the theme in your `_config.yml` file:
 
-
-    theme: alembic-jekyll-theme
+```yaml
+theme: alembic-jekyll-theme
+```
 
 After you've set these two options, you'll need to use Bundler to install the newly added theme and build, or serve, your site. So, in your command line interface, run:
 
 
-    bundle install
+```sh
+$ bundle install
+```
 
 Install the theme gem and...
 
-
-    bundle exec jekyll build
+```sh
+$ bundle exec jekyll build
+```
 
 ...to build the site.
 
