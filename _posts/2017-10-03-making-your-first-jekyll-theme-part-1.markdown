@@ -11,8 +11,6 @@ image: "/uploads/making-jekyll-theme-intro.jpg"
 
 _This is a guest post by [David Darnes](https://darn.es), creator of the [Alembic](https://alembic.darn.es) theme._
 
-## Introduction
-
 By nature, any well structured site that has easily editable content is 'themeable' — a layer, or skin, that presents content in the way the owner or creator intended; Jekyll is no different. Pages, posts and any other form of formatted content can be segregated from the templating files. 
 
 Themes for Jekyll have been around for a while, but the process of installing a theme *was* a bit clunky. Content files and templating files would have to be carefully copied over. But, with the introduction of [**Gem-based themes**](https://jekyllrb.com/docs/themes/), themes can now be installed with a couple of lines of code.
