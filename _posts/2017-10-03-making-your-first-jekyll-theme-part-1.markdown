@@ -96,7 +96,7 @@ Here are a couple of themes I've made:
 - [**Alembic**](https://alembic.darn.es) - a theme that has been designed to work out of the box, as well as a boilerplate for your project
 - [**Garth**](https://garth.darn.es) - a theme designed to be a very simple, yet stylish blog
 
-Both of my themes have been built with Siteleaf in mind, so you should be able to set up a new Siteleaf site with these without too much trouble. I'd also recommend [**Minimal Mistakes**](https://mmistakes.github.io/minimal-mistakes/), an incredibly powerful theme by Michael Rose. Michael has been working with Jekyll theming for longer than I have and is very thorough with his code.
+Both of my themes have been built with Siteleaf in mind, so you should be able to set up a new Siteleaf site with these without too much trouble. I'd also recommend [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/), an incredibly powerful theme by Michael Rose. Michael has been working with Jekyll theming for longer than I have and is very thorough with his code.
 
 For those of you who are using GitHub Pages to host their Jekyll site, there are a [set of whitelisted themes](https://pages.github.com/themes/). This, I would say, is partly the reason why themes haven't grown at the rate they could be growing at.
 
@@ -118,6 +118,6 @@ Here are a few tips I'd keep in mind when creating your own theme, especially if
 
 ## How do I create a Jekyll theme?
 
-Looking for something a little more in-depth? Well tune into the second article of this 2 part series, where I will fully explain **how to create a Jekyll theme** that people can use in their next Siteleaf site.
+Looking for something a little more in-depth? Well tune into the second article of this 2 part series, where I will fully explain how to create a Jekyll theme that people can use in their next Siteleaf site.
 
 Feel free to [tweet me with any questions](https://twitter.com/DavidDarnes) you have on what I’ve talked about. You can also chat with the [Siteleaf community](http://chat.siteleaf.com/) for further questions and to share your development work.
