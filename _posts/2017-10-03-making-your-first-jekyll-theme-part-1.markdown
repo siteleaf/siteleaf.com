@@ -8,6 +8,8 @@ tags:
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_4BDE4DCBEC94D49C7BECD9DAC92ACB9782F661756DC4302D2F6D7F8E4672477B_1505253946269_header.jpg)
 
+_This is a guest post by [David Darnes](https://darn.es), creator of the [Alembic](https://alembbic.darn.es) theme._
+
 ## Introduction
 
 By nature, any well structured site that has easily editable content is 'themeable' — a layer, or skin, that presents content in the way the owner or creator intended; Jekyll is no different. Pages, posts and any other form of formatted content can be segregated from the templating files. 
