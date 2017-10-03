@@ -4,9 +4,10 @@ date: 2017-10-03 11:27:00 -04:00
 tags:
 - tutorial
 - jekyll
+image: "/uploads/making-jekyll-theme-intro.jpg"
 ---
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_4BDE4DCBEC94D49C7BECD9DAC92ACB9782F661756DC4302D2F6D7F8E4672477B_1505253946269_header.jpg)
+![](/uploads/making-jekyll-theme-intro.jpg)
 
 _This is a guest post by [David Darnes](https://darn.es), creator of the [Alembic](https://alembbic.darn.es) theme._
 
@@ -84,13 +85,12 @@ $ bundle exec jekyll build
 For further reading, check out [Siteleaf's learning resource on how to use Jekyll themes](https://learn.siteleaf.com/themes/gem-based-themes/).
 
 ## What themes can I use?
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_4BDE4DCBEC94D49C7BECD9DAC92ACB9782F661756DC4302D2F6D7F8E4672477B_1505252937620_theme-slices.jpg)
 
+![making-jekyll-theme-slices.jpg](/uploads/making-jekyll-theme-slices.jpg)
 
 Themes are growing at a slow, but steady pace. There are a few Jekyll theme directories, but they list themes created in both the old and the current way. If you're looking for themes using the current method, then search for ['jekyll theme' on rubygems.org](https://rubygems.org/search?query=jekyll+theme).
 
 Here are a couple of themes I've made:
-
 
 - [**Alembic**](https://alembbic.darn.es) - a theme that has been designed to work out of the box, as well as a boilerplate for your project
 - [**Garth**](https://garth.darn.es) - a theme designed to be a very simple, yet stylish blog
@@ -105,11 +105,9 @@ There are a large portion of Jekyll users who are also using GitHub Pages to hos
 
 If you’re keen to make a theme yourself, may I suggest a few tips I’ve learnt from my theming experience.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_4BDE4DCBEC94D49C7BECD9DAC92ACB9782F661756DC4302D2F6D7F8E4672477B_1505254038546_checklist.jpg)
-
+![making-jekyll-theme-checklist.jpg](/uploads/making-jekyll-theme-checklist.jpg)
 
 Here are a few tips I'd keep in mind when creating your own theme, especially if you want your theme to be used by other Jekyll (and Siteleaf) users:
-
 
 1. **Test your theme:** You can't do enough testing. The best way I've found is to follow your own documentation and install the theme from scratch. Testing your theme with varying content will help too. Themes have to cater for a range of content types and sizes, something a regular site build doesn't really have to do (there are exceptions).
 2. **Provide good documentation:** All good themes come with well written and clear documentation files. This is actually a specific requirement when submitting to large theme marketplaces like ThemeForest. Make sure the installation process is easy to follow, and that all the features & options within your theme are covered. I do my best to keep the [documentation on how to use Alembic](https://github.com/daviddarnes/alembic#alembic) up to date.
