@@ -9,7 +9,7 @@ image: "/uploads/making-jekyll-theme-intro.jpg"
 
 ![](/uploads/making-jekyll-theme-intro.jpg)
 
-_This is a guest post by [David Darnes](https://darn.es), creator of the [Alembic](https://alembbic.darn.es) theme._
+_This is a guest post by [David Darnes](https://darn.es), creator of the [Alembic](https://alembic.darn.es) theme._
 
 ## Introduction
 
@@ -92,7 +92,7 @@ Themes are growing at a slow, but steady pace. There are a few Jekyll theme dire
 
 Here are a couple of themes I've made:
 
-- [**Alembic**](https://alembbic.darn.es) - a theme that has been designed to work out of the box, as well as a boilerplate for your project
+- [**Alembic**](https://alembic.darn.es) - a theme that has been designed to work out of the box, as well as a boilerplate for your project
 - [**Garth**](https://garth.darn.es) - a theme designed to be a very simple, yet stylish blog
 
 Both of my themes have been built with Siteleaf in mind, so you should be able to set up a new Siteleaf site with these without too much trouble. I'd also recommend [**Minimal Mistakes**](https://mmistakes.github.io/minimal-mistakes/), an incredibly powerful theme by Michael Rose. Michael has been working with Jekyll theming for longer than I have and is very thorough with his code.
