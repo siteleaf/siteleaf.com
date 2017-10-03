@@ -34,7 +34,8 @@ root/
 └── about.md
 ```
 
-*Caption: Example of a Jekyll site structure when using a theme gem*
+Example of a Jekyll site structure when using a theme gem
+{: .caption}
 
 Additionally, theme files can be overwritten, similarly to how [WordPress child themes](https://code.tutsplus.com/articles/how-to-modify-the-parent-theme-behavior-within-the-child-theme--wp-31006) work. If you're not familiar with them, this overwriting technique means that any file within the theme can be replaced with a file in the site project. All you need to do is match the file path and name in your project with the one in the theme.
 
