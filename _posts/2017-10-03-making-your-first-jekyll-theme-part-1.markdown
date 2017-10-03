@@ -1,5 +1,5 @@
 ---
-title: 'Making your first Jekyll theme: Part 1'
+title: 'Making your first Jekyll theme: Part 1'
 date: 2017-10-03 11:27:00 -04:00
 tags:
 - tutorial
