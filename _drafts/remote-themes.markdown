@@ -2,8 +2,8 @@
 title: GitHub Pages now supports remote themes
 date: 2017-11-29 17:42:00 -05:00
 tags:
-- jekyll
 - github
+- jekyll
 ---
 
 GitHub Pages [announced today](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any repository.
