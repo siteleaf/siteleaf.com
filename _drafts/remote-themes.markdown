@@ -6,7 +6,7 @@ tags:
 - github
 ---
 
-Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any GitHub-hosted repository. This is also supported on Siteleaf (whether you host on GitHub or not), beginning today.
+Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any GitHub-hosted repository. This is also supported on Siteleaf as of today, whether you publish to GitHub or not.
 
 This means you can now use any of the hundreds of community-curated themes, without worrying about whitelisting or `Gemfile` changes.
 
