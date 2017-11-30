@@ -10,6 +10,8 @@ Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-us
 
 This means you can now use any of the hundreds of community-curated themes, without worrying about whitelisting or `Gemfile` changes.
 
+
+
 To build your site with any public, GitHub-hosted theme, add the following to your site's `_config.yml` file (or Site Settings in Siteleaf):
 
 ```yaml
