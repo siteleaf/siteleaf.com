@@ -18,7 +18,7 @@ remote_theme: owner/name
 
 Replacing owner and name with the repository owner's username and repository name. 
 
-You may also optionally specify a branch, tag, or commit to use by appending an `@` and the Git ref (e.g., `benbalter/retlab@v1.0.0` or `benbalter/retlab@develop`). If you don't specify a Git ref, the `master` branch will be used.
+You may also optionally specify a branch, tag, or commit to use by appending an `@` and the Git ref (e.g., `owner/name@v1.0.0` or `owner/name@develop`). If you don't specify a Git ref, the `master` branch will be used.
 
 Your theme repository must be public and hosted on GitHub.com. As always, your site repository can remain private.
 {: .warning}
