@@ -1,12 +1,12 @@
 ---
 title: GitHub Pages now supports remote themes
-date: 2017-11-29 17:42:00 -05:00
+date: 2017-11-30 12:15:00 -05:00
 tags:
 - github
 - jekyll
 ---
 
-Some exciting news! GitHub Pages [announced today](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any repository.
+Some exciting news! GitHub Pages [announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any repository.
 
 This means you can now use any of the hundreds of community-curated themes on GitHub.com, without worrying about whitelisting or `Gemfile` changes.
 
@@ -22,6 +22,8 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 
 Your theme repository must be public and hosted on GitHub.com. As always, your site repository can remain private.
 {: .warning}
+
+Behind the scenes, this is made possible with the [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) plugin which is now included by default. If you are using a custom `Gemfile`, make sure to include this or `github-pages` (version 172 or higher).
 
 If you're interested in making your Jekyll theme, check [out our tutorial](/blog/making-your-first-jekyll-theme-part-1/) and [help docs](https://learn.siteleaf.com/themes/gem-based-themes/).
 
