@@ -23,7 +23,7 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 Your theme repository must be public and hosted on GitHub.com. As always, your site repository can remain private.
 {: .warning}
 
-Behind the scenes, this is made possible with the [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) plugin which is now included by default. If you are using a custom `Gemfile`, make sure to include this or `github-pages` (version 172 or higher).
+This is made possible behind the scenes through the new [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) plugin which is now included by default in GitHub Pages and Siteleaf. If you are using a custom `Gemfile`, make sure to include this or `github-pages` (version 172 or higher).
 
 If you're interested in making your Jekyll theme, check [out our tutorial](/blog/making-your-first-jekyll-theme-part-1/) and [help docs](https://learn.siteleaf.com/themes/gem-based-themes/).
 
