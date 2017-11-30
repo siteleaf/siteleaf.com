@@ -16,7 +16,7 @@ To build your site with any public, GitHub-hosted theme, add the following to yo
 remote_theme: owner/name
 ```
 
-Replacing owner and name with the repository's owner and repository name. 
+Replacing owner and name with the repository owner's username and repository name. 
 
 You may also optionally specify a branch, tag, or commit to use by appending an `@` and the Git ref (e.g., `benbalter/retlab@v1.0.0` or `benbalter/retlab@develop`). If you don't specify a Git ref, the `master` branch will be used.
 
