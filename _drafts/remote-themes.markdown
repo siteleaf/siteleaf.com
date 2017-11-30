@@ -6,7 +6,7 @@ tags:
 - jekyll
 ---
 
-Some exciting news! GitHub Pages [announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any repository.
+Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any repository.
 
 This means you can now use any of the hundreds of community-curated themes on GitHub.com, without worrying about whitelisting or `Gemfile` changes.
 
