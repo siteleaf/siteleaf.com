@@ -6,9 +6,9 @@ tags:
 - github
 ---
 
-Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any GitHub-hosted repository.
+Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any GitHub-hosted repository. This is also supported on Siteleaf (whether you host on GitHub or not), beginning today.
 
-This means you can now use any of the hundreds of community-curated themes on GitHub.com, without worrying about whitelisting or `Gemfile` changes.
+This means you can now use any of the hundreds of community-curated themes, without worrying about whitelisting or `Gemfile` changes.
 
 To build your site with any public, GitHub-hosted theme, add the following to your site's `_config.yml` file (or Site Settings in Siteleaf):
 
