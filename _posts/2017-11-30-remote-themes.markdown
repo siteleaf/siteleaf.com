@@ -1,16 +1,16 @@
 ---
-title: GitHub Pages now supports remote themes
+title: Introducing remote themes
 date: 2017-11-30 12:15:00 -05:00
 tags:
 - jekyll
 - github
 ---
 
-Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any GitHub-hosted repository. This is also supported on Siteleaf as of today, whether you publish to GitHub or not.
+Some exciting news! GitHub Pages [has announced](https://github.com/blog/2464-use-any-theme-with-github-pages) support for loading remote themes from any GitHub-hosted repository. This is also supported on Siteleaf as of today, whether you publish to GitHub or somewhere else.
 
-This means you can now use any of the hundreds of community-curated themes, without worrying about whitelisting or `Gemfile` changes.
+Remote themes are similar to [Gem-based themes](https://learn.siteleaf.com/themes/gem-based-themes/), but do not require `Gemfile` changes or whitelisting. This means you can now use any of the hundreds of community-curated themes available on GitHub.com, or create your own without having to publish a Gem.
 
-
+Jekyll themes package layouts, includes, and stylesheets in a way that can be overridden by your site’s content. It’s a great way to maintain a separation of content and code, and makes it possible to share themes across multiple sites.
 
 To build your site with any public, GitHub-hosted theme, add the following to your site's `_config.yml` file (or Site Settings in Siteleaf):
 
