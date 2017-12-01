@@ -15,7 +15,6 @@ Sign up for a free [Zapier](https://zapier.com/zapbook/Siteleaf) account, from t
 ## How do I connect Siteleaf to Zapier?
 
 Log in to your [Zapier account](https://zapier.com/sign-up) or create a new account.
-Navigate to "Connected Accounts" from the top menu bar.
-Now click on "Connect new account" and search for "Siteleaf"
-Use your credentials to connect your Siteleaf account to Zapier.
+Navigate to **Connected Accounts** from the top menu bar. Now click on **Connect new account** and search for **Siteleaf** Use your credentials to connect your Siteleaf account to Zapier.
+
 Once that's done you can start creating an automation! Use a pre-made Zap or create your own with the Zap Editor. Creating a Zap requires no coding knowledge and you'll be walked step-by-step through the setup. 
