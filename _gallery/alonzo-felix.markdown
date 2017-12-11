@@ -1,7 +1,7 @@
 ---
 title: Alonzo Felix
 position: 41
-image: "/uploads/gallery__alonzofelix.jpg"
+image: "/uploads/ALONZO%20FELIX.jpg"
 link: http://www.alonzofelix.com/
 ---
 
