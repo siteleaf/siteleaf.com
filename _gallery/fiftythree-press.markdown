@@ -1,6 +1,6 @@
 ---
 title: FiftyThree Press
-position: 31
+position: 32
 image: "/uploads/gallery__fiftythreepress.jpg"
 link: http://press.fiftythree.com/
 ---
