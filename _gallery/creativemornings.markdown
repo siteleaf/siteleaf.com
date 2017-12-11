@@ -1,7 +1,7 @@
 ---
 title: CreativeMornings
 position: 38
-image: "/uploads/gallery__creativemornings.jpg"
+image: "/uploads/CREATIVE%20MORNINGS.jpg"
 link: http://creativemornings.com/blog
 ---
 
