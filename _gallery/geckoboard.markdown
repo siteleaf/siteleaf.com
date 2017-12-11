@@ -1,6 +1,6 @@
 ---
 title: Geckoboard
-position: 22
+position: 29
 image: "/uploads/gallery__geckoboard.jpg"
 link: https://www.geckoboard.com/
 ---
