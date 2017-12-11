@@ -1,7 +1,7 @@
 ---
 title: Rationale
 position: 17
-image: "/uploads/gallery__rationale.jpg"
+image: "/uploads/RATIONALE.jpg"
 link: http://rationale-design.com/
 ---
 

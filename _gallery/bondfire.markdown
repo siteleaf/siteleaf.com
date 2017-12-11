@@ -1,7 +1,7 @@
 ---
 title: Bondfire
 position: 13
-image: "/uploads/gallery__bondfire.jpg"
+image: "/uploads/BONDFIRE.jpg"
 link: http://www.bondfire.co/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: OKREAL
 position: 10
-image: "/uploads/gallery__okreal.jpg"
+image: "/uploads/OKREAL.jpg"
 link: http://www.okreal.co/
 ---
 
