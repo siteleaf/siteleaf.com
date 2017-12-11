@@ -1,6 +1,6 @@
 ---
 title: Erica Heinz
-position: 39
+position: 29
 image: "/uploads/ERICA%20HEINZ.jpg"
 link: http://www.ericaheinz.com/
 ---
