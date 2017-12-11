@@ -1,7 +1,7 @@
 ---
 title: Erica Heinz
 position: 39
-image: "/uploads/gallery__ericaheinz.jpg"
+image: "/uploads/ERICA%20HEINZ.jpg"
 link: http://www.ericaheinz.com/
 ---
 
