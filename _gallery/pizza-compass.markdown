@@ -1,6 +1,6 @@
 ---
 title: Pizza Compass
-position: 40
+position: 30
 image: "/uploads/gallery__pizzacompass.jpg"
 link: http://pizza-compass.com/
 ---

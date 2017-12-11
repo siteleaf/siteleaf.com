@@ -1,6 +1,6 @@
 ---
 title: NODAY
-position: 6
+position: 7
 image: "/uploads/gallery__noday.jpg"
 link: http://www.noday.co/
 ---

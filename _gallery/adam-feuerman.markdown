@@ -1,6 +1,6 @@
 ---
 title: Adam Feuerman
-position: 28
+position: 21
 image: "/uploads/gallery__adamfeuerman.jpg"
 link: http://www.adamfeuerman.com/
 ---

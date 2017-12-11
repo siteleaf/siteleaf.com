@@ -1,6 +1,6 @@
 ---
 title: Collaborative Fund
-position: 0
+position: 1
 image: "/uploads/gallery__collaborative-fund.png"
 link: http://www.collaborativefund.com/
 ---

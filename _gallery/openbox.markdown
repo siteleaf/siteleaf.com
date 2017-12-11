@@ -1,6 +1,6 @@
 ---
 title: Openbox
-position: 19
+position: 17
 image: "/uploads/gallery__openbox.jpg"
 link: http://opnbx.com/
 ---
