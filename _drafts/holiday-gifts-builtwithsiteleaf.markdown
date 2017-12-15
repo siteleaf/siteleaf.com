@@ -10,7 +10,7 @@ Here at Siteleaf we are behind on our Holiday shopping, so we turned to websites
 
 ![KEYCHAIN-022f3f.jpg](/uploads/KEYCHAIN-022f3f.jpg)
 
-**[Girl’s Night In]**(https://shop.girlsnightin.co) have a selection of goodies for any homebody in on your list. We love this [‘Going home after this’ keychain](https://shop.girlsnightin.co/collections/apparel/products/keychain) that lets everyone know exactly where you would rather be for just $15. 
+[**Girl’s Night In**](https://shop.girlsnightin.co) have a selection of goodies for any homebody in on your list. We love their [Going home after this keychain](https://shop.girlsnightin.co/collections/apparel/products/keychain) that lets everyone know exactly where you would rather be for just $15. 
 
 ![CALENDAR-ef7772.jpg](/uploads/CALENDAR-ef7772.jpg)
 
@@ -18,15 +18,15 @@ This simple typographic [2018 Wall Calendar](https://rationale-design.com/shop/s
 
 ![AIDA-fdbc2d.jpg](/uploads/AIDA-fdbc2d.jpg)
 
-Snack harder with **Aida** - you can share them at your holiday party or plough through these goodies on your sofa watching ‘It’s a Wonderful Life’ for the 116th time, either way we won’t judge. The [full Aida set](https://www.aidaeats.com/products/the-full-set) includes Lemon Candied Pepitas, Rye Crackers, Sourdough Crackers, Currant Turmeric Crisps & Szechuan Candied Pecans for $48. 
+Snack harder with **Aida** - you can share them at your holiday party or plough through these goodies on your sofa watching *It’s a Wonderful Life* for the 116th time, either way we won’t judge. The [full Aida set](https://www.aidaeats.com/products/the-full-set) includes lemon candied pepitas, rye and sourdough crackers, currant turmeric crisps & szechuan candied pecans for $48. 
 
 ![STAR WARS BAG.jpg](/uploads/STAR%20WARS%20BAG.jpg)
 
-The design for **State**’s [Hattie Ewok Backpack](https://www.statebags.com/products/hattie-ewok) is inspired by the Forest Moon of Endor (that’s in Star Wars for those of you who have been living light-years away). Also, the Rebel Alliance lining is 👌 For $295 you’ll get this great bag and for each bag sold, State hand-deliver a backpack packed with essential tools for success to an American child in need. Their website was designed by the great [Bondfire Inc](http://bondfireinc.com/work/state-bags-e-commerce-design-development/). 
+The [Hattie Ewok Backpack's](https://www.statebags.com/products/hattie-ewok) design is inspired by the Forest Moon of Endor (that’s in Star Wars for those of you who have been living light-years away). Also, the Rebel Alliance lining is 👌 For $295 you’ll get this great bag, and for each bag sold **State** hand-deliver a backpack packed with essential tools for success to an American child in need. Their website was designed by the great [Bondfire Inc](http://bondfireinc.com/work/state-bags-e-commerce-design-development/). 
 
 ![BE KIND.jpg](/uploads/BE%20KIND.jpg)
 
-At the moment it can feel like the world is on fire but with this [Be Kind Banner](https://www.etsy.com/listing/540974808/be-kind-banner-wood-banner-wood-sign) $16.95 you can remind your family or colleagues to delight in kind gestures. Shop lots of wood products made right here in the USA at [**Woodshop**](http://www.woodshopusa.com). 
+At the moment it can feel like the world is on fire. With this [Be Kind Banner](https://www.etsy.com/listing/540974808/be-kind-banner-wood-banner-wood-sign) $16.95 you can remind your family or colleagues to delight in kind gestures. Shop a whole selection of wood products made right here in the USA at [**Woodshop**](http://www.woodshopusa.com). 
 
 ![KEEPCUP.jpg](/uploads/KEEPCUP.jpg)
 
@@ -42,7 +42,7 @@ These **Nourish** snacks are ideal stocking stuffers for the health nut in your 
 
 ***
 
-If you have holiday gift ideas we’ve missed that are #builtwithsiteleaf let us know [@siteleaf](https://twitter.com/siteleaf)
+If you have holiday gift ideas for those tricky family members (like Dad's get socks every year) let us know [@siteleaf](https://twitter.com/siteleaf)
 
 Happy Holidays, 
 Love Siteleaf
