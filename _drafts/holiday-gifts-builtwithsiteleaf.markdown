@@ -6,7 +6,9 @@ description: Here at Siteleaf we are behind on our Holiday shopping, so we turne
   to websites that use Siteleaf for holiday inspiration and they definitely delivered.
 ---
 
-Here at Siteleaf we are behind on our Holiday shopping, so we turned to websites that use Siteleaf for holiday inspiration and they definitely delivered. Here are a few things that we would love to wake up and finding in our stockings:
+At Siteleaf we are behind on our Holiday shopping, so we turned to websites that use Siteleaf for some holiday inspiration and they definitely delivered. 
+
+Here are a few things that we would love to wake up and finding in our stockings:
 
 ![KEYCHAIN-022f3f.jpg](/uploads/KEYCHAIN-022f3f.jpg)
 
@@ -42,7 +44,7 @@ These **Nourish** snacks are ideal stocking stuffers for the health nut in your 
 
 ***
 
-If you have holiday gift ideas for those tricky family members (like Dad's get socks every year) let us know [@siteleaf](https://twitter.com/siteleaf)
+If you have holiday gift ideas let us know [@siteleaf](https://twitter.com/siteleaf)
 
 Happy Holidays, 
 Love Siteleaf
