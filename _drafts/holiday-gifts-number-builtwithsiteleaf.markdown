@@ -12,7 +12,7 @@ Here at Siteleaf we are behind on our Holiday shopping, so we turned to websites
 
 [Girl’s Night In](https://shop.girlsnightin.co) have a selection of goodies for any homebody in on your list. We love this [‘Going home after this’ keychain](https://shop.girlsnightin.co/collections/apparel/products/keychain) that lets everyone know exactly where you would rather be for just $15. 
 
-![CALENDAR.jpg](/uploads/CALENDAR.jpg)
+![CALENDAR-ef7772.jpg](/uploads/CALENDAR-ef7772.jpg)
 
 This simple typographic [2018 Wall Calendar](https://rationale-design.com/shop/sans-wall-calendar/) created by Rationale Design provides a beautiful and functional way for keeping track of next year’s events for $25. It’s perfect for those who appreciate order and sleek design.
 
@@ -32,7 +32,7 @@ At the moment it can feel like the world is on fire but with this [Be Kind Banne
 
 [Shopping mates](https://shoppingmates.siroop.ch/blog/nachhaltige-weihnachtsgeschenke/) recommend these [KeepCups](http://us.keepcup.com/keepcup-series/tasting-notes-brew-cork-series/fika.html) for $24. They’re made from fully tempered soda lime glass and the band is made with waste product from wine cork manufacture. Great for the coffee lovers and the earth conscious alike. 
 
-![TADA.jpg](/uploads/TADA.jpg)
+![TADA-124f16.jpg](/uploads/TADA-124f16.jpg)
 
 Is there any home that couldn’t use a little more everyday celebration? We love this [Tada Emoji Embroidered Wall Hanging](https://www.etsy.com/uk/listing/200433048/embroidery-tada-emoji-embroidered-4-wall?ref=shop_home_active_14\) made by the brilliant [Jessica Harllee](http://jessicaharllee.com) for $70. We have one featuring the 👍 emoji in the Siteleaf office and it continually brightens our day. 
 
