@@ -8,7 +8,7 @@ description: Here at Siteleaf we are behind on our Holiday shopping, so we turne
 
 At Siteleaf we are **really** behind on our Holiday shopping, so we turned to websites that use Siteleaf for some holiday inspiration and they delivered. 
 
-Here are a few things that we would love to wake up and find in our stockings:
+Here are a few things that we would love to wake up and find under the tree:
 
 ![KEYCHAIN-022f3f.jpg](/uploads/KEYCHAIN-022f3f.jpg)
 
