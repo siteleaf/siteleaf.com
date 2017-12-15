@@ -3,7 +3,7 @@ title: 'Holiday gifts #builtwithsiteleaf'
 date: 2017-12-15 14:24:00 -05:00
 image: "/uploads/KEYCHAIN-022f3f.jpg"
 description: Here at Siteleaf we are behind on our Holiday shopping, so we turned
-  to websites that use Siteleaf for holiday inspiration and they definitely delivered.
+  to websites that use Siteleaf for holiday inspiration and they delivered.
 ---
 
 At Siteleaf we are **really** behind on our Holiday shopping, so we turned to websites that use Siteleaf for some holiday inspiration and they delivered. 
