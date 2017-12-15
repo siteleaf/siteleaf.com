@@ -20,7 +20,7 @@ This simple typographic [2018 Wall Calendar](https://rationale-design.com/shop/s
 
 ![AIDA-fdbc2d.jpg](/uploads/AIDA-fdbc2d.jpg)
 
-Snack harder with [**Aida**](https://www.aidaeats.com). You can share these goodies at your holiday party or plough through them from your sofa whilst watching *It’s a Wonderful Life* for the 116th time. Either way we won’t judge. The [full Aida set](https://www.aidaeats.com/products/the-full-set) includes lemon candied pepitas, rye and sourdough crackers, currant turmeric crisps & szechuan candied pecans for $48. 
+Snack harder with [**Aida**](https://www.aidaeats.com). You can share these goodies at your holiday party or plough through them from your sofa whilst watching *It’s a Wonderful Life*. Either way we won’t judge. The [full Aida set](https://www.aidaeats.com/products/the-full-set) includes lemon candied pepitas, rye and sourdough crackers, currant turmeric crisps & szechuan candied pecans for $48. 
 
 ![STAR WARS BAG.jpg](/uploads/STAR%20WARS%20BAG.jpg)
 
