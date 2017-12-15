@@ -1,14 +1,14 @@
 ---
 title: 'Holiday gifts #builtwithsiteleaf'
 date: 2017-12-15 14:24:00 -05:00
-image: "/uploads/KEYCHAIN.jpg"
+image: "/uploads/KEYCHAIN-022f3f.jpg"
 description: Here at Siteleaf we are behind on our Holiday shopping, so we turned
   to websites that use Siteleaf for holiday inspiration and they definitely delivered.
 ---
 
 Here at Siteleaf we are behind on our Holiday shopping, so we turned to websites that use Siteleaf for holiday inspiration and they definitely delivered. Here are a few things that we would love to wake up and finding in our stockings:
 
-![KEYCHAIN.jpg](/uploads/KEYCHAIN.jpg)
+![KEYCHAIN-022f3f.jpg](/uploads/KEYCHAIN-022f3f.jpg)
 
 **[Girl’s Night In]**(https://shop.girlsnightin.co) have a selection of goodies for any homebody in on your list. We love this [‘Going home after this’ keychain](https://shop.girlsnightin.co/collections/apparel/products/keychain) that lets everyone know exactly where you would rather be for just $15. 
 
