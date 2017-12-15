@@ -10,35 +10,35 @@ Here at Siteleaf we are behind on our Holiday shopping, so we turned to websites
 
 ![KEYCHAIN.jpg](/uploads/KEYCHAIN.jpg)
 
-[Girl’s Night In](https://shop.girlsnightin.co) have a selection of goodies for any homebody in on your list. We love this [‘Going home after this’ keychain](https://shop.girlsnightin.co/collections/apparel/products/keychain) that lets everyone know exactly where you would rather be for just $15. 
+**[Girl’s Night In]**(https://shop.girlsnightin.co) have a selection of goodies for any homebody in on your list. We love this [‘Going home after this’ keychain](https://shop.girlsnightin.co/collections/apparel/products/keychain) that lets everyone know exactly where you would rather be for just $15. 
 
 ![CALENDAR-ef7772.jpg](/uploads/CALENDAR-ef7772.jpg)
 
-This simple typographic [2018 Wall Calendar](https://rationale-design.com/shop/sans-wall-calendar/) created by Rationale Design provides a beautiful and functional way for keeping track of next year’s events for $25. It’s perfect for those who appreciate order and sleek design.
+This simple typographic [2018 Wall Calendar](https://rationale-design.com/shop/sans-wall-calendar/) created by **Rationale Design** provides a beautiful and functional way for keeping track of next year’s events for $25. It’s perfect for those who appreciate order and sleek design.
 
 ![AIDA-fdbc2d.jpg](/uploads/AIDA-fdbc2d.jpg)
 
-Snack harder with Aida - you can share them at your holiday party or plough through these goodies on your sofa watching ‘It’s a Wonderful Life’ for the 116th time, either way we won’t judge. The [full Aida set](https://www.aidaeats.com/products/the-full-set) includes Lemon Candied Pepitas, Rye Crackers, Sourdough Crackers, Currant Turmeric Crisps & Szechuan Candied Pecans for $48. 
+Snack harder with **Aida** - you can share them at your holiday party or plough through these goodies on your sofa watching ‘It’s a Wonderful Life’ for the 116th time, either way we won’t judge. The [full Aida set](https://www.aidaeats.com/products/the-full-set) includes Lemon Candied Pepitas, Rye Crackers, Sourdough Crackers, Currant Turmeric Crisps & Szechuan Candied Pecans for $48. 
 
 ![STAR WARS BAG.jpg](/uploads/STAR%20WARS%20BAG.jpg)
 
-The design for State’s [Hattie Ewok Backpack](https://www.statebags.com/products/hattie-ewok) is inspired by the Forest Moon of Endor (that’s in Star Wars for those of you who have been living light-years away). Also, the Rebel Alliance lining is 👌 For $295 you’ll get this great bag and for each bag sold, State hand-deliver a backpack packed with essential tools for success to an American child in need. Their website was designed by the great [Bondfire Inc](http://bondfireinc.com/work/state-bags-e-commerce-design-development/). 
+The design for **State**’s [Hattie Ewok Backpack](https://www.statebags.com/products/hattie-ewok) is inspired by the Forest Moon of Endor (that’s in Star Wars for those of you who have been living light-years away). Also, the Rebel Alliance lining is 👌 For $295 you’ll get this great bag and for each bag sold, State hand-deliver a backpack packed with essential tools for success to an American child in need. Their website was designed by the great [Bondfire Inc](http://bondfireinc.com/work/state-bags-e-commerce-design-development/). 
 
 ![BE KIND.jpg](/uploads/BE%20KIND.jpg)
 
-At the moment it can feel like the world is on fire but with this [Be Kind Banner](https://www.etsy.com/listing/540974808/be-kind-banner-wood-banner-wood-sign) $16.95 you can remind your family or colleagues to delight in kind gestures. Shop lots of wood products made right here in the USA at [Woodshop](http://www.woodshopusa.com). 
+At the moment it can feel like the world is on fire but with this [Be Kind Banner](https://www.etsy.com/listing/540974808/be-kind-banner-wood-banner-wood-sign) $16.95 you can remind your family or colleagues to delight in kind gestures. Shop lots of wood products made right here in the USA at [**Woodshop**](http://www.woodshopusa.com). 
 
 ![KEEPCUP.jpg](/uploads/KEEPCUP.jpg)
 
-[Shopping mates](https://shoppingmates.siroop.ch/blog/nachhaltige-weihnachtsgeschenke/) recommend these [KeepCups](http://us.keepcup.com/keepcup-series/tasting-notes-brew-cork-series/fika.html) for $24. They’re made from fully tempered soda lime glass and the band is made with waste product from wine cork manufacture. Great for the coffee lovers and the earth conscious alike. 
+[Shopping mates](https://shoppingmates.siroop.ch/blog/nachhaltige-weihnachtsgeschenke/) recommend these [**KeepCups**](http://us.keepcup.com/keepcup-series/tasting-notes-brew-cork-series/fika.html) for $24. They’re made from fully tempered soda lime glass and the band is made with waste product from wine cork manufacture. Great for the coffee lovers and the earth conscious alike. 
 
 ![TADA-124f16.jpg](/uploads/TADA-124f16.jpg)
 
-Is there any home that couldn’t use a little more everyday celebration? We love this [Tada Emoji Embroidered Wall Hanging](https://www.etsy.com/uk/listing/200433048/embroidery-tada-emoji-embroidered-4-wall?ref=shop_home_active_14\) made by the brilliant [Jessica Harllee](http://jessicaharllee.com) for $70. We have one featuring the 👍 emoji in the Siteleaf office and it continually brightens our day. 
+Is there any home that couldn’t use a little more everyday celebration? We love this [Tada Emoji Embroidered Wall Hanging](https://www.etsy.com/uk/listing/200433048/embroidery-tada-emoji-embroidered-4-wall?ref=shop_home_active_14\) made by the brilliant [**Jessica Harllee**](http://jessicaharllee.com) for $70. We have one featuring the 👍 emoji in the Siteleaf office and it continually brightens our day. 
 
 ![NOURISH-38af27.jpg](/uploads/NOURISH-38af27.jpg)
 
-These Nourish snacks are ideal stocking stuffers for the health nut in your life. The [Double Chocolate Granola Bites](https://nourishsnacks.com/snacks/double-chocolate/) are loaded with whole grain oats, chia, and chocolate for $16.60. They're sure to satisfy your mind, body, and taste buds. 
+These **Nourish** snacks are ideal stocking stuffers for the health nut in your life. The [Double Chocolate Granola Bites](https://nourishsnacks.com/snacks/double-chocolate/) are loaded with whole grain oats, chia, and chocolate for $16.60. They're sure to satisfy your mind, body, and taste buds. 
 
 ***
 
