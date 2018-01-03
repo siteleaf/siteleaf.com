@@ -20,12 +20,11 @@ Sign up for a free [Zapier](https://zapier.com/zapbook/Siteleaf) account, from t
 
 <script src="https://zapier.com/zapbook/embed/widget.js?services=Siteleaf&container=true&limit=5,"></script>
 
-## How do I connect Siteleaf to Zapier?
+## How to connect Siteleaf to Zapier
 Log in to your [Zapier account](https://zapier.com/sign-up) or create a new account.
 Navigate to **Connected Accounts** from the top menu bar. Now click on **Connect new account** and search for **Siteleaf** Use your credentials to connect your Siteleaf account to Zapier.
 
 Once that's done you can start creating an automation! Use a pre-made Zap or create your own with the Zap Editor. Creating a Zap requires no coding knowledge and you'll be walked step-by-step through the setup. 
 
 ## Go forth and automate
-
 ![Do-Something-Great-clark-tibbs.jpg](/uploads/Do-Something-Great-clark-tibbs.jpg)
