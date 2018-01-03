@@ -6,9 +6,9 @@ image: "/uploads/siteleaf-banner-blue.png"
 
 ![siteleaf-banner-blue.png](/uploads/siteleaf-banner-blue.png)
 
-Life is simpler when people are able to communicate clearly, and the same is true for web apps. Zapier makes it easy for the tools we use everyday to communicate and automate workflow, so you can concentrate on the bigger creative tasks. 
+Zapier makes the tools you use everyday to communicate and automate your workflow, so you can concentrate on the bigger creative tasks. Making it easy for your emails to trigger something to happen in your time management tool, or your social media output to be saved in your cloud storage system. Before it was a struggle to get them all working in tandem. 
 
-Zapier makes it easy for your emails to trigger something to happen in your time management tool, or your social media output to be saved in your cloud storage system. Before it was a struggle to get them all working in tandem. Now that [Zapier](https://zapier.com/zapbook/Siteleaf/) has 1,000 integrations, you can choose your favorite tools and easily integrate them with Siteleaf.
+Now that [Zapier](https://zapier.com/zapbook/Siteleaf/) has 1,000 integrations, you can choose your favorite tools and easily integrate them with Siteleaf.
 
 ## How does Zapier work?
 With Zapier you can set up your own codeless integrations called "Zaps". Zaps will automatically send information from one tool to another, so you'll spend less time manually transferring data between tools you use everyday including Dropbox, Slack, Twitter, Typeform, Mailchimp, PayPal and 994 others.
@@ -25,3 +25,7 @@ Log in to your [Zapier account](https://zapier.com/sign-up) or create a new acco
 Navigate to **Connected Accounts** from the top menu bar. Now click on **Connect new account** and search for **Siteleaf** Use your credentials to connect your Siteleaf account to Zapier.
 
 Once that's done you can start creating an automation! Use a pre-made Zap or create your own with the Zap Editor. Creating a Zap requires no coding knowledge and you'll be walked step-by-step through the setup. 
+
+## Go forth and automate
+
+![Do-Something-Great-clark-tibbs.jpg](/uploads/Do-Something-Great-clark-tibbs.jpg)
