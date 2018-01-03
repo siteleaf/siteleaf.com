@@ -6,7 +6,7 @@ image: "/uploads/siteleaf-banner-blue.png"
 
 ![siteleaf-banner-blue.png](/uploads/siteleaf-banner-blue.png)
 
-Zapier makes the tools you use everyday to communicate and automate your workflow, so you can concentrate on the bigger creative tasks. Making it easy for your emails to trigger something to happen in your time management tool, or your social media output to be saved in your cloud storage system. Before it was a struggle to get them all working in tandem. 
+Zapier connect's the apps you use everyday to automate your work, so you can concentrate on the bigger creative tasks. Zapier makes it possible for your emails to trigger something to happen in your time management tool, or your social media output to be saved in your cloud storage system. Before it was a struggle to get them all working in tandem. 
 
 Now that [Zapier](https://zapier.com/zapbook/Siteleaf/) has 1,000 integrations, you can choose your favorite tools and easily integrate them with Siteleaf.
 
@@ -26,5 +26,5 @@ Navigate to **Connected Accounts** from the top menu bar. Now click on **Connect
 
 Once that's done you can start creating an automation! Use a pre-made Zap or create your own with the Zap Editor. Creating a Zap requires no coding knowledge and you'll be walked step-by-step through the setup. 
 
-## Go forth and automate
+### Go forth and automate
 ![Do-Something-Great-clark-tibbs.jpg](/uploads/Do-Something-Great-clark-tibbs.jpg)
