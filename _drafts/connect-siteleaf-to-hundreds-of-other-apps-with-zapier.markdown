@@ -1,9 +1,17 @@
 ---
-title: Connect Siteleaf to hundreds of other apps with Zapier
+title: Connect Siteleaf To 1000 Other Apps With Zapier
 date: 2017-12-01 16:08:00 -05:00
+image: "/uploads/siteleaf-banner-blue.png"
 ---
 
-[Zapier](https://zapier.com/zapbook/Siteleaf/) lets you connect Siteleaf to hundreds of other web services. Automated connections called Zaps, set up in minutes with no coding, can automate your day-to-day tasks and build workflows between apps that otherwise wouldn't be possible.
+![siteleaf-banner-blue.png](/uploads/siteleaf-banner-blue.png)
+
+Life is simpler when people are able to communicate clearly, and the same is true for web apps. Zapier makes it easy for the tools we use everyday to communicate and automate workflow, so you can concentrate on the bigger creative tasks. 
+
+Zapier makes it easy for your emails to trigger something to happen in your time management tool, or your social media output to be saved in your cloud storage system. Before it was a struggle to get them all working in tandem. Now that [Zapier](https://zapier.com/zapbook/Siteleaf/) has 1,000 integrations, you can choose your favorite tools and easily integrate them with Siteleaf.
+
+## How does Zapier work?
+With Zapier you can set up your own codeless integrations called "Zaps". Zaps will automatically send information from one tool to another, so you'll spend less time manually transferring data between tools you use everyday including Dropbox, Slack, Twitter, Typeform, Mailchimp, PayPal and 994 others.
 
 Each Zap has one app as the **Trigger**, where your information comes from and which causes one or more **Actions** in other apps, where your data gets sent automatically. 
 
@@ -13,7 +21,6 @@ Sign up for a free [Zapier](https://zapier.com/zapbook/Siteleaf) account, from t
 <script src="https://zapier.com/zapbook/embed/widget.js?services=Siteleaf&container=true&limit=5,"></script>
 
 ## How do I connect Siteleaf to Zapier?
-
 Log in to your [Zapier account](https://zapier.com/sign-up) or create a new account.
 Navigate to **Connected Accounts** from the top menu bar. Now click on **Connect new account** and search for **Siteleaf** Use your credentials to connect your Siteleaf account to Zapier.
 
