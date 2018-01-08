@@ -21,5 +21,5 @@ Navigate to **Connected Accounts** from the top menu bar. Now click on **Connect
 
 Once that's done you can start creating an automation! Use a pre-made Zap or create your own with the Zap Editor. Creating a Zap requires no coding knowledge and you'll be walked step-by-step through the setup. 
 
-### Go forth and automate
+## Go forth and automate
 ![Do-Something-Great-clark-tibbs.jpg](/uploads/Do-Something-Great-clark-tibbs.jpg)
