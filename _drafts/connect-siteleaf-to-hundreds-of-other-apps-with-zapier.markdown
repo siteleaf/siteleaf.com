@@ -1,6 +1,6 @@
 ---
 title: Connect Siteleaf To 1000 Other Apps With Zapier
-date: 2017-12-01 16:08:00 -05:00
+date: 2018-01-10 16:08:00 -05:00
 image: "/uploads/siteleaf-banner-blue.png"
 ---
 
