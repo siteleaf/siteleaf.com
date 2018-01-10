@@ -1,6 +1,8 @@
 ---
 title: Connect Siteleaf To 1000 Other Apps With Zapier
 date: 2018-01-10 16:08:00 -05:00
+tags:
+- announcement
 image: "/uploads/siteleaf-banner-blue.png"
 ---
 
@@ -9,6 +11,9 @@ image: "/uploads/siteleaf-banner-blue.png"
 Zapier connect's the apps you use every day to automate your work, so you can concentrate on the bigger creative tasks. Zapier makes it possible for your emails to trigger a new task in your time management tool, or your social media output to be saved in your cloud storage system. 
 
 Before it was a struggle to get them all working in tandem. Now that [Zapier](https://zapier.com/zapbook/Siteleaf/) has 1,000 integrations, you can choose your favorite tools and easily integrate them with Siteleaf.
+
+
+
 
 ## How does Zapier work?
 With Zapier you can set up your own codeless integrations called "Zaps". Zaps will automatically send information from one tool to another, so you'll spend less time manually transferring data between tools you use every day including Dropbox, Slack, Twitter, Typeform, Mailchimp, PayPal and 994(!) others.
