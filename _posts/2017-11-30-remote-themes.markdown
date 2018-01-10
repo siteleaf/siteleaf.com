@@ -12,6 +12,9 @@ Remote themes are similar to [Gem-based themes](https://learn.siteleaf.com/theme
 
 Jekyll themes package layouts, includes, and stylesheets in a way that can be overridden by your site’s content. It’s a great way to maintain a separation of content and code, and makes it possible to share themes across multiple sites.
 
+
+
+
 To build your site with any public, GitHub-hosted theme, add the following to your site's `_config.yml` file (or Site Settings in Siteleaf):
 
 ```yaml
