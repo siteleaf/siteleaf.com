@@ -14,6 +14,9 @@ Here are a few things that we would love to wake up and find under the tree:
 
 [**Girl’s Night In**](https://shop.girlsnightin.co) have a selection of goodies for any homebody on your list. We love their [going home after this keychain](https://shop.girlsnightin.co/collections/apparel/products/keychain), because it lets everyone know exactly where you would rather be for just $15. 
 
+
+
+
 ![CALENDAR-ef7772.jpg](/uploads/CALENDAR-ef7772.jpg)
 
 This simple typographic [2018 Wall Calendar](https://rationale-design.com/shop/sans-wall-calendar/) created by [**Rationale Design**](https://rationale-design.com/) provides a beautiful and functional way to keep track of next year’s events for $25. It’s perfect for those who appreciate order and sleek design.
