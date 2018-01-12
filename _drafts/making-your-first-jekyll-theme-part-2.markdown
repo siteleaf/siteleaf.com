@@ -25,7 +25,7 @@ gem install jekyll
 
 You can use the following article if you’re trying to [install Jekyll on a Windows machine](http://jekyllrb.com/docs/windows/).
 
-If you’re planning for your user base to use Siteleaf or GitHub Pages, you can install the [official GitHub pages-gem](https://github.com/github/pages-gem), but make a note of the specific gems you’re using, as you’re going to need them later in the development process. You’ll should also install [Bundler](http://bundler.io/), which will help you to manage all the gems you are using in your gem theme.
+If you’re planning for your user base to use Siteleaf or GitHub Pages, you can install the [official GitHub pages-gem](https://github.com/github/pages-gem), but make a note of the specific gems you’re using, as you’re going to need them later in the development process. You should also install [Bundler](http://bundler.io/), which will help you to manage all the gems you are using in your gem theme.
 
 Finally, create an account on [RubyGems.org](https://rubygems.org/) - you’ll need this account later on when you want to submit your theme gem so others can install it easily.
 
@@ -150,7 +150,5 @@ remote_theme: daviddarnes/alembic@2.3.1
 After your theme is live, you’ll need to do a couple of things to ensure your theme is doing the job you intended it to. The first thing to do is to test the theme, so try to install and use it [like any other Jekyll theme](https://jekyllrb.com/docs/themes/#installing-a-theme). Take note of any hiccups you find or anything that the theme user may find difficult to grasp and implement.
 
 If you need to make updates or fixes, you’ll want to [increment the version appropriately](http://guides.rubygems.org/patterns/#semantic-versioning) of the theme in the `.gemspec`, produce another build and push the `.gem` file matching that version number to RubyGems.org.
-
----
 
 Feel free to [tweet me with any questions](https://twitter.com/DavidDarnes) you have on what I’ve talked about. You can also chat with the [Siteleaf community](http://chat.siteleaf.com/) for further questions and to share your development work.
