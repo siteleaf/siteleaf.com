@@ -19,8 +19,8 @@ In [Part 1](https://www.siteleaf.com/blog/making-your-first-jekyll-theme-part-1/
 
 Before we get stuck in, you’re going to need a couple of things. It’s good to have at least a basic understanding of Jekyll; the file structure is very similar to making a Jekyll site, as is the development process. Unsurprisingly, you’ll actually need Jekyll as well, which can be installed using Ruby. For Mac users, this will be quite straightforward, as Ruby comes preinstalled. This means you can just use the following command in your command line tool of choice:
 
-```
-gem install jekyll
+```sh
+$ gem install jekyll
 ```
 
 You can use the following article if you’re trying to [install Jekyll on a Windows machine](http://jekyllrb.com/docs/windows/).
@@ -35,15 +35,15 @@ Finally, create an account on [RubyGems.org](https://rubygems.org/) - you’ll n
 
 To begin, initialize a new boilerplate theme using this handy command that’s built directly into Jekyll:
 
-```
-jekyll new-theme my-theme
+```sh
+$ jekyll new-theme my-theme
 ```
 
 This will build out all the files you’ll need for your theme into a new directory with the same name you chose in the command (in my example, I just put `my-theme`).
 
 We need to add some additional information to the theme before we can move on: a summary and a URL that it’s related to. Open the newly generated `.gemspec` file (named the same as your theme name) and locate the lines marked `spec.summary` and `spec.homepage`:
 
-```
+```rb
 spec.summary       = %q{A short description of my theme}
 spec.homepage      = "http://website.com"
 ```
@@ -52,13 +52,13 @@ In my code example above, I’ve added a summary for my theme within the bracket
 
 If you look further down in the `.gemspec` file, you’ll see some lines starting with `spec.add_runtime_dependency` and `spec.add_development_dependency`. These are where we can add the gems our theme needs in order to work, runtime gems for when the theme is being used and development for when the theme is being developed. To install these gems, use the following command:
 
-```
-bundle install
+```sh
+$ bundle install
 ```
 
 To preview your theme and to make sure it’s working as expected, create a new file in the root directory of theme called `index.html` with something like the following:
 
-```
+```md
 ---
 title: Home
 layout: default
@@ -68,8 +68,8 @@ layout: default
 
 Adding this file will allow you to build and view your Jekyll theme locally, as if it was a regular Jekyll site. To build and serve, use the following command:
 
-```
-bundle exec jekyll serve --watch
+```sh
+$ bundle exec jekyll serve --watch
 ```
 
 ![Response you'll see when running the bundle command in you CLI](/uploads/Bundle%20command.png)
@@ -110,14 +110,14 @@ Once you’re happy with the first iteration of your theme and you’ve pushed a
 
 To build your gem, use the following command in your command line tool:
 
-```
-gem build my-theme.gemspec
+```sh
+$ gem build my-theme.gemspec
 ```
 
 Once you’ve done this, a new file will appear in the root of your project - something along the lines of `my-theme-0.1.0.gem`. The file name is comprised of your theme name and the current version in your `.gemspec` file. Next, we need to push, and therefore publish, the gem. Use the following command to do so:
 
-```
-gem push my-theme-0.1.0.gem
+```sh
+$ gem push my-theme-0.1.0.gem
 ```
 
 When you submit a gem for the first time, your command line tool will ask you to provide your RubyGems.org login details. Once you’ve signed in, your gem will be pushed up and published! And with that, your first Jekyll theme gem has been created. You’ll then have a page on RubyGems.org, [similar to my theme page](https://rubygems.org/gems/alembic-jekyll-theme).
@@ -130,7 +130,7 @@ Since releasing [Part 1](https://www.siteleaf.com/blog/making-your-first-jekyll-
 
 Installing a theme requires the use of a newly whitelisted gem called [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme). You add it to your Jekyll site just like any other gem plugin. After installing it, you can use the key `remote_theme` in your `_config.yml`, followed by the username of the theme creator and the name of the theme separated by a / - for example:
 
-```
+```yaml
 plugins:
     - jekyll-remote-theme
     
@@ -141,7 +141,7 @@ So, how does this affect our theme development process? Well, you’ll need to c
 
 The remote theme plugin can hook into repo releases as well as branches. Using releases is a great way to manage versions of your theme and it’s ideal to help people lock down the version of your theme that they want to use:
 
-```
+```yaml
 remote_theme: daviddarnes/alembic@2.3.1
 ```
 
