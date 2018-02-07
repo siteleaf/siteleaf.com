@@ -1,6 +1,6 @@
 ---
 title: Able Parris
-position: 44
+position: 45
 image: "/uploads/gallery__ableparris.jpg"
 link: http://www.ableparris.com/
 ---

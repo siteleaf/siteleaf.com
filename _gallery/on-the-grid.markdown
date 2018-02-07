@@ -1,7 +1,7 @@
 ---
 title: On the Grid
 published: false
-position: 32
+position: 33
 image: "/uploads/gallery__onthegrid.jpg"
 link: http://www.onthegrid.city/
 ---
