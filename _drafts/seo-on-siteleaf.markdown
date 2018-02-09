@@ -6,6 +6,8 @@ description: We have had some requests recently for a blog post about SEO on Sit
   and we are here to deliver.
 ---
 
+![](/uploads/siteLeaf_seo_blogCover_020818-04.jpg)
+
 SEO (Search Engine Optimization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site. There are some brilliant sources of information on SEO out there, like this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
 
 Here are four essential SEO optimizations you should consider adding to your Siteleaf site:
