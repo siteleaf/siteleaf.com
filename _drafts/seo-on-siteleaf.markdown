@@ -41,17 +41,11 @@ We love the [`Jekyll-SEO-Tag plugin`](https://github.com/jekyll/jekyll-seo-tag).
 `Jekyll-SEO-Tag` adds the following metadata tags to your site:
 
 * Page title, with site title or description appended
-
 * Page description
-
 * Canonical URL
-
 * Next and previous URLs on paginated pages
-
 * [JSON-LD Site and post metadata](https://developers.google.com/structured-data/) for richer indexing
-
 * [Open Graph](http://ogp.me/) title, description, site title, and URL (for Facebook, LinkedIn, etc.)
-
 * [Twitter Summary Card](https://dev.twitter.com/cards/overview) metadata
 
 The `Jekyll-SEO-Tag` plugin works for most websites with only a few steps. I recommend reading this [blog post](https://blog.webjeda.com/optimize-jekyll-seo) from 2016 to see how far we’ve come improving SEO in Jekyll, as well as giving you an understanding of what precisely the `Jekyll-SEO-Tag` plugin is doing for you.
