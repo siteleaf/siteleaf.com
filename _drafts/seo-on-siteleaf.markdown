@@ -37,6 +37,8 @@ Structured URLs are also useful when users share your website across social medi
 
 URLs are a minor ranking factor for SEO, so while using a URL rich in keywords can improve your site’s visibility the URLs, on their own structured URLs don’t have a significant impact on your website’s ability to get to the top of Google.
 
+![artem-sapegin-180146.jpg](/uploads/artem-sapegin-180146.jpg)
+
 ## Jekyll-SEO-Tag
 
 We love the [`Jekyll-SEO-Tag plugin`](https://github.com/jekyll/jekyll-seo-tag). It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the `Jekyll-SEO-Tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
