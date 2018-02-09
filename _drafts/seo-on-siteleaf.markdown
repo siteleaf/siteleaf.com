@@ -9,10 +9,10 @@ SEO (Search Engine Optimization) helps your website stand a chance of appearing 
 
 Here are four essential SEO optimizations you should consider adding to your Siteleaf site:
 
-*Sitemap
-*Structured URLs
-*Jekyll-SEO-Tag
-*Sharing Debugger
+* [Sitemap](/seo-on-siteleaf/#sitemap)
+* [Structured URLs](/seo-on-siteleaf/#structured-urls)
+* [Jekyll-SEO-Tag](/seo-on-siteleaf/#jekyll-seo-tag)
+* [Sharing Debugger](/seo-on-siteleaf/#sharing-debugger)
 
 ## Sitemap
 [Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if you have a large site. Sitemaps can be generated with a whitelisted Jekyll plugin ‘Jekyll-sitemap’. 
