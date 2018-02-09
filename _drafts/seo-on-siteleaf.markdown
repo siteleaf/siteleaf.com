@@ -29,9 +29,11 @@ In Siteleaf you can edit your page’s or post’s URL slug, which is a great wa
 
 This is a "semantically accurate" URL (it accurately describes its destination):
 
+
 **https://rogertheracoon.com/tips/winter-menu**
 
 This is just a confusing mess:
+
 
 **https://rogertheracoon.com/880jdufl**
 
