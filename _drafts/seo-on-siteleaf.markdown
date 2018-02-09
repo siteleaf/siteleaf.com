@@ -17,16 +17,16 @@ Here are four essential SEO optimizations you should consider adding to your Sit
 ## Sitemap
 [Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if you have a large site. Sitemaps can be generated with a whitelisted Jekyll plugin `Jekyll-sitemap`. 
 
-To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called ‘gems’, with an entry called ‘jekyll-sitemap’. Save, publish, and you’re done! This will automatically create a ‘/sitemap.xml’ for you.
+To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called 'gems', with an entry called 'jekyll-sitemap'. Save, publish, and you’re done! This will automatically create a '/sitemap.xml' for you.
 
 ## Structured URLs
 In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. For example: 
 
 This is a "semantically accurate" URL (it accurately describes its destination):
-https://rogertheracoon.com/tips/winter-menu
+__https://rogertheracoon.com/tips/winter-menu__
 
 This is just a confusing mess:
-https://rogertheracoon.com/880jdufl 
+__https://rogertheracoon.com/880jdufl__ 
 
 With a semantically accurate URL if, for whatever reason, the title of this page didn’t display a human person could read the URL and would have an understanding of the page’s content. This knowledge will encourage them to click on the link, instead of scaring them away with a load of letters they don’t understand. 
 
@@ -35,9 +35,9 @@ Structured URLs are also useful when users share your website across social medi
 URLs are a minor ranking factor for SEO, so while using a URL rich in keywords can improve your site’s visibility the URLs, on their own structured URLs don’t have a significant impact on your website’s ability to get to the top of Google. 
 
 ## Jekyll-SEO-Tag
-We love the [Jekyll-SEO-Tag plugin](https://github.com/jekyll/jekyll-seo-tag). It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the Jekyll-SEO-Tag plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content. 
+We love the '[Jekyll-SEO-Tag plugin]'(https://github.com/jekyll/jekyll-seo-tag). It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the 'Jekyll-SEO-Tag' plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content. 
 
-Jekyll-SEO-Tag adds the following metadata tags to your site:
+'Jekyll-SEO-Tag' adds the following metadata tags to your site:
 * Page title, with site title or description appended
 * Page description
 * Canonical URL
@@ -46,21 +46,22 @@ Jekyll-SEO-Tag adds the following metadata tags to your site:
 * [Open Graph](http://ogp.me/) title, description, site title, and URL (for Facebook, LinkedIn, etc.)
 * [Twitter Summary Card](https://dev.twitter.com/cards/overview) metadata
 
-The Jekyll-SEO-Tag plugin works for most websites with only a few steps. I recommend reading this [blog post](https://blog.webjeda.com/optimize-jekyll-seo) from 2016 to see how far we’ve come improving SEO in Jekyll, as well as giving you an understanding of what precisely the Jekyll-SEO-Tag plugin is doing for you. 
+The 'Jekyll-SEO-Tag' plugin works for most websites with only a few steps. I recommend reading this [blog post](https://blog.webjeda.com/optimize-jekyll-seo) from 2016 to see how far we’ve come improving SEO in Jekyll, as well as giving you an understanding of what precisely the 'Jekyll-SEO-Tag' plugin is doing for you. 
 
 ### Setting up the Jekyll-SEO-Tag plugin
-To enable the Jekyll-SEO-Tag plugin add the following to your site's ‘Gemfile’:
+To enable the 'Jekyll-SEO-Tag' plugin add the following to your site's 'Gemfile':
 
 ```sh
 gem 'jekyll-seo-tag'
+```sh
 
-And then add this to your site's ‘_config.yml’ file:
+And then add this to your site's '_config.yml' file:
 
 ```yaml
 plugins:
   - jekyll-seo-tag
 
-And finally add this right before ‘</head>’ in your site's template:
+And finally add this right before '</head>' in your site's template:
 
 ```liquid
 {% raw %}
@@ -68,24 +69,24 @@ And finally add this right before ‘</head>’ in your site's template:
 {% endraw %}
 
 ### Using the Jekyll-SEO-Tag plugin
-The Jekyll-SEO-Tag plugin will include any of the following list if included in your site's ‘_config.yml’. We recommend inputting as many of these as you want when you’re setting up the Jekyll-SEO-Tag plugin. Don’t worry, if you don’t want to add any of these fields because you don’t use Twitter for your business, the Jekyll-SEO-Tag will just ignore that potential input if it’s not included in your ‘_config.yml’.
+The 'Jekyll-SEO-Tag' plugin will include any of the following list if included in your site's '_config.yml'. We recommend inputting as many of these as you want when you’re setting up the 'Jekyll-SEO-Tag' plugin. Don’t worry, if you don’t want to add any of these fields because you don’t use Twitter for your business, the 'Jekyll-SEO-Tag' will just ignore that potential input if it’s not included in your '_config.yml'.
 
-* ‘title’ - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
-* ‘description’ - a short description of your website (e.g., A website featuring gifts for owl lovers)
-* ‘url’ - the full URL to your site
-* ‘author’ - global author information 
-* ‘logo’ - URL to a site-wide logo (e.g., /assets/fox-selfie.png)
+* 'title' - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
+* 'description' - a short description of your website (e.g., A website featuring gifts for owl lovers)
+* 'url' - the full URL to your site
+* 'author' - global author information 
+* 'logo' - URL to a site-wide logo (e.g., /assets/fox-selfie.png)
 
-You can add your site's ‘twitter’ handle by inputting:
+You can add your site's Twitter handle by inputting:
 
 ```yaml
 twitter: 
   username: rogertheracoon
 
-For ‘facebook’ you can use the following properties:
-* ‘facebook:app_id’ - a Facebook app ID for Facebook insights
-* ‘facebook:publisher’ - a Facebook page URL or ID of the publishing entity
-* ‘facebook:admins’ - a Facebook user ID for domain insights linked to a personal account
+For Facebook you can use the following properties:
+* 'facebook:app_id' - a Facebook app ID for Facebook insights
+* 'facebook:publisher' - a Facebook page URL or ID of the publishing entity
+* 'facebook:admins' - a Facebook user ID for domain insights linked to a personal account
 
 You can add one or more of these properties by inputting:  
 
@@ -95,9 +96,9 @@ facebook:
    publisher: 987654321   
    admins: 987654321
 
-You can [specify social profiles](https://developers.google.com/search/docs/data-types/social-profile) using ‘social’: 
-* ‘name’ - If the user or organization name differs from the site's name
-* ‘links’ - An array of links to social media profiles.
+You can [specify social profiles](https://developers.google.com/search/docs/data-types/social-profile) using 'social': 
+* 'name' - If the user or organization name differs from the site's name
+* 'links' - An array of links to social media profiles.
 You can add one or more of these properties by inputting:  
 
 ```sh
@@ -109,7 +110,7 @@ social:
     - https://www.facebook.com/roger.racoon
     - https://www.linkedin.com/in/rogertheracoon
 
-Use ‘google_site_verification’ for verifying ownership via Google webmaster tools - or you can verify ownership with several services at once by inputting:  
+Use 'google_site_verification' for verifying ownership via Google webmaster tools - or you can verify ownership with several services at once by inputting:  
 
 ```sh
 webmaster_verifications:
@@ -117,7 +118,7 @@ webmaster_verifications:
   bing: 987654321
   alexa: 987654321
 
-Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [Jekyll-SEO-Tag](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
+Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the '[Jekyll-SEO-Tag]'(https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
 
 ## Sharing Debugger
 You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO features including the title, location, image, and description. It will also tell you any missing SEO types that you could include in the future.
