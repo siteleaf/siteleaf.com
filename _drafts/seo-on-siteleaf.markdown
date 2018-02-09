@@ -114,7 +114,7 @@ You can [specify social profiles](https://developers.google.com/search/docs/data
 
 You can add one or more of these properties by inputting:  
 
-```sh
+```yaml
 social:
   name: Roger the Racoon
   links:
@@ -126,7 +126,7 @@ social:
     
 Use `google_site_verification` for verifying ownership via Google webmaster tools - or you can verify ownership with several services at once by inputting:  
     
-```sh
+```yaml
   webmaster_verifications:
     google: 987654321
     bing: 987654321
