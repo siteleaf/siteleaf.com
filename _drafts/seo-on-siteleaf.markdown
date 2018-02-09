@@ -68,7 +68,7 @@ plugins:
     
 And finally add this right before `</head>` in your site's template:
     
-```liquid
+```
 {% raw %}
 {% seo %}
 {% endraw %}
