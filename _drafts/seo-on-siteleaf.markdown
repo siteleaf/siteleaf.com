@@ -1,6 +1,7 @@
 ---
 title: SEO on Siteleaf
 date: 2018-02-09 14:26:00 -05:00
+image: "/uploads/siteLeaf_seo_blogCover_020818-04.jpg"
 description: We have had some requests recently for a blog post about SEO on Siteleaf,
   and we are here to deliver.
 ---
