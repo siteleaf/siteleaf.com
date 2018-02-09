@@ -134,7 +134,7 @@ Hats off to [Ben Balter](https://github.com/benbalter) and the open source contr
 ## Sharing Debugger
 You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO features including the title, location, image, and description. It will also tell you any missing SEO types that you could include in the future.
     
-If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your new site / page / post through the sharing debugger to see that the Jekyll-SEO-Tag plugin is working as you expect. 
+If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your new site / page / post through the sharing debugger to see that the `Jekyll-SEO-Tag` plugin is working as you expect. 
     
 Facebook doesn’t automatically scrape for new content for URLs automatically. So, it’s good practice to manually scrape your site using their debugger to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
     
