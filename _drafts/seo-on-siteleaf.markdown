@@ -77,7 +77,9 @@ And finally add this right before `</head>` in your site's template:
 ```
     
 ### Using the Jekyll-SEO-Tag plugin
-The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. Don’t worry, if you don’t want to add any of these fields because you don’t use Twitter for your business, the `Jekyll-SEO-Tag` will just ignore that potential input if it’s not included in your `_config.yml`.
+The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. 
+
+Don’t worry, if you don’t want to add any of these fields because you don’t use Twitter for your business, the `Jekyll-SEO-Tag` will just ignore that potential input if it’s not included in your `_config.yml`.
     
 * `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
 * `description` - a short description of your website (e.g., A website featuring gifts for owl lovers)
