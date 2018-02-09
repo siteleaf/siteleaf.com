@@ -142,4 +142,4 @@ Facebook doesn’t automatically scrape for new content for URLs automatically. 
     
 <small>We have had some requests recently for a blog post about SEO on Siteleaf, and we are here to deliver. Is there something you would love for us to cover on the blog? Let us [know](https://twitter.com/siteleaf)! 
     
-If you have any questions about SEO on Siteleaf get in touch with us on [twitter](https://twitter.com/siteleaf) & chat with the [Siteleaf community](http://chat.siteleaf.com/) on Slack. </small>
+<small>If you have any questions about SEO on Siteleaf get in touch with us on [twitter](https://twitter.com/siteleaf) & chat with the [Siteleaf community](http://chat.siteleaf.com/) on Slack. 
