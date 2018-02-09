@@ -17,7 +17,7 @@ Here are four essential SEO optimizations you should consider adding to your Sit
 ## Sitemap
 [Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if you have a large site. Sitemaps can be generated with a whitelisted Jekyll plugin `Jekyll-sitemap`. 
 
-To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called 'gems', with an entry called 'jekyll-sitemap'. Save, publish, and you’re done! This will automatically create a '/sitemap.xml' for you.
+To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called `gems`, with an entry called 'jekyll-sitemap'. Save, publish, and you’re done! This will automatically create a '/sitemap.xml' for you.
 
 ## Structured URLs
 In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. For example: 
