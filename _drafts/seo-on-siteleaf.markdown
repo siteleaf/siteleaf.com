@@ -136,6 +136,9 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
 Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
 ## Sharing Debugger
+
+![Screen Shot of Siteleaf on Facebook Sharing Debugger](/uploads/Screen%20Shot%202018-02-09%20at%2015.55.08.png)
+
 You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO features including the title, location, image, and description. It will also tell you any missing SEO types that you could include in the future.
     
 If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your new site / page / post through the sharing debugger to see that the `Jekyll-SEO-Tag` plugin is working as you expect. 
