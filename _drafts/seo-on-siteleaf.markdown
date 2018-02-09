@@ -58,80 +58,86 @@ To enable the `Jekyll-SEO-Tag` plugin add the following to your site’s `Gemfil
 gem 'jekyll-seo-tag'
 ```
     
-    And then add this to your site's `_config.yml` file:
+And then add this to your site's `_config.yml` file:
     
-    ```yaml
-    plugins:
-      - jekyll-seo-tag
+```yaml
+plugins:
+   - jekyll-seo-tag
+```
     
-    And finally add this right before `</head>` in your site's template:
+And finally add this right before `</head>` in your site's template:
     
-    ```liquid
-    {% raw %}
-    {% seo %}
-    {% endraw %}
+```liquid
+{% raw %}
+{% seo %}
+{% endraw %}
+```
     
-    ### Using the Jekyll-SEO-Tag plugin
-    The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. Don’t worry, if you don’t want to add any of these fields because you don’t use Twitter for your business, the `Jekyll-SEO-Tag` will just ignore that potential input if it’s not included in your `_config.yml`.
+### Using the Jekyll-SEO-Tag plugin
+The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. Don’t worry, if you don’t want to add any of these fields because you don’t use Twitter for your business, the `Jekyll-SEO-Tag` will just ignore that potential input if it’s not included in your `_config.yml`.
     
-    * `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
-    * `description` - a short description of your website (e.g., A website featuring gifts for owl lovers)
-    * `url` - the full URL to your site
-    * `author` - global author information 
-    * `logo` - URL to a site-wide logo (e.g., /assets/fox-selfie.png)
+* `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
+* `description` - a short description of your website (e.g., A website featuring gifts for owl lovers)
+* `url` - the full URL to your site
+* `author` - global author information 
+* `logo` - URL to a site-wide logo (e.g., /assets/fox-selfie.png)
     
-    You can add your site's Twitter handle by inputting:
+You can add your site's Twitter handle by inputting:
     
-    ```yaml
-    twitter: 
-      username: rogertheracoon
+```yaml
+twitter: 
+  username: rogertheracoon
+```
     
-    For Facebook you can use the following properties:
-    * `facebook:app_id` - a Facebook app ID for Facebook insights
-    * `facebook:publisher` - a Facebook page URL or ID of the publishing entity
-    * `facebook:admins` - a Facebook user ID for domain insights linked to a personal account
+For Facebook you can use the following properties:
+* `facebook:app_id` - a Facebook app ID for Facebook insights
+* `facebook:publisher` - a Facebook page URL or ID of the publishing entity
+* `facebook:admins` - a Facebook user ID for domain insights linked to a personal account
     
-    You can add one or more of these properties by inputting:  
+You can add one or more of these properties by inputting:  
     
-    ```yaml
-    facebook:
-       app_id: 987654321
-       publisher: 987654321   
-       admins: 987654321
+```yaml
+facebook:
+  app_id: 987654321
+  publisher: 987654321   
+  admins: 987654321
+```
     
-    You can [specify social profiles](https://developers.google.com/search/docs/data-types/social-profile) using `social`: 
-    * `name` - If the user or organization name differs from the site's name
-    * `links` - An array of links to social media profiles.
-    You can add one or more of these properties by inputting:  
+You can [specify social profiles](https://developers.google.com/search/docs/data-types/social-profile) using `social`: 
+* `name` - If the user or organization name differs from the site's name
+* `links` - An array of links to social media profiles.
+
+You can add one or more of these properties by inputting:  
+
+```sh
+social:
+  name: Roger the Racoon
+  links:
+    - https://twitter.com/rogertheracoon
+    - https://www.instagram/rogerracoon
+    - https://www.facebook.com/roger.racoon
+    - https://www.linkedin.com/in/rogertheracoon
+```
     
-    ```sh
-    social:
-      name: Roger the Racoon
-      links:
-        - https://twitter.com/rogertheracoon
-        - https://www.instagram/rogerracoon
-        - https://www.facebook.com/roger.racoon
-        - https://www.linkedin.com/in/rogertheracoon
+Use `google_site_verification` for verifying ownership via Google webmaster tools - or you can verify ownership with several services at once by inputting:  
     
-    Use `google_site_verification` for verifying ownership via Google webmaster tools - or you can verify ownership with several services at once by inputting:  
+```sh
+  webmaster_verifications:
+    google: 987654321
+    bing: 987654321
+    alexa: 987654321
     
-    ```sh
-    webmaster_verifications:
-      google: 987654321
-      bing: 987654321
-      alexa: 987654321
+Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [Jekyll-SEO-Tag]`(https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
-    Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [Jekyll-SEO-Tag]`(https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
+## Sharing Debugger
+You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO features including the title, location, image, and description. It will also tell you any missing SEO types that you could include in the future.
     
-    ## Sharing Debugger
-    You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO features including the title, location, image, and description. It will also tell you any missing SEO types that you could include in the future.
+If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your new site / page / post through the sharing debugger to see that the Jekyll-SEO-Tag plugin is working as you expect. 
     
-    If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your new site / page / post through the sharing debugger to see that the Jekyll-SEO-Tag plugin is working as you expect. 
+Facebook doesn’t automatically scrape for new content for URLs automatically. So, it’s good practice to manually scrape your site using their debugger to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
     
-    Facebook doesn’t automatically scrape for new content for URLs automatically. So, it’s good practice to manually scrape your site using their debugger to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
+---
     
-    ---
+<small>We have had some requests recently for a blog post about SEO on Siteleaf, and we are here to deliver. Is there something you would love for us to cover on the blog? Let us [know](https://twitter.com/siteleaf)! 
     
-    We have had some requests recently for a blog post about SEO on Siteleaf, and we are here to deliver. Is there something you would love for us to cover on the blog? Let us [know](https://twitter.com/siteleaf)! 
-    
-    If you have any questions about SEO on Siteleaf get in touch with us on [twitter](https://twitter.com/siteleaf) & chat with the [Siteleaf community](http://chat.siteleaf.com/) on Slack. 
+If you have any questions about SEO on Siteleaf get in touch with us on [twitter](https://twitter.com/siteleaf) & chat with the [Siteleaf community](http://chat.siteleaf.com/) on Slack. </small>
