@@ -25,7 +25,7 @@ To enable sitemaps, head into your Site Settings and add a new [list metadata](h
 
 In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. For example:
 
-This is a "semantically accurate" URL (it accurately describes its destination): __https://rogertheracoon.com/tips/winter-menu__
+This is a 'semantically accurate' URL (it accurately describes its destination): __https://rogertheracoon.com/tips/winter-menu__
 
 This is just a confusing mess: __https://rogertheracoon.com/880jdufl__
 
