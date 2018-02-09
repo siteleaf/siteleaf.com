@@ -127,6 +127,7 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
     google: 987654321
     bing: 987654321
     alexa: 987654321
+```
     
 Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
