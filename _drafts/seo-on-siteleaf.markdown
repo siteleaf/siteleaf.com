@@ -10,11 +10,8 @@ SEO (Search Engine Optimization) helps your website stand a chance of appearing 
 Here are four essential SEO optimizations you should consider adding to your Siteleaf site:
 
 * [Sitemap](/seo-on-siteleaf/#sitemap)
-
 * [Structured URLs](/seo-on-siteleaf/#structured-urls)
-
 * [Jekyll-SEO-Tag](/seo-on-siteleaf/#jekyll-seo-tag)
-
 * [Sharing Debugger](/seo-on-siteleaf/#sharing-debugger)
 
 ## Sitemap
@@ -27,15 +24,9 @@ To enable sitemaps, head into your Site Settings and add a new [list metadata](h
 
 In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. For example:
 
-This is a "semantically accurate" URL (it accurately describes its destination):
+This is a "semantically accurate" URL (it accurately describes its destination): __https://rogertheracoon.com/tips/winter-menu__
 
-
-**https://rogertheracoon.com/tips/winter-menu**
-
-This is just a confusing mess:
-
-
-**https://rogertheracoon.com/880jdufl**
+This is just a confusing mess: __https://rogertheracoon.com/880jdufl__
 
 With a semantically accurate URL if, for whatever reason, the title of this page didn’t display a human person could read the URL and would have an understanding of the page’s content. This knowledge will encourage them to click on the link, instead of scaring them away with a load of letters they don’t understand.
 
