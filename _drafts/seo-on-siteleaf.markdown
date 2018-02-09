@@ -15,7 +15,7 @@ Here are four essential SEO optimizations you should consider adding to your Sit
 * [Sharing Debugger](/seo-on-siteleaf/#sharing-debugger)
 
 ## Sitemap
-[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if you have a large site. Sitemaps can be generated with a whitelisted Jekyll plugin ‘Jekyll-sitemap’. 
+[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if you have a large site. Sitemaps can be generated with a whitelisted Jekyll plugin `Jekyll-sitemap`. 
 
 To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called ‘gems’, with an entry called ‘jekyll-sitemap’. Save, publish, and you’re done! This will automatically create a ‘/sitemap.xml’ for you.
 
