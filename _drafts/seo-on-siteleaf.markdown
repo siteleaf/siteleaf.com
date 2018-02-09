@@ -128,7 +128,7 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
     bing: 987654321
     alexa: 987654321
     
-Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [Jekyll-SEO-Tag]`(https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
+Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
 ## Sharing Debugger
 You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO features including the title, location, image, and description. It will also tell you any missing SEO types that you could include in the future.
