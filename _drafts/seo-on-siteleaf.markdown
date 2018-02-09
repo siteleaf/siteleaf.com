@@ -39,6 +39,8 @@ URLs are a minor ranking factor for SEO, so while using a URL rich in keywords c
 
 ## Jekyll-SEO-Tag
 
+![Screen Shot 2018-02-09 at 4.10.27 PM.png](/uploads/Screen%20Shot%202018-02-09%20at%204.10.27%20PM.png)
+
 We love the [`Jekyll-SEO-Tag plugin`](https://github.com/jekyll/jekyll-seo-tag). It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the `Jekyll-SEO-Tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
 
 `Jekyll-SEO-Tag` adds the following metadata tags to your site:
