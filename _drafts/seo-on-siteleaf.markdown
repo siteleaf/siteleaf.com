@@ -57,7 +57,7 @@ The `Jekyll-SEO-Tag` plugin works for most websites with only a few steps. I rec
 
 To enable the `Jekyll-SEO-Tag` plugin add the following to your site’s `Gemfile`:
 
-```
+```sh
 gem 'jekyll-seo-tag'
 ```
     
