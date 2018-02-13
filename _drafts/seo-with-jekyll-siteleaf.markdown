@@ -21,8 +21,6 @@ Here are our top tips to consider when optimizing your Siteleaf site's SEO:
 * [Optomize for Sharing](/seo-on-siteleaf/#optomize-for-sharing)
 * [Write with SEO in mind](/seo-on-siteleaf/#write-with-seo-in-mind)
 
-To more fully understand SEO check out this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
-
 ## Sitemap
 
 [Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly large. Sitemaps can be generated with a whitelisted Jekyll plugin [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap).
@@ -201,6 +199,8 @@ There are lots of talented and dedicated people writing online. When you link to
 Consistently linking to great content is a way of putting a stamp of quality on your site. Spammy sites tend to link to a far more significant percentage of junk, while great sites typically link to other great sites.  
 
 ![you-got-this.jpg](/uploads/you-got-this.jpg)
+
+To more fully understand SEO check out this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
     
 ---
     
