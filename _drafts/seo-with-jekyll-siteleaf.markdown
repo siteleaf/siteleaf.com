@@ -25,7 +25,7 @@ Here are our top tips to consider when optimizing your Siteleaf site's SEO:
 
 [Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly large. Sitemaps can be generated with a whitelisted Jekyll plugin [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap).
 
-To enable the `Jekyll-Sitemap` plugin add the following to your site’s Gemfile:
+To enable the `jekyll-sitemap` plugin add the following to your site’s Gemfile:
 
 ```sh
 gem 'jekyll-sitemap'
@@ -43,7 +43,9 @@ Save, publish, and you’re done! This will automatically create a `/sitemap.xml
 
 ## Structured URLs
 
-In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site - as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. For example:
+In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site - as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. 
+
+For example:
 
 A 'semantically accurate' URL accurately describes its destination. This is a semantically accurate URL: __https://rogertheracoon.com/tips/winter-menu__
 
