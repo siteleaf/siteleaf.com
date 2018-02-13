@@ -8,7 +8,7 @@ description: We have had some requests recently for a blog post about SEO on Sit
 
 ![](/uploads/siteLeaf_seo_blogCover_020818-04.jpg)
 
-SEO (Search Engine Optimization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site. There are some brilliant sources of information on SEO out there, like this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
+SEO (Search Engine Optimization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site.
 
 Here are four essential SEO optimizations you should consider adding to your Siteleaf site:
 
@@ -17,25 +17,27 @@ Here are four essential SEO optimizations you should consider adding to your Sit
 * [Jekyll-SEO-Tag](/seo-on-siteleaf/#jekyll-seo-tag)
 * [Sharing Debugger](/seo-on-siteleaf/#sharing-debugger)
 
+To more fully understand SEO check out this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
+
 ## Sitemap
 
-[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if you have a large site. Sitemaps can be generated with a whitelisted Jekyll plugin `Jekyll-sitemap`.
+[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly large. Sitemaps can be generated with a whitelisted Jekyll plugin `Jekyll-sitemap`.
 
 To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called `gems`, with an entry called `jekyll-sitemap`. Save, publish, and you’re done! This will automatically create a `/sitemap.xml` for you.
 
 ## Structured URLs
 
-In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. For example:
+In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site - as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. For example:
 
-This is a 'semantically accurate' URL (it accurately describes its destination): __https://rogertheracoon.com/tips/winter-menu__
+A 'semantically accurate' URL accurately describes its destination. This is a semantically accurate URL: __https://rogertheracoon.com/tips/winter-menu__
 
 This is just a confusing mess: __https://rogertheracoon.com/880jdufl__
 
-With a semantically accurate URL if, for whatever reason, the title of this page didn’t display a human person could read the URL and would have an understanding of the page’s content. This knowledge will encourage them to click on the link, instead of scaring them away with a load of letters they don’t understand.
+With a semantically accurate URL if, for whatever reason, the title of this page didn’t display a human person could read the URL and would be able to guess the page’s content. This knowledge will encourage them to click on the link, instead of scaring them away with an array of letters they don’t understand.
 
 Structured URLs are also useful when users share your website across social media networks or online forums that don’t display your [website’s anchor text](https://moz.com/learn/seo/anchor-text). Just like when users are clicking on your link in a search, you’re giving potential viewers an expectation as to what they’re would see if they click on your link.
 
-URLs are a minor ranking factor for SEO, so while using a URL rich in keywords can improve your site’s visibility the URLs, on their own structured URLs don’t have a significant impact on your website’s ability to get to the top of Google.
+URLs are a minor ranking factor for SEO, so while using a URL rich in keywords can improve your site’s visibility on their own structured URLs don’t have a significant impact on getting to the top of Google.
 
 ![artem-sapegin-180146.jpg](/uploads/artem-sapegin-180146.jpg)
 
@@ -53,7 +55,7 @@ We love the [`Jekyll-SEO-Tag plugin`](https://github.com/jekyll/jekyll-seo-tag).
 * [Open Graph](http://ogp.me/) title, description, site title, and URL (for Facebook, LinkedIn, etc.)
 * [Twitter Summary Card](https://dev.twitter.com/cards/overview) metadata
 
-The `Jekyll-SEO-Tag` plugin works for most websites with only a few steps. I recommend reading this [blog post](https://blog.webjeda.com/optimize-jekyll-seo) from 2016 to see how far we’ve come improving SEO in Jekyll, as well as giving you an understanding of what precisely the `Jekyll-SEO-Tag` plugin is doing for you.
+The `Jekyll-SEO-Tag` plugin works for most websites with only a few steps. I recommend reading this [blog post](https://blog.webjeda.com/optimize-jekyll-seo) from 2016 to understand precisely what the `Jekyll-SEO-Tag` plugin is doing for you.
 
 ### Setting up the Jekyll-SEO-Tag plugin
 
@@ -80,8 +82,6 @@ And finally add this right before `</head>` in your site's template:
     
 ### Using the Jekyll-SEO-Tag plugin
 The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. 
-
-Don’t worry, if you don’t want to add any of these fields because you don’t use Twitter for your business, the `Jekyll-SEO-Tag` will just ignore that potential input if it’s not included in your `_config.yml`.
     
 * `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
 * `description` - a short description of your website (e.g., A website featuring gifts for owl lovers)
@@ -126,7 +126,7 @@ social:
     - https://www.linkedin.com/in/rogertheracoon
 ```
     
-Use `google_site_verification` for verifying ownership via Google webmaster tools - or you can verify ownership with several services at once by inputting:  
+Use `google_site_verification` for verifying ownership via Google webmaster tools, or you can verify ownership with several services at once by inputting:  
     
 ```yaml
   webmaster_verifications:
@@ -139,13 +139,15 @@ Hats off to [Ben Balter](https://github.com/benbalter) and the open source contr
     
 ## Sharing Debugger
 
+You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). 
+
 ![Screen Shot of Siteleaf on Facebook Sharing Debugger](/uploads/Screen%20Shot%202018-02-09%20at%2015.55.08.png)
 
-You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO features including the title, location, image, and description. It will also tell you any missing SEO types that you could include in the future.
+The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO metadata. It will also tell you if there are any missing SEO types that you could include in the future.
     
-If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your new site / page / post through the sharing debugger to see that the `Jekyll-SEO-Tag` plugin is working as you expect. 
+If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your site through the sharing debugger to check that the `Jekyll-SEO-Tag` plugin is working as you expect. 
     
-Facebook doesn’t automatically scrape for new content for URLs automatically. So, it’s good practice to manually scrape your site using their debugger to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
+Facebook doesn’t scrape for new content on URLs automatically. So, it’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
     
 ---
     
