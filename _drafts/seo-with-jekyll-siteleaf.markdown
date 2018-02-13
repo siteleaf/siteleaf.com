@@ -169,6 +169,8 @@ Facebook doesn’t scrape for new content on URLs automatically. So, it’s good
 
 ## Write with SEO in mind
 
+![Image of journal saying 'write ideas'](/uploads/write-ideas.jpg)
+
 ### Be knowledgeable
 Do your research. You want people to come to your site? There needs to be something on there worth reading! Informative content using keywords and common phrases for your audience will help web crawlers find the content that people want. 
 
