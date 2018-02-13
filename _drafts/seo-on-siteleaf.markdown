@@ -75,9 +75,9 @@ plugins:
 And finally add this right before `</head>` in your site's template:
     
 ```liquid
-{% raw %}
+{% raw %}{% raw %}
 {% seo %}
-{% endraw %}
+{% endraw %}{% endraw %}
 ```
     
 ### Using the Jekyll-SEO-Tag plugin
