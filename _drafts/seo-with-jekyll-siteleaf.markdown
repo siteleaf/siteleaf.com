@@ -191,6 +191,8 @@ Write your content to ensure that keywords are clear for web crawlers but still 
 
 You can use [Google Adwords Keywords Planner](https://adwords.google.com/home/tools/keyword-planner) as a way of finding alternative words or phrases, so you're not repeating yourself again, and again, and again.
 
+![neon-heart.jpg](/uploads/neon-heart.jpg)
+
 ### Be generous
 Don't be afraid to direct people to other sites that will help inform their research. Some still believe that you should only link within your website and that every external link provides your audience an opportunity to stop engaging with your content. 
 
@@ -199,6 +201,8 @@ If your content is interesting and informative, there's no reason you're audienc
 There are lots of talented and dedicated people writing online. When you link to them it builds everyone up. Don't underestimate the power of engaging and rewarding your community. 
 
 Consistently linking to great content is a way of putting a stamp of quality on your site. Spammy sites tend to link to a far more significant percentage of junk, while great sites typically link to other great sites.  
+
+![you-got-this.jpg](/uploads/you-got-this.jpg)
     
 ---
     
