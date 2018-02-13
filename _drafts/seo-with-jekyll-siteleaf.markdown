@@ -159,7 +159,7 @@ Hats off to [Ben Balter](https://github.com/benbalter) and the open source contr
 
 ![Screen Shot of Siteleaf on Facebook Sharing Debugger](/uploads/Screen%20Shot%202018-02-09%20at%2015.55.08.png)
 
-You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/) Or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator).
+You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/) or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator).
 
 These work by scraping your website and showing you the information that it has generated from your SEO metadata. Facebook's Sharing Debugger will also tell you if there are any missing SEO types that you could include in the future.
     
