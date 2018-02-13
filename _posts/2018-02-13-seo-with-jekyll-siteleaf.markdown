@@ -43,7 +43,6 @@ Save, publish, and you’re done! This will automatically create a `/sitemap.xml
 
 
 
-
 ## Structured URLs
 
 In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site - as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. 
