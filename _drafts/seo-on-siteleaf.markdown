@@ -74,11 +74,11 @@ plugins:
     
 And finally add this right before `</head>` in your site's template:
     
-```liquid
-{{ "{% raw " }}%}
-{% seo %}
-{{ "{% endraw " }}%}
-```
+{% raw %}
+  ```liquid
+  {% seo %}
+  ```
+{% endraw %}
     
 ### Using the Jekyll-SEO-Tag plugin
 The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. 
