@@ -182,6 +182,8 @@ Although a lab and a bakery might both be concerned with the properties of yeast
 ### Be clear 
 Don't write mysterious headlines. Web crawlers look at headings to scan your content and categorize your page, plus humans use headings to locate the information they're looking for. 
 
+![Image of hands on a keyboard](/uploads/Hands-on-keyboard.jpg)
+
 ### Be keyword aware
 Using a variety of keywords and phrases is great for SEO. If you've done your research adding these keywords should be a breeze.
 
