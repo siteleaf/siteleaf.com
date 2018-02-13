@@ -1,6 +1,6 @@
 ---
 title: SEO with Jekyll and Siteleaf
-date: 2018-02-09 14:26:00 -05:00
+date: 2018-02-13 14:26:00 -05:00
 tags:
 - jekyll
 - tip
