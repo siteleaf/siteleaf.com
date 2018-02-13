@@ -13,12 +13,13 @@ description: We have had some requests recently for a blog post about SEO on Sit
 
 SEO (Search Engine Optimization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site.
 
-Here are four essential SEO optimizations you should consider adding to your Siteleaf site:
+Here are four essential SEO optimizations you should consider for to your Siteleaf site:
 
 * [Sitemap](/seo-on-siteleaf/#sitemap)
 * [Structured URLs](/seo-on-siteleaf/#structured-urls)
 * [Jekyll-SEO-Tag](/seo-on-siteleaf/#jekyll-seo-tag)
-* [Sharing Debugger](/seo-on-siteleaf/#sharing-debugger)
+* [Optomize for Sharing](/seo-on-siteleaf/#optomize-for-sharing)
+* [Write with SEO in mind](/seo-on-siteleaf/#wrtie-with-seo-in-mind)
 
 To more fully understand SEO check out this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
 
@@ -100,8 +101,8 @@ And finally add this right before `</head>` in your site's template:
 ### Using the Jekyll-SEO-Tag plugin
 The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. 
     
-* `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
-* `description` - a short description of your website (e.g., A website featuring gifts for owl lovers)
+* `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog). Google will only display the first 50-60 characters of a title, so don't ramble!
+* `description` - a short description of your website (e.g., A website featuring gifts for owl lovers). This appears below the title in a search result. In no longer than 320 characters you need to entice someone to click on your link.
 * `url` - the full URL of your site
 * `author` - global author information 
 * `logo` - URL to a site-wide logo (e.g., /assets/fox-selfie.png)
@@ -154,21 +155,46 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
     
 Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
-## Review your SEO
-
-You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/):
+## Optimize for sharing
 
 ![Screen Shot of Siteleaf on Facebook Sharing Debugger](/uploads/Screen%20Shot%202018-02-09%20at%2015.55.08.png)
 
-Or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator):
-
-![Screen Shot of Siteleaf on Twitter's Card Validator](/uploads/Screen%20Shot%202018-02-13%20at%2013.29.37.png)
+You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/) Or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator).
 
 These work by scraping your website and showing you the information that it has generated from your SEO metadata. Facebook's Sharing Debugger will also tell you if there are any missing SEO types that you could include in the future.
     
 If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your site through either of these to check that the `Jekyll-SEO-Tag` plugin is working as you expect. 
     
 Facebook doesn’t scrape for new content on URLs automatically. So, it’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
+
+## Writing with SEO in mind
+
+### Be knowledgeable
+Do your research. You want people to come to your site? There needs to be something on there worth reading! Informative content using keywords and common phrases for your audience will help web crawlers find the content that people want. 
+
+### Be approachable
+Bad content, poor editing, and typos will damage your website. So will writing in the wrong style for your audience. Look at what other people are writing in your field and take note of the tone of their posts. 
+
+Although a lab and a bakery might both be concerned with the properties of yeast, the audience looking for a scientific comparison of yeast production is very different to those who just want to pick up some damn tasty crusty bread. 
+
+### Be clear 
+Don't write mysterious headlines. Web crawlers look at headings to scan your content and categorize your page, plus humans use headings to locate the information they're looking for. 
+
+### Be keyword aware
+Using a variety of keywords and phrases is great for SEO. If you've done your research adding these keywords should be a breeze.
+
+Write your content to ensure that keywords are clear for web crawlers but still feel natural for real people reading your posts. Don't neglect to use long-tail keywords; these are short phrases will help to target your audience. 
+
+You can use [Google Adwords Keywords Planner](https://adwords.google.com/home/tools/keyword-planner) as a way of finding alternative words or phrases, so you're not repeating yourself again, and again, and again.
+
+### Be generous
+Don't be afraid to direct people to other sites that will help inform their research. Some still believe that you should only link within your website and that every external link provides your audience an opportunity to stop engaging with your content. 
+
+If your content is interesting and informative, there's no reason you're audience won't come back to you, especially if you set up your external links to open in a new tab. 
+
+There are lots of talented and dedicated people writing online. When you link to them it builds everyone up. Don't underestimate the power of engaging and rewarding your community. 
+
+Consistently linking to great content is a way of putting a stamp of quality on your site. Spammy sites tend to link to a far more significant percentage of junk, while great sites typically link to other great sites.  
     
 ---
     
