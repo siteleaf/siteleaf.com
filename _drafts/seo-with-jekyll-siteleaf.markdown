@@ -154,7 +154,7 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
     
 Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
-## Review how your site looks when shared
+## Check how your site looks when shared
 
 You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). 
 
