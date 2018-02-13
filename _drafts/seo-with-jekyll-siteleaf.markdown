@@ -174,19 +174,19 @@ Facebook doesn’t scrape for new content on URLs automatically. It’s good pra
 You want people to come to your site? There needs to be something on there worth reading! Do your research. Informative content that utilizes keywords and common phrases will help web crawlers find the content and drive audiences to you. 
 
 ### Be approachable
-Bad content, poor editing, and typos will damage your website. So will writing in the wrong style for your audience. Look at what other people are writing in your field and take note of the tone of their posts. 
+Look at what other people are writing in your field and take note of their tone.
 
-Although a lab and a bakery might both be concerned with the properties of yeast, the audience looking for a scientific comparison of yeast production is very different to those who just want to pick up some damn tasty crusty bread. 
+A lab and a bakery might both be concerned with the properties of yeast. But the audience looking for a scientific investigation of yeast production is *very* different to those who just want to pick up some damn tasty bread. 
 
 ![Image of hands on a keyboard](/uploads/Hands-on-keyboard.jpg)
 
 ### Be clear 
-Don't write mysterious headlines. Web crawlers look at headings to scan your content and categorize your page, plus humans use headings to locate the information they're looking for. 
+Don't write mysterious headlines. Web crawlers look at headings to scan your content and categorize your page. Don't make people work for the information they're looking for, they'll end up frustrated and leaving your website. 
 
 ### Be keyword aware
 Using a variety of keywords and phrases is great for SEO. If you've done your research adding these keywords should be a breeze.
 
-Write your content to ensure that keywords are clear for web crawlers but still feel natural for real people reading your posts. Don't neglect to use long-tail keywords; these are short phrases will help to target your audience. 
+When writing your content to ensure keywords are included for web crawlers but still feel natural for real people reading your posts. Don't neglect to use long-tail keywords; these short phrases will help to target your audience. 
 
 You can use [Google Adwords Keywords Planner](https://adwords.google.com/home/tools/keyword-planner) as a way of finding alternative words or phrases, so you're not repeating yourself again, and again, and again.
 
@@ -195,13 +195,11 @@ You can use [Google Adwords Keywords Planner](https://adwords.google.com/home/to
 ### Be generous
 Don't be afraid to direct people to other sites that will help inform their research. Some still believe that you should only link within your website and that every external link provides your audience an opportunity to stop engaging with your content. But if your content is interesting and informative, there's no reason you're audience won't come back to you, especially if you set up your external links to open in a new tab. 
 
-There are lots of talented and dedicated people writing online. When you link to them it builds everyone up. Don't underestimate the power of engaging and rewarding your community. 
+There are lots of talented and dedicated people writing online. When you link to them you're building everyone up. Don't underestimate the power of engaging and rewarding your community. 
 
 Consistently linking to great content is a way of putting a stamp of quality on your site. Spammy sites tend to link to a far more significant percentage of junk, while great sites typically link to other great sites.  
 
 ![you-got-this.jpg](/uploads/you-got-this.jpg)
-
-To more fully understand SEO check out this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
     
 ---
     
