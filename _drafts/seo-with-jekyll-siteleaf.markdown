@@ -40,8 +40,7 @@ plugins:
    - jekyll-sitemap
 ```
 
-
-To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called `gems`, with an entry called `jekyll-sitemap`. Save, publish, and you’re done! This will automatically create a `/sitemap.xml` for you.
+Save, publish, and you’re done! This will automatically create a `/sitemap.xml` for you.
 
 ## Structured URLs
 
