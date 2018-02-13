@@ -79,7 +79,7 @@ And finally add this right before `</head>` in your site's template:
     
 {% raw %}
   ```liquid
-  {% seo %}
+{% seo %}
   ```
 {% endraw %}
     
