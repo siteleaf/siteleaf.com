@@ -88,7 +88,7 @@ The `Jekyll-SEO-Tag` plugin will include any of the following list if included i
     
 * `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog, etc.)
 * `description` - a short description of your website (e.g., A website featuring gifts for owl lovers)
-* `url` - the full URL to your site
+* `url` - the full URL of your site
 * `author` - global author information 
 * `logo` - URL to a site-wide logo (e.g., /assets/fox-selfie.png)
     
