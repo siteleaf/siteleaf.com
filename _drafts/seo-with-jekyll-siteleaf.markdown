@@ -19,7 +19,7 @@ Here are four essential SEO optimizations you should consider for to your Sitele
 * [Structured URLs](/seo-on-siteleaf/#structured-urls)
 * [Jekyll-SEO-Tag](/seo-on-siteleaf/#jekyll-seo-tag)
 * [Optomize for Sharing](/seo-on-siteleaf/#optomize-for-sharing)
-* [Write with SEO in mind](/seo-on-siteleaf/#wrtie-with-seo-in-mind)
+* [Write with SEO in mind](/seo-on-siteleaf/#write-with-seo-in-mind)
 
 To more fully understand SEO check out this [guide from Moz](https://moz.com/beginners-guide-to-seo) and [Google’s starter guide](http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf).
 
@@ -167,7 +167,7 @@ If you are redesigning or adding a bunch of new content to your site, it’s wor
     
 Facebook doesn’t scrape for new content on URLs automatically. So, it’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
 
-## Writing with SEO in mind
+## Write with SEO in mind
 
 ### Be knowledgeable
 Do your research. You want people to come to your site? There needs to be something on there worth reading! Informative content using keywords and common phrases for your audience will help web crawlers find the content that people want. 
