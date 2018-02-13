@@ -179,10 +179,10 @@ Bad content, poor editing, and typos will damage your website. So will writing i
 
 Although a lab and a bakery might both be concerned with the properties of yeast, the audience looking for a scientific comparison of yeast production is very different to those who just want to pick up some damn tasty crusty bread. 
 
+![Image of hands on a keyboard](/uploads/Hands-on-keyboard.jpg)
+
 ### Be clear 
 Don't write mysterious headlines. Web crawlers look at headings to scan your content and categorize your page, plus humans use headings to locate the information they're looking for. 
-
-![Image of hands on a keyboard](/uploads/Hands-on-keyboard.jpg)
 
 ### Be keyword aware
 Using a variety of keywords and phrases is great for SEO. If you've done your research adding these keywords should be a breeze.
