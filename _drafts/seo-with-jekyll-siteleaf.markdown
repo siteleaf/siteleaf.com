@@ -53,17 +53,17 @@ This is just a confusing mess: __https://rogertheracoon.com/880jdufl__
 
 With a semantically accurate URL if, for whatever reason, the title of this page didn’t display a human person could read the URL and would be able to guess the page’s content. This knowledge will encourage them to click on the link, instead of scaring them away with an array of letters they don’t understand.
 
-Structured URLs are also useful when users share your website across social media networks or online forums that don’t display your [website’s anchor text](https://moz.com/learn/seo/anchor-text). Just like when users are clicking on your link in a search, you’re giving potential viewers an expectation as to what they’re would see if they click on your link.
+Structured URLs are useful when users share your website across social media networks or online forums that don’t display your [website’s anchor text](https://moz.com/learn/seo/anchor-text).
 
-URLs are a minor ranking factor for SEO, so while using a URL rich in keywords can improve your site’s visibility on their own structured URLs don’t have a significant impact on getting to the top of Google.
+URLs are a minor ranking factor for SEO, so while using a URL rich in keywords can improve your site’s visibility, on their own structured URLs don’t have a significant impact on getting to the top of Google.
 
 ![artem-sapegin-180146.jpg](/uploads/artem-sapegin-180146.jpg)
 
 ## Jekyll-SEO-Tag
 
-We love the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin. It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the `Jekyll-SEO-Tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
+We love the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin. It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the `jekyll-seo-tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
 
-`Jekyll-SEO-Tag` adds the following metadata tags to your site:
+`jekyll-seo-tag` adds the following metadata tags to your site:
 
 * Page title, with site title or description appended
 * Page description
@@ -73,11 +73,11 @@ We love the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin.
 * [Open Graph](http://ogp.me/) title, description, site title, and URL (for Facebook, LinkedIn, etc.)
 * [Twitter Summary Card](https://dev.twitter.com/cards/overview) metadata
 
-The `Jekyll-SEO-Tag` plugin works for most websites with only a few steps. I recommend reading this [blog post](https://blog.webjeda.com/optimize-jekyll-seo) from 2016 to understand precisely what the `Jekyll-SEO-Tag` plugin is doing for you.
+The `jekyll-seo-tag` plugin works for most websites with only a few steps. I recommend reading this [blog post](https://blog.webjeda.com/optimize-jekyll-seo) from 2016 to understand precisely what the `jekyll-seo-tag` plugin is doing for you.
 
-### Setting up the Jekyll-SEO-Tag plugin
+### Setting up the jekyll-seo-tag plugin
 
-To enable the `Jekyll-SEO-Tag` plugin add the following to your site’s `Gemfile`:
+To enable the `jekyll-seo-tag` plugin add the following to your site’s `Gemfile`:
 
 ```sh
 gem 'jekyll-seo-tag'
@@ -98,11 +98,11 @@ And finally add this right before `</head>` in your site's template:
   ```
 {% endraw %}
     
-### Using the Jekyll-SEO-Tag plugin
-The `Jekyll-SEO-Tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `Jekyll-SEO-Tag` plugin. 
+### Using the jekyll-seo-tag plugin
+The `jekyll-seo-tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `jekyll-seo-tag` plugin. 
     
-* `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog). Google will only display the first 50-60 characters of a title, so don't ramble!
-* `description` - a short description of your website (e.g., A website featuring gifts for owl lovers). This appears below the title in a search result. In no longer than 320 characters you need to entice someone to click on your link.
+* `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog). Google will only display the first 50-60 characters of a title, so be precise!
+* `description` - a short description of your website (e.g., A website featuring gifts for owl lovers). This appears below the title in a search result. You need to entice someone to click on your link in less than 320 characters.
 * `url` - the full URL of your site
 * `author` - global author information 
 * `logo` - URL to a site-wide logo (e.g., /assets/fox-selfie.png)
@@ -141,7 +141,6 @@ social:
     - https://twitter.com/rogertheracoon
     - https://www.instagram/rogerracoon
     - https://www.facebook.com/roger.racoon
-    - https://www.linkedin.com/in/rogertheracoon
 ```
     
 Use `google_site_verification` for verifying ownership via Google webmaster tools, or you can verify ownership with several services at once by inputting:  
@@ -153,7 +152,7 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
     alexa: 987654321
 ```
     
-Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
+Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
 ## Optimize for sharing
 
@@ -161,18 +160,18 @@ Hats off to [Ben Balter](https://github.com/benbalter) and the open source contr
 
 You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/) or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator).
 
-These work by scraping your website and showing you the information that it has generated from your SEO metadata. Facebook's Sharing Debugger will also tell you if there are any missing SEO types that you could include in the future.
+These work by scraping your website and presenting you the information that it has generated from your SEO metadata. Facebook's Sharing Debugger will also tell you if there are any missing SEO types that you could include in the future.
     
-If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your site through either of these to check that the `Jekyll-SEO-Tag` plugin is working as you expect. 
+If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your site through these to check that the `jekyll-seo-tag` plugin is working as you expect. 
     
-Facebook doesn’t scrape for new content on URLs automatically. So, it’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
+Facebook doesn’t scrape for new content on URLs automatically. It’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
 
 ## Write with SEO in mind
 
 ![Image of journal saying 'write ideas'](/uploads/write-ideas.jpg)
 
 ### Be knowledgeable
-Do your research. You want people to come to your site? There needs to be something on there worth reading! Informative content using keywords and common phrases for your audience will help web crawlers find the content that people want. 
+You want people to come to your site? There needs to be something on there worth reading! Do your research. Informative content that utilizes keywords and common phrases will help web crawlers find the content and drive audiences to you. 
 
 ### Be approachable
 Bad content, poor editing, and typos will damage your website. So will writing in the wrong style for your audience. Look at what other people are writing in your field and take note of the tone of their posts. 
