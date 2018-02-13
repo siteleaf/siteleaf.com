@@ -156,13 +156,17 @@ Hats off to [Ben Balter](https://github.com/benbalter) and the open source contr
     
 ## Check how your site looks when shared
 
-You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). 
+You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/):
 
 ![Screen Shot of Siteleaf on Facebook Sharing Debugger](/uploads/Screen%20Shot%202018-02-09%20at%2015.55.08.png)
 
-The Facebook Sharing Debugger works by scraping your website and showing you the information that it has generated from your SEO metadata. It will also tell you if there are any missing SEO types that you could include in the future.
+Or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator):
+
+![Screen Shot of Siteleaf on Twitter's Card Validator](/uploads/Screen%20Shot%202018-02-13%20at%2013.29.37.png)
+
+These work by scraping your website and showing you the information that it has generated from your SEO metadata. Facebook's Sharing Debugger will also tell you if there are any missing SEO types that you could include in the future.
     
-If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your site through the sharing debugger to check that the `Jekyll-SEO-Tag` plugin is working as you expect. 
+If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your site through either of these to check that the `Jekyll-SEO-Tag` plugin is working as you expect. 
     
 Facebook doesn’t scrape for new content on URLs automatically. So, it’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Otherwise, Facebook will hold onto your all of your old imagery and description forever. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
     
