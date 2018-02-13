@@ -194,9 +194,7 @@ You can use [Google Adwords Keywords Planner](https://adwords.google.com/home/to
 ![neon-heart.jpg](/uploads/neon-heart.jpg)
 
 ### Be generous
-Don't be afraid to direct people to other sites that will help inform their research. Some still believe that you should only link within your website and that every external link provides your audience an opportunity to stop engaging with your content. 
-
-If your content is interesting and informative, there's no reason you're audience won't come back to you, especially if you set up your external links to open in a new tab. 
+Don't be afraid to direct people to other sites that will help inform their research. Some still believe that you should only link within your website and that every external link provides your audience an opportunity to stop engaging with your content. But if your content is interesting and informative, there's no reason you're audience won't come back to you, especially if you set up your external links to open in a new tab. 
 
 There are lots of talented and dedicated people writing online. When you link to them it builds everyone up. Don't underestimate the power of engaging and rewarding your community. 
 
