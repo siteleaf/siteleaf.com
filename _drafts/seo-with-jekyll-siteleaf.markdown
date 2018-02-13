@@ -35,7 +35,7 @@ gem 'jekyll-sitemap'
 And run `bundle`. Then add this to your site's `_config.yml` file:
     
 ```yaml
-url: "http://example.com" # the hostname & protocol for your site
+url: "http://example.com" # the hostname & protocol for site
 plugins:
    - jekyll-sitemap
 ```
