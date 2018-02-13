@@ -24,7 +24,22 @@ To more fully understand SEO check out this [guide from Moz](https://moz.com/beg
 
 ## Sitemap
 
-[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly large. Sitemaps can be generated with a whitelisted Jekyll plugin `Jekyll-sitemap`.
+[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly large. Sitemaps can be generated with a whitelisted Jekyll plugin [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap).
+
+To enable the `Jekyll-Sitemap` plugin add the following to your site’s Gemfile:
+
+```sh
+gem 'jekyll-sitemap'
+```
+    
+And run `bundle`. Then add this to your site's `_config.yml` file:
+    
+```yaml
+url: "http://example.com" # the base hostname & protocol for your site
+plugins:
+   - jekyll-sitemap
+```
+
 
 To enable sitemaps, head into your Site Settings and add a new [list metadata](https://learn.siteleaf.com/content/metadata/#list) called `gems`, with an entry called `jekyll-sitemap`. Save, publish, and you’re done! This will automatically create a `/sitemap.xml` for you.
 
@@ -46,7 +61,7 @@ URLs are a minor ranking factor for SEO, so while using a URL rich in keywords c
 
 ## Jekyll-SEO-Tag
 
-We love the [`Jekyll-SEO-Tag plugin`](https://github.com/jekyll/jekyll-seo-tag). It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the `Jekyll-SEO-Tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
+We love the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin. It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the `Jekyll-SEO-Tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
 
 `Jekyll-SEO-Tag` adds the following metadata tags to your site:
 
@@ -140,7 +155,7 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
     
 Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`Jekyll-SEO-Tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
-## Sharing Debugger
+## Review how your site looks when shared
 
 You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/). 
 
