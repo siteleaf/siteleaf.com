@@ -47,7 +47,7 @@ In Siteleaf you can edit your page’s or post’s URL slug, which is a great wa
 
 For example:
 
-A 'semantically accurate' URL accurately describes its destination. This is a semantically accurate URL: __https://rogertheracoon.com/tips/winter-menu__
+A 'semantically accurate' URL accurately describes the destination of the URL. This is a semantically accurate URL: __https://rogertheracoon.com/tips/winter-menu__
 
 This is just a confusing mess: __https://rogertheracoon.com/880jdufl__
 
