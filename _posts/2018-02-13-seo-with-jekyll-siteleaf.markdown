@@ -18,7 +18,7 @@ Here are our top tips to consider when optomizing your Siteleaf site's SEO:
 * [Sitemap](/seo-with-jekyll-siteleaf/#sitemap)
 * [Structured URLs](/seo-with-jekyll-siteleaf/#structured-urls)
 * [Jekyll-SEO-Tag](/seo-with-jekyll-siteleaf/#jekyll-seo-tag)
-* [Optimize for Sharing](seo-with-jekyll-siteleaf/#optomize-for-sharing)
+* [Optimize for Sharing](seo-with-jekyll-siteleaf/#optimize-for-sharing)
 * [Write with SEO in mind](seo-with-jekyll-siteleaf/#write-with-seo-in-mind)
 
 ## Sitemap
