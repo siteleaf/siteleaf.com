@@ -11,7 +11,7 @@ description: We have had some requests recently for a blog post about SEO on Sit
 
 ![](/uploads/siteLeaf_seo_blogCover_020818-04.jpg)
 
-SEO (Search Engine Optimization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site.
+SEO (Search Engine Optomization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site.
 
 Here are our top tips to consider when optimizing your Siteleaf site's SEO:
 
