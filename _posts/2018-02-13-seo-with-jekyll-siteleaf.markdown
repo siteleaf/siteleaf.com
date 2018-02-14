@@ -11,14 +11,14 @@ description: We have had some requests recently for a blog post about SEO on Sit
 
 ![](/uploads/siteLeaf_seo_blogCover_020818-04.jpg)
 
-SEO (Search Engine Optomization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site.
+SEO (Search Engine Optimization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site.
 
-Here are our top tips to consider when optimizing your Siteleaf site's SEO:
+Here are our top tips to consider when optomizing your Siteleaf site's SEO:
 
 * [Sitemap](/seo-with-jekyll-siteleaf/#sitemap)
 * [Structured URLs](/seo-with-jekyll-siteleaf/#structured-urls)
 * [Jekyll-SEO-Tag](/seo-with-jekyll-siteleaf/#jekyll-seo-tag)
-* [Optomize for Sharing](seo-with-jekyll-siteleaf/#optomize-for-sharing)
+* [Optimize for Sharing](seo-with-jekyll-siteleaf/#optomize-for-sharing)
 * [Write with SEO in mind](seo-with-jekyll-siteleaf/#write-with-seo-in-mind)
 
 ## Sitemap
@@ -156,7 +156,7 @@ Use `google_site_verification` for verifying ownership via Google webmaster tool
     
 Hats off to [Ben Balter](https://github.com/benbalter) and the open source contributors who made the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin a reality!
     
-## Optomize for sharing
+## Optimize for sharing
 
 ![Screen Shot of Siteleaf on Facebook Sharing Debugger](/uploads/Screen%20Shot%202018-02-09%20at%2015.55.08.png)
 
