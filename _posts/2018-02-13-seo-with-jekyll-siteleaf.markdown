@@ -23,7 +23,7 @@ Here are our top tips to consider when optimizing your Siteleaf site's SEO:
 
 ## Sitemap
 
-[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly large. Sitemaps can be generated with a whitelisted Jekyll plugin [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap).
+[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly big. Sitemaps can be generated with a whitelisted Jekyll plugin [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap).
 
 To enable the `jekyll-sitemap` plugin add the following to your site’s Gemfile:
 
@@ -45,7 +45,7 @@ Save, publish, and you’re done! This will automatically create a `/sitemap.xml
 
 ## Structured URLs
 
-In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to click on your site - as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. 
+In Siteleaf you can edit your page’s or post’s URL slug, which is a great way to encourage users to view your site, as well as being necessary for SEO. Google [recommends](https://static.googleusercontent.com/media/www.google.com/en//insidesearch/howsearchworks/assets/searchqualityevaluatorguidelines.pdf) using descriptive keywords in the URL because crawlers and users alike can tell what content the site is going to include. 
 
 For example:
 
@@ -53,7 +53,7 @@ A 'semantically accurate' URL accurately describes the destination of the URL. T
 
 This is just a confusing mess: __https://rogertheracoon.com/880jdufl__
 
-With a semantically accurate URL if, for whatever reason, the title of this page didn’t display a human person could read the URL and would be able to guess the page’s content. This knowledge will encourage them to click on the link, instead of scaring them away with an array of letters they don’t understand.
+With a semantically accurate URL if, for whatever reason, the title of this page didn’t display a human person could read the URL and would be able to guess the page’s content. This knowledge will encourage them to click on the link, instead of scaring them away with an array of letters and numbers they don’t understand.
 
 Structured URLs are useful when users share your website across social media networks or online forums that don’t display your [website’s anchor text](https://moz.com/learn/seo/anchor-text).
 
@@ -101,9 +101,9 @@ And finally add this right before `</head>` in your site's template:
 {% endraw %}
     
 ### Using the jekyll-seo-tag plugin
-The `jekyll-seo-tag` plugin will include any of the following list if included in your site's `_config.yml`. We recommend inputting as many of these as you want when you’re setting up the `jekyll-seo-tag` plugin. 
+The `jekyll-seo-tag` plugin will include any of the following list if included in your site's `_config.yml`.
     
-* `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog). Google will only display the first 50-60 characters of a title, so be precise!
+* `title` - your website's title (e.g., Racoon’s Website, Fox’s Blog). Google will only display the first 50-60 characters of a title, so be precise.
 * `description` - a short description of your website (e.g., A website featuring gifts for owl lovers). This appears below the title in a search result. You need to entice someone to click on your link in less than 320 characters.
 * `url` - the full URL of your site
 * `author` - global author information 
@@ -160,13 +160,13 @@ Hats off to [Ben Balter](https://github.com/benbalter) and the open source contr
 
 ![Screen Shot of Siteleaf on Facebook Sharing Debugger](/uploads/Screen%20Shot%202018-02-09%20at%2015.55.08.png)
 
-You can see how your site will look when shared using Facebook’s handy [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/) or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator).
+You can see how your site will look when shared using Facebook’s [Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/) or with Twitter's [Card Validator](https://cards-dev.twitter.com/validator).
 
 These work by scraping your website and presenting you the information that it has generated from your SEO metadata. Facebook's Sharing Debugger will also tell you if there are any missing SEO types that you could include in the future.
     
 If you are redesigning or adding a bunch of new content to your site, it’s worthwhile running your site through these to check that the `jekyll-seo-tag` plugin is working as you expect. 
     
-Facebook doesn’t scrape for new content on URLs automatically. It’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
+Facebook doesn’t automatically scrape for new content on URLs. It’s good practice to manually scrape your site using their debugger, to ensure your new content is featured when people share your website. Running your site through the debugger will ensure that when your Aunt Shelly shares your new blog post, it will display your most recent photographs, and not those terrible selfies from last year. 
 
 ## Write with SEO in mind
 
@@ -176,19 +176,17 @@ Facebook doesn’t scrape for new content on URLs automatically. It’s good pra
 You want people to come to your site? There needs to be something on there worth reading! Do your research. Informative content that utilizes keywords and common phrases will help web crawlers find the content and drive audiences to you. 
 
 ### Be approachable
-Look at what other people are writing in your field and take note of their tone.
-
-A lab and a bakery might both be concerned with the properties of yeast. But the audience looking for a scientific investigation of yeast production is *very* different to those who just want to pick up some damn tasty bread. 
+Look at what other people are writing in your field and take note of their tone. A lab and a bakery might both be concerned with the properties of yeast. But the audience looking for a scientific investigation of yeast production is *very* different to those who just want to pick up some damn tasty bread. 
 
 ![Image of hands on a keyboard](/uploads/Hands-on-keyboard.jpg)
 
 ### Be clear 
-Don't write mysterious headlines. Web crawlers look at headings to scan your content and categorize your page. Don't make people work for the information they're looking for, they'll end up frustrated and leaving your website. 
+Don't write mysterious headlines. Web crawlers look at headings to scan your content and categorize your page. Don't make people work for the information they're looking for. Otherwise, they'll end up frustrated and leave your website. 
 
 ### Be keyword aware
 Using a variety of keywords and phrases is great for SEO. If you've done your research adding these keywords should be a breeze.
 
-When writing your content to ensure keywords are included for web crawlers but still feel natural for real people reading your posts. Don't neglect to use long-tail keywords; these short phrases will help to target your audience. 
+Ensure that your keywords are included in a way that still feels natural for real people reading your posts. Don't neglect to use long-tail keywords; these short phrases will help to precisely target your audience. 
 
 You can use [Google Adwords Keywords Planner](https://adwords.google.com/home/tools/keyword-planner) as a way of finding alternative words or phrases, so you're not repeating yourself again, and again, and again.
 
