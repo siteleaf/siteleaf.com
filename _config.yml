@@ -12,7 +12,7 @@ collections:
     title: Tags
     output: true
   tweets:
-    title: Tweets
+    title: Testimonials
     output: false
   uploads:
     title: Uploads
