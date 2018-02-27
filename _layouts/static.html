@@ -1,0 +1,68 @@
+---
+layout: static-default
+---
+<div class="bg--darkest-gray">
+
+  <section class="static__intro">
+    <p>{{ page.intro }}</p>
+  </section>
+
+  <section class="static__test">
+    <h2>{{ page.test.title }}</h2>
+    <p>{{ page.test.body }}</p>
+    <p>{{ page.test.disclaimer }}</p>
+    <div class="static__charts">
+      {% for chart in page.test.charts %}
+          <div class="static__chart">
+            {% if chart.title %}
+              <h3 class="static__chart__title">{{ chart.title }}</h3>
+            {% endif %}
+            {% if page.test.locations %}
+            <ul class="static__chart__locations">
+              {% for location in page.test.locations %}
+                <li class="static__chart__location">
+                  {{ location | markdownify }}
+                </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            {% if chart.values %}
+            <ul class="static__chart__values">
+              {% for value in chart.values %}
+                <li class="static__chart__value">
+                  {{ value | markdownify }}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          </div>
+          {% assign previous_chart = chart %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="static__paragraphs">
+    {% for paragraph in page.paragraphs %}
+      <div class="static__paragraph">
+        {% if paragraph.title %}
+          <h3 class="static__paragraph__title">{{ paragraph.title }}</h3>
+        {% endif %}
+        {% if paragraph.body %}
+          <p class="static__paragraph__body">{{ paragraph.body }}</p>
+        {% endif %}
+      </div>
+      {% assign previous_paragraph = paragraph %}
+    {% endfor %}
+  </section>
+
+  <section class="static__email">
+    <h3>{{ page.email.title }}</h3>
+    <h3>{{ page.email.prefill }}</h3>
+  </section>
+
+  <section class="static__learnMore">
+    <h3>{{ page.learnMore }}</h3>
+    <img src="" class="static__learnMore__logo"/>
+  </section>
+
+</div>

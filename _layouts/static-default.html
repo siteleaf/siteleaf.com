@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo title=false %}
+    {% unless page.image %}<meta name="twitter:image" content="{{ site.url }}/assets/avatar.png"/>{% endunless %}
+    <title>{{ page.title }}{% if page.url != '/' %} - Siteleaf{% endif %}</title>
+    {% if page.url == '/plans/' %}<link rel="stylesheet" href="/styles/plan-summary-cards.css" />{% endif %}
+    <link rel="stylesheet" href="/styles/all.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="Siteleaf: Blog (RSS)" href="{{ site.url }}/feed.xml" />
+    <link rel="alternate" type="application/json" title="Siteleaf: Blog (JSON)" href="{{ site.url }}/feed.json" />
+  </head>
+  <body class="{{ page.layout }}">
+    {% if site.google_analytics %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+    <div class="wrap">
+      {% include static-header.html %}
+      {{ content }}
+    </div>
+    {% include footer.html %}
+    {% if page.url == '/plans/' %}<script src="/scripts/plan-summary-cards.js"></script>{% endif %}
+    <script src="/scripts/all.js"></script>
+  </body>
+</html>
