@@ -20,31 +20,31 @@ test:
   charts:
   - title: Siteleaf
     values:
-    - 0.00
-    - 0.00
-    - 0.00
-    - 0.00
+    - 2.00
+    - 4.00
+    - 5.00
+    - 6.00
 
   - title: Squarespace
     values:
-    - 0.00
-    - 0.00
-    - 0.00
-    - 0.00
+    - 1.00
+    - 3.00
+    - 2.00
+    - 4.00
 
   - title: Wordpress
     values:
-    - 0.00
-    - 0.00
-    - 0.00
-    - 0.00
+    - 4.00
+    - 3.00
+    - 5.00
+    - 6.00
 
   - title: Craft
     values:
-    - 0.00
-    - 0.00
-    - 0.00
-    - 0.00
+    - 6.00
+    - 5.00
+    - 3.00
+    - 4.00
 
 paragraphs:
 - title: Why are static sites faster?

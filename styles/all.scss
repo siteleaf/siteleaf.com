@@ -1147,6 +1147,115 @@ h6 {
   }
 }
 
+// static is faster
+// ----------------
+
+.static__header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
+.static__header__video {
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.static_header__title {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  color: $color--white;
+  z-index: 1;
+  @include margin-center;
+}
+
+.static__intro, .static__test, .static__paragraphs, .static__cta {
+  @extend %container--wide;
+  padding-bottom: $v*3 ;
+  margin-top: $v*3;
+  border-bottom: 3px solid $color--dark-gray;
+}
+
+.static__text {
+    width: 58.333333%;
+    @include max-width($max-width--lg) {
+      width: 58.333333%;
+    }
+    @include max-width($max-width--md) {
+      width: 58.333333%;
+    }
+}
+
+.static__test .static__text, .static__test__update, .static__test__key {
+  display: inline-block;
+}
+
+.static_test__update {
+  width: 16.666667%;
+  margin-left: $gutter;
+}
+
+.static__test__key {
+  width: 16.666667%;
+  margin-left: $gutter;
+}
+
+.static__chart {
+  width: 24.5%;
+  display: inline-block;
+  margin-right: 0;
+
+  // &:nth-child(4) .static__chart__values {
+  //   margin-right: 0;
+  // }
+}
+
+.static__chart__locations {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.static__chart__values{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  width: 50%;
+  padding-right: $gutter
+}
+
+.static_chart_stack {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+
+.circular-chart {
+  display: block;
+  position: absolute;
+  transform: rotate(-135deg);
+}
+
+.circle {
+  top: 0;
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2.4;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
 // colors
 // ------
 

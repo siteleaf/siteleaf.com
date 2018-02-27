@@ -4,23 +4,59 @@ layout: static-default
 <div class="bg--darkest-gray">
 
   <section class="static__intro">
-    <p>{{ page.intro }}</p>
+    <div class="static__text">
+      <p>{{ page.intro }}</p>
+    </div>
   </section>
 
   <section class="static__test">
-    <h2>{{ page.test.title }}</h2>
-    <p>{{ page.test.body }}</p>
-    <p>{{ page.test.disclaimer }}</p>
+    <div class="static__text">
+      <h3>{{ page.test.title }}</h3>
+      <p>{{ page.test.body }}</p>
+      <h5>{{ page.test.disclaimer }}</h5>
+    </div>
+    <div class="static__test__update">
+      <h4>{{ page.test.updateText }}</h4>
+      <h4>{{ page.test.updateTime }}</h4>
+    </div>
+    <ul class="static__test__key">
+      {% for location in page.test.locations %}
+        <li>
+          <div class="static_test_block">
+          </div>
+          <h4 class="static_test_location">{{ location | markdownify }}</h4>
+        </li>
+        {% assign previous_location = location %}
+      {% endfor %}
+    </ul>
     <div class="static__charts">
       {% for chart in page.test.charts %}
           <div class="static__chart">
+            <div class="static_chart_stack">
+              <svg viewbox="0 0 36 36" class="circular-chart">
+                {% for value in chart.values %}
+                  <path class="circle"
+                    {% if chart.values[0] %}
+                      stroke="#50E6A5"
+                    {% endif %}
+                    {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+                    {% assign radius = circum | divided_by: 6.2832 %}
+                    {% assign diamet = radius | times: 2 %}
+                    stroke-dasharray="{{ circum | divided_by: 8 | times: value }}, {{ circum }}"
+                    d="M18 {{ 36 | minus: diamet | divided_by: 2}}
+                      a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                      a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+                    />
+                {% endfor %}
+              </svg>
+            </div>
             {% if chart.title %}
-              <h3 class="static__chart__title">{{ chart.title }}</h3>
+              <h4 class="static__chart__title">{{ chart.title }}</h4>
             {% endif %}
             {% if page.test.locations %}
             <ul class="static__chart__locations">
               {% for location in page.test.locations %}
-                <li class="static__chart__location">
+                <li>
                   {{ location | markdownify }}
                 </li>
               {% endfor %}
@@ -29,7 +65,7 @@ layout: static-default
             {% if chart.values %}
             <ul class="static__chart__values">
               {% for value in chart.values %}
-                <li class="static__chart__value">
+                <li>
                   {{ value | markdownify }}
                 </li>
               {% endfor %}
@@ -43,26 +79,28 @@ layout: static-default
 
   <section class="static__paragraphs">
     {% for paragraph in page.paragraphs %}
-      <div class="static__paragraph">
+      <div class="static__text">
         {% if paragraph.title %}
-          <h3 class="static__paragraph__title">{{ paragraph.title }}</h3>
+          <h3>{{ paragraph.title }}</h3>
         {% endif %}
         {% if paragraph.body %}
-          <p class="static__paragraph__body">{{ paragraph.body }}</p>
+          <p>{{ paragraph.body }}</p>
         {% endif %}
       </div>
       {% assign previous_paragraph = paragraph %}
     {% endfor %}
   </section>
 
-  <section class="static__email">
-    <h3>{{ page.email.title }}</h3>
-    <h3>{{ page.email.prefill }}</h3>
-  </section>
+  <section class="static__cta">
+    <div class="static__email">
+      <h3>{{ page.email.title }}</h3>
+      <h3>{{ page.email.prefill }}</h3>
+    </div>
 
-  <section class="static__learnMore">
-    <h3>{{ page.learnMore }}</h3>
-    <img src="" class="static__learnMore__logo"/>
+    <div class="static__learnMore">
+      <h3>{{ page.learnMore }}</h3>
+      <img src="" class="static__learnMore__logo"/>
+    </div>
   </section>
 
 </div>
