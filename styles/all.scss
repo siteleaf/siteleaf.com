@@ -1150,16 +1150,36 @@ h6 {
 // static is faster
 // ----------------
 
+.static__section {
+  @extend %container--wide;
+  padding: $v*4 $v $v*4 $v;
+  border-bottom: 3px solid $color--dark-gray;
+}
+
+.static__text {
+  width: 58.333333%;
+  vertical-align: top;
+  @include max-width($max-width--lg) {
+    width: 58.333333%;
+  }
+  @include max-width($max-width--md) {
+    width: 58.333333%;
+  }
+}
+
 .static__header {
   width: 100%;
   height: auto;
   position: relative;
   display: block;
+  background-color: $color--darkest-gray;
 }
 
 .static__header__video {
   top: 0;
   left: 0;
+  width: 100%;
+  height: auto;
   z-index: 0;
 }
 
@@ -1174,80 +1194,164 @@ h6 {
   @include margin-center;
 }
 
-.static__intro, .static__test, .static__paragraphs, .static__cta {
-  @extend %container--wide;
-  padding-bottom: $v*3 ;
-  margin-top: $v*3;
-  border-bottom: 3px solid $color--dark-gray;
+#introChart {
+  display: inline-block;
+  float: right;
 }
 
-.static__text {
-    width: 58.333333%;
-    @include max-width($max-width--lg) {
-      width: 58.333333%;
-    }
-    @include max-width($max-width--md) {
-      width: 58.333333%;
-    }
-}
-
-.static__test .static__text, .static__test__update, .static__test__key {
+#static__test {
   display: inline-block;
 }
 
-.static_test__update {
+.static__test__update, .static__test__key {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.static__test__disclaimer, .static__chart__locations, #static__updateText {
+  color: $color--gray;
+  font-weight: $font-weight--normal;
+}
+
+.static__test__update {
   width: 16.666667%;
   margin-left: $gutter;
+  margin-top: 32px;
+  padding-top: 16px;
 }
 
 .static__test__key {
   width: 16.666667%;
   margin-left: $gutter;
+  margin-top: 32px;
+  padding-top: 16px;
+}
+
+.static__test__key div {
+  width: $font-size--html;
+  height: $font-size--html;
+  margin-right: $gutter/2;
+  display: inline-block;
+}
+
+.static__test__key p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.chart {
+  display: block;
+  position: absolute;
+  transform: rotate(-135deg);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.chart line {
+  stroke-width: .4;
+}
+
+.chart text {
+  font-size: 2.5px;
+  fill: $color--dark-gray;
+}
+
+.circle {
+  top: 0;
+  fill: none;
+  animation: progress 1s ease-out forwards;
+}
+
+.static__chart__wrapper {
+  @include flexbox;
+  margin-top: $v*3;
 }
 
 .static__chart {
-  width: 24.5%;
+  width: auto;
+  height: auto;
   display: inline-block;
-  margin-right: 0;
+  margin-right: $gutter;
 
-  // &:nth-child(4) .static__chart__values {
-  //   margin-right: 0;
-  // }
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+.static__chart p {
+  margin-bottom: 0;
+}
+
+.static__chart__logo {
+  display: inline-block;
+  width: 33.333333%;
+  height: auto;
+  float: left;
+  margin-top: -$gutter;
+}
+
+.static__chart__title {
+  border-top: 3px solid $color--dark-gray;
+  padding-top: $gutter;
+  padding-left: 33.333333%;
 }
 
 .static__chart__locations {
   display: inline-block;
   float: left;
-  width: 50%;
+  margin-left: 33.333333%;
 }
 
 .static__chart__values{
   display: inline-block;
   float: right;
   text-align: right;
-  width: 50%;
-  padding-right: $gutter
 }
 
-.static_chart_stack {
-  position: relative;
+#static__cta {
+  border-bottom: none;
+  @include flexbox;
+}
+
+.static__email {
+  width: auto;
+  margin-right: $gutter;
+  vertical-align: top;
+}
+
+.static__email input{
+  border: none;
+  //width: 80%;
+  height: 50px;
+  vertical-align: middle;
+  background-color: $color--dark-gray;
+  font-size: $font-size--html;
+  color: $color--darkest-gray;
+}
+
+.static__learnMore {
+  width: auto;
+}
+
+.static__learnMore img {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  margin-right: $gutter;
 }
 
-.circular-chart {
-  display: block;
-  position: absolute;
-  transform: rotate(-135deg);
+.static__learnMore h4 {
+  display: inline-block;
+  vertical-align: top;
+  //width: 70%;
 }
 
-.circle {
-  top: 0;
-  stroke: #4CC790;
-  fill: none;
-  stroke-width: 2.4;
-  animation: progress 1s ease-out forwards;
+.static__learnMore a {
+  text-decoration: underline;
+}
+
+.static__learnMore a:hover {
+  text-decoration: none;
 }
 
 @keyframes progress {

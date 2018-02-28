@@ -3,70 +3,266 @@ layout: static-default
 ---
 <div class="bg--darkest-gray">
 
-  <section class="static__intro">
-    <div class="static__text">
+  <section class="static__section">
+    <div class="static__text" style="display:inline-block;">
       <p>{{ page.intro }}</p>
+    </div>
+    <div class="static__chart" id="introChart">
+      {% assign size = page.chartSize %}
+      <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
+        <g>
+          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">0</text>
+          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+        </g>
+        <g transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">1</text>
+          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+        </g>
+        <g transform="rotate(90 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">2</text>
+          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+        </g>
+        <g transform="rotate(135 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">3</text>
+          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+        </g>
+        <g transform="rotate(180 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">4</text>
+          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+        </g>
+        <g transform="rotate(225 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">5</text>
+          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+        </g>
+        <g transform="rotate(270 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">6</text>
+          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+        </g>
+        {% for value in page.introChart.values %}
+          <defs>
+            <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="20%" stop-color="white" stop-opacity="0"/>
+              <stop offset="70%" stop-color="white" stop-opacity="1"/>
+            </linearGradient>
+            <mask id="fade" maskContentUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="{{ size }}" height="{{ size }}" fill="url(#fadeGrad)" transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})"/>
+            </mask>
+          </defs>
+          <path class="circle"
+            stroke="#5A6575"
+            stroke-width="2.4"
+            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+            {% assign radius = circum | divided_by: 6.2832 %}
+            {% assign diamet = radius | times: 2 %}
+            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+          />
+          <path class="circle"
+            stroke="#374252"
+            stroke-width="1.9"
+            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+            {% assign radius = circum | divided_by: 6.2832 %}
+            {% assign diamet = radius | times: 2 %}
+            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+          />
+          <path class="circle"
+            {% if forloop.index0 == 0 %}
+              stroke="#50E6A5"
+            {% elsif forloop.index0 == 1 %}
+              stroke="#32C8BE"
+            {% elsif forloop.index0 == 2 %}
+              stroke="#3291AA"
+            {% elsif forloop.index0 == 3 %}
+              stroke="#236EAA"
+            {% else %}
+              stroke="#145080"
+            {% endif %}
+            stroke-width="2.4"
+            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+            {% assign radius = circum | divided_by: 6.2832 %}
+            {% assign diamet = radius | times: 2 %}
+            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+          />
+          <path class="circle"
+            mask="url(#fade"
+            stroke="#DC5A46"
+            stroke-width="2.4"
+            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+            {% assign radius = circum | divided_by: 6.2832 %}
+            {% assign diamet = radius | times: 2 %}cd
+            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+            />
+        {% endfor %}
+      </svg>
     </div>
   </section>
 
-  <section class="static__test">
-    <div class="static__text">
+  <section class="static__section">
+    <div class="static__text" id="static__test">
       <h3>{{ page.test.title }}</h3>
       <p>{{ page.test.body }}</p>
-      <h5>{{ page.test.disclaimer }}</h5>
+      <p class="static__test__disclaimer">{{ page.test.disclaimer }}</p>
     </div>
     <div class="static__test__update">
-      <h4>{{ page.test.updateText }}</h4>
+      <h4 id="static__updateText">{{ page.test.updateText }}</h4>
       <h4>{{ page.test.updateTime }}</h4>
     </div>
     <ul class="static__test__key">
       {% for location in page.test.locations %}
         <li>
-          <div class="static_test_block">
+          <div style="
+          {% if forloop.index0 == 0 %}
+            background-color:#50E6A5;
+          {% elsif forloop.index0 == 1 %}
+            background-color:#32C8BE;
+          {% elsif forloop.index0 == 2 %}
+            background-color:#3291AA;
+          {% elsif forloop.index0 == 3 %}
+            background-color:#236EAA;
+          {% else %}
+            background-color:#145080;
+          {% endif %}">
           </div>
-          <h4 class="static_test_location">{{ location | markdownify }}</h4>
+          <p>{{ location }}</p>
         </li>
         {% assign previous_location = location %}
       {% endfor %}
     </ul>
-    <div class="static__charts">
+    <div class="static__chart__wrapper">
       {% for chart in page.test.charts %}
           <div class="static__chart">
-            <div class="static_chart_stack">
-              <svg viewbox="0 0 36 36" class="circular-chart">
-                {% for value in chart.values %}
-                  <path class="circle"
-                    {% if chart.values[0] %}
-                      stroke="#50E6A5"
-                    {% endif %}
-                    {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
-                    {% assign radius = circum | divided_by: 6.2832 %}
-                    {% assign diamet = radius | times: 2 %}
-                    stroke-dasharray="{{ circum | divided_by: 8 | times: value }}, {{ circum }}"
-                    d="M18 {{ 36 | minus: diamet | divided_by: 2}}
-                      a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
-                      a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
-                    />
-                {% endfor %}
-              </svg>
-            </div>
+            {% assign size = page.chartSize %}
+            <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
+              <g>
+                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">0</text>
+                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+              </g>
+              <g transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">1</text>
+                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+              </g>
+              <g transform="rotate(90 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">2</text>
+                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+              </g>
+              <g transform="rotate(135 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">3</text>
+                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+              </g>
+              <g transform="rotate(180 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">4</text>
+                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+              </g>
+              <g transform="rotate(225 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">5</text>
+                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+              </g>
+              <g transform="rotate(270 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">6</text>
+                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+              </g>
+              {% for value in chart.values %}
+                <defs>
+                  <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="20%" stop-color="white" stop-opacity="0"/>
+                    <stop offset="70%" stop-color="white" stop-opacity="1"/>
+                  </linearGradient>
+                  <mask id="fade" maskContentUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="{{ size }}" height="{{ size }}" fill="url(#fadeGrad)" transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})"/>
+                  </mask>
+                </defs>
+                <path class="circle"
+                  stroke="#5A6575"
+                  stroke-width="2.4"
+                  {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+                  {% assign radius = circum | divided_by: 6.2832 %}
+                  {% assign diamet = radius | times: 2 %}
+                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+                  d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+                />
+                <path class="circle"
+                  stroke="#374252"
+                  stroke-width="1.9"
+                  {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+                  {% assign radius = circum | divided_by: 6.2832 %}
+                  {% assign diamet = radius | times: 2 %}
+                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+                  d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+                />
+                <path class="circle"
+                  {% if forloop.index0 == 0 %}
+                    stroke="#50E6A5"
+                  {% elsif forloop.index0 == 1 %}
+                    stroke="#32C8BE"
+                  {% elsif forloop.index0 == 2 %}
+                    stroke="#3291AA"
+                  {% elsif forloop.index0 == 3 %}
+                    stroke="#236EAA"
+                  {% else %}
+                    stroke="#145080"
+                  {% endif %}
+                  stroke-width="2.4"
+                  {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+                  {% assign radius = circum | divided_by: 6.2832 %}
+                  {% assign diamet = radius | times: 2 %}
+                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+                  d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+                />
+                <path class="circle"
+                  mask="url(#fade"
+                  stroke="#DC5A46"
+                  stroke-width="2.4"
+                  {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+                  {% assign radius = circum | divided_by: 6.2832 %}
+                  {% assign diamet = radius | times: 2 %}cd
+                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+                  d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                    a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+                  />
+              {% endfor %}
+            </svg>
             {% if chart.title %}
               <h4 class="static__chart__title">{{ chart.title }}</h4>
             {% endif %}
             {% if page.test.locations %}
-            <ul class="static__chart__locations">
-              {% for location in page.test.locations %}
-                <li>
-                  {{ location | markdownify }}
-                </li>
-              {% endfor %}
-            </ul>
+              {% if forloop.index0 == 0 %}
+                <div class="static__chart__logo">
+                  <img src="/assets/logo.svg" />
+                </div>
+                <ul class="static__chart__locations" style="margin-left:0;">
+              {% else %}
+                <ul class="static__chart__locations">
+              {% endif %}
+                {% for location in page.test.locations %}
+                  <li>
+                    {{ location }}
+                  </li>
+                {% endfor %}
+              </ul>
             {% endif %}
             {% if chart.values %}
             <ul class="static__chart__values">
               {% for value in chart.values %}
                 <li>
-                  {{ value | markdownify }}
+                  {{ value }}
                 </li>
               {% endfor %}
             </ul>
@@ -77,8 +273,8 @@ layout: static-default
     </div>
   </section>
 
-  <section class="static__paragraphs">
-    {% for paragraph in page.paragraphs %}
+  {% for paragraph in page.paragraphs %}
+    <section class="static__section">
       <div class="static__text">
         {% if paragraph.title %}
           <h3>{{ paragraph.title }}</h3>
@@ -87,19 +283,21 @@ layout: static-default
           <p>{{ paragraph.body }}</p>
         {% endif %}
       </div>
-      {% assign previous_paragraph = paragraph %}
-    {% endfor %}
-  </section>
+    </section>
+  {% assign previous_paragraph = paragraph %}
+{% endfor %}
 
-  <section class="static__cta">
+  <section class="static__section" id="static__cta">
     <div class="static__email">
-      <h3>{{ page.email.title }}</h3>
-      <h3>{{ page.email.prefill }}</h3>
+      <h4>{{ page.email.title }}</h4>
+      <form>
+        <input type="text" value="{{ page.email.prefill }}"/>
+      </form>
     </div>
 
     <div class="static__learnMore">
-      <h3>{{ page.learnMore }}</h3>
-      <img src="" class="static__learnMore__logo"/>
+      <img src="/assets/logo.svg" />
+      <h4>{{ page.learnMore }}</h4>
     </div>
   </section>
 
