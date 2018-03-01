@@ -2,6 +2,7 @@
 title: Terms
 date: 2015-11-10 19:00:00 -05:00
 permalink: "/terms/"
+position: 2
 layout: post
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Plans
 permalink: "/plans/"
+position: 3
 subtitle: Start with a **free 14 day trial**, upgrade or downgrade anytime. All plans
   include **unlimited users**.
 header_button:
