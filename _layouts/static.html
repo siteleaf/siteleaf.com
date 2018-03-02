@@ -8,138 +8,163 @@ layout: static-default
       <p>{{ page.intro }}</p>
     </div>
     <div class="static__chart" id="introChart">
-      {% assign size = page.chartSize %}
-      <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
-        <g>
-          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">0</text>
-          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-        </g>
-        <g transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">1</text>
-          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-        </g>
-        <g transform="rotate(90 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">2</text>
-          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-        </g>
-        <g transform="rotate(135 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">3</text>
-          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-        </g>
-        <g transform="rotate(180 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">4</text>
-          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-        </g>
-        <g transform="rotate(225 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">5</text>
-          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-        </g>
-        <g transform="rotate(270 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-          <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">6</text>
-          <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-        </g>
-        {% for value in page.introChart.values %}
-          <defs>
-            <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="20%" stop-color="white" stop-opacity="0"/>
-              <stop offset="70%" stop-color="white" stop-opacity="1"/>
-            </linearGradient>
-            <mask id="fade" maskContentUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="{{ size }}" height="{{ size }}" fill="url(#fadeGrad)" transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})"/>
-            </mask>
-          </defs>
-          <path class="circle"
-            stroke="#5A6575"
-            stroke-width="2.4"
-            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
-            {% assign radius = circum | divided_by: 6.2832 %}
-            {% assign diamet = radius | times: 2 %}
-            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
-            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
-          />
-          <path class="circle"
-            stroke="#374252"
-            stroke-width="1.9"
-            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
-            {% assign radius = circum | divided_by: 6.2832 %}
-            {% assign diamet = radius | times: 2 %}
-            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
-            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
-          />
-          <path class="circle"
-            {% if forloop.index0 == 0 %}
-              stroke="#50E6A5"
-            {% elsif forloop.index0 == 1 %}
-              stroke="#32C8BE"
-            {% elsif forloop.index0 == 2 %}
-              stroke="#3291AA"
-            {% elsif forloop.index0 == 3 %}
-              stroke="#236EAA"
-            {% else %}
-              stroke="#145080"
-            {% endif %}
-            stroke-width="2.4"
-            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
-            {% assign radius = circum | divided_by: 6.2832 %}
-            {% assign diamet = radius | times: 2 %}
-            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
-            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
-          />
-          <path class="circle"
-            mask="url(#fade"
-            stroke="#DC5A46"
-            stroke-width="2.4"
-            {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
-            {% assign radius = circum | divided_by: 6.2832 %}
-            {% assign diamet = radius | times: 2 %}cd
-            stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
-            d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
-              a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+      {% if page.introChart %}
+        {% assign size = page.chartSize %}
+        <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
+          <g>
+            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">0</text>
+            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+          </g>
+          <g transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">1</text>
+            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+          </g>
+          <g transform="rotate(90 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">2</text>
+            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+          </g>
+          <g transform="rotate(135 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">3</text>
+            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+          </g>
+          <g transform="rotate(180 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">4</text>
+            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+          </g>
+          <g transform="rotate(225 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">5</text>
+            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+          </g>
+          <g transform="rotate(270 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">6</text>
+            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+          </g>
+          {% for value in page.introChart.values %}
+            <defs>
+              <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="20%" stop-color="white" stop-opacity="0"/>
+                <stop offset="70%" stop-color="white" stop-opacity="1"/>
+              </linearGradient>
+              <mask id="fade" maskContentUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="{{ size }}" height="{{ size }}" fill="url(#fadeGrad)" transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})"/>
+              </mask>
+            </defs>
+            <path class="circle"
+              stroke="#5A6575"
+              stroke-width="2.4"
+              {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+              {% assign radius = circum | divided_by: 6.2832 %}
+              {% assign diamet = radius | times: 2 %}
+              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+              d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
             />
-        {% endfor %}
-      </svg>
+            <path class="circle"
+              stroke="#374252"
+              stroke-width="1.9"
+              {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+              {% assign radius = circum | divided_by: 6.2832 %}
+              {% assign diamet = radius | times: 2 %}
+              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+              d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+            />
+            <path class="circle"
+              {% if forloop.index0 == 0 %}
+                stroke="#50E6A5"
+              {% elsif forloop.index0 == 1 %}
+                stroke="#32C8BE"
+              {% elsif forloop.index0 == 2 %}
+                stroke="#3291AA"
+              {% elsif forloop.index0 == 3 %}
+                stroke="#236EAA"
+              {% else %}
+                stroke="#145080"
+              {% endif %}
+              stroke-width="2.4"
+              {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+              {% assign radius = circum | divided_by: 6.2832 %}
+              {% assign diamet = radius | times: 2 %}
+              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+              d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+            />
+            <path class="circle"
+              mask="url(#fade"
+              stroke="#DC5A46"
+              stroke-width="2.4"
+              {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
+              {% assign radius = circum | divided_by: 6.2832 %}
+              {% assign diamet = radius | times: 2 %}cd
+              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+              d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
+                a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
+              />
+          {% endfor %}
+        </svg>
+        <ul class="static__intro__key">
+          {% for value in page.introChart.key %}
+            <li>
+              <div style="
+              {% if forloop.index0 == 0 %}
+                background-color:#50E6A5;
+              {% elsif forloop.index0 == 1 %}
+                background-color:#32C8BE;
+              {% elsif forloop.index0 == 2 %}
+                background-color:#3291AA;
+              {% elsif forloop.index0 == 3 %}
+                background-color:#236EAA;
+              {% else %}
+                background-color:#145080;
+              {% endif %}">
+              </div>
+              <p>{{ value }}</p>
+            </li>
+            {% assign previous_value = value %}
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
   </section>
 
   <section class="static__section">
-    <div class="static__text" id="static__test">
-      <h3>{{ page.test.title }}</h3>
-      <p>{{ page.test.body }}</p>
-      <p class="static__test__disclaimer">{{ page.test.disclaimer }}</p>
+    <div class="static__test__wrapper">
+      <div class="static__text" id="static__test">
+        <h3>{{ page.test.title }}</h3>
+        <p>{{ page.test.body }}</p>
+        <p class="static__test__disclaimer">{{ page.test.disclaimer }}</p>
+      </div>
+      <div class="static__test__update">
+        <h4 class="static__test__updateTitle">{{ page.test.updateText }}</h4>
+        <h4>{{ page.test.updateTime }}</h4>
+      </div>
+      <ul class="static__test__key">
+        {% for location in page.test.locations %}
+          <li>
+            <div style="
+            {% if forloop.index0 == 0 %}
+              background-color:#50E6A5;
+            {% elsif forloop.index0 == 1 %}
+              background-color:#32C8BE;
+            {% elsif forloop.index0 == 2 %}
+              background-color:#3291AA;
+            {% elsif forloop.index0 == 3 %}
+              background-color:#236EAA;
+            {% else %}
+              background-color:#145080;
+            {% endif %}">
+            </div>
+            <p>{{ location }}</p>
+          </li>
+          {% assign previous_location = location %}
+        {% endfor %}
+      </ul>
     </div>
-    <div class="static__test__update">
-      <h4 id="static__updateText">{{ page.test.updateText }}</h4>
-      <h4>{{ page.test.updateTime }}</h4>
-    </div>
-    <ul class="static__test__key">
-      {% for location in page.test.locations %}
-        <li>
-          <div style="
-          {% if forloop.index0 == 0 %}
-            background-color:#50E6A5;
-          {% elsif forloop.index0 == 1 %}
-            background-color:#32C8BE;
-          {% elsif forloop.index0 == 2 %}
-            background-color:#3291AA;
-          {% elsif forloop.index0 == 3 %}
-            background-color:#236EAA;
-          {% else %}
-            background-color:#145080;
-          {% endif %}">
-          </div>
-          <p>{{ location }}</p>
-        </li>
-        {% assign previous_location = location %}
-      {% endfor %}
-    </ul>
-    <div class="static__chart__wrapper">
+    <div class="static__chart__wrapper" id="testChart">
       {% for chart in page.test.charts %}
           <div class="static__chart">
             {% assign size = page.chartSize %}
@@ -291,14 +316,82 @@ layout: static-default
     <div class="static__email">
       <h4>{{ page.email.title }}</h4>
       <form>
-        <input type="text" value="{{ page.email.prefill }}"/>
+        <input type="text" placeholder="{{ page.email.prefill }}"/>
       </form>
+      <div class="static__email__arrow">
+        <img src="/assets/arrow.svg"/>
+      </div>
     </div>
 
     <div class="static__learnMore">
-      <img src="/assets/logo.svg" />
       <h4>{{ page.learnMore }}</h4>
+      <img src="/assets/logo.svg" />
     </div>
   </section>
 
 </div>
+
+<script type="text/javascript">
+
+    var introChart = document.getElementById('introChart');
+    var testChart = document.getElementById('testChart');
+    testChart.classList.add("hidden");
+    introChart.classList.add("hidden");
+
+    function VisibilityMonitor(element, showfn, hidefn) {
+        var isshown= false;
+        function check() {
+            if (rectsIntersect(getPageRect(), getElementRect(element)) !== isshown) {
+                isshown= !isshown;
+                isshown? showfn() : hidefn();
+            }
+        };
+        window.onscroll=window.onresize= check;
+        check();
+    }
+
+    function getPageRect() {
+        var isquirks= document.compatMode!=='BackCompat';
+        var page= isquirks? document.documentElement : document.body;
+        var x= page.scrollLeft;
+        var y= page.scrollTop;
+        var w= 'innerWidth' in window? window.innerWidth : page.clientWidth;
+        var h= 'innerHeight' in window? window.innerHeight : page.clientHeight;
+        return [x, y, x+w, y+h];
+    }
+
+    function getElementRect(element) {
+        var x= 0, y= 0;
+        var w= element.offsetWidth, h= element.offsetHeight;
+        while (element.offsetParent!==null) {
+            x+= element.offsetLeft;
+            y+= element.offsetTop;
+            element= element.offsetParent;
+        }
+        return [x, y, x+w, y+h];
+    }
+
+    function rectsIntersect(a, b) {
+        return a[0]<b[2] && a[2]>b[0] && a[1]<b[3] && a[3]>b[1];
+    }
+
+    VisibilityMonitor(
+        introChart,
+        function() {
+            introChart.classList.remove("hidden");
+        },
+        function() {
+            introChart.classList.add("hidden");
+        }
+    );
+
+    VisibilityMonitor(
+        testChart,
+        function() {
+            testChart.classList.remove("hidden");
+        },
+        function() {
+            testChart.classList.add("hidden");
+        }
+    );
+</script>

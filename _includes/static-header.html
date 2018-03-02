@@ -27,7 +27,8 @@
 <div class="headerWrap bg--{{ background | default: 'lightest-gray' }}">
   <header class="static__header">
     <video width="100%" height="auto" class="static__header__video" autoplay loop>
-      <source src="../assets/static-header.mp4" type="video/mp4">
+      <source src="/assets/static-header.mp4" type="video/mp4"></source>
+      Your browser does not support the video tag.
     </video>
     <h1 class="static_header__title">{{ page.header_title | default: page.title }}</h1>
   </header>
