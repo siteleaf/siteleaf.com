@@ -3,8 +3,8 @@ layout: static-default
 ---
 <div class="bg--darkest-gray">
   {% assign max = page.chartMax %}
-  {% assign size = page.chartSize %}
-  {% assign scale = max | times: 360 | divided_by: 270 %}
+  {% assign size = 50 %}
+  {% assign scale = max | times: 1.333333 %}
 
 
   <section class="static__section">
@@ -15,7 +15,7 @@ layout: static-default
       {% if page.introChart %}
         <svg viewbox="0 0 {{ size }} {{ size }}" class="chart" id="1">
           {% for i in (0..max) %}
-            <g transform="rotate({{ 270 | times: 10 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+            <g transform="rotate({{ 2700 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
               <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">{{ i }}</text>
               <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
             </g>
@@ -36,7 +36,7 @@ layout: static-default
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
               {% assign radius = circum | divided_by: 6.2832 %}
               {% assign diamet = radius | times: 2 %}
-              stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
+              stroke-dasharray="{{ circum | times: 0.75 }}, {{ circum }}"
               d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -47,7 +47,7 @@ layout: static-default
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
               {% assign radius = circum | divided_by: 6.2832 %}
               {% assign diamet = radius | times: 2 %}
-              stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
+              stroke-dasharray="{{ circum | times: 0.75 }}, {{ circum }}"
               d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -147,10 +147,9 @@ layout: static-default
     <div class="static__chart__wrapper" id="testChart">
       {% for chart in page.test.charts %}
           <div class="static__chart">
-            {% assign size = page.chartSize %}
             <svg viewbox="0 0 {{ size }} {{ size }}" class="chart" id="{{ forloop.index0 | plus: 2 }}">
               {% for i in (0..max) %}
-                <g transform="rotate({{ 270 | times: 10 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                <g transform="rotate({{ 2700 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
                   <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">{{ i }}</text>
                   <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
                 </g>
@@ -171,7 +170,7 @@ layout: static-default
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
                   {% assign radius = circum | divided_by: 6.2832 %}
                   {% assign diamet = radius | times: 2 %}
-                  stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
+                  stroke-dasharray="{{ circum | times: 0.75 }}, {{ circum }}"
                   d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -182,7 +181,7 @@ layout: static-default
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
                   {% assign radius = circum | divided_by: 6.2832 %}
                   {% assign diamet = radius | times: 2 %}
-                  stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
+                  stroke-dasharray="{{ circum | times: 0.75 }}, {{ circum }}"
                   d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -272,9 +271,9 @@ layout: static-default
       <form>
         <input type="text" placeholder="{{ page.email.prefill }}"/>
       </form>
-      <div class="static__email__arrow">
-        <img src="/assets/arrow.svg"/>
-      </div>
+      <button type="submit" class="static__email__arrow">
+          <img src="/assets/arrow.svg"/>
+      </button>
     </div>
 
     <div class="static__learnMore">

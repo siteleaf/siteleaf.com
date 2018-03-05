@@ -1152,7 +1152,16 @@ h6 {
 
 .static__section {
   @extend %container--wide;
-  padding: $v*4 $v $v*4 $v;
+  padding: $v*4 5% $v*4 5%;
+  position: relative;
+}
+
+.static__section:after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  bottom: 0;
   border-bottom: 3px solid $color--dark-gray;
 }
 
@@ -1205,11 +1214,12 @@ h6 {
     position: relative;
     float: none;
     width: 33.33333%;
-    margin-left: 0;
+    margin-left: 18%;
+    margin-top: $v;
   }
   @include max-width($max-width--sm) {
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
   }
 }
 
@@ -1242,6 +1252,9 @@ h6 {
 #static__test {
   display: inline-block;
   margin-right: auto;
+  @include max-width($min-width--lg) {
+    margin-right: 25%;
+  }
 }
 
 .static__test__update, .static__test__key {
@@ -1255,6 +1268,29 @@ h6 {
 .static__test__disclaimer, .static__chart__locations, .static__test__updateTitle {
   color: $color--gray;
   font-weight: $font-weight--normal;
+}
+
+.static__test__update {
+  @include max-width($min-width--lg) {
+    margin: 0;
+    width: 25%;
+  }
+  @include max-width ($min-width--md) {
+    width: 25%;
+  }
+  @include max-width ($min-width--sm) {
+    width: 50%;
+  }
+}
+
+.static__test__key {
+  @include max-width($min-width--lg) {
+    margin-top: 0;
+    width: 25%;
+  }
+  @include max-width ($min-width--md) {
+    width: 50%;
+  }
 }
 
 .chart {
@@ -1293,7 +1329,6 @@ h6 {
   @include flexbox;
   flex-wrap: nowrap;
   align-items: baseline;
-  margin-top: $v*3;
   @include max-width($min-width--md) {
     flex-wrap: wrap;
   }
@@ -1304,7 +1339,7 @@ h6 {
   height: auto;
   display: inline-block;
   margin-right: $gutter;
-  margin-top: $v*3;
+  margin-top: $v*4;
   flex: 1 1 0;
   min-width: 140px;
 
@@ -1340,10 +1375,11 @@ h6 {
 
 .static__chart__logo {
   display: inline-block;
-  width: 33.333333%;
+  width: 25%;
   height: auto;
   float: left;
   margin-top: -$gutter;
+  margin-right: 8.3333333%;
   @include max-width($min-width--lg) {
     display: none;
   }
@@ -1366,13 +1402,12 @@ h6 {
 
 .static__chart__locations {
   display: inline-block;
-  float: left;
   margin-left: 33.333333%;
   @include max-width($min-width--lg) {
     margin-left: 0;
   }
   @include max-width($min-width--md) {
-    margin-left: 3.333333%;
+    margin-left: 33.333333%;
   }
 }
 
@@ -1383,12 +1418,15 @@ h6 {
 }
 
 #static__cta {
-  border-bottom: none;
   @include flexbox;
   @include justify-content;
   @include max-width($min-width--md) {
     flex-wrap: wrap;
   }
+}
+
+#static__cta:after {
+  border: none;
 }
 
 .static__email {
@@ -1409,10 +1447,14 @@ h6 {
   float: left;
 }
 
+.static__email__arrow {
+  border: none;
+}
+
 .static__email__arrow img {
   width: 60%;
   height: auto;
-  margin: 20% 0 0 20%;
+  margin: 0 0 0 20%;
 }
 
 .static__email input {

@@ -13,7 +13,6 @@ introChart:
   - 0.50
   - 2.00
 
-chartSize: 50
 chartMax: 6
 
 test:
