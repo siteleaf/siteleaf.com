@@ -2,6 +2,10 @@
 layout: static-default
 ---
 <div class="bg--darkest-gray">
+  {% assign max = page.chartMax %}
+  {% assign size = page.chartSize %}
+  {% assign scale = max | times: 360 | divided_by: 270 %}
+
 
   <section class="static__section">
     <div class="static__text" style="display:inline-block;">
@@ -9,36 +13,13 @@ layout: static-default
     </div>
     <div class="static__chart" id="introChart">
       {% if page.introChart %}
-        {% assign size = page.chartSize %}
-        <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
-          <g>
-            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">0</text>
-            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-          </g>
-          <g transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">1</text>
-            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-          </g>
-          <g transform="rotate(90 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">2</text>
-            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-          </g>
-          <g transform="rotate(135 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">3</text>
-            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-          </g>
-          <g transform="rotate(180 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">4</text>
-            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-          </g>
-          <g transform="rotate(225 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">5</text>
-            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-          </g>
-          <g transform="rotate(270 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-            <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">6</text>
-            <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-          </g>
+        <svg viewbox="0 0 {{ size }} {{ size }}" class="chart" id="1">
+          {% for i in (0..max) %}
+            <g transform="rotate({{ 270 | times: 10 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+              <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">{{ i }}</text>
+              <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+            </g>
+          {% endfor %}
           {% for value in page.introChart.values %}
             <defs>
               <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -55,7 +36,7 @@ layout: static-default
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
               {% assign radius = circum | divided_by: 6.2832 %}
               {% assign diamet = radius | times: 2 %}
-              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+              stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
               d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -66,7 +47,7 @@ layout: static-default
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
               {% assign radius = circum | divided_by: 6.2832 %}
               {% assign diamet = radius | times: 2 %}
-              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+              stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
               d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -87,7 +68,7 @@ layout: static-default
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
               {% assign radius = circum | divided_by: 6.2832 %}
               {% assign diamet = radius | times: 2 %}
-              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+              stroke-dasharray="{{ circum | times: 10 | divided_by: scale | times: value | divided_by: 10 }}, {{ circum }}"
               d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -99,7 +80,7 @@ layout: static-default
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
               {% assign radius = circum | divided_by: 6.2832 %}
               {% assign diamet = radius | times: 2 %}cd
-              stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+              stroke-dasharray="{{ circum | times: 10 | divided_by: scale | times: value | divided_by: 10 }}, {{ circum }}"
               d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -160,7 +141,6 @@ layout: static-default
             </div>
             <p>{{ location }}</p>
           </li>
-          {% assign previous_location = location %}
         {% endfor %}
       </ul>
     </div>
@@ -168,35 +148,13 @@ layout: static-default
       {% for chart in page.test.charts %}
           <div class="static__chart">
             {% assign size = page.chartSize %}
-            <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
-              <g>
-                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">0</text>
-                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-              </g>
-              <g transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">1</text>
-                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-              </g>
-              <g transform="rotate(90 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">2</text>
-                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-              </g>
-              <g transform="rotate(135 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">3</text>
-                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-              </g>
-              <g transform="rotate(180 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">4</text>
-                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-              </g>
-              <g transform="rotate(225 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">5</text>
-                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-              </g>
-              <g transform="rotate(270 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
-                <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">6</text>
-                <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
-              </g>
+            <svg viewbox="0 0 {{ size }} {{ size }}" class="chart" id="{{ forloop.index0 | plus: 2 }}">
+              {% for i in (0..max) %}
+                <g transform="rotate({{ 270 | times: 10 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
+                  <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">{{ i }}</text>
+                  <line x1="{{ size | divided_by: 2 }}" y1="4" x2="{{ size | divided_by: 2 }}" y2="6" stroke="#5A6575"/>
+                </g>
+              {% endfor %}
               {% for value in chart.values %}
                 <defs>
                   <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -213,7 +171,7 @@ layout: static-default
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
                   {% assign radius = circum | divided_by: 6.2832 %}
                   {% assign diamet = radius | times: 2 %}
-                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+                  stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
                   d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -224,7 +182,7 @@ layout: static-default
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
                   {% assign radius = circum | divided_by: 6.2832 %}
                   {% assign diamet = radius | times: 2 %}
-                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: 6 | divided_by: 10 }}, {{ circum }}"
+                  stroke-dasharray="{{ circum | times: 270 | divided_by: 360 }}, {{ circum }}"
                   d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -245,7 +203,7 @@ layout: static-default
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
                   {% assign radius = circum | divided_by: 6.2832 %}
                   {% assign diamet = radius | times: 2 %}
-                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+                  stroke-dasharray="{{ circum | times: 10 | divided_by: scale | times: value | divided_by: 10 }}, {{ circum }}"
                   d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -257,7 +215,7 @@ layout: static-default
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
                   {% assign radius = circum | divided_by: 6.2832 %}
                   {% assign diamet = radius | times: 2 %}cd
-                  stroke-dasharray="{{ circum | times: 10 | divided_by: 8 | times: value | divided_by: 10 }}, {{ circum }}"
+                  stroke-dasharray="{{ circum | times: 10 | divided_by: scale | times: value | divided_by: 10 }}, {{ circum }}"
                   d="M{{ size | divided_by: 2 }} {{ size | minus: diamet | divided_by: 2}}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
@@ -272,10 +230,8 @@ layout: static-default
                 <div class="static__chart__logo">
                   <img src="/assets/logo.svg" />
                 </div>
-                <ul class="static__chart__locations" style="margin-left:0;">
-              {% else %}
-                <ul class="static__chart__locations">
               {% endif %}
+                <ul class="static__chart__locations">
                 {% for location in page.test.locations %}
                   <li>
                     {{ location }}
@@ -293,7 +249,6 @@ layout: static-default
             </ul>
           {% endif %}
           </div>
-          {% assign previous_chart = chart %}
       {% endfor %}
     </div>
   </section>
@@ -309,7 +264,6 @@ layout: static-default
         {% endif %}
       </div>
     </section>
-  {% assign previous_paragraph = paragraph %}
 {% endfor %}
 
   <section class="static__section" id="static__cta">
@@ -333,65 +287,47 @@ layout: static-default
 
 <script type="text/javascript">
 
-    var introChart = document.getElementById('introChart');
-    var testChart = document.getElementById('testChart');
-    testChart.classList.add("hidden");
-    introChart.classList.add("hidden");
-
-    function VisibilityMonitor(element, showfn, hidefn) {
-        var isshown= false;
-        function check() {
-            if (rectsIntersect(getPageRect(), getElementRect(element)) !== isshown) {
-                isshown= !isshown;
-                isshown? showfn() : hidefn();
-            }
-        };
-        window.onscroll=window.onresize= check;
-        check();
+    function check(element) {
+      if (rectsIntersect(getPage(), getElement(element)) == true ) {
+          element.classList.remove("hidden");
+      } else {
+          element.classList.add("hidden");
+      }
     }
 
-    function getPageRect() {
-        var isquirks= document.compatMode!=='BackCompat';
-        var page= isquirks? document.documentElement : document.body;
-        var x= page.scrollLeft;
-        var y= page.scrollTop;
-        var w= 'innerWidth' in window? window.innerWidth : page.clientWidth;
-        var h= 'innerHeight' in window? window.innerHeight : page.clientHeight;
-        return [x, y, x+w, y+h];
+    function getPage() {
+      var isquirks= document.compatMode!=='BackCompat';
+      var page= isquirks? document.documentElement : document.body;
+      var y= page.scrollTop;
+      var h= 'innerHeight' in window? window.innerHeight : page.clientHeight;
+      return [y,y+h];
     }
 
-    function getElementRect(element) {
-        var x= 0, y= 0;
-        var w= element.offsetWidth, h= element.offsetHeight;
-        while (element.offsetParent!==null) {
-            x+= element.offsetLeft;
-            y+= element.offsetTop;
-            element= element.offsetParent;
-        }
-        return [x, y, x+w, y+h];
+    function getElement(element) {
+      var y= 0;
+      var h= element.offsetHeight;
+      while (element.offsetParent!==null) {
+          y+= element.offsetTop;
+          element= element.offsetParent;
+      }
+      return [y, y+h];
     }
 
     function rectsIntersect(a, b) {
-        return a[0]<b[2] && a[2]>b[0] && a[1]<b[3] && a[3]>b[1];
+      return a[0]<b[1] && a[1]>b[0];
     }
 
-    VisibilityMonitor(
-        introChart,
-        function() {
-            introChart.classList.remove("hidden");
-        },
-        function() {
-            introChart.classList.add("hidden");
-        }
-    );
+    var chartArray = document.getElementsByClassName("static__chart")
+    var arrayLength = chartArray.length;
 
-    VisibilityMonitor(
-        testChart,
-        function() {
-            testChart.classList.remove("hidden");
-        },
-        function() {
-            testChart.classList.add("hidden");
-        }
-    );
+    for (var i = 0; i < arrayLength; i++) {
+      chartArray[i].classList.add("hidden");
+    }
+
+    document.onscroll = function() {
+      for (var i = 0; i < arrayLength; i++) {
+        check(chartArray[i]);
+      }
+    };
+
 </script>

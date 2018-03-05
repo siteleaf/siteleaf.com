@@ -1159,11 +1159,11 @@ h6 {
 .static__text {
   width: 58.333333%;
   vertical-align: top;
-  @include max-width($max-width--lg) {
-    width: 58.333333%;
+  @include max-width($min-width--lg) {
+    width: 75%;
   }
-  @include max-width($max-width--md) {
-    width: 58.333333%;
+  @include max-width($min-width--md) {
+    width: 100%;
   }
 }
 
@@ -1200,12 +1200,16 @@ h6 {
   padding: 0;
   margin: 0;
   width: 25%;
-}
-
-.hidden {
-  .circle {
-    display: none;
-    visibility: hidden;
+  @include max-width($max-width--md) {
+    display: block;
+    position: relative;
+    float: none;
+    width: 33.33333%;
+    margin-left: 0;
+  }
+  @include max-width($max-width--sm) {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -1229,6 +1233,10 @@ h6 {
 .static__test__wrapper {
   @include flexbox;
   @include justify-content;
+  @include max-width($min-width--lg) {
+    flex-wrap: wrap;
+
+  }
 }
 
 #static__test {
@@ -1272,12 +1280,23 @@ h6 {
   top: 0;
   fill: none;
   display: block;
-  animation: progress 2s ease-out forwards;
+  animation: progress 1.5s ease-out forwards;
+}
+
+.hidden {
+  .circle {
+    display: none;
+  }
 }
 
 .static__chart__wrapper {
   @include flexbox;
+  flex-wrap: nowrap;
+  align-items: baseline;
   margin-top: $v*3;
+  @include max-width($min-width--md) {
+    flex-wrap: wrap;
+  }
 }
 
 .static__chart {
@@ -1285,8 +1304,32 @@ h6 {
   height: auto;
   display: inline-block;
   margin-right: $gutter;
+  margin-top: $v*3;
+  flex: 1 1 0;
+  min-width: 140px;
 
   &:nth-child(4) {
+    margin-right: 0;
+  }
+
+  &:first-child .static__chart__locations {
+    margin-left: 0;
+  }
+
+  @include max-width($min-width--md) {
+    min-width: 210px;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+
+    &:first-child .static__chart__title {
+      padding-left: 33.333333%;
+    }
+  }
+
+  @include max-width($min-width--sm) {
+    min-width: 250px;
     margin-right: 0;
   }
 }
@@ -1301,18 +1344,36 @@ h6 {
   height: auto;
   float: left;
   margin-top: -$gutter;
+  @include max-width($min-width--lg) {
+    display: none;
+  }
+  @include max-width($min-width--md) {
+    display: block;
+  }
 }
 
 .static__chart__title {
   border-top: 3px solid $color--dark-gray;
   padding-top: $gutter;
   padding-left: 33.333333%;
+  @include max-width($min-width--lg) {
+    padding-left: 0;
+  }
+  @include max-width($min-width--md) {
+    padding-left: 33.333333%;
+  }
 }
 
 .static__chart__locations {
   display: inline-block;
   float: left;
   margin-left: 33.333333%;
+  @include max-width($min-width--lg) {
+    margin-left: 0;
+  }
+  @include max-width($min-width--md) {
+    margin-left: 3.333333%;
+  }
 }
 
 .static__chart__values{
@@ -1325,12 +1386,19 @@ h6 {
   border-bottom: none;
   @include flexbox;
   @include justify-content;
+  @include max-width($min-width--md) {
+    flex-wrap: wrap;
+  }
 }
 
 .static__email {
   width: auto;
   flex: 1;
   margin-right: $gutter;
+  @include max-width($min-width--md) {
+    min-width: 100%;
+    margin-right: 0;
+  }
 }
 
 .static__email form {
@@ -1386,19 +1454,31 @@ h6 {
 .static__learnMore {
   width: auto;
   flex: 1;
+  @include max-width($min-width--md) {
+    min-width: 100%;
+    margin-top: $v;
+  }
 }
 
 .static__learnMore h4 {
   display: inline-block;
   vertical-align: top;
-  width: 60%;
+  width: 65%;
   margin-right: $gutter;
+
+  @include max-width($min-width--sm) {
+    //width: 50%;
+  }
 }
 
 .static__learnMore img {
   display: inline-block;
-  width: 20%;
+  width: 16.666667%;
   height: auto;
+
+  @include max-width($min-width--sm) {
+    width: 25%;
+  }
 }
 
 .static__learnMore a {

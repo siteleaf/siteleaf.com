@@ -14,6 +14,7 @@ introChart:
   - 2.00
 
 chartSize: 50
+chartMax: 6
 
 test:
   title: Test it for yourself
@@ -34,7 +35,7 @@ test:
     - 2.00
     - 4.00
     - 5.00
-    - 6.00
+    - 3.00
 
   - title: Squarespace
     values:
@@ -67,7 +68,7 @@ paragraphs:
 
 email:
   title: Send this page to a friend
-  prefill: Enter an email to forward this URL
+  prefill: Enter email
 
 learnMore: Or learn more about how <a href="/">SiteLeaf</a> is helping people build static sites.
 
