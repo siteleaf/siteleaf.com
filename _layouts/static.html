@@ -7,13 +7,13 @@ layout: static-default
   {% assign scale = max | times: 1.333333 %}
 
 
-  <section class="static__section">
-    <div class="static__text" style="display:inline-block;">
+  <section class="static__section" id="static__intro">
+    <div class="static__text" id="static__intro__text">
       <p>{{ page.intro }}</p>
     </div>
-    <div class="static__chart" id="introChart">
+    <div class="static__chart" id="static__intro__chart">
       {% if page.introChart %}
-        <svg viewbox="0 0 {{ size }} {{ size }}" class="chart" id="1">
+        <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
           {% for i in (0..max) %}
             <g transform="rotate({{ 2700 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
               <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">{{ i }}</text>
@@ -146,8 +146,8 @@ layout: static-default
     </div>
     <div class="static__chart__wrapper" id="testChart">
       {% for chart in page.test.charts %}
-          <div class="static__chart">
-            <svg viewbox="0 0 {{ size }} {{ size }}" class="chart" id="{{ forloop.index0 | plus: 2 }}">
+          <div class="static__chart" {% if forloop.index0 %}id="static__chart1"{% endif %}>
+            <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
               {% for i in (0..max) %}
                 <g transform="rotate({{ 2700 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
                   <text x="{{ size | divided_by: 2 | minus: 0.8 }}" y="3">{{ i }}</text>
@@ -286,6 +286,10 @@ layout: static-default
 
 <script type="text/javascript">
 
+    // document.onload = function() {
+    //   document.getElementById("static__intro").style.marginTop = window.innerHeight;
+    // };
+
     function check(element) {
       if (rectsIntersect(getPage(), getElement(element)) == true ) {
           element.classList.remove("hidden");
@@ -323,10 +327,26 @@ layout: static-default
       chartArray[i].classList.add("hidden");
     }
 
+    function resize() {
+      document.getElementById("static__intro").style.marginTop = window.innerHeight + "px";
+    }
+
+    function setWidth() {
+      document.getElementById("static__intro__chart").style.width = document.getElementById("static__chart1").offsetWidth + "px";
+    }
+
     document.onscroll = function() {
       for (var i = 0; i < arrayLength; i++) {
         check(chartArray[i]);
       }
+    };
+
+    resize();
+    setWidth();
+
+    window.onresize = function() {
+      resize();
+      setWidth();
     };
 
 </script>

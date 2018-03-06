@@ -1177,22 +1177,43 @@ h6 {
 }
 
 .static__header {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: auto;
-  position: relative;
-  display: block;
+  height: 100%;
   background-color: $color--darkest-gray;
+  overflow: hidden;
 }
 
 .static__header__video {
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
-  z-index: 0;
 }
 
-.static_header__title {
+#static__video__large {
+  display: block;
+  @include max-width($min-width--sm) {
+    display: none;
+  }
+}
+
+#static__video__small {
+  display: none;
+  @include max-width($min-width--sm) {
+    display: block;
+  }
+}
+
+.static__header__title {
   position: absolute;
   top: 50%;
   text-align: center;
@@ -1203,29 +1224,47 @@ h6 {
   @include margin-center;
 }
 
-#introChart {
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $color--white;
+}
+
+#static__intro__chart {
   display: inline-block;
   float: right;
   padding: 0;
   margin: 0;
-  width: 25%;
-  @include max-width($max-width--md) {
-    display: block;
+
+  @include max-width($max-width--sm) {
     position: relative;
     float: none;
-    width: 33.33333%;
-    margin-left: 18%;
-    margin-top: $v;
+    margin-top: $v*2;
+    margin-left: 10%;
   }
-  @include max-width($max-width--sm) {
-    width: 60%;
-    margin-left: 20%;
+}
+
+#static__intro__text {
+  display: inline-block;
+  @include max-width($min-width--lg) {
+    width: 58.333333%;
+  }
+  @include max-width($min-width--md) {
+    width: 100%;
   }
 }
 
 .static__intro__key {
   border-top: 3px solid $color--dark-gray;
   padding-top: $gutter;
+  @include max-width($min-width--lg) {
+    font-size: $font-size--html-sm;
+  }
 }
 
 .static__intro__key div, .static__test__key div {
@@ -1255,6 +1294,9 @@ h6 {
   @include max-width($min-width--lg) {
     margin-right: 25%;
   }
+  @include max-width($min-width--md) {
+    margin-right: 0;
+  }
 }
 
 .static__test__update, .static__test__key {
@@ -1273,23 +1315,23 @@ h6 {
 .static__test__update {
   @include max-width($min-width--lg) {
     margin: 0;
-    width: 25%;
+    max-width: 25%;
   }
   @include max-width ($min-width--md) {
-    width: 25%;
+    max-width: 25%;
   }
   @include max-width ($min-width--sm) {
-    width: 50%;
+    max-width: 50%;
   }
 }
 
 .static__test__key {
   @include max-width($min-width--lg) {
     margin-top: 0;
-    width: 25%;
+    max-width: 25%;
   }
   @include max-width ($min-width--md) {
-    width: 50%;
+    max-width: 50%;
   }
 }
 
@@ -1316,7 +1358,7 @@ h6 {
   top: 0;
   fill: none;
   display: block;
-  animation: progress 1.5s ease-out forwards;
+  animation: progress 1s ease-out forwards;
 }
 
 .hidden {
@@ -1331,6 +1373,10 @@ h6 {
   align-items: baseline;
   @include max-width($min-width--md) {
     flex-wrap: wrap;
+  }
+  @include max-width($min-width--sm) {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -1352,7 +1398,7 @@ h6 {
   }
 
   @include max-width($min-width--md) {
-    min-width: 210px;
+    min-width: 200px;
 
     &:nth-child(2) {
       margin-right: 0;
@@ -1364,7 +1410,6 @@ h6 {
   }
 
   @include max-width($min-width--sm) {
-    min-width: 250px;
     margin-right: 0;
   }
 }
@@ -1498,7 +1543,7 @@ h6 {
   flex: 1;
   @include max-width($min-width--md) {
     min-width: 100%;
-    margin-top: $v;
+    margin-top: $v*3;
   }
 }
 
@@ -1509,7 +1554,7 @@ h6 {
   margin-right: $gutter;
 
   @include max-width($min-width--sm) {
-    //width: 50%;
+    width: 50%;
   }
 }
 
