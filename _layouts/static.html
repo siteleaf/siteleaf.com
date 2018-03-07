@@ -1,5 +1,5 @@
 ---
-layout: static-default
+layout: default
 ---
 <div class="bg--darkest-gray">
   {% assign max = page.chartMax %}
@@ -7,11 +7,11 @@ layout: static-default
   {% assign scale = max | times: 1.333333 %}
 
 
-  <section class="static__section" id="static__intro">
-    <div class="static__text" id="static__intro__text">
+  <section class="section" id="intro">
+    <div class="text" id="intro__text">
       <p>{{ page.intro }}</p>
     </div>
-    <div class="static__chart" id="static__intro__chart">
+    <div class="chart__wrapper" id="intro__chart">
       {% if page.introChart %}
         <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
           {% for i in (0..max) %}
@@ -87,7 +87,7 @@ layout: static-default
               />
           {% endfor %}
         </svg>
-        <ul class="static__intro__key">
+        <ul class="intro__key">
           {% for value in page.introChart.key %}
             <li>
               <div style="
@@ -112,18 +112,18 @@ layout: static-default
     </div>
   </section>
 
-  <section class="static__section">
-    <div class="static__test__wrapper">
-      <div class="static__text" id="static__test">
+  <section class="section">
+    <div class="test__wrapper">
+      <div class="text" id="test">
         <h3>{{ page.test.title }}</h3>
         <p>{{ page.test.body }}</p>
-        <p class="static__test__disclaimer">{{ page.test.disclaimer }}</p>
+        <p class="test__disclaimer">{{ page.test.disclaimer }}</p>
       </div>
-      <div class="static__test__update">
-        <h4 class="static__test__updateTitle">{{ page.test.updateText }}</h4>
+      <div class="test__update">
+        <h4 class="test__updateTitle">{{ page.test.updateText }}</h4>
         <h4>{{ page.test.updateTime }}</h4>
       </div>
-      <ul class="static__test__key">
+      <ul class="test__key">
         {% for location in page.test.locations %}
           <li>
             <div style="
@@ -144,9 +144,9 @@ layout: static-default
         {% endfor %}
       </ul>
     </div>
-    <div class="static__chart__wrapper" id="testChart">
+    <div class="test__charts" id="testChart">
       {% for chart in page.test.charts %}
-          <div class="static__chart" {% if forloop.index0 %}id="static__chart1"{% endif %}>
+          <div class="chart__wrapper" {% if forloop.index0 %}id="chart1"{% endif %}>
             <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
               {% for i in (0..max) %}
                 <g transform="rotate({{ 2700 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
@@ -222,15 +222,15 @@ layout: static-default
               {% endfor %}
             </svg>
             {% if chart.title %}
-              <h4 class="static__chart__title">{{ chart.title }}</h4>
+              <h4 class="chart__title">{{ chart.title }}</h4>
             {% endif %}
             {% if page.test.locations %}
               {% if forloop.index0 == 0 %}
-                <div class="static__chart__logo">
+                <div class="chart__logo">
                   <img src="/assets/logo.svg" />
                 </div>
               {% endif %}
-                <ul class="static__chart__locations">
+                <ul class="chart__locations">
                 {% for location in page.test.locations %}
                   <li>
                     {{ location }}
@@ -239,7 +239,7 @@ layout: static-default
               </ul>
             {% endif %}
             {% if chart.values %}
-            <ul class="static__chart__values">
+            <ul class="chart__values">
               {% for value in chart.values %}
                 <li>
                   {{ value }}
@@ -253,8 +253,8 @@ layout: static-default
   </section>
 
   {% for paragraph in page.paragraphs %}
-    <section class="static__section">
-      <div class="static__text">
+    <section class="section">
+      <div class="text">
         {% if paragraph.title %}
           <h3>{{ paragraph.title }}</h3>
         {% endif %}
@@ -265,18 +265,18 @@ layout: static-default
     </section>
 {% endfor %}
 
-  <section class="static__section" id="static__cta">
-    <div class="static__email">
+  <section class="section" id="cta">
+    <div class="email">
       <h4>{{ page.email.title }}</h4>
       <form>
         <input type="text" placeholder="{{ page.email.prefill }}"/>
       </form>
-      <button type="submit" class="static__email__arrow">
+      <button type="submit" class="email__arrow">
           <img src="/assets/arrow.svg"/>
       </button>
     </div>
 
-    <div class="static__learnMore">
+    <div class="learnMore">
       <h4>{{ page.learnMore }}</h4>
       <img src="/assets/logo.svg" />
     </div>
@@ -287,7 +287,7 @@ layout: static-default
 <script type="text/javascript">
 
     // document.onload = function() {
-    //   document.getElementById("static__intro").style.marginTop = window.innerHeight;
+    //   document.getElementById("intro").style.marginTop = window.innerHeight;
     // };
 
     function check(element) {
@@ -320,19 +320,36 @@ layout: static-default
       return a[0]<b[1] && a[1]>b[0];
     }
 
-    var chartArray = document.getElementsByClassName("static__chart")
+    var chartArray = document.getElementsByClassName("chart__wrapper")
     var arrayLength = chartArray.length;
 
     for (var i = 0; i < arrayLength; i++) {
       chartArray[i].classList.add("hidden");
     }
 
-    function resize() {
-      document.getElementById("static__intro").style.marginTop = window.innerHeight + "px";
+    function marginSize() {
+      document.getElementById("intro").style.marginTop = window.innerHeight + "px";
     }
 
     function setWidth() {
-      document.getElementById("static__intro__chart").style.width = document.getElementById("static__chart1").offsetWidth + "px";
+      document.getElementById("intro__chart").style.width = document.getElementById("chart1").offsetWidth + "px";
+    }
+
+    function resizeVideo() {
+      var height = window.innerHeight;
+      var width = window.innerWidth;
+      if (height >= width) {
+        document.getElementById("header__video").style.height = height + "px";
+      } else if (height <= 720 && width <= height * 1.77777778) {
+        document.getElementById("header__video").style.height = height + "px";
+      } else if (height <= 720) {
+        document.getElementById("header__video").style.width = width + "px";
+      } else {
+        document.getElementById("header__video").style.height = "auto";
+        document.getElementById("header__video").style.width = "auto";
+        document.getElementById("header__video").style.minHeight = "100%";
+        document.getElementById("header__video").style.minWidth = "100%";
+      }
     }
 
     document.onscroll = function() {
@@ -341,12 +358,14 @@ layout: static-default
       }
     };
 
-    resize();
+    marginSize();
     setWidth();
+    resizeVideo();
 
     window.onresize = function() {
-      resize();
+      marginSize();
       setWidth();
+      resizeVideo();
     };
 
 </script>

@@ -1,3 +1,467 @@
-p {
-  color: white;
+---
+---
+
+@charset "utf-8";
+
+// imports
+// -------
+
+@import 'fonts';
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'placeholders';
+@import 'highlight';
+
+// static is faster
+// ----------------
+
+
+// base
+// ------
+
+.section {
+  @extend %container--wide;
+  padding: $v*4 5% $v*4 5%;
+  position: relative;
+}
+
+.section:after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  bottom: 0;
+  border-bottom: 3px solid $color--dark-gray;
+}
+
+.text {
+  width: 58.333333%;
+  vertical-align: top;
+  @include max-width($min-width--lg) {
+    width: 75%;
+  }
+  @include max-width($min-width--md) {
+    width: 100%;
+  }
+}
+
+
+// chart
+// -----
+
+.chart {
+  display: block;
+  position: absolute;
+  transform: rotate(-135deg);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.chart line {
+  stroke-width: .4;
+}
+
+.chart text {
+  font-size: 2.5px;
+  fill: $color--dark-gray;
+}
+
+.circle {
+  top: 0;
+  fill: none;
+  display: block;
+  animation: progress 1s ease-out forwards;
+}
+
+.hidden {
+  .circle {
+    display: none;
+  }
+}
+
+.chart__wrapper {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-right: $gutter;
+  margin-top: $v*4;
+  flex: 1 1 0;
+  min-width: 140px;
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+
+  &:first-child .chart__locations {
+    margin-left: 0;
+  }
+
+  @include max-width($min-width--md) {
+    min-width: 200px;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+
+    &:first-child .chart__title {
+      padding-left: 33.333333%;
+    }
+  }
+
+  @include max-width($min-width--sm) {
+    margin-right: 0;
+  }
+}
+
+.chart__wrapper p {
+  margin-bottom: 0;
+}
+
+.chart__logo {
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  float: left;
+  margin-top: -$gutter;
+  margin-right: 8.3333333%;
+  @include max-width($min-width--lg) {
+    display: none;
+  }
+  @include max-width($min-width--md) {
+    display: block;
+  }
+}
+
+.chart__title {
+  border-top: 3px solid $color--dark-gray;
+  padding-top: $gutter;
+  padding-left: 33.333333%;
+  @include max-width($min-width--lg) {
+    padding-left: 0;
+  }
+  @include max-width($min-width--md) {
+    padding-left: 33.333333%;
+  }
+}
+
+.chart__locations {
+  display: inline-block;
+  margin-left: 33.333333%;
+  @include max-width($min-width--lg) {
+    margin-left: 0;
+  }
+  @include max-width($min-width--md) {
+    margin-left: 33.333333%;
+  }
+}
+
+.chart__values{
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+// header
+// ------
+
+.header__video__wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color--darkest-gray;
+  overflow: hidden;
+}
+
+#header__video {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+.header__video__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: .6;
+  bottom: 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAQUlEQVQYV2M0dwr6z8DAwPCfgaGRkYGhHsRmBAv+/2dycv+Gs+aOAcYMjExnGM2cghpO7VvXAFIBAiA+dpXYzAQAdPAeeNNBSYcAAAAASUVORK5CYII=) repeat;
+  z-index: 1;
+}
+
+.header__title {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+  max-width: 100% !important;
+  color: $color--white;
+  z-index: 2;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $color--white;
+  z-index: 2;
+}
+
+// intro
+// -----
+
+#intro__chart {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0;
+
+  @include max-width($max-width--sm) {
+    position: relative;
+    float: none;
+    margin-top: $v*2;
+    margin-left: 10%;
+  }
+}
+
+#intro__text {
+  display: inline-block;
+  @include max-width($min-width--lg) {
+    width: 58.333333%;
+  }
+  @include max-width($min-width--md) {
+    width: 100%;
+  }
+}
+
+.intro__key {
+  border-top: 3px solid $color--dark-gray;
+  padding-top: $gutter;
+  @include max-width($min-width--lg) {
+    font-size: $font-size--html-sm;
+  }
+}
+
+.intro__key div, .test__key div {
+    width: $font-size--html;
+    height: $font-size--html;
+    margin-right: $gutter/2;
+    display: inline-block;
+}
+
+.intro__key p, .test__key p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.test__wrapper {
+  @include flexbox;
+  @include justify-content;
+  @include max-width($min-width--lg) {
+    flex-wrap: wrap;
+
+  }
+}
+
+// test
+// ----
+
+#test {
+  display: inline-block;
+  margin-right: auto;
+  @include max-width($min-width--lg) {
+    margin-right: 25%;
+  }
+  @include max-width($min-width--md) {
+    margin-right: 0;
+  }
+}
+
+.test__update, .test__key {
+  margin-left: $gutter;
+  vertical-align: top;
+  width: auto;
+  margin-top: $v*1.5;
+  flex: 1;
+}
+
+.test__disclaimer, .chart__locations, .test__updateTitle {
+  color: $color--gray;
+  font-weight: $font-weight--normal;
+}
+
+.test__update {
+  @include max-width($min-width--lg) {
+    margin: 0;
+    max-width: 25%;
+  }
+  @include max-width ($min-width--md) {
+    max-width: 25%;
+  }
+  @include max-width ($min-width--sm) {
+    max-width: 50%;
+  }
+}
+
+.test__key {
+  @include max-width($min-width--lg) {
+    margin-top: 0;
+    max-width: 25%;
+  }
+  @include max-width ($min-width--md) {
+    max-width: 50%;
+  }
+}
+
+.test__charts {
+  @include flexbox;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  @include max-width($min-width--md) {
+    flex-wrap: wrap;
+  }
+  @include max-width($min-width--sm) {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+// cta's
+// -----
+
+#cta {
+  @include flexbox;
+  @include justify-content;
+  @include max-width($min-width--md) {
+    flex-wrap: wrap;
+  }
+}
+
+#cta:after {
+  border: none;
+}
+
+// email
+// -----
+
+.email {
+  width: auto;
+  flex: 1;
+  margin-right: $gutter;
+  @include max-width($min-width--md) {
+    min-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.email form {
+  display: inline-block;
+  width: 80%;
+  height: 50px;
+  vertical-align: top;
+  float: left;
+}
+
+.email__arrow {
+  border: none;
+}
+
+.email__arrow img {
+  width: 60%;
+  height: auto;
+  margin: 0 0 0 20%;
+}
+
+.email input {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border: none;
+  background-color: $color--darker-gray;
+  padding-left: $gutter;
+  font-family: $font-family--sans-serif;
+  font-size: $font-size--html;
+  color: $color--white;
+}
+
+.email ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color--light-gray;
+    opacity: 1; /* Firefox */
+}
+
+.email :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $color--light-gray;
+}
+
+.email ::-ms-input-placeholder { /* Microsoft Edge */
+  color: $color--light-gray;
+}
+
+.email__arrow {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: $color--blue;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  flaot: left;
+}
+
+// learn more
+// ----------
+
+.learnMore {
+  width: auto;
+  flex: 1;
+  @include max-width($min-width--md) {
+    min-width: 100%;
+    margin-top: $v*3;
+  }
+}
+
+.learnMore h4 {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+  margin-right: $gutter;
+
+  @include max-width($min-width--sm) {
+    width: 50%;
+  }
+}
+
+.learnMore img {
+  display: inline-block;
+  width: 16.666667%;
+  height: auto;
+
+  @include max-width($min-width--sm) {
+    width: 25%;
+  }
+}
+
+.learnMore a {
+  text-decoration: underline;
+}
+
+.learnMore a:hover {
+  text-decoration: none;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
 }

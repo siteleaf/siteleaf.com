@@ -25,6 +25,17 @@
   {% endfor %}
 {% endif %}
 <div class="headerWrap bg--{{ background | default: 'lightest-gray' }}">
+  {% if page.url == '/static/' %}
+    <header class="header__video__wrapper">
+      <div class="header__video__overlay"></div>
+      <video id="header__video" autoplay loop>
+        <source src="/assets/static-header.mp4" type="video/mp4"></source>
+        Your browser does not support the video tag.
+      </video>
+      <h1 class="header__title">{{ page.header_title | default: page.title }}</h1>
+      <div class="arrow-down"></div>
+    </header>
+  {% else %}
   <header class="header{% if page.extended_header %} header--extended{% endif %}">
     <ul class="header__items">
       {% for item in site.data.navigation.header %}
@@ -67,4 +78,5 @@
       </ul>
     </header>
   </nav>
+{% endif %}
 </div>
