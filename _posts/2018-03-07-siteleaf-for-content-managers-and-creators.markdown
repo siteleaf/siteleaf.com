@@ -1,6 +1,12 @@
 ---
 title: Siteleaf for Content Managers and Creators
 date: 2018-03-07 16:32:00 -05:00
+categories:
+- Content Managers
+tags:
+- tutorial
+- tip
+- video
 image: "/uploads/siteleaf_videoCover_022218.png"
 description: These videos will walk you through everything you need to know about
   adding content to your Siteleaf site. There’s no code involved, so you can feel
