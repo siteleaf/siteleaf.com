@@ -1,6 +1,10 @@
 ---
 title: Siteleaf for Content Managers and Creators
 date: 2018-03-07 16:32:00 -05:00
+image: "/uploads/siteleaf_videoCover_022218.png"
+description: These videos will walk you through everything you need to know about
+  adding content to your Siteleaf site. There’s no code involved, so you can feel
+  confident in using Siteleaf.
 ---
 
 We’re creating a new series of tutorials for Content Managers and Creators. These videos will walk you through everything you need to know about adding content to your Siteleaf site. There’s no code involved, so you can feel confident in using Siteleaf.
@@ -27,7 +31,7 @@ A Page is the most basic content type in Siteleaf - these might include your ‘
 
 As a content creator you’re most likely to want to know about the blog. Posts are connected to the blog page on your website. If your site does not have a blog, then feel free to ignore this section.
 
-![Screen Shot SEO Blog Post.png](/uploads/Screen%20Shot%20SEO%20Blog%20Post.png)
+![Screen Shot SEO Blog Post](/uploads/Screen%20Shot%20SEO%20Blog%20Post.png)
 
 You can click on the title of the post to edit. When you click through to the post you’ll see up at the top is the title, you can click on it to edit it. Underneath is the post’s URL, and you can change the slug by clicking on the pencil icon. A slug is the editable part of your post’s URL.
 
@@ -45,4 +49,4 @@ Underneath is all the main body content of the page. You may also see inputs for
 
 ## Stay Tuned
 
-Our next video will explain step by step how to make a new blogpost in Siteleaf - stay tuned to the blog for that soon. If there’s anything you would like for us to cover in our tutorials get in touch on [Twitter](https://twitter.com/siteleaf). 🚀 
+Our next video will explain step by step how to make a new blogpost in Siteleaf - stay tuned to the blog for that soon. If there’s anything you would like for us to cover in our tutorials get in touch on [Twitter](https://twitter.com/siteleaf). 🚀
