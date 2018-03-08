@@ -37,11 +37,11 @@ You can click on the title of the post to edit. When you click through to the po
 
 Here is the URL of the post:
 
-> https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/
+`https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/`
 
 This part is the slug:
 
-> /seo-with-jekyll-siteleaf/
+`/seo-with-jekyll-siteleaf/`
 
 Having slugs that are readable by both humans and machines is useful for SEO. Readable slugs encourage users to click on the link, because they already understand what the post is about. Also, you are signposting your post to the web crawlers so they too can understand what your post is about. For more tips on SEO read our blog post about SEO with Jekyll and Siteleaf.
 
