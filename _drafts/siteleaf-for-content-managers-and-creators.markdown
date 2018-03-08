@@ -77,7 +77,7 @@ This is similar to the admin role but publishers can't access theme files or the
 #### Writer
 This is the most limited role on Siteleaf. A Writer can only manage their own content, and any content that a Writer creates will default to “Draft” status. This means that a Publisher or Admin must approve a writer’s content first before publishing it. This role is great for sites with many collaborators who only need access to add content, like a blog post.
 
-If you feel you haven’t got the right role for what you need to achieve on Siteleaf ask someone with the Admin role to change your settings.
+If you feel you haven’t got the right role for what you need to achieve on Siteleaf ask someone with the 'Admin' role to change your settings.
 
 ## Settings
 
