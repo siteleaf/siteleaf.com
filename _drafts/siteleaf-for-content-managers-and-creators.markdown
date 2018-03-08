@@ -21,22 +21,28 @@ This is the Siteleaf Dashboard. The first thing you’ll notice is the sidebar. 
 
 ### Content
 
-The Content section is organized by collections—think of these as your main content buckets.
+This section is organized by collections — think of these as your main content buckets.
 
-This site has several collections, but you may only have a few options on yours. It depends on how your site has been set up. When looking at a new website I always click on each collection to familiarise myself with the content, and then look at the published website to see how they relate.
+This site has several collections, but you may only have a few options on yours. It depends on how your site has been set up. 
 
-A Page is the most basic content type in Siteleaf - these might include your ‘About’ page or a ‘Contact’ page.
+When looking at a new website I always click on each collection to familiarise myself with the content and then look at the published website to see how they relate.
+
+#### Pages
+
+A 'page' is the most basic content type in Siteleaf - these might include your ‘about’ page or a ‘contact’ page. To see how to edit existing pages 
+
+#### Posts
 
 ![Screen Shot Posts.png](/uploads/Screen%20Shot%20Posts.png)
 
-As a content creator you’re most likely to want to know about the blog. Posts are connected to the blog page on your website. If your site does not have a blog, then feel free to ignore this section.
+As a content creator, you’re most likely to want to know about the blog. Posts are connected to the blog page on your website. If your site does not have a blog, then feel free to ignore this section. You can click on the title of the post to edit. 
 
 
 
 
 ![Screen Shot SEO Blog Post.png](/uploads/Screen%20Shot%20SEO%20Blog%20Post.png)
 
-You can click on the title of the post to edit. When you click through to the post you’ll see up at the top is the title, you can click on it to edit it. Underneath is the post’s URL, and you can change the slug by clicking on the pencil icon. A slug is the editable part of your post’s URL.
+When you click through to the post you’ll see up at the top is the title, you can click on it to edit it. Underneath is the post’s URL, and you can change the slug by clicking on the pencil icon. A slug is the editable part of your post’s URL.
 
 Here is the URL of the post:
 
@@ -46,19 +52,22 @@ This part is the slug:
 
 `/seo-with-jekyll-siteleaf/`
 
-Having slugs that are readable by both humans and machines is useful for SEO. Readable slugs encourage users to click on the link, because they already understand what the post is about. Also, you are signposting your post to the web crawlers so they too can understand what your post is about. For more tips on SEO read our blog post about SEO with Jekyll and Siteleaf.
+Having slugs that are readable by both humans and machines is useful for SEO. Readable slugs encourage users to click on the link, because they already understand what the post is about. Also, you are signposting your post to the web crawlers so they too can understand what your post is about. For more tips on SEO read our blog post about [SEO with Jekyll and Siteleaf](https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/).
 
 Underneath is all the main body content of the page. You may also see inputs for metadata beneath the main body content, these will vary depending on how your site is set up. We’ll go through metadata, tags, post visibility and more in our dedicated blog post video.
 
 ### Files
 
+#### Uploads 
+
 ![Screen Shot Uploads.png](/uploads/Screen%20Shot%20Uploads.png)
 
-Uploads - Here is where your uploaded images, videos and documents live. Click here to browse or search for items uploaded to Siteleaf. Siteleaf supports all document types; from jpegs to pdfs and mp4s.
+Here is where your uploaded images, videos and documents live. Click here to browse or search for items uploaded to Siteleaf. Siteleaf supports all document types; from jpegs to pdfs and mp4s.
 
 You can also add new items here by clicking ‘Upload file’.
 
-### Site
+#### Site
+
 ![Screen Shot Site.png](/uploads/Screen%20Shot%20Site.png)
 
 This is where all the data for your site’s source files live. As a content creator you aren’t going to want to touch it. And, depending on your user role, you may not see it on your Siteleaf dashboard.
@@ -112,11 +121,11 @@ Finally, below there may be different fields that your developer has created. Th
 
 ![Screen Shot Flight Panel.png](/uploads/Screen%20Shot%20Flight%20Panel.png)
 
-Pages only have two visibility options, they are either hidden or visible. Hiding a page can be useful while you are working on it. Or if you have a page that promotes your winter season you can hide that in the sweltering summer heat.
+Pages only have two visibility options, they are either hidden or visible. Hiding a page can be used while you are working on it. Or if you have a page that promotes your winter season you can hide that in the sweltering summer heat.
 
 If you are a Writer you will need to ask either an Admin or Publisher to make these changes for you.
 
-Click save to save the changes that you’ve made. I like to check the edits before I publish. You can do that by pressing generate item preview.
+Click save to save the changes that you’ve made. I personally like to check the edits before I publish. You can do that by pressing generate item preview.
 
 ![Screen Shot Preview.png](/uploads/Screen%20Shot%20Preview.png)
 
