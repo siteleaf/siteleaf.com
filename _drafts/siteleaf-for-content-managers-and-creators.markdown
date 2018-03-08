@@ -99,7 +99,9 @@ When you go into one of the pages you will see something like this:
 
 ![Screen Shot Purpose Page.png](/uploads/Screen%20Shot%20Purpose%20Page.png)
 
-At the top is the page’s title, then following that is the URL of this particular page. You can edit this if you need by pressing on the pencil icon, like with the post earlier on. Below is the main body text. This is where you’d write all your content for the page. Siteleaf supports Markdown formatting. We will go into in detail in our dedicated blog post tutorial.
+At the top is the page’s title, then following that is the URL of this particular page. You can edit this if you need by pressing on the pencil icon, like with the post earlier on. 
+
+Below is the main body text. This is where you’d write all your content for the page. Siteleaf supports Markdown formatting. We will go into in detail in our dedicated blog post tutorial.
 
 Finally, below there may be different fields that your developer has created. These will be individual to your site and could include links for source material, header images or even background colors.
 
@@ -111,7 +113,7 @@ Pages only have two visibility options, they are either hidden or visible. Hidin
 
 If you are a Writer you will need to ask either an Admin or Publisher to make these changes for you.
 
-If we want to edit some of the text, we’d type in the main body of the text here. Then save the changes that you’ve made. I like to check the edits before I publish, so we can do that by pressing generate item preview.
+Click save to save the changes that you’ve made. I like to check the edits before I publish. You can do that by pressing generate item preview.
 
 ![Screen Shot Preview.png](/uploads/Screen%20Shot%20Preview.png)
 
@@ -119,9 +121,11 @@ This will open up a new tab. Then you’ll see that Siteleaf is taking the chang
 
 ### Publishing the page
 
-You can publish those changes by pressing the Publish changes button up here on the top right hand corner. If you are a Writer on your site this button will not be visible. In this case, let a Publisher or Admin know when you’re ready to have your draft approved and then published.
+![Screen Shot Publish changes.png](/uploads/Screen%20Shot%20Publish%20changes.png)
 
-Publishing should be pretty quick, but sometimes it takes a bit longer with a bigger website. Once it’s published you can now see the changes that you’ve made on your website.
+You can publish the changes by pressing the 'Publish changes' button in the top right-hand corner. If you are a Writer on your site this button will not be visible. In this case, let a Publisher or Admin know when you’re ready to have your draft approved and then published.
+
+Publishing should be pretty quick, but sometimes it takes a bit longer with a bigger website. Once it’s published you can see the changes that you’ve made on your website.
 
 ## Stay Tuned
 
