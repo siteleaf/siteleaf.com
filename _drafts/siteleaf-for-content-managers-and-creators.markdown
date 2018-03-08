@@ -69,11 +69,14 @@ Let’s explore these different roles.
 
 ### Roles
 
-Admin: this role has full privileges which means that you can manage and publish all content. This role is great for people who are helping build the site, like a developer or designer. Admin allows users to upload theme files, change the site’s settings, and invite other collaborators.
+#### Admin
+This role has full privileges which means that you can manage and publish all content. This role is great for people who are helping build the site, like a developer or designer. Admin allows users to upload theme files, change the site’s settings, and invite other collaborators.
 
-Publisher: this is similar to the admin role but publishers can't access theme files or the site’s settings. Publishers can manage and publish pages, posts and uploads, but you’re protected from accidentally breaking the site’s theme.
+#### Publisher
+This is similar to the admin role but publishers can't access theme files or the site’s settings. Publishers can manage and publish pages, posts and uploads, but you’re protected from accidentally breaking the site’s theme.
 
-Writer: this is the most limited role on Siteleaf. A Writer can only manage their own content, and any content that a Writer creates will default to “Draft” status. This means that a Publisher or Admin must approve a writer’s content first before publishing it. This role is great for sites with many collaborators who only need access to add content, like a blog post.
+#### Writer
+This is the most limited role on Siteleaf. A Writer can only manage their own content, and any content that a Writer creates will default to “Draft” status. This means that a Publisher or Admin must approve a writer’s content first before publishing it. This role is great for sites with many collaborators who only need access to add content, like a blog post.
 
 If you feel you haven’t got the right role for what you need to achieve on Siteleaf ask someone with the Admin role to change your settings.
 
