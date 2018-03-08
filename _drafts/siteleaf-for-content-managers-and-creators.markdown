@@ -29,7 +29,7 @@ When looking at a new website I always click on each collection to familiarise m
 
 #### Pages
 
-A 'page' is the most basic content type in Siteleaf - these might include your ‘about’ page or a ‘contact’ page. To see how to edit existing pages 
+A 'page' is the most basic content type in Siteleaf - these might include your ‘about’ page or a ‘contact’ page. See more about [how to edit existing pages here](/siteleaf-for-content-managers-and-creators/##editing-existing-pages).
 
 #### Posts
 
