@@ -55,9 +55,10 @@ Uploads - Here is where your uploaded images, videos and documents live. Click h
 
 You can also add new items here by clicking ‘Upload file’.
 
+### Site
 ![Screen Shot Site.png](/uploads/Screen%20Shot%20Site.png)
 
-Site - this is where all the data for your site’s source files live. As a content creator you aren’t going to want to touch it. And, depending on your user role, you may not see it on your Siteleaf dashboard.
+This is where all the data for your site’s source files live. As a content creator you aren’t going to want to touch it. And, depending on your user role, you may not see it on your Siteleaf dashboard.
 
 ### Users
 
