@@ -31,6 +31,9 @@ A Page is the most basic content type in Siteleaf - these might include your ‘
 
 As a content creator you’re most likely to want to know about the blog. Posts are connected to the blog page on your website. If your site does not have a blog, then feel free to ignore this section.
 
+
+
+
 ![Screen Shot SEO Blog Post.png](/uploads/Screen%20Shot%20SEO%20Blog%20Post.png)
 
 You can click on the title of the post to edit. When you click through to the post you’ll see up at the top is the title, you can click on it to edit it. Underneath is the post’s URL, and you can change the slug by clicking on the pencil icon. A slug is the editable part of your post’s URL.
