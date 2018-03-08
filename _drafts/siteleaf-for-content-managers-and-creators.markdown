@@ -66,8 +66,6 @@ This is where all the data for your site’s source files live. As a content cre
 
 Here you can see who else has access to your website and what ‘role’ they have. If you’re on a Team, Business, or Enterprise site plan, there are three different roles that users can be assigned. You can also add new users here by inputting their email address, assigning their role before pressing invite.
 
-Let’s explore these different roles.
-
 ### Roles
 
 #### Admin
