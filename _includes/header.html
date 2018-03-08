@@ -33,7 +33,7 @@
         Your browser does not support the video tag.
       </video>
       <h1 class="header__title">{{ page.header_title | default: page.title }}</h1>
-      <div class="arrow-down"></div>
+      <div id="header__arrow--down"></div>
     </header>
   {% else %}
   <header class="header{% if page.extended_header %} header--extended{% endif %}">

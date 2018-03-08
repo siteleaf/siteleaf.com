@@ -144,9 +144,9 @@ layout: default
         {% endfor %}
       </ul>
     </div>
-    <div class="test__charts" id="testChart">
+    <div class="test__charts">
       {% for chart in page.test.charts %}
-          <div class="chart__wrapper" {% if forloop.index0 %}id="chart1"{% endif %}>
+          <div class="chart__wrapper" {% if forloop.first %}id="chart__wrapper--1"{% endif %}>
             <svg viewbox="0 0 {{ size }} {{ size }}" class="chart">
               {% for i in (0..max) %}
                 <g transform="rotate({{ 2700 | divided_by: max | times: i | divided_by: 10 }} {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})">
@@ -270,10 +270,10 @@ layout: default
       <h4>{{ page.email.title }}</h4>
       <form>
         <input type="text" placeholder="{{ page.email.prefill }}"/>
+        <button type="submit" class="email__arrow">
+            <img src="/assets/arrow.svg"/>
+        </button>
       </form>
-      <button type="submit" class="email__arrow">
-          <img src="/assets/arrow.svg"/>
-      </button>
     </div>
 
     <div class="learnMore">
@@ -327,23 +327,30 @@ layout: default
       chartArray[i].classList.add("hidden");
     }
 
-    function marginSize() {
+    function setIntroMargin() {
       document.getElementById("intro").style.marginTop = window.innerHeight + "px";
     }
 
-    function setWidth() {
-      document.getElementById("intro__chart").style.width = document.getElementById("chart1").offsetWidth + "px";
+    function setChartWidth() {
+      document.getElementById("intro__chart").style.width = document.getElementById("chart__wrapper--1").offsetWidth + "px";
     }
 
-    function resizeVideo() {
-      var height = window.innerHeight;
+    function setArrowLocation() {
+      document.getElementById("header__arrow--down").style.marginLeft = (window.innerWidth/2) - (document.getElementById("header__arrow--down").offsetWidth/2) + "px";
+    }
+
+    function resizeVideo(width, height) {
       var width = window.innerWidth;
-      if (height >= width) {
-        document.getElementById("header__video").style.height = height + "px";
-      } else if (height <= 720 && width <= height * 1.77777778) {
-        document.getElementById("header__video").style.height = height + "px";
-      } else if (height <= 720) {
-        document.getElementById("header__video").style.width = width + "px";
+      var height = window.innerHeight;
+
+      if (height <= 720) {
+        if (height > width*0.5625) {
+          document.getElementById("header__video").style.height = height + "px";
+          document.getElementById("header__video").style.width = "auto";
+        } else {
+          document.getElementById("header__video").style.width = width + "px";
+          document.getElementById("header__video").style.height = "auto";
+        }
       } else {
         document.getElementById("header__video").style.height = "auto";
         document.getElementById("header__video").style.width = "auto";
@@ -358,14 +365,23 @@ layout: default
       }
     };
 
-    marginSize();
-    setWidth();
+    setIntroMargin();
+    setChartWidth();
+    setArrowLocation();
     resizeVideo();
 
     window.onresize = function() {
-      marginSize();
-      setWidth();
+      setIntroMargin();
+      setChartWidth();
+      setArrowLocation();
       resizeVideo();
     };
+
+    window.addEventListener("orientationchange", function() {
+      setIntroMargin();
+      setChartWidth();
+      setArrowLocation();
+      resizeVideo();
+    });
 
 </script>

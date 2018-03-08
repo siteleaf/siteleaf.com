@@ -73,7 +73,7 @@
   top: 0;
   fill: none;
   display: block;
-  animation: progress 1s ease-out forwards;
+  animation: progress .8s ease-out forwards;
 }
 
 .hidden {
@@ -87,7 +87,7 @@
   height: auto;
   display: inline-block;
   margin-right: $gutter;
-  margin-top: $v*4;
+  margin-top: $v*2;
   flex: 1 1 0;
   min-width: 140px;
 
@@ -108,6 +108,10 @@
 
     &:first-child .chart__title {
       padding-left: 33.333333%;
+    }
+
+    @media (max-height: $min-width--sm) {
+      min-width: 160px;
     }
   }
 
@@ -143,7 +147,7 @@
     padding-left: 0;
   }
   @include max-width($min-width--md) {
-    padding-left: 33.333333%;
+    //padding-left: 33.333333%;
   }
 }
 
@@ -154,7 +158,7 @@
     margin-left: 0;
   }
   @include max-width($min-width--md) {
-    margin-left: 33.333333%;
+    //margin-left: 33.333333%;
   }
 }
 
@@ -192,8 +196,11 @@
   width: 100%;
   opacity: .6;
   bottom: 0;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAQUlEQVQYV2M0dwr6z8DAwPCfgaGRkYGhHsRmBAv+/2dycv+Gs+aOAcYMjExnGM2cghpO7VvXAFIBAiA+dpXYzAQAdPAeeNNBSYcAAAAASUVORK5CYII=) repeat;
   z-index: 1;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAQUlEQVQYV2M0dwr6z8DAwPCfgaGRkYGhHsRmBAv+/2dycv+Gs+aOAcYMjExnGM2cghpO7VvXAFIBAiA+dpXYzAQAdPAeeNNBSYcAAAAASUVORK5CYII=) repeat;
+  @include max-width($min-width--md) {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKklEQVQYV2M0dwr6/5+BoZGBgYGBkYGhntHMKajh1L51DSABEBtTAF0LAIdWEi0xxCE7AAAAAElFTkSuQmCC) repeat;
+  }
 }
 
 .header__title {
@@ -206,9 +213,8 @@
   z-index: 2;
 }
 
-.arrow-down {
+#header__arrow--down {
   position: absolute;
-  left: 50%;
   top: 90%;
   width: 0;
   height: 0;
@@ -227,11 +233,11 @@
   padding: 0;
   margin: 0;
 
-  @include max-width($max-width--sm) {
-    position: relative;
+  @include max-width($min-width--md) {
+    display: block;
     float: none;
     margin-top: $v*2;
-    margin-left: 10%;
+    @include margin-center;
   }
 }
 
@@ -265,17 +271,19 @@
   margin-bottom: 0;
 }
 
+// test
+// ----
+
 .test__wrapper {
   @include flexbox;
   @include justify-content;
   @include max-width($min-width--lg) {
     flex-wrap: wrap;
-
+  }
+  @include max-width($min-width--sm) {
+    margin-bottom: $v;
   }
 }
-
-// test
-// ----
 
 #test {
   display: inline-block;
@@ -294,6 +302,13 @@
   width: auto;
   margin-top: $v*1.5;
   flex: 1;
+
+  @include max-width($min-width--md) {
+    margin-top: $v*3;
+  }
+  @include max-width($min-width--sm) {
+    margin-top: $v*2;
+  }
 }
 
 .test__disclaimer, .chart__locations, .test__updateTitle {
@@ -303,20 +318,16 @@
 
 .test__update {
   @include max-width($min-width--lg) {
-    margin: 0;
+    margin-left: 0;
     max-width: 25%;
   }
   @include max-width ($min-width--md) {
-    max-width: 25%;
-  }
-  @include max-width ($min-width--sm) {
     max-width: 50%;
   }
 }
 
 .test__key {
   @include max-width($min-width--lg) {
-    margin-top: 0;
     max-width: 25%;
   }
   @include max-width ($min-width--md) {
@@ -330,10 +341,17 @@
   align-items: baseline;
   @include max-width($min-width--md) {
     flex-wrap: wrap;
+    li {
+      font-size: 16px;
+    }
+    @media (max-height: $min-width--sm) {
+      width: 70%;
+      margin-left: 15%;
+    }
   }
   @include max-width($min-width--sm) {
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
   }
 }
 
@@ -358,7 +376,7 @@
 .email {
   width: auto;
   flex: 1;
-  margin-right: $gutter;
+  margin-right: $gutter*2;
   @include max-width($min-width--md) {
     min-width: 100%;
     margin-right: 0;
@@ -367,14 +385,18 @@
 
 .email form {
   display: inline-block;
-  width: 80%;
+  width: 100%;
   height: 50px;
   vertical-align: top;
   float: left;
+  position: relative;
 }
 
 .email__arrow {
   border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .email__arrow img {
@@ -434,11 +456,10 @@
 .learnMore h4 {
   display: inline-block;
   vertical-align: top;
-  width: 65%;
-  margin-right: $gutter;
+  width: 75%;
 
   @include max-width($min-width--sm) {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -446,9 +467,10 @@
   display: inline-block;
   width: 16.666667%;
   height: auto;
+  float: right;
 
   @include max-width($min-width--sm) {
-    width: 25%;
+    width: 20%;
   }
 }
 
