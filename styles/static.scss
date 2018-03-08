@@ -46,6 +46,28 @@
   }
 }
 
+.text a {
+  text-shadow:
+    -2px -2px $color--darkest-gray,
+    -2px 2px $color--darkest-gray,
+    2px -2px $color--darkest-gray,
+    2px 2px $color--darkest-gray;
+  background-size: 2px 2em;
+  box-shadow:
+    inset 0 -0.1em $color--darkest-gray,
+    inset 0 -0.13em $color--white;
+  display: inline;
+  transition: all 0.2s ease-out;
+}
+
+.text a:hover {
+  text-shadow: none;
+  background-size: none;
+  box-shadow:
+    inset 0 -0.04em $color--darkest-gray,
+    inset 0 -0.09em $color--white;
+}
+
 
 // chart
 // -----
@@ -95,10 +117,14 @@
     margin-right: 0;
   }
 
-  &:first-child .chart__locations {
-    margin-left: 0;
+  &:first-child .chart__title {
+    padding-left: 33.333333%;
   }
-
+  @include max-width($min-width--lg){
+    &:first-child .chart__title {
+      padding-left: 0;
+    }
+  }
   @include max-width($min-width--md) {
     min-width: 200px;
 
@@ -142,7 +168,7 @@
 .chart__title {
   border-top: 3px solid $color--dark-gray;
   padding-top: $gutter;
-  padding-left: 33.333333%;
+  //padding-left: 33.333333%;
   @include max-width($min-width--lg) {
     padding-left: 0;
   }
@@ -153,7 +179,7 @@
 
 .chart__locations {
   display: inline-block;
-  margin-left: 33.333333%;
+  //margin-left: 33.333333%;
   @include max-width($min-width--lg) {
     margin-left: 0;
   }
@@ -203,25 +229,37 @@
   }
 }
 
-.header__title {
-  position: absolute;
-  text-align: center;
-  top: 35%;
-  width: 100%;
-  max-width: 100% !important;
+.header__video__title {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   color: $color--white;
+  text-align: center;
+  margin: 0 auto;
   z-index: 2;
 }
 
-#header__arrow--down {
+#header__arrow{
   position: absolute;
-  top: 90%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid $color--white;
   z-index: 2;
+  @include max-width($min-width--md){
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid $color--white;
+  }
+  @include max-width($min-width--sm){
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid $color--white;
+  }
 }
 
 // intro
@@ -304,16 +342,18 @@
   flex: 1;
 
   @include max-width($min-width--md) {
-    margin-top: $v*3;
-  }
-  @include max-width($min-width--sm) {
-    margin-top: $v*2;
+    margin-top: $v*.5;
+    margin-bottom: $v;
   }
 }
 
 .test__disclaimer, .chart__locations, .test__updateTitle {
   color: $color--gray;
   font-weight: $font-weight--normal;
+}
+
+.test__disclaimer {
+  font-size: $font-size--html-sm;
 }
 
 .test__update {
@@ -339,6 +379,11 @@
   @include flexbox;
   flex-wrap: nowrap;
   align-items: baseline;
+  @include max-width($min-width--xl) {
+    li {
+      font-size: $font-size--html-sm;
+    }
+  }
   @include max-width($min-width--md) {
     flex-wrap: wrap;
     li {

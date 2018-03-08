@@ -278,7 +278,9 @@ layout: default
 
     <div class="learnMore">
       <h4>{{ page.learnMore }}</h4>
-      <img src="/assets/logo.svg" />
+      <a href="/" target="_blank">
+        <img src="/assets/logo.svg" />
+      </a>
     </div>
   </section>
 
@@ -335,10 +337,6 @@ layout: default
       document.getElementById("intro__chart").style.width = document.getElementById("chart__wrapper--1").offsetWidth + "px";
     }
 
-    function setArrowLocation() {
-      document.getElementById("header__arrow--down").style.marginLeft = (window.innerWidth/2) - (document.getElementById("header__arrow--down").offsetWidth/2) + "px";
-    }
-
     function resizeVideo(width, height) {
       var width = window.innerWidth;
       var height = window.innerHeight;
@@ -367,20 +365,17 @@ layout: default
 
     setIntroMargin();
     setChartWidth();
-    setArrowLocation();
     resizeVideo();
 
     window.onresize = function() {
       setIntroMargin();
       setChartWidth();
-      setArrowLocation();
       resizeVideo();
     };
 
     window.addEventListener("orientationchange", function() {
       setIntroMargin();
       setChartWidth();
-      setArrowLocation();
       resizeVideo();
     });
 
