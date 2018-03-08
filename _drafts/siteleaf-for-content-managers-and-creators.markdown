@@ -143,12 +143,16 @@ This will open up a new tab. Then you’ll see that Siteleaf is taking the chang
 
 ### Publishing the page
 
+You can publish the changes by pressing the 'Publish changes' button in the top right-hand corner. 
+
 ![Screen Shot Publish changes.png](/uploads/Screen%20Shot%20Publish%20changes.png)
 
-You can publish the changes by pressing the 'Publish changes' button in the top right-hand corner. If you are a Writer on your site this button will not be visible. In this case, let a Publisher or Admin know when you’re ready to have your draft approved and then published.
+If you are a Writer on your site this button will not be visible. In this case, let a Publisher or Admin know when you’re ready to have your draft approved and then published.
 
 Publishing should be pretty quick, but sometimes it takes a bit longer with a bigger website. Once it’s published you can see the changes that you’ve made on your website.
 
 ## Stay Tuned
 
-Our next video will explain step by step how to make a new blog post in Siteleaf - stay tuned to the blog for that soon. If there’s anything you would like for us to cover in our tutorials get in touch on [Twitter](https://twitter.com/siteleaf).
+Our next video will explain step by step how to make a new blog post in Siteleaf - stay tuned to the blog for that soon. 
+
+If there’s anything you would like for us to cover in our tutorials please get in touch on [Twitter](https://twitter.com/siteleaf)!
