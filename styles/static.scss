@@ -16,7 +16,6 @@
 // static is faster
 // ----------------
 
-
 // base
 // ------
 
@@ -24,20 +23,21 @@
   @extend %container--wide;
   padding: $v*4 5% $v*4 5%;
   position: relative;
-}
 
-.section:after {
-  content: '';
-  position: absolute;
-  width: 90%;
-  left: 5%;
-  bottom: 0;
-  border-bottom: 3px solid $color--dark-gray;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 0;
+    border-bottom: 3px solid $color--dark-gray;
+  }
 }
 
 .text {
   width: 58.333333%;
   vertical-align: top;
+
   @include max-width($min-width--lg) {
     width: 75%;
   }
@@ -58,14 +58,14 @@
     inset 0 -0.13em $color--white;
   display: inline;
   transition: all 0.2s ease-out;
-}
 
-.text a:hover {
-  text-shadow: none;
-  background-size: none;
-  box-shadow:
-    inset 0 -0.04em $color--darkest-gray,
-    inset 0 -0.09em $color--white;
+  &:hover {
+    text-shadow: none;
+    background-size: none;
+    box-shadow:
+      inset 0 -0.04em $color--darkest-gray,
+      inset 0 -0.09em $color--white;
+  }
 }
 
 
@@ -91,7 +91,7 @@
   fill: $color--dark-gray;
 }
 
-.circle {
+.chart__circle {
   top: 0;
   fill: none;
   display: block;
@@ -99,8 +99,14 @@
 }
 
 .hidden {
-  .circle {
+  .chart__circle {
     display: none;
+  }
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
   }
 }
 
@@ -116,14 +122,11 @@
   &:nth-child(4) {
     margin-right: 0;
   }
-
-  &:first-child .chart__title {
-    padding-left: 33.333333%;
+  &:first-child .chart__locations {
+    margin-left: 0;
   }
   @include max-width($min-width--lg){
-    &:first-child .chart__title {
-      padding-left: 0;
-    }
+    padding-left: 0;
   }
   @include max-width($min-width--md) {
     min-width: 200px;
@@ -131,16 +134,13 @@
     &:nth-child(2) {
       margin-right: 0;
     }
-
     &:first-child .chart__title {
       padding-left: 33.333333%;
     }
-
     @media (max-height: $min-width--sm) {
       min-width: 160px;
     }
   }
-
   @include max-width($min-width--sm) {
     margin-right: 0;
   }
@@ -157,6 +157,7 @@
   float: left;
   margin-top: -$gutter;
   margin-right: 8.3333333%;
+
   @include max-width($min-width--lg) {
     display: none;
   }
@@ -168,23 +169,31 @@
 .chart__title {
   border-top: 3px solid $color--dark-gray;
   padding-top: $gutter;
-  //padding-left: 33.333333%;
+  padding-left: 33.333333%;
+
   @include max-width($min-width--lg) {
     padding-left: 0;
   }
   @include max-width($min-width--md) {
-    //padding-left: 33.333333%;
+    padding-left: 33.333333%;
+  }
+  @include max-width($min-width--sm) {
+    padding-left: 0;
   }
 }
 
 .chart__locations {
   display: inline-block;
-  //margin-left: 33.333333%;
+  margin-left: 33.333333%;
+
   @include max-width($min-width--lg) {
     margin-left: 0;
   }
   @include max-width($min-width--md) {
-    //margin-left: 33.333333%;
+    margin-left: 33.333333%;
+  }
+  @include max-width($min-width--sm) {
+    margin-left: 0;
   }
 }
 
@@ -224,6 +233,7 @@
   bottom: 0;
   z-index: 1;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAQUlEQVQYV2M0dwr6z8DAwPCfgaGRkYGhHsRmBAv+/2dycv+Gs+aOAcYMjExnGM2cghpO7VvXAFIBAiA+dpXYzAQAdPAeeNNBSYcAAAAASUVORK5CYII=) repeat;
+
   @include max-width($min-width--md) {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKklEQVQYV2M0dwr6/5+BoZGBgYGBkYGhntHMKajh1L51DSABEBtTAF0LAIdWEi0xxCE7AAAAAElFTkSuQmCC) repeat;
   }
@@ -250,6 +260,7 @@
   border-right: 20px solid transparent;
   border-top: 20px solid $color--white;
   z-index: 2;
+
   @include max-width($min-width--md){
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
@@ -281,6 +292,7 @@
 
 #intro__text {
   display: inline-block;
+
   @include max-width($min-width--lg) {
     width: 58.333333%;
   }
@@ -292,16 +304,17 @@
 .intro__key {
   border-top: 3px solid $color--dark-gray;
   padding-top: $gutter;
+
   @include max-width($min-width--lg) {
     font-size: $font-size--html-sm;
   }
 }
 
 .intro__key div, .test__key div {
-    width: $font-size--html;
-    height: $font-size--html;
-    margin-right: $gutter/2;
-    display: inline-block;
+  width: $font-size--html;
+  height: $font-size--html;
+  margin-right: $gutter/2;
+  display: inline-block;
 }
 
 .intro__key p, .test__key p {
@@ -315,6 +328,7 @@
 .test__wrapper {
   @include flexbox;
   @include justify-content;
+
   @include max-width($min-width--lg) {
     flex-wrap: wrap;
   }
@@ -326,6 +340,7 @@
 #test {
   display: inline-block;
   margin-right: auto;
+
   @include max-width($min-width--lg) {
     margin-right: 25%;
   }
@@ -379,6 +394,7 @@
   @include flexbox;
   flex-wrap: nowrap;
   align-items: baseline;
+
   @include max-width($min-width--xl) {
     li {
       font-size: $font-size--html-sm;
@@ -406,13 +422,13 @@
 #cta {
   @include flexbox;
   @include justify-content;
+
+  &:after {
+    border: none;
+  }
   @include max-width($min-width--md) {
     flex-wrap: wrap;
   }
-}
-
-#cta:after {
-  border: none;
 }
 
 // email
@@ -422,6 +438,8 @@
   width: auto;
   flex: 1;
   margin-right: $gutter*2;
+  @include placeholder($color--light-gray);
+
   @include max-width($min-width--md) {
     min-width: 100%;
     margin-right: 0;
@@ -442,6 +460,12 @@
   position: absolute;
   top: 0;
   right: 0;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: #3291AA;
 }
 
 .email__arrow img {
@@ -462,36 +486,13 @@
   color: $color--white;
 }
 
-.email ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $color--light-gray;
-    opacity: 1; /* Firefox */
-}
-
-.email :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $color--light-gray;
-}
-
-.email ::-ms-input-placeholder { /* Microsoft Edge */
-  color: $color--light-gray;
-}
-
-.email__arrow {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  background-color: $color--blue;
-  vertical-align: top;
-  margin: 0;
-  padding: 0;
-  flaot: left;
-}
-
 // learn more
 // ----------
 
 .learnMore {
   width: auto;
   flex: 1;
+
   @include max-width($min-width--md) {
     min-width: 100%;
     margin-top: $v*3;
@@ -521,14 +522,8 @@
 
 .learnMore a {
   text-decoration: underline;
-}
 
-.learnMore a:hover {
-  text-decoration: none;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
+  &:hover {
+    text-decoration: none;
   }
 }

@@ -30,7 +30,7 @@ layout: default
                 <rect x="0" y="0" width="{{ size }}" height="{{ size }}" fill="url(#fadeGrad)" transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})"/>
               </mask>
             </defs>
-            <path class="circle"
+            <path class="chart__circle"
               stroke="#5A6575"
               stroke-width="2.4"
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
@@ -41,7 +41,7 @@ layout: default
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
             />
-            <path class="circle"
+            <path class="chart__circle"
               stroke="#374252"
               stroke-width="1.9"
               {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
@@ -52,7 +52,7 @@ layout: default
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
             />
-            <path class="circle"
+            <path class="chart__circle"
               {% if forloop.index0 == 0 %}
                 stroke="#50E6A5"
               {% elsif forloop.index0 == 1 %}
@@ -73,7 +73,7 @@ layout: default
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                 a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
             />
-            <path class="circle"
+            <path class="chart__circle"
               mask="url(#fade"
               stroke="#DC5A46"
               stroke-width="2.4"
@@ -164,7 +164,7 @@ layout: default
                     <rect x="0" y="0" width="{{ size }}" height="{{ size }}" fill="url(#fadeGrad)" transform="rotate(45 {{ size | divided_by: 2 }} {{ size | divided_by: 2 }})"/>
                   </mask>
                 </defs>
-                <path class="circle"
+                <path class="chart__circle"
                   stroke="#5A6575"
                   stroke-width="2.4"
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
@@ -175,7 +175,7 @@ layout: default
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
                 />
-                <path class="circle"
+                <path class="chart__circle"
                   stroke="#374252"
                   stroke-width="1.9"
                   {% assign circum = forloop.index0 | times: -20 | plus: 100 %}
@@ -186,7 +186,7 @@ layout: default
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
                 />
-                <path class="circle"
+                <path class="chart__circle"
                   {% if forloop.index0 == 0 %}
                     stroke="#50E6A5"
                   {% elsif forloop.index0 == 1 %}
@@ -207,7 +207,7 @@ layout: default
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet }}
                     a {{ radius }} {{ radius }} 0 0 1 0 {{ diamet | times: -1 }}"
                 />
-                <path class="circle"
+                <path class="chart__circle"
                   mask="url(#fade"
                   stroke="#DC5A46"
                   stroke-width="2.4"

@@ -42,13 +42,18 @@
 }
 
 @mixin placeholder($color) {
-  // Firefox
-  &::-moz-placeholder {
+  & ::placeholder {
     color: $color;
     opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
   }
-  &:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+  // Firefox
+  & ::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  & :-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+  & ::-ms-input-placeholder { color: $color; } // Microsoft Edge
+  & ::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
 }
 
 // responsive
@@ -132,8 +137,8 @@
   -moz-flex-wrap: $value;
   @if $value == nowrap {
     -ms-flex-wrap: none;
-  } @else { 
-    -ms-flex-wrap: $value; 
+  } @else {
+    -ms-flex-wrap: $value;
   }
   flex-wrap: $value;
 }
@@ -148,7 +153,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
   } @else if $value == space-around {
-    -ms-flex-pack: distribute;    
+    -ms-flex-pack: distribute;
   } @else {
     -webkit-box-pack: $value;
     -ms-flex-pack: $value;
