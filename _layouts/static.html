@@ -292,6 +292,8 @@ layout: default
     var chartArray = document.getElementsByClassName("chart__wrapper")
     var arrayLength = chartArray.length;
     var originalHeight = window.outerHeight;
+    var originalWidth = window.outerWidth;
+    var originalInnerWidth = window.innerWidth;
 
     function checkVisible(element) {
       var rect = element.getBoundingClientRect();
@@ -353,7 +355,7 @@ layout: default
     };
 
     window.onresize = function() {
-      if (originalHeight != window.outerHeight) {
+      if (originalHeight != window.outerHeight || originalWidth != window.outerWidth || originalInnerWidth != window.innerWidth) {
         setIntroMargin();
         setChartWidth();
         resizeVideo();
@@ -361,6 +363,8 @@ layout: default
           changeState(chartArray[i]);
         }
         originalHeight = window.outerHeight;
+        originalWidth = window.outerWidth;
+        originalInnerWidth = window.innerWidth;
       }
     };
 
