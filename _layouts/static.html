@@ -291,6 +291,7 @@ layout: default
 
     var chartArray = document.getElementsByClassName("chart__wrapper")
     var arrayLength = chartArray.length;
+    var originalHeight = window.outerHeight;
 
     function checkVisible(element) {
       var rect = element.getBoundingClientRect();
@@ -352,12 +353,15 @@ layout: default
     };
 
     window.onresize = function() {
+      if (originalHeight != window.outerHeight) {
         setIntroMargin();
         setChartWidth();
         resizeVideo();
         for (var i = 0; i < arrayLength; i++) {
           changeState(chartArray[i]);
         }
+        originalHeight = window.outerHeight;
+      }
     };
 
     window.addEventListener("orientationchange", function() {
