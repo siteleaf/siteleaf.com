@@ -31,8 +31,8 @@ test:
     including Squarespace, Craft, and Wordpress - these stats&#42; are updated every
     couple of hours, from different global locations using <a href="https://www.pingdom.com/"
     target="_blank">Pingdom</a>.
-  disclaimer: Using each CMS’s blog page as reference, assuming each uses their own
-    product to power their blog.
+  disclaimer: "*Using each CMS’s blog page as reference, assuming each uses their
+    own product to power their blog."
   updateText: last updated&#58;
   updateTime: 10&#58;32 AM,<br>February 27th
   locations:
