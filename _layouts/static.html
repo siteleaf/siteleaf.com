@@ -292,12 +292,6 @@ layout: default
     var chartArray = document.getElementsByClassName("chart__wrapper")
     var arrayLength = chartArray.length;
 
-    document.onload = function() {
-      for (var i = 0; i < arrayLength; i++) {
-        chartArray[i].classList.add("hidden");
-      }
-    };
-
     function checkVisible(element) {
       var rect = element.getBoundingClientRect();
       var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
@@ -311,12 +305,6 @@ layout: default
         element.classList.add("hidden");
       }
     }
-
-    document.onscroll = function() {
-      for (var i = 0; i < arrayLength; i++) {
-        changeState(chartArray[i]);
-      }
-    };
 
     function rectsIntersect(a, b) {
       return a[0]<b[1] && a[1]>b[0];
@@ -353,14 +341,23 @@ layout: default
     setIntroMargin();
     setChartWidth();
     resizeVideo();
+    for (var i = 0; i < arrayLength; i++) {
+      chartArray[i].classList.add("hidden");
+    }
 
-    window.onresize = function() {
-      setIntroMargin();
-      setChartWidth();
-      resizeVideo();
+    window.onscroll = function() {
       for (var i = 0; i < arrayLength; i++) {
         changeState(chartArray[i]);
       }
+    };
+
+    window.onresize = function() {
+        setIntroMargin();
+        setChartWidth();
+        resizeVideo();
+        for (var i = 0; i < arrayLength; i++) {
+          changeState(chartArray[i]);
+        }
     };
 
     window.addEventListener("orientationchange", function() {

@@ -94,6 +94,12 @@
        -o-transition: -o-transform $transition;
           transition: transform $transition;
 }
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
 
 // flexbox
 // -------
