@@ -289,42 +289,37 @@ layout: default
 
 <script type="text/javascript">
 
-    function check(element) {
-      if (rectsIntersect(getPage(), getElement(element)) == true ) {
-          element.classList.remove("hidden");
-          alert("visible!");
-      } else {
-          element.classList.add("hidden");
-      }
-    }
-
-    function getPage() {
-      var isquirks= document.compatMode!=='BackCompat';
-      var page= isquirks? document.documentElement : document.body;
-      var y= page.scrollTop;
-      var h= 'innerHeight' in window? window.innerHeight : page.clientHeight;
-      return [y,y+h];
-    }
-
-    function getElement(element) {
-      var y= 0;
-      var h= element.offsetHeight;
-      while (element.offsetParent!==null) {
-          y+= element.offsetTop;
-          element= element.offsetParent;
-      }
-      return [y, y+h];
-    }
-
-    function rectsIntersect(a, b) {
-      return a[0]<b[1] && a[1]>b[0];
-    }
-
     var chartArray = document.getElementsByClassName("chart__wrapper")
     var arrayLength = chartArray.length;
 
-    for (var i = 0; i < arrayLength; i++) {
-      chartArray[i].classList.add("hidden");
+    document.onload = function() {
+      for (var i = 0; i < arrayLength; i++) {
+        chartArray[i].classList.add("hidden");
+      }
+    };
+
+    function checkVisible(element) {
+      var rect = element.getBoundingClientRect();
+      var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+    function changeState(element) {
+      if (checkVisible(element)) {
+        element.classList.remove("hidden");
+      } else {
+        element.classList.add("hidden");
+      }
+    }
+
+    document.onscroll = function() {
+      for (var i = 0; i < arrayLength; i++) {
+        changeState(chartArray[i]);
+      }
+    };
+
+    function rectsIntersect(a, b) {
+      return a[0]<b[1] && a[1]>b[0];
     }
 
     function setIntroMargin() {
@@ -355,12 +350,6 @@ layout: default
       }
     }
 
-    document.onscroll = function() {
-      for (var i = 0; i < arrayLength; i++) {
-        check(chartArray[i]);
-      }
-    };
-
     setIntroMargin();
     setChartWidth();
     resizeVideo();
@@ -369,12 +358,18 @@ layout: default
       setIntroMargin();
       setChartWidth();
       resizeVideo();
+      for (var i = 0; i < arrayLength; i++) {
+        changeState(chartArray[i]);
+      }
     };
 
     window.addEventListener("orientationchange", function() {
       setIntroMargin();
       setChartWidth();
       resizeVideo();
+      for (var i = 0; i < arrayLength; i++) {
+        changeState(chartArray[i]);
+      }
     });
 
 </script>
