@@ -19,6 +19,10 @@
 // base
 // ------
 
+body {
+  background-color: $color--darkest-gray !important;
+}
+
 .section {
   @extend %container--wide;
   padding: $v*4 5% $v*4 5%;
