@@ -28,7 +28,7 @@ test:
   title: Test it for yourself
   body: We’re putting our money where our mouth is. Below you can see a speed comparison
     of Siteleaf—which generates static websites—along with popular traditional CMS’s
-    including Squarespace, Craft, and Wordpress - these stats* are updated every couple
+    including Squarespace, Craft, and Wordpress. These stats* are updated every couple
     of hours, from different global locations using <a href="https://www.pingdom.com/"
     target="_blank">Pingdom</a>.
   disclaimer: "*Using each CMS’s blog page as reference, assuming each uses their
