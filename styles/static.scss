@@ -108,11 +108,15 @@
   &:nth-child(4) {
     margin-right: 0;
   }
-  &:first-child .chart__locations {
-    margin-left: 0;
+
+  &:first-child .chart__title {
+    padding-left: 33.333333%;
   }
   @include max-width($min-width--lg){
-    padding-left: 0;
+    
+    &:first-child .chart__title {
+      padding-left: 0;
+    }
   }
   @include max-width($min-width--md) {
     min-width: 200px;
@@ -155,32 +159,10 @@
 .chart__title {
   border-top: 3px solid $color--dark-gray;
   padding-top: $gutter;
-  padding-left: 33.333333%;
-
-  @include max-width($min-width--lg) {
-    padding-left: 0;
-  }
-  @include max-width($min-width--md) {
-    padding-left: 33.333333%;
-  }
-  @include max-width($min-width--sm) {
-    padding-left: 0;
-  }
 }
 
 .chart__locations {
   display: inline-block;
-  margin-left: 33.333333%;
-
-  @include max-width($min-width--lg) {
-    margin-left: 0;
-  }
-  @include max-width($min-width--md) {
-    margin-left: 33.333333%;
-  }
-  @include max-width($min-width--sm) {
-    margin-left: 0;
-  }
 }
 
 .chart__values{
