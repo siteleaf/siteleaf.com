@@ -28,13 +28,13 @@ test:
   title: Test it for yourself
   body: We’re putting our money where our mouth is. Below you can see a speed comparison
     of Siteleaf—which generates static websites—along with popular traditional CMS’s
-    including Squarespace, Craft, and Wordpress - these stats&#42; are updated every
-    couple of hours, from different global locations using <a href="https://www.pingdom.com/"
+    including Squarespace, Craft, and Wordpress - these stats* are updated every couple
+    of hours, from different global locations using <a href="https://www.pingdom.com/"
     target="_blank">Pingdom</a>.
   disclaimer: "*Using each CMS’s blog page as reference, assuming each uses their
     own product to power their blog."
-  updateText: last updated&#58;
-  updateTime: 10&#58;32 AM,<br>February 27th
+  updateText: 'last updated:'
+  updateTime: 10:32 AM,<br>February 27th
   locations:
   - New York
   - California
@@ -43,28 +43,28 @@ test:
   charts:
   - title: Siteleaf
     values:
-    - 2
-    - 4
-    - 5
-    - 3
+    - 2.2
+    - 4.5
+    - 5.1
+    - 3.2
   - title: Squarespace
     values:
-    - 1
+    - 1.3
     - 3
-    - 2
-    - 4
+    - 2.1
+    - 4.7
   - title: Wordpress
     values:
     - 4
-    - 3
-    - 5
+    - 3.9
+    - 5.2
     - 6
   - title: Craft
     values:
     - 6
-    - 5
-    - 3
-    - 4
+    - 5.1
+    - 3.5
+    - 4.2
 paragraphs:
 - title: Why are static sites faster?
   body: Static sites are faster than <a href="https://media.giphy.com/media/12mg8tiWKgiRB6/giphy.gif"
