@@ -113,7 +113,7 @@
     padding-left: 33.333333%;
   }
   @include max-width($min-width--lg){
-    
+
     &:first-child .chart__title {
       padding-left: 0;
     }
@@ -174,7 +174,7 @@
 // header
 // ------
 
-.header__video__wrapper {
+#header__video__wrapper {
   position: absolute;
   left: 0;
   top: 0;

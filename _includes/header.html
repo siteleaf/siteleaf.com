@@ -26,7 +26,7 @@
 {% endif %}
 <div class="headerWrap bg--{{ background | default: 'lightest-gray' }}">
   {% if page.url == '/static/' %}
-    <header class="header__video__wrapper">
+    <header id="header__video__wrapper">
       <div class="header__video__overlay"></div>
       <video id="header__video" autoplay loop muted playsinline>
         <source src="/assets/static-header.mp4" type="video/mp4"></source>
