@@ -50,18 +50,18 @@ test:
   - title: Squarespace
     values:
     - 1.3
-    - 3
+    - 3.2
     - 2.1
     - 4.7
   - title: Wordpress
     values:
-    - 4
+    - 4.1
     - 3.9
     - 5.2
-    - 6
+    - 5.9
   - title: Craft
     values:
-    - 6
+    - 5.4
     - 5.1
     - 3.5
     - 4.2
