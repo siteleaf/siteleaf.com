@@ -91,4 +91,3 @@ learnMore: Or learn more about how <a href="/" target="_blank">Site Leaf</a> is 
   people build static sites.
 layout: static
 ---
-
