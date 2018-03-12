@@ -87,7 +87,7 @@ paragraphs:
 email:
   title: Send this page to a friend
   prefill: Enter email
-learnMore: Or learn more about how <a href="/" target="_blank">SiteLeaf</a> is helping
+learnMore: Or learn more about how <a href="/" target="_blank">Site Leaf</a> is helping
   people build static sites.
 layout: static
 ---
