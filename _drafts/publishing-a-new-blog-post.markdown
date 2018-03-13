@@ -135,7 +135,7 @@ If you’d prefer to make a bullet point list (also known as an unordered list) 
 ##### Adding Hyperlinks
 To add a link surround the word or phase in square brackets and then paste the link in parenthesis after, and boom you have a link. 
 
-![19-screen-shot-hyperlink-markdown-small.png](/uploads/19-screen-shot-hyperlink-markdown-small.png)
+`[text](www.intendedhyperlink.com)`
 
 You can still use the link button in the toolbar for any of these functions if it’s easier for you, it isn’t one or the other. 
  
@@ -144,7 +144,7 @@ Inserting an image purely in Markdown is a little more tricky. Typically if I’
 
 However, it is achievable in Markdown and inserting an image works in the same way as inserting a hyperlink. But you have to know the title that the image had when you uploaded it to Siteleaf. To insert an image in Markdown first on a new line put:
 
-`![](link to where the image lives on Siteleaf, this would be /uploads/filename)`
+`![](link to where the image lives on Siteleaf, like /uploads/filename)`
 
 Between the square brackets you need to add the image’s alt tag. Alt tags are used by screen readers, the browsers used by blind and visually impaired people, to tell them what is on the image. Also, bots use alt tags to find out what the image is and this helps your SEO. 
 
