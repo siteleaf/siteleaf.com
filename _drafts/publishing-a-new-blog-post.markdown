@@ -79,9 +79,9 @@ You can make a bullet point (or “unordered”) list by clicking on the bullet 
 ##### Adding Hyperlinks
 You can add hyperlinks by highlighting the text that you want to become a link then clicking the link button in the toolbar. 
 
-![10-screen-shot-hyperlink-small.png](/uploads/10-screen-shot-hyperlink-small.png)
-
 Then you’ll see this input where you can add the URL for the website you’d like to link to. Once you have pasted that in and press ‘ok’ the hyperlink is will be created.
+
+![10-screen-shot-hyperlink-small.png](/uploads/10-screen-shot-hyperlink-small.png)
 
 ##### Adding Images
 Finally we’re going to want some images for this post so it’s not a big wall of text. I will start by uploading a few images here from my computer. First tap the image icon and this pop-up will appear. 
