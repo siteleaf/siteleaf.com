@@ -69,7 +69,7 @@ If you wanted to share a code snippet; style it by highlighting the text and the
 
 ![8-screen-shot-code-small.png](/uploads/8-screen-shot-code-small.png)
 
-Code snippets can be helpful for technical blogs, and we use it a lot on our blog.  But if you’re writing about gardening you can ignore this option.
+Code snippets can be helpful for technical blogs, and we use it a lot on our blog.  But if you’re writing about gardening, you can ignore this option.
 
 ##### Lists
 You can make a bullet point (or “unordered”) list by clicking on the bullet list icon, and a numbered (or “ordered”) list by clicking on the numbered list icon next to it. 
@@ -148,9 +148,9 @@ To add a link surround the word or phase in square brackets and then paste the l
 You can still use the link button in the toolbar for any of these functions if it’s easier for you, it isn’t one or the other. 
  
 ##### Adding Images
-Inserting an image purely in Markdown is a little more tricky. Typically if I’m writing a draft somewhere outside of Siteleaf I’ll put something like ‘INSERT IMAGE HERE’ in the text and then input the image in the same way described earlier on. 
+Inserting an image purely in Markdown is a little more tricky. Typically if I’m writing a draft somewhere outside of Siteleaf, I’ll put something like ‘INSERT IMAGE HERE’ in the text and then input the image the same way as described earlier on. 
 
-However, it is achievable in Markdown and inserting an image works in the same way as inserting a hyperlink. But you have to know the title that the image had when you uploaded it to Siteleaf. To insert an image in Markdown on a new line put:
+However, it is achievable in Markdown and inserting an image works in the same way as adding a hyperlink. But you have to know the title that the image had when you uploaded it to Siteleaf. To insert an image in Markdown on a new line put:
 
 `![](link to where the image lives on Siteleaf)`
 
@@ -165,15 +165,15 @@ There are a few last steps you’ll want to do before making your post visible, 
 
 ![21-screen-shot-metadata-small.png](/uploads/21-screen-shot-metadata-small.png)
 
-You may find metadata fields beneath the main text input.On our site there’s a field where you can upload an image that will be displayed when you share the link online, which makes people more inclined to click on the link. Also there is a field where you can post a description of what the blog post is about. This acts like a preview in the same way. 
+You may find metadata fields beneath the main text input. On our site, there’s a field where you can upload an image that will be displayed when you share the link online, which makes people more inclined to click on the link. Also, there is a field where you can post a description of the blog post. These act like a preview in the same way. 
 
-These are called ‘rich previews’ and are particularly useful when posting links on social media like Facebook or in Slack channels as it gives your readers a flavour of what they will see before they click on the link, making them more inclined to click on and read further. 
+These are called ‘rich previews’ and are particularly useful when posting links on social media like Facebook or in Slack channels as it gives your readers a flavor of what they will see before they click on the link, making them more inclined to click on and read further. 
 
 I’d advise speaking to your Admin or Developer about the metadata fields on your site and the best way to use them. You can find more [technical information on metadata here](https://learn.siteleaf.com/content/metadata/). 
 
 ### Flight Panel
 
-On the right on the main text input you can see the flight panel. 
+On the right on the main text input, you can see the flight panel. 
 
 ![22-screen-shot-flight-panel-small.png](/uploads/22-screen-shot-flight-panel-small.png)
 
@@ -183,10 +183,10 @@ This button is where you save your changes. Should you forget to save the change
 Underneath there are three options for your post, either ‘Draft’, ‘Hidden’ or ‘Visible’. 
 
 ##### Draft
-Draft is for posts that you are currently working on and shouldn’t yet be made public - or if your role is Writer then this is how all of your posts will be saved before an Admin or Publisher makes them Visible. [Learn more about roles on Siteleaf](https://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/#roles). 
+Draft status is for posts that you are currently working on and shouldn’t yet be made public - or if your role is Writer, then this is how all of your posts will be saved before an Admin or Publisher makes them Visible. [Learn more about roles on Siteleaf](https://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/#roles). 
 
 ##### Hidden
-Hidden posts are exactly that - hidden. These can be useful if you’ve written about your undying love for Chicago style pizza only to then discover that actually you really prefer New York style pizza and can’t have your previous opinion all over the internet. As a side note, all pizza is great. 
+Hidden posts are exactly that - hidden. These can be useful if you’ve written about your undying love for Chicago style pizza only to discover that you prefer New York style pizza and can’t have your previous opinion all over the internet. As a side note, all pizza is great. 
 
 ##### Visible
 All the posts that you’ve written that you want the whole world to read should be set to visible. 
@@ -194,10 +194,10 @@ All the posts that you’ve written that you want the whole world to read should
 #### Tags 
 We like to use tags on our blog posts so that users can go through the tags to connect with other posts you tagged with the same tag in the past. For example, under the tag ‘pizza’ your readers can click through to see all your past pizza blog posts. 
 
-This is great for UX because then someone can press on the tag, like ‘announcements’ or ‘pizza’, and see all the pizza posts on your site. This is also great for SEO. The more thoroughly you use tags the easier it is for your readers and web crawlers to engage with your content across years of blog posts. 
+This is great for UX because then someone can press on the tag, like ‘announcements’ or ‘pizza’, and see all the pizza posts on your site. This is also great for SEO. The more thoroughly you use tags, the easier it is for your readers and web crawlers to engage with your content across years of blog posts. 
 
 #### Categories 
-These are very similar to tags, but with broader groupings. Tags and categories are similar, and their purpose is to sort your content to improve the usability of your site. Meaning when a user comes to your site, they can easily browse through your content by category or by tag rather than browsing chronologically which is how blogs were initially setup. 
+These are very similar to tags, but with broader groupings. Tags and categories are similar, and their purpose is to sort your content to improve the usability of your site. Meaning when a user comes to your site, they can easily browse through your content by category or by tag rather than browsing chronologically, which is how blogs were initially set up. 
 
 ![24-screen-shot-categories-small.png](/uploads/24-screen-shot-categories-small.png)
 
@@ -206,17 +206,17 @@ These work in much the same way as tags, and you can use them together. For exam
 You should talk with your developer or site admin to see what is best for your website. 
 
 #### Date
-This is the date which the post was published. If you set it to a date in the future it won’t automatically publish on that date unless you set up a scheduled or automatic publishing schedule. 
+This is the date which the post was published. If you set it to a date in the future, it won’t automatically publish on that date unless you set up a scheduled or automatic publishing schedule. 
 
 ![25-screen-shot-date-small.png](/uploads/25-screen-shot-date-small.png)
 
-We generally recommend using Zapier for this task. With Zapier, and you can use it to integrate your Siteleaf site with lots of different applications like Trello, Twitter, Typeform and other apps not beginning with the letter T. [Head to Zapier for more information](https://zapier.com/apps/schedule/integrations/siteleaf/15388/publish-siteleaf-every-day-at-a-scheduled-time ). 
+We recommend using Zapier for this task. With Zapier, and you can use it to integrate your Siteleaf site with lots of different applications like Trello, Twitter, Typeform and other apps not beginning with the letter T. [Head to Zapier for more information](https://zapier.com/apps/schedule/integrations/siteleaf/15388/publish-siteleaf-every-day-at-a-scheduled-time ). 
 
 ## Publishing your post
  
-To publish this post by change the post’s status to ‘visible’ and hit save. 
+Publish this post by changing the post’s status to ‘visible’ and hit save. 
 
-As I mentioned in our last video I like to generate item preview before I publish a page, just to check that everything looks as I expected and that I haven’t accidentally added the wrong image or misspelled anything. 
+As I mentioned in our last [tutorial](https://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/), I like to generate item preview before I publish a page, just to check that everything looks as I expected and that I haven’t accidentally added the wrong image or misspelled anything. 
 
 ![26-screen-shot-preview-small.png](/uploads/26-screen-shot-preview-small.png)
 
