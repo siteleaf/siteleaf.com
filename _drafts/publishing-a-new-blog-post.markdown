@@ -93,7 +93,7 @@ You can drag and drop your images to upload or choose the files from your comput
 The first thing you will want to do is place your cursor where you’d like the image to be in your post. Then click on the image button again, and the pop-up will reappear. Then click over to the ‘existing uploads’ tab and select the image you want to input by pressing insert underneath the image. Then you will see the image in the text. 
 
 ##### Adding Emojis
-Siteleaf will accept emojis in the same way that any other input field would. If you're on Windows, you can choose the desired emoji from your touch keyboard. Or you can bring up an emoji keyboard on your mac by pressing ‘command’, ‘control’ and the ‘space bar’ at the same time and clicking on the desired emoji. Woo rockets. 🚀
+Siteleaf will accept emojis in the same way that any other input field would. If you're on Windows, you can choose the desired emoji from your touch keyboard. Or you can bring up an emoji keyboard on your mac by pressing ‘command’, ‘control’ and the ‘space bar’ at the same time and clicking on the desired emoji. 🚀
 
 ### Markdown
 If you change the view to Markdown from the drop-down, you’ll see that instead of generating a preview of the text styling we saw before there’s a lot of symbols. 
