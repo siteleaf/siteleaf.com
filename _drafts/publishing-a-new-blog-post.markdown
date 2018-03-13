@@ -64,7 +64,7 @@ You can style a quote by highlighting the quotation and then pressing the quote 
 
 ![7-screen-shot-quote-small.png](/uploads/7-screen-shot-quote-small.png)
 
-##### Code 
+##### Code snippet
 If you wanted to share a code snippet; style it by highlighting the text and then choose the code option from the drop down. 
 
 ![8-screen-shot-code-small.png](/uploads/8-screen-shot-code-small.png)
@@ -124,7 +124,7 @@ To make text bold put two asterisks or stars either side of the word or phrase y
 ##### Quote
 To turn your quotation into quote formatting put a `>` greater than symbol at the start of the new line with the quote. 
 
-##### Code
+##### Code snippet
 To add a code snippet simply add a ` backtick either side of the text.
 
 ##### Lists
