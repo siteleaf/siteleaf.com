@@ -113,8 +113,6 @@ There are lots of programs out there which help you write in Markdown as it’s 
 ##### Headings
 With markdown headings are done with the hash key, or as some of you might know it the pound key.
 
-![13-screen-shot-heading-markdown-small.png](/uploads/13-screen-shot-heading-markdown-small.png)
-
 So, `# HEADLINE` is a large header. `## HEADLINE` would be a header that was a little smaller than the first, and `### HEADLINE` would be a smaller header still.
 
 ##### Italics
