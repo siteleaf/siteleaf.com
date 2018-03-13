@@ -12,11 +12,11 @@ tags:
 Watch <a href="https://vimeo.com/258881059">Publishing a new blog post</a> on Vimeo
 {: .caption}
 
-In this tutorial, we'll go through writing and publishing a new blog post. To get caught up on Familiarizing yourself with Siteleaf watch our previous video in [Siteleaf for Content Managers and Creators](http://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/). 
+In this tutorial, we'll go through how to write and publish a new blog post. To get caught up on Familiarizing yourself with Siteleaf watch our previous video in [Siteleaf for Content Managers and Creators](http://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/). 
 
 ## Writing a new blog post
 
-Head up to the sidebar and click on Posts, located in the content section of the sidebar. When you click on posts you’ll see something like this.
+Head up to the sidebar and click on Posts, located in the content section of the sidebar. When you click on posts, you’ll see something like this.
 
 ![1-screen-shot-of-posts-small.png](/uploads/1-screen-shot-of-posts-small.png)
 
@@ -26,28 +26,28 @@ To create a new post press the plus icon on the right side and it’ll take you 
 
 Start with by typing your title up at the top. 
 
-If you want to specify your URL you can do that underneath the title, but if you leave it blank Siteleaf will do all the hard work for you and the slug (that’s the end of the URL) will be the title of the blogpost separated by hyphens. 
+If you want to specify your URL, you can do that underneath the title, but if you leave it blank Siteleaf will do all the hard work for you and the slug (that’s the end of the URL) will be the title of the blogpost separated by hyphens. 
 
-Having slugs that are readable by both humans and machines is important for SEO, because it encourages users to click on the link as they already understand what the post is about. It also tells the web crawlers hanging out online what the main subject of the post is about, which will help generate traffic to your site. Read more about [SEO with Jekyll and Siteleaf here](https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/). 
+Having slugs that are readable by both humans and machines is good for SEO because it encourages users to click on the link as they already understand the content of the post. It also tells the web crawlers hanging out online what the main subject of the post is about, which will help generate traffic to your site. Read more about [SEO with Jekyll and Siteleaf here](https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/). 
 
 Underneath the URL in the big box is where you write the content for your post. 
 
 ### Visual Mode
-For the moment we will start in visual mode and I’ll go into detail later on about [Markdown](/###Markdown). Visual mode is currently in beta so sometimes it isn’t perfect, but it’s pretty smart and gets there 90% of the time. 
+For the moment we will start in visual mode, and I’ll go into detail later on about [Markdown](/###Markdown). Visual mode is currently in beta so sometimes it isn’t perfect, but it’s pretty smart and gets there 90% of the time. 
 
 ![3-screen-shot-visual-mode-small.png](/uploads/3-screen-shot-visual-mode-small.png)
 
 If you are used to seeing changes immediately in Microsoft Word and other similar programs this will be helpful for you. 
 
 #### Formatting
-The default setting for the text is ‘paragraph’, but you can use the toolbar at the top to style the text. 
+The default setting for the text is paragraph, but you can use the toolbar at the top to style the text. 
 
 ##### Headings
 There is a hierarchy of headings built in by your website’s designer. You may want to check with them for usage guidance. But in general, Heading 1 will be the biggest and most eye-catching, Heading 2 will be a bit smaller, a bit less eye-catching and Heading 3 will be smaller still and so on. 
 
 ![4-screen-shot-heading-small.png](/uploads/4-screen-shot-heading-small.png)
 
-To insert a heading, first highlight the text that you want to become a heading, then choose from the drop down which type of heading you would like to apply to the text. 
+To insert a heading, highlight the text that you want to become a heading, then choose from the drop down which type of heading you would like to apply to the text. 
 
 ##### Bold 
 You can add bold styling do this by highlighting and pressing the bold icon. 
@@ -55,7 +55,7 @@ You can add bold styling do this by highlighting and pressing the bold icon.
 ![5-screen-shot-bold-small.png](/uploads/5-screen-shot-bold-small.png)
 
 ##### Italics 
-To use italics highlight the text that you want to make italic, then choose the italic from the dropdown menu. 
+To use italics highlight the text that you want to make italic, then choose the italic from the drop-down menu. 
 
 ![6-screen-shot-italic-small.png](/uploads/6-screen-shot-italic-small.png)
 
@@ -65,11 +65,11 @@ You can style a quote by highlighting the quotation and then pressing the quote 
 ![7-screen-shot-quote-small.png](/uploads/7-screen-shot-quote-small.png)
 
 ##### Code snippet
-If you wanted to share a code snippet; style it by highlighting the text and then choose the code option from the drop down. 
+If you wanted to share a code snippet; style it by highlighting the text and then choose the code option from the drop-down. 
 
 ![8-screen-shot-code-small.png](/uploads/8-screen-shot-code-small.png)
 
-This is helpful for technical blogs, but if you’re writing about gardening you can ignore this option.
+Code snippets can be helpful for technical blogs, and we use it a lot on our blog.  But if you’re writing about gardening you can ignore this option.
 
 ##### Lists
 You can make a bullet point (or “unordered”) list by clicking on the bullet list icon, and a numbered (or “ordered”) list by clicking on the numbered list icon next to it. 
@@ -79,28 +79,28 @@ You can make a bullet point (or “unordered”) list by clicking on the bullet 
 ##### Adding Hyperlinks
 You can add hyperlinks by highlighting the text that you want to become a link then clicking the link button in the toolbar. 
 
-Then you’ll see this input where you can add the URL for the website you’d like to link to. Once you have pasted that in and press ‘ok’ the hyperlink is will be created.
+Then you’ll see this input where you can add the URL to the website you’d like to direct people to. Once you have pasted that URL in and pressed ‘ok’ the hyperlink will be created.
 
 ![10-screen-shot-hyperlink-small.png](/uploads/10-screen-shot-hyperlink-small.png)
 
 ##### Adding Images
-Finally we’re going to want some images for this post so it’s not a big wall of text. First tap the image icon and this pop-up will appear. 
+Finally, you will want to add some images to this post, so it’s not a big wall of text. First tap the image icon and this pop-up will appear. 
 
 ![11-screen-shot-image-small.png](/uploads/11-screen-shot-image-small.png)
 
-You can drag and drop your images to upload or choose the files from your computer. Also, you can click over to the ‘existing uploads’ tab to discover all the images ever uploaded to Siteleaf. 
+You can drag and drop your images to upload or choose the files from your computer. Also, you can click over to the ‘existing uploads’ tab to discover all the images previously uploaded to Siteleaf. 
 
-First thing you will want to do is place your cursor where you’d like the image to be in your post. Then click on the image button again, and the pop-up will reappear. Then click over to the ‘existing uploads’ tab and select the image you want to input by pressing insert underneath the image. Then you will see the image in the text. 
+The first thing you will want to do is place your cursor where you’d like the image to be in your post. Then click on the image button again, and the pop-up will reappear. Then click over to the ‘existing uploads’ tab and select the image you want to input by pressing insert underneath the image. Then you will see the image in the text. 
 
 ##### Adding Emojis
-Siteleaf will accept emojis in the same way that any other input field would. If your on Windows you can choose the desired emoji from your touch keyboard. Or you can bring up an emoji keyboard on your mac by pressing ‘command’, ‘control’ and the ‘space bar’ at the same time and clicking on the desired emoji. Woo rockets. 🚀
+Siteleaf will accept emojis in the same way that any other input field would. If you're on Windows, you can choose the desired emoji from your touch keyboard. Or you can bring up an emoji keyboard on your mac by pressing ‘command’, ‘control’ and the ‘space bar’ at the same time and clicking on the desired emoji. Woo rockets. 🚀
 
 ### Markdown
-If you change the view to Markdown from the dropdown, you’ll see that instead of generating a preview of the text styling we saw before there’s a lot of symbols. 
+If you change the view to Markdown from the drop-down, you’ll see that instead of generating a preview of the text styling we saw before there’s a lot of symbols. 
 
 ![12-screen-shot-markdown-small.png](/uploads/12-screen-shot-markdown-small.png)
 
-Markdown was initially created as a simple way for non-programmers to write in an easy-to-read format that could be converted directly into HTML. It uses very simple formatting to accomplish the same thing that HTML or Rich Text Formatting does, but thankfully it's simpler than HTML because you don't have to worry about opening and closing tags. 
+Markdown was created as a simple way for non-programmers to write in an easy-to-read format that could be converted directly into HTML. It uses very simple formatting to accomplish the same thing that HTML or Rich Text Formatting does, but thankfully it's simpler than HTML because you don't have to worry about opening and closing tags. 
 
 The main benefit of Markdown for me is that the formatting is embedded in the text, so when you copy the text from different programs the styling comes too. There’s nothing more frustrating than formatting something perfectly in a program like Word or Pages, just to lose all the formatting that you’ve added when you copy and paste the text elsewhere. 
 
@@ -128,9 +128,17 @@ To turn your quotation into quote formatting put a `>` greater than symbol at th
 To add a code snippet simply add a ` backtick either side of the text.
 
 ##### Lists
-If you want to make a numbered list (also known as an ordered list) simply start a new line and type 1. and then on the next line type 2. 
+If you want to make a numbered list (also known as an ordered list) simply start a new line and type `1.` and then on the next line type `2.` like so:
 
-If you’d prefer to make a bullet point list (also known as an unordered list) just pop a - dash on a new line each time you want a new bullet point. 
+`1.
+2.
+3.`
+
+If you’d prefer to make a bullet point list (also known as an unordered list) just pop a dash on a new line each time you want a new bullet point. 
+
+`-
+-
+-`
 
 ##### Adding Hyperlinks
 To add a link surround the word or phase in square brackets and then paste the link in parenthesis after, and boom you have a link. 
