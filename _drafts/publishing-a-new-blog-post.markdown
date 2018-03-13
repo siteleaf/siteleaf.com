@@ -115,34 +115,26 @@ With markdown headings are done with the hash key, or as some of you might know 
 
 ![13-screen-shot-heading-markdown-small.png](/uploads/13-screen-shot-heading-markdown-small.png)
 
-So, ‘# HEADLINE’ is a large header. ‘## HEADLINE’ would be a header that was a little smaller than the first, and ‘### HEADLINE’ would be a smaller header still.
+So, `# HEADLINE` is a large header. `## HEADLINE` would be a header that was a little smaller than the first, and `### HEADLINE` would be a smaller header still.
 
 ##### Italics
-For italics you want to put an asterisk or star either side of the word or phrase that you want to become ‘*italic*’.
-
-![14-screen-shot-italic-markdown-small.png](/uploads/14-screen-shot-italic-markdown-small.png)
+For italics, you want to put an asterisk or star either side of the word or phrase that you want to become `*italic*`.
 
 ##### Bold
-To make text bold put two asterisks or stars either side of the word or phase you want to ‘**bold**’. 
-
-![15-screen-shot-bold-markdown-small.png](/uploads/15-screen-shot-bold-markdown-small.png)
+To make text bold put two asterisks or stars either side of the word or phrase you want to `**bold**`. 
 
 ##### Quote
-To turn your quotation into quote formatting put a ‘>’ greater than symbol at the start of the new line with the quote. 
+To turn your quotation into quote formatting put a `>` greater than symbol at the start of the new line with the quote. 
 
 ![16-screen-shot-quote-markdown-small.png](/uploads/16-screen-shot-quote-markdown-small.png)
 
 ##### Code
-To add a code snippet simply add a ` backtick either side of the `text`.
-
-![17-screen-shot-code-markdown-small.png](/uploads/17-screen-shot-code-markdown-small.png)
+To add a code snippet simply add a ` backtick either side of the text.
 
 ##### Lists
 If you should want to make a numbered list (also known as an ordered list) simply start a new line and type 1. and then on the next line type 2. 
 
 If you’d prefer to make a bullet point list (also known as an unordered list) just pop a - dash on a new line each time you want a new bullet point. 
-
-![18-screen-shot-list-markdown-small.png](/uploads/18-screen-shot-list-markdown-small.png)
 
 ##### Adding Hyperlinks
 To add a link surround the word or phase in square brackets and then paste the link in parenthesis after, and boom you have a link. 
@@ -154,11 +146,9 @@ You can still use the link button in the toolbar for any of these functions if i
 ##### Adding Images
 Inserting an image purely in Markdown is a little more tricky. Typically if I’m writing a draft somewhere outside of Siteleaf I’ll put something like ‘INSERT IMAGE HERE’ in the text and then input the image in the same way described earlier on. 
 
-![20-screen-shot-image-markdown-small.png](/uploads/20-screen-shot-image-markdown-small.png)
-
 However, it is achievable in Markdown and inserting an image works in the same way as inserting a hyperlink. But you have to know the title that the image had when you uploaded it to Siteleaf. To insert an image in Markdown first on a new line put:
 
-‘! [](link to where the image lives on siteleaf, this would be /uploads/filename)’
+`![](link to where the image lives on Siteleaf, this would be /uploads/filename)`
 
 Between the square brackets you need to add the image’s alt tag. Alt tags are used by screen readers, the browsers used by blind and visually impaired people, to tell them what is on the image. Also, bots use alt tags to find out what the image is and this helps your SEO. 
 
