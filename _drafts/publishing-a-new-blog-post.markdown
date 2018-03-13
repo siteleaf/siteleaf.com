@@ -84,11 +84,11 @@ Then you’ll see this input where you can add the URL for the website you’d l
 ![10-screen-shot-hyperlink-small.png](/uploads/10-screen-shot-hyperlink-small.png)
 
 ##### Adding Images
-Finally we’re going to want some images for this post so it’s not a big wall of text. I will start by uploading a few images here from my computer. First tap the image icon and this pop-up will appear. 
+Finally we’re going to want some images for this post so it’s not a big wall of text. First tap the image icon and this pop-up will appear. 
 
 ![11-screen-shot-image-small.png](/uploads/11-screen-shot-image-small.png)
 
-You can drag and drop your images to upload, or choose the files from your computer. Also you can click over to the ‘existing uploads’ tab to discover all the images ever uploaded to Siteleaf. 
+You can drag and drop your images to upload or choose the files from your computer. Also, you can click over to the ‘existing uploads’ tab to discover all the images ever uploaded to Siteleaf. 
 
 First thing you will want to do is place your cursor where you’d like the image to be in your post. Then click on the image button again, and the pop-up will reappear. Then click over to the ‘existing uploads’ tab and select the image you want to input by pressing insert underneath the image. Then you will see the image in the text. 
 
@@ -142,9 +142,11 @@ You can still use the link button in the toolbar for any of these functions if i
 ##### Adding Images
 Inserting an image purely in Markdown is a little more tricky. Typically if I’m writing a draft somewhere outside of Siteleaf I’ll put something like ‘INSERT IMAGE HERE’ in the text and then input the image in the same way described earlier on. 
 
-However, it is achievable in Markdown and inserting an image works in the same way as inserting a hyperlink. But you have to know the title that the image had when you uploaded it to Siteleaf. To insert an image in Markdown first on a new line put:
+However, it is achievable in Markdown and inserting an image works in the same way as inserting a hyperlink. But you have to know the title that the image had when you uploaded it to Siteleaf. To insert an image in Markdown on a new line put:
 
-`![](link to where the image lives on Siteleaf, like /uploads/filename)`
+`![](link to where the image lives on Siteleaf)`
+
+The location of the image will be along the lines of `/uploads/filename`.
 
 Between the square brackets you need to add the image’s alt tag. Alt tags are used by screen readers, the browsers used by blind and visually impaired people, to tell them what is on the image. Also, bots use alt tags to find out what the image is and this helps your SEO. 
 
