@@ -155,7 +155,7 @@ However, it is achievable in Markdown and inserting an image works in the same w
 
 `![](link to where the image lives on Siteleaf)`
 
-The location of the image will be along the lines of `/uploads/filename`.
+The location of the image will be along the lines of `/uploads/filename`
 
 Between the square brackets you need to add the image’s alt tag. Alt tags are used by screen readers, the browsers used by blind and visually impaired people, to tell them what is on the image. Also, bots use alt tags to find out what the image is and this helps your SEO. 
 
