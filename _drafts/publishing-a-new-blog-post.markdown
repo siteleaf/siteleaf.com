@@ -128,18 +128,9 @@ To turn your quotation into quote formatting put a `>` greater than symbol at th
 To add a code snippet simply add a ` backtick either side of the text.
 
 ##### Lists
-If you want to make a numbered list (also known as an ordered list) simply start a new line and type `1.` and then on the next line type `2.` like so:
-`
-1.
-2.
-3.`
+If you want to make a numbered list (also known as an ordered list) simply start a new line and type `1.` and then on the next line type `2.`
 
 If you’d prefer to make a bullet point list (also known as an unordered list) just pop a dash on a new line each time you want a new bullet point. 
-
-`
--
--
--`
 
 ##### Adding Hyperlinks
 To add a link surround the word or phase in square brackets and then paste the link in parenthesis after, and boom you have a link. 
