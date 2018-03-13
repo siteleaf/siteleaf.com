@@ -12,7 +12,7 @@ tags:
 Watch <a href="https://vimeo.com/258881059">Publishing a new blog post</a> on Vimeo
 {: .caption}
 
-In this tutorial we'll go through writing and publishing a new blog post. To get caught up on Familiarizing yourself with Siteleaf watch our previous video in [Siteleaf for Content Managers and Creators](http://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/). 
+In this tutorial, we'll go through writing and publishing a new blog post. To get caught up on Familiarizing yourself with Siteleaf watch our previous video in [Siteleaf for Content Managers and Creators](http://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/). 
 
 ## Writing a new blog post
 
@@ -22,7 +22,7 @@ Head up to the sidebar and click on Posts, located in the content section of the
 
 To create a new post press the plus icon on the right side and it’ll take you to a screen that looks like this.
 
-![2-screen-shot-blank-post-small.png](/uploads/2-screen-shot-blank-post-small.png)
+![2-screen-shot-blank-post-small-6555ef.png](/uploads/2-screen-shot-blank-post-small-6555ef.png)
 
 Start with by typing your title up at the top. 
 
