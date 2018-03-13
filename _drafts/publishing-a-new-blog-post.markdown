@@ -124,13 +124,11 @@ To make text bold put two asterisks or stars either side of the word or phrase y
 ##### Quote
 To turn your quotation into quote formatting put a `>` greater than symbol at the start of the new line with the quote. 
 
-![16-screen-shot-quote-markdown-small.png](/uploads/16-screen-shot-quote-markdown-small.png)
-
 ##### Code
 To add a code snippet simply add a ` backtick either side of the text.
 
 ##### Lists
-If you should want to make a numbered list (also known as an ordered list) simply start a new line and type 1. and then on the next line type 2. 
+If you want to make a numbered list (also known as an ordered list) simply start a new line and type 1. and then on the next line type 2. 
 
 If you’d prefer to make a bullet point list (also known as an unordered list) just pop a - dash on a new line each time you want a new bullet point. 
 
