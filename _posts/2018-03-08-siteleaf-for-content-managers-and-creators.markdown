@@ -4,12 +4,18 @@ date: 2018-03-08 10:41:00 -05:00
 tags:
 - video
 - tutorial
+image: "/uploads/siteleaf_videoCover_022218.png"
+description: 'Our new series of tutorials will walk you through everything you need
+  to know about adding content to your Siteleaf site. There’s no code involved, so
+  you can feel confident using Siteleaf. '
 ---
 
 <iframe src="https://player.vimeo.com/video/258881059?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Watch <a href="https://vimeo.com/258881059">Siteleaf for Content Managers and Creators</a> on Vimeo
 {: .caption}
+
+Our new series of tutorials will walk you through everything you need to know about adding content to your Siteleaf site. There’s no code involved, so you can feel confident using Siteleaf. 
 
 ## Familiarizing yourself with Siteleaf
 
@@ -29,7 +35,7 @@ When looking at a new website I always click on each collection to familiarise m
 
 #### Pages
 
-A page is the most basic content type in Siteleaf - these might include your ‘about’ page, or a ‘contact’ page. See more about [how to edit existing pages here](/siteleaf-for-content-managers-and-creators/##editing-existing-pages).
+A page is the most basic content type in Siteleaf - these might include your ‘about’ page, or a ‘contact’ page. See more about [how to edit existing pages here](/siteleaf-for-content-managers-and-creators/#Editing-existing-pages).
 
 #### Posts
 
@@ -66,9 +72,7 @@ Here is where your uploaded images, videos and documents live. Click here to bro
 
 ![Screen Shot Uploads.png](/uploads/Screen%20Shot%20Uploads.png)
 
-Siteleaf supports all document types; from jpegs to pdfs and mp4s.
-
-You can also add new items here by clicking ‘Upload file’.
+Siteleaf supports all document types; from jpegs to pdfs and mp4s. You can also add new items here by clicking ‘Upload file’.
 
 #### Site
 
@@ -92,10 +96,10 @@ If you’re on a Team, Business, or Enterprise site plan, there are three differ
 This role has full privileges which means that you can manage and publish all content. This role is great for people who are helping build the site, like a developer or designer. Admin allows users to upload theme files, change the site’s settings, and invite other collaborators.
 
 #### Publisher
-This is similar to the admin role but publishers can't access theme files or the site’s settings. Publishers can manage and publish pages, posts and uploads, but you’re protected from accidentally breaking the site’s theme.
+This is similar to the admin role but publishers can't access theme files or the site’s settings. Publishers can manage and publish pages, posts, and uploads, but you’re protected from accidentally breaking the site’s theme.
 
 #### Writer
-This is the most limited role on Siteleaf. A Writer can only manage their own content, and any content that a Writer creates will default to “Draft” status. This means that a Publisher or Admin must approve a writer’s content first before publishing it. This role is great for sites with many collaborators who only need access to add content, like a blog post.
+This is the most limited role on Siteleaf. A Writer can only manage their own content, and any content that a Writer creates will default to 'draft' status. This means that a Publisher or Admin must approve a writer’s content first before publishing it. This role is great for sites with many collaborators who only need access to add content, like a blog post.
 
 If you feel you haven’t got the right role for what you need to achieve on Siteleaf ask someone with the Admin role to change your settings.
 
@@ -145,7 +149,7 @@ This will open up a new tab. Then you’ll see that Siteleaf is taking the chang
 
 You can publish the changes by pressing the 'Publish changes' button in the top right-hand corner. 
 
-![Screen Shot Publish changes.png](/uploads/Screen%20Shot%20Publish%20changes.png)
+![Screen Shot Publish changes-9d8357.png](/uploads/Screen%20Shot%20Publish%20changes-9d8357.png)
 
 If you are a Writer on your site this button will not be visible. In this case, let a Publisher or Admin know when you’re ready to have your draft approved and then published.
 
@@ -153,6 +157,6 @@ Publishing should be pretty quick, but sometimes it takes a bit longer with a bi
 
 ## Stay Tuned
 
-Our next video will explain step by step how to make a new blog post in Siteleaf - stay tuned to the blog for that soon. 
+Our next video will explain step by step how to make a new blog post in Siteleaf - stay tuned to the blog for that soon!
 
-If there’s anything you would like for us to cover in our tutorials please get in touch on [Twitter](https://twitter.com/siteleaf)!
+If there’s anything you would like for us to cover in our tutorials please get in touch on [Twitter](https://twitter.com/siteleaf).
