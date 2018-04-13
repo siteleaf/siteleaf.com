@@ -5,6 +5,9 @@ tags:
 - video
 - tutorial
 - tip
+image: "/uploads/publishingANewBlogPost.png"
+description: In this tutorial, we'll go through how to write and publish a new blog
+  post.
 ---
 
 <iframe src="https://player.vimeo.com/video/264631007?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
