@@ -4,7 +4,6 @@ date: 2018-03-21 15:51:00 -04:00
 tags:
 - video
 - tutorial
-- tip
 image: "/uploads/publishingANewBlogPost.png"
 description: In this tutorial, we'll go through how to write and publish a new blog
   post.
