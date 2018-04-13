@@ -7,9 +7,9 @@ tags:
 - tip
 ---
 
-<iframe src="https://player.vimeo.com/video/258881059?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/264631007?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Watch <a href="https://vimeo.com/258881059">Publishing a new blog post</a> on Vimeo
+Watch <a href="https://vimeo.com/264631007">Publishing a new blog post</a> on Vimeo
 {: .caption}
 
 In this tutorial, we'll go through how to write and publish a new blog post. To get caught up on Familiarizing yourself with Siteleaf watch our previous video in [Siteleaf for Content Managers and Creators](http://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/). 
