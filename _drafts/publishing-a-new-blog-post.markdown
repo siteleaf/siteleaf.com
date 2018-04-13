@@ -26,7 +26,7 @@ To create a new post press the plus icon on the right side and it’ll take you 
 
 ![2-screen-shot-blank-post-small-6555ef.png](/uploads/2-screen-shot-blank-post-small-6555ef.png)
 
-Start with by typing your title up at the top. 
+Start by typing your title up at the top. 
 
 If you want to specify your URL, you can do that underneath the title, but if you leave it blank Siteleaf will do all the hard work for you and the slug (that’s the end of the URL) will be the title of the blogpost separated by hyphens. 
 
@@ -47,9 +47,9 @@ The default setting for the text is paragraph, but you can use the toolbar at th
 ##### Headings
 There is a hierarchy of headings built in by your website’s designer. You may want to check with them for usage guidance. But in general, Heading 1 will be the biggest and most eye-catching, Heading 2 will be a bit smaller, a bit less eye-catching and Heading 3 will be smaller still and so on. 
 
-![4-screen-shot-heading-small.png](/uploads/4-screen-shot-heading-small.png)
+To insert a heading, highlight the text that you want to become a heading, then choose from the drop down which type of heading you would like to apply to the text.
 
-To insert a heading, highlight the text that you want to become a heading, then choose from the drop down which type of heading you would like to apply to the text. 
+![4-screen-shot-heading-small.png](/uploads/4-screen-shot-heading-small.png) 
 
 ##### Bold 
 You can add bold styling do this by highlighting and pressing the bold icon. 
@@ -95,16 +95,16 @@ You can drag and drop your images to upload or choose the files from your comput
 The first thing you will want to do is place your cursor where you’d like the image to be in your post. Then click on the image button again, and the pop-up will reappear. Then click over to the ‘existing uploads’ tab and select the image you want to input by pressing insert underneath the image. Then you will see the image in the text. 
 
 ##### Adding Emojis
-Siteleaf will accept emojis in the same way that any other input field would. If you're on Windows, you can choose the desired emoji from your touch keyboard. Or you can bring up an emoji keyboard on your mac by pressing ‘command’, ‘control’ and the ‘space bar’ at the same time and clicking on the desired emoji. 🚀
+Siteleaf will accept emojis in the same way that any other input field would. If you're on Windows, you can choose the desired emoji from your touch keyboard. Or you can bring up an emoji keyboard on your mac by pressing `command`, `control` and the `space bar` at the same time and clicking on the desired emoji 🚀
 
 ### Markdown
-If you change the view to Markdown from the drop-down, you’ll see that instead of generating a preview of the text styling we saw before there’s a lot of symbols. 
+If you change the view to Markdown from the drop-down in the toolbar, you’ll see that instead of generating a preview of the text styling we saw before there’s a lot of symbols. 
 
 ![12-screen-shot-markdown-small.png](/uploads/12-screen-shot-markdown-small.png)
 
 Markdown was created as a simple way for non-programmers to write in an easy-to-read format that could be converted directly into HTML. It uses very simple formatting to accomplish the same thing that HTML or Rich Text Formatting does, but thankfully it's simpler than HTML because you don't have to worry about opening and closing tags. 
 
-The main benefit of Markdown for me is that the formatting is embedded in the text, so when you copy the text from different programs the styling comes too. There’s nothing more frustrating than formatting something perfectly in a program like Word or Pages, just to lose all the formatting that you’ve added when you copy and paste the text elsewhere. 
+One benefit of Markdown is that the formatting is embedded in the text, so when you copy the text from different programs the styling comes too. There’s nothing more frustrating than formatting something perfectly in a program like Word or Pages, just to lose all the formatting that you’ve added when you copy and paste the text elsewhere. 
 
 Another advantage for me is that Markdown uses punctuation and characters that I already know and use. Which means I’m not hunting around on the keyboard to try to remember where an umlaut is. 
 
@@ -132,7 +132,11 @@ To add a code snippet simply add a ` backtick either side of the text.
 ##### Lists
 If you want to make a numbered list (also known as an ordered list) simply start a new line and type `1.` and then on the next line type `2.`
 
-If you’d prefer to make a bullet point list (also known as an unordered list) just pop a dash on a new line each time you want a new bullet point. 
+If you’d prefer to make a bullet point list (also known as an unordered list) just pop a dash on a new line each time you want a new bullet point. Like this:
+
+`-
+-
+-`
 
 ##### Adding Hyperlinks
 To add a link surround the word or phase in square brackets and then paste the link in parenthesis after, and boom you have a link. 
@@ -150,7 +154,7 @@ However, it is achievable in Markdown and inserting an image works in the same w
 
 The location of the image will be along the lines of `/uploads/filename`
 
-Between the square brackets you need to add the image’s alt tag. Alt tags are used by screen readers, the browsers used by blind and visually impaired people, to tell them what is on the image. Also, bots use alt tags to find out what the image is and this helps your SEO. 
+Between the square brackets, you need to add the image’s alt tag. Alt tags are used by screen readers, the browsers used by blind and visually impaired people, to tell them what the image shows. Also, bots use alt tags to understand the image, and this helps your SEO. 
 
 There’s more on our blog about [SEO with Jekyll and Siteleaf](https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/), which you should read for further SEO tips and best practices. 
 
