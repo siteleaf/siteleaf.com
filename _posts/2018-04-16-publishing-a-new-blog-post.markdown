@@ -34,6 +34,9 @@ Having slugs that are readable by both humans and machines is good for SEO becau
 
 Underneath the URL in the big box is where you write the content for your post. 
 
+
+
+
 ### Visual Mode
 For the moment we will start in visual mode, and I’ll go into detail later on about [Markdown](/###Markdown). Visual mode is currently in beta so sometimes it isn’t perfect, but it’s pretty smart and gets there 90% of the time. 
 
