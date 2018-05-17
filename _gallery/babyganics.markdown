@@ -1,6 +1,6 @@
 ---
 title: Babyganics
-position: 47
+position: 54
 image: "/uploads/gallery__babyganics.jpg"
 link: http://babyganics.com/
 ---

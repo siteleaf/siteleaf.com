@@ -1,6 +1,6 @@
 ---
 title: Kilmc
-position: 57
+position: 64
 image: "/uploads/gallery__kilmc.jpg"
 link: http://kilmc.com/
 ---
