@@ -1,7 +1,7 @@
 ---
 title: P22
 date: 2017-12-13 11:24:00 -05:00
-position: 25
+position: 26
 image: "/uploads/P22.jpg"
 link: http://p22.studio/
 ---

@@ -1,6 +1,6 @@
 ---
 title: CreativeMornings
-position: 59
+position: 60
 image: "/uploads/CREATIVE%20MORNINGS.jpg"
 link: http://creativemornings.com/blog
 ---
