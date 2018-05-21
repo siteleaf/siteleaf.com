@@ -2,6 +2,7 @@
 title: GDPR
 date: 2018-05-21 13:31:00 -04:00
 published: false
+layout: post
 ---
 
 ## What is GDPR?
