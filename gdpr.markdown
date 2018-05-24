@@ -1,6 +1,6 @@
 ---
 title: GDPR
-date: 2018-05-21 13:31:00 -04:00
+date: 2018-05-24 13:31:00 -04:00
 published: false
 position: 6
 layout: post
