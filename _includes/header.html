@@ -27,9 +27,9 @@
 <div class="headerWrap bg--{{ background | default: 'lightest-gray' }}">
   <header class="header{% if page.extended_header %} header--extended{% endif %}">
     <ul class="header__items">
-      {% for item in site.data.navigation.header %}
+      {% for item in site.header_nav %}
       <li class="header__item">
-        <a href="{{ item.url }}" class="header__link">{{ item.title }}</a>
+        <a href="{{ item[1] }}" class="header__link">{{ item[0] }}</a>
       </li>
       {% endfor %}
       <li class="header__item">

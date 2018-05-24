@@ -1,9 +1,9 @@
 <div class="footerWrap">
   <footer class="footer">
     <ul class="footer__items">
-      {% for item in site.data.navigation.footer %}
+      {% for item in site.footer_nav %}
       <li class="footer__item">
-        <a href="{{ item.url }}" class="footer__link">{{ item.title }}</a>
+        <a href="{{ item[1] }}" class="footer__link">{{ item[0] }}</a>
       </li>
       {% endfor %}
     </ul>
