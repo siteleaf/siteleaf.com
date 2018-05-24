@@ -75,17 +75,17 @@ twitter:
 logo: "/assets/logo.svg"
 future: true
 header_nav:
-  Blog: /blog/
-  Gallery: /gallery/
-  Plans: /plans/
+  Blog: "/blog/"
+  Gallery: "/gallery/"
+  Plans: "/plans/"
   Learn: http://learn.siteleaf.com
   Log in: https://manage.siteleaf.com
 footer_nav:
-  Features: /features/
+  Features: "/features/"
   Press: http://siteleaf.dropmark.com/326718
-  Privacy: /privacy/
-  Terms: /terms/
-  GDPR: /gdpr/
+  Privacy: "/privacy/"
+  Terms: "/terms/"
+  GDPR: "/gdpr/"
   Status: http://status.siteleaf.com
   Chat: http://chat.siteleaf.com
   Twitter: https://twitter.com/siteleaf
