@@ -24,7 +24,7 @@ This week we added nine new sites to our gallery.
 
 ![Canlis-image.jpg](/uploads/Canlis-image.jpg)
 
-Just looking at the James Beard award-winning restaurant [Canlis](https://canlis.com/)’ website makes us hungry. And sad that we don’t live in Seattle. 
+[Canlis](https://canlis.com/) is a James Beard award-winning restaurant in Seattle. Just looking at their website makes us hungry. 
 
 ## Dine
 
