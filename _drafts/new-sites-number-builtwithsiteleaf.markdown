@@ -14,14 +14,14 @@ description: "\x03We love seeing what people create with Siteleaf. We’re proba
 
 This week we added nine new sites to our gallery. 
 
-[## Capitol Cider House](https://capitolciderhouse.com/)
+## Capitol Cider House
 
 ![Capitol-cider-house.jpg](/uploads/Capitol-cider-house.jpg)
 
 [Capitol Cider House](https://capitolciderhouse.com/) is a new bar showcasing cider producers within 200 miles of the Capitol building. Hard cider fans should head there in July - they’ve even got a dog-friendly outside area. 
 
-[## Canlis
-](https://canlis.com/)
+## Canlis
+
 ![Canlis-image.jpg](/uploads/Canlis-image.jpg)
 
 Just looking at the James Beard award-winning restaurant [Canlis](https://canlis.com/)’ website makes us hungry. And sad that we don’t live in Seattle. 
