@@ -12,7 +12,7 @@ This week we added nine new sites to our gallery.
 
 ## Capitol Cider House
 
-![CAPITOL_CIDER_HOUSE.jpg](/uploads/CAPITOL_CIDER_HOUSE.jpg)
+![Capitol-cider-house.jpg](/uploads/Capitol-cider-house.jpg)
 
 Capitol Cider House is a new bar showcasing cider producers within 200 miles of the Capitol building. Hard cider fans should head there in July - they’ve even got a dog-friendly outside area. 
 
