@@ -12,7 +12,7 @@ description: "\x03We love seeing what people create with Siteleaf. We’re proba
 
 We’re probably a little biased, but a lot of our favorite sites use Siteleaf, including [Wade Jeffree](http://www.wadejeffree.com/), [Girls' Night In](http://girlsnightinclub.com/), and [Upperquad](https://upperquad.com/). 
 
-This week we added nine new sites to our gallery. 
+This week we added nine new sites to our [gallery](https://www.siteleaf.com/gallery/). 
 
 ## Capitol Cider House
 
