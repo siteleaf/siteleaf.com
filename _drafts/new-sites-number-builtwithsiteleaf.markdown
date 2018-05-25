@@ -10,21 +10,21 @@ description: "\x03We love seeing what people create with Siteleaf. We’re proba
   nine new sites to our gallery. \n"
 ---
 
-We love seeing what people create with Siteleaf. We’re probably a little biased, but a lot of our favorite sites use Siteleaf, including Wade Jeffree, Girls' Night In, and Upperquad. 
+We love seeing what people create with Siteleaf. We’re probably a little biased, but a lot of our favorite sites use Siteleaf, including [Wade Jeffree](http://www.wadejeffree.com/), [Girls' Night In](http://girlsnightinclub.com/), and [Upperquad](https://upperquad.com/). 
 
 This week we added nine new sites to our gallery. 
 
-## Capitol Cider House
+[## Capitol Cider House](https://capitolciderhouse.com/)
 
 ![Capitol-cider-house.jpg](/uploads/Capitol-cider-house.jpg)
 
-Capitol Cider House is a new bar showcasing cider producers within 200 miles of the Capitol building. Hard cider fans should head there in July - they’ve even got a dog-friendly outside area. 
+[Capitol Cider House](https://capitolciderhouse.com/) is a new bar showcasing cider producers within 200 miles of the Capitol building. Hard cider fans should head there in July - they’ve even got a dog-friendly outside area. 
 
-## Canlis
-
+[## Canlis
+](https://canlis.com/)
 ![Canlis-image.jpg](/uploads/Canlis-image.jpg)
 
-Just looking at the James Beard award-winning restaurant Canlis’ website makes us hungry. And sad that we don’t live in Seattle. 
+Just looking at the James Beard award-winning restaurant [Canlis](https://canlis.com/)’ website makes us hungry. And sad that we don’t live in Seattle. 
 
 ## Dine
 
