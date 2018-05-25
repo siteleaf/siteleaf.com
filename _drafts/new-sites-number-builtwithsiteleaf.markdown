@@ -4,6 +4,10 @@ date: 2018-05-25 13:08:00 -04:00
 tags:
 - community
 - inspiration
+image: "/uploads/Capitol-cider-house.jpg"
+description: "\x03We love seeing what people create with Siteleaf. We’re probably
+  a little biased, but a lot of our favorite sites use Siteleaf. This week we added
+  nine new sites to our gallery. \n"
 ---
 
 We love seeing what people create with Siteleaf. We’re probably a little biased, but a lot of our favorite sites use Siteleaf, including Wade Jeffree, Girls' Night In, and Upperquad. 
@@ -63,3 +67,5 @@ Built by coffee and Siteleaf aficionado John Choura Jr. South California Craft C
 ![welcome-image.jpg](/uploads/welcome-image.jpg)
 
 The Welcome Conference as a place for hospitality professionals to come together in New York City. Their June 4 conference line up includes Seth Meyers, Victoria Arlen, and Alan Mulally.
+
+<small>Want to see your website in our gallery? Get in touch via Twitter or email.</small>
