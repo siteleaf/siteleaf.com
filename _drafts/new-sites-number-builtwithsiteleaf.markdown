@@ -66,7 +66,7 @@ Built by coffee and Siteleaf aficionado John Choura Jr. South California Craft C
 
 ![welcome-image.jpg](/uploads/welcome-image.jpg)
 
-The Welcome Conference as a place for hospitality professionals to come together in New York City. Their June 4 conference line up includes Seth Meyers, Victoria Arlen, and Alan Mulally.
+The Welcome Conference as a place for hospitality professionals to come together in New York City. Their June conference line up includes Seth Meyers, Victoria Arlen, and Alan Mulally.
 
 ______________
 
