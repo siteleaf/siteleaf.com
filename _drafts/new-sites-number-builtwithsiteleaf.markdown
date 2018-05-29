@@ -71,4 +71,4 @@ The [Welcome Conference](http://thewelcomeconference.com/) as a place for hospit
 ______________
 
 <small>See all the other sites #builtusingsiteleaf on our [gallery](https://www.siteleaf.com/gallery/). 
-Want to see your website in our [gallery](https://www.siteleaf.com/gallery/)? Get in touch via [Twitter](https://twitter.com/siteleaf) or [email](mailto:support@siteleaf.com).</small>
+Want to see your website in our [gallery](https://www.siteleaf.com/gallery/)? Get in touch on [Twitter](https://twitter.com/siteleaf) or [email us](mailto:support@siteleaf.com).</small>
