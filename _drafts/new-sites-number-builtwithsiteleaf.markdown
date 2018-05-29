@@ -10,7 +10,7 @@ description: "\x03We love seeing what people create with Siteleaf. We’re proba
   nine new sites to our gallery. \n"
 ---
 
-We’re probably a little biased, but a lot of our favorite sites use Siteleaf, including [Wade Jeffree](http://www.wadejeffree.com/), [Girls' Night In](http://girlsnightinclub.com/), and [Upperquad](https://upperquad.com/). We love seeing what people create with Siteleaf. 
+We’re probably a little biased, but all the best sites use Siteleaf, including [Wade Jeffree](http://www.wadejeffree.com/), [Girls' Night In](http://girlsnightinclub.com/), and [Upperquad](https://upperquad.com/). We love seeing what people create with Siteleaf. 
 
 This week we added nine new sites to our [gallery](https://www.siteleaf.com/gallery/). 
 
