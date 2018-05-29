@@ -18,7 +18,7 @@ This week we added nine new sites to our [gallery](https://www.siteleaf.com/gall
 
 ![Capitol-cider-house.jpg](/uploads/Capitol-cider-house.jpg)
 
-[Capitol Cider House](https://capitolciderhouse.com/) is a new bar showcasing cider producers within 200 miles of the Capitol building. Hard cider fans should head there in July - they’ve even got a dog-friendly outside area. 
+[Capitol Cider House](https://capitolciderhouse.com/) is a new bar in Washinton DC dedicated to showcasing cider producers within 200 miles of the Capitol building. They’ve even got a dog-friendly outside area. 
 
 ## Canlis
 
