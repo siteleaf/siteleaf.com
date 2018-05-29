@@ -5,8 +5,7 @@ tags:
 - community
 - inspiration
 image: "/uploads/Capitol-cider-house.jpg"
-description: "\x03We love seeing what people create with Siteleaf. We’re probably
-  a little biased, but a lot of our favorite sites use Siteleaf. This week we added
+description: "\x03We love seeing what people create with Siteleaf. This week we added
   nine new sites to our gallery. \n"
 ---
 
