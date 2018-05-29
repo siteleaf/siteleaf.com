@@ -52,7 +52,7 @@ Just looking at the James Beard award-winning restaurant [Canlis](https://canlis
 
 ![single-double-image.jpg](/uploads/single-double-image.jpg)
 
-[Single Double](https://singledouble.co/) is an independent content agency who love language, based in Melbourne. They are passionate about turning brands into publishers, and making content people love.
+[Single Double](https://singledouble.co/) is an independent content agency who love language, based in Melbourne. They are passionate about turning brands into publishers and making content people love. 
 
 ## South California Craft Coffee
 
