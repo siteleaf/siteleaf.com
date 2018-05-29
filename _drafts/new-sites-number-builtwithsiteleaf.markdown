@@ -1,5 +1,5 @@
 ---
-title: 'New sites #builtwithsiteleaf'
+title: New sites in our gallery
 date: 2018-05-30 13:08:00 -04:00
 tags:
 - community
