@@ -1,5 +1,5 @@
 ---
-title: New sites in our gallery
+title: New sites in Siteleaf's gallery
 date: 2018-05-30 13:08:00 -04:00
 tags:
 - community
