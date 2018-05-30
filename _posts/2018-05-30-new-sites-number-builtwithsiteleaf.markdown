@@ -17,6 +17,9 @@ We’re probably a little biased, but we think the best sites use Siteleaf. Some
 
 [Capitol Cider House](https://capitolciderhouse.com/) is a new bar in Washinton DC dedicated to showcasing cider producers within 200 miles of the Capitol building. They’ve even got a dog-friendly outside area. 
 
+
+
+
 ## Canlis
 
 ![Screenshot of Canlis website](/uploads/Canlis-image.jpg)
