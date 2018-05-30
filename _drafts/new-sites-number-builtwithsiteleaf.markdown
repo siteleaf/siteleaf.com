@@ -51,19 +51,19 @@ Just looking at the James Beard award-winning restaurant [Canlis](https://canlis
 
 ![Screenshot of Single Double website](/uploads/single-double-image.jpg)
 
-[Single Double](https://singledouble.co/) is an independent content agency who love language, based in Melbourne. They are passionate about turning brands into publishers and making content people love. 
+[Single Double](https://singledouble.co/) is an independent content agency in Melbourne. They are passionate about turning brands into publishers and making content people love. 
 
 ## South California Craft Coffee
 
 ![Screenshot of South California Craft Coffee website](/uploads/south-cali-image.jpg)
 
-Built by coffee and Siteleaf aficionado John Choura Jr. [South California Craft Coffee](http://socal.coffee/) is a curated list of great spots for your next caffeine fix. 
+Built by coffee and Siteleaf aficionado John Choura Jr., [South California Craft Coffee](http://socal.coffee/) is a curated list of great spots for your next caffeine fix. 
 
 ## Welcome Conference
 
 ![Screenshot of Welcome Conference website](/uploads/welcome-image.jpg)
 
-The [Welcome Conference](http://thewelcomeconference.com/) as a place for hospitality professionals to come together in New York City. Their June conference line up includes Seth Meyers, Victoria Arlen, and Alan Mulally.
+The [Welcome Conference](http://thewelcomeconference.com/) is a place for hospitality professionals to come together in New York City. Their June conference line up includes Seth Meyers, Victoria Arlen, and Alan Mulally.
 
 ______________
 
