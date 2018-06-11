@@ -15,7 +15,7 @@ We’re probably a little biased, but we think the best sites use Siteleaf. Some
 
 ![Screenshot of Capitol Cider House website](/uploads/Capitol-cider-house.jpg)
 
-[Capitol Cider House](https://capitolciderhouse.com/) is a new bar in Washinton DC dedicated to showcasing cider producers within 200 miles of the Capitol building. They’ve even got a dog-friendly outside area. 
+[Capitol Cider House](https://capitolciderhouse.com/) is a new bar in Washington DC dedicated to showcasing cider producers within 200 miles of the Capitol building. They’ve even got a dog-friendly outside area. 
 
 
 
