@@ -15,11 +15,11 @@ SEO (Search Engine Optimization) helps your website stand a chance of appearing 
 
 Here are our top tips to consider when optomizing your Siteleaf site's SEO:
 
-* [Sitemap](/seo-with-jekyll-siteleaf/#sitemap)
-* [Structured URLs](/seo-with-jekyll-siteleaf/#structured-urls)
-* [Jekyll-SEO-Tag](/seo-with-jekyll-siteleaf/#jekyll-seo-tag)
-* [Optimize for Sharing](seo-with-jekyll-siteleaf/#optimize-for-sharing)
-* [Write with SEO in mind](seo-with-jekyll-siteleaf/#write-with-seo-in-mind)
+* [Sitemap](#sitemap)
+* [Structured URLs](#structured-urls)
+* [Jekyll-SEO-Tag](#jekyll-seo-tag)
+* [Optimize for Sharing](#optimize-for-sharing)
+* [Write with SEO in mind](#write-with-seo-in-mind)
 
 ## Sitemap
 
