@@ -157,6 +157,6 @@ Publishing should be pretty quick, but sometimes it takes a bit longer with a bi
 
 ## Stay Tuned
 
-Our next video will explain step by step how to make a new blog post in Siteleaf - stay tuned to the blog for that soon!
+Our next video will explain step by step how to [publish a new blog post in Siteleaf](https://www.siteleaf.com/blog/publishing-a-new-blog-post/).
 
 If there’s anything you would like for us to cover in our tutorials please get in touch on [Twitter](https://twitter.com/siteleaf).
