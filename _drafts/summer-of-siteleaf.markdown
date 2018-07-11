@@ -45,7 +45,7 @@ Not content with bringing audiences together for big belly laughs, you could als
 
 ![Bristol-Comedy-garden-1.jpg](/uploads/Bristol-Comedy-garden-1.jpg)
 
-Bristol Comedy Garden
+## Bristol Comedy Garden
 
 Over the pond in Bristol, England is a comedy festival that’s taking the South West by storm. Bristol Comedy Garden allows you to catch the best  British comedians like Josh Widdicombe, Shappi Korsandi, and Alan Davis in a relaxed environment. 
 
