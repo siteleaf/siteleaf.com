@@ -12,9 +12,9 @@ description: "\x03Summer is the time for sun, sea, and Siteleaf. No, really. Lot
 
 Summer is the time for sun, sea, and Siteleaf. No, really. Lots of festivals use Siteleaf to manage their sites. Siteleaf makes it easy for content creators to update static sites while still optimizing for site speed. 
 
-Here are a few of our favorites.
+Here are a few of our favorites:
 
-![Image of two women wearing backpacks climing stairs at a festival](/uploads/Outside-lands-1.jpg)
+![Image of two women wearing backpacks climbing stairs at a festival](/uploads/Outside-lands-1.jpg)
 ## Outside Lands
 
 August 10-12 in San Fransisco, CA
@@ -25,13 +25,13 @@ With sets from Janet Jackson, The Weekend, DJ Snake, Chvrches, Janelle Monáe, C
 
 They still have [tickets](https://www.sfoutsidelands.com/passes/) available for the weekend, including VIP passes if you’re feeling fancy. 
 
-![Image of white male singer holding mic and addressing crowd](/uploads/Grandoozy-1.jpg)
+![Image of white male singer holding a mic and addressing crowd](/uploads/Grandoozy-1.jpg)
 
 ## Grandoozy 
 
 September 14-16 in Denver, CO
 
-[Grandoozy](https://www.grandoozy.com/) has a sweet line up including Kendrick Lemar, Florence and the Machine, as well as the legendary Stevie Wonder. You can also break it down in their all day dance area, which takes inspiration from Berlin’s infamous club scene. 
+[Grandoozy](https://www.grandoozy.com/) has a sweet line up including Kendrick Lemar, Florence and the Machine, as well as the legendary Stevie Wonder. You can also break it down in the all day dance area, which takes inspiration from Berlin’s infamous club scene. 
 
 Showcasing Denver's craft brewery scene Grandoozy features 18 different breweries alongside Denver’s top distillers. Get involved and snap up [tickets](https://www.grandoozy.com/tickets/) for this September’s festival.
 
