@@ -10,9 +10,9 @@ description: "\x03Summer is the time for sun, sea, and Siteleaf. No, really. Lot
   creators to update static sites while still optimizing for site speed. "
 ---
 
-**Summer is the time for sun, sea, and Siteleaf.**
+Summer is the time for sun, sea, and Siteleaf. No, really. 
 
-No, really. Lots of festivals use Siteleaf to manage their sites. Siteleaf makes it easy for content creators to update static sites while still optimizing for site speed. Here are a few of our favorites:
+Lots of festivals use Siteleaf to manage their sites. Siteleaf makes it easy for content creators to update static sites while still optimizing for site speed. Here are a few of our favorites:
 
 ![Image of two women wearing backpacks climbing stairs at a festival](/uploads/Outside-lands-1.jpg)
 ## Outside Lands
