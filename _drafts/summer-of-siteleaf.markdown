@@ -17,7 +17,7 @@ Lots of festivals use Siteleaf to manage their sites. Siteleaf makes it easy for
 ![Image of two women wearing backpacks climbing stairs at a festival](/uploads/Outside-lands-1.jpg)
 ## Outside Lands
 
-With sets from Janet Jackson, The Weekend, DJ Snake, Chvrches, Janelle Monáe, Carley Rae Jepson and fifty more artists you can be sure that there’s something for you. 
+With sets from Janet Jackson, The Weekend, DJ Snake, Chvrches, Janelle Monáe, Carley Rae Jepson, and fifty more artists you can be sure that there’s something for you. 
 
 [Outside Lands](https://www.sfoutsidelands.com/) is a festival that takes it’s food as seriously as it’s beats. Featuring goodies from the top talent in the Bay Area including truffled grilled cheeses, arepas, Taiwanese snow cones, and liquid chocolate bars. We’re not even sure what a liquid chocolate bar is, but you can bet we want to try one. 
 
@@ -37,13 +37,13 @@ Showcasing Denver's craft brewery scene Grandoozy features 18 different brewerie
 
 [Clusterfest](https://www.clusterfest.com/) is a comedy festival in San Fransisco, featuring comedians like Amy Schumer, Trevor Noah, and Tiffany Haddish alongside drag royalty Bianca Del Rio and Jinkx Monsoon.
 
-You could also step into some of your favorite comedy shows with Clusterfest's unique experiences. Slipping into Paddy’s Pub (from it’s Always Sunny in Philadelphia) for a pint, or munching down a Bluth’s Frozen Banana (from Arrested Development). Sadly Clusterfest is all out of bananas for 2018, but there’s always next June!
+You could also step into some of your favorite comedy shows with Clusterfest's unique experiences. Slip into Paddy’s Pub (from it’s Always Sunny in Philadelphia) for a pint, or munching down a Bluth’s Frozen Banana (from Arrested Development). Sadly Clusterfest is all out of bananas for 2018, but there’s always next June!
 
 ![Image of people in a park chatting and sipping beer](/uploads/Bristol-Comedy-garden-1.jpg)
 
 ## Bristol Comedy Garden
 
-Over the pond in Bristol, England is a comedy festival that’s taking the South West by storm. [Bristol Comedy Garden](https://www.bristolcomedygarden.co.uk/) allows you to catch the best  British comedians like Josh Widdicombe, Shappi Korsandi, and Alan Davis in a relaxed environment. 
+Over the pond in England is a comedy festival that’s taking the South West by storm. [Bristol Comedy Garden](https://www.bristolcomedygarden.co.uk/) allows you to catch the best British comedians like Josh Widdicombe, Shappi Korsandi, and Alan Davis in a relaxed environment. 
 
 Bristol Comedy Garden is a bargain, with tickets for each evening ranging from £20-£25. So it's no surprise that they sold out every show this year. Keep your eyes on their colorful [site](https://www.bristolcomedygarden.co.uk/) to see when next year’s line up gets announced.
 
