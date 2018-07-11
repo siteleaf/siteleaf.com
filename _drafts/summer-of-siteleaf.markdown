@@ -17,8 +17,6 @@ No, really. Lots of festivals use Siteleaf to manage their sites. Siteleaf makes
 ![Image of two women wearing backpacks climbing stairs at a festival](/uploads/Outside-lands-1.jpg)
 ## Outside Lands
 
-August 10-12 in San Fransisco, CA
-
 With sets from Janet Jackson, The Weekend, DJ Snake, Chvrches, Janelle Monáe, Carley Rae Jepson and fifty more artists you can be sure that there’s something for you. 
 
 [Outside Lands](https://www.sfoutsidelands.com/) is a festival that takes it’s food as seriously as it’s beats. Featuring goodies from the top talent in the Bay Area including truffled grilled cheeses, arepas, Taiwanese snow cones, and liquid chocolate bars. We’re not even sure what a liquid chocolate bar is, but you can bet we want to try one. 
@@ -28,8 +26,6 @@ They still have [tickets](https://www.sfoutsidelands.com/passes/) available for 
 ![Image of white male singer holding a mic and addressing crowd](/uploads/Grandoozy-1.jpg)
 
 ## Grandoozy 
-
-September 14-16 in Denver, CO
 
 [Grandoozy](https://www.grandoozy.com/) has a sweet line up including Kendrick Lemar, Florence and the Machine, as well as the legendary Stevie Wonder. You can also break it down in the all day dance area, which takes inspiration from Berlin’s infamous club scene. 
 
