@@ -27,7 +27,7 @@ They still have [tickets](https://www.sfoutsidelands.com/passes/) available for 
 
 ## Grandoozy 
 
-[Grandoozy](https://www.grandoozy.com/) has a sweet line up including Kendrick Lemar, Florence and the Machine, as well as the legendary Stevie Wonder. You can also break it down in the all day dance area, which takes inspiration from Berlin’s infamous club scene. 
+[Grandoozy](https://www.grandoozy.com/) has a sweet line up including Kendrick Lemar, Florence and the Machine, as well as the legendary Stevie Wonder. You can also break it down in the all-day dance area, which takes inspiration from Berlin’s infamous club scene. 
 
 Showcasing Denver's craft brewery scene Grandoozy features 18 different breweries alongside Denver’s top distillers. Get involved and snap up [tickets](https://www.grandoozy.com/tickets/) for this September’s festival.
 
