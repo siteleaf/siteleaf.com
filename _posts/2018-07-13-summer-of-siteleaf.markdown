@@ -1,6 +1,6 @@
 ---
 title: Summer of Siteleaf
-date: 2018-07-11 13:07:00 -04:00
+date: 2018-07-13 13:07:00 -04:00
 tags:
 - community
 - inspiration
