@@ -24,6 +24,9 @@ Head up to the sidebar and click on Posts, located in the content section of the
 
 To create a new post press the plus icon on the right side and it’ll take you to a screen that looks like this.
 
+
+
+
 ![2-screen-shot-blank-post-small-6555ef.png](/uploads/2-screen-shot-blank-post-small-6555ef.png)
 
 Start by typing your title up at the top.
