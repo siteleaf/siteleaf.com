@@ -41,11 +41,13 @@ Pedro and I are putting together a talk for a conference in Amsterdam next week 
 
 In composition, I try to vary my process, to ensure that I'm coming up with new and different ideas sounds, harmonies and textures. That can influence what kind of instruments or structural form I begin with, and what I deem the central elements of the composition. For example, sometimes I'll start with a beat or a harmonic framework and build everything up around that, other times I'll start with the opinion, the voice or even a more abstract point of view and use what musical and arrangement tools I need to best convey that idea. Similarly, there are times where I start with a specific skeleton and fill it in or other times I will start with more of an open palette and experiment until I find something that seems strong enough to inspire the rest of the compositional elements to fall into place around it.
 
+<iframe src="https://player.vimeo.com/video/260121225?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 More broadly speaking, whether I'm composing music and sound design, making creative decisions regarding the larger scope of projects, selling through concepts and ideas, or even helping to steer our company’s entrepreneurial vision. I try to do simultaneously define some kind of North Star or guiding principle, that I can always go back and ask “are we getting closer to the goal, are we on track?” but at the same time, to encourage and welcome dissent, to stay curious and open-minded, and realize we often come across better solutions and better questions then we had in mind when we started the process. 
 
 With all that said, I try to be pragmatic, and diligent at stepping forward rather than backward or sideways in order to actually get things done.
 
-<iframe src="https://player.vimeo.com/video/260121225?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/220858720?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### When was the last time you were afraid of making a work-related decision?
 
