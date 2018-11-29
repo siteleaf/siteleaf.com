@@ -6,6 +6,7 @@ tags:
 ---
 
 ### Antfood is a creative audio studio with offices in Brooklyn, Amsterdam, and São Paulo. 
+<br>
 
 Antfood have worked with the likes of Target, Apple, Cartier, and Google to name just a few. 
 
@@ -14,6 +15,7 @@ We are all about [Antfood’s website](https://www.antfood.com/), which is built
 It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. 
 
 #### We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and their year ahead. 
+<br>
 
 <iframe src="https://player.vimeo.com/video/285113069?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -65,9 +67,9 @@ That's a great question, and a very important concept to me as we grow up, get c
 
 I try to seek out new music, art and experience, that open my mind to different emotion, ideas, thought processes and techniques. First, I try to keep an open mind and try new things, especially things that scare you or take you out of your comfort zone. Second, maintaining an interesting and diverse group of peers, that bring different perspectives and taste to help broaden my awareness of Art, culture and more. Finally, more specific to my work composing music and crafting sound, I find that using specific tools and techniques, or setting limits on how to structure the creative process, helps keep me curious by diving into new areas that I might overlook or remain ignorant of. 
 
-I have the great luxury of working in a studio where we have all kinds of tools and toys, and I think when you have a lot of things at your fingertips, you can revert to common tricks and techniques that you've used before.  While this is one of the luxuries of having all kinds of fun gear and instruments, it's also important to place limitations on yourself sometime so you can actually dive into a certain instrument or sound and find something new.
-
 <iframe src="https://player.vimeo.com/video/9499310?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+I have the great luxury of working in a studio where we have all kinds of tools and toys, and I think when you have a lot of things at your fingertips, you can revert to common tricks and techniques that you've used before.  While this is one of the luxuries of having all kinds of fun gear and instruments, it's also important to place limitations on yourself sometime so you can actually dive into a certain instrument or sound and find something new.
 
 ### What excites you the most in the year ahead?
 
