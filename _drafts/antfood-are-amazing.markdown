@@ -13,7 +13,7 @@ We are all about [Antfood’s website](https://www.antfood.com/), which is built
 
 It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. 
 
-#### We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and their year ahead. 
+### We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and their year ahead. 
 <br>
 
 <iframe src="https://player.vimeo.com/video/285113069?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -40,7 +40,9 @@ Pedro and I are putting together a talk for a conference in Amsterdam next week 
 
 ### What does your creative process look like?
 
-In composition, I try to vary my process, to ensure that I'm coming up with new and different ideas sounds, harmonies and textures. That can influence what kind of instruments or structural form I begin with, and what I deem the central elements of the composition. For example, sometimes I'll start with a beat or a harmonic framework and build everything up around that, other times I'll start with the opinion, the voice or even a more abstract point of view and use what musical and arrangement tools I need to best convey that idea. Similarly, there are times where I start with a specific skeleton and fill it in or other times I will start with more of an open palette and experiment until I find something that seems strong enough to inspire the rest of the compositional elements to fall into place around it.
+In composition, I try to vary my process, to ensure that I'm coming up with new and different ideas sounds, harmonies and textures. That can influence what kind of instruments or structural form I begin with, and what I deem the central elements of the composition. 
+
+For example, sometimes I'll start with a beat or a harmonic framework and build everything up around that, other times I'll start with the opinion, the voice or even a more abstract point of view and use what musical and arrangement tools I need to best convey that idea. Similarly, there are times where I start with a specific skeleton and fill it in or other times I will start with more of an open palette and experiment until I find something that seems strong enough to inspire the rest of the compositional elements to fall into place around it.
 
 <iframe src="https://player.vimeo.com/video/260121225?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -76,8 +78,8 @@ First, we had a really great year in 2018, we worked really hard on building sol
 
 Specifically for 2019, we are developing a couple of new means of production, both for the AR/VR space, and for nonlinear games and experiences, but also for mixing custom, multi-channel audio in physical spaces. We've developed some neat tools for playing with sound and space, and I'm hoping we can convince some clients and collaborators to help us bring them to a larger audience! 
 
-I'm looking forward to our amazing team to continuing to grow and evolve and be able to take on more unique projects and challenges. We're building a new (and hopefully) fresh platform based on machine learning to help organize and repurpose our back catalog of work. Finally, I hope we have the chance to continue working with our favorite people and meet some new ones to craft amazing audio work that moves people and gives some meaning to those who helped create it!
-
 <iframe src="https://player.vimeo.com/video/192041048?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+I'm looking forward to our amazing team to continuing to grow and evolve and be able to take on more unique projects and challenges. We're building a new (and hopefully) fresh platform based on machine learning to help organize and repurpose our back catalog of work. Finally, I hope we have the chance to continue working with our favorite people and meet some new ones to craft amazing audio work that moves people and gives some meaning to those who helped create it!
 
 **See more of Antfood’s work at [antfood.com](https://www.antfood.com/) on [Instagram](https://www.instagram.com/antfood.music/), [Twitter](https://twitter.com/antfood), and [Vimeo](https://vimeo.com/antfood).**
