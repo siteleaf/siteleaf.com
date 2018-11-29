@@ -45,7 +45,9 @@ For example, sometimes I'll start with a beat or a harmonic framework and build 
 
 <iframe src="https://player.vimeo.com/video/260121225?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-More broadly speaking, whether I'm composing music and sound design, making creative decisions regarding the larger scope of projects, selling through concepts and ideas, or even helping to steer our company’s entrepreneurial vision. I try to do simultaneously define some kind of North Star or guiding principle, that I can always go back and ask “are we getting closer to the goal, are we on track?” but at the same time, to encourage and welcome dissent, to stay curious and open-minded, and realize we often come across better solutions and better questions then we had in mind when we started the process. 
+More broadly speaking, whether I'm composing music and sound design, making creative decisions regarding the larger scope of projects, selling through concepts and ideas, or even helping to steer our company’s entrepreneurial vision. 
+
+I try to do simultaneously define some kind of North Star or guiding principle, that I can always go back and ask “are we getting closer to the goal, are we on track?” but at the same time, to encourage and welcome dissent, to stay curious and open-minded, and realize we often come across better solutions and better questions then we had in mind when we started the process. 
 
 With all that said, I try to be pragmatic, and diligent at stepping forward rather than backward or sideways in order to actually get things done.
 
