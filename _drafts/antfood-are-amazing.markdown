@@ -5,7 +5,7 @@ tags:
 - inspiration
 ---
 
-Antfood is a creative audio studio with offices in Brooklyn, Amsterdam, and São Paulo. They have worked with the likes of Target, Apple, Cartier, and Google to name just a few. 
+**Antfood is a creative audio studio with offices in Brooklyn, Amsterdam, and São Paulo. They have worked with the likes of Target, Apple, Cartier, and Google to name just a few.**
 
 We are all about [Antfood’s website](https://www.antfood.com/). In particular, their loading animations inject a touch of humor to the site, which transforms a potentially boring wait into a moment of joy. This playful style translates directly into their work. It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and their year ahead. 
 
@@ -23,6 +23,9 @@ I rarely look back at old work on a day-to-day basis, but often when we're putti
 
 Pedro and I are putting together a talk for a conference in Amsterdam next week and I came across a couple pieces that I’m pushed to the back of my mind, but still love [*Freebord*](https://www.antfood.com/load/#freebord-8-bit) (2009), [*Sundance*](https://www.antfood.com/load/#come-together) (2010), [*AICP*](https://www.antfood.com/load/#2017-show-opening-titles) (2017). Also, a perennial favorite, that was played out back in 2012, but I still I love going back to is our deconstructed, and dingy Kafka-esque piece with Buck, *[Metamorphosis](https://www.antfood.com/load/#good-books-metamorphosis)* for Good Books.
 
+<iframe src="https://player.vimeo.com/video/38386297?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/38386297">Good Books &quot;Metamorphosis&quot;</a> from <a href="https://vimeo.com/antfood">Antfood</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 #### What does your creative process look like?
 
 In composition, I try to vary my process, to ensure that I'm coming up with new and different ideas sounds, harmonies and textures. That can influence what kind of instruments or structural form I begin with, and what I deem the central elements of the composition. For example, sometimes I'll start with a beat or a harmonic framework and build everything up around that, other times I'll start with the opinion, the voice or even a more abstract point of view and use what musical and arrangement tools I need to best convey that idea. Similarly, there are times where I start with a specific skeleton and fill it in or other times I will start with more of an open palette and experiment until I find something that seems strong enough to inspire the rest of the compositional elements to fall into place around it.
@@ -38,6 +41,9 @@ I'm often afraid of work-related decisions. These can range from simple producti
 As artists, we often are consumed by self-doubt and question our choices. I think overcoming these fears, embracing them or simply putting your head down and pushing through them, is what makes us better artists and stronger human beings, and gives our life and our work meaning. 
 
 If I only worked on projects that were straightforward and didn't require the need to doubt decisions, I'd likely just be making mindless and generic work, and I don't think that would be a substantive professional existence. So, while excessive fear can be crippling, or at least counterproductive, personally I think it’s important to embrace and push through, rather than brushing it under the rug, or avoiding it entirely.
+
+<iframe src="https://player.vimeo.com/video/152982607?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/152982607">Morton Salt &quot;Neighbors&quot;</a> from <a href="https://vimeo.com/antfood">Antfood</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 #### How do you stay curious?
 
