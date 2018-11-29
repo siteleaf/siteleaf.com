@@ -16,7 +16,6 @@ We started [Antfood](https://www.antfood.com/) in 2007 and have grown slowly fro
 I feel very grateful for the successes that we’ve had and I’m proud of the reputation that we’ve built, but it was achieved very slowly, by taking little steps to improve our craft, team, physical studio, instruments, equipment, and over the years our portfolio. Even now, we’re still trying to do the same thing every day, to take on new challenges, hone our craft and do things that no one has done before — or at least we haven’t tried yet!
 
 <iframe src="https://player.vimeo.com/video/273782257?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/273782257">iMac Pro - Buck Artist Film</a> from <a href="https://vimeo.com/antfood">Antfood</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 #### You've collaborated with some fantastic companies, are there any pieces of work that you continue to look back on and think 'damn, that's great'?
 
@@ -27,7 +26,6 @@ I rarely look back at old work on a day-to-day basis, but often when we're putti
 Pedro and I are putting together a talk for a conference in Amsterdam next week and I came across a couple pieces that I’m pushed to the back of my mind, but still love [*Freebord*](https://www.antfood.com/load/#freebord-8-bit) (2009), [*Sundance*](https://www.antfood.com/load/#come-together) (2010), [*AICP*](https://www.antfood.com/load/#2017-show-opening-titles) (2017). Also, a perennial favorite, that was played out back in 2012, but I still I love going back to is our deconstructed, and dingy Kafka-esque piece with Buck, *[Metamorphosis](https://www.antfood.com/load/#good-books-metamorphosis)* for Good Books.
 
 <iframe src="https://player.vimeo.com/video/38386297?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/38386297">Good Books &quot;Metamorphosis&quot;</a> from <a href="https://vimeo.com/antfood">Antfood</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 #### What does your creative process look like?
 
@@ -46,7 +44,7 @@ As artists, we often are consumed by self-doubt and question our choices. I thin
 If I only worked on projects that were straightforward and didn't require the need to doubt decisions, I'd likely just be making mindless and generic work, and I don't think that would be a substantive professional existence. So, while excessive fear can be crippling, or at least counterproductive, personally I think it’s important to embrace and push through, rather than brushing it under the rug, or avoiding it entirely.
 
 <iframe src="https://player.vimeo.com/video/152982607?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/152982607">Morton Salt &quot;Neighbors&quot;</a> from <a href="https://vimeo.com/antfood">Antfood</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>
 
 #### How do you stay curious?
 
