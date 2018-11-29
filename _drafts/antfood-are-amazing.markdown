@@ -73,7 +73,7 @@ I try to seek out new music, art and experience, that open my mind to different 
 
 I have the great luxury of working in a studio where we have all kinds of tools and toys, and I think when you have a lot of things at your fingertips, you can revert to common tricks and techniques that you've used before.  While this is one of the luxuries of having all kinds of fun gear and instruments, it's also important to place limitations on yourself sometime so you can actually dive into a particular instrument or sound and find something new.
 
-### What excites you the most in the year ahead?
+### What are you most excited about looking at the year ahead?
 
 First, we had a great year in 2018, we worked hard on building solid systems, and a fantastic team, so that we could focus on what we do best - the work. We celebrated our 10-year anniversary with all three studios (New York, São Paulo and Amsterdam) for a week in Mexico. There, we spent a lot of time patting ourselves on the back for making it this far, but focusing on about what the next 1/3/5/10 years will look like for Antfood and what we can do to remain relevant as well as continue to get better over the coming decade. 
 
