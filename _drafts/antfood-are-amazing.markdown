@@ -1,6 +1,9 @@
 ---
 title: Antfood are amazing
 date: 2018-11-29 11:33:00 -05:00
+tags:
+- inspiration
+- community
 ---
 
 Antfood is a creative audio studio with offices in Brooklyn, Amsterdam, and São Paulo. They have worked with the likes of Target, Apple, Cartier, and Google to name just a few. 
