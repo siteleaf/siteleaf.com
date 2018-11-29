@@ -29,9 +29,9 @@ Thanks for the kind words. We take pride in building relationships and actively 
 
 I rarely look back at old work on a day-to-day basis, but often when we're putting together talks for conferences or festivals, revamping our website or social presence, or just reflecting on our mission and values past and present, I love seeing the work we've done over the years. Sometimes these are big portfolio pieces and sometimes their are forgotten or ignored projects, and I love seeing tiny strokes of genius, humor and artistry within the more generic projects, that you don't necessarily appreciate at the time, when you’re in the thick of production, approvals and delivery.
 
-Pedro and I are putting together a talk for a conference in Amsterdam next week and I came across a couple pieces that I’m pushed to the back of my mind, but still love [*Freebord*](https://www.antfood.com/load/#freebord-8-bit) (2009), [*Sundance*](https://www.antfood.com/load/#come-together) (2010), [*AICP*](https://www.antfood.com/load/#2017-show-opening-titles) (2017). Also, a perennial favorite, that was played out back in 2012, but I still I love going back to is our deconstructed, and dingy Kafka-esque piece with Buck, *[Metamorphosis](https://www.antfood.com/load/#good-books-metamorphosis)* for Good Books.
-
 <iframe src="https://player.vimeo.com/video/38386297?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Pedro and I are putting together a talk for a conference in Amsterdam next week and I came across a couple pieces that I’m pushed to the back of my mind, but still love [*Freebord*](https://www.antfood.com/load/#freebord-8-bit) (2009), [*Sundance*](https://www.antfood.com/load/#come-together) (2010), [*AICP*](https://www.antfood.com/load/#2017-show-opening-titles) (2017). Also, a perennial favorite, that was played out back in 2012, but I still I love going back to is our deconstructed, and dingy Kafka-esque piece with Buck, *[Metamorphosis](https://www.antfood.com/load/#good-books-metamorphosis)* for Good Books.
 
 ### What does your creative process look like?
 
