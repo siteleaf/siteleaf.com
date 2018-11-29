@@ -54,12 +54,16 @@ I try to seek out new music, art and experience, that open my mind to different 
 
 I have the great luxury of working in a studio where we have all kinds of tools and toys, and I think when you have a lot of things at your fingertips, you can revert to common tricks and techniques that you've used before.  While this is one of the luxuries of having all kinds of fun gear and instruments, it's also important to place limitations on yourself sometime so you can actually dive into a certain instrument or sound and find something new.
 
+<iframe src="https://player.vimeo.com/video/9499310?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 #### What excites you the most in the year ahead?
 
 First, we had a really great year in 2018, we worked really hard on building solid systems, and an amazing team, so that we could focus on what we do best - the work. We celebrated our 10-year anniversary with all three studios (New York, São Paulo and Amsterdam) for a week in Mexico. There, we spent a lot of time patting ourselves on the back for making it this far, but really focusing on about what the next 1/3/5/10 years will look like for Antfood and what we can do to remain relevant as well as continue to get better over the coming decade. 
 
 Specifically for 2019, we are developing a couple of new means of production, both for the AR/VR space, and for nonlinear games and experiences, but also for mixing custom, multi-channel audio in physical spaces. We've developed some neat tools for playing with sound and space, and I'm hoping we can convince some clients and collaborators to help us bring them to a larger audience! 
 
-I'm looking forward for our amazing team to continue to grow and evolve and be able to take on more unique projects and challenges. We're building a new (and hopefully) fresh platform based on machine learning to help organize and repurpose our back catalog of work. Finally, I hope we have the chance to continue working with our favorite people and meet some new ones to craft amazing audio work that moves people and gives some meaning to those who helped create it!
+I'm looking forward to our amazing team to continuing to grow and evolve and be able to take on more unique projects and challenges. We're building a new (and hopefully) fresh platform based on machine learning to help organize and repurpose our back catalog of work. Finally, I hope we have the chance to continue working with our favorite people and meet some new ones to craft amazing audio work that moves people and gives some meaning to those who helped create it!
+
+<iframe src="https://player.vimeo.com/video/192041048?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 **See more of Antfood’s work at [antfood.com](https://www.antfood.com/) on [Instagram](https://www.instagram.com/antfood.music/), [Twitter](https://twitter.com/antfood), and [Vimeo](https://vimeo.com/antfood).**
