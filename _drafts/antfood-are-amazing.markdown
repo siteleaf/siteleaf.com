@@ -5,7 +5,7 @@ tags:
 - inspiration
 ---
 
-**Antfood is a creative audio studio with offices in Brooklyn, Amsterdam, and São Paulo. They have worked with the likes of Target, Apple, Cartier, and Google to name just a few.**
+### Antfood is a creative audio studio with offices in Brooklyn, Amsterdam, and São Paulo. They have worked with the likes of Target, Apple, Cartier, and Google to name just a few.
 
 We are all about [Antfood’s website](https://www.antfood.com/). In particular, their loading animations inject a touch of humor to the site, which transforms a potentially boring wait into a moment of joy. This playful style translates directly into their work. It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and their year ahead. 
 
