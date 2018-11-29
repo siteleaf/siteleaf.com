@@ -9,6 +9,10 @@ tags:
 
 We are all about [Antfood’s website](https://www.antfood.com/). In particular, their loading animations inject a touch of humor to the site, which transforms a potentially boring wait into a moment of joy. This playful style translates directly into their work. It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and their year ahead. 
 
+<iframe src="https://player.vimeo.com/video/285113069?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
 ### Can you tell me about [Antfood](https://www.antfood.com/), and how you got to where you are now?
 
 We started [Antfood](https://www.antfood.com/) in 2007 and have grown slowly from there. I felt we had drive and some basic talent, but truthfully we were kids with little experience, no connections and zero capital. We got to where we are now by focusing on making great work and seeking out great collaborators, colleagues and projects.  
@@ -34,6 +38,8 @@ In composition, I try to vary my process, to ensure that I'm coming up with new 
 More broadly speaking, whether I'm composing music and sound design, making creative decisions regarding the larger scope of projects, selling through concepts and ideas, or even helping to steer our company’s entrepreneurial vision. I try to do simultaneously define some kind of North Star or guiding principle, that I can always go back and ask “are we getting closer to the goal, are we on track?” but at the same time, to encourage and welcome dissent, to stay curious and open-minded, and realize we often come across better solutions and better questions then we had in mind when we started the process. 
 
 With all that said, I try to be pragmatic, and diligent at stepping forward rather than backward or sideways in order to actually get things done.
+
+<iframe src="https://player.vimeo.com/video/260121225?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### When was the last time you were afraid of making a work-related decision?
 
