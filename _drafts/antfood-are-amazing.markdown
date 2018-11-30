@@ -4,7 +4,7 @@ date: 2018-11-29 11:33:00 -05:00
 tags:
 - inspiration
 image: "/uploads/antfood3.jpg"
-description: "Antfood is a creative audio studio and we love their website. It’s one
+description: "Antfood is a creative audio studio whose website we adore. It’s one
   of the only portfolios where exploring and finding hidden gems feels like an exciting
   quest and a considered part of the user journey, rather than an afterthought. \n\nWe
   chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration,
