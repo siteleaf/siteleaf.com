@@ -13,7 +13,7 @@ We are all about [Antfood’s website](https://www.antfood.com/), which is built
 
 It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. 
 
-#### We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and the year ahead. 
+#### We chatted with Wilson Brown, ECD and Partner at [Antfood](https://www.antfood.com/), about curiosity, collaboration, and the year ahead. 
 
 
 
