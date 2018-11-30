@@ -3,6 +3,12 @@ title: Antfood
 date: 2018-11-29 11:33:00 -05:00
 tags:
 - inspiration
+image: "/uploads/antfood3.jpg"
+description: "Antfood is a creative audio studio and we love their website. It’s one
+  of the only portfolios where exploring and finding hidden gems feels like an exciting
+  quest and a considered part of the user journey, rather than an afterthought. \n\nWe
+  chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration,
+  and the year ahead. "
 ---
 
 ### Antfood is a creative audio studio with offices in Brooklyn, Amsterdam, and São Paulo. 
