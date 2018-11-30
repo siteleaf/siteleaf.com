@@ -15,8 +15,6 @@ It’s one of the only portfolios where exploring and finding hidden gems feels 
 
 #### We chatted with Wilson Brown, ECD and Partner at Antfood, about curiosity, collaboration, and the year ahead. 
 
-<iframe src="https://player.vimeo.com/video/285113069?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 
 
 ### Can you tell me about [Antfood](https://www.antfood.com/), and how you got to where you are now?
