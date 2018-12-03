@@ -15,7 +15,7 @@ description: "Antfood is a creative audio studio whose website we adore. It’s 
 
 We are all about [Antfood’s website](https://www.antfood.com/), which is built with Siteleaf. In particular, their loading animations inject a touch of humor to the site, which transforms a potentially boring wait into a moment of joy. This playful style translates directly into their work. 
 
-It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. This thoughtfulness is perhaps unsurprising as it was designed by [XXIX](https://www.xxix.co/), who make amazing treats for the internet. 
+It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. This thoughtfulness is perhaps unsurprising as the site was designed by [XXIX](https://www.xxix.co/), who make amazing treats for the internet. 
 
 #### We chatted with Wilson Brown, ECD and Partner at [Antfood](https://www.antfood.com/), about curiosity, collaboration, and the year ahead. 
 
