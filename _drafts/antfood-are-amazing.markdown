@@ -15,7 +15,7 @@ description: "Antfood is a creative audio studio whose website we adore. It’s 
 
 We are all about [Antfood’s website](https://www.antfood.com/), which is built with Siteleaf. In particular, their loading animations inject a touch of humor to the site, which transforms a potentially boring wait into a moment of joy. This playful style translates directly into their work. 
 
-It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. 
+It’s one of the only portfolios where exploring and finding hidden gems feels like an exciting quest and a considered part of the user journey, rather than an afterthought. Which is perhaps unsurprising as it was designed by [XXIX](https://www.xxix.co/), who make amazing treats for the internet. 
 
 #### We chatted with Wilson Brown, ECD and Partner at [Antfood](https://www.antfood.com/), about curiosity, collaboration, and the year ahead. 
 
@@ -63,7 +63,7 @@ As artists, we often are consumed by self-doubt and question our choices. I thin
 
 If I only worked on projects that were straightforward and didn't require the need to doubt decisions, I'd likely just be making mindless and generic work, and I don't think that would be a substantive professional existence. So, while excessive fear can be crippling, or at least counterproductive, personally I think it’s important to embrace and push through, rather than brushing it under the rug or avoiding it entirely.
 
-<iframe src="https://player.vimeo.com/video/152982607?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/285113069?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### How do you stay curious?
 
