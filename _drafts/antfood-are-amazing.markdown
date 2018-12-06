@@ -1,6 +1,6 @@
 ---
 title: Antfood
-date: 2018-11-29 11:33:00 -05:00
+date: 2018-12-06 11:33:00 -05:00
 tags:
 - inspiration
 image: "/uploads/antfood3.jpg"
