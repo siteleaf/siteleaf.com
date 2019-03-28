@@ -1,5 +1,5 @@
 ---
-title: How to check your site for broken links
+title: Jekyll tip
 date: 2019-03-28 11:06:00 -04:00
 ---
 
