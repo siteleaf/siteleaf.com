@@ -9,7 +9,7 @@ You can install `html-proofer` however you like, for the sake of argument we’l
 
 ```sh
 gem 'rake'
- gem 'html-proofer'
+gem 'html-proofer'
 ```
 
 And then run `bundle install`. Then you can get `html-proofer` to check for any broken links using the following commands:
