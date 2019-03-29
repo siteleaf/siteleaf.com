@@ -38,14 +38,16 @@ A quiz about being a ‘real’ developer no matter what language or tools you u
 
 [The Creative Independent](https://thecreativeindependent.com/)
 Emo­tional and prac­ti­cal guid­ance for cre­ative peo­ple — their archive is gold.
-Built with Siteleaf
+
+*Built with Siteleaf*
  
 [Eat Genesis](https://eatgenesis.com/)
 Plant-based alchemy restaurant giving us retro cinema vibes and fun animations.
 
 [Girls' Night In Club](http://girlsnightinclub.com/)
 A newsletter for women that would rather stay in tonight full of ace recs & reads.
-Built with Siteleaf
+
+*Built with Siteleaf*
 
 [Lesa](https://lesarestaurant.com.au/)
 Australian restaurant with cool interactions and a simple color palette on their site. 
