@@ -2,8 +2,8 @@
 title: How to check your site for broken links
 date: 2019-03-28 11:06:00 -04:00
 tags:
-- tip
 - jekyll
+- tip
 image: "/uploads/jekyll-tip-2.png"
 description: 'Clicking on links that are broken is a bad experience for users, and
   it can even affect your [SEO](https://www.siteleaf.com/blog/seo-with-jekyll-siteleaf/).
