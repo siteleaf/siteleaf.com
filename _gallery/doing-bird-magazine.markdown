@@ -1,7 +1,7 @@
 ---
 title: Doing Bird Magazine
 date: 2019-04-12 12:14:00 -04:00
-position: 3
+position: 6
 image: "/uploads/DOING-BIRD.jpg"
 link: http://doingbirdmagazine.com/
 ---
