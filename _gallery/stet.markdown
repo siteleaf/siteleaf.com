@@ -1,6 +1,6 @@
 ---
 title: STET
-position: 70
+position: 68
 image: "/uploads/gallery__stet.jpg"
 link: http://stet.editorially.com/
 ---

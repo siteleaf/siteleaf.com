@@ -1,6 +1,6 @@
 ---
 title: Newswordy
-position: 78
+position: 75
 image: "/uploads/gallery__newswordy.jpg"
 link: http://newswordy.com/
 ---
