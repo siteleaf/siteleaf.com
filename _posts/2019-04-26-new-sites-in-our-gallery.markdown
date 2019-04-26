@@ -6,13 +6,13 @@ tags:
 - community
 ---
 
-We’re biased, but we think the best sites use Siteleaf. Some of our favorites include [Antfood](http://www.antfood.com/), [Capitol Cider House](https://capitolciderhouse.com/), and [The Creative Independent](https://thecreativeindependent.com//). This week we added five new sites to our [gallery](https://www.siteleaf.com/gallery/). 
+We’re biased, but we think the best sites use Siteleaf. Some of our favorites include [Antfood](http://www.antfood.com/), [Capitol Cider House](https://capitolciderhouse.com/), and [The Creative Independent](https://thecreativeindependent.com//). This week we added five new sites to our [gallery](https://www.siteleaf.com/gallery/).
 
 ## Super Brewing Co. 
 
 ![Screenshot of Super Brewing Co.'s website](/uploads/super-brewing.jpg)
 
-[Super Brewing Co.](https://superbrewing.co/) are an independent nano-brewery based in Oregon, who specialize making super beer. Their site is full of lovely design details & moments of joy. 
+[Super Brewing Co.](https://superbrewing.co/) is an independent nano-brewery based in Oregon, who specialize making super beer. Their site is full of lovely design details & moments of joy. 
 
 
 
