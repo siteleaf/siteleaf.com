@@ -1,6 +1,6 @@
 ---
 title: New sites in our gallery
-date: 2019-04-26 14:18:00 -04:00
+date: 2019-05-01 12:18:00 -04:00
 tags:
 - inspiration
 - community
