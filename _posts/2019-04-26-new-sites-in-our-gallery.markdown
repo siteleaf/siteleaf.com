@@ -38,8 +38,9 @@ We’re biased, but we think the best sites use Siteleaf. Some of our favorites 
 
 ![Screenshot of Dropmark's website](/uploads/Dropmark.jpg)
 
-Back with a fresh new design, [Dropmark](https://www.dropmark.com/) is a tool for teams and individuals to gather inspiration, share, and collaborate privately. The new ‘human-focussed’ look is an exciting step. (Full disclosure, Siteleaf and Dropmark are both made by [Oak Studios](https://oak.is/).
-______________
+Back with a fresh new design, [Dropmark](https://www.dropmark.com/) is a tool for teams and individuals to gather inspiration, share, and collaborate privately. The new ‘human-focussed’ look is an exciting step. *Full disclosure, Siteleaf and Dropmark are both made by [Oak Studios](https://oak.is/).*
+
+___
 
 <small>See all the other sites #builtwithsiteleaf on our [gallery](https://www.siteleaf.com/gallery/). 
 Want to see your website in our [gallery](https://www.siteleaf.com/gallery/)? Get in touch on [Twitter](https://twitter.com/siteleaf) or [email us](mailto:support@siteleaf.com).</small>
