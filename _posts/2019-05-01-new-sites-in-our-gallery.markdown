@@ -4,6 +4,8 @@ date: 2019-05-01 12:18:00 -04:00
 tags:
 - inspiration
 - community
+image: "/uploads/super-brewing.jpg"
+description: This week we added five new sites to our gallery.
 ---
 
 We’re biased, but we think the best sites use Siteleaf. Some of our favorites include [Antfood](http://www.antfood.com/), [Capitol Cider House](https://capitolciderhouse.com/), and [The Creative Independent](https://thecreativeindependent.com//). This week we added five new sites to our [gallery](https://www.siteleaf.com/gallery/).
