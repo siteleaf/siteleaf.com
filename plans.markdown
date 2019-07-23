@@ -110,7 +110,7 @@ questions:
 - |-
   #### Where can I host my site?
 
-  With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files, or any host that supports FTP or FTPS (Digital Ocean, Media Temple,  Dreamhost, GoDaddy, etc). Unlike v1, we no longer offer built-in Siteleaf Hosting. We decided to focus our efforts on being the best CMS and let others be the best hosting company.
+  With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files, or any host that supports FTP or SFTP (Digital Ocean, Media Temple,  Dreamhost, GoDaddy, etc). Unlike v1, we no longer offer built-in Siteleaf Hosting. We decided to focus our efforts on being the best CMS and let others be the best hosting company.
 - |-
   #### Have more questions?
 
