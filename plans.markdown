@@ -62,7 +62,7 @@ plans:
   - Unlimited pages
   - |-
     Increased file storage
-    
+
     Up to 1 GB
   - Increased API limits
   - "Third-party Jekyll plugins <small class=\"purple\">NEW</small>\n\nBuild sites
@@ -77,7 +77,7 @@ plans:
   - Priority publishing
   - |-
     Even more file storage
-    
+
     Up to 10 GB
   - |-
     Priority support
@@ -118,7 +118,7 @@ questions:
   With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files, or any host that supports FTP or SFTP (Digital Ocean, Media Temple,  Dreamhost, GoDaddy, etc). Unlike v1, we no longer offer built-in Siteleaf Hosting. We decided to focus our efforts on being the best CMS and let others be the best hosting company.
 - |-
   #### How can I access invoices or receipts?
-  
+
   Receipts are automatically emailed to the billing contact on file. You can also print or download past receipts by logging in and clicking the [Billing tab](https://manage.siteleaf.com/account?section=billing) under Account.
 - |-
   #### Have more questions?
@@ -126,3 +126,4 @@ questions:
   No problem! Tweet [@siteleaf](https://twitter.com/siteleaf), chat on [Slack](http://chat.siteleaf.com), or [email us](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
 layout: plans
 ---
+
