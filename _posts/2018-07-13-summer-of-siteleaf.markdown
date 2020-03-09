@@ -25,6 +25,8 @@ They still have [tickets](https://www.sfoutsidelands.com/passes/) available for 
 
 ![Image of white male singer holding a mic and addressing crowd](/uploads/Grandoozy-1.jpg)
 
+
+
 ## Grandoozy 
 
 [Grandoozy](https://www.grandoozy.com/) has a sweet line up including Kendrick Lemar, Florence and the Machine, as well as the legendary Stevie Wonder. You can also break it down in the all-day dance area, which takes inspiration from Berlin’s infamous club scene. 

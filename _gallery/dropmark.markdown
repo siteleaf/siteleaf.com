@@ -1,7 +1,7 @@
 ---
 title: Dropmark
-position: 69
-image: "/uploads/gallery__dropmark.jpg"
+position: 8
+image: "/uploads/DROPMARK-NEW.jpg"
 link: http://www.dropmark.com/
 ---
 
