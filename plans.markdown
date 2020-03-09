@@ -10,6 +10,7 @@ header_button:
 plans:
 - name: Developer
   price: 0
+  annual_price: 0
   description: Basic functionality for folks wanting to try Siteleaf for an unlimited
     period of time.
   color: yellow
@@ -20,20 +21,20 @@ plans:
 
     Invite additional users free
   - |-
-    [API](http://learn.siteleaf.com/api/) access
+    [API](https://learn.siteleaf.com/api/) access
 
     Within limits
   - |-
-    [Whitelisted](http://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
+    [Whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
 
     GitHub-approved plugins & themes
   - |-
     Community support
 
-    [Slack channel](http://chat.siteleaf.com) and [docs](http://learn.siteleaf.com)
+    [Slack channel](http://chat.siteleaf.com) and [docs](https://learn.siteleaf.com)
 - name: Personal
-  price: 12
-  discount: 0.4
+  price: 9
+  annual_price: 84
   description: Gain access to previews, additional hosting options, support, and more.
   color: red
   features:
@@ -49,8 +50,8 @@ plans:
 
     Email us your questions
 - name: Team
-  price: 49
-  discount: 0.4
+  price: 36
+  annual_price: 348
   description: Custom plugins, user roles, increased file storage, and unlimited pages.
   color: purple
   features:
@@ -59,24 +60,32 @@ plans:
 
     Admin, Publisher, Writer
   - Unlimited pages
-  - Increased file storage
+  - |-
+    Increased file storage
+    
+    Up to 1 GB
   - Increased API limits
   - "Third-party Jekyll plugins <small class=\"purple\">NEW</small>\n\nBuild sites
     with custom Ruby code  "
 - name: Business
-  price: 149
-  discount: 0.4
+  price: 108
+  annual_price: 1068
   description: Improved build performance for complex sites and queue priority.
   color: green
   features:
   - Increased build time limit for complex sites
   - Priority publishing
   - |-
+    Even more file storage
+    
+    Up to 10 GB
+  - |-
     Priority support
 
     Move to the top of the queue
 - name: Enterprise
-  price: 299
+  price: 360
+  annual_price: 3588
   description: Enterprise support and a tailored build process to meet your site’s
     requirements.
   color: blue
@@ -88,10 +97,6 @@ plans:
   - Dedicated support
 questions:
 - |-
-  #### What's early-bird pricing?
-
-  To celebrate the launch of Siteleaf v2 and show appreciation to early adopters, we're offering a deal on our site plans. Sign up while we have early-bird pricing to lock in the price.
-- |-
   #### How do subscriptions work?
 
   Each new site you create starts with a free 14 day trial on the Personal plan, no credit card required. At the end of your trial, you'll be prompted to select a plan. You can upgrade or downgrade at any time and your next month's bill will be prorated. Sites are billed monthly.
@@ -102,19 +107,22 @@ questions:
 - |-
   #### How many users are included?
 
-  All v2 plans come with unlimited users. Invite clients, content editors, and collaborators at no extra cost. Upgrade to the Team (or higher) plan to take advantage of [user roles](http://learn.siteleaf.com/sites/users/) for admins, publishers, and writers. For those on a legacy plan, user limits may apply (see your account page for details).
+  All v2 plans come with unlimited users. Invite clients, content editors, and collaborators at no extra cost. Upgrade to the Team (or higher) plan to take advantage of [user roles](https://learn.siteleaf.com/sites/users/) for admins, publishers, and writers. For those on a legacy plan, user limits may apply (see your account page for details).
 - |-
   #### What are the page and storage limits?
 
-  Developer sites are limited to 100 MB and 100 pages, including posts and documents. Personal sites are limited to 500 MB and 500 pages. All other plans, including legacy plans, come with unlimited pages and 1 GB of storage (as [limited by GitHub](https://help.github.com/articles/what-is-my-disk-quota/)).
+  Developer sites are limited to 100 MB and 100 pages, including posts and documents. Personal sites are limited to 500 MB and 500 pages. Team sites (as well as legacy v1 plans) come with unlimited pages and 1 GB of storage. Business sites come with 10 GB of storage, and Enterprise with 100 GB.
 - |-
   #### Where can I host my site?
 
   With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files, or any host that supports FTP or SFTP (Digital Ocean, Media Temple,  Dreamhost, GoDaddy, etc). Unlike v1, we no longer offer built-in Siteleaf Hosting. We decided to focus our efforts on being the best CMS and let others be the best hosting company.
+- |-
+  #### How can I access invoices or receipts?
+  
+  Receipts are automatically emailed to the billing contact on file. You can also print or download past receipts by logging in and clicking the [Billing tab](https://manage.siteleaf.com/account?section=billing) under Account.
 - |-
   #### Have more questions?
 
   No problem! Tweet [@siteleaf](https://twitter.com/siteleaf), chat on [Slack](http://chat.siteleaf.com), or [email us](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
 layout: plans
 ---
-
