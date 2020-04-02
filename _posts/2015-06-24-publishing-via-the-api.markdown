@@ -14,7 +14,7 @@ To initiate a publish, make an authenticated `POST` request to the `/sites/:id/p
 
 ~~~bash
 $ curl -u "$API_KEY:$API_SECRET" -X POST \
-  http://api.siteleaf.com/v1/sites/$SITE_ID/publish
+  https://api.siteleaf.com/v1/sites/$SITE_ID/publish
 
 {"job_id":"e79af12c79ccd8866902d3dd"} 
 ~~~
@@ -26,7 +26,7 @@ But the fun doesn't stop there. You can optionally check in on publish progress 
 
 ~~~bash
 $ curl -u "$API_KEY:$API_SECRET" \
-  http://api.siteleaf.com/api/v1/jobs/e79af12c79ccd8866902d3dd
+  https://api.siteleaf.com/api/v1/jobs/e79af12c79ccd8866902d3dd
 
 event:publish
 data:{"status":"working","message":"Checking... /home","updated_at":"1435159120"}

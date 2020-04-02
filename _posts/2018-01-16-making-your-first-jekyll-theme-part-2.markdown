@@ -151,4 +151,4 @@ After your theme is live, you’ll need to do a couple of things to ensure your 
 
 If you need to make updates or fixes, you’ll want to [increment the version appropriately](http://guides.rubygems.org/patterns/#semantic-versioning) of the theme in the `.gemspec`, produce another build and push the `.gem` file matching that version number to RubyGems.org.
 
-Feel free to [tweet me with any questions](https://twitter.com/DavidDarnes) you have on what I’ve talked about. You can also chat with the [Siteleaf community](http://chat.siteleaf.com/) for further questions and to share your development work.
+Feel free to [tweet me with any questions](https://twitter.com/DavidDarnes) you have on what I’ve talked about. You can also chat with the [Siteleaf community](https://chat.siteleaf.com/) for further questions and to share your development work.

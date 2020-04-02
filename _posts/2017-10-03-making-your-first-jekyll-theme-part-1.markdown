@@ -118,4 +118,4 @@ Here are a few tips I'd keep in mind when creating your own theme, especially if
 
 Looking for something a little more in-depth? Well, [tune into the second article](https://www.siteleaf.com/blog/making-your-first-jekyll-theme-part-2/) of this 2 part series, where I will fully explain how to create a Jekyll theme that people can use in their next Siteleaf site.
 
-Feel free to [tweet me with any questions](https://twitter.com/DavidDarnes) you have on what I’ve talked about. You can also chat with the [Siteleaf community](http://chat.siteleaf.com/) for further questions and to share your development work.
+Feel free to [tweet me with any questions](https://twitter.com/DavidDarnes) you have on what I’ve talked about. You can also chat with the [Siteleaf community](https://chat.siteleaf.com/) for further questions and to share your development work.

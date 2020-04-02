@@ -25,7 +25,7 @@ features:
     body: Easy for non-technical clients, writers, and producers
     image: "/uploads/home__intro--fox.svg"
   - title: Free your content
-    body: Access by [API](http://learn.siteleaf.com/api/) or generate static sites
+    body: Access by [API](https://learn.siteleaf.com/api/) or generate static sites
       to S3, GitHub, FTP
     image: "/uploads/home__intro--owl.svg"
 - title: Content management for the whole team
@@ -89,7 +89,7 @@ features:
     body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/)
       from WordPress, Drupal, Tumblr, Ghost, and more.
   - title: API for your content
-    body: Access [your data](http://learn.siteleaf.com/api/) and integrate into other
+    body: Access [your data](https://learn.siteleaf.com/api/) and integrate into other
       websites and apps. Automate tasks with [Zapier](https://zapier.com/zapbook/siteleaf/).
 - title: Launch better sites
   handle: launch

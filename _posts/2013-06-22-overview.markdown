@@ -10,7 +10,7 @@ Docs:
 - getting started
 ---
 
-Recently, we at [Oak](http://oak.is) launched a new website publishing platform, called [Siteleaf](http://siteleaf.com). In short, Siteleaf lets you build your website locally, edit its content in the cloud, and publish to static. In between, it’s so much more. Let me tell you about it.
+Recently, we at [Oak](http://oak.is) launched a new website publishing platform, called [Siteleaf](/). In short, Siteleaf lets you build your website locally, edit its content in the cloud, and publish to static. In between, it’s so much more. Let me tell you about it.
 
 ### Develop locally
 
@@ -91,4 +91,4 @@ Collaboration is very important when it comes to managing websites, even if you�
 
 ### In closing
 
-I hope this overview was useful to those wanting to know more about [Siteleaf](http://siteleaf.com). There’s still so much more to share, but in a series of more detailed posts. I encourage you to kick the tires and let us know what you think. Siteleaf has become my go-to platform for building websites. I’m confident it will for you, too.
+I hope this overview was useful to those wanting to know more about [Siteleaf](/). There’s still so much more to share, but in a series of more detailed posts. I encourage you to kick the tires and let us know what you think. Siteleaf has become my go-to platform for building websites. I’m confident it will for you, too.

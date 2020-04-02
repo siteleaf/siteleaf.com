@@ -11,7 +11,7 @@ Docs:
 - includes
 ---
 
-In my last article about [Siteleaf](http://siteleaf.com), I wrote about what goes into [porting a theme](/blog/porting-a-theme-to-siteleaf/) to Siteleaf from another CMS. This time around, I’ll show you how to write cleaner, less redundant templates through the use of layouts.
+In my last article about [Siteleaf](/), I wrote about what goes into [porting a theme](/blog/porting-a-theme-to-siteleaf/) to Siteleaf from another CMS. This time around, I’ll show you how to write cleaner, less redundant templates through the use of layouts.
 
 
 ### What is a layout?

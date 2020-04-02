@@ -32,7 +32,7 @@ By default, you should have 2 content areas: **Pages** and **Posts**.
 
 Pages is your home for standalone content like your about page, contact, FAQ, and so on. Pages can be drag and drop ordered, and nested using the move icon next to each page.
 
-Posts is a default Jekyll [collection](http://learn.siteleaf.com/content/collections/) that’s blog-aware, so each piece of content here (called [documents](http://learn.siteleaf.com/content/documents/)) is stamped with a date, and generally shown in date-descending order. 
+Posts is a default Jekyll [collection](https://learn.siteleaf.com/content/collections/) that’s blog-aware, so each piece of content here (called [documents](https://learn.siteleaf.com/content/documents/)) is stamped with a date, and generally shown in date-descending order. 
 
 The Posts collection also comes with some special features: **drafts**, **tags**, and **categories**. 
 
@@ -79,7 +79,7 @@ To override this structure entirely, you can expand **Advanced options** and fil
 
 ## Metadata
 
-[Metadata](http://learn.siteleaf.com/content/metadata/) are additional pieces of data which you can attach to your pages, documents, collections, and even site-wide. Metadata fields give you a ton of power and flexibility to create a system that fits your content.
+[Metadata](https://learn.siteleaf.com/content/metadata/) are additional pieces of data which you can attach to your pages, documents, collections, and even site-wide. Metadata fields give you a ton of power and flexibility to create a system that fits your content.
 
 In addition to simple metadata like strings, Siteleaf also supports arrays (which we call **Lists**) and nested key-value pairs (which we call **Objects**). To change an existing field's type, click the ellipsis icon next to the field and choose convert.
 
@@ -112,36 +112,36 @@ Finally, you can add metadata to individual documents and pages. This is useful 
 
 ## Smart fields
 
-In addition to regular metadata fields, Siteleaf will pick up on what we call [smart field names](http://learn.siteleaf.com/content/metadata/#smart-field-names).
+In addition to regular metadata fields, Siteleaf will pick up on what we call [smart field names](https://learn.siteleaf.com/content/metadata/#smart-field-names).
 
-![](http://learn.siteleaf.com/uploads/meta-file.png)
+![](https://learn.siteleaf.com/uploads/meta-file.png)
 
 To get a file uploader, name your field (or end it) with `asset`, `file`, or `image`. For example, `header image` or `pdf_file`. You should see an upload icon appear, and an image preview once a file has been chosen. This also works with multiple files in a list, which is perfect for a simple slideshow or gallery.
 
-![](http://learn.siteleaf.com/uploads/meta-editor.png)
+![](https://learn.siteleaf.com/uploads/meta-editor.png)
 
 For a full text editor, use `body`, `description`, `excerpt`, `md`, or `text`.
 
-![](http://learn.siteleaf.com/uploads/meta-date.png)
+![](https://learn.siteleaf.com/uploads/meta-date.png)
 
 For a date/time picker, use “at”, “date”, or “datetime”. For example, `starts at` or `event_date`.
 
-![](http://learn.siteleaf.com/uploads/meta-boolean.png)
+![](https://learn.siteleaf.com/uploads/meta-boolean.png)
 
 For a boolean or checkbox, start your field name with `is`, `has`, or `was`. For example, `is featured` or `has_registration`.
 
-![](http://learn.siteleaf.com/uploads/meta-collection.png)
+![](https://learn.siteleaf.com/uploads/meta-collection.png)
 
 Siteleaf also supports “collection fields” to associate documents from other collections. Since we have a collection called “Authors”, we can add a field called `author` (or `authors`) to this document. This field will automatically pull in a list our authors, and we can choose one or more to form an association. This works a little like a relational database, and is a great way to add additional taxonomy groups to your content.
 
-![](http://learn.siteleaf.com/uploads/meta-color.png)
+![](https://learn.siteleaf.com/uploads/meta-color.png)
 
-And finally you can get a color picker by ending your field name with `color` or [specific formats](http://learn.siteleaf.com/content/metadata/#color-fields) like `hex` or `rgb`. This is handy for adding configurable accent or background colors to your posts.
+And finally you can get a color picker by ending your field name with `color` or [specific formats](https://learn.siteleaf.com/content/metadata/#color-fields) like `hex` or `rgb`. This is handy for adding configurable accent or background colors to your posts.
 
 
 ## Defaults
 
-Now that we’ve created a few metadata fields, we also might want to take advantage of [default fields](http://learn.siteleaf.com/content/defaults/) to have certain fields show up automatically on new documents and pages. This way our editors only need to fill in the blanks.
+Now that we’ve created a few metadata fields, we also might want to take advantage of [default fields](https://learn.siteleaf.com/content/defaults/) to have certain fields show up automatically on new documents and pages. This way our editors only need to fill in the blanks.
 
 Defaults are located in Jekyll’s `_config.yml` file, and can be applied site-wide, or scoped to a particular collection (using `type`) or directory (using `path`).
 
@@ -168,7 +168,7 @@ Now when we create a new post, we should see these default fields and any values
 
 Now that we have the CMS customized to our liking, it’s time to invite some editors. Going into the **Users** section, we can see a list of everyone currently added to the site, and invite users by email address.
 
-If you are on a Team plan or higher, you can control permissions with [user roles](http://learn.siteleaf.com/sites/users/).
+If you are on a Team plan or higher, you can control permissions with [user roles](https://learn.siteleaf.com/sites/users/).
 
 **Admin** gives full privileges, allowing the user to manage and publish all content and theme files. This is great for people who are helping build the site, like a developer or designer.
 
@@ -181,6 +181,6 @@ So you can keep that in mind when inviting users and decide how much permission 
 
 ## Next steps
 
-For further reading and examples check out our help site [learn.siteleaf.com](http://learn.siteleaf.com).
+For further reading and examples check out our help site [learn.siteleaf.com](https://learn.siteleaf.com).
 
 Stay tuned to our blog for [more tutorials](/blog/tags/tutorial)!

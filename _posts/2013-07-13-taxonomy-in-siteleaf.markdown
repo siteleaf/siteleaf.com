@@ -10,7 +10,7 @@ Docs:
 - taxonomy
 ---
 
-Last week, I wrote about [metadata](/blog/metadata-in-siteleaf) in [Siteleaf](http://siteleaf.com) and the variety of ways you could use it to customize your website. In this post, I’ll do the same, but with metadata’s much cooler, older brother—taxonomy.
+Last week, I wrote about [metadata](/blog/metadata-in-siteleaf) in [Siteleaf](/) and the variety of ways you could use it to customize your website. In this post, I’ll do the same, but with metadata’s much cooler, older brother—taxonomy.
 
 
 The word ‘taxonomy’ isn’t used very often on the web, but almost every website uses some form of taxonomy—the most common being ‘tags’. Siteleaf supports the use of tags on posts, but in a way that is more flexible than most systems. Instead of posts having only one set of tags, they are capable of having as many tag sets as you’d like—each with its own name. In the UI, Siteleaf automatically creates ‘Tags’ to get you started, but don’t let that hold you back from being creative.

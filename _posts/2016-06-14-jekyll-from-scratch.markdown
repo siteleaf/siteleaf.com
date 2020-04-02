@@ -135,7 +135,7 @@ Another special folder you’ll come across later is `_site`. This is where Jeky
 If using Git, you’ll generally want to use a [`.gitignore` file](https://help.github.com/articles/ignoring-files/) to avoid checking in the compiled `_site` folder.
 {: .tip}
 
-That’s just a quick overview of the file structure, for a more in-depth look see: <http://learn.siteleaf.com/themes/structure/>
+That’s just a quick overview of the file structure, for a more in-depth look see: <https://learn.siteleaf.com/themes/structure/>
 
 ## Local preview
 
@@ -198,6 +198,6 @@ And that’s it, you should now have a working Jekyll site on GitHub.
 
 ## Next steps
 
-To dive deeper, check out our help site [learn.siteleaf.com](http://learn.siteleaf.com) and [Jekyll’s official documentation](http://jekyllrb.com/docs).
+To dive deeper, check out our help site [learn.siteleaf.com](https://learn.siteleaf.com) and [Jekyll’s official documentation](http://jekyllrb.com/docs).
 
 Check out our [next tutorial](/blog/connecting-github) where we’ll show you how to sync your GitHub repo with Siteleaf.

@@ -6,7 +6,7 @@ tags:
 hero: "/uploads/gallery.jpg"
 ---
 
-At Siteleaf, nothing makes us happier than seeing our customers build amazing websites. We proudly showcase these in our ever-growing [Gallery](http://www.siteleaf.com/gallery) for inspiration.
+At Siteleaf, nothing makes us happier than seeing our customers build amazing websites. We proudly showcase these in our ever-growing [Gallery](/gallery) for inspiration.
 
 Some of our recent favorites include:
 
@@ -20,4 +20,4 @@ Some of our recent favorites include:
 
 **[Studio You and Me](http://studioyoume.com.au/)** - this clean and minimal website makes use of Siteleaf's post assets to create simple photo galleries, beautifully showcasing the work of this Australian duo.
  
-Check out our [Gallery](http://www.siteleaf.com/gallery) for more inspiration, and make sure to tweet [@siteleaf](http://twitter.com/siteleaf) with your submissions.
+Check out our [Gallery](/gallery) for more inspiration, and make sure to tweet [@siteleaf](http://twitter.com/siteleaf) with your submissions.

@@ -33,4 +33,4 @@ We've been inspired by all the [amazing things](/gallery) built by the Siteleaf 
 
 Finally, big thanks to all our beta testers for patiently helping us iron out bugs over the past few months.
 
-Dive in to our brand new help site and get started with v2: [learn.siteleaf.com](http://learn.siteleaf.com)
+Dive in to our brand new help site and get started with v2: [learn.siteleaf.com](https://learn.siteleaf.com)

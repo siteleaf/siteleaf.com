@@ -14,7 +14,7 @@ description: In this tutorial, we'll go through how to write and publish a new b
 Watch <a href="https://vimeo.com/264631007">Publishing a new blog post</a> on Vimeo
 {: .caption}
 
-In this tutorial, we'll go through how to write and publish a new blog post. To get caught up on Familiarizing yourself with Siteleaf watch our previous video in [Siteleaf for Content Managers and Creators](http://www.siteleaf.com/blog/siteleaf-for-content-managers-and-creators/).
+In this tutorial, we'll go through how to write and publish a new blog post. To get caught up on Familiarizing yourself with Siteleaf watch our previous video in [Siteleaf for Content Managers and Creators](/blog/siteleaf-for-content-managers-and-creators/).
 
 ## Writing a new blog post
 

@@ -15,6 +15,6 @@ Docs:
 
 In this video, we show you how to create Siteleaf themes using [Liquid](https://github.com/siteleaf/siteleaf-themes) and develop sites locally using the [Siteleaf Ruby Gem](https://github.com/siteleaf/siteleaf-gem) and [Pow](http://pow.cx)/[Anvil](http://anvilformac.com).
 
-Watch this tutorial on [Vimeo](http://vimeo.com/70121781).
+Watch this tutorial on [Vimeo](https://vimeo.com/70121781).
 
 Also see: [Getting started with Siteleaf](/blog/getting-started)

@@ -8,7 +8,7 @@ hero:
 
 We are seeking a talented **Backend Developer** to join our small, tight-knit team and contribute to the future of Siteleaf in a meaningful and rewarding way.
 
-Siteleaf powers thousands of websites from independent blogs to Fortune 500 companies, with a passionate following among developers (we are a product for developers, made by developers). We just released an all-new [Siteleaf v2](http://www.siteleaf.com), and have big ideas for the future. Right now is the perfect time to join our team, and help reimagine the future of static websites.
+Siteleaf powers thousands of websites from independent blogs to Fortune 500 companies, with a passionate following among developers (we are a product for developers, made by developers). We just released an all-new [Siteleaf v2](), and have big ideas for the future. Right now is the perfect time to join our team, and help reimagine the future of static websites.
 
 
 

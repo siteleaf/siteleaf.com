@@ -31,7 +31,7 @@ plans:
   - |-
     Community support
 
-    [Slack channel](http://chat.siteleaf.com) and [docs](https://learn.siteleaf.com)
+    [Slack channel](https://chat.siteleaf.com) and [docs](https://learn.siteleaf.com)
 - name: Personal
   price: 9
   annual_price: 84
@@ -56,7 +56,7 @@ plans:
   color: purple
   features:
   - |-
-    [User roles](http://learn.siteleaf.com/sites/users/)
+    [User roles](https://learn.siteleaf.com/sites/users/)
 
     Admin, Publisher, Writer
   - Unlimited pages
@@ -123,7 +123,6 @@ questions:
 - |-
   #### Have more questions?
 
-  No problem! Tweet [@siteleaf](https://twitter.com/siteleaf), chat on [Slack](http://chat.siteleaf.com), or [email us](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
+  No problem! Tweet [@siteleaf](https://twitter.com/siteleaf), chat on [Slack](https://chat.siteleaf.com), or [email us](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
 layout: plans
 ---
-

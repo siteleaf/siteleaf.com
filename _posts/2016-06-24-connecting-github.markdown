@@ -67,7 +67,7 @@ You can also see the status of publishes and previews here, which we'll get into
 
 If for any reason an action wasn’t successful, there would be an red error message here to explain what happened.
 
-On initial sync, you may notice a commit from Siteleaf to normalize YAML front matter. See our [Sync FAQ](http://learn.siteleaf.com/themes/github-sync/#faq) for more.
+On initial sync, you may notice a commit from Siteleaf to normalize YAML front matter. See our [Sync FAQ](https://learn.siteleaf.com/themes/github-sync/#faq) for more.
 {: .note}
 
 ## Jekyll content in Siteleaf
@@ -147,7 +147,7 @@ To configure hosting with GitHub Pages:
 
 7. To complete setup, click **Save**.
 
-The instructions above will be similar for other hosting providers, see our [help docs](http://learn.siteleaf.com/sites/hosting/) for specifics.
+The instructions above will be similar for other hosting providers, see our [help docs](https://learn.siteleaf.com/sites/hosting/) for specifics.
 {: .note}
 
 Now to publish the site, hit **Publish changes** in the top bar.
@@ -158,6 +158,6 @@ Once its done, visit your domain name and check out your new site! As a shortcut
 
 ## Next steps
 
-To dive deeper, check out our help site [learn.siteleaf.com](http://learn.siteleaf.com).
+To dive deeper, check out our help site [learn.siteleaf.com](https://learn.siteleaf.com).
 
 Stay tuned for an upcoming tutorial where we’ll further explore Siteleaf and how to customize the admin for your site.

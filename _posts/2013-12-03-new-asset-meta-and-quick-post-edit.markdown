@@ -14,7 +14,7 @@ We're constantly working on improving the Siteleaf experience and making it as f
 
 ### Asset metadata
 
-Just like [metadata](http://www.siteleaf.com/blog/metadata-in-siteleaf/) on your Siteleaf posts, pages, and sites, asset metadata is a flexible way to add additional information to the assets uploaded to your site. This is perfect for things like captions, alt text, adding location info, and more. In your Siteleaf theme, you can access asset metadata through the asset's [meta variable](https://github.com/siteleaf/siteleaf-themes#metadata). For example, if you had an asset meta field with a name of "caption", you would access its value like so:
+Just like [metadata](/blog/metadata-in-siteleaf/) on your Siteleaf posts, pages, and sites, asset metadata is a flexible way to add additional information to the assets uploaded to your site. This is perfect for things like captions, alt text, adding location info, and more. In your Siteleaf theme, you can access asset metadata through the asset's [meta variable](https://github.com/siteleaf/siteleaf-themes#metadata). For example, if you had an asset meta field with a name of "caption", you would access its value like so:
 
 ```
 asset.meta.caption

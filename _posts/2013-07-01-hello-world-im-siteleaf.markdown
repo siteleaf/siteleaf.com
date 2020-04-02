@@ -7,7 +7,7 @@ tags:
 hero: "/uploads/hello-world-im-siteleaf-create-site.png"
 ---
 
-Last week, [I ran through](/blog/overview) a number of [Siteleaf’s](http://siteleaf.com) most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf.
+Last week, [I ran through](/blog/overview) a number of [Siteleaf’s](/) most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf.
 
 
 ### Creating your site

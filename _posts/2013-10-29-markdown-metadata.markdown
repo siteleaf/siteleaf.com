@@ -10,7 +10,7 @@ Docs:
 - metadata
 ---
 
-In previous posts, we talked about using [Markdown](http://www.siteleaf.com/blog/markdown-in-siteleaf/) for text formatting and [Metadata](http://www.siteleaf.com/blog/metadata-in-siteleaf/) for extending your content in Siteleaf.
+In previous posts, we talked about using [Markdown](/blog/markdown-in-siteleaf/) for text formatting and [Metadata](/blog/metadata-in-siteleaf/) for extending your content in Siteleaf.
 
 Markdown makes it easy to add links and `*emphasis*` to your content without having to write HTML. While your `body` content uses Markdown by default, you can also apply this easy-to-use formatting to your metadata.
 

@@ -52,7 +52,7 @@ Once sorted, we can display the tags using the `sorted_tags` variable we just cr
 
 ### Sort posts by metadata
 
-Posts are generally shown in date order, but you can use the `sort` filter to order on any property. With the [power of metadata](http://www.siteleaf.com/blog/metadata-in-siteleaf/), that can be pretty much anything you want. 
+Posts are generally shown in date order, but you can use the `sort` filter to order on any property. With the [power of metadata](/blog/metadata-in-siteleaf/), that can be pretty much anything you want. 
 
 In this example, we’ll set up a meta field on our posts called `num` to manually sort with numeric values from 01 to 10:
 
