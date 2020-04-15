@@ -1,6 +1,10 @@
 ---
 title: Upgrading to Jekyll 4
 date: 2020-04-15 10:41:00 -04:00
+tags:
+- announcement
+- jekyll
+- github
 ---
 
 Jekyll 4.0 is out in the world, and brings upon many improvements over 3.x.
