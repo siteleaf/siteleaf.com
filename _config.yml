@@ -46,7 +46,6 @@ description: Built for developers, Loved by everyone. Supports Jekyll, user coll
 permalink: pretty
 exclude:
 - Gruntfile.js
-- Gemfile
 - Gemfile.lock
 - package.json
 - README*
@@ -55,10 +54,11 @@ exclude:
 plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
+- jekyll-redirect-from
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true
 highlighter: rouge
 excerpt_separator: |2+
 
