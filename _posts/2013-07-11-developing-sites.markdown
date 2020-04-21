@@ -1,12 +1,12 @@
 ---
-title: Developing sites and themes
+title: Developing v1 sites and themes
 date: 2013-07-11 15:34:00 -04:00
 tags:
 - tutorial
 - video
 - liquid
 - v1
-vimeo: '70121781'
+vimeo: 70121781
 Docs:
 - getting started
 - local development
