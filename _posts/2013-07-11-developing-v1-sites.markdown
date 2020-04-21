@@ -11,6 +11,7 @@ Docs:
 - getting started
 - local development
 - naming your files
+redirect_from: "/blog/developing-sites/"
 ---
 
 In this video, we show you how to create Siteleaf themes using [Liquid](https://github.com/siteleaf/siteleaf-themes) and develop sites locally using the [Siteleaf Ruby Gem](https://github.com/siteleaf/siteleaf-gem) and [Pow](http://pow.cx)/[Anvil](http://anvilformac.com).
