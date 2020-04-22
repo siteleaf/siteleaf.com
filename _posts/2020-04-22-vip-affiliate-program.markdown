@@ -15,7 +15,7 @@ We know a lot of our customers use Siteleaf with clients (and enjoy referring fr
 
 ### How it works
 
-[Sign up](https://vip.siteleaf.com/signup) to create a unique referral link, and share this with your clients and colleagues. Feel free to add this link to your website footer and share it on social media.
+[Sign up](https://vip.siteleaf.com/signup) to create a unique referral link, and share this with your clients and colleagues. Feel free to add this link to your website footer and share it on social media. It looks something like this:
 
 ```
 https://www.siteleaf.com/?via=yourname
