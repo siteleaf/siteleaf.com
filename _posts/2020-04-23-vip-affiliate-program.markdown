@@ -1,6 +1,6 @@
 ---
 title: 'Introducing Siteleaf VIP: our affiliate program'
-date: 2020-04-22 16:09:00 -04:00
+date: 2020-04-23 10:00:00 -04:00
 tags:
 - announcement
 - community
