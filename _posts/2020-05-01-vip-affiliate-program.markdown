@@ -27,6 +27,6 @@ You can link to any page on siteleaf.com by adding `?via=yourname` to the end of
 {: .tip}
 
 All you need to get started is a PayPal account, and you can keep track of your leads and conversions using the VIP dashboard at: 
-**https://vip.siteleaf.com** &rarr;
+**<https://vip.siteleaf.com>** &rarr;
 
 Thanks for using Siteleaf and continuing to spread the word!
