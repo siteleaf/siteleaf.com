@@ -2,7 +2,6 @@
 title: Upgrading to Jekyll 4
 date: 2020-04-15 10:41:00 -04:00
 tags:
-- announcement
 - jekyll
 - github
 button:
