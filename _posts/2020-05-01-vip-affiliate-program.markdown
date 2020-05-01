@@ -9,11 +9,11 @@ button:
   url: https://vip.siteleaf.com/signup
 ---
 
-Today we are officially launching our (much requested) affiliate program: [Siteleaf VIP](https://vip.siteleaf.com/signup)
+Today we are officially launching our much requested affiliate program: [Siteleaf VIP](https://vip.siteleaf.com/signup)
 
 We know a lot of our customers use Siteleaf with clients (and enjoy referring friends and colleagues), so we’re excited to say thanks and give back!
 
-For every new user who signs up with your unique VIP link, you’ll earn a 30% commission for any paid sites they create. Depending on the [plan](/plans) chosen, you could earn over $1,000/year for a single referral — which recurs for as long as the site is active.
+For every new user who signs up with your unique VIP link, you’ll earn a 30% commission for any paid sites they create. Depending on the [plan](/plans) chosen, you could earn over $1,000/year for a single referral — which recurs for as long as the site is active. For freelancers, this is a nice way to add a little recurring revenue to your income.
 
 ### How it works
 
