@@ -7,7 +7,7 @@ tags:
 - github
 - video
 image: "/uploads/customizing-the-siteleaf-admin-title.png"
-description: Siteleaf v2 was built to be be customized. In this tutorial, we’ll dive
+description: Siteleaf v2 was built to be customized. In this tutorial, we’ll dive
   deeper into the Siteleaf admin and learn some tricks on how to tweak the interface
   to suit our needs.
 button:
@@ -20,7 +20,7 @@ button:
 Watch <a href="https://vimeo.com/177560478">Customizing the Siteleaf admin</a> on Vimeo
 {: .caption}
 
-Siteleaf v2 was built to be be customized. In this tutorial, we’ll dive deeper into the Siteleaf admin and learn some tricks on how to tweak the interface to suit our needs. We'll cover collections, permalinks, metadata, smart fields, defaults, and user roles.
+Siteleaf v2 was built to be customized. In this tutorial, we’ll dive deeper into the Siteleaf admin and learn some tricks on how to tweak the interface to suit our needs. We'll cover collections, permalinks, metadata, smart fields, defaults, and user roles.
 
 If you followed the previous tutorials, you should now have a [basic understanding of Jekyll](/blog/jekyll-from-scratch/) and the [Siteleaf admin](/blog/connecting-github/). Feel free to check those out first if you haven't.
 

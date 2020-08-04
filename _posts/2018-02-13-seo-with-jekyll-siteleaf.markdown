@@ -13,7 +13,7 @@ description: We have had some requests recently for a blog post about SEO on Sit
 
 SEO (Search Engine Optimization) helps your website stand a chance of appearing in search engine results and get people organically discovering your site.
 
-Here are our top tips to consider when optomizing your Siteleaf site's SEO:
+Here are our top tips to consider when optimizing your Siteleaf site's SEO:
 
 * [Sitemap](#sitemap)
 * [Structured URLs](#structured-urls)
