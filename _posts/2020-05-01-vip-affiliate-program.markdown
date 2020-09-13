@@ -1,12 +1,13 @@
 ---
-title: 'Introducing Siteleaf VIP: our affiliate program'
-date: 2020-05-01 10:30:00 -04:00
+title: "Introducing Siteleaf VIP: our\_affiliate program"
+date: {}
 tags:
-- announcement
-- community
+  - announcement
+  - community
 button:
   title: Sign up for Siteleaf VIP
-  url: https://vip.siteleaf.com/signup
+  url: 'https://vip.siteleaf.com/signup'
+published: false
 ---
 
 Today we are officially launching our much requested affiliate program: [Siteleaf VIP](https://vip.siteleaf.com/signup)
