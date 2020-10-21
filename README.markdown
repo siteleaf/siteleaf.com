@@ -1,3 +1,5 @@
+<img alt="Siteleaf" src="https://learn.siteleaf.com/assets/images/logo.svg" width="10%">
+
 ## Local development
 
 Install gems:
