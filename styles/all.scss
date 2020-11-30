@@ -21,9 +21,11 @@
 *:after {
   @include box-sizing(inherit);
 }
-html,
-body {
-  overflow-x: hidden;
+@media only screen {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 html {
   height: 100%;
