@@ -9,7 +9,7 @@ button:
   url: https://community.siteleaf.com
 ---
 
-The [Siteleaf Community](https://github.com/siteleaf/community/discussions) now has a new home on GitHub Discussions where you can get help, vote on new features, and share what you're working on!
+The [Siteleaf Community](https://community.siteleaf.com) now has a new home on GitHub Discussions where you can get help, vote on new features, and share what you're working on!
 
 To get started we created topics for:
 
