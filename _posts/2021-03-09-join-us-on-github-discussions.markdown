@@ -21,7 +21,7 @@ To get started we created topics for:
 
 * 💬 [General Discussion](https://github.com/siteleaf/community/discussions/categories/general-discussion): Everything else.
 
-GitHub Discussions will replace our existing Slack community, and we look forward to building a more accessible, organized, and searchable archive for questions that pop up often.
+GitHub Discussions will replace our existing Slack community, and we look forward to building a more open, accessible, and searchable archive for questions that pop up often.
 
 We also hope to offer a greater level of transparency by opening up our roadmap and allowing the community to [vote on new features](https://github.com/siteleaf/community/discussions/categories/feature-requests).
 
