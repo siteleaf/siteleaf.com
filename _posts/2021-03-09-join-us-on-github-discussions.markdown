@@ -11,7 +11,7 @@ button:
 
 The [Siteleaf Community](https://github.com/siteleaf/community/discussions) now has a new home on GitHub Discussions where you can get help, vote on new features, and share what you're working on!
 
-To get started we have topics for:
+To get started we created topics for:
 
 * ❓ [Community Support](https://github.com/siteleaf/community/discussions/categories/community-support): Ask the community for help.
 
