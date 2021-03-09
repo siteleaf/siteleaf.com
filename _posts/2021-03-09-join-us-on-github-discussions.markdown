@@ -27,7 +27,7 @@ We also hope to offer a greater level of transparency by opening up our roadmap 
 
 ### Most helpful
 
-We'll be rewarding the **most helpful** community members with exclusive perks:
+We'll be rewarding the most helpful community members with exclusive perks:
 
 ![Screenshot of GitHub Discussions showing most helpful community members](/uploads/github-discussions-most-helpful.png)
 
