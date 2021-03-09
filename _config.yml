@@ -87,7 +87,7 @@ footer_nav:
   Terms: "/terms/"
   GDPR: "/gdpr/"
   Status: https://status.siteleaf.com
-  Chat: https://chat.siteleaf.com
+  Community: https://github.com/siteleaf/community/discussions
   Twitter: https://twitter.com/siteleaf
 scripts: |-
   <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script><script>window.Beacon('init', '13d71c30-bf3c-49d8-a515-60646ded4459')</script>
