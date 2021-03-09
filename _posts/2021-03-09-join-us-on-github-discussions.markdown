@@ -25,7 +25,7 @@ GitHub Discussions will replace our existing Slack community, and we look forwar
 
 We also hope to offer a greater level of transparency by opening up our roadmap and allowing the community to [vote on new features](https://github.com/siteleaf/community/discussions/categories/feature-requests).
 
-## Most helpful
+### Most helpful
 
 We'll be rewarding the **most helpful** community members with exclusive perks:
 
