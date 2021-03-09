@@ -31,7 +31,7 @@ plans:
   - |-
     Community support
 
-    [Slack channel](https://chat.siteleaf.com) and [docs](https://learn.siteleaf.com)
+    [GitHub Discussions](https://github.com/siteleaf/community/discussions) and [docs](https://learn.siteleaf.com)
 - name: Personal
   price: 9
   annual_price: 84
@@ -123,7 +123,7 @@ questions:
 - |-
   #### Have more questions?
 
-  No problem! Tweet [@siteleaf](https://twitter.com/siteleaf), chat on [Slack](https://chat.siteleaf.com), or [email us](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
+  No problem! Tweet [@siteleaf](https://twitter.com/siteleaf), [join the community](https://github.com/siteleaf/community/discussions), or [email us](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
 redirect_from: "/pricing/"
 layout: plans
 ---
