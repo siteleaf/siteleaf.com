@@ -13,7 +13,7 @@ The [Siteleaf Community](https://github.com/siteleaf/community/discussions) now 
 
 To get started we have topics for:
 
-* ❓ [Community Support](https://github.com/siteleaf/community/discussions/categories/community-support): Ask the community for help with.
+* ❓ [Community Support](https://github.com/siteleaf/community/discussions/categories/community-support): Ask the community for help.
 
 * 💡 [Feature Requests](https://github.com/siteleaf/community/discussions/categories/feature-requests): Vote and share ideas for new features.
 
