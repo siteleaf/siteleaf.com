@@ -33,4 +33,4 @@ We'll be rewarding the most helpful community members with exclusive perks:
 
 GitHub will automatically recognize community members who contribute the most comments marked as answers within the past 30 days in the Community Support section. If you see your name in the leaderboard, we'll be in touch to give you some exclusive perks as a thank you.
 
-Join us at: [https://github.com/siteleaf/community/discussions](https://github.com/siteleaf/community/discussions)
+Join us at: [community.siteleaf.com](https://community.siteleaf.com/)
