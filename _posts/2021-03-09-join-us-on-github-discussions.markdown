@@ -25,4 +25,10 @@ GitHub Discussions will replace our existing Slack community, and we look forwar
 
 We also hope to offer a greater level of transparency by opening up our roadmap and allowing the community to [vote on new features](https://github.com/siteleaf/community/discussions/categories/feature-requests).
 
+Lastly we'll be rewarding the Most Helpful community members with exclusive perks:
+
+![Screenshot of GitHub Discussions showing Most Helpful](/uploads/github-discussions-most-helpful.png)
+
+GitHub will automatically recognize community members who contribute the most comments marked as answers within the past 30 days in the Community Support section. If you see your name in the leaderboard, we'll be in touch to give you some exclusive perks as a thank you.
+
 Join us at: [https://github.com/siteleaf/community/discussions](https://github.com/siteleaf/community/discussions)
