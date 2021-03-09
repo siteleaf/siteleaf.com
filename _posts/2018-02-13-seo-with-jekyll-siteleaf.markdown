@@ -205,4 +205,4 @@ Consistently linking to great content is a way of putting a stamp of quality on 
     
 <small>We have had some requests recently for a blog post about SEO on Siteleaf, and we are here to deliver. Is there something you would love for us to cover on the blog? Let us [know](https://twitter.com/siteleaf)! 
     
-<small>If you have any questions about SEO on Siteleaf get in touch with us on [twitter](https://twitter.com/siteleaf) & chat with the [Siteleaf community](https://chat.siteleaf.com/) on Slack. 
+<small>If you have any questions about SEO on Siteleaf get in touch with us on [twitter](https://twitter.com/siteleaf) & chat with the [Siteleaf community](https://community.siteleaf.com). 
