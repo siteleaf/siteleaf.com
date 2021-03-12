@@ -57,9 +57,9 @@
         </li>
       </ul>
       <ul class="mobileNav__items">
-        {% for item in site.data.navigation.header %}
+        {% for item in site.header_nav %}
         <li class="mobileNav__item">
-          <a href="{{ item.url }}" class="mobileNav__link">{{ item.title }}</a>
+          <a href="{{ item[1] }}" class="mobileNav__link">{{ item[0] }}</a>
         </li>
         {% endfor %}
         <li class="mobileNav__item">
