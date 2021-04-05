@@ -43,7 +43,7 @@ plans:
   - |-
     Cloud previews
 
-    Preview your site online before publishing
+    Preview changes before publishing
   - |-
     Jekyll theme support <small class="red">NEW</small>
 
