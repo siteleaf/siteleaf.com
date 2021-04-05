@@ -40,7 +40,10 @@ plans:
   features:
   - Sync and publish to **private** GitHub repos
   - Publish to Amazon S3, Rackspace, FTP
-  - Preview your site online before publishing
+  - |-
+    Cloud previews
+
+    Preview your site online before publishing
   - |-
     Jekyll theme support <small class="red">NEW</small>
 
