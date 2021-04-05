@@ -41,7 +41,7 @@ plans:
   - Sync and publish to **private** GitHub repos
   - Publish to Amazon S3, Rackspace, FTP
   - |-
-    Cloud previews
+    [Cloud previews](https://learn.siteleaf.com/sites/preview/)
 
     Preview changes before publishing
   - |-
