@@ -1,13 +1,14 @@
 ---
-title: More whitelisted plugins
+title: More approved plugins
 date: 2016-12-09 16:42:00 -05:00
 tags:
 - announcement
 - jekyll
 - github
+redirect_from: /blog/more-whitelisted-plugins/
 ---
 
-Hot on the heels of the [Jekyll 3.3.1 update earlier this week](/blog/jekyll-update-and-new-whitelisted-plugins/), four additional plugins have been [whitelisted for GitHub Pages](https://github.com/blog/2289-publishing-with-github-pages-now-as-easy-as-1-2-3). 
+Hot on the heels of the [Jekyll 3.3.1 update earlier this week](/blog/jekyll-update-and-new-approved-plugins/), four additional plugins have been [approved for GitHub Pages](https://github.com/blog/2289-publishing-with-github-pages-now-as-easy-as-1-2-3). 
 
 These plugins are specifically geared toward software documentation and open source code projects on GitHub, but may come in handy for any type of website.
 
@@ -47,6 +48,6 @@ For details see: <https://github.com/benbalter/jekyll-readme-index>
 
 These plugins are enabled by default when your site is compiled by GitHub, or if no `Gemfile` is specified. To disable default plugins, create a `Gemfile` and specify only the desired plugins.
 
-In addition to whitelisted plugins, sites on our Team and higher plans can use third-party plugins. 
+In addition to approved plugins, sites on our Team and higher plans can use third-party plugins. 
 
-See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for a full list of whitelisted plugins, and how to use a `Gemfile`.
+See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for a full list of approved plugins, and how to use a `Gemfile`.

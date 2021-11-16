@@ -30,4 +30,4 @@ If you are still using Jekyll 3.4, here's everything that's new in 3.5 so far:
 
 For most sites, no action is required to take advantage of the latest version. As always, if you wish to use a different version of Jekyll for your site, you can define that in your `Gemfile`.
 
-As a reminder, sites on our Team and higher plans can also use custom (non-whitelisted) gems. See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for all the details.
+As a reminder, sites on our Team and higher plans can also use custom (non-approved) gems. See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for all the details.

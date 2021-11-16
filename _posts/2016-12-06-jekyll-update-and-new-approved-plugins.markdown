@@ -1,17 +1,18 @@
 ---
-title: Jekyll update & new whitelisted plugins
+title: Jekyll update & new approved plugins
 date: 2016-12-06 14:25:00 -05:00
 tags:
 - announcement
 - jekyll
 - github
+redirect_from: /blog/jekyll-update-and-new-whitelisted-plugins/
 ---
 
 We have updated our default Jekyll version from 3.3.0 to 3.3.1, to match the [recent update at GitHub Pages](https://github.com/blog/2290-relative-links-for-github-pages).
 
 This update includes a few minor enhancements and bug fixes. For a full list of revisions [check out the release notes](https://jekyllrb.com/docs/history/#v3-3-1).
 
-Also included in this update are two new [whitelisted plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
+Also included in this update are two new [approved plugins](https://learn.siteleaf.com/themes/jekyll-plugins/).
 
 
 
@@ -66,4 +67,4 @@ For details see: <https://github.com/benbalter/jekyll-relative-links>
 
 For most sites, no action is required to take advantage of the latest version. If you wish to use a specific version of Jekyll for your site, you can define that in your `Gemfile`.
 
-As a reminder, sites on our Team and higher plans can also use custom (non-whitelisted) gems. See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for all the details.
+As a reminder, sites on our Team and higher plans can also use custom (non-approved) gems. See [learn.siteleaf.com](https://learn.siteleaf.com/themes/jekyll-plugins/) for all the details.

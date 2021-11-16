@@ -96,7 +96,7 @@ Here are a couple of themes I've made:
 
 Both of my themes have been built with Siteleaf in mind, so you should be able to set up a new Siteleaf site with these without too much trouble. I'd also recommend [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/), an incredibly powerful theme by Michael Rose. Michael has been working with Jekyll theming for longer than I have and is very thorough with his code.
 
-For those of you who are using GitHub Pages to host their Jekyll site, there are a [set of whitelisted themes](https://pages.github.com/themes/). This, I would say, is partly the reason why themes haven't grown at the rate they could be growing at.
+For those of you who are using GitHub Pages to host their Jekyll site, there are a [set of approved themes](https://pages.github.com/themes/). This, I would say, is partly the reason why themes haven't grown at the rate they could be growing at.
 
 There are a large portion of Jekyll users who are also using GitHub Pages to host and manage their site, which means they are limited to this subset of themes. There are ways around this though such as using a [Siteleaf Team+ plan](https://www.siteleaf.com/plans/) which allows you to [use any custom Jekyll theme](https://learn.siteleaf.com/themes/gem-based-themes/) and [any custom plugin](https://learn.siteleaf.com/themes/jekyll-plugins/#third-party-plugins).
 

@@ -12,7 +12,7 @@ button:
 
 Today's the day! We're excited to update to Jekyll 3.2, which brings over [100 improvements](http://jekyllrb.com/docs/history/#minor-enhancements-v3-2-0) including [Gem-based themes](https://learn.siteleaf.com/themes/gem-based-themes/).
 
-In addition to themes, we're extremely happy to introduce support for third-party [Jekyll plugins](https://learn.siteleaf.com/themes/jekyll-plugins/). Sites on the new [Team, Business, and Enterprise plans](/plans) can now install and leverage custom plugins to extend the functionality of Jekyll and Siteleaf. As always, [whitelisted plugins](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) are supported on all other plans.
+In addition to themes, we're extremely happy to introduce support for third-party [Jekyll plugins](https://learn.siteleaf.com/themes/jekyll-plugins/). Sites on the new [Team, Business, and Enterprise plans](/plans) can now install and leverage custom plugins to extend the functionality of Jekyll and Siteleaf. As always, [GitHub Pages-approved plugins](https://learn.siteleaf.com/themes/jekyll-plugins/#github-pages-approved-plugins) are supported on all other plans.
 
 Sites on the free developer plan can make use of the new GitHub Pages-approved [Minima theme](https://github.com/jekyll/minima), while all paid plans (including legacy and Personal plans) can take full advantage of custom themes. Themes package layouts, includes, and stylesheets in a way that can be overridden by your site’s content. It is a great way to maintain a separation of content and code, and makes it possible to share themes across multiple sites.
 

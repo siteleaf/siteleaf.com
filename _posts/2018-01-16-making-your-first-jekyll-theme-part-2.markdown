@@ -128,7 +128,7 @@ When you submit a gem for the first time, your command line tool will ask you to
 
 Since releasing [Part 1](https://www.siteleaf.com/blog/making-your-first-jekyll-theme-part-1/), GitHub have implemented a new feature to GitHub Pages that allows anyone to use any Jekyll theme uploaded to [github.com](https://github.com) without the need of any local build or deployment steps.
 
-Installing a theme requires the use of a newly whitelisted gem called [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme). You add it to your Jekyll site just like any other gem plugin. After installing it, you can use the key `remote_theme` in your `_config.yml`, followed by the username of the theme creator and the name of the theme separated by a / - for example:
+Installing a theme requires the use of a newly approved gem called [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme). You add it to your Jekyll site just like any other gem plugin. After installing it, you can use the key `remote_theme` in your `_config.yml`, followed by the username of the theme creator and the name of the theme separated by a / - for example:
 
 ```yaml
 plugins:
@@ -137,7 +137,7 @@ plugins:
 remote_theme: daviddarnes/alembic
 ```
 
-So, how does this affect our theme development process? Well, you’ll need to consider if someone will be using your theme in this fashion if you upload it to [GitHub](https://github.com). You should also make sure the plugins in your theme are also whitelisted on GitHub Pages. Most importantly, you’ll need to factor in any changes that could break other peoples’ sites.
+So, how does this affect our theme development process? Well, you’ll need to consider if someone will be using your theme in this fashion if you upload it to [GitHub](https://github.com). You should also make sure the plugins in your theme are also [approved for GitHub Pages](https://learn.siteleaf.com/themes/jekyll-plugins/#github-pages-approved-plugins). Most importantly, you’ll need to factor in any changes that could break other peoples’ sites.
 
 The remote theme plugin can hook into repo releases as well as branches. Using releases is a great way to manage versions of your theme and it’s ideal to help people lock down the version of your theme that they want to use:
 

@@ -23,7 +23,7 @@ Here are our top tips to consider when optimizing your Siteleaf site's SEO:
 
 ## Sitemap
 
-[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly big. Sitemaps can be generated with a whitelisted Jekyll plugin [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap).
+[Sitemaps](https://learn.siteleaf.com/themes/sitemaps-and-feeds/) can help search engines find information and content on your site, especially if your website is particularly big. Sitemaps can be generated with a GitHub Pages-approved Jekyll plugin [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap).
 
 To enable the `jekyll-sitemap` plugin add the following to your site’s Gemfile:
 
@@ -63,7 +63,7 @@ URLs are a minor ranking factor for SEO, so while using a URL rich in keywords c
 
 ## Jekyll-SEO-Tag
 
-We love the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin. It’s [whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/#whitelisted-plugins) by GitHub Pages so you can use it on any of our plans. Using the `jekyll-seo-tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
+We love the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin. It’s [approved by GitHub Pages](https://learn.siteleaf.com/themes/jekyll-plugins/#github-pages-approved-plugins) so you can use it on any of our plans. Using the `jekyll-seo-tag` plugin helps to optimize your website for search engines and social media networks by adding metadata tags to index and display your site's content.
 
 `jekyll-seo-tag` adds the following metadata tags to your site:
 
