@@ -5,7 +5,7 @@ tags:
 - announcement
 - jekyll
 - github
-redirect_from: /blog/jekyll-update-and-new-whitelisted-plugins/
+redirect_from: "/blog/jekyll-update-and-new-whitelisted-plugins/"
 ---
 
 We have updated our default Jekyll version from 3.3.0 to 3.3.1, to match the [recent update at GitHub Pages](https://github.com/blog/2290-relative-links-for-github-pages).

@@ -5,7 +5,7 @@ tags:
 - announcement
 - jekyll
 - github
-redirect_from: /blog/more-whitelisted-plugins/
+redirect_from: "/blog/more-whitelisted-plugins/"
 ---
 
 Hot on the heels of the [Jekyll 3.3.1 update earlier this week](/blog/jekyll-update-and-new-approved-plugins/), four additional plugins have been [approved for GitHub Pages](https://github.com/blog/2289-publishing-with-github-pages-now-as-easy-as-1-2-3). 
