@@ -25,7 +25,7 @@ plans:
 
     Within limits
   - |-
-    [Whitelisted](https://learn.siteleaf.com/themes/jekyll-plugins/) Jekyll plugins
+    [Select Jekyll plugins](https://learn.siteleaf.com/themes/jekyll-plugins/)
 
     GitHub-approved plugins & themes
   - |-
