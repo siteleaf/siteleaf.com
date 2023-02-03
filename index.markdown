@@ -25,7 +25,7 @@ features:
     body: Easy for non-technical clients, writers, and producers.
     image: "/uploads/home__intro--fox.svg"
   - title: Free your content
-    body: Access by [API](https://learn.siteleaf.com/api/) or generate static sites
+    body: Headless [API](https://learn.siteleaf.com/api/) or generate static sites
       to S3, GitHub, FTP.
     image: "/uploads/home__intro--owl.svg"
 - title: Content management for the whole team
