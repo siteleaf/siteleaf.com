@@ -1,9 +1,9 @@
 ---
 title: Siteleaf - A friendly CMS for your static site
 position: 0
-header_title: Built for developers, Loved by everyone
+header_title: Static sites are faster, Siteleaf keeps it simple.
 subtitle: |-
-  Siteleaf is a content management system designed for a better web.
+  Trusted for over 10 years, Siteleaf is a content management system designed for a better web.
 
   <a href="https://player.vimeo.com/video/169542999" id="videoOpen" class="link white"><svg class="icon icon--play white" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve"><g><path d="M21.3,12c0,5.1-4.2,9.3-9.3,9.3S2.7,17.1,2.7,12S6.9,2.7,12,2.7S21.3,6.9,21.3,12z M20,12c0-4.4-3.6-8-8-8s-8,3.6-8,8 s3.6,8,8,8S20,16.4,20,12z M9.3,8l7.3,4l-7.3,4V8z M10.7,13.7l3.2-1.7l-3.2-1.7V13.7z"/></g></svg>Watch the intro</a>
 color: yellow
@@ -19,14 +19,14 @@ features:
   button: true
   subsections:
   - title: Develop with existing tools
-    body: Code offline with Jekyll, sync with GitHub
+    body: Code offline with Jekyll, sync with GitHub.
     image: "/uploads/home__intro--raccoon.svg"
   - title: Edit in the cloud
-    body: Easy for non-technical clients, writers, and producers
+    body: Easy for non-technical clients, writers, and producers.
     image: "/uploads/home__intro--fox.svg"
   - title: Free your content
     body: Access by [API](https://learn.siteleaf.com/api/) or generate static sites
-      to S3, GitHub, FTP
+      to S3, GitHub, FTP.
     image: "/uploads/home__intro--owl.svg"
 - title: Content management for the whole team
   handle: manage
@@ -118,4 +118,3 @@ features:
 image: "/assets/og-image.png"
 layout: index
 ---
-
