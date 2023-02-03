@@ -13,7 +13,7 @@ button:
 
 #### Compatible with a larger ecosystem
 
-Siteleaf v2 brings full compatibility with [Jekyll](http://jekyllrb.com/), the same open source technology GitHub uses to power over [half a million websites](https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months). Enjoy the benefits of a large open source community, along with the accessibility of the Siteleaf interface you’ve come to love. Use any off-the-shelf Jekyll theme, or take your Siteleaf theme with you.
+Siteleaf v2 brings full compatibility with [Jekyll](http://jekyllrb.com/), the same open source technology GitHub uses to power **over a million websites** <sup>[[1]](https://github.com/blog/1992-eight-lessons-learned-hacking-on-github-pages-for-six-months)[[2]](https://github.com/github/pages-gem/issues/651#issuecomment-1208290235)</sup>. Enjoy the benefits of a large open source community, along with the accessibility of the Siteleaf interface you’ve come to love. Use any off-the-shelf Jekyll theme, or take your Siteleaf theme with you.
 
 #### Data portability
 

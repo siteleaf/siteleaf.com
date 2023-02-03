@@ -19,14 +19,14 @@ features:
   button: true
   subsections:
   - title: Develop with existing tools
-    body: Code offline with Jekyll, sync with GitHub.
+    body: Code offline with Jekyll, and sync with GitHub.
     image: "/uploads/home__intro--raccoon.svg"
   - title: Edit in the cloud
     body: Easy for non-technical clients, writers, and producers.
     image: "/uploads/home__intro--fox.svg"
   - title: Free your content
-    body: Headless [API](https://learn.siteleaf.com/api/) or generate static sites
-      to S3, GitHub, FTP.
+    body: Generate static sites to S3, GitHub, FTP
+      + headless [API](https://learn.siteleaf.com/api/).
     image: "/uploads/home__intro--owl.svg"
 - title: Content management for the whole team
   handle: manage
@@ -60,9 +60,9 @@ features:
   subsections:
   - title: Built on open source
     body: |-
-      Siteleaf is compatible with [Jekyll](http://jekyllrb.com/), the static site generator for over half a million websites running on GitHub Pages.
+      Siteleaf is compatible with [Jekyll](http://jekyllrb.com/), the static site generator for **over a million websites** running on GitHub Pages.
 
-      Benefit from a large open source community. Use any existing Jekyll theme, or write your own using [Liquid](https://shopify.github.io/liquid/), [Sass](http://sass-lang.com/), and [CoffeeScript](http://coffeescript.org/). Develop locally and even offline.
+      Benefit from a large open source community. Use any existing Jekyll theme, or write your own using [Liquid](https://shopify.github.io/liquid/) and all the tools you love. Develop locally and even offline.
     image: "/uploads/home__develop--jekyll.jpg"
     logos:
       title: open source
@@ -83,12 +83,11 @@ features:
   subsections:
   - title: Publish anywhere
     body: Generate static sites to [Amazon S3](https://aws.amazon.com/s3/), [GitHub
-      Pages](https://pages.github.com/), [Rackspace](https://www.rackspace.com/),
-      or FTP using your own domain name.
+      Pages](https://pages.github.com/), or FTP & SFTP using your own domain name.
   - title: Import and export
     body: Easily move your content into or out of Siteleaf. [Import](http://import.jekyllrb.com/)
       from WordPress, Drupal, Tumblr, Ghost, and more.
-  - title: API for your content
+  - title: Headless API for your content
     body: Access [your data](https://learn.siteleaf.com/api/) and integrate into other
       websites and apps. Automate tasks with [Zapier](https://zapier.com/zapbook/siteleaf/).
 - title: Launch better sites
@@ -112,4 +111,3 @@ features:
 image: "/assets/og-image.png"
 layout: index
 ---
-
