@@ -60,8 +60,9 @@ layout: default
               </div>
             {% endfor %}
           </div>
-        {% when 'launch' %}
-          <div class="launch__content">{{ feature.body | markdownify }}</div>
+        {% when 'purpose' %}
+          {% assign purpose = site.pages | where: 'title', 'Purpose' | first %}
+          <div class="launch__content">{{ purpose.content | markdownify }}</div>
           <img src="{{ feature.image }}" alt="{{ feature.title }}" class="launch__image" />
         {% when 'love' %}
           <ul class="love__tweets">
