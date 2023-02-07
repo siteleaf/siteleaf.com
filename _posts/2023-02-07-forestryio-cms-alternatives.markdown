@@ -3,10 +3,11 @@ title: Looking for a Forestry.io alternative?
 date: 2023-02-07 11:30:00 -05:00
 tags:
 - tip
-hero: "/uploads/forestryio-migration.jpg"
+image: "/uploads/forestryio-migration.jpg"
 button:
   title: Try Siteleaf for free
   url: https://manage.siteleaf.com/signup
+hero: "/uploads/forestryio-migration.jpg"
 ---
 
 Forestry.io, a fellow static site CMS, has announced it will be shutting down on April 21, 2023 (see [Forestry.io's End of Life announcement](https://forestry.io/blog/forestry.io-end-of-life/)).
