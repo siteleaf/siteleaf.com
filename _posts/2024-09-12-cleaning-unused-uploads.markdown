@@ -37,6 +37,8 @@ Of course, you won't want to search for each asset one-by-one, so we can write a
 
 If you have files with spaces or other special characters, you'll want to encode the filenames. We can use Jekyll's `URL.escape_path` to [do just that](https://gist.github.com/sskylar/1008a0ab7d7aed5b75bd6f6f402b0ea6).
 
+### Using the Siteleaf gem
+
 To make things super easy, we decided to add a simple command to our Siteleaf Ruby gem:
 
 ```sh
