@@ -57,7 +57,7 @@ If you have files with spaces or other special characters, you'll want to encode
 
 To save you the hassle of maintaining your own script, we decided to add a simple command to our (open source) [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem).
 
-First, add the following to your `Gemfile`:
+First, add the following to your `Gemfile` (if you haven't already):
 
 ```rb
 source "https://rubygems.org"
@@ -88,6 +88,6 @@ _uploads/Screen Shot 2020-09-16 at 9.42.59 AM.png
 => Delete above 3 file(s)? (y/n)
 ```
 
-This all happens locally, and works with any Jekyll site — even if you don't use Siteleaf. To fully remove the assets from Siteleaf and your published site, you'll just need to commit and sync your changes with GitHub.
+This all happens locally, and works with any Jekyll site — even if you don't use Siteleaf. To fully remove the assets from Siteleaf and your published site, just commit and sync your changes with GitHub.
 
 Happy cleaning!
