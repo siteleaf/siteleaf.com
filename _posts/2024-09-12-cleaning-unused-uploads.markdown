@@ -15,13 +15,15 @@ TL;DR You can now use the official [Siteleaf Ruby gem](https://github.com/sitele
 
 #### Checking for unused assets
 
-First, let's build the full site (including drafts) to get a picture of what assets are needed:
+While you can use the [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem) to do this for you, follow along if you are interested in seeing how we got there (or want to write your own script).
+
+First, you'll want to build your full site (including all drafts and unpublished documents) to get a picture of what assets are in use:
 
 ```sh
 $ bundle exec jekyll serve --unpublished --drafts --future
 ```
 
-Now we can search the site to verify if an uploaded asset is in use:
+Now we can search the `_site` folder to verify if an asset is linked or embedded somewhere in its outputted HTML files:
 
 ```sh
 $ grep -rl "/uploads/screenshot.png" _site
@@ -29,9 +31,13 @@ $ grep -rl "/uploads/screenshot.png" _site
 
 Grep can be a little slow if you have a lot of content, so we can use [The Silver Searcher](https://geoff.greer.fm/ag/) ([GitHub](https://github.com/ggreer/the_silver_searcher)) to greatly speed things up.
 
+To install on a Mac, run:
+
 ```sh
 $ brew install the_silver_searcher
 ```
+
+Then you can search using:
 
 ```sh
 $ ag -lQ "/uploads/screenshot.png" _site
@@ -45,7 +51,22 @@ If you have files with spaces or other special characters, you'll want to encode
 
 ### Using the Siteleaf gem
 
-To make things super easy, we decided to add a simple command to our Siteleaf Ruby gem:
+To make things super easy and save you the hassle of maintaining your own script, we decided to add a simple command to our (open source) [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem).
+
+First, add the following to your `Gemfile`:
+
+```rb
+source "https://rubygems.org"
+
+gem 'jekyll'
+
+group :development do
+  gem 'siteleaf'
+end
+```
+
+After a `bundle update` you can now run:
+
 
 ```sh
 $ bundle exec siteleaf clean _uploads
