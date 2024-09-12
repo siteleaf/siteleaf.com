@@ -53,7 +53,7 @@ If you have files with spaces or other special characters, you'll want to encode
 
 ### Using the Siteleaf gem
 
-To make things super easy and save you the hassle of maintaining your own script, we decided to add a simple command to our (open source) [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem).
+To save you the hassle of maintaining your own script, we decided to add a simple command to our (open source) [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem).
 
 First, add the following to your `Gemfile`:
 
@@ -67,7 +67,7 @@ group :development do
 end
 ```
 
-After a `bundle update` you can now run `siteleaf clean` or:
+After a `bundle update` you can now run:
 
 
 ```sh
@@ -86,6 +86,6 @@ _uploads/Screen Shot 2020-09-16 at 9.42.59 AM.png
 => Delete above 3 file(s)? (y/n)
 ```
 
-This all happens locally, and works with any Jekyll site — even if you don't use Siteleaf. To remove the assets from Siteleaf, you'll just need to commit your changes to GitHub and everything will be synced automatically.
+This all happens locally, and works with any Jekyll site — even if you don't use Siteleaf. You can also pass in a different folder such as `siteleaf clean assets/images`. To fully remove the assets from Siteleaf and your published site, you'll just need to commit and sync your changes with GitHub.
 
 Happy cleaning!
