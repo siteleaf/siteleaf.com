@@ -1,6 +1,6 @@
 ---
 title: Cleaning unused assets from your static website
-date: 2024-09-12 08:56:00 -04:00
+date: 2024-09-12 10:49:00 -04:00
 tags:
 - tip
 ---
