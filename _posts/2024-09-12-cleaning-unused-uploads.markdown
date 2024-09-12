@@ -1,5 +1,5 @@
 ---
-title: Cleaning unused uploads
+title: "Cleaning unused uploads \U0001F9F9\U0001F4A8"
 date: 2024-09-12 08:56:00 -04:00
 tags:
 - tip
