@@ -1,5 +1,5 @@
 ---
-title: Cleaning unused uploads from your site
+title: Cleaning unused assets from your Jekyll website
 date: 2024-09-12 08:56:00 -04:00
 tags:
 - tip
