@@ -55,7 +55,7 @@ If you have files with spaces or other special characters, you'll want to encode
 
 ### Using the Siteleaf gem
 
-To save you the hassle of maintaining your own script, we decided to add a simple command to our (open source) [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem).
+To save you the hassle of maintaining your own script, we decided to add a simple command to our (open source) [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem). It will automatically use The Silver Searcher if you have it installed, or otherwise fall back to Grep for searching.
 
 First, add the following to your `Gemfile` (if you haven't already):
 
