@@ -9,7 +9,7 @@ As websites and blogs continue to grow, so can the amount of user-uploaded conte
 
 We recently helped a customer clean up 5 gigabytes(!!) of unused assets, and you might also be surprised how much data is collecting digital dust on your own site. Here's how you can find out.
 
-TL;DR You can now use the official Siteleaf Ruby gem to check for unused uploads by running: `siteleaf clean _uploads`.
+TL;DR You can now use the official Siteleaf Ruby gem to check for unused uploads by running: `siteleaf clean`.
 {: .tip}
 
 
