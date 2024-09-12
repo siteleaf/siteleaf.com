@@ -5,7 +5,7 @@ tags:
 - tip
 ---
 
-As websites and blogs continue to grow, so can the amount of user-uploaded content like images and videos. Over time, it can be tricky to figure out what’s actually used and what’s just collecting dust. 
+As websites and blogs continue to grow, so can the amount of user-uploaded content like images and videos — especially when your site has multiple team members and writers. Over time, it can be tricky to figure out what’s actually used and what’s just collecting dust. 
 
 We recently helped a customer clean up 5 gigabytes(!!) of unused assets, and you might be surprised how much digital clutter is lurking on your site too. 
 
