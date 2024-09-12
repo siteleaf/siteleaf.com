@@ -5,14 +5,15 @@ tags:
 - tip
 ---
 
-As websites and blogs continue to grow, so can the amount of user-uploaded content like images and videos. Over time, it might be hard to tell how many of these assets are still being used. 
+As websites and blogs continue to grow, so can the amount of user-uploaded content like images and videos. Over time, it can be tricky to figure out what’s actually used and what’s just sitting there. 
 
-We recently helped a customer clean up 5 gigabytes(!!) of unused assets, and you might also be surprised how much data is collecting digital dust on your own site. Here's how you can find out.
+We recently helped a customer clean up 5 gigabytes(!!) of unused assets, and you might be surprised how much digital clutter is lurking on your site too. Here's how you can find out.
 
-TL;DR You can now use the official Siteleaf Ruby gem to check for unused uploads by running: `siteleaf clean`.
+TL;DR You can now use the official [Siteleaf Ruby gem](https://github.com/siteleaf/siteleaf-gem) to check for unused uploads by running: `siteleaf clean`.
 {: .tip}
 
 
+#### Checking for unused assets
 
 First, let's build the full site (including drafts) to get a picture of what assets are needed:
 
@@ -24,14 +25,16 @@ Now we can search the site to verify if an uploaded asset is in use:
 
 ```sh
 $ grep -rl "/uploads/screenshot.png" _site
-
 ```
 
-Grep can be a little slow if you have a lot of content, so we can use [The Silver Searcher](https://geoff.greer.fm/ag/) ([GitHub](https://github.com/ggreer/the_silver_searcher)) to speed things up.
+Grep can be a little slow if you have a lot of content, so we can use [The Silver Searcher](https://geoff.greer.fm/ag/) ([GitHub](https://github.com/ggreer/the_silver_searcher)) to greatly speed things up.
+
+```sh
+$ brew install the_silver_searcher
+```
 
 ```sh
 $ ag -lQ "/uploads/screenshot.png" _site
-
 ```
 
 Of course, you won't want to search for each asset one-by-one, so we can write a simple shell script to loop through all the files in `_uploads`:
@@ -60,6 +63,6 @@ _uploads/Screen Shot 2020-09-16 at 9.42.59 AM.png
 => Delete above 3 file(s)? (y/n)
 ```
 
-This all happens locally, so you can check in your changes to GitHub to fully remove them from your repo and from Siteleaf.
+This all happens locally, and works with any Jekyll site — even if you don't use Siteleaf. To remove the assets from Siteleaf, you'll just need to commit your changes to GitHub and everything will be synced automatically.
 
 Happy cleaning!
