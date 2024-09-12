@@ -25,7 +25,7 @@ First, you'll want to build your full site (including all drafts and unpublished
 $ bundle exec jekyll serve --unpublished --drafts --future
 ```
 
-Now we can search the `_site` folder to verify if an asset (for example `uploads/screenshot.png`) is linked or embedded somewhere in its outputted HTML files:
+Now we can search the `_site` folder to verify if an asset (for example `/uploads/screenshot.png`) is linked or embedded somewhere in its outputted HTML files:
 
 ```sh
 $ grep -rl "/uploads/screenshot.png" _site
