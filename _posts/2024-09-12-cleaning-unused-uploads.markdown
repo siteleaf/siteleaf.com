@@ -65,7 +65,7 @@ group :development do
 end
 ```
 
-After a `bundle update` you can now run:
+After a `bundle update` you can now run `siteleaf clean` or:
 
 
 ```sh
