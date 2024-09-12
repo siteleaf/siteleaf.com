@@ -15,7 +15,7 @@ TL;DR You can now use the official [Siteleaf Ruby gem](https://github.com/sitele
 {: .tip}
 
 
-### Checking for unused assets
+### How to check for unused assets
 
 While you can use the [Siteleaf gem](https://github.com/siteleaf/siteleaf-gem) to do this for you, follow along if you are interested in seeing how we got there (or want to write your own script).
 
