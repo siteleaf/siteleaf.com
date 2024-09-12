@@ -1,5 +1,5 @@
 ---
-title: Cleaning unused assets from your Jekyll website
+title: Cleaning unused assets from your static website
 date: 2024-09-12 08:56:00 -04:00
 tags:
 - tip
@@ -9,7 +9,7 @@ As websites and blogs continue to grow, so can the amount of user-uploaded conte
 
 We recently helped a customer clean up 5 gigabytes(!!) of unused assets, and you might be surprised how much digital clutter is lurking on your site too. 
 
-Let's dive in and see how much data you can free from your Jekyll site.
+Let's dive in and see how much data you can free.
 
 TL;DR You can now use the official [Siteleaf Ruby gem](https://github.com/siteleaf/siteleaf-gem) to check for unused uploads by running: `siteleaf clean`. Skip to the [end of this post](/blog/cleaning-unused-uploads/#using-the-siteleaf-gem) to learn more.
 {: .tip}
