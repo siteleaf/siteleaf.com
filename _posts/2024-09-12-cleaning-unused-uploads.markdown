@@ -1,11 +1,11 @@
 ---
-title: "Cleaning unused uploads \U0001F9F9\U0001F4A8"
+title: Cleaning unused uploads from your site
 date: 2024-09-12 08:56:00 -04:00
 tags:
 - tip
 ---
 
-As websites and blogs continue to grow, so can the amount of user-uploaded content like images and videos. Over time, it can be tricky to figure out what’s actually used and what’s just sitting there. 
+As websites and blogs continue to grow, so can the amount of user-uploaded content like images and videos. Over time, it can be tricky to figure out what’s actually used and what’s just collecting dust. 
 
 We recently helped a customer clean up 5 gigabytes(!!) of unused assets, and you might be surprised how much digital clutter is lurking on your site too. Here's how you can find out.
 
