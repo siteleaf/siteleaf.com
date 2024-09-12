@@ -76,7 +76,7 @@ After a `bundle update` you can now run:
 $ bundle exec siteleaf clean _uploads
 ```
 
-This command will build your site locally, check for any unused files, and prompt if you would like to remove them:
+This command will build your site locally, check for any unused files, and prompt if you would like to remove them. Note: `_uploads` is optional and used by default, you can also pass in a different folder such as `assets/images`.
 
 ```
 Building Jekyll site...
@@ -88,6 +88,6 @@ _uploads/Screen Shot 2020-09-16 at 9.42.59 AM.png
 => Delete above 3 file(s)? (y/n)
 ```
 
-This all happens locally, and works with any Jekyll site — even if you don't use Siteleaf. You can also pass in a different folder such as `siteleaf clean assets/images`. To fully remove the assets from Siteleaf and your published site, you'll just need to commit and sync your changes with GitHub.
+This all happens locally, and works with any Jekyll site — even if you don't use Siteleaf. To fully remove the assets from Siteleaf and your published site, you'll just need to commit and sync your changes with GitHub.
 
 Happy cleaning!
