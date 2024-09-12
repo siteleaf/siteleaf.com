@@ -31,23 +31,30 @@ $ ag -lQ "/uploads/screenshot.png" _site
 
 ```
 
-Of course, you won't want to search for each asset one-by-one, so let's loop through all the files in `_uploads`:
+Of course, you won't want to search for each asset one-by-one, so we can write a simple shell script to loop through all the files in `_uploads`:
 
 <script src="https://gist.github.com/sskylar/1008a0ab7d7aed5b75bd6f6f402b0ea6/6657b7b2a678fd9697132f534de1c84e64f864eb.js"></script>
 
-Now we can just run:
+If you have files with spaces or other special characters, you'll want to encode the filenames. We can use Jekyll's `URL.escape_path` to [do just that](https://gist.github.com/sskylar/1008a0ab7d7aed5b75bd6f6f402b0ea6).
+
+To make things super easy, we decided to add a simple command to our Siteleaf Ruby gem:
 
 ```sh
-./unused-assets.sh
+$ bundle exec siteleaf clean _uploads
 ```
 
-If you have files with spaces or other special characters, you'll want to encode the filenames. Here we can use Jekyll's `URL.escape_path` to do just that:
+This command will build your site locally, check for any unused files, and prompt if you would like to remove them:
 
-<script src="https://gist.github.com/sskylar/1008a0ab7d7aed5b75bd6f6f402b0ea6.js"></script>
+```
+Building Jekyll site...
 
-We can also add a flag to delete the unused assets:
-
-```sh
-./unused-assets.sh --delete
+Finding unused files...
+_uploads/3D_slice.mp4
+_uploads/Logo final final 2.svg
+_uploads/Screen Shot 2020-09-16 at 9.42.59 AM.png
+=> Delete above 3 file(s)? (y/n)
 ```
 
+This all happens locally, so you can check in your changes to GitHub to fully remove them from your repo and from Siteleaf.
+
+Happy cleaning!
