@@ -39,7 +39,7 @@ To install on a Mac, run the following (see [GitHub](https://github.com/ggreer/t
 $ brew install the_silver_searcher
 ```
 
-Then you can search using:
+Now you can search using:
 
 ```sh
 $ ag -lQ "/uploads/screenshot.png" _site
