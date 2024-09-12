@@ -31,7 +31,9 @@ Now we can search the `_site` folder to verify if an asset is linked or embedded
 $ grep -rl "/uploads/screenshot.png" _site
 ```
 
-Grep can be a little slow if you have a lot of content, so we can use [The Silver Searcher](https://geoff.greer.fm/ag/) to greatly speed things up.
+This command will output a list of pages where the asset is either embedded using an `<img>` tag or otherwise linked on a page.
+
+However Grep can be a little slow if you have a lot of content, so we can use [The Silver Searcher](https://geoff.greer.fm/ag/) to greatly speed things up.
 
 To install on a Mac, run the following (see [GitHub](https://github.com/ggreer/the_silver_searcher) for other platforms):
 
