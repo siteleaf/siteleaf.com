@@ -11,7 +11,14 @@ $(function(){
     modalShownClass = 'isModalOpen',
     $mobileNavOpen = $('#mobileNavOpen'),
     $mobileNavClose = $('#mobileNavClose'),
-    mobileNavShownClass = 'isMobileNavOpen';
+    mobileNavShownClass = 'isMobileNavOpen',
+    $surveyBanner = $('#surveyBanner'),
+    $surveyBannerClose = $('#surveyBannerClose'),
+    $surveyBannerCta = $('#surveyBannerCta'),
+    surveyBannerShownClass = 'isShown',
+    surveyBannerDismissedKey = 'surveyBannerDismissedUntil',
+    surveyBannerCompletedKey = 'surveyBannerCompleted',
+    surveyBannerDismissDays = 45;
 
   var init = function() {
     $('body').addClass('js');
@@ -20,6 +27,7 @@ $(function(){
     initFitVids();
     initMobileNav();
     initAnchors();
+    initSurveyBanner();
   };
 
   var initTabs = function() {
@@ -110,6 +118,39 @@ $(function(){
   var closeMobileNav = function() {
     $body.removeClass(mobileNavShownClass);
     $body.css('height', 'auto');
+  };
+
+  // survey banner
+  // -------------
+
+  var initSurveyBanner = function() {
+    if (!$surveyBanner.length || isSurveyBannerSuppressed()) {
+      return;
+    }
+    setTimeout(function() {
+      $surveyBanner.addClass(surveyBannerShownClass);
+    }, 4000);
+    $surveyBannerClose.click(function(e) {
+      e.preventDefault();
+      dismissSurveyBanner();
+    });
+    $surveyBannerCta.click(function() {
+      localStorage.setItem(surveyBannerCompletedKey, '1');
+    });
+  };
+
+  var isSurveyBannerSuppressed = function() {
+    if (localStorage.getItem(surveyBannerCompletedKey)) {
+      return true;
+    }
+    var dismissedUntil = localStorage.getItem(surveyBannerDismissedKey);
+    return !!dismissedUntil && Date.now() < parseInt(dismissedUntil, 10);
+  };
+
+  var dismissSurveyBanner = function() {
+    var until = Date.now() + (surveyBannerDismissDays * 24 * 60 * 60 * 1000);
+    localStorage.setItem(surveyBannerDismissedKey, until);
+    $surveyBanner.removeClass(surveyBannerShownClass);
   };
 
   // keydown handlers

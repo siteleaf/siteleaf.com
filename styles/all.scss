@@ -766,6 +766,81 @@ h6 {
   }
 }
 
+// survey banner
+// -------------
+
+.surveyBanner {
+  position: fixed;
+  right: 24px;
+  bottom: 104px; // clears the Help Scout Beacon button with breathing room
+  z-index: 10;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px 20px 24px;
+  border-radius: 6px;
+  background: #FDE49B;
+  color: #464442;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity 200ms, transform 200ms, visibility 200ms;
+  &.isShown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  @include max-width($max-width--xs) {
+    right: 16px;
+    left: 16px;
+    bottom: 96px;
+    max-width: none;
+  }
+}
+.surveyBanner__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font-size: 1.5em;
+  line-height: 1;
+  cursor: pointer;
+  &:hover {
+    opacity: $opacity--hover;
+  }
+}
+.surveyBanner__header {
+  @include flexbox;
+  @include align-items(center);
+  margin-bottom: $v*0.75;
+}
+.surveyBanner__badge {
+  width: 72px;
+  height: 72px;
+  margin-right: 1em;
+  flex-shrink: 0;
+}
+.surveyBanner__title {
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+.surveyBanner__body {
+  font-size: $font-size--small;
+  margin-bottom: 0;
+}
+.surveyBanner__button {
+  @extend %button--large;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 // articles
 // --------
 
