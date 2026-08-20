@@ -775,7 +775,7 @@ h6 {
   bottom: 104px; // clears the Help Scout Beacon button with breathing room
   z-index: 10;
   width: 100%;
-  max-width: 380px;
+  max-width: 400px;
   padding: 20px 20px 24px;
   border-radius: 6px;
   background: #FDE49B;
@@ -828,7 +828,7 @@ h6 {
   margin-bottom: 0.2em;
 }
 .surveyBanner__body {
-  font-size: $font-size--small;
+  font-size: $font-size--smaller;
   margin-bottom: 0;
 }
 .surveyBanner__button {
