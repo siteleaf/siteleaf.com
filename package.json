@@ -6,9 +6,9 @@
     "url": "git+https://github.com/siteleaf/siteleaf.com.git"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.6.3",
     "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-uglify": "^0.10.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }
