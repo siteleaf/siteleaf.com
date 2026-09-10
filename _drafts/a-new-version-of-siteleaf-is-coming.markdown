@@ -3,6 +3,8 @@ title: Siteleaf V3 is in the works!
 date: 2026-09-10 13:03:00 -04:00
 ---
 
+![v3post.jpg](/uploads/v3post.jpg)
+
 Over a decade ago, we craved a content management system that marries the best parts of a static website generator (speed and simplicity) with a traditional CMS (power and collaboration). A tool that could be simple, without being dumbed down. One that values data portability and is designed for a better web. So, we created Siteleaf.
 
 Along the way, we've upgraded Siteleaf to support [Jekyll](http://jekyllrb.com/), direct syncing to GitHub, and [much more](https://www.siteleaf.com/features). And now, we're looking to build the next version of Siteleaf!
