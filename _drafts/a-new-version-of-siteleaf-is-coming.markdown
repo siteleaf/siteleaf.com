@@ -1,5 +1,5 @@
 ---
-title: A new version of Siteleaf is coming!
+title: Siteleaf V3 is in the works!
 date: 2026-09-10 13:03:00 -04:00
 ---
 
