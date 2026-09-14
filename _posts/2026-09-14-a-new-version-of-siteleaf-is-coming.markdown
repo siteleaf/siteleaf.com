@@ -1,6 +1,6 @@
 ---
 title: Siteleaf V3 is in the works!
-date: 2026-09-10 13:03:00 -04:00
+date: 2026-09-14 15:00:00 -04:00
 tags:
 - announcement
 button:
