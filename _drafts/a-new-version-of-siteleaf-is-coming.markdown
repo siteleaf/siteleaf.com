@@ -1,6 +1,8 @@
 ---
 title: Siteleaf V3 is in the works!
 date: 2026-09-10 13:03:00 -04:00
+tags:
+- announcement
 ---
 
 Over a decade ago, we craved a content management system that marries the best parts of a static website generator (speed and simplicity) with a traditional CMS (power and collaboration). A tool that could be simple, without being dumbed down. One that values data portability and is designed for a better web. So, we created Siteleaf.
