@@ -14,4 +14,4 @@ Along the way, we've upgraded Siteleaf to support [Jekyll](http://jekyllrb.com/)
 
 We're continually inspired by all the amazing things built by the [Siteleaf community](https://www.siteleaf.com/gallery/). We would love to know which Siteleaf features keep you coming back, which parts of your workflow matter most, and what new features you'd like to see in the next version.
 
-Let us know by taking a short feature survey, it'll only take a few minutes. We can't wait to keep you posted on the upcoming changes! 
+Let us know by taking a [short feature survey](https://siteleaf.typeform.com/to/oYSv02xt), it'll only take a few minutes. We can't wait to keep you posted on the upcoming changes! 
