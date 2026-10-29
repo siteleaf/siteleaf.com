@@ -1,5 +1,5 @@
 ---
-title: Duplicate anything
+title: Duplicate anything in one click
 date: 2026-10-28 22:11:00 -04:00
 tags:
 - announcement
