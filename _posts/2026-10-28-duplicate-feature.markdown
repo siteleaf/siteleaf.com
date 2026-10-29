@@ -6,7 +6,7 @@ tags:
 image: "/uploads/spider-man.gif"
 ---
 
-![spider-man.gif](/uploads/spider-man.gif)
+<img alt="Duplicate anything, as popularized by Spider-Man (seen here in this famous meme)" src="/uploads/spider-man.gif" width="100%" />
 
 You can now duplicate anything in Siteleaf (page, post, or document) with a single click.
 
