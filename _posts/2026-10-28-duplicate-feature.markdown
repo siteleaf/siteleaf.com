@@ -6,6 +6,8 @@ tags:
 image: "/uploads/spider-man.gif"
 ---
 
+![spider-man.gif](/uploads/spider-man.gif)
+
 You can now duplicate anything in Siteleaf (page, post, or document) with a single click.
 
 Writing this month’s newsletter? Start with last month’s. Adding another project to your portfolio? Give an existing one a second life. Sometimes the best starting point is something you’ve already made.
