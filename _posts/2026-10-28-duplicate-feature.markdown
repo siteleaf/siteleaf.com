@@ -12,4 +12,4 @@ Writing this month’s newsletter? Start with last month’s. Adding another pro
 
 Duplicate it, make your changes, and carry on.
 
-This has been a popular request. It’s a small addition, but one that should save a lot of copying and pasting. Thanks to everyone who asked.
+This has been a popular request. It’s a small addition, but one that should save a lot of copying and pasting. Thanks to everyone who asked (we're also [collecting feedback](/blog/a-new-version-of-siteleaf-is-coming) for the next version of Siteleaf!).
