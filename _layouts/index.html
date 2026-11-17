@@ -2,106 +2,126 @@
 layout: default
 ---
 
-{% for feature in page.features %}
-  <div class="featureWrap{% if feature.unpad == 'bottom' %} featureWrap--unpadBottom{% endif %} bg--{{ feature.background | default:'white' }}">
-    <section class="feature feature--{{ feature.width }} {{ feature.handle }}">
-      {% if feature.title %}<h2 class="feature__title">{{ feature.title }}</h2>{% endif %}
-      {% case feature.handle %}
-        {% when 'intro' %}
-          <div class="intro__subsections">
-            {% for subsection in feature.subsections %}
-              <div class="intro__subsection">
-                <img src="{{ subsection.image }}" class="intro__subsection__image" />
-                <h5>{{ subsection.title }}</h5>
-                {{ subsection.body | markdownify }}
-              </div>
-            {% endfor %}
-          </div>
-        {% when 'manage' %}
-          <div class="manage__content">
-            <div class="manage__figures">
-              {% for subsection in feature.subsections %}
-                <figure class="manage__figure{% if forloop.first == true %} shown{% endif %}" data-handle="{{ subsection.handle }}">
-                  <img src="{{ subsection.image }}" />
-                </figure>
-              {% endfor %}
-            </div>
-            <div class="manage__tabs">
-              {% for subsection in feature.subsections %}
-                <div class="manage__tab{% if forloop.first == true %} active{% endif %}" data-handle="{{ subsection.handle }}">
-                  <h5>{{ subsection.title }}</h5>
-                  {{ subsection.body | markdownify }}
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        {% when 'develop' %}
-          {% for subsection in feature.subsections %}
-            <div class="develop__subsection">
-              <figure class="develop__subsection__figure">
-                <img src="{{ subsection.image }}" />
-              </figure>
-              <div class="develop__subsection__content">
-                <h3 class="{{ subsection.color }}">{{ subsection.title }}</h3>
-                {{ subsection.body | markdownify }}
-                {% if subsection.logos %}
-                  <img src="{{ subsection.logos.image }}" alt="{{ subsection.logos.title }}" class="develop__logos" />
-                {% endif %}
-              </div>
-            </div>
-          {% endfor %}
-        {% when 'free' %}
-          <img src="{{ feature.image }}" alt="{{ feature.title }}" class="free__image" />
-          <div class="free__subsections">
-            {% for subsection in feature.subsections %}
-              <div class="free__subsection">
-                <h5>{{ subsection.title }}</h5>
-                {{ subsection.body | markdownify }}
-              </div>
-            {% endfor %}
-          </div>
-        {% when 'purpose' %}
-          {% assign purpose = site.pages | where: 'title', 'Purpose' | first %}
-          <div class="launch__content">{{ purpose.content | markdownify }}</div>
-          <img src="{{ feature.image }}" alt="{{ feature.title }}" class="launch__image" />
-        {% when 'love' %}
-          <ul class="love__tweets">
-            {% assign sorted_tweets = site.tweets | sort:'position' %}
-            {% for tweet in sorted_tweets limit:6 %}
-              <li class="love__tweet">
-                <div class="love__tweet__card">
-                  <a href="{{ tweet.link }}">
-                    <div class="love__tweet__header">
-                      <div class="love__tweet__header__item">
-                        <img src="{{ tweet.image }}" class="love__tweet__avatar" />
-                      </div>
-                      <div class="love__tweet__header__item">
-                        <h5 class="love__tweet__name">{{ tweet.title }}</h5>
-                        <small class="love__tweet__handle">{{ tweet.handle }}</small>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="love__tweet__content">{{ tweet.content | markdownify }}</div>
-                </div>
-              </li>
-            {% endfor %}
-          </ul>
-          <img src="{{ feature.logos.image }}" alt="{{ feature.logos.title }}" class="love__logos" />
-        {% when 'outro' %}
-          {{ feature.body | markdownify }}
-      {% endcase %}
-      {% if feature.button %}<a href="{{ page.button.url }}" class="feature__button bg--blue">{{ page.button.title }}</a>{% endif %}
-    </section>
+<section class="homeHero">
+  <div class="homeHero__art" aria-hidden="true">
+    <div class="homeHero__artRotate"><img src="{{ page.hero_image }}" alt="" /></div>
   </div>
-{% endfor %}
+  <div class="homeHero__content">
+    <div class="homeHeading">
+      <h1 class="home-h1">{{ page.header_title }}</h1>
+      <p class="home-sh homeHero__subtitle">{{ page.subtitle }}</p>
+    </div>
+    <a href="{{ page.button.url }}" class="home-btn">{{ page.button.title }}</a>
+  </div>
+</section>
 
-<div id="videoModal" class="modal">
-  <div class="modal__body">
-    <div class="modal__video">
-      <iframe src="https://player.vimeo.com/video/169542999?api=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="intro"></iframe>
+<section class="homeIntro">
+  <div class="homeIntro__items">
+    {% for item in page.intro %}
+    <div class="homeIntro__item">
+      <div class="homeIntro__text">
+        <h3 class="home-h3">{{ item.title }}</h3>
+        <div class="home-b">{{ item.body | markdownify }}</div>
+      </div>
+      <div class="homeIntro__arch">
+        <img src="{{ item.image }}" alt="" class="homeIntro__image" />
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="homeManage">
+  <div class="homeManage__tabs" role="tablist">
+    {% for tab in page.manage %}
+    <a href="#" role="tab" class="manage__tab homeManage__tab{% if forloop.first %} active{% endif %}" data-handle="{{ tab.handle }}">
+      <h4 class="home-h4">{{ tab.title }}</h4>
+      <p class="home-bsm">{{ tab.body }}</p>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="homeManage__figures">
+    {% for tab in page.manage %}
+    <figure class="manage__figure homeManage__figure{% if forloop.first %} shown{% endif %}" data-handle="{{ tab.handle }}">
+      <img src="{{ tab.image }}" alt="{{ tab.title }}" />
+    </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="homeFree">
+  <h2 class="home-h2 homeFree__title">{{ page.free.title }}</h2>
+  <div class="garden homeFree__garden" data-garden aria-hidden="true"></div>
+  <div class="homeFree__items">
+    {% for item in page.free.subsections %}
+    <div class="homeFree__item">
+      <h3 class="home-h3">{{ item.title }}</h3>
+      <div class="home-b">{{ item.body | markdownify }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="homeLaunch">
+  <img src="{{ page.launch.image }}" alt="" class="homeLaunch__image" />
+  <div class="homeCard homeLaunch__card">
+    <h2 class="home-h2">{{ page.launch.title }}</h2>
+    <div class="home-b">
+      <p class="home-sh">{{ page.launch.lead }}</p>
+      {{ page.launch.body | markdownify }}
     </div>
   </div>
-</div>
+</section>
+
+<section class="homeDevelop">
+  <img src="{{ page.develop.image }}" alt="" class="homeDevelop__bg" />
+  {% for item in page.develop.subsections %}
+  <div class="homeDevelop__item homeDevelop__item--{{ forloop.index }}">
+    <figure class="homeDevelop__frame"><img src="{{ item.image }}" alt="{{ item.title }}" /></figure>
+    <div class="homeCard homeCard--blue homeDevelop__card">
+      <h3 class="home-title">{{ item.title }}</h3>
+      <div class="home-b">{{ item.body | markdownify }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="homeLove">
+  <div class="homeLove__art" aria-hidden="true">
+    <div class="homeLove__artRotate"><img src="{{ page.love.image }}" alt="" /></div>
+  </div>
+  <div class="homeLove__content">
+    <h2 class="home-h2 homeLove__title">{{ page.love.title }}</h2>
+    <ul class="homeLove__tweets">
+      {% assign sorted_tweets = site.tweets | sort: 'position' %}
+      {% for tweet in sorted_tweets limit: 6 %}
+      <li class="homeLove__tweet">
+        <a href="{{ tweet.link }}" class="homeLove__author">
+          <img src="{{ tweet.image }}" alt="" width="46" height="46" class="homeLove__avatar" />
+          <span>
+            <span class="home-h4 homeLove__name">{{ tweet.title }}</span>
+            <span class="home-bsm homeLove__handle">{{ tweet.handle }}</span>
+          </span>
+        </a>
+        <div class="home-b">{{ tweet.content | markdownify }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="homeOutro">
+  <div class="homeOutro__content">
+    <div class="homeHeading">
+      <h2 class="home-h1">{{ page.outro.title | newline_to_br }}</h2>
+      <p class="home-sh">{{ page.outro.body }}</p>
+    </div>
+    <a href="{{ page.button.url }}" class="home-btn">{{ page.button.title }}</a>
+  </div>
+  <div class="homeOutro__art" aria-hidden="true">
+    <img src="{{ page.outro.image }}" alt="" />
+  </div>
+</section>
 
 <div id="surveyBanner" class="surveyBanner">
   <button id="surveyBannerClose" class="surveyBanner__close" aria-label="Dismiss">&times;</button>

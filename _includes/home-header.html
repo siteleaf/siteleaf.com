@@ -1,0 +1,21 @@
+<header class="homeHeader">
+  <a href="/" class="homeHeader__home"><img src="/assets/home/logo-header.svg" width="42.1542" height="60" alt="{{ site.title }}" /></a>
+  <ul class="homeHeader__items">
+    {% for item in site.header_nav %}
+    <li class="homeHeader__item"><a href="{{ item[1] }}" class="homeHeader__link">{{ item[0] }}</a></li>
+    {% endfor %}
+  </ul>
+  <a id="mobileNavOpen" href="#" class="homeHeader__link homeHeader__menu">Menu</a>
+</header>
+<nav class="mobileNav homeMobileNav">
+  <div class="homeHeader">
+    <a href="/" class="homeHeader__home"><img src="/assets/home/logo-header.svg" width="42.1542" height="60" alt="{{ site.title }}" /></a>
+    <a id="mobileNavClose" href="#" class="homeHeader__link homeHeader__menu">Close</a>
+  </div>
+  <ul class="mobileNav__items">
+    {% for item in site.header_nav %}
+    <li class="mobileNav__item"><a href="{{ item[1] }}" class="mobileNav__link">{{ item[0] }}</a></li>
+    {% endfor %}
+    <li class="mobileNav__item"><a href="{{ page.button.url }}" class="mobileNav__link">Sign up</a></li>
+  </ul>
+</nav>

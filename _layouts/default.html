@@ -14,13 +14,22 @@
     <link rel="alternate" type="application/json" title="Siteleaf: Blog (JSON)" href="{{ site.url }}/feed.json" />
   </head>
   <body class="{{ page.layout }}">
+    {% if page.layout == 'index' %}
+    <div class="wrap home">
+      {% include home-header.html %}
+      {{ content }}
+      {% include home-footer.html %}
+    </div>
+    {% else %}
     <div class="wrap">
       {% include header.html %}
       {{ content }}
     </div>
     {% include footer.html %}
+    {% endif %}
     {% if page.url == '/plans/' %}<script src="/scripts/plan-summary-cards.js"></script>{% endif %}
     <script src="/scripts/all.js"></script>
+    {% if page.layout == 'index' %}<script src="/scripts/ascii-garden.js"></script>{% endif %}
     {{ site.scripts }}
   </body>
 </html>

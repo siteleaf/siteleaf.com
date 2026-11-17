@@ -1,0 +1,20 @@
+{% assign footer_columns = "Features,Press,Status|Community,Twitter,Mastodon|Privacy,Terms" | split: "|" %}
+<footer class="homeFooter">
+  <div class="homeFooter__inner">
+    <div class="homeFooter__brand">
+      <a href="/"><img src="/assets/home/logo-footer.svg" width="42.1542" height="60" alt="{{ site.title }}" /></a>
+      <p class="homeFooter__madeBy"><a href="https://github.com/siteleaf/siteleaf.com">Made in Siteleaf</a> by <a href="https://oak.is/">Oak</a></p>
+    </div>
+    <div class="homeFooter__columns">
+      {% for column in footer_columns %}
+      <ul class="homeFooter__column">
+        {% assign labels = column | split: "," %}
+        {% for label in labels %}
+          {% assign url = site.footer_nav[label] %}
+          <li><a href="{{ url }}" {% if url contains "://" %}{% unless url contains "siteleaf.com" %}rel="me"{% endunless %}{% endif %} class="homeFooter__link">{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</footer>
