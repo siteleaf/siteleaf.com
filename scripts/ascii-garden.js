@@ -14,6 +14,8 @@
     sway: 16,                // max lean in degrees at full wind
     gustEvery: [4, 10],      // seconds between gusts
     bloomLife: [16, 40],     // seconds a flower stays in bloom
+    clickGrow: 0.4,          // seconds per stage for a flower planted by clicking
+    maxPlanted: 60,          // cap on flowers on screen, clicks included
   };
 
   // flower colours come from the page palette (see .garden in styles/_home.scss)
@@ -84,6 +86,8 @@
       this.measure();
       this.populate();
       new ResizeObserver(() => this.measure()).observe(el);
+      // easter egg: click the band to plant a flower there
+      (el.parentElement || el).addEventListener('click', e => this.onClick(e));
       new IntersectionObserver(([e]) => {
         this.visible = e.isIntersecting;
         if (this.visible) this.start();
@@ -161,6 +165,22 @@
     }
 
     render(f) { this.lines(f.plantEl, f.sp[STAGES[f.stage]]); }
+
+    onClick(e) {
+      if (e.target.closest('a, button') || String(getSelection()).length) return;
+      const r = this.el.getBoundingClientRect();
+      const cx = e.clientX - r.left, cy = e.clientY - r.top;
+      if (cy < 0 || cy > r.height + 20) return; // only the garden band, not the text
+      if (this.items.filter(o => o.kind === 'flower').length >= CONFIG.maxPlanted) return;
+      // the sprite's anchor is its base, so drop it a little so the bloom sits on the pointer
+      const x = Math.min(Math.max(cx, 12), this.w - 12);
+      const y = Math.min(Math.max(cy + 18, 30), this.h - 4);
+      if (this.reduced) { this.plant(pick(POOL), 2, { x, y }, false); return; }
+      const f = this.plant(pick(POOL), 0, { x, y });
+      f.quick = true;
+      f.dur = CONFIG.clickGrow;
+      this.start();
+    }
 
     populate() {
       for (let i = 0; i < this.target * CONFIG.grassRatio; i++) {
@@ -262,7 +282,7 @@
               continue;
             }
             const d = DUR[STAGES[o.stage]];
-            o.dur = rand(d[0], d[1]);
+            o.dur = o.quick && o.stage < 2 ? CONFIG.clickGrow : rand(d[0], d[1]);
             this.render(o);
             if (o.stage === 3) this.spawnPetals(o, 2 + (Math.random() * 2 | 0));
             if (o.stage === 4) this.spawnPetals(o, 1);
