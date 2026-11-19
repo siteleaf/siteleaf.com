@@ -19,16 +19,16 @@ intro:
   image: "/assets/home/intro-free.png"
 manage_title: Content management for your whole team
 manage:
-- title: Preview your site
-  handle: preview
-  body: Preview changes before they go live. Then publish with one click whenever
-    you’re ready.
-  image: "/uploads/preview.png"
 - title: Collaborate
   handle: collaborate
   body: Invite your client or team to create and edit content. Set permissions as
     Admin, Publisher, or Writer.
   image: "/uploads/collaboratepic.webp"
+- title: Preview your site
+  handle: preview
+  body: Preview changes before they go live. Then publish with one click whenever
+    you’re ready.
+  image: "/uploads/preview.png"
 - title: Smart text editor
   handle: edit
   body: Choose between a visual editor or plain Markdown. Drag and drop images or
