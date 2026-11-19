@@ -20,7 +20,7 @@ layout: default
     {% for item in page.intro %}
     <div class="homeIntro__item">
       <div class="homeIntro__text">
-        <h3 class="home-h3">{{ item.title }}</h3>
+        <h2 class="home-h3">{{ item.title }}</h2>
         <div class="home-b">{{ item.body | markdownify }}</div>
       </div>
       <div class="homeIntro__arch">
@@ -32,10 +32,11 @@ layout: default
 </section>
 
 <section class="homeManage">
+  <h2 class="home-title homeManage__title">{{ page.manage_title }}</h2>
   <div class="homeManage__tabs" role="tablist">
     {% for tab in page.manage %}
     <a href="#" role="tab" class="manage__tab homeManage__tab{% if forloop.first %} active{% endif %}" data-handle="{{ tab.handle }}">
-      <h4 class="home-h4">{{ tab.title }}</h4>
+      <h3 class="home-h3">{{ tab.title }}</h3>
       <p class="home-bsm">{{ tab.body }}</p>
     </a>
     {% endfor %}
@@ -43,7 +44,11 @@ layout: default
   <div class="homeManage__figures">
     {% for tab in page.manage %}
     <figure class="manage__figure homeManage__figure{% if forloop.first %} shown{% endif %}" data-handle="{{ tab.handle }}">
-      <img src="{{ tab.image }}" alt="{{ tab.title }}" />
+      {% if tab.video %}
+      <video src="{{ tab.video }}" autoplay muted loop playsinline preload="auto" aria-label="{{ tab.title }}"></video>
+      {% else %}
+      <img src="{{ tab.image }}" alt="{{ tab.title }}" loading="lazy" />
+      {% endif %}
     </figure>
     {% endfor %}
   </div>
@@ -55,7 +60,7 @@ layout: default
   <div class="homeFree__items">
     {% for item in page.free.subsections %}
     <div class="homeFree__item">
-      <h3 class="home-h3">{{ item.title }}</h3>
+      <h3 class="home-title">{{ item.title }}</h3>
       <div class="home-b">{{ item.body | markdownify }}</div>
     </div>
     {% endfor %}
@@ -74,12 +79,13 @@ layout: default
 </section>
 
 <section class="homeDevelop">
+  <h2 class="home-srOnly">{{ page.develop.title }}</h2>
   <img src="{{ page.develop.image }}" alt="" class="homeDevelop__bg" />
   {% for item in page.develop.subsections %}
   <div class="homeDevelop__item homeDevelop__item--{{ forloop.index }}">
     <figure class="homeDevelop__frame"><img src="{{ item.image }}" alt="{{ item.title }}" /></figure>
     <div class="homeCard homeCard--blue homeDevelop__card">
-      <h3 class="home-title">{{ item.title }}</h3>
+      <h3 class="home-h3">{{ item.title }}</h3>
       <div class="home-b">{{ item.body | markdownify }}</div>
     </div>
   </div>
@@ -118,9 +124,7 @@ layout: default
     </div>
     <a href="{{ page.button.url }}" class="home-btn">{{ page.button.title }}</a>
   </div>
-  <div class="homeOutro__art" aria-hidden="true">
-    <img src="{{ page.outro.image }}" alt="" />
-  </div>
+  <div class="homeOutro__art" aria-hidden="true"><img src="{{ page.outro.image }}" alt="" /></div>
 </section>
 
 <div id="surveyBanner" class="surveyBanner">

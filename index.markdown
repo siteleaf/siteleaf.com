@@ -9,35 +9,36 @@ button:
   url: https://manage.siteleaf.com/signup
 intro:
 - title: Develop with existing tools
-  body: Code offline with Jekyll, and sync with GitHub.
+  body: Code offline with your favorite SSG tools, and sync with GitHub.
   image: "/assets/home/intro-develop.png"
 - title: Edit in the cloud
-  body: Easy for non-technical clients, writers, and producers.
+  body: Easy for non-technical clients, writers, and producers to use and publish.
   image: "/assets/home/intro-edit.png"
-- title: Free your content
+- title: Deploy wherever you want
   body: Generate static sites to S3, GitHub, FTP + headless [API](https://learn.siteleaf.com/api/).
   image: "/assets/home/intro-free.png"
+manage_title: Content management for your whole team
 manage:
-- title: Collaborate
-  handle: collaborate
-  body: Invite your client or team to create and edit content. Set permissions as
-    Admin, Publisher, or Writer.
-  image: "/assets/home/manage-screenshot.png"
 - title: Preview your site
   handle: preview
   body: Preview changes before they go live. Then publish with one click whenever
     you’re ready.
-  image: "/uploads/home__manage--preview.jpg"
+  image: "/uploads/preview.png"
+- title: Collaborate
+  handle: collaborate
+  body: Invite your client or team to create and edit content. Set permissions as
+    Admin, Publisher, or Writer.
+  image: "/uploads/collaboratepic.webp"
 - title: Smart text editor
   handle: edit
   body: Choose between a visual editor or plain Markdown. Drag and drop images or
     even entire text files.
-  image: "/uploads/home__manage--edit.jpg"
+  image: "/uploads/smart_text_editor.webp"
 - title: Powerful content
   handle: customize
   body: Customize your site with document collections, advanced metadata, and custom
     permalinks.
-  image: "/uploads/home__manage--customize.jpg"
+  image: "/uploads/powerful_content.webp"
 free:
   title: Free your content
   subsections:
@@ -47,7 +48,7 @@ free:
   - title: Import and export
     body: Easily move content into or out of Siteleaf. [Import](http://import.jekyllrb.com/)
       from WordPress, Drupal, Tumblr, Ghost, and more.
-  - title: Headless API for your content
+  - title: Headless API
     body: Access [your data](https://learn.siteleaf.com/api/) and integrate into other
       websites and apps. Automate tasks with [Zapier](https://zapier.com/zapbook/siteleaf/).
 launch:
@@ -63,6 +64,7 @@ launch:
 
     In recent years, static website generators have surged in popularity. But along with that has come a lot of bloat (and new acronyms). Let’s keep static sites how they were intended: fast and simple.
 develop:
+  title: Develop with tools you already love
   image: "/assets/home/develop-bg.png"
   subsections:
   - title: Built on open source
@@ -86,7 +88,7 @@ outro:
     in full bloom
   body: Launch a site that’s fast, secure, and easy to edit. Free for developers and
     open source.
-  image: "/assets/home/intro-develop.png"
+  image: "/assets/home/hero-bg.png"
 image: "/assets/og-image.png"
 layout: index
 ---

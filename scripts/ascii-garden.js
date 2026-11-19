@@ -16,10 +16,8 @@
     bloomLife: [16, 40],     // seconds a flower stays in bloom
   };
 
-  // lights listed twice so darks stay accents (~1 in 4 flowers)
-  const HEADS = ['--head-1', '--head-2', '--head-3', '--head-4', '--head-5',
-                 '--head-1', '--head-2', '--head-3', '--head-4', '--head-5',
-                 '--head-6', '--head-7', '--head-8'];
+  // flower colours come from the page palette (see .garden in styles/_home.scss)
+  const HEADS = ['--head-1', '--head-2', '--head-3', '--head-4'];
   const STAGES = ['sprout', 'bud', 'bloom', 'wilt', 'dead'];
   const DUR = { sprout: [2, 4], bud: [3, 6], bloom: CONFIG.bloomLife, wilt: [5, 8], dead: [3, 5] };
   const FLEX = { sprout: .4, bud: .7, bloom: 1, wilt: .9, dead: .5 };
