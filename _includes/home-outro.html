@@ -1,0 +1,10 @@
+<section class="homeOutro">
+  <div class="homeOutro__content">
+    <div class="homeHeading">
+      <h2 class="home-h1">{{ include.outro.title | newline_to_br }}</h2>
+      <p class="home-sh">{{ include.outro.body }}</p>
+    </div>
+    <a href="{{ include.button.url }}" class="home-btn">{{ include.button.title }}</a>
+  </div>
+  <div class="homeOutro__art" aria-hidden="true"><img src="{{ include.outro.image }}" alt="" /></div>
+</section>

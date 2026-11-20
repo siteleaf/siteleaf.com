@@ -1,0 +1,202 @@
+// plans (2026 brand refresh)
+// ---------------------------
+// Sizes come from the Figma "Plans" frame (1440px wide); tokens live in _home.scss.
+
+$plans-color--personal: #D95B1A;
+$plans-color--team:     #6F5C18;
+$plans-color--business: #335486;
+$plans-width:           1320px;
+
+// hero
+
+.plansHero {
+  @include home-max-width($plans-width);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 80px;
+  @include max-width($max-width--sm) {
+    padding-top: 48px;
+  }
+}
+.plansHero__subtitle {
+  max-width: 604px;
+  color: $home-color--body;
+  strong {
+    font-weight: $font-weight--bold;
+  }
+}
+
+// plan cards + feature lists (one column per plan so they stay paired on small screens)
+
+.plansGrid {
+  @include home-max-width($plans-width);
+  margin-top: 81px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 60px 20px;
+  @include max-width($max-width--md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @include max-width($max-width--sm) {
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 60px;
+  }
+}
+.plansPlan {
+  --plan: #{$home-color--ink};
+  --plan-text: #{$home-color--cream};
+}
+.plansPlan--personal { --plan: #{$plans-color--personal}; }
+.plansPlan--team     { --plan: #{$plans-color--team}; }
+.plansPlan--business { --plan: #{$plans-color--business}; }
+
+.plansCard {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 312px;
+  padding: 40px;
+  border-radius: 10px;
+  background: var(--plan);
+  color: var(--plan-text);
+  .plansPlan--developer & {
+    background: none;
+    border: 1px solid $home-color--ink;
+    color: $home-color--body;
+    .home-title {
+      color: $home-color--ink;
+    }
+  }
+  @include max-width($max-width--sm) {
+    min-height: 0;
+    padding: 32px;
+  }
+}
+.plansCard__desc {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+}
+.plansDetails {
+  margin-top: 40px;
+  color: $home-color--body;
+  @include max-width($max-width--sm) {
+    margin-top: 32px;
+  }
+}
+.plansDetails__title {
+  color: var(--plan);
+}
+.plansDetails__subtitle {
+  margin-bottom: 21.6px;
+}
+// each line of a feature (name, then detail) gets its own bullet, as in Figma
+.home .plansDetails__features {
+  padding-left: 24px;
+  p {
+    display: list-item;
+    list-style: disc;
+    margin: 0;
+  }
+  p + p {
+    margin-top: 0;
+  }
+  small {
+    font-size: inherit;
+    color: var(--plan);
+  }
+}
+
+// FAQs
+
+.plansFaq {
+  @include home-max-width($plans-width);
+  margin-top: 130px;
+  margin-bottom: 40px; // + the outro's 60px top margin
+  @include max-width($max-width--sm) {
+    margin-top: 80px;
+  }
+}
+.plansFaq__title {
+  text-align: center;
+  margin-bottom: 80px;
+  @include max-width($max-width--sm) {
+    margin-bottom: 48px;
+  }
+}
+.plansFaq__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 427fr) minmax(0, 426fr) minmax(0, 427fr);
+  gap: 20px;
+  @include max-width($max-width--md) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 40px;
+  }
+  @include max-width($max-width--sm) {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 48px; // same rhythm as between questions within a column
+  }
+}
+.plansFaq__col {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  @include max-width($max-width--md) {
+    gap: 48px;
+  }
+}
+.plansFaq__item,
+.plansFaq__more {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $home-color--body;
+  h3 {
+    @extend .home-h3;
+    color: $home-color--ink;
+  }
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+  }
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    &:hover {
+      opacity: $opacity--hover;
+    }
+  }
+}
+.plansFaq__art {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 298.5px;
+    max-width: 100%;
+    aspect-ratio: 298.506 / 920;
+    object-fit: cover;
+    transform: scaleX(-1); // flipped in Figma so the bloom faces the right column
+  }
+  @include max-width($max-width--md) {
+    display: none;
+  }
+}
+.plansFaq__more {
+  width: 426px;
+  max-width: 100%;
+  margin: 80px auto 0;
+  text-align: center;
+  align-items: center;
+  h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.32px;
+    @include max-width($max-width--sm) {
+      font-size: 26px;
+    }
+  }
+}

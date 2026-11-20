@@ -13,6 +13,7 @@
 @import 'placeholders';
 @import 'highlight';
 @import 'home';
+@import 'plans';
 
 // base
 // ----
@@ -180,7 +181,7 @@ mark {
   @extend %container;
   text-align: center;
 }
-[class$="__button"]:not(.plan-card__button) {
+[class$="__button"] {
   @extend %button--large;
 }
 .anchor {
@@ -1065,115 +1066,6 @@ h6 {
 .gallery__caption__link {
   &:hover {
     text-decoration: underline;
-  }
-}
-
-// plans
-// -----
-
-.plans__cards {
-  @extend %container--wide;
-  padding-top: $v*0.75;
-}
-.plan-summary-cards {
-  margin-bottom: $v*2;
-}
-.plan-card {
-  width: 20%;
-  @include max-width($max-width--lg) {
-    width: 33.333333%;
-    &:nth-child(3) {
-      border-right-width: 0;
-    }
-  }
-  @include max-width($max-width--md) {
-    width: 50%;
-    &:nth-child(3) {
-      border-right-width: 1px;
-    }
-    &:nth-child(2n) {
-      border-right-width: 0;
-    }
-  }
-}
-.plan-card__desc {
-  border-top: 0;
-  margin-bottom: $v*0.25;
-  font-size: $font-size--smaller;
-}
-.plan-card__price,
-.plan-card__price__symbol {
-  font-weight: $font-weight--bold
-}
-.plan-card--developer .plan-card__price {
-  font-weight: $font-weight--normal;
-  letter-spacing: -1px;
-}
-
-.plans__details {
-  @extend %container--wide;
-  padding-bottom: $v*2;
-}
-.plans__details__items {
-  @extend %row;
-}
-.plans__details__item {
-  font-size: $font-size--smaller;
-  margin-bottom: $v;
-  width: 25%;
-  @extend %column;
-  @include max-width($max-width--md) {
-    width: 50%;
-  }
-  @include max-width($max-width--xs) {
-    width: 100%;
-  }
-}
-.plans__details__subtitle {
-  font-style: italic;
-  color: $color--dark-gray;
-  margin-bottom: $v*0.5;
-}
-.plans__details__feature {
-  margin-bottom: $v*0.5;
-  p {
-    margin: 0;
-  }
-  p:nth-child(2) {
-    color: $color--dark-gray;
-    font-size: $font-size--small;
-  }
-  small {
-    font-size: 13px;
-    font-weight: bold;
-    margin-left: 3px;
-  }
-  a {
-    @extend %link--underline;
-  }
-}
-
-.plans__questions {
-  @extend %container--wide;
-  margin-top: $v*3;
-  margin-bottom: $v*4;
-}
-.plans__questions__title {
-  text-align: center;
-  margin-bottom: $v*2;
-}
-.plans__questions__row {
-  @extend %row;
-}
-.plans__questions__col {
-  @extend %column;
-  font-size: $font-size--small;
-  p {
-    margin-bottom: $v*1.5;
-  }
-  width: 50%;
-  @include max-width($max-width--xs) {
-    width: 100%;
   }
 }
 

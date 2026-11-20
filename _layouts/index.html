@@ -116,16 +116,7 @@ layout: default
   </div>
 </section>
 
-<section class="homeOutro">
-  <div class="homeOutro__content">
-    <div class="homeHeading">
-      <h2 class="home-h1">{{ page.outro.title | newline_to_br }}</h2>
-      <p class="home-sh">{{ page.outro.body }}</p>
-    </div>
-    <a href="{{ page.button.url }}" class="home-btn">{{ page.button.title }}</a>
-  </div>
-  <div class="homeOutro__art" aria-hidden="true"><img src="{{ page.outro.image }}" alt="" /></div>
-</section>
+{% include home-outro.html outro=page.outro button=page.button %}
 
 <div id="surveyBanner" class="surveyBanner">
   <button id="surveyBannerClose" class="surveyBanner__close" aria-label="Dismiss">&times;</button>

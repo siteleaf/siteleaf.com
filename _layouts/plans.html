@@ -2,51 +2,66 @@
 layout: default
 ---
 
-<script>
-  var PLANS = {{ page.plans | jsonify }};
-</script>
-<div class="bg--lightest-gray">
-  <section class="plans__cards">
-    <div class="jsx-plan-summary-cards"></div>
-  </section>
-  <section class="plans__details">
-    <div class="plans__details__items">
-      {% for plan in page.plans %}
-        {% if plan.features %}
-          <div class="plans__details__item">
-            <h3 class="plans__details__title {{ plan.color }}">{{ plan.name }}</h3>
-            <p class="plans__details__subtitle">
-              {% if forloop.first %}
-                Includes these features:
-              {% else %}
-                Everything in <strong>{{ previous_plan.name | remove: " site" }}</strong>, plus:
-              {% endif %}
-            </p>
-            <ul class="plans__details__features">
-              {% for feature in plan.features %}
-                <li class="plans__details__feature">
-                  {{ feature | markdownify }}
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% assign previous_plan = plan %}
-        {% endif %}
+<section class="plansHero">
+  <div class="homeHeading">
+    <h1 class="home-h1">{{ page.title }}</h1>
+    <div class="home-sh plansHero__subtitle">{{ page.subtitle | markdownify }}</div>
+  </div>
+  <a href="{{ page.header_button.url }}" class="home-btn">{{ page.header_button.title }}</a>
+</section>
+
+<section class="plansGrid">
+  {% for plan in page.plans %}
+    {% if plan.features %}
+    <div class="plansPlan plansPlan--{{ plan.name | downcase }}">
+      <div class="plansCard">
+        <h2 class="home-title">{{ plan.name }}</h2>
+        <p class="plansCard__desc">{{ plan.description }}</p>
+        <p class="home-bsm">
+          {% if plan.price == 0 %}
+            Free
+          {% else %}
+            ${{ plan.annual_price | divided_by: 12 }}/mo paid annually<br />
+            or ${{ plan.price }} paid monthly
+          {% endif %}
+        </p>
+      </div>
+      <div class="plansDetails">
+        <h3 class="home-h3 plansDetails__title">{{ plan.name }}</h3>
+        <p class="home-bsm plansDetails__subtitle">
+          {% if previous_plan %}Everything in {{ previous_plan.name }}, plus:{% else %}Includes these features:{% endif %}
+        </p>
+        <ul class="home-b plansDetails__features">
+          {% for feature in plan.features %}
+          <li>{{ feature | markdownify }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% assign previous_plan = plan %}
+    {% endif %}
+  {% endfor %}
+</section>
+
+<section class="plansFaq">
+  <h2 id="questions" class="home-h1 plansFaq__title">FAQs</h2>
+  <div class="plansFaq__grid">
+    <div class="plansFaq__col">
+      {% for question in page.questions limit: 3 %}
+      <div class="plansFaq__item">{{ question | markdownify }}</div>
       {% endfor %}
     </div>
-  </section>
-</div>
-
-<section class="plans__questions">
-  <h2 id="questions" class="plans__questions__title">Questions</h2>
-  <div class="plans__questions__row article__content">
-    <div class="plans__questions__col">
-      {% for question in page.questions %}
-        {% if forloop.index == 4 %}
-          </div><div class="plans__questions__col">
-        {% endif %}
-        {{ question | markdownify }}
+    <div class="plansFaq__art" aria-hidden="true">
+      <img src="/assets/plans/faq-botanical.png" alt="" />
+    </div>
+    <div class="plansFaq__col">
+      {% for question in page.questions offset: 3 limit: 3 %}
+      <div class="plansFaq__item">{{ question | markdownify }}</div>
       {% endfor %}
     </div>
   </div>
+  <div class="plansFaq__more">{{ page.questions | last | markdownify }}</div>
 </section>
+
+{% assign home = site.pages | where: "layout", "index" | first %}
+{% include home-outro.html outro=home.outro button=home.button %}

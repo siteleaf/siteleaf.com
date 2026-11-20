@@ -2,7 +2,7 @@
 title: Plans
 permalink: "/plans/"
 position: 3
-subtitle: Start with a **free 14 day trial**, upgrade or downgrade anytime. All plans
+subtitle: Start with a **free 14-day trial**, upgrade or downgrade anytime. All plans
   include **unlimited users**.
 header_button:
   title: Try for free
@@ -100,31 +100,31 @@ plans:
   - Dedicated support
 questions:
 - |-
-  #### How do subscriptions work?
+  ### How do subscriptions work?
 
   Each new site you create starts with a free 14 day trial on the Personal plan, no credit card required. At the end of your trial, you'll be prompted to select a plan. You can upgrade or downgrade at any time and your next month's bill will be prorated. Sites are billed monthly.
 - |-
-  #### Can I still use my legacy v1 plan?
-
-  Yes! You can create a v2 site using your legacy plan, grandfathered at its current price. Legacy plans are held to its original user and site limits, and do not include advanced features like third-party Jekyll plugins. You can upgrade to a v2 plan at any time from your site’s settings page and cancel your legacy plan from your account page. You can also add v2 sites on top of your legacy plan if you hit your limit.
-- |-
-  #### How many users are included?
+  ### How many users are included?
 
   All v2 plans come with unlimited users. Invite clients, content editors, and collaborators at no extra cost. Upgrade to the Team (or higher) plan to take advantage of [user roles](https://learn.siteleaf.com/sites/users/) for admins, publishers, and writers. For those on a legacy plan, user limits may apply (see your account page for details).
 - |-
-  #### What are the page and storage limits?
+  ### What are the page and storage limits?
 
   Developer sites are limited to 100 MB and 100 pages, including posts and documents. Personal sites are limited to 500 MB and 500 pages. Team sites (as well as legacy v1 plans) come with unlimited pages and 1 GB of storage. Business sites come with 10 GB of storage, and Enterprise with 100 GB.
 - |-
-  #### Where can I host my site?
+  ### Can I still use my legacy v1 plan?
+
+  Yes! You can create a v2 site using your legacy plan, grandfathered at its current price. Legacy plans are held to its original user and site limits, and do not include advanced features like third-party Jekyll plugins. You can upgrade to a v2 plan at any time from your site’s settings page and cancel your legacy plan from your account page. You can also add v2 sites on top of your legacy plan if you hit your limit.
+- |-
+  ### Where can I host my site?
 
   With v2, you can publish to Amazon S3, GitHub Pages, Rackspace Cloud Files, or any host that supports FTP or SFTP (Digital Ocean, Media Temple,  Dreamhost, GoDaddy, etc). Unlike v1, we no longer offer built-in Siteleaf Hosting. We decided to focus our efforts on being the best CMS and let others be the best hosting company.
 - |-
-  #### How can I access invoices or receipts?
+  ### How can I access invoices or receipts?
 
   Receipts are automatically emailed to the billing contact on file. You can also print or download past receipts by logging in and clicking the [Billing tab](https://manage.siteleaf.com/account?section=billing) under Account.
 - |-
-  #### Have more questions?
+  ### Have more questions?
 
   No problem! Tweet [@siteleaf](https://twitter.com/siteleaf), [join the community](https://community.siteleaf.com), or [email us](mailto:billing@siteleaf.com?subject=Question%20about%20your%20plans).
 redirect_from: "/pricing/"

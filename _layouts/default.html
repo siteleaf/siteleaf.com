@@ -7,14 +7,14 @@
     {% seo title=false %}
     {% unless page.image %}<meta name="twitter:image" content="{{ site.url }}/assets/avatar.png"/>{% endunless %}
     <title>{{ page.title }}{% if page.url != '/' %} - Siteleaf{% endif %}</title>
-    {% if page.url == '/plans/' %}<link rel="stylesheet" href="/styles/plan-summary-cards.css" />{% endif %}
     <link rel="stylesheet" href="/styles/all.css" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="alternate" type="application/rss+xml" title="Siteleaf: Blog (RSS)" href="{{ site.url }}/feed.xml" />
     <link rel="alternate" type="application/json" title="Siteleaf: Blog (JSON)" href="{{ site.url }}/feed.json" />
   </head>
-  <body class="{{ page.layout }}">
-    {% if page.layout == 'index' %}
+  {% if page.layout == 'index' or page.layout == 'plans' %}{% assign refresh = true %}{% endif %}
+  <body class="{{ page.layout }}{% if refresh %} refresh{% endif %}">
+    {% if refresh %}
     <div class="wrap home">
       {% include home-header.html %}
       {{ content }}
@@ -27,7 +27,6 @@
     </div>
     {% include footer.html %}
     {% endif %}
-    {% if page.url == '/plans/' %}<script src="/scripts/plan-summary-cards.js"></script>{% endif %}
     <script src="/scripts/all.js"></script>
     {% if page.layout == 'index' %}<script src="/scripts/ascii-garden.js"></script>{% endif %}
     {{ site.scripts }}
